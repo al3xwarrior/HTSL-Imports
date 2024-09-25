@@ -1,0 +1,48 @@
+
+if (globalstat "powup/5/active" = 2) {
+    globalstat "powup/5/timer" set 15
+    globalstat "powup/5/active" set 4
+} else {
+    sound "block.anvil.land" 0.7 0.5 "invokers_location"
+    chat "&c&lThis powerup is not avaliable! &4&l✘"
+    exit
+}
+
+if (hasTeam "Survivor", placeholder "%player.team.players/Infected%" >= 3) {
+    stat "powerup" set "%random.int/1 6%"
+}
+if (hasTeam "Survivor", placeholder "%player.team.players/Infected%" < 3) {
+    stat "powerup" set "%random.int/2 6%"
+}
+if (hasTeam "Infected") {
+    stat "powerup" set "%random.int/2 7%"
+}
+
+sound "entity.player.levelup" 0.7 1.0 "invokers_location"
+if (stat "powerup" = 1) {
+    giveItem "inf_cure" true -1 false
+    title "&a&lPower Up" "&fZombie Cure" 1 1 1
+}
+if (stat "powerup" = 2) {
+    giveItem "inf_speed" true -1 false
+    title "&a&lPower Up" "&bSpeed" 1 1 1
+}
+if (stat "powerup" = 3) {
+    giveItem "inf_regen" true -1 false
+    title "&a&lPower Up" "&dRegeneration" 1 1 1
+}
+if (stat "powerup" = 4) {
+    giveItem "inf_strength" true -1 false
+    title "&a&lPower Up" "&cStrength" 1 1 1
+}
+if (stat "powerup" = 5) {
+    giveItem "inf_jumpboost" true -1 false
+    title "&a&lPower Up" "&2Jump Boost" 1 1 1
+}
+if (stat "powerup" = 6) {
+    giveItem "tpbow" true -1 false
+    giveItem "arrow" true -1 false
+    title "&a&lPower Up" "&9Teleport Bow" 1 1 1
+}
+
+stat "powerup" set 0

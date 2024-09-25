@@ -1,0 +1,49 @@
+if (stat "level" < 5) {
+    chat "&cWait... how are you even in this menu?"
+    exit
+}
+
+if (stat "perks/chef" = 0, stat "gold" < 50) {
+    chat "&c&lYou don't have enough gold! &4&l✘ &7(%stat.player/gold%⛃&8/&750⛃)"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+if (stat "perks/chef" = 0, stat "gold" >= 50) {
+    stat "gold" dec 50
+    stat "perks/chef" set 1
+    chat "&a&lYou have purchased this perk! &2&l✔ &7(-50⛃)"
+    chat "&7&o(Click again to select!)"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    displayMenu "Perks"
+    exit
+}
+
+stat "perks/selup" set 3
+
+if (stat "perks/chef" >= 3, stat "perks/editing" = 1) {
+    stat "perks/1" set "%stat.player/perks/selup%"
+    chat "&a&lPerk Applied! &2&l✔"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    stat "perks/selup" set 0
+    closeMenu
+    exit
+}
+if (stat "perks/chef" >= 3, stat "perks/editing" = 2) {
+    stat "perks/2" set "%stat.player/perks/selup%"
+    chat "&a&lPerk Applied! &2&l✔"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    stat "perks/selup" set 0
+    closeMenu
+    exit
+}
+if (stat "perks/chef" >= 3, stat "perks/editing" = 3) {
+    stat "perks/3" set "%stat.player/perks/selup%"
+    chat "&a&lPerk Applied! &2&l✔"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    stat "perks/selup" set 0
+    closeMenu
+    exit
+}
+
+displayMenu "Perk (Select / Upgrade)"

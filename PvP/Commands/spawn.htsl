@@ -1,0 +1,69 @@
+if (hasTeam "Red", hasTeam "Blue", inRegion "KOTH_Event", inRegion "KOTH", inRegion "KOTH_WaitingRoom", hasTeam "Infected", hasTeam "Survivor") {
+    chat "&c&lPlease wait for the event to end! &4✗"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+if or (gamemode "creative", inRegion "Spawn", inRegion "DuelsLobby") {
+    houseSpawn
+    stat "kit" set 0
+    stat "duels/status" set 0
+    stat "refill_cd" set 0
+    stat "ability_cd" set 0
+    chat "&a&lYou have been sent to spawn! &2&l✔"
+    exit
+}
+
+if (stat "punished" = 1) {
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    chat "&c&lYou can not do this while serving jail time!"
+    exit
+}
+
+if (stat "combat" > 0) {
+    chat "&c&lYou are current on a combat timer! &4✗ &7(%stat.player/combat%s)"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+if (stat "spawning" = 1) {
+    chat "&c&lYou are already doing /spawn!"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+stat "spawning" set 1
+
+chat "&a&lSending you to spawn in &2&l3"
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+pause 19
+
+if (stat "spawning" = 0) {
+    exit
+}
+
+chat "&a&lSending you to spawn in &2&l2"
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+pause 19
+
+if (stat "spawning" = 0) {
+    exit
+}
+
+chat "&a&lSending you to spawn in &2&l1"
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+pause 19
+
+if (stat "spawning" = 0) {
+    exit
+}
+
+houseSpawn
+
+resetInventory
+stat "spawning" set 0
+stat "kit" set 0
+stat "duels/status" set 0
+stat "refill_cd" set 0
+stat "ability_cd" set 0
+chat "&a&lYou have been sent to spawn! &2&l✔"

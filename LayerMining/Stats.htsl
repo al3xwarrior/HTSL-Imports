@@ -1,0 +1,39 @@
+stat "strength" set %stat.player/basestrength%
+stat "strength" inc 1
+
+stat "haste" set 0
+
+function "Pets_Area1"
+
+if (stat "haste" = 1) {
+    applyPotion "haste" 2 1 true
+}
+if (stat "haste" = 2) {
+    applyPotion "haste" 2 2 true
+}
+if (stat "haste" = 3) {
+    applyPotion "haste" 2 3 true
+}
+if (stat "haste" = 4) {
+    applyPotion "haste" 2 4 true
+}
+if (stat "haste" = 5) {
+    applyPotion "haste" 2 5 true
+}
+if (stat "haste" = 6) {
+    applyPotion "haste" 2 6 true
+}
+if (stat "haste" = 7) {
+    applyPotion "haste" 2 7 true
+}
+if (stat "haste" = 8) {
+    applyPotion "haste" 2 8 true
+}
+if (stat "haste" = 9) {
+    applyPotion "haste" 2 9 true
+}
+if (stat "haste" = 10) {
+    applyPotion "haste" 2 10 true
+}
+
+function "actionbar"

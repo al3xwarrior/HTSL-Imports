@@ -1,0 +1,12 @@
+sound "block.note_block.pling" 0.7 1.0 "invokers_location"
+chat "&7&m--------------------------------------------&r"
+chat "&6&lELECTION ENDED!"
+if (globalstat "m/mayor" = 1) {
+    chat "&fPlease welcome &lSIR CLUCKINGTON &fas this &eelections &fmayor!"
+}
+if (globalstat "m/mayor" = 2) {
+    chat "&fPlease welcome &eFARMER JOE&r &fas this &eelections &fmayor!"
+}
+chat "&r"
+chat "&7&o*Go put in your votes for the next election in the Barn at the Hub*"
+chat "&7&m--------------------------------------------"

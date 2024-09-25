@@ -1,0 +1,5 @@
+stat "isOwner" set 0
+if (inRegion "p1", globalstat "p1" = "%stat.player/playerid%"){
+    stat "isOwner" set 1
+    exit
+}

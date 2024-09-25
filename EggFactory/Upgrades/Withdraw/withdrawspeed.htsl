@@ -1,0 +1,25 @@
+if (stat "withspeedlvl" >= 5) {
+    chat "&4&l[!] &cYou are at the MAX level!"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+if (stat "money" >= "%stat.player/withspeedcost%") {
+
+} else {
+    chat "&4&l[!] &cYou don't have enough money! &7($%stat.player/money%/$%stat.player/withspeedcost%)"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+stat "money" dec "%stat.player/withspeedcost%"
+stat "withspeedcost" mult 15
+stat "withspeedcost" div 10
+
+chat "&2&l[✔] &aPurchase Successful!"
+sound "entity.player.levelup" 0.7 1.0 "invokers_location"
+
+stat "withspeedlvl" inc 1
+stat "withdrawreq" dec 1
+
+displayMenu "(!) Withdraw Upgrades (!)"

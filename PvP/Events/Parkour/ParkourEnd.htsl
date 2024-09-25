@@ -1,0 +1,37 @@
+if or (inRegion "ParkourEventRegion", inRegion "ParkourEventEnd", inRegion "ParkourEventBottom", inRegion "ParkourEventStart") {
+
+} else {
+    exit
+}
+
+sound "entity.wither.spawn" 0.7 1.1 "invokers_location"
+
+tp "house_spawn"
+resetInventory
+stat "kit" set 0
+setTeam "None"
+
+chat "&8&m------------------------------------"
+chat "&e&lPARKOUR &f&lEVENT &4&lENDED"
+chat "&r"
+if (globalstat "par/endbcid" = 0) {
+    chat "&cThe timer ran out... no one won :("
+    chat "&8&m------------------------------------"
+    exit
+}
+if (globalstat "par/endbcid" = "%stat.player/playerid%") {
+    stat "givegold" set 25
+    stat "givexp" set 20
+    function "CalcBonusStats"
+    stat "gold" inc "%stat.player/givegold%"
+    stat "xpneeded" dec "%stat.player/givexp%"
+    chat "&aYou won the event! &6%stat.player/givegold%⛃ &aand &b%stat.player/givexp%✥"
+    stat "givegold" set 0
+    stat "givexp" set 0
+    chat "&8&m------------------------------------"
+    exit
+}
+if (globalstat "par/endbcid" > 0) {
+    chat "&cYou lost the event! :("
+    chat "&8&m------------------------------------"
+}

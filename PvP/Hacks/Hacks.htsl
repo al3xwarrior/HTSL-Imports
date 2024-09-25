@@ -1,0 +1,49 @@
+if (stat "h/speed3" = 1) {
+    applyPotion "speed" 2 3 true
+}
+if (stat "h/resistance" = 1) {
+    applyPotion "resistance" 2 1 true
+}
+if (stat "h/resistance" = 2) {
+    applyPotion "resistance" 2 2 true
+}
+if (stat "h/resistance" = 3) {
+    applyPotion "resistance" 2 3 true
+}
+
+if (stat "h/anticd" = 1) {
+    stat "ability_cd" set 0
+}
+
+if or (stat "h/autosoup" = 0, inRegion "Spawn", gamemode "creative", health <= 0) {
+    exit
+}
+
+if (placeholder "%player.health%" <= 15 , hasItem "soup" metaData "Hotbar" anyAmount) {
+    chat "&7[&4&lHACKS&7] &2Auto Soup Triggered&c!"
+    removeItem "soup"
+    function "Soup"
+    exit
+}
+
+if (hasItem "soup" metaData "Hotbar" anyAmount) {
+    exit
+} else {
+    giveItem "soup" true "First Slot" false
+    pause 2
+    giveItem "soup" true "First Slot" false
+    pause 2
+    giveItem "soup" true "First Slot" false
+    pause 2
+    giveItem "soup" true "First Slot" false
+    pause 2
+    giveItem "soup" true "First Slot" false
+    pause 2
+    giveItem "soup" true "First Slot" false
+    pause 2
+    giveItem "soup" true "First Slot" false
+    pause 2
+    giveItem "soup" true "First Slot" false
+    pause 2
+    giveItem "soup" true "First Slot" false
+}

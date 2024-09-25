@@ -1,0 +1,50 @@
+// vampire
+if or (stat "perks/1" = 2, stat "perks/2" = 2, stat "perks/3" = 2) {
+    stat "temp" set 1
+    stat "temp" inc "%stat.player/perks/vamp%"
+    changeHealth inc "%stat.player/temp%"
+}
+
+// chef
+if or (stat "perks/1" = 3, stat "perks/2" = 3, stat "perks/3" = 3) {
+    stat "hasperk" set 1
+} else {
+    stat "hasperk" set 0
+}
+if (stat "hasperk" = 1, stat "healingmethod" = 0, stat "perks/vamp" = 1) {
+    giveItem "soup" true -1 false
+}
+if (stat "hasperk" = 1, stat "healingmethod" = 0, stat "perks/vamp" = 2) {
+    giveItem "soup" true -1 false
+}
+if (stat "hasperk" = 1, stat "healingmethod" = 0, stat "perks/vamp" = 3) {
+    giveItem "soup" true -1 false
+}
+if (stat "hasperk" = 1, stat "healingmethod" = 1, stat "perks/vamp" = 1) {
+    giveItem "healpotion" true -1 false
+}
+if (stat "hasperk" = 1, stat "healingmethod" = 1, stat "perks/vamp" = 2) {
+    giveItem "healpotion" true -1 false
+}
+if (stat "hasperk" = 1, stat "healingmethod" = 1, stat "perks/vamp" = 3) {
+    giveItem "healpotion" true -1 false
+}
+
+// thick
+if (stat "perks/1" = 4, stat "perks/2" = 4, stat "perks/3" = 4) {
+    stat "hasperk" set 1
+} else {
+    stat "hasperk" set 0
+}
+if (stat "hasperk" = 1, stat "perks/thick" = 1) {
+    applyPotion "Resistance" 1 1 true
+}
+if (stat "hasperk" = 1, stat "perks/thick" = 2) {
+    applyPotion "Resistance" 2 1 true
+}
+if (stat "hasperk" = 1, stat "perks/thick" = 3) {
+    applyPotion "Resistance" 3 1 true
+}
+
+stat "hasperk" set 0
+stat "temp" set 0

@@ -1,0 +1,3 @@
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+stat "perks/editing" set 3
+displayMenu "Perks"

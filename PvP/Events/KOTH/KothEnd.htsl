@@ -1,0 +1,30 @@
+stat "koth" set 0
+
+if or (inRegion "KOTH", inRegion "KOTH_Event", inRegion "KOTH_WaitingRoom") {
+
+} else {
+    exit
+}
+
+sound "entity.wither.spawn" 0.7 1.1 "invokers_location"
+chat "&8&m------------------------------------"
+chat "&6&lKOTH &f&lEVENT &4&lENDED"
+chat "&r"
+if (globalstat "koth/first" = "%stat.player/playerid%") {
+    stat "givegold" set 50
+    stat "givexp" set 100
+    function "CalcBonusStats"
+    stat "gold" inc "%stat.player/givegold%"
+    stat "xpneeded" dec "%stat.player/givexp%"
+    chat "&aYou won the event! &6%stat.player/givegold%⛃ &aand &b%stat.player/givexp%✥"
+    stat "givegold" set 0
+    stat "givexp" set 0
+} else {
+    chat "&cYou didn't win :("
+}
+chat "&8&m------------------------------------"
+
+houseSpawn
+resetInventory
+clearEffects
+stat "kit" set 0

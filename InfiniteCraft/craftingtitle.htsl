@@ -1,0 +1,3 @@
+if (stat "crafting" = 2) {
+    title "&%random.int/1 10%⦿ &%random.int/1 10%⦿ &%random.int/1 10%⦿" "&7&o(Queue Position: #%stat.player/queuepos%)" 0 2 1
+}

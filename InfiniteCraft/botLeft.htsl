@@ -1,0 +1,5 @@
+if (globalstat "bot" = 0) {
+    stat "crafting" set 0
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    chat "&cThe bot left due to an error! Crafts have been aborted. Please wait!"
+}

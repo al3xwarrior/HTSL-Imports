@@ -1,0 +1,232 @@
+//Dynamic Teleportation for HOUSING PLUS (Code By VariousCacti)
+//Requires latest public version of HTSL
+//GUIDE:
+//Teleport yourself to -130 0 -115
+//Create a function called DT1
+//Import function
+
+stat dx = %stat.player/targetx%
+stat dx -= -129
+stat dy = %stat.player/targety%
+stat dy -= 1
+stat dz = %stat.player/targetz%
+stat dz -= -114
+tp custom_coordinates "-129 1 -114"
+
+if (stat dx >= 245) {
+    tp custom_coordinates "~245 ~ ~"
+    stat dx -= 245
+}
+if (stat dx >= 196) {
+    tp custom_coordinates "~196 ~ ~"
+    stat dx -= 196
+}
+if (stat dx >= 147) {
+    tp custom_coordinates "~147 ~ ~"
+    stat dx -= 147
+}
+if (stat dx >= 98) {
+    tp custom_coordinates "~98 ~ ~"
+    stat dx -= 98
+}
+if (stat dx >= 49) {
+    tp custom_coordinates "~49 ~ ~"
+    stat dx -= 49
+}
+if (stat dx >= 42) {
+    tp custom_coordinates "~42 ~ ~"
+    stat dx -= 42
+}
+if (stat dx >= 35) {
+    tp custom_coordinates "~35 ~ ~"
+    stat dx -= 35
+}
+if (stat dx >= 28) {
+    tp custom_coordinates "~28 ~ ~"
+    stat dx -= 28
+}
+if (stat dx >= 21) {
+    tp custom_coordinates "~21 ~ ~"
+    stat dx -= 21
+}
+if (stat dx >= 14) {
+    tp custom_coordinates "~14 ~ ~"
+    stat dx -= 14
+}
+if (stat dx >= 7) {
+    tp custom_coordinates "~7 ~ ~"
+    stat dx -= 7
+}
+if (stat dx >= 6) {
+    tp custom_coordinates "~6 ~ ~"
+    stat dx -= 6
+}
+if (stat dx >= 5) {
+    tp custom_coordinates "~5 ~ ~"
+    stat dx -= 5
+}
+if (stat dx >= 4) {
+    tp custom_coordinates "~4 ~ ~"
+    stat dx -= 4
+}
+if (stat dx >= 3) {
+    tp custom_coordinates "~3 ~ ~"
+    stat dx -= 3
+}
+
+goto function "DT2"
+if (stat dx >= 2) {
+    tp custom_coordinates "~2 ~ ~"
+    stat dx -= 2
+}
+if (stat dx >= 1) {
+    tp custom_coordinates "~1 ~ ~"
+    stat dx -= 1
+}
+if (stat dy >= 245) {
+    tp custom_coordinates "~ ~245 ~"
+    stat dy -= 245
+}
+if (stat dy >= 196) {
+    tp custom_coordinates "~ ~196 ~"
+    stat dy -= 196
+}
+if (stat dy >= 147) {
+    tp custom_coordinates "~ ~147 ~"
+    stat dy -= 147
+}
+if (stat dy >= 98) {
+    tp custom_coordinates "~ ~98 ~"
+    stat dy -= 98
+}
+if (stat dy >= 49) {
+    tp custom_coordinates "~ ~49 ~"
+    stat dy -= 49
+}
+if (stat dy >= 42) {
+    tp custom_coordinates "~ ~42 ~"
+    stat dy -= 42
+}
+if (stat dy >= 35) {
+    tp custom_coordinates "~ ~35 ~"
+    stat dy -= 35
+}
+if (stat dy >= 28) {
+    tp custom_coordinates "~ ~28 ~"
+    stat dy -= 28
+}
+if (stat dy >= 21) {
+    tp custom_coordinates "~ ~21 ~"
+    stat dy -= 21
+}
+if (stat dy >= 14) {
+    tp custom_coordinates "~ ~14 ~"
+    stat dy -= 14
+}
+if (stat dy >= 7) {
+    tp custom_coordinates "~ ~7 ~"
+    stat dy -= 7
+}
+if (stat dy >= 6) {
+    tp custom_coordinates "~ ~6 ~"
+    stat dy -= 6
+}
+if (stat dy >= 5) {
+    tp custom_coordinates "~ ~5 ~"
+    stat dy -= 5
+}
+
+goto function "DT3"
+if (stat dy >= 4) {
+    tp custom_coordinates "~ ~4 ~"
+    stat dy -= 4
+}
+if (stat dy >= 3) {
+    tp custom_coordinates "~ ~3 ~"
+    stat dy -= 3
+}
+if (stat dy >= 2) {
+    tp custom_coordinates "~ ~2 ~"
+    stat dy -= 2
+}
+if (stat dy >= 1) {
+    tp custom_coordinates "~ ~1 ~"
+    stat dy -= 1
+}
+if (stat dz >= 245) {
+    tp custom_coordinates "~ ~ ~245"
+    stat dz -= 245
+}
+if (stat dz >= 196) {
+    tp custom_coordinates "~ ~ ~196"
+    stat dz -= 196
+}
+if (stat dz >= 147) {
+    tp custom_coordinates "~ ~ ~147"
+    stat dz -= 147
+}
+if (stat dz >= 98) {
+    tp custom_coordinates "~ ~ ~98"
+    stat dz -= 98
+}
+if (stat dz >= 49) {
+    tp custom_coordinates "~ ~ ~49"
+    stat dz -= 49
+}
+if (stat dz >= 42) {
+    tp custom_coordinates "~ ~ ~42"
+    stat dz -= 42
+}
+if (stat dz >= 35) {
+    tp custom_coordinates "~ ~ ~35"
+    stat dz -= 35
+}
+if (stat dz >= 28) {
+    tp custom_coordinates "~ ~ ~28"
+    stat dz -= 28
+}
+if (stat dz >= 21) {
+    tp custom_coordinates "~ ~ ~21"
+    stat dz -= 21
+}
+if (stat dz >= 14) {
+    tp custom_coordinates "~ ~ ~14"
+    stat dz -= 14
+}
+if (stat dz >= 7) {
+    tp custom_coordinates "~ ~ ~7"
+    stat dz -= 7
+}
+
+goto function "DT4"
+if (stat dz >= 6) {
+    tp custom_coordinates "~ ~ ~6"
+    stat dz -= 6
+}
+if (stat dz >= 5) {
+    tp custom_coordinates "~ ~ ~5"
+    stat dz -= 5
+}
+if (stat dz >= 4) {
+    tp custom_coordinates "~ ~ ~4"
+    stat dz -= 4
+}
+if (stat dz >= 3) {
+    tp custom_coordinates "~ ~ ~3"
+    stat dz -= 3
+}
+if (stat dz >= 2) {
+    tp custom_coordinates "~ ~ ~2"
+    stat dz -= 2
+}
+if (stat dz >= 1) {
+    tp custom_coordinates "~ ~ ~1"
+    stat dz -= 1
+}
+
+goto function "DT1"
+function "DT2"
+goto function "DT2"
+function "DT3"
+goto function "DT3"
+function "DT4"

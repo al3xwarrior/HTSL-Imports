@@ -1,0 +1,30 @@
+
+// This function is triggered when any of the 3 vote items are clicked. This applys the vote if they have not voted.
+
+if (stat vote = 1) {
+    chat "&4&lGAME MASTER &7> &fHaha! You can't take back a vote!"
+    sound "Anvil Land" 0.7 0.5 "invokers_location"
+    exit
+}
+
+if (hasItem "BOT_LEFT" metadata Hand anyAmount) {
+    stat vote set 1
+    sound "Cat Meow" 0.7 2.0 "invokers_location"
+    chat "&4&lGAME MASTER &7> &fI hope your happy with your choice!"
+    globalstat votes_l inc 1
+    exit
+}
+if (hasItem "BOT_FORWARD" metadata Hand anyAmount) {
+    stat vote set 1
+    sound "Cat Meow" 0.7 2.0 "invokers_location"
+    chat "&4&lGAME MASTER &7> &fI hope your happy with your choice!"
+    globalstat votes_w inc 1
+    exit
+}
+if (hasItem "BOT_RIGHT" metadata Hand anyAmount) {
+    stat vote set 1
+    sound "Cat Meow" 0.7 2.0 "invokers_location"
+    chat "&4&lGAME MASTER &7> &fI hope your happy with your choice!"
+    globalstat votes_r inc 1
+    exit
+}

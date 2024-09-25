@@ -1,0 +1,5 @@
+sound "entity.wither.spawn" 0.7 1.1 "invokers_location"
+chat "&8&m------------------------------------"
+chat "&6&lKOTH &f&lEvent!"
+chat "&fStay in the middle for the longest! &6&l/event"
+chat "&8&m------------------------------------"

@@ -1,0 +1,16 @@
+stat "tempgold" set "%random.int/1 3%"
+if (hasGroup "Gold" true) {
+    stat "tempgold" inc 1
+}
+if (hasGroup "Diamond" true) {
+    stat "tempgold" inc 1
+}
+if or (hasGroup "EmeraldArena" true, hasGroup "EmeraldLobby" true) {
+    stat "tempgold" inc 2
+}
+
+stat "gold" inc "%stat.player/tempgold%"
+
+if (stat "playtimeearn" = 2) {
+    chat "&aPlaytime has earned you &e+%stat.player/tempgold%⛃ &7(%player.group.tag% Perk&7)"
+}

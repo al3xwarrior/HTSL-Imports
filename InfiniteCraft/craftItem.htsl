@@ -1,0 +1,75 @@
+if (globalstat "bot" = 0) {
+    chat "&cThe bot is not here! Please wait for it to return."
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+if (globalstat "crafting" > 0) {
+    chat "&cYou are already crafting something! Please wait for that to finish!"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+stat "crafting" set 1
+globalstat "crafting" set 1
+title "&a&l3" "&eHold the &nFIRST ITEM&r &eyou would like to combine." 0 2 1
+sound "block.note_block.pling" 0.7 0.7
+pause 20
+title "&6&l2" "&eHold the &nFIRST ITEM&r &eyou would like to combine." 0 2 1
+sound "block.note_block.pling" 0.7 0.9
+pause 20
+title "&c&l1" "&eHold the &nFIRST ITEM&r &eyou would like to combine." 0 2 1
+sound "block.note_block.pling" 0.7 1.1
+pause 20
+title "&2⬤ ⬤ ⬤" "&a&lGETTING ITEM INFORMATION" 0 5 1
+function "GetItem1ID_1"
+if (stat "id1" = 0) {
+    title "&c&lERROR" "&4Invalid Item!" 0 5 1
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    stat "crafting" set 0
+    globalstat "crafting" set 0
+    exit
+}
+sound "block.note_block.pling" 0.7 2.0
+title "&a&lSUCCESS!" "&eNow hold the &nSECOND ITEM&r &eyou would like to combine." 0 2 1
+pause 20
+
+function "CraftItem2" false
+goto function "CraftItem2"
+
+title "&a&l3" "&eNow hold the &nSECOND ITEM&r &eyou would like to combine." 0 2 1
+sound "block.note_block.pling" 0.7 0.7
+pause 20
+title "&6&l2" "&eNow hold the &nSECOND ITEM&r &eyou would like to combine." 0 2 1
+sound "block.note_block.pling" 0.7 0.9
+pause 20
+title "&c&l1" "&eNow hold the &nSECOND ITEM&r &eyou would like to combine." 0 2 1
+sound "block.note_block.pling" 0.7 1.1
+pause 20
+title "&2⬤ ⬤ ⬤" "&a&lGETTING ITEM INFORMATION" 0 5 1
+function "GetItem2ID_1"
+if (stat "id2" = 0) {
+    title "&c&lERROR" "&4Invalid Item!" 0 5 1
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    stat "crafting" set 0
+    globalstat "crafting" set 0
+    exit
+}
+sound "block.note_block.pling" 0.7 2.0
+title "&a&lSUCCESS!" "&eCrafting..." 0 2 1
+
+globalstat "itemid1" set "%stat.player/id1%"
+globalstat "itemid2" set "%stat.player/id2%"
+globalstat "plrid" set "%stat.player/playerid%"
+
+function "SendDataToBot" true
+
+globalstat "queue" inc 1
+stat "queuepos" set "%stat.global/queue%"
+
+pause 20
+
+if (stat "crafting" = 0) {
+    exit
+}
+stat "crafting" set 2

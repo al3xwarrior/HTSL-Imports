@@ -1,0 +1,30 @@
+// Modulus (by BusterBrown)
+
+// 589
+
+stat "modtemp" set "%stat.player/modinput%"
+stat "modoutput" set "%stat.player/modinput%"
+
+// 10 being the divisor
+stat "modtemp" /= 10
+stat "modtemp" *= 10
+
+// modoutput is output
+stat "modoutput" -= "%stat.player/modtemp%"
+
+// cleanup
+stat "modinput" set 0
+stat "modtemp" set 0
+
+// examples:
+// - input: 123456
+// - mod: 10
+// - output: 6
+//--------------------
+// - input: 123456
+// - mod: 100
+// - output: 56
+//--------------------
+// - input: 123456
+// - mod: 1000
+// - output: 456

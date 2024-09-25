@@ -1,0 +1,19 @@
+if (inRegion "KOTH_Event") {
+
+} else {
+    exit
+}
+
+stat "koth" inc 1
+
+if (stat "koth" > "%stat.global/koth/highest%") {
+    globalstat "koth/highest" set "%stat.player/koth%"
+} else {
+    exit
+}
+if (stat "playerid" = "%stat.global/koth/first%") {
+
+} else {
+    globalstat "koth/first" set "%stat.player/playerid%"
+    chat "&6&lKOTH EVENT &eYou are now #1!"
+}

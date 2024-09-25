@@ -1,0 +1,67 @@
+// in playtime function every second
+
+// powup/1/timer
+// powup/1/active
+
+if (globalstat "powup/1/timer" > 0) {
+    globalstat "powup/1/timer" dec 1
+}
+if (globalstat "powup/1/timer" <= 0) {
+    globalstat "powup/1/active" set 2
+} else {
+    globalstat "powup/1/active" set 4
+}
+
+if (globalstat "powup/2/timer" > 0) {
+    globalstat "powup/2/timer" dec 1
+}
+if (globalstat "powup/2/timer" <= 0) {
+    globalstat "powup/2/active" set 2
+} else {
+    globalstat "powup/2/active" set 4
+}
+
+if (globalstat "powup/3/timer" > 0) {
+    globalstat "powup/3/timer" dec 1
+}
+if (globalstat "powup/3/timer" <= 0) {
+    globalstat "powup/3/active" set 2
+} else {
+    globalstat "powup/3/active" set 4
+}
+
+if (globalstat "powup/4/timer" > 0) {
+    globalstat "powup/4/timer" dec 1
+}
+if (globalstat "powup/4/timer" <= 0) {
+    globalstat "powup/4/active" set 2
+} else {
+    globalstat "powup/4/active" set 4
+}
+
+if (globalstat "powup/5/timer" > 0) {
+    globalstat "powup/5/timer" dec 1
+}
+if (globalstat "powup/5/timer" <= 0) {
+    globalstat "powup/5/active" set 2
+} else {
+    globalstat "powup/5/active" set 4
+}
+
+if (globalstat "powup/6/timer" > 0) {
+    globalstat "powup/6/timer" dec 1
+}
+if (globalstat "powup/6/timer" <= 0) {
+    globalstat "powup/6/active" set 2
+} else {
+    globalstat "powup/6/active" set 4
+}
+
+if (globalstat "powup/7/timer" > 0) {
+    globalstat "powup/7/timer" dec 1
+}
+if (globalstat "powup/7/timer" <= 0) {
+    globalstat "powup/7/active" set 2
+} else {
+    globalstat "powup/7/active" set 4
+}

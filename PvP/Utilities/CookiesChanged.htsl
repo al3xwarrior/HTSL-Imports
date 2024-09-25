@@ -1,0 +1,9 @@
+stat "cookiestemp" set "%house.cookies%"
+stat "cookiestemp" dec "%stat.global/cookiegoal%"
+
+chat "&e&k|&r &6Someone just gave &e&l%stat.global/cookiestemp% cookies&6! &e&k|"
+if (stat "cookiestemp" > 0) {
+    chat "&r &r &r &7 {arrow} that means only %stat.player/cookiestemp% cookies till the goal!"
+}
+
+stat "cookiestemp" set 0

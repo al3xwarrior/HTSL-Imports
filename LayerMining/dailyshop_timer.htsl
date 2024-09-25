@@ -1,0 +1,15 @@
+// r_shop_m r_shop_s
+
+globalstat "r_shop_s" dec 1
+
+if (globalstat "r_shop_s" <= 0, globalstat "r_shop_m" <= 0) {
+    globalstat "r_shop_m" set 15
+    globalstat "r_shop_s" set 0
+    function "new_shop" false
+    exit
+}
+
+if (globalstat "r_shop_s" <= 0) {
+    globalstat "r_shop_m" dec 1
+    globalstat "r_shop_s" set 59
+}

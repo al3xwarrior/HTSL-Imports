@@ -1,0 +1,20 @@
+
+if (hasItem "rod" item_type Hand anyAmount) {
+
+} else {
+    chat "&c&lYou are not holding a rod!"
+    sound "block.anvil.land" 0.7 1 "invokers_location"
+    exit
+}
+
+if (stat "diamonds" >= 25) {
+
+} else {
+    chat "&c&lYou don't have enough diamonds!"
+    sound "block.anvil.land" 0.7 1 "invokers_location"
+    exit
+}
+
+stat "diamonds" dec 25
+enchant "lure" 1
+sound "block.anvil.use" 0.7 1 "invokers_location"

@@ -1,0 +1,17 @@
+if (stat "zone" = 11) {
+
+} else {
+    chat "&c&lYou already have this region unlocked!"
+    sound "block.anvil.land" 0.7 0.5 "invokers_location"
+    exit
+}
+
+if (stat "gold" >= 700000000) {
+    stat "gold" dec 700000000
+    stat "zone" set 12
+    title "&0" "&a&lUNLOCKED!" 1 2 1
+    sound "entity.player.levelup" 0.7 1.0 "invokers_location"
+} else {
+    chat "&c&lYou don't have enough gold!"
+    sound "block.anvil.land" 0.7 0.5 "invokers_location"
+}

@@ -1,0 +1,50 @@
+// TO UPDATE
+
+
+
+// Player Stats
+%stat.player/weaponslot% = 1 - 9 (for kit editor)
+%stat.player/abilityslot% = 1 - 9 (for kit editor)
+%stat.player/ks% = ? (kill streak)
+%stat.player/ability_cd% = ? (ability cooldown times)
+%stat.player/goldmulti% = ? (applies a multiplier to gold locally)
+%stat.player/kit% = 0 or 1 (0 means no kit applied 1 means kit applied)
+%stat.player/refill_cd% = ? (Seconds between refill)
+%stat.player/combat% = ? (Determines if they are in combat)
+%stat.player/fishcaught% = ? (self explanitory)
+%stat.player/safefall% = ? (while this is > 0 the player will not take fall dmg)
+%stat.player/confirmevent% = 0 or 1 (0 means they need to click again, 1 means start the event)
+%stat.player/leftincombat% = 0 or 1 (0 means no, 1 means left in combat)
+%stat.player/warnings% = ? (3 warnings and your in the banned box for 1 hour)
+%stat.player/punishments% = ? (amount of punishments executed on them)
+%stat.player/healingmethod% = 0 or 1 (0 is soup, 1 is pots)
+%stat.player/titlemsg% = 0, 1, 2 (0 = off, 1 = victim, 2 = you)
+
+// Global Stats
+%stat.global/preventstats% = 0 or 1 (for events that are OP and prevent changes in stats)
+%stat.global/goldmulti% = ? (applies a multiplier to gold)
+%stat.global/ability_id% = ? (the id of the ability used, that affects other players)
+%stat.global/ability_plrid% = ? (the player id of the user who used the ability)
+%stat.global/event_cd% = ? (cooldown on events)
+%stat.global/bountytoclaim% = ? (based on the bounty the victim had)
+
+// DUELS STATS
+// duels/incomeid is the attackers id
+
+// %stat.player/duels/outgoingid% = ? (the id of the player YOU are requesting to duel)
+// %stat.player/duels/incomeid% = ? (the id of the player requesting YOU to duel)
+// %stat.player/duels/status% = -1 or 0 or <arena_id> (-1 = not in duels lobby, 0 = not in a duel, 1 = arena_id)
+// %stat.global/arena/<arena_id>% = 0 or <kit_id> (0 = inactive, >0 = amount of players fighting in arena)
+// %stat.global/arena/<arena_id>/p1% = ? (player #1's player id in arena <arena id>)
+// %stat.global/arena/<arena_id>/p2% = ? (player #2's player id in arena <arena_id>)
+// %stat.global/arena/<arena_id>/t% = ? (timer in a arena)
+
+// globalstat dueltemp1 is the attacker
+// globalstat dueltemp2 is the victim
+
+// ANTICHEAT STATS
+
+// %stat.global/ac/washit% = 0 or 1 (0 is any other type of damage, 1 is player attack)
+// %stat.global/ac/victimx% = ? (victims x pos)
+// %stat.global/ac/victimy% = ? (victims y pos)
+// %stat.global/ac/victimz% = ? (victims z pos)

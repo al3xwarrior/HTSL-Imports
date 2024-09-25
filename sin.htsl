@@ -1,0 +1,84 @@
+// by Variouscacti
+
+// How To Use:
+// Name function "sin" for compatibility with my other functions
+// Input a value to the stat "sinInput" 1000 times the intended input
+// Output will be in the stat "sinOutput", 1000 times the intended output, where -1000 <= output <= 1000 (Calculation is in degrees)
+
+// Desmos graph: https://www.desmos.com/calculator/fvr7ufnxyt
+// Source for estimation: https://scholarworks.umt.edu/cgi/viewcontent.cgi?article=1313&context=tme
+
+// Enjoy!
+
+// check for negative
+if () {
+stat sinTemp0 = %stat.player/sinInput%
+stat sinTemp0 /= 360000
+stat sinTemp0 *= 360000
+stat sinTemp1 = %stat.player/sinInput%
+stat sinTemp1 -= %stat.player/sinTemp0%
+}
+if or (stat sinTemp1 > 180000, stat sinTemp1 < -180000) {
+stat sinNegative = -1
+
+// modulate input to 180
+stat sinTemp0 = %stat.player/sinInput%
+stat sinTemp0 /= 180000
+stat sinTemp0 *= 180000
+stat sinInput -= %stat.player/sinTemp0%
+} else {
+stat sinNegative = 1
+stat sinTemp0 = %stat.player/sinInput%
+stat sinTemp0 /= 180000
+stat sinTemp0 *= 180000
+stat sinInput -= %stat.player/sinTemp0%
+}
+
+// calculate sin
+if (stat sinInput < 0) {
+stat sinNegative *= -1
+stat sinInput += 180000
+stat sinOutput = 180000
+stat sinOutput -= %stat.player/sinInput%
+stat sinOutput *= %stat.player/sinInput%
+} else {
+stat sinOutput = 180000
+stat sinOutput -= %stat.player/sinInput%
+stat sinOutput *= %stat.player/sinInput%
+}
+if () {
+stat sinTemp0 = 2000000
+stat sinTemp0 *= %stat.player/sinOutput%
+stat sinTemp1 = 40500000000
+stat sinTemp1 -= %stat.player/sinOutput%
+stat sinTemp0 /= %stat.player/sinTemp1%
+}
+if () {
+stat sinTemp1 = 3100
+stat sinTemp1 *= %stat.player/sinOutput%
+stat sinTemp1 /= 64800000
+stat sinOutput = 180000
+stat sinOutput -= %stat.player/sinInput%
+}
+if () {
+stat sinOutput *= %stat.player/sinOutput%
+stat sinOutput /= 10000000
+stat sinOutput *= %stat.player/sinInput%
+stat sinOutput *= %stat.player/sinInput%
+stat sinOutput /= 58320000
+}
+if () {
+stat sinOutput += %stat.player/sinTemp0%
+stat sinOutput += %stat.player/sinTemp1%
+stat sinOutput += 500
+stat sinOutput /= 1000
+stat sinOutput *= %stat.player/sinNegative%
+}
+
+// cleanup
+if () {
+stat sinInput = 0
+stat sinTemp0 = 0
+stat sinTemp1 = 0
+stat sinNegative = 0
+}

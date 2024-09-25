@@ -1,0 +1,17 @@
+globalstat "jugger/mode" set 1
+globalstat "jugger/chosen" set 0
+
+globalstat "jugger/bounty" set "%random.int/130 151%"
+
+function "Juggernaut" true
+closeMenu
+
+pause 10
+
+if (globalstat "jugger/chosen" = 0) {
+    globalstat "jugger/bounty" set 0
+    globalstat "jugger/chosen" set 0
+    globalstat "jugger/mode" set 0
+
+    chat "&c&lErm... well thats awkward. No one was in the arena to be chosen as a Juggernaut!"
+}

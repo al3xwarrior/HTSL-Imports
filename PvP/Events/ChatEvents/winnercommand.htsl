@@ -1,0 +1,14 @@
+
+stat "givegold" set 15
+stat "givexp" set 8
+function "CalcBonusStats"
+stat "gold" inc "%stat.player/givegold%"
+stat "xpneeded" dec "%stat.player/givexp%"
+globalstat "CE/over" set 9999
+globalstat "CE/winner" set "%stat.player/playerid%"
+function "ChatEventEnd" true
+pause 5
+globalstat "CE/winner" set 0
+
+stat "givegold" set 0
+stat "givexp" set 0

@@ -1,0 +1,19 @@
+
+if () {
+stat "depamountcost1" set "%stat.player/depamountcost%"
+stat "depamountcost1" mult 10
+stat "depamountcost2" set "%stat.player/depamountcost%"
+stat "depamountcost2" mult 100
+stat "depamountcost3" set "%stat.player/depamountcost%"
+stat "depamountcost3" mult 1000
+}
+if () {
+stat "depamountcost4" set "%stat.player/depamountcost%"
+stat "depamountcost4" mult 10000
+stat "depamountcost5" set "%stat.player/depamountcost%"
+stat "depamountcost5" mult 100000
+stat "depamountcost6" set "%stat.player/depamountcost%"
+stat "depamountcost6" mult 1000000
+}
+
+displayMenu "Deposit Amount Upgrades"

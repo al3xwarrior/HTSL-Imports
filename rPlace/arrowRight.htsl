@@ -1,0 +1,16 @@
+// move the block select page 1 to the right
+
+pause 10
+if or (stat "canaction" = 0, stat "status" = 0) {
+    exit
+}
+
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+if (stat "status" >= 6) {
+    stat "status" set 1
+    function "giveNewBlocks" false
+    exit
+}
+
+stat "status" inc 1
+function "giveNewBlocks" false

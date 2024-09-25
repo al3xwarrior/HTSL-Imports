@@ -1,0 +1,58 @@
+// e1cost
+
+// Does the player have enough tokens?
+if (stat "tokens" < "%stat.player/e1cost%") {
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    chat "&cSorry you don't have enough tokens."
+    exit
+}
+
+// We are upgrading 5 time so lets make sure it wouldnt go over the max
+stat "amountoupgrade" set 5
+function "canUpgrade" false
+if (stat "canupgrade" = 0) {
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    chat "&cSorry but this upgrade would go over the max level."
+    exit
+}
+
+// Remove tokens
+stat "tokens" dec "%stat.player/e5cost%"
+
+// Increase Level
+if (stat "toenchant" = 1) {
+    stat "e/efficiency" inc "%stat.player/amountoupgrade%"
+}
+if (stat "toenchant" = 2) {
+    stat "e/haste" inc "%stat.player/amountoupgrade%"
+}
+if (stat "toenchant" = 3) {
+    stat "e/tokenmulti" inc "%stat.player/amountoupgrade%"
+}
+if (stat "toenchant" = 4) {
+    stat "e/gemfinder" inc "%stat.player/amountoupgrade%"
+}
+if (stat "toenchant" = 5) {
+    stat "e/keyfinder" inc "%stat.player/amountoupgrade%"
+}
+if (stat "toenchant" = 6) {
+    stat "e/zminer" inc "%stat.player/amountoupgrade%"
+}
+if (stat "toenchant" = 7) {
+    stat "e/cap" inc "%stat.player/amountoupgrade%"
+}
+if (stat "toenchant" = 8) {
+    stat "e/explosive" inc "%stat.player/amountoupgrade%"
+}
+if (stat "toenchant" = 9) {
+    stat "e/edupe" inc "%stat.player/amountoupgrade%"
+}
+
+// Increase the cost
+function "increaseCost" false
+
+// Interaction
+sound "Level Up" 0.7 1 "invokers_location"
+
+// Refresh menu
+displayMenu "Pickaxe Enchants"

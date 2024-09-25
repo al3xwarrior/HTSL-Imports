@@ -1,0 +1,19 @@
+if (stat "sp/manaregen" = 0, stat "sp/mana" = 0, stat "sp/hpregen" = 0, stat "sp/hp" = 0) {
+    chat "&cAll Skills are Level 0!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+if (stat "gems" >= 500) {
+    stat "gems" dec 500
+    stat "skillpoints" inc "%stat.player/sp/manaregen%"
+    stat "skillpoints" inc "%stat.player/sp/mana%"
+    stat "skillpoints" inc "%stat.player/sp/hpregen%"
+    stat "skillpoints" inc "%stat.player/sp/hp%"
+    sound "Explode" 0.7 1 "invokers_location"
+    function "resetSkillPoints" false
+    displayMenu "Skill Point System"
+} else {
+    chat "&cYou dont have enough gems!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+}

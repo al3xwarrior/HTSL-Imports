@@ -1,0 +1,4 @@
+chat "Starting game gg"
+
+globalstat "islandtp" set 0
+function "sendInIslands" true

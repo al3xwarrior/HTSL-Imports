@@ -1,0 +1,21 @@
+// m/hours m/minutes m/seconds
+
+globalstat "m/seconds" dec 1
+
+if (globalstat "m/hours" <= 0, globalstat "m/minutes" <= 0, globalstat "m/seconds" <= 0) {
+    function "newelection" false
+    exit
+}
+
+if (globalstat "m/minutes" <= 0, globalstat "m/seconds" <= -1) {
+    globalstat "m/hours" dec 1
+    globalstat "m/minutes" set 59
+    globalstat "m/seconds" set 59
+    exit
+}
+
+if (globalstat "m/seconds" <= -1) {
+    globalstat "m/minutes" dec 1
+    globalstat "m/seconds" set 59
+    exit
+}

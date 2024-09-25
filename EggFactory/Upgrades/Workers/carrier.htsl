@@ -1,0 +1,18 @@
+if (stat "money" >= "%stat.player/carriercost%") {
+
+} else {
+    chat "&4&l[!] &cYou don't have enough money! &7($%stat.player/money%/$%stat.player/carriercost%)"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+stat "money" dec "%stat.player/carriercost%"
+stat "carriercost" mult 13
+stat "carriercost" div 10
+
+chat "&2&l[✔] &aPurchase Successful!"
+sound "entity.player.levelup" 0.7 1.0 "invokers_location"
+
+stat "carrierlvl" inc 1
+
+displayMenu "(⸕) Hire Workers (⸕)"

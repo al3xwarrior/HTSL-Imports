@@ -1,0 +1,4 @@
+if (inRegion "p1", globalstat "kickHouseID" = 1) {
+    houseSpawn
+    chat "&c&lThe Plot you were in was abandoned by the Owner!"
+}

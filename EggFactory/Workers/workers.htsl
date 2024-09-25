@@ -1,0 +1,25 @@
+// carrierlvl
+// breederlvl
+
+
+// breeder is simple
+if (stat "breederlvl" >= 1, stat "breedersleep" = 0) {
+    stat "chickens" inc "%stat.player/breederlvl%"
+    stat "breedergains" inc "%stat.player/breederlvl%"
+}
+
+// carrier is more complex
+if or (stat "carrierlvl" <= 0, stat "eggstowith" <= 0, stat "carriersleep" = 1) {
+    exit
+}
+
+if (stat "carrierlvl" >= "%stat.player/eggstowith%") {
+    stat "eggsindep" inc "%stat.player/eggstowith%"
+    stat "carriergains" inc "%stat.player/eggstowith%"
+    stat "eggstowith" set 0
+    exit
+}
+
+stat "eggsindep" inc "%stat.player/carrierlvl%"
+stat "carriergains" inc "%stat.player/carrierlvl%"
+stat "eggstowith" dec "%stat.player/carrierlvl%"

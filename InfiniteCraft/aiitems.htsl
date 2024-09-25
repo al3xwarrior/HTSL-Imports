@@ -1,0 +1,1866 @@
+// Block 1: Items 1 to 15
+if (hasItem "itemid_1" metadata Hand anyAmount) {
+    stat "id2" set 1
+    exit
+}
+if (hasItem "itemid_2" metadata Hand anyAmount) {
+    stat "id2" set 2
+    exit
+}
+if (hasItem "itemid_3" metadata Hand anyAmount) {
+    stat "id2" set 3
+    exit
+}
+if (hasItem "itemid_4" metadata Hand anyAmount) {
+    stat "id2" set 4
+    exit
+}
+if (hasItem "itemid_5" metadata Hand anyAmount) {
+    stat "id2" set 5
+    exit
+}
+if (hasItem "itemid_6" metadata Hand anyAmount) {
+    stat "id2" set 6
+    exit
+}
+if (hasItem "itemid_7" metadata Hand anyAmount) {
+    stat "id2" set 7
+    exit
+}
+if (hasItem "itemid_9" metadata Hand anyAmount) {
+    stat "id2" set 9
+    exit
+}
+if (hasItem "itemid_10" metadata Hand anyAmount) {
+    stat "id2" set 10
+    exit
+}
+if (hasItem "itemid_11" metadata Hand anyAmount) {
+    stat "id2" set 11
+    exit
+}
+if (hasItem "itemid_12" metadata Hand anyAmount) {
+    stat "id2" set 12
+    exit
+}
+if (hasItem "itemid_13" metadata Hand anyAmount) {
+    stat "id2" set 13
+    exit
+}
+if (hasItem "itemid_14" metadata Hand anyAmount) {
+    stat "id2" set 14
+    exit
+}
+if (hasItem "itemid_15" metadata Hand anyAmount) {
+    stat "id2" set 15
+    exit
+}
+
+function "GetItem2ID_2" false
+goto function "GetItem2ID_2"
+
+// Block 2: Items 16 to 30
+if (hasItem "itemid_16" metadata Hand anyAmount) {
+    stat "id2" set 16
+    exit
+}
+if (hasItem "itemid_17" metadata Hand anyAmount) {
+    stat "id2" set 17
+    exit
+}
+if (hasItem "itemid_18" metadata Hand anyAmount) {
+    stat "id2" set 18
+    exit
+}
+if (hasItem "itemid_19" metadata Hand anyAmount) {
+    stat "id2" set 19
+    exit
+}
+if (hasItem "itemid_20" metadata Hand anyAmount) {
+    stat "id2" set 20
+    exit
+}
+if (hasItem "itemid_21" metadata Hand anyAmount) {
+    stat "id2" set 21
+    exit
+}
+if (hasItem "itemid_22" metadata Hand anyAmount) {
+    stat "id2" set 22
+    exit
+}
+if (hasItem "itemid_23" metadata Hand anyAmount) {
+    stat "id2" set 23
+    exit
+}
+if (hasItem "itemid_24" metadata Hand anyAmount) {
+    stat "id2" set 24
+    exit
+}
+if (hasItem "itemid_25" metadata Hand anyAmount) {
+    stat "id2" set 25
+    exit
+}
+if (hasItem "itemid_26" metadata Hand anyAmount) {
+    stat "id2" set 26
+    exit
+}
+if (hasItem "itemid_27" metadata Hand anyAmount) {
+    stat "id2" set 27
+    exit
+}
+if (hasItem "itemid_28" metadata Hand anyAmount) {
+    stat "id2" set 28
+    exit
+}
+if (hasItem "itemid_29" metadata Hand anyAmount) {
+    stat "id2" set 29
+    exit
+}
+if (hasItem "itemid_30" metadata Hand anyAmount) {
+    stat "id2" set 30
+    exit
+}
+
+function "GetItem2ID_3" false
+goto function "GetItem2ID_3"
+
+// Block 3: Items 31 to 45
+if (hasItem "itemid_32" metadata Hand anyAmount) {
+    stat "id2" set 32
+    exit
+}
+if (hasItem "itemid_33" metadata Hand anyAmount) {
+    stat "id2" set 33
+    exit
+}
+if (hasItem "itemid_35" metadata Hand anyAmount) {
+    stat "id2" set 35
+    exit
+}
+if (hasItem "itemid_37" metadata Hand anyAmount) {
+    stat "id2" set 37
+    exit
+}
+if (hasItem "itemid_38" metadata Hand anyAmount) {
+    stat "id2" set 38
+    exit
+}
+if (hasItem "itemid_39" metadata Hand anyAmount) {
+    stat "id2" set 39
+    exit
+}
+if (hasItem "itemid_40" metadata Hand anyAmount) {
+    stat "id2" set 40
+    exit
+}
+if (hasItem "itemid_41" metadata Hand anyAmount) {
+    stat "id2" set 41
+    exit
+}
+if (hasItem "itemid_42" metadata Hand anyAmount) {
+    stat "id2" set 42
+    exit
+}
+if (hasItem "itemid_43" metadata Hand anyAmount) {
+    stat "id2" set 43
+    exit
+}
+if (hasItem "itemid_44" metadata Hand anyAmount) {
+    stat "id2" set 44
+    exit
+}
+if (hasItem "itemid_45" metadata Hand anyAmount) {
+    stat "id2" set 45
+    exit
+}
+
+function "GetItem2ID_4" false
+goto function "GetItem2ID_4"
+
+// Block 4: Items 46 to 60
+if (hasItem "itemid_46" metadata Hand anyAmount) {
+    stat "id2" set 46
+    exit
+}
+if (hasItem "itemid_47" metadata Hand anyAmount) {
+    stat "id2" set 47
+    exit
+}
+if (hasItem "itemid_48" metadata Hand anyAmount) {
+    stat "id2" set 48
+    exit
+}
+if (hasItem "itemid_49" metadata Hand anyAmount) {
+    stat "id2" set 49
+    exit
+}
+if (hasItem "itemid_50" metadata Hand anyAmount) {
+    stat "id2" set 50
+    exit
+}
+if (hasItem "itemid_51" metadata Hand anyAmount) {
+    stat "id2" set 51
+    exit
+}
+if (hasItem "itemid_52" metadata Hand anyAmount) {
+    stat "id2" set 52
+    exit
+}
+if (hasItem "itemid_53" metadata Hand anyAmount) {
+    stat "id2" set 53
+    exit
+}
+if (hasItem "itemid_54" metadata Hand anyAmount) {
+    stat "id2" set 54
+    exit
+}
+if (hasItem "itemid_55" metadata Hand anyAmount) {
+    stat "id2" set 55
+    exit
+}
+if (hasItem "itemid_56" metadata Hand anyAmount) {
+    stat "id2" set 56
+    exit
+}
+if (hasItem "itemid_57" metadata Hand anyAmount) {
+    stat "id2" set 57
+    exit
+}
+if (hasItem "itemid_58" metadata Hand anyAmount) {
+    stat "id2" set 58
+    exit
+}
+if (hasItem "itemid_59" metadata Hand anyAmount) {
+    stat "id2" set 59
+    exit
+}
+if (hasItem "itemid_60" metadata Hand anyAmount) {
+    stat "id2" set 60
+    exit
+}
+
+function "GetItem2ID_5" false
+goto function "GetItem2ID_5"
+
+// Block 4: Items 61 to 75
+if (hasItem "itemid_61" metadata Hand anyAmount) {
+    stat "id2" set 61
+    exit
+}
+if (hasItem "itemid_62" metadata Hand anyAmount) {
+    stat "id2" set 62
+    exit
+}
+if (hasItem "itemid_63" metadata Hand anyAmount) {
+    stat "id2" set 63
+    exit
+}
+if (hasItem "itemid_64" metadata Hand anyAmount) {
+    stat "id2" set 64
+    exit
+}
+if (hasItem "itemid_65" metadata Hand anyAmount) {
+    stat "id2" set 65
+    exit
+}
+if (hasItem "itemid_66" metadata Hand anyAmount) {
+    stat "id2" set 66
+    exit
+}
+if (hasItem "itemid_67" metadata Hand anyAmount) {
+    stat "id2" set 67
+    exit
+}
+if (hasItem "itemid_68" metadata Hand anyAmount) {
+    stat "id2" set 68
+    exit
+}
+if (hasItem "itemid_69" metadata Hand anyAmount) {
+    stat "id2" set 69
+    exit
+}
+if (hasItem "itemid_70" metadata Hand anyAmount) {
+    stat "id2" set 70
+    exit
+}
+if (hasItem "itemid_71" metadata Hand anyAmount) {
+    stat "id2" set 71
+    exit
+}
+if (hasItem "itemid_72" metadata Hand anyAmount) {
+    stat "id2" set 72
+    exit
+}
+if (hasItem "itemid_73" metadata Hand anyAmount) {
+    stat "id2" set 73
+    exit
+}
+if (hasItem "itemid_74" metadata Hand anyAmount) {
+    stat "id2" set 74
+    exit
+}
+if (hasItem "itemid_75" metadata Hand anyAmount) {
+    stat "id2" set 75
+    exit
+}
+
+function "GetItem2ID_6" false
+goto function "GetItem2ID_6"
+
+// Block 5: Items 76 to 90
+if (hasItem "itemid_76" metadata Hand anyAmount) {
+    stat "id2" set 76
+    exit
+}
+if (hasItem "itemid_77" metadata Hand anyAmount) {
+    stat "id2" set 77
+    exit
+}
+if (hasItem "itemid_78" metadata Hand anyAmount) {
+    stat "id2" set 78
+    exit
+}
+if (hasItem "itemid_79" metadata Hand anyAmount) {
+    stat "id2" set 79
+    exit
+}
+if (hasItem "itemid_80" metadata Hand anyAmount) {
+    stat "id2" set 80
+    exit
+}
+if (hasItem "itemid_81" metadata Hand anyAmount) {
+    stat "id2" set 81
+    exit
+}
+if (hasItem "itemid_82" metadata Hand anyAmount) {
+    stat "id2" set 82
+    exit
+}
+if (hasItem "itemid_83" metadata Hand anyAmount) {
+    stat "id2" set 83
+    exit
+}
+if (hasItem "itemid_84" metadata Hand anyAmount) {
+    stat "id2" set 84
+    exit
+}
+if (hasItem "itemid_85" metadata Hand anyAmount) {
+    stat "id2" set 85
+    exit
+}
+if (hasItem "itemid_86" metadata Hand anyAmount) {
+    stat "id2" set 86
+    exit
+}
+if (hasItem "itemid_87" metadata Hand anyAmount) {
+    stat "id2" set 87
+    exit
+}
+if (hasItem "itemid_88" metadata Hand anyAmount) {
+    stat "id2" set 88
+    exit
+}
+if (hasItem "itemid_89" metadata Hand anyAmount) {
+    stat "id2" set 89
+    exit
+}
+if (hasItem "itemid_90" metadata Hand anyAmount) {
+    stat "id2" set 90
+    exit
+}
+
+function "GetItem2ID_7" false
+goto function "GetItem2ID_7"
+
+// Block 6: Items 91 to 105
+if (hasItem "itemid_91" metadata Hand anyAmount) {
+    stat "id2" set 91
+    exit
+}
+if (hasItem "itemid_92" metadata Hand anyAmount) {
+    stat "id2" set 92
+    exit
+}
+if (hasItem "itemid_93" metadata Hand anyAmount) {
+    stat "id2" set 93
+    exit
+}
+if (hasItem "itemid_94" metadata Hand anyAmount) {
+    stat "id2" set 94
+    exit
+}
+if (hasItem "itemid_95" metadata Hand anyAmount) {
+    stat "id2" set 95
+    exit
+}
+if (hasItem "itemid_96" metadata Hand anyAmount) {
+    stat "id2" set 96
+    exit
+}
+if (hasItem "itemid_97" metadata Hand anyAmount) {
+    stat "id2" set 97
+    exit
+}
+if (hasItem "itemid_98" metadata Hand anyAmount) {
+    stat "id2" set 98
+    exit
+}
+if (hasItem "itemid_99" metadata Hand anyAmount) {
+    stat "id2" set 99
+    exit
+}
+if (hasItem "itemid_100" metadata Hand anyAmount) {
+    stat "id2" set 100
+    exit
+}
+if (hasItem "itemid_101" metadata Hand anyAmount) {
+    stat "id2" set 101
+    exit
+}
+if (hasItem "itemid_102" metadata Hand anyAmount) {
+    stat "id2" set 102
+    exit
+}
+if (hasItem "itemid_103" metadata Hand anyAmount) {
+    stat "id2" set 103
+    exit
+}
+if (hasItem "itemid_104" metadata Hand anyAmount) {
+    stat "id2" set 104
+    exit
+}
+if (hasItem "itemid_105" metadata Hand anyAmount) {
+    stat "id2" set 105
+    exit
+}
+
+function "GetItem2ID_8" false
+goto function "GetItem2ID_8"
+
+// Block 7: Items 106 to 120
+if (hasItem "itemid_106" metadata Hand anyAmount) {
+    stat "id2" set 106
+    exit
+}
+if (hasItem "itemid_107" metadata Hand anyAmount) {
+    stat "id2" set 107
+    exit
+}
+if (hasItem "itemid_108" metadata Hand anyAmount) {
+    stat "id2" set 108
+    exit
+}
+if (hasItem "itemid_109" metadata Hand anyAmount) {
+    stat "id2" set 109
+    exit
+}
+if (hasItem "itemid_110" metadata Hand anyAmount) {
+    stat "id2" set 110
+    exit
+}
+if (hasItem "itemid_111" metadata Hand anyAmount) {
+    stat "id2" set 111
+    exit
+}
+if (hasItem "itemid_112" metadata Hand anyAmount) {
+    stat "id2" set 112
+    exit
+}
+if (hasItem "itemid_113" metadata Hand anyAmount) {
+    stat "id2" set 113
+    exit
+}
+if (hasItem "itemid_114" metadata Hand anyAmount) {
+    stat "id2" set 114
+    exit
+}
+if (hasItem "itemid_115" metadata Hand anyAmount) {
+    stat "id2" set 115
+    exit
+}
+if (hasItem "itemid_116" metadata Hand anyAmount) {
+    stat "id2" set 116
+    exit
+}
+if (hasItem "itemid_117" metadata Hand anyAmount) {
+    stat "id2" set 117
+    exit
+}
+if (hasItem "itemid_118" metadata Hand anyAmount) {
+    stat "id2" set 118
+    exit
+}
+if (hasItem "itemid_119" metadata Hand anyAmount) {
+    stat "id2" set 119
+    exit
+}
+if (hasItem "itemid_120" metadata Hand anyAmount) {
+    stat "id2" set 120
+    exit
+}
+
+function "GetItem2ID_9" false
+goto function "GetItem2ID_9"
+
+// Block 8: Items 121 to 135
+if (hasItem "itemid_121" metadata Hand anyAmount) {
+    stat "id2" set 121
+    exit
+}
+if (hasItem "itemid_122" metadata Hand anyAmount) {
+    stat "id2" set 122
+    exit
+}
+if (hasItem "itemid_123" metadata Hand anyAmount) {
+    stat "id2" set 123
+    exit
+}
+if (hasItem "itemid_124" metadata Hand anyAmount) {
+    stat "id2" set 124
+    exit
+}
+if (hasItem "itemid_125" metadata Hand anyAmount) {
+    stat "id2" set 125
+    exit
+}
+if (hasItem "itemid_126" metadata Hand anyAmount) {
+    stat "id2" set 126
+    exit
+}
+if (hasItem "itemid_127" metadata Hand anyAmount) {
+    stat "id2" set 127
+    exit
+}
+if (hasItem "itemid_128" metadata Hand anyAmount) {
+    stat "id2" set 128
+    exit
+}
+if (hasItem "itemid_129" metadata Hand anyAmount) {
+    stat "id2" set 129
+    exit
+}
+if (hasItem "itemid_130" metadata Hand anyAmount) {
+    stat "id2" set 130
+    exit
+}
+if (hasItem "itemid_131" metadata Hand anyAmount) {
+    stat "id2" set 131
+    exit
+}
+if (hasItem "itemid_132" metadata Hand anyAmount) {
+    stat "id2" set 132
+    exit
+}
+if (hasItem "itemid_133" metadata Hand anyAmount) {
+    stat "id2" set 133
+    exit
+}
+if (hasItem "itemid_134" metadata Hand anyAmount) {
+    stat "id2" set 134
+    exit
+}
+if (hasItem "itemid_135" metadata Hand anyAmount) {
+    stat "id2" set 135
+    exit
+}
+
+function "GetItem2ID_10" false
+goto function "GetItem2ID_10"
+
+// Block 9: Items 136 to 150
+if (hasItem "itemid_136" metadata Hand anyAmount) {
+    stat "id2" set 136
+    exit
+}
+if (hasItem "itemid_138" metadata Hand anyAmount) {
+    stat "id2" set 138
+    exit
+}
+if (hasItem "itemid_139" metadata Hand anyAmount) {
+    stat "id2" set 139
+    exit
+}
+if (hasItem "itemid_140" metadata Hand anyAmount) {
+    stat "id2" set 140
+    exit
+}
+if (hasItem "itemid_141" metadata Hand anyAmount) {
+    stat "id2" set 141
+    exit
+}
+if (hasItem "itemid_142" metadata Hand anyAmount) {
+    stat "id2" set 142
+    exit
+}
+if (hasItem "itemid_143" metadata Hand anyAmount) {
+    stat "id2" set 143
+    exit
+}
+if (hasItem "itemid_144" metadata Hand anyAmount) {
+    stat "id2" set 144
+    exit
+}
+if (hasItem "itemid_145" metadata Hand anyAmount) {
+    stat "id2" set 145
+    exit
+}
+if (hasItem "itemid_146" metadata Hand anyAmount) {
+    stat "id2" set 146
+    exit
+}
+if (hasItem "itemid_147" metadata Hand anyAmount) {
+    stat "id2" set 147
+    exit
+}
+if (hasItem "itemid_148" metadata Hand anyAmount) {
+    stat "id2" set 148
+    exit
+}
+if (hasItem "itemid_149" metadata Hand anyAmount) {
+    stat "id2" set 149
+    exit
+}
+if (hasItem "itemid_150" metadata Hand anyAmount) {
+    stat "id2" set 150
+    exit
+}
+
+function "GetItem2ID_11" false
+goto function "GetItem2ID_11"
+
+// Block 10: Items 151 to 165
+if (hasItem "itemid_151" metadata Hand anyAmount) {
+    stat "id2" set 151
+    exit
+}
+if (hasItem "itemid_152" metadata Hand anyAmount) {
+    stat "id2" set 152
+    exit
+}
+if (hasItem "itemid_153" metadata Hand anyAmount) {
+    stat "id2" set 153
+    exit
+}
+if (hasItem "itemid_154" metadata Hand anyAmount) {
+    stat "id2" set 154
+    exit
+}
+if (hasItem "itemid_155" metadata Hand anyAmount) {
+    stat "id2" set 155
+    exit
+}
+if (hasItem "itemid_156" metadata Hand anyAmount) {
+    stat "id2" set 156
+    exit
+}
+if (hasItem "itemid_157" metadata Hand anyAmount) {
+    stat "id2" set 157
+    exit
+}
+if (hasItem "itemid_158" metadata Hand anyAmount) {
+    stat "id2" set 158
+    exit
+}
+if (hasItem "itemid_159" metadata Hand anyAmount) {
+    stat "id2" set 159
+    exit
+}
+if (hasItem "itemid_160" metadata Hand anyAmount) {
+    stat "id2" set 160
+    exit
+}
+if (hasItem "itemid_161" metadata Hand anyAmount) {
+    stat "id2" set 161
+    exit
+}
+if (hasItem "itemid_162" metadata Hand anyAmount) {
+    stat "id2" set 162
+    exit
+}
+if (hasItem "itemid_163" metadata Hand anyAmount) {
+    stat "id2" set 163
+    exit
+}
+if (hasItem "itemid_164" metadata Hand anyAmount) {
+    stat "id2" set 164
+    exit
+}
+if (hasItem "itemid_165" metadata Hand anyAmount) {
+    stat "id2" set 165
+    exit
+}
+
+function "GetItem2ID_12" false
+goto function "GetItem2ID_12"
+
+// Block 11: Items 166 to 180
+if (hasItem "itemid_166" metadata Hand anyAmount) {
+    stat "id2" set 166
+    exit
+}
+if (hasItem "itemid_167" metadata Hand anyAmount) {
+    stat "id2" set 167
+    exit
+}
+if (hasItem "itemid_168" metadata Hand anyAmount) {
+    stat "id2" set 168
+    exit
+}
+if (hasItem "itemid_169" metadata Hand anyAmount) {
+    stat "id2" set 169
+    exit
+}
+if (hasItem "itemid_170" metadata Hand anyAmount) {
+    stat "id2" set 170
+    exit
+}
+if (hasItem "itemid_171" metadata Hand anyAmount) {
+    stat "id2" set 171
+    exit
+}
+if (hasItem "itemid_172" metadata Hand anyAmount) {
+    stat "id2" set 172
+    exit
+}
+if (hasItem "itemid_173" metadata Hand anyAmount) {
+    stat "id2" set 173
+    exit
+}
+if (hasItem "itemid_174" metadata Hand anyAmount) {
+    stat "id2" set 174
+    exit
+}
+if (hasItem "itemid_175" metadata Hand anyAmount) {
+    stat "id2" set 175
+    exit
+}
+if (hasItem "itemid_176" metadata Hand anyAmount) {
+    stat "id2" set 176
+    exit
+}
+if (hasItem "itemid_177" metadata Hand anyAmount) {
+    stat "id2" set 177
+    exit
+}
+if (hasItem "itemid_178" metadata Hand anyAmount) {
+    stat "id2" set 178
+    exit
+}
+if (hasItem "itemid_179" metadata Hand anyAmount) {
+    stat "id2" set 179
+    exit
+}
+if (hasItem "itemid_180" metadata Hand anyAmount) {
+    stat "id2" set 180
+    exit
+}
+
+function "GetItem2ID_13" false
+goto function "GetItem2ID_13"
+
+// Block 12: Items 181 to 195
+if (hasItem "itemid_181" metadata Hand anyAmount) {
+    stat "id2" set 181
+    exit
+}
+if (hasItem "itemid_182" metadata Hand anyAmount) {
+    stat "id2" set 182
+    exit
+}
+if (hasItem "itemid_183" metadata Hand anyAmount) {
+    stat "id2" set 183
+    exit
+}
+if (hasItem "itemid_184" metadata Hand anyAmount) {
+    stat "id2" set 184
+    exit
+}
+if (hasItem "itemid_185" metadata Hand anyAmount) {
+    stat "id2" set 185
+    exit
+}
+if (hasItem "itemid_186" metadata Hand anyAmount) {
+    stat "id2" set 186
+    exit
+}
+if (hasItem "itemid_187" metadata Hand anyAmount) {
+    stat "id2" set 187
+    exit
+}
+if (hasItem "itemid_188" metadata Hand anyAmount) {
+    stat "id2" set 188
+    exit
+}
+if (hasItem "itemid_189" metadata Hand anyAmount) {
+    stat "id2" set 189
+    exit
+}
+if (hasItem "itemid_190" metadata Hand anyAmount) {
+    stat "id2" set 190
+    exit
+}
+if (hasItem "itemid_191" metadata Hand anyAmount) {
+    stat "id2" set 191
+    exit
+}
+if (hasItem "itemid_192" metadata Hand anyAmount) {
+    stat "id2" set 192
+    exit
+}
+if (hasItem "itemid_193" metadata Hand anyAmount) {
+    stat "id2" set 193
+    exit
+}
+if (hasItem "itemid_194" metadata Hand anyAmount) {
+    stat "id2" set 194
+    exit
+}
+if (hasItem "itemid_195" metadata Hand anyAmount) {
+    stat "id2" set 195
+    exit
+}
+
+function "GetItem2ID_14" false
+goto function "GetItem2ID_14"
+
+// Block 13: Items 196 to 210
+if (hasItem "itemid_196" metadata Hand anyAmount) {
+    stat "id2" set 196
+    exit
+}
+if (hasItem "itemid_197" metadata Hand anyAmount) {
+    stat "id2" set 197
+    exit
+}
+if (hasItem "itemid_198" metadata Hand anyAmount) {
+    stat "id2" set 198
+    exit
+}
+if (hasItem "itemid_199" metadata Hand anyAmount) {
+    stat "id2" set 199
+    exit
+}
+if (hasItem "itemid_200" metadata Hand anyAmount) {
+    stat "id2" set 200
+    exit
+}
+if (hasItem "itemid_201" metadata Hand anyAmount) {
+    stat "id2" set 201
+    exit
+}
+if (hasItem "itemid_202" metadata Hand anyAmount) {
+    stat "id2" set 202
+    exit
+}
+if (hasItem "itemid_203" metadata Hand anyAmount) {
+    stat "id2" set 203
+    exit
+}
+if (hasItem "itemid_204" metadata Hand anyAmount) {
+    stat "id2" set 204
+    exit
+}
+if (hasItem "itemid_205" metadata Hand anyAmount) {
+    stat "id2" set 205
+    exit
+}
+if (hasItem "itemid_206" metadata Hand anyAmount) {
+    stat "id2" set 206
+    exit
+}
+if (hasItem "itemid_207" metadata Hand anyAmount) {
+    stat "id2" set 207
+    exit
+}
+if (hasItem "itemid_208" metadata Hand anyAmount) {
+    stat "id2" set 208
+    exit
+}
+if (hasItem "itemid_209" metadata Hand anyAmount) {
+    stat "id2" set 209
+    exit
+}
+if (hasItem "itemid_210" metadata Hand anyAmount) {
+    stat "id2" set 210
+    exit
+}
+
+function "GetItem2ID_15" false
+goto function "GetItem2ID_15"
+
+// Block 14: Items 211 to 225
+if (hasItem "itemid_211" metadata Hand anyAmount) {
+    stat "id2" set 211
+    exit
+}
+if (hasItem "itemid_212" metadata Hand anyAmount) {
+    stat "id2" set 212
+    exit
+}
+if (hasItem "itemid_213" metadata Hand anyAmount) {
+    stat "id2" set 213
+    exit
+}
+if (hasItem "itemid_214" metadata Hand anyAmount) {
+    stat "id2" set 214
+    exit
+}
+if (hasItem "itemid_215" metadata Hand anyAmount) {
+    stat "id2" set 215
+    exit
+}
+if (hasItem "itemid_216" metadata Hand anyAmount) {
+    stat "id2" set 216
+    exit
+}
+if (hasItem "itemid_217" metadata Hand anyAmount) {
+    stat "id2" set 217
+    exit
+}
+if (hasItem "itemid_218" metadata Hand anyAmount) {
+    stat "id2" set 218
+    exit
+}
+if (hasItem "itemid_219" metadata Hand anyAmount) {
+    stat "id2" set 219
+    exit
+}
+if (hasItem "itemid_220" metadata Hand anyAmount) {
+    stat "id2" set 220
+    exit
+}
+if (hasItem "itemid_221" metadata Hand anyAmount) {
+    stat "id2" set 221
+    exit
+}
+if (hasItem "itemid_222" metadata Hand anyAmount) {
+    stat "id2" set 222
+    exit
+}
+if (hasItem "itemid_223" metadata Hand anyAmount) {
+    stat "id2" set 223
+    exit
+}
+if (hasItem "itemid_224" metadata Hand anyAmount) {
+    stat "id2" set 224
+    exit
+}
+if (hasItem "itemid_225" metadata Hand anyAmount) {
+    stat "id2" set 225
+    exit
+}
+
+function "GetItem2ID_16" false
+goto function "GetItem2ID_16"
+
+// Block 15: Items 226 to 240
+if (hasItem "itemid_226" metadata Hand anyAmount) {
+    stat "id2" set 226
+    exit
+}
+if (hasItem "itemid_227" metadata Hand anyAmount) {
+    stat "id2" set 227
+    exit
+}
+if (hasItem "itemid_228" metadata Hand anyAmount) {
+    stat "id2" set 228
+    exit
+}
+if (hasItem "itemid_229" metadata Hand anyAmount) {
+    stat "id2" set 229
+    exit
+}
+if (hasItem "itemid_230" metadata Hand anyAmount) {
+    stat "id2" set 230
+    exit
+}
+if (hasItem "itemid_231" metadata Hand anyAmount) {
+    stat "id2" set 231
+    exit
+}
+if (hasItem "itemid_232" metadata Hand anyAmount) {
+    stat "id2" set 232
+    exit
+}
+if (hasItem "itemid_233" metadata Hand anyAmount) {
+    stat "id2" set 233
+    exit
+}
+if (hasItem "itemid_234" metadata Hand anyAmount) {
+    stat "id2" set 234
+    exit
+}
+if (hasItem "itemid_235" metadata Hand anyAmount) {
+    stat "id2" set 235
+    exit
+}
+if (hasItem "itemid_236" metadata Hand anyAmount) {
+    stat "id2" set 236
+    exit
+}
+if (hasItem "itemid_237" metadata Hand anyAmount) {
+    stat "id2" set 237
+    exit
+}
+if (hasItem "itemid_238" metadata Hand anyAmount) {
+    stat "id2" set 238
+    exit
+}
+if (hasItem "itemid_239" metadata Hand anyAmount) {
+    stat "id2" set 239
+    exit
+}
+if (hasItem "itemid_240" metadata Hand anyAmount) {
+    stat "id2" set 240
+    exit
+}
+
+function "GetItem2ID_17" false
+goto function "GetItem2ID_17"
+
+// Block 16: Items 241 to 255
+if (hasItem "itemid_241" metadata Hand anyAmount) {
+    stat "id2" set 241
+    exit
+}
+if (hasItem "itemid_242" metadata Hand anyAmount) {
+    stat "id2" set 242
+    exit
+}
+if (hasItem "itemid_243" metadata Hand anyAmount) {
+    stat "id2" set 243
+    exit
+}
+if (hasItem "itemid_244" metadata Hand anyAmount) {
+    stat "id2" set 244
+    exit
+}
+if (hasItem "itemid_245" metadata Hand anyAmount) {
+    stat "id2" set 245
+    exit
+}
+if (hasItem "itemid_246" metadata Hand anyAmount) {
+    stat "id2" set 246
+    exit
+}
+if (hasItem "itemid_247" metadata Hand anyAmount) {
+    stat "id2" set 247
+    exit
+}
+if (hasItem "itemid_248" metadata Hand anyAmount) {
+    stat "id2" set 248
+    exit
+}
+if (hasItem "itemid_249" metadata Hand anyAmount) {
+    stat "id2" set 249
+    exit
+}
+if (hasItem "itemid_250" metadata Hand anyAmount) {
+    stat "id2" set 250
+    exit
+}
+if (hasItem "itemid_251" metadata Hand anyAmount) {
+    stat "id2" set 251
+    exit
+}
+if (hasItem "itemid_252" metadata Hand anyAmount) {
+    stat "id2" set 252
+    exit
+}
+if (hasItem "itemid_253" metadata Hand anyAmount) {
+    stat "id2" set 253
+    exit
+}
+if (hasItem "itemid_254" metadata Hand anyAmount) {
+    stat "id2" set 254
+    exit
+}
+if (hasItem "itemid_255" metadata Hand anyAmount) {
+    stat "id2" set 255
+    exit
+}
+
+function "GetItem2ID_18" false
+goto function "GetItem2ID_18"
+
+// Block 16: Items 256 to 268
+if (hasItem "itemid_256" metadata Hand anyAmount) {
+    stat "id2" set 256
+    exit
+}
+if (hasItem "itemid_257" metadata Hand anyAmount) {
+    stat "id2" set 257
+    exit
+}
+if (hasItem "itemid_258" metadata Hand anyAmount) {
+    stat "id2" set 258
+    exit
+}
+if (hasItem "itemid_259" metadata Hand anyAmount) {
+    stat "id2" set 259
+    exit
+}
+if (hasItem "itemid_260" metadata Hand anyAmount) {
+    stat "id2" set 260
+    exit
+}
+if (hasItem "itemid_261" metadata Hand anyAmount) {
+    stat "id2" set 261
+    exit
+}
+if (hasItem "itemid_262" metadata Hand anyAmount) {
+    stat "id2" set 262
+    exit
+}
+if (hasItem "itemid_263" metadata Hand anyAmount) {
+    stat "id2" set 263
+    exit
+}
+if (hasItem "itemid_264" metadata Hand anyAmount) {
+    stat "id2" set 264
+    exit
+}
+if (hasItem "itemid_265" metadata Hand anyAmount) {
+    stat "id2" set 265
+    exit
+}
+if (hasItem "itemid_266" metadata Hand anyAmount) {
+    stat "id2" set 266
+    exit
+}
+if (hasItem "itemid_267" metadata Hand anyAmount) {
+    stat "id2" set 267
+    exit
+}
+if (hasItem "itemid_268" metadata Hand anyAmount) {
+    stat "id2" set 268
+    exit
+}
+
+function "GetItem2ID_19" false
+goto function "GetItem2ID_19"
+
+// Block 17: Items 269 to 285
+if (hasItem "itemid_269" metadata Hand anyAmount) {
+    stat "id2" set 269
+    exit
+}
+if (hasItem "itemid_270" metadata Hand anyAmount) {
+    stat "id2" set 270
+    exit
+}
+if (hasItem "itemid_271" metadata Hand anyAmount) {
+    stat "id2" set 271
+    exit
+}
+if (hasItem "itemid_272" metadata Hand anyAmount) {
+    stat "id2" set 272
+    exit
+}
+if (hasItem "itemid_273" metadata Hand anyAmount) {
+    stat "id2" set 273
+    exit
+}
+if (hasItem "itemid_274" metadata Hand anyAmount) {
+    stat "id2" set 274
+    exit
+}
+if (hasItem "itemid_275" metadata Hand anyAmount) {
+    stat "id2" set 275
+    exit
+}
+
+function "GetItem2ID_20" false
+goto function "GetItem2ID_20"
+
+// Block 18: Items 276 to 290
+if (hasItem "itemid_276" metadata Hand anyAmount) {
+    stat "id2" set 276
+    exit
+}
+if (hasItem "itemid_277" metadata Hand anyAmount) {
+    stat "id2" set 277
+    exit
+}
+if (hasItem "itemid_278" metadata Hand anyAmount) {
+    stat "id2" set 278
+    exit
+}
+if (hasItem "itemid_279" metadata Hand anyAmount) {
+    stat "id2" set 279
+    exit
+}
+if (hasItem "itemid_280" metadata Hand anyAmount) {
+    stat "id2" set 280
+    exit
+}
+if (hasItem "itemid_281" metadata Hand anyAmount) {
+    stat "id2" set 281
+    exit
+}
+if (hasItem "itemid_282" metadata Hand anyAmount) {
+    stat "id2" set 282
+    exit
+}
+if (hasItem "itemid_283" metadata Hand anyAmount) {
+    stat "id2" set 283
+    exit
+}
+if (hasItem "itemid_284" metadata Hand anyAmount) {
+    stat "id2" set 284
+    exit
+}
+if (hasItem "itemid_285" metadata Hand anyAmount) {
+    stat "id2" set 285
+    exit
+}
+
+function "GetItem2ID_21" false
+goto function "GetItem2ID_21"
+
+// Block 19: Items 286 to 300
+if (hasItem "itemid_286" metadata Hand anyAmount) {
+    stat "id2" set 286
+    exit
+}
+if (hasItem "itemid_287" metadata Hand anyAmount) {
+    stat "id2" set 287
+    exit
+}
+if (hasItem "itemid_288" metadata Hand anyAmount) {
+    stat "id2" set 288
+    exit
+}
+if (hasItem "itemid_289" metadata Hand anyAmount) {
+    stat "id2" set 289
+    exit
+}
+if (hasItem "itemid_290" metadata Hand anyAmount) {
+    stat "id2" set 290
+    exit
+}
+
+function "GetItem2ID_22" false
+goto function "GetItem2ID_22"
+
+// Block 20: Items 291 to 305
+if (hasItem "itemid_291" metadata Hand anyAmount) {
+    stat "id2" set 291
+    exit
+}
+if (hasItem "itemid_292" metadata Hand anyAmount) {
+    stat "id2" set 292
+    exit
+}
+if (hasItem "itemid_293" metadata Hand anyAmount) {
+    stat "id2" set 293
+    exit
+}
+if (hasItem "itemid_294" metadata Hand anyAmount) {
+    stat "id2" set 294
+    exit
+}
+if (hasItem "itemid_295" metadata Hand anyAmount) {
+    stat "id2" set 295
+    exit
+}
+if (hasItem "itemid_296" metadata Hand anyAmount) {
+    stat "id2" set 296
+    exit
+}
+if (hasItem "itemid_297" metadata Hand anyAmount) {
+    stat "id2" set 297
+    exit
+}
+if (hasItem "itemid_298" metadata Hand anyAmount) {
+    stat "id2" set 298
+    exit
+}
+if (hasItem "itemid_299" metadata Hand anyAmount) {
+    stat "id2" set 299
+    exit
+}
+if (hasItem "itemid_300" metadata Hand anyAmount) {
+    stat "id2" set 300
+    exit
+}
+
+function "GetItem2ID_23" false
+goto function "GetItem2ID_23"
+
+// Block 21: Items 301 to 315
+if (hasItem "itemid_301" metadata Hand anyAmount) {
+    stat "id2" set 301
+    exit
+}
+if (hasItem "itemid_302" metadata Hand anyAmount) {
+    stat "id2" set 302
+    exit
+}
+if (hasItem "itemid_303" metadata Hand anyAmount) {
+    stat "id2" set 303
+    exit
+}
+if (hasItem "itemid_304" metadata Hand anyAmount) {
+    stat "id2" set 304
+    exit
+}
+if (hasItem "itemid_305" metadata Hand anyAmount) {
+    stat "id2" set 305
+    exit
+}
+
+function "GetItem2ID_24" false
+goto function "GetItem2ID_24"
+
+// Block 22: Items 306 to 320
+if (hasItem "itemid_306" metadata Hand anyAmount) {
+    stat "id2" set 306
+    exit
+}
+if (hasItem "itemid_307" metadata Hand anyAmount) {
+    stat "id2" set 307
+    exit
+}
+if (hasItem "itemid_308" metadata Hand anyAmount) {
+    stat "id2" set 308
+    exit
+}
+if (hasItem "itemid_309" metadata Hand anyAmount) {
+    stat "id2" set 309
+    exit
+}
+if (hasItem "itemid_310" metadata Hand anyAmount) {
+    stat "id2" set 310
+    exit
+}
+if (hasItem "itemid_311" metadata Hand anyAmount) {
+    stat "id2" set 311
+    exit
+}
+if (hasItem "itemid_312" metadata Hand anyAmount) {
+    stat "id2" set 312
+    exit
+}
+if (hasItem "itemid_313" metadata Hand anyAmount) {
+    stat "id2" set 313
+    exit
+}
+if (hasItem "itemid_314" metadata Hand anyAmount) {
+    stat "id2" set 314
+    exit
+}
+if (hasItem "itemid_315" metadata Hand anyAmount) {
+    stat "id2" set 315
+    exit
+}
+
+function "GetItem2ID_25" false
+goto function "GetItem2ID_25"
+
+// Block 23: Items 316 to i dont know
+if (hasItem "itemid_316" metadata Hand anyAmount) {
+    stat "id2" set 316
+    exit
+}
+if (hasItem "itemid_317" metadata Hand anyAmount) {
+    stat "id2" set 317
+    exit
+}
+if (hasItem "itemid_318" metadata Hand anyAmount) {
+    stat "id2" set 318
+    exit
+}
+if (hasItem "itemid_319" metadata Hand anyAmount) {
+    stat "id2" set 319
+    exit
+}
+if (hasItem "itemid_320" metadata Hand anyAmount) {
+    stat "id2" set 320
+    exit
+}
+if (hasItem "itemid_321" metadata Hand anyAmount) {
+    stat "id2" set 321
+    exit
+}
+if (hasItem "itemid_322" metadata Hand anyAmount) {
+    stat "id2" set 322
+    exit
+}
+if (hasItem "itemid_323" metadata Hand anyAmount) {
+    stat "id2" set 323
+    exit
+}
+if (hasItem "itemid_324" metadata Hand anyAmount) {
+    stat "id2" set 324
+    exit
+}
+if (hasItem "itemid_325" metadata Hand anyAmount) {
+    stat "id2" set 325
+    exit
+}
+if (hasItem "itemid_326" metadata Hand anyAmount) {
+    stat "id2" set 326
+    exit
+}
+if (hasItem "itemid_327" metadata Hand anyAmount) {
+    stat "id2" set 327
+    exit
+}
+if (hasItem "itemid_328" metadata Hand anyAmount) {
+    stat "id2" set 328
+    exit
+}
+if (hasItem "itemid_329" metadata Hand anyAmount) {
+    stat "id2" set 329
+    exit
+}
+if (hasItem "itemid_330" metadata Hand anyAmount) {
+    stat "id2" set 330
+    exit
+}
+
+function "GetItem2ID_26" false
+goto function "GetItem2ID_26"
+
+// Block 24: Items 331 to 345
+if (hasItem "itemid_331" metadata Hand anyAmount) {
+    stat "id2" set 331
+    exit
+}
+if (hasItem "itemid_332" metadata Hand anyAmount) {
+    stat "id2" set 332
+    exit
+}
+if (hasItem "itemid_333" metadata Hand anyAmount) {
+    stat "id2" set 333
+    exit
+}
+if (hasItem "itemid_334" metadata Hand anyAmount) {
+    stat "id2" set 334
+    exit
+}
+if (hasItem "itemid_335" metadata Hand anyAmount) {
+    stat "id2" set 335
+    exit
+}
+if (hasItem "itemid_336" metadata Hand anyAmount) {
+    stat "id2" set 336
+    exit
+}
+if (hasItem "itemid_337" metadata Hand anyAmount) {
+    stat "id2" set 337
+    exit
+}
+if (hasItem "itemid_338" metadata Hand anyAmount) {
+    stat "id2" set 338
+    exit
+}
+if (hasItem "itemid_339" metadata Hand anyAmount) {
+    stat "id2" set 339
+    exit
+}
+if (hasItem "itemid_340" metadata Hand anyAmount) {
+    stat "id2" set 340
+    exit
+}
+if (hasItem "itemid_341" metadata Hand anyAmount) {
+    stat "id2" set 341
+    exit
+}
+if (hasItem "itemid_342" metadata Hand anyAmount) {
+    stat "id2" set 342
+    exit
+}
+if (hasItem "itemid_343" metadata Hand anyAmount) {
+    stat "id2" set 343
+    exit
+}
+if (hasItem "itemid_344" metadata Hand anyAmount) {
+    stat "id2" set 344
+    exit
+}
+if (hasItem "itemid_345" metadata Hand anyAmount) {
+    stat "id2" set 345
+    exit
+}
+
+function "GetItem2ID_27" false
+goto function "GetItem2ID_27"
+
+// Block 25: Items 346 to 360
+if (hasItem "itemid_346" metadata Hand anyAmount) {
+    stat "id2" set 346
+    exit
+}
+if (hasItem "itemid_347" metadata Hand anyAmount) {
+    stat "id2" set 347
+    exit
+}
+if (hasItem "itemid_348" metadata Hand anyAmount) {
+    stat "id2" set 348
+    exit
+}
+if (hasItem "itemid_349" metadata Hand anyAmount) {
+    stat "id2" set 349
+    exit
+}
+if (hasItem "itemid_350" metadata Hand anyAmount) {
+    stat "id2" set 350
+    exit
+}
+if (hasItem "itemid_351" metadata Hand anyAmount) {
+    stat "id2" set 351
+    exit
+}
+if (hasItem "itemid_352" metadata Hand anyAmount) {
+    stat "id2" set 352
+    exit
+}
+if (hasItem "itemid_353" metadata Hand anyAmount) {
+    stat "id2" set 353
+    exit
+}
+if (hasItem "itemid_354" metadata Hand anyAmount) {
+    stat "id2" set 354
+    exit
+}
+if (hasItem "itemid_355" metadata Hand anyAmount) {
+    stat "id2" set 355
+    exit
+}
+if (hasItem "itemid_356" metadata Hand anyAmount) {
+    stat "id2" set 356
+    exit
+}
+if (hasItem "itemid_357" metadata Hand anyAmount) {
+    stat "id2" set 357
+    exit
+}
+if (hasItem "itemid_358" metadata Hand anyAmount) {
+    stat "id2" set 358
+    exit
+}
+if (hasItem "itemid_359" metadata Hand anyAmount) {
+    stat "id2" set 359
+    exit
+}
+if (hasItem "itemid_360" metadata Hand anyAmount) {
+    stat "id2" set 360
+    exit
+}
+
+function "GetItem2ID_28" false
+goto function "GetItem2ID_28"
+
+// Block 26: Items 361 to 375
+if (hasItem "itemid_361" metadata Hand anyAmount) {
+    stat "id2" set 361
+    exit
+}
+if (hasItem "itemid_362" metadata Hand anyAmount) {
+    stat "id2" set 362
+    exit
+}
+if (hasItem "itemid_363" metadata Hand anyAmount) {
+    stat "id2" set 363
+    exit
+}
+if (hasItem "itemid_364" metadata Hand anyAmount) {
+    stat "id2" set 364
+    exit
+}
+if (hasItem "itemid_365" metadata Hand anyAmount) {
+    stat "id2" set 365
+    exit
+}
+if (hasItem "itemid_366" metadata Hand anyAmount) {
+    stat "id2" set 366
+    exit
+}
+if (hasItem "itemid_367" metadata Hand anyAmount) {
+    stat "id2" set 367
+    exit
+}
+if (hasItem "itemid_368" metadata Hand anyAmount) {
+    stat "id2" set 368
+    exit
+}
+if (hasItem "itemid_369" metadata Hand anyAmount) {
+    stat "id2" set 369
+    exit
+}
+if (hasItem "itemid_370" metadata Hand anyAmount) {
+    stat "id2" set 370
+    exit
+}
+if (hasItem "itemid_371" metadata Hand anyAmount) {
+    stat "id2" set 371
+    exit
+}
+if (hasItem "itemid_372" metadata Hand anyAmount) {
+    stat "id2" set 372
+    exit
+}
+if (hasItem "itemid_373" metadata Hand anyAmount) {
+    stat "id2" set 373
+    exit
+}
+if (hasItem "itemid_374" metadata Hand anyAmount) {
+    stat "id2" set 374
+    exit
+}
+if (hasItem "itemid_375" metadata Hand anyAmount) {
+    stat "id2" set 375
+    exit
+}
+
+function "GetItem2ID_29" false
+goto function "GetItem2ID_29"
+
+// Block 27: Items 376 to 390
+if (hasItem "itemid_376" metadata Hand anyAmount) {
+    stat "id2" set 376
+    exit
+}
+if (hasItem "itemid_377" metadata Hand anyAmount) {
+    stat "id2" set 377
+    exit
+}
+if (hasItem "itemid_378" metadata Hand anyAmount) {
+    stat "id2" set 378
+    exit
+}
+if (hasItem "itemid_379" metadata Hand anyAmount) {
+    stat "id2" set 379
+    exit
+}
+if (hasItem "itemid_380" metadata Hand anyAmount) {
+    stat "id2" set 380
+    exit
+}
+if (hasItem "itemid_381" metadata Hand anyAmount) {
+    stat "id2" set 381
+    exit
+}
+if (hasItem "itemid_382" metadata Hand anyAmount) {
+    stat "id2" set 382
+    exit
+}
+if (hasItem "itemid_383" metadata Hand anyAmount) {
+    stat "id2" set 383
+    exit
+}
+if (hasItem "itemid_384" metadata Hand anyAmount) {
+    stat "id2" set 384
+    exit
+}
+if (hasItem "itemid_385" metadata Hand anyAmount) {
+    stat "id2" set 385
+    exit
+}
+if (hasItem "itemid_386" metadata Hand anyAmount) {
+    stat "id2" set 386
+    exit
+}
+if (hasItem "itemid_387" metadata Hand anyAmount) {
+    stat "id2" set 387
+    exit
+}
+if (hasItem "itemid_388" metadata Hand anyAmount) {
+    stat "id2" set 388
+    exit
+}
+if (hasItem "itemid_389" metadata Hand anyAmount) {
+    stat "id2" set 389
+    exit
+}
+if (hasItem "itemid_390" metadata Hand anyAmount) {
+    stat "id2" set 390
+    exit
+}
+
+function "GetItem2ID_30" false
+goto function "GetItem2ID_30"
+
+// Block 28: Items 391 to 405
+if (hasItem "itemid_391" metadata Hand anyAmount) {
+    stat "id2" set 391
+    exit
+}
+if (hasItem "itemid_392" metadata Hand anyAmount) {
+    stat "id2" set 392
+    exit
+}
+if (hasItem "itemid_393" metadata Hand anyAmount) {
+    stat "id2" set 393
+    exit
+}
+if (hasItem "itemid_394" metadata Hand anyAmount) {
+    stat "id2" set 394
+    exit
+}
+if (hasItem "itemid_395" metadata Hand anyAmount) {
+    stat "id2" set 395
+    exit
+}
+if (hasItem "itemid_396" metadata Hand anyAmount) {
+    stat "id2" set 396
+    exit
+}
+if (hasItem "itemid_397" metadata Hand anyAmount) {
+    stat "id2" set 397
+    exit
+}
+if (hasItem "itemid_398" metadata Hand anyAmount) {
+    stat "id2" set 398
+    exit
+}
+if (hasItem "itemid_399" metadata Hand anyAmount) {
+    stat "id2" set 399
+    exit
+}
+if (hasItem "itemid_400" metadata Hand anyAmount) {
+    stat "id2" set 400
+    exit
+}
+
+function "GetItem2ID_31" false
+goto function "GetItem2ID_31"
+
+// Block 29: Items 401 to 415
+if (hasItem "itemid_401" metadata Hand anyAmount) {
+    stat "id2" set 401
+    exit
+}
+if (hasItem "itemid_402" metadata Hand anyAmount) {
+    stat "id2" set 402
+    exit
+}
+if (hasItem "itemid_403" metadata Hand anyAmount) {
+    stat "id2" set 403
+    exit
+}
+if (hasItem "itemid_404" metadata Hand anyAmount) {
+    stat "id2" set 404
+    exit
+}
+if (hasItem "itemid_405" metadata Hand anyAmount) {
+    stat "id2" set 405
+    exit
+}
+
+function "GetItem2ID_32" false
+goto function "GetItem2ID_32"
+
+// Block 30: Items 406 to 420
+if (hasItem "itemid_406" metadata Hand anyAmount) {
+    stat "id2" set 406
+    exit
+}
+if (hasItem "itemid_407" metadata Hand anyAmount) {
+    stat "id2" set 407
+    exit
+}
+if (hasItem "itemid_408" metadata Hand anyAmount) {
+    stat "id2" set 408
+    exit
+}
+if (hasItem "itemid_409" metadata Hand anyAmount) {
+    stat "id2" set 409
+    exit
+}
+if (hasItem "itemid_410" metadata Hand anyAmount) {
+    stat "id2" set 410
+    exit
+}
+if (hasItem "itemid_411" metadata Hand anyAmount) {
+    stat "id2" set 411
+    exit
+}
+if (hasItem "itemid_412" metadata Hand anyAmount) {
+    stat "id2" set 412
+    exit
+}
+if (hasItem "itemid_413" metadata Hand anyAmount) {
+    stat "id2" set 413
+    exit
+}
+if (hasItem "itemid_414" metadata Hand anyAmount) {
+    stat "id2" set 414
+    exit
+}
+if (hasItem "itemid_415" metadata Hand anyAmount) {
+    stat "id2" set 415
+    exit
+}
+
+function "GetItem2ID_33" false
+goto function "GetItem2ID_33"
+
+// Block 31: Items 416 to 430
+if (hasItem "itemid_416" metadata Hand anyAmount) {
+    stat "id2" set 416
+    exit
+}
+if (hasItem "itemid_417" metadata Hand anyAmount) {
+    stat "id2" set 417
+    exit
+}
+if (hasItem "itemid_418" metadata Hand anyAmount) {
+    stat "id2" set 418
+    exit
+}
+if (hasItem "itemid_419" metadata Hand anyAmount) {
+    stat "id2" set 419
+    exit
+}
+if (hasItem "itemid_420" metadata Hand anyAmount) {
+    stat "id2" set 420
+    exit
+}
+
+function "GetItem2ID_34" false
+goto function "GetItem2ID_34"
+
+// Block 32: Items 421 to 430
+if (hasItem "itemid_421" metadata Hand anyAmount) {
+    stat "id2" set 421
+    exit
+}
+if (hasItem "itemid_422" metadata Hand anyAmount) {
+    stat "id2" set 422
+    exit
+}
+if (hasItem "itemid_423" metadata Hand anyAmount) {
+    stat "id2" set 423
+    exit
+}
+if (hasItem "itemid_424" metadata Hand anyAmount) {
+    stat "id2" set 424
+    exit
+}
+if (hasItem "itemid_425" metadata Hand anyAmount) {
+    stat "id2" set 425
+    exit
+}
+if (hasItem "itemid_426" metadata Hand anyAmount) {
+    stat "id2" set 426
+    exit
+}
+if (hasItem "itemid_427" metadata Hand anyAmount) {
+    stat "id2" set 427
+    exit
+}
+if (hasItem "itemid_428" metadata Hand anyAmount) {
+    stat "id2" set 428
+    exit
+}
+if (hasItem "itemid_429" metadata Hand anyAmount) {
+    stat "id2" set 429
+    exit
+}
+if (hasItem "itemid_430" metadata Hand anyAmount) {
+    stat "id2" set 430
+    exit
+}

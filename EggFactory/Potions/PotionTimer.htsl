@@ -1,0 +1,38 @@
+
+if (stat "p/eggprotime" > 0) {
+    stat "p/eggprotime" dec 1
+}
+
+if (stat "p/eggprotime" = 60) {
+    chat "&5&l[♨] &dYour Egg Production Potion has &e%stat.player/p/eggprotime% seconds &dleft!"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+}
+if (stat "p/eggprotime" = 10) {
+    chat "&5&l[♨] &dYour Egg Production Potion has &e%stat.player/p/eggprotime% seconds &dleft!"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+}
+if (stat "p/eggprotime" = 0) {
+    chat "&5&l[♨] &dYour Egg Production Potion has &crun out&d!"
+    stat "p/eggprotime" set -1
+    stat "p/eggproid" set 0
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+}
+
+if (stat "p/moneymulttime" > 0) {
+    stat "p/moneymulttime" dec 1
+}
+
+if (stat "p/moneymulttime" = 60) {
+    chat "&5&l[♨] &dYour Money Multiplier Potion has &e%stat.player/p/moneymulttime% seconds &dleft!"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+}
+if (stat "p/moneymulttime" = 10) {
+    chat "&5&l[♨] &dYour Money Multiplier Potion has &e%stat.player/p/moneymulttime% seconds &dleft!"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+}
+if (stat "p/moneymulttime" = 0) {
+    chat "&5&l[♨] &dYour Money Multiplier Potion has &crun out&d!"
+    stat "p/moneymulttime" set -1
+    stat "p/moneymultid" set 0
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+}

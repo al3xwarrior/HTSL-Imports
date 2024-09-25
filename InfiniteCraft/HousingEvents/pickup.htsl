@@ -1,0 +1,12 @@
+if (stat "bot" = 1) {
+    cancelEvent
+    exit
+}
+
+if (inRegion "PickupRegion", stat "crafting" > 0) {
+    function "DT1" false
+    applyPotion "Blindness" 1 1 true
+    stat "crafting" set 0
+    stat "itemscrafted" inc 1
+    title "&a&lCRAFTED!" "&2Enjoy your new item!" 0 2 1
+}

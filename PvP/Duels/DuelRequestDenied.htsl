@@ -1,0 +1,8 @@
+if (globalstat "dueltemp1" = "%stat.player/playerid%", stat "duels/outgoingid" = "%stat.global/dueltemp2%") {
+
+} else {
+    exit
+}
+
+chat "&c&lYour outgoing duel request was denied! &4&l✘"
+sound "block.anvil.land" 0.7 1.0 "invokers_location"

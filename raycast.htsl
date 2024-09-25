@@ -1,0 +1,21 @@
+// Original action "Guns In Housing Tutorial (NOT BY ME)" by Al3xWarrior
+if and (globalstat "range" = 0) {
+    globalstat "range" set 20
+}
+stat "los" set 0
+if () {
+    globalstat "x" set "%player.location.x%"
+    globalstat "y" set "%player.location.y%"
+    globalstat "z" set "%player.location.z%"
+    globalstat "pitch" set "%player.location.pitch%"
+    globalstat "yaw" set "%player.location.yaw%"
+    stat "los" set 1
+}
+function "los" true
+if (globalstat "raycast" = 1) {
+    sound "note.pling" 0.7 1 invokers_location
+    title "you are staring at a target :)" "&r" 0 2 1
+} else {
+    exit
+}
+globalstat "raycast" set 0

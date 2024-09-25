@@ -1,0 +1,40 @@
+stat "temp" set "%stat.player/strength%"
+stat "temp" div 2
+stat "afk" inc "%stat.player/temp%"
+
+tp custom_coordinates "~ ~6 ~"
+
+if (stat "afk" >= %stat.player/wallmaxhealth%) {
+    title "&6&l100%" "&e+%stat.player/afk_earning%⛃" 0 2 1
+    sound "block.note.pling" 0.7 2.0 "invokers_location"
+    stat "gold" inc "%stat.player/afk_earning%"
+    stat "afk" set 0
+    exit
+}
+
+if () {
+stat "temp" set %stat.player/afk%
+stat "temp1" set %stat.player/wallmaxhealth%
+stat "temp" mult 1000
+stat "temp1" mult 10
+stat "temp" div %stat.player/temp1%
+}
+
+sound "block.note.pling" 0.7 1.0 "invokers_location"
+
+if (stat "temp" < 25) {
+    title "&e%stat.player/afk%&7/&6%stat.player/wallmaxhealth%" "&e&l⸕&6▌ &4▌ ▌ ▌" 0 2 1
+    exit
+}
+if (stat "temp" < 50) {
+    title "&e%stat.player/afk%&7/&6%stat.player/wallmaxhealth%" "&a▌ &e&l⸕&6▌ &4▌ ▌" 0 2 1
+    exit
+}
+if (stat "temp" < 75) {
+    title "&e%stat.player/afk%&7/&6%stat.player/wallmaxhealth%" "&a▌ ▌ &e&l⸕&6▌ &4▌" 0 2 1
+    exit
+}
+if (stat "temp" < 100) {
+    title "&e%stat.player/afk%&7/&6%stat.player/wallmaxhealth%" "&a▌ ▌ ▌ &e&l⸕&6▌" 0 2 1
+    exit
+}

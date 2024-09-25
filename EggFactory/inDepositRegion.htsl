@@ -1,0 +1,55 @@
+
+// in any deposit region
+if or (inRegion "zone1_deposit", inRegion "zone2_deposit", inRegion "zone3_deposit") {
+
+} else {
+    exit
+}
+
+stat "deposittimer" inc 1
+if (stat "deposittimer" >= "%stat.player/depositreq%") {
+    stat "deposittimer" set 0
+} else {
+    exit
+}
+
+if (stat "eggs" <= 0) {
+    title "&4Depositing..." "&c&oNothing to deposit!" 0 1 1
+    exit
+}
+
+stat "todeposit" set "%stat.player/depositamount%"
+if (hasItem "depositstone1" metadata Armor anyAmount) {
+    stat "todeposit" mult 2
+}
+if (hasItem "depositstone2" metadata Armor anyAmount) {
+    stat "todeposit" mult 3
+}
+if (hasItem "depositstone3" metadata Armor anyAmount) {
+    stat "todeposit" mult 4
+}
+if (hasItem "depositstone4" metadata Armor anyAmount) {
+    stat "todeposit" mult 5
+}
+
+if (stat "todeposit" > "%stat.player/eggs%") {
+    stat "eggsindep" inc "%stat.player/eggs%"
+    title "&4Depositing..." "&c%stat.player/eggs% Eggs &7(+%stat.player/eggs%)" 0 1 1
+    stat "eggs" set 0
+} else {
+    stat "eggsindep" inc "%stat.player/todeposit%"
+    title "&4Depositing..." "&c%stat.player/eggs% Eggs &7(-%stat.player/todeposit%)" 0 1 1
+    stat "eggs" dec "%stat.player/todeposit%"
+}
+
+if (stat "s/depositsound" = 2) {
+
+} else {
+    exit
+}
+
+random {
+    sound "entity.item.pickup" 0.7 0.5 "invokers_location"
+    sound "entity.item.pickup" 0.7 0.6 "invokers_location"
+    sound "entity.item.pickup" 0.7 0.7 "invokers_location"
+}

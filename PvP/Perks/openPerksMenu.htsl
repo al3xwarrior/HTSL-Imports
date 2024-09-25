@@ -1,0 +1,20 @@
+if (stat "level" < 5) {
+    chat "&c&lSorry! You need Level 5 to access perks!"
+    sound "block.anvil.land" 0.7 0.5 "invokers_location"
+    exit
+}
+
+if (stat "level" >= 10) {
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    displayMenu "Perk Menu (3)"
+    exit
+}
+
+if (stat "level" >= 8) {
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    displayMenu "Perk Menu (2)"
+    exit
+}
+
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+displayMenu "Perk Menu (1)"

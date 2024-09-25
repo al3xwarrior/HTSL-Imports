@@ -1,0 +1,8 @@
+
+// itemid1 itemid2 plrid
+
+if (stat "bot" = 0) {
+    exit
+}
+
+chat "BOT_MESSAGE {\"type\": \"NEW_CRAFT\",\"data\": {\"ID1\": %stat.global/itemid1%,\"ID2\": %stat.global/itemid2%,\"PLRID\": %stat.global/plrid%}}"

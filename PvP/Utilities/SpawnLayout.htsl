@@ -1,0 +1,36 @@
+
+// Stop if the player is in creative
+if (gamemode "creative", hasItem "housing_menu" metadata Hotbar anyAmount) {
+    exit
+}
+if (gamemode "creative") {
+    giveItem "housing_menu" false 8 true
+    exit
+}
+
+// Stop if the player has a active kit
+if (stat "kit" > 0) {
+    exit
+}
+
+// if the player doesnt have the Menu and has not selected a kit, give them the item
+if (hasItem "pvp_menu" metadata anywhere anyAmount) {
+    
+} else {
+    giveItem "pvp_menu" false 8 true
+}
+
+// Assign layouts based on location
+if (inRegion "DuelsLobby", stat "duels/status" = -1, hasItem "duels_sword" metadata Hotbar anyAmount) {
+    exit
+}
+if (inRegion "DuelsLobby", stat "duels/status" = -1) {
+    applyLayout "Duels"
+}
+if (inRegion "Spawn", stat "kit" = 0, hasItem "kit_selector" metadata Hotbar anyAmount) {
+    exit
+}
+if (inRegion "Spawn", stat "kit" = 0) {
+    applyLayout "Spawn"
+    function "ApplySpawnCosmetics" false
+}

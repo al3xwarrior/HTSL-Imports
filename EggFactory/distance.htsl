@@ -1,0 +1,11 @@
+if (stat "lastx" = "%player.location.x%", stat "lasty" = "%player.location.y%", stat "lastz" = "%player.location.z%") {
+    exit
+}
+
+stat "lastx" set "%player.location.x%"
+stat "lasty" set "%player.location.y%"
+stat "lastz" set "%player.location.z%"
+
+stat "distance" inc 1
+
+function "dogPets" false

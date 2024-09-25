@@ -1,0 +1,11 @@
+// New Player
+if (globalstat "temp" = 1) {
+    chat "&eThey will be known as &6Player#%stat.global/idforbroadcast%"
+    exit
+}
+
+// Existing Player
+if (globalstat "temp" = 2) {
+    chat "&eThey are also known as &6Player#%stat.global/idforbroadcast%"
+    exit
+}

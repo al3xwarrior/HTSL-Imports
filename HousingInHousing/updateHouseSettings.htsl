@@ -1,0 +1,21 @@
+stat "tempsettings" set "%stat.player/p_s_ht%"
+stat "tempsettings" mult 10
+stat "tempsettings" inc "%stat.player/p_s_de%"
+stat "tempsettings" mult 10
+stat "tempsettings" inc "%stat.player/p_s_sd%"
+stat "tempsettings" mult 10
+stat "tempsettings" inc "%stat.player/p_s_pd%"
+stat "tempsettings" mult 10
+stat "tempsettings" inc "%stat.player/p_s_fd%"
+stat "tempsettings" mult 10
+if () {
+stat "tempsettings" inc "%stat.player/p_s_pvp%"
+}
+
+if (inRegion "p1", globalstat "p1" = "%stat.player/playerid%") {
+    stat "p1_settings" set "%stat.player/tempsettings%"
+    chat "&a&lSettings Updated! You may need to exit and re-enter the plot!"
+    exit
+}
+
+chat "&c&lAn error occured! The stats were not updated!"

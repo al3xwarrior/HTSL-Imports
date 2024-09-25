@@ -1,0 +1,26 @@
+if (globalstat "punishmentpid" = "%stat.player/playerid%") {
+
+} else {
+    exit
+}
+
+stat "punished" = 1
+stat "punish/id" set "%stat.global/punishmentid%"
+
+if (stat "punish/id" = 1) {
+    stat "punish/mins" set 60
+    stat "punish/secs" set 0
+    exit
+}
+if (stat "punish/id" = 2) {
+    stat "punish/mins" set 45
+    stat "punish/secs" set 0
+    exit
+}
+if (stat "punish/id" = 3) {
+    stat "punish/mins" set 45
+    stat "punish/secs" set 0
+    exit
+}
+
+function "PunishBroadcast" true

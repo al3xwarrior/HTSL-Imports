@@ -1,0 +1,9 @@
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+if (stat "s/workernoti" = 2) {
+    stat "s/workernoti" set 4
+    chat "&2&l[!] &aSetting Toggled &c&lOFF&r&a."
+} else {
+    stat "s/workernoti" set 2
+    chat "&2&l[!] &aSetting Toggled &2&lON&r&a."
+}
+displayMenu "(!) Settings (!)"

@@ -1,0 +1,50 @@
+if () {
+stat "s/clickersounds" set 0
+stat "s/withdrawsound" set 0
+stat "s/depositsound" set 0
+stat "up/clickermulti" set 0
+stat "up/eggmulti" set 0
+stat "withdrawamount" set 0
+stat "depositamount" set 0
+stat "withdrawreq" set 0
+stat "eggspawnreq" set 0
+stat "withspeedlvl" set 0
+}
+if () {
+stat "withspeedcost" set 0
+stat "withamountcost" set 0
+stat "eggmulticost" set 0
+stat "moneymult" set 0
+stat "moneymulticost" set 0
+stat "depositspeedcost" set 0
+stat "depositreq" set 0
+stat "depositlvl" set 0
+stat "sellspeed" set 0
+stat "sellspeedcost" set 0
+}
+if () {
+stat "depamountcost" set 0
+stat "breedercost" set 0
+stat "carriercost" set 0
+stat "s/workernoti" set 0
+stat "s/sellmsg" set 0
+stat "rebirthreq" set 0
+stat "scoreboardGEGG1" set 0
+stat "scoreboardGEGG2" set 0
+stat "eggsindep" set 0
+stat "eggstowith" set 0
+}
+if () {
+stat "money" set 0
+stat "rebirths" set 0
+stat "chickens" set 0
+stat "eggs" set 0
+stat "goldeneggs" set 0
+}
+
+chat "&7&m-------------------------------------------"
+chat "&c&lAll stats Reset! Rejoin using &n/visit Al3xWarrior"
+chat "&7&m-------------------------------------------&r"
+title "&4&lSTATS RESET" "&cRejoin using &n/visit Al3xWarrior&r" 1 5 1
+
+lobby "Housing"

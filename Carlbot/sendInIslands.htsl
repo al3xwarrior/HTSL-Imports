@@ -1,0 +1,177 @@
+title "&a&l3" "&0" 0 5 3
+sound "Orb Pickup" 0.7 0.8 "invokers_location"
+pause 20
+title "&6&l2" "&0" 0 5 3
+sound "Orb Pickup" 0.7 1.0 "invokers_location"
+pause 20
+title "&c&l1" "&0" 0 5 3
+sound "Orb Pickup" 0.7 1.2 "invokers_location"
+pause 20
+applyPotion "Blindness" 2 1 true
+applyPotion "Nausea" 3 1 true
+
+globalstat "islandtp" inc 1
+
+if (globalstat "islandtp" = 1) {
+    tp "custom_coordinates" "88.5 108 78.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 2) {
+    tp "custom_coordinates" "62.5 108 78.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 3) {
+    tp "custom_coordinates" "36.5 108 78.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 4) {
+    tp "custom_coordinates" "10.5 108 78.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 5) {
+    tp "custom_coordinates" "-14.5 108 78.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 6) {
+    tp "custom_coordinates" "-40.5 108 78.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 7) {
+    tp "custom_coordinates" "-66.5 108 78.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 8) {
+    tp "custom_coordinates" "-92.5 108 78.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 9) {
+    tp "custom_coordinates" "88.5 108 50.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 10) {
+    tp "custom_coordinates" "62.5 108 50.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 11) {
+    tp "custom_coordinates" "36.5 108 50.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 12) {
+    tp "custom_coordinates" "10.5 108 50.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 13) {
+    tp "custom_coordinates" "-14.5 108 50.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 14) {
+    tp "custom_coordinates" "-40.5 108 50.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 15) {
+    tp "custom_coordinates" "-66.5 108 50.5 90.0 0.0"
+}
+
+function "sendInIslands2" false
+goto function "sendInIslands2"
+
+if (globalstat "islandtp" = 16) {
+    tp "custom_coordinates" "-92.5 108 50.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 17) {
+    tp "custom_coordinates" "88.5 108 22.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 18) {
+    tp "custom_coordinates" "62.5 108 22.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 19) {
+    tp "custom_coordinates" "36.5 108 22.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 20) {
+    tp "custom_coordinates" "10.5 108 22.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 21) {
+    tp "custom_coordinates" "-14.5 108 22.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 22) {
+    tp "custom_coordinates" "88.5 83.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 23) {
+    tp "custom_coordinates" "-66.5 108 22.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 24) {
+    tp "custom_coordinates" "-92.28 108 22.56 90.0 0.0"
+}
+if (globalstat "islandtp" = 25) {
+    tp "custom_coordinates" "88.5 108 -5.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 26) {
+    tp "custom_coordinates" "62.5 108 -5.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 27) {
+    tp "custom_coordinates" "36.5 108 -5.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 28) {
+    tp "custom_coordinates" "10.5 108 -5.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 29) {
+    tp "custom_coordinates" "-14.5 108 -5.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 30) {
+    tp "custom_coordinates" "-40.5 108 -5.5 90.0 0.0"
+}
+
+function "sendInIslands3" false
+goto function "sendInIslands3"
+
+if (globalstat "islandtp" = 31) {
+    tp "custom_coordinates" "-66.5 108 -5.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 32) {
+    tp "custom_coordinates" "-92.5 108 -5.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 33) {
+    tp "custom_coordinates" "88.5 108 -33.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 34) {
+    tp "custom_coordinates" "62.5 108 -33.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 35) {
+    tp "custom_coordinates" "36.5 108 -33.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 36) {
+    tp "custom_coordinates" "10.5 108 -33.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 37) {
+    tp "custom_coordinates" "-14.5 108 -33.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 38) {
+    tp "custom_coordinates" "-40.5 108 -33.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 39) {
+    tp "custom_coordinates" "-66.5 108 -33.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 40) {
+    tp "custom_coordinates" "-92.5 108 -33.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 41) {
+    tp "custom_coordinates" "88.5 108 -61.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 42) {
+    tp "custom_coordinates" "62.5 108 -61.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 43) {
+    tp "custom_coordinates" "36.5 108 -61.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 44) {
+    tp "custom_coordinates" "10.5 108 -61.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 45) {
+    tp "custom_coordinates" "-14.5 108 -61.5 90.0 0.0"
+}
+
+function "sendInIslands4" false
+goto function "sendInIslands4"
+
+if (globalstat "islandtp" = 46) {
+    tp "custom_coordinates" "-40.5 108 -61.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 37) {
+    tp "custom_coordinates" "-66.5 108 -61.5 90.0 0.0"
+}
+if (globalstat "islandtp" = 38) {
+    tp "custom_coordinates" "-92.5 108 -61.5 90.0 0.0"
+}
+
+sound "Enderdragon Growl" 0.6 1.2 "invokers_location"
+chat "&7&m-------------------------------------"
+chat "&6&lHOW TO PLAY!"
+chat "&fUsed &eGold &fearned &apassively in the &2/shop&f!"
+chat "&cKill &fothers for extra &eGold&f!"
+chat "&7&m-------------------------------------"

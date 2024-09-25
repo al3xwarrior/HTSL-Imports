@@ -1,0 +1,15 @@
+if (stat "checking" = 0) {
+    exit
+}
+
+title "&6&lCHECKING" "&fDo /check <player> &| &c/stopcheck" 0 1 1
+
+// %stat.global/check_id%
+// %stat.global/check_rebirths%
+// %stat.global/check_gold%
+// %stat.global/check_bases%
+// %stat.global/check_strength%
+// %stat.global/check_diamonds%
+// %stat.global/check_hours%
+// %stat.global/check_mins%
+// %stat.global/check_seconds%

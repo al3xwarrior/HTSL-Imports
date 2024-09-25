@@ -1,0 +1,30 @@
+if (stat "savedelection" = "%stat.global/m/election%") {
+
+} else {
+    stat "savedelection" set "%stat.global/m/election%"
+    stat "voted" set 1
+    globalstat "m/cluckvotes" inc 1
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    chat "&2&l[!] &aSuccessfully Voted!"
+    chat "&e[MAYOR] Sir Cluckington&f: &oCluck cluck cluck! &7&o*Translation: Thanks %player.name%!*"
+    exit
+}
+
+if (stat "voted" = 1) {
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    chat "&4&l[!] &cYou already voted for this mayor!"
+    exit
+}
+
+if (stat "voted" = 2) {
+    globalstat "m/joevotes" dec 1
+}
+if (stat "voted" = 3) {
+    globalstat "m/bobvotes" dec 1
+}
+
+
+stat "voted" set 1
+globalstat "m/cluckvotes" inc 1
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+chat "&2&l[!] &aSuccessfully Voted!"

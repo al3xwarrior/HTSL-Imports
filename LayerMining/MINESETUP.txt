@@ -1,0 +1,5 @@
+
+To setup a mine, first create the mines and setup the regions in the format
+"Area{area_number}-{region_number}"
+
+For each region set the entry actions to "enter_mine.htsl"

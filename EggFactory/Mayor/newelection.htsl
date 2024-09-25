@@ -1,0 +1,20 @@
+globalstat "m/hours" set 1
+globalstat "m/minutes" set 0
+globalstat "m/seconds" set 0
+
+globalstat "m/election" inc 1
+
+globalstat "m/mayor" set 0
+if (globalstat "m/cluckvotes" > "%stat.global/m/joevotes%") {
+    globalstat "m/mayor" set 1
+}
+if (globalstat "m/joevotes" > "%stat.global/m/cluckvotes%") {
+    globalstat "m/mayor" set 2
+}
+if (globalstat "m/mayor" = 0) {
+    globalstat "m/mayor" set "%random.int/1 3%"
+}
+function "announcemayor" true
+
+globalstat "m/cluckvotes" set 0
+globalstat "m/joevotes" set 0

@@ -1,0 +1,18 @@
+if (hasGroup "Diamond" true) {
+    chat "&c&lYou have a higher rank already! &4&l✘"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+if (stat "gold" < 500) {
+    chat "&c&lYou don't have enough gold! &4&l✘ &7(%stat.player/gold%⛃&8/&7750⛃)"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+stat "gold" dec 500
+changePlayerGroup "Diamond" true
+
+title "&e&lCongrats!" "&fYou are now %player.group.tag%" 2 5 3
+sound "Level Up" 0.7 1 "invokers_location"
+closeMenu

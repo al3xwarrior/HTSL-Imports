@@ -1,0 +1,17 @@
+if (stat "bot" = 0) {
+    exit
+}
+
+if (globalstat "botbcid" = 1) {
+    chat "equiped_bow %stat.global/bot/tpx% %stat.global/bot/tpy% %stat.global/bot/tpz%"
+}
+if (globalstat "botbcid" = 2) {
+    chat "forest_ability %stat.global/bot/tpx% %stat.global/bot/tpy% %stat.global/bot/tpz%"
+}
+if (globalstat "botbcid" = 3) {
+    chat "hit a quick //undo for me please bot! Thanks! sussy boy :D"
+}
+
+globalstat "bot/tpx" set 0
+globalstat "bot/tpy" set 0
+globalstat "bot/tpz" set 0

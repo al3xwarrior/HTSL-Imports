@@ -1,0 +1,18 @@
+if (stat "money" >= "%stat.player/moneymulticost%") {
+
+} else {
+    chat "&4&l[!] &cYou don't have enough money! &7($%stat.player/money%/$%stat.player/moneymulticost%)"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+stat "money" dec "%stat.player/moneymulticost%"
+stat "moneymulticost" mult 18
+stat "moneymulticost" div 10
+
+chat "&2&l[✔] &aPurchase Successful!"
+sound "entity.player.levelup" 0.7 1.0 "invokers_location"
+
+stat "moneymult" inc 1
+
+displayMenu "(!) Truck Upgrades (!)"

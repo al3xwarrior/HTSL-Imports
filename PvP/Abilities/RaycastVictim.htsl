@@ -1,0 +1,16 @@
+// Duel Request Victim
+if (globalstat "raycastid" == 2, inRegion "DuelsLobby") {
+    globalstat "duels/incomingid" set "%stat.player/playerid%"
+    pause 1
+    stat "duels/outgoingid" set "%stat.global/duels/outgoingid%"
+    chat "&aYou recieved a duel request from &2Player#%stat.player/duels/outgoingid% &7(Expires in 10s)"
+} else {
+    exit
+}
+
+pause 200
+
+if (stat "duels/outgoingid" > 0) {
+    stat "duels/outgoingid" set 0
+    chat "&cDuel request expired! You didnt accept :("
+}

@@ -1,0 +1,19 @@
+
+if (stat "plotclaiming" = 1, globalstat "p1" = 0) {
+    globalstat "p1" set "%stat.player/playerid%"
+    globalstat "p1_settings" set 9444421
+    globalstat "p1_open" set 4
+    globalstat "p1_cookies" set 0
+    title "&6&lOWNED" "&eCongrats! You now own Plot #1" 0 2 1
+    chat "&8&m---------------------------------"
+    chat "&6&lCongrats! &fYou are now the proud owner of"
+    chat "&fyour own plot! To allow &eguests&f, change &csettings"
+    chat "&for grab &2materials&f... use the &aHousing Menu&f!"
+    chat "&8&m---------------------------------"
+    exit
+}
+
+// to be updated with more plots
+
+chat "&c&lSorry! There are no avaliable plots to claim!"
+sound "block.anvil.land" 0.7 1.0 "invokers_location"

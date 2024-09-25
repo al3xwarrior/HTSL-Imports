@@ -1,0 +1,60 @@
+// Trigger this function from the item's actions
+
+stat "targetx" set "%player.location.x%"
+stat "targety" set "%player.location.y%"
+stat "targetz" set "%player.location.z%"
+function "DT1"
+
+if () {
+    stat sinInput set "%player.location.yaw%"
+    stat sinInput mult 1000
+    function "sine"
+    stat sinYaw set "%stat.player/sinOutput%"
+    stat cosInput set "%player.location.yaw%"
+    stat cosInput mult 1000
+    function "cosine"
+}
+if () {
+    stat cosYaw set "%stat.player/cosOutput%"
+    stat sinInput set "%player.location.pitch%"
+    stat sinInput mult 1000
+    function "sine2"
+    stat cosInput set "%player.location.pitch%"
+    stat cosInput mult 1000
+    
+}
+if () {
+    function "cosine2"
+    stat xTP set 8
+    stat xTP mult "%stat.player/sinYaw%"
+    stat xTP mult "%stat.player/cosOutput%"
+    stat xTP div -1000000
+    stat yTP set 8
+}
+if () {
+    stat yTP mult "%stat.player/sinOutput%"
+    stat yTP div -1000
+    stat zTP set 8
+    stat zTP mult "%stat.player/cosYaw%"
+    stat zTP mult "%stat.player/cosOutput%"
+}
+if () {
+    stat zTP div 1000000
+    stat sinYaw set 0
+    stat cosYaw set 0
+    stat cosOutput set 0
+    stat sinOutput set 0
+}
+//chat "%%stat_xtp%% %%stat_ytp%% %%stat_ztp%%"\
+if or (stat xTP > 0, stat xTP < 0) {
+    function tpx
+}
+if or (stat yTP > 0, stat yTP < 0) {
+    function tpy
+}
+if or (stat zTP > 0, stat zTP < 0) {
+    function tpz
+}
+stat xTP set 0
+stat yTP set 0
+stat zTP set 0

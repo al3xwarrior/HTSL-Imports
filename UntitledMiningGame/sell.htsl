@@ -1,0 +1,21 @@
+if (stat "storage" < 1) {
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    chat "&cYou have nothing to sell!"
+    exit
+}
+
+stat "togive" set "%stat.player/storage%"
+stat "togive" mult "%stat.player/sellmulti%"
+stat "togive" div 10
+
+stat "money" inc "%stat.player/togive%"
+title "&2&lSOLD!" "&e%stat.player/storage% &7>> &a$%stat.player/togive%" 1 3 1
+stat "storage" set 0
+
+sound "Orb Pickup" 0.7 1.2 "invokers_location"
+pause 2
+sound "Orb Pickup" 0.7 1.4 "invokers_location"
+pause 2
+sound "Orb Pickup" 0.7 1.6 "invokers_location"
+pause 2
+sound "Orb Pickup" 0.7 2.0 "invokers_location"

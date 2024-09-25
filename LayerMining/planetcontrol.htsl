@@ -1,0 +1,19 @@
+if (stat "rebirths" >= 3) {
+
+} else {
+    chat "&c&lYou don't have a high enough rebirth!"
+    sound "block.anvil.land" 0.7 0.5 "invokers_location"
+    exit
+}
+
+applyPotion "blindness" 5 10 true
+applyPotion "nausea" 5 10 true
+
+closeMenu
+
+title "&5&lTELEPORTING..." "&0" 0 1 1
+
+pause 35
+tp current_location
+title "&6&lTELEPORTED!" "&0" 0 1 1
+sound "block.note.pling" 0.7 2.0 "invokers_location"

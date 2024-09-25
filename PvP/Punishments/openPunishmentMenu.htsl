@@ -1,0 +1,3 @@
+if (inRegion "Spawn") {
+    displayMenu "Execute Punishment"
+}

@@ -1,0 +1,5 @@
+
+if or (stat "perks/1" = 6, stat "perks/2" = 6, stat "perks/3" = 6) {
+    changeHealth inc "%random.int/1 4%"
+    sound "entity.generic.drink" 0.5 1.6 "invokers_location"
+}

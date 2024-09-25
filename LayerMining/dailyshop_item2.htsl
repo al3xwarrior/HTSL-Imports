@@ -1,0 +1,23 @@
+if (globalstat "shopitem2_stock" >= 1) {
+
+} else {
+    chat "&c&lOUT OF STOCK"
+    displayMenu "Rotating Shop (#1)"
+    sound "block.anvil.land" 0.7 0.5 "invokers_location"
+    exit
+}
+
+if (stat "diamonds" >= "%stat.global/shopitem2_cost%") {
+
+} else {
+    chat "&c&lNOT ENOUGH DIAMONDS!"
+    displayMenu "Rotating Shop (#1)"
+    sound "block.anvil.land" 0.7 0.5 "invokers_location"
+    exit
+}
+
+globalstat "shopitem2_stock" dec 1
+stat "diamonds" dec "%stat.global/shopitem2_cost%"
+giveItem "Stone" true "First Slot" false
+sound "block.note.bass" 0.7 2 "invokers_location"
+displayMenu "Rotating Shop (#2)"

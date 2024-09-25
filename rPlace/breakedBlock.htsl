@@ -1,0 +1,15 @@
+// as long as they are in the "breaking" mode. Check if they have the items, aka check if the durability changed
+
+if or (stat "status" > -1, stat "canaction" = 0, gamemode creative) {
+    exit
+}
+
+if (hasItem "rplace_shovel" metaData Anywhere "Any Amount", hasItem "rplace_axe" metaData Anywhere "Any Amount", hasItem "rplace_pickaxe" metaData Anywhere "Any Amount") {
+    exit
+}
+
+stat "status" set 0
+stat "canaction" set 0
+applyLayout "Static"
+gamemode adventure
+applyPotion "Mining Fatigue" 2000000 10 true

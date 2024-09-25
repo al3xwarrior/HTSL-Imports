@@ -1,0 +1,3 @@
+if (hasTeam "Playing") {
+    stat "gold" inc 1
+}

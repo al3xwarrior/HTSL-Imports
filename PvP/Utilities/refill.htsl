@@ -1,0 +1,128 @@
+
+if (stat "kit" = 0) {
+    chat "&c&l[ERROR] No kit selected! &4✘"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+if (stat "refill_cd" > 0) {
+    chat "&c&lYou are on Refill Cooldown! &4✘ &7(%stat.player/refill_cd%s)"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+stat "refill_cd" set 15
+
+if (stat "kit" > 0, stat "healingmethod" = 0) {
+    giveItem "soup" true "First Slot" false
+}
+if (stat "kit" > 0, stat "healingmethod" = 1) {
+    giveItem "healpotion" true "First Slot" fals
+}
+sound "entity.item.pickup" 0.7 1.5 "invokers_location"
+if (health <= 0) {
+    exit
+}
+pause 4
+if (stat "kit" > 0, stat "healingmethod" = 0) {
+    giveItem "soup" true "First Slot" false
+}
+if (stat "kit" > 0, stat "healingmethod" = 1) {
+    giveItem "healpotion" true "First Slot" false
+}
+sound "entity.item.pickup" 0.7 1.5 "invokers_location"
+pause 4
+if (stat "kit" > 0, stat "healingmethod" = 0) {
+    giveItem "soup" true "First Slot" false
+}
+if (stat "kit" > 0, stat "healingmethod" = 1) {
+    giveItem "healpotion" true "First Slot" false
+}
+sound "entity.item.pickup" 0.7 1.5 "invokers_location"
+if (health <= 0) {
+    exit
+}
+pause 4
+if (stat "kit" > 0, stat "healingmethod" = 0) {
+    giveItem "soup" true "First Slot" false
+}
+if (stat "kit" > 0, stat "healingmethod" = 1) {
+    giveItem "healpotion" true "First Slot" false
+}
+sound "entity.item.pickup" 0.7 1.5 "invokers_location"
+pause 4
+if (stat "kit" > 0, stat "healingmethod" = 0) {
+    giveItem "soup" true "First Slot" false
+}
+if (stat "kit" > 0, stat "healingmethod" = 1) {
+    giveItem "healpotion" true "First Slot" false
+}
+sound "entity.item.pickup" 0.7 1.5 "invokers_location"
+
+function "Refill2"
+goto function "Refill2"
+
+if or (stat "perks/1" = 8, stat "perks/2" = 8, stat "perks/3" = 8) {
+    exit
+}
+if (health <= 0) {
+    exit
+}
+pause 4
+if (stat "kit" > 0, stat "healingmethod" = 0) {
+    giveItem "soup" true "First Slot" false
+}
+if (stat "kit" > 0, stat "healingmethod" = 1) {
+    giveItem "healpotion" true "First Slot" false
+}
+sound "entity.item.pickup" 0.7 1.5 "invokers_location"
+pause 4
+if (stat "kit" > 0, stat "healingmethod" = 0) {
+    giveItem "soup" true "First Slot" false
+}
+if (stat "kit" > 0, stat "healingmethod" = 1) {
+    giveItem "healpotion" true "First Slot" false
+}
+sound "entity.item.pickup" 0.7 1.5 "invokers_location"
+if (health <= 0) {
+    exit
+}
+pause 4
+if (stat "kit" > 0, stat "healingmethod" = 0) {
+    giveItem "soup" true "First Slot" false
+}
+if (stat "kit" > 0, stat "healingmethod" = 1) {
+    giveItem "healpotion" true "First Slot" false
+}
+sound "entity.item.pickup" 0.7 1.5 "invokers_location"
+pause 4
+if (stat "kit" > 0, stat "healingmethod" = 0) {
+    giveItem "soup" true "First Slot" false
+}
+if (stat "kit" > 0, stat "healingmethod" = 1) {
+    giveItem "healpotion" true "First Slot" false
+}
+sound "entity.item.pickup" 0.7 1.5 "invokers_location"
+pause 4
+if (stat "kit" > 0, stat "healingmethod" = 0) {
+    giveItem "soup" true "First Slot" false
+}
+if (stat "kit" > 0, stat "healingmethod" = 1) {
+    giveItem "healpotion" true "First Slot" false
+}
+sound "entity.item.pickup" 0.7 1.5 "invokers_location"
+
+// Midas Perk
+if or (stat "perks/1" = 1, stat "perks/2" = 1, stat "perks/3" = 1) {
+    stat "temp" set "%random.int/1 101%"
+    stat "temp2" set 5
+    stat "temp2" mult "%stat.player/perks/midas%"
+} else {
+    exit
+}
+if (stat "temp" <= "%stat.player/temp2%") {
+    chat "&6&lMIDAS TOUCH &fYou got lucky! &e+1 Golden Soup"
+    removeItem "soup"
+    removeItem "healpotion"
+    giveItem "goldensoup" true -1 false
+    sound "entity.item.pickup" 0.7 2 "invokers_location"
+}

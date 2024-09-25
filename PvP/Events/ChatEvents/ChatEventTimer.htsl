@@ -1,0 +1,28 @@
+
+// playtime function global
+
+if (globalstat "bot/online" = 0) {
+    exit
+}
+
+if (globalstat "CE/timer" > 0) {
+    globalstat "CE/timer" dec 1
+}
+if (globalstat "CE/over" > 0) {
+    globalstat "CE/over" dec 1
+}
+
+
+if (globalstat "CE/timer" <= 0) {
+    globalstat "CE/winner" set 0
+    globalstat "CE/timer" set "%random.int/400 600%"
+    globalstat "CE/over" set 10
+    globalstat "CE/id" set "%random.int/1 16%"
+    function "ChatEvent1" true
+    exit
+}
+if (globalstat "CE/over" <= 0) {
+    function "ChatEventEnd" true
+    globalstat "CE/over" set 9999
+    exit
+}

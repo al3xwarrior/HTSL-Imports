@@ -1,0 +1,9 @@
+globalstat "g_wallhealth" dec "%stat.player/strength%"
+
+if (globalstat "g_wallhealth" < 0) {
+    function "ServerWallDestroyed" true
+    globalstat "g_wallhealth" set 50000000000000
+    exit
+} else {
+    title "&%random.int/1 10%&lMINING!" "&c%stat.global/g_wallhealth%❤&7/&c50T❤" 0 1 1
+}

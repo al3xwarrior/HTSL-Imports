@@ -1,0 +1,24 @@
+if (stat "lastx" = "%player.location.x%", stat "lasty" = "%player.location.y%", stat "lastz" = "%player.location.z%") {
+    exit
+}
+
+if (stat "spawning" = 1) {
+    stat "spawning" set 0
+    chat "&c&lYou moved! Spawn teleport canceled!"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+}
+
+function "AC_SpeedFlyCheck" false
+
+stat "lastx" set "%player.location.x%"
+stat "lasty" set "%player.location.y%"
+stat "lastz" set "%player.location.z%"
+
+// disabledchecker
+
+stat "distance" inc 1
+
+if (hasItem "disabledchecker" metadata anywhere anyAmount) {
+    removeItem "disabledchecker"
+    giveItem "checker_tool" false 1 true
+}

@@ -1,0 +1,23 @@
+if (stat "money" >= "%stat.player/withamountcost6%") {
+
+} else {
+    chat "&4&l[!] &cYou don't have enough money! &7($%stat.player/money%/$%stat.player/withamountcost6%)"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+stat "money" dec "%stat.player/withamountcost6%"
+
+// add amount of 0's
+stat "withamountcost" mult 13000000
+
+// dont touch
+stat "withamountcost" div 10
+
+chat "&2&l[✔] &aPurchase Successful!"
+sound "entity.player.levelup" 0.7 1.0 "invokers_location"
+
+// changes based on which one
+stat "withdrawamount" inc 1000000
+
+function "openWithdrawAmount" false

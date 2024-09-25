@@ -1,0 +1,19 @@
+
+if () {
+stat "withamountcost1" set "%stat.player/withamountcost%"
+stat "withamountcost1" mult 10
+stat "withamountcost2" set "%stat.player/withamountcost%"
+stat "withamountcost2" mult 100
+stat "withamountcost3" set "%stat.player/withamountcost%"
+stat "withamountcost3" mult 1000
+}
+if () {
+stat "withamountcost4" set "%stat.player/withamountcost%"
+stat "withamountcost4" mult 10000
+stat "withamountcost5" set "%stat.player/withamountcost%"
+stat "withamountcost5" mult 100000
+stat "withamountcost6" set "%stat.player/withamountcost%"
+stat "withamountcost6" mult 1000000
+}
+
+displayMenu "Withdraw Amount Upgrades"

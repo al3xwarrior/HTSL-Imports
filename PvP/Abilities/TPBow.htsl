@@ -1,0 +1,10 @@
+if (globalstat "tpbow/id" = "%stat.global/tpbow/id%") {
+    globalstat "tpbow/id" set 0
+    chat "&b&k|&r &9&lTP BOW &fYou hit someone! &b&k|"
+    stat "targetx" set "%stat.global/tpbow/vicx%"
+    stat "targety" set "%stat.global/tpbow/vicy%"
+    stat "targetz" set "%stat.global/tpbow/vicz%"
+    function "DT1" false
+    applyPotion "Strength" 2 1 true
+    sound "entity.enderman.teleport" 0.7 2.0 "invokers_location"
+}

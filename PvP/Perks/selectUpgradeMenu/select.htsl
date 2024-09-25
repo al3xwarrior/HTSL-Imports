@@ -1,0 +1,37 @@
+
+if (stat "perks/editing" = 1) {
+    stat "perks/1" set "%stat.player/perks/selup%"
+    chat "&a&lPerk Applied! &2&l✔"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    stat "perks/selup" set 0
+}
+
+if (stat "perks/editing" = 2) {
+    stat "perks/2" set "%stat.player/perks/selup%"
+    chat "&a&lPerk Applied! &2&l✔"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    stat "perks/selup" set 0
+}
+
+if (stat "perks/editing" = 3) {
+    stat "perks/3" set "%stat.player/perks/selup%"
+    chat "&a&lPerk Applied! &2&l✔"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    stat "perks/selup" set 0
+}
+
+// reopen menu
+if (stat "level" >= 10) {
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    displayMenu "Perk Menu (3)"
+    exit
+}
+
+if (stat "level" >= 8) {
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    displayMenu "Perk Menu (2)"
+    exit
+}
+
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+displayMenu "Perk Menu (1)"

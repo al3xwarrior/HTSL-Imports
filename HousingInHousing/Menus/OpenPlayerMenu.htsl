@@ -1,0 +1,9 @@
+
+if or (inRegion "p1") {
+
+} else {
+    chat "&c&lEither Al3x forgot something or you are out of bounds!!"
+}
+
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+displayMenu "Player Menu"

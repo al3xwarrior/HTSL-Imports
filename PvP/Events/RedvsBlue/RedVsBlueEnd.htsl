@@ -1,0 +1,49 @@
+// 0 = timer ran out
+// 1 = blue win
+// 2 = red win
+
+if or (hasTeam "Blue", hasTeam "Red") {
+
+} else {
+    exit
+}
+
+sound "entity.wither.spawn" 0.7 1.1 "invokers_location"
+chat "&8&m------------------------------------"
+chat "&c&lRED &f&lVS &b&lBLUE &f&lEVENT &4&lENDED"
+chat "&r"
+if (globalstat "rvb/endbc" = 0) {
+    chat "&cThe timer ran out... no one won :("
+}
+if (globalstat "rvb/endbc" = 1, hasTeam "Blue") {
+    stat "givegold" set 25
+    stat "givexp" set 20
+    function "CalcBonusStats"
+    stat "gold" inc "%stat.player/givegold%"
+    stat "xpneeded" dec "%stat.player/givexp%"
+    chat "&aYou won the event! &6%stat.player/givegold%⛃ &aand &b%stat.player/givexp%✥"
+    stat "givegold" set 0
+    stat "givexp" set 0
+}
+if (globalstat "rvb/endbc" = 1, hasTeam "Red") {
+    chat "&cYou lost the event! :("
+}
+if (globalstat "rvb/endbc" = 2, hasTeam "Red") {
+    stat "givegold" set 25
+    stat "givexp" set 20
+    function "CalcBonusStats"
+    stat "gold" inc "%stat.player/givegold%"
+    stat "xpneeded" dec "%stat.player/givexp%"
+    chat "&aYou won the event! &6+100⛃"
+    stat "givegold" set 0
+    stat "givexp" set 0
+}
+if (globalstat "rvb/endbc" = 2, hasTeam "Blue") {
+    chat "&cYou lost the event! :("
+}
+chat "&8&m------------------------------------"
+
+houseSpawn
+resetInventory
+stat "kit" set 0
+setTeam "None"

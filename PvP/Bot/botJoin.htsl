@@ -1,0 +1,6 @@
+if (stat "bot" = 1) {
+    gamemode "creative"
+    applyPotion "Invisibility" 2000000 10 true
+    applyPotion "Regeneration" 2000000 10 true
+    applyPotion "Resistance" 2000000 10 true
+}

@@ -1,0 +1,16 @@
+// %stat.player/titlemsg% = 0, 1, 2 (0 = off, 1 = victim, 2 = you)
+
+sound "Orb Pickup" 0.7 1.1 "invokers_location"
+if (stat "titlemsg" = 2) {
+    stat "titlemsg" set 0
+    chat "&a&lA title will how be shown which displays the victims hearts! &2&l✓"
+}
+if (stat "titlemsg" = 1) {
+    stat "titlemsg" set 2
+    chat "&a&lA title will how be shown which displays your hearts! &2&l✓"
+}
+if (stat "titlemsg" = 0) {
+    stat "titlemsg" set 1
+    chat "&a&lA title will how be shown which displays the victims hearts! &2&l✓"
+}
+displayMenu "Settings"

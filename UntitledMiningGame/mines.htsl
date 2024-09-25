@@ -1,0 +1,19 @@
+if (stat "endmine" = 2) {
+    tp "custom_coordinates" "~ ~ ~"
+    applyPotion "Blindness" 2 1 true
+    pause 15
+    tp "current_location"
+    sound "Enderman Teleport" 0.7 2.0 "current_location"
+    exit
+}
+
+if (stat "money" >= 10000000000) {
+    stat "money" dec 10000000000
+    stat "endmine" set 2
+    chat "&a&lYou purchased this mine!"
+    sound "Level Up" 0.7 1 "invokers_location"
+    displayMenu "Mines"
+} else {
+    chat "&c&lNot enough money!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+}

@@ -1,0 +1,62 @@
+tp "custom_coordinates" "52.55 187 -47.43 -140.59 31.78"
+sound "block.note_block.pling" 0.7 1.0 "invokers_location"
+chat "&7&m-------------------------------------&r"
+chat "&e&lTUTORIAL &7(&f1&8/&f5&7)"
+chat "&fYou are a &6Chicken Farmer&f! Your task is"
+chat "&fto use your &6Chick-o-matic &fto &acreate"
+chat "&fchickens which are added too your &lcoop&r&f!"
+chat "&7&m-------------------------------------&f"
+pause 140
+tp "custom_coordinates" "51.57 187 -58.44 -136.82 45.15"
+if () {
+sound "block.note_block.pling" 0.7 1.0 "invokers_location"
+chat "&7&m-------------------------------------&r"
+chat "&e&lTUTORIAL &7(&f2&8/&f5&7)"
+chat "&fThis is your &lcoop&r&f! Stand inside to &ewithdraw"
+chat "&fthe &6Eggs &fyour Chickens created! Notice that"
+chat "&fthere are &aupgrades &favaliable too."
+chat "&7&m-------------------------------------&f"
+}
+pause 140
+tp "custom_coordinates" "58.4 186 -36.44 36.23 39.43"
+if () {
+sound "block.note_block.pling" 0.7 1.0 "invokers_location"
+chat "&7&m-------------------------------------&r"
+chat "&e&lTUTORIAL &7(&f3&8/&f5&7)"
+chat "&fYour &ctruck &fis where you deposit your &eEggs"
+chat "&fto be sold for &a$$$&f! Notice that there are"
+chat "&aupgrades &fhere too."
+chat "&7&m-------------------------------------&f"
+}
+pause 140
+tp "custom_coordinates" "-53.5 198 66.5 46.04 30.27"
+if () {
+sound "block.note_block.pling" 0.7 1.0 "invokers_location"
+chat "&7&m-------------------------------------&r"
+chat "&e&lTUTORIAL &7(&f4&8/&f5&7)"
+chat "&fThis is the &4Hub&f! You don't have this &2unlocked"
+chat "&fat the moment, but theres some really useful"
+chat "&fstuff here!"
+chat "&7&m-------------------------------------&f"
+}
+pause 140
+tp "custom_coordinates" "40.5 194 -59.5 -53.37 40.62"
+if () {
+sound "block.note_block.pling" 0.7 1.0 "invokers_location"
+chat "&7&m-------------------------------------&r"
+chat "&e&lTUTORIAL &7(&f5&8/&f5&7)"
+chat "&fWelcome back to your &6farm&f. There might be some"
+chat "&fother stuff to take a look at! &dHave Fun!"
+chat "&7&m-------------------------------------&f"
+}
+pause 140
+
+houseSpawn
+if (stat "tutorial" = 0) {
+    giveItem "tutorialbunny" true -1 false
+    stat "money" inc 100
+
+    chat "&e&lTUTORIAL REWARD!"
+    chat "&7- &a+$100"
+    chat "&7- &eBunny Pet"
+}

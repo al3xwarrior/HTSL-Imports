@@ -1,0 +1,14 @@
+
+// 20 ticks
+
+if (inRegion "PracticePool") {
+
+} else {
+    exit
+}
+
+stat "practicetimer" inc 1
+
+if (stat "practicetimer" > "%stat.player/besthealtime%") {
+    stat "besthealtime" set "%stat.player/practicetimer%"
+}

@@ -1,0 +1,47 @@
+// toenchant
+// 1=efficiency 2=haste 3=tokenmulti 4=gemfinder 5=keyfinder 6=zombieminer 7=copyandpaste
+// 8=explosive 9=enchantduper
+
+stat "canupgrade" set 0
+if (stat "toenchant" = 1) {
+    stat "currentlevel" set "%stat.player/e/efficiency%"
+    stat "maxlevel" set 10
+}
+if (stat "toenchant" = 2) {
+    stat "currentlevel" set "%stat.player/e/haste%"
+    stat "maxlevel" set 3
+}
+if (stat "toenchant" = 3) {
+    stat "currentlevel" set "%stat.player/e/tokenmulti%"
+    stat "maxlevel" set 100
+}
+if (stat "toenchant" = 4) {
+    stat "currentlevel" set "%stat.player/e/gemfinder%"
+    stat "maxlevel" set 100
+}
+if (stat "toenchant" = 5) {
+    stat "currentlevel" set "%stat.player/e/keyfinder%"
+    stat "maxlevel" set 10
+}
+if (stat "toenchant" = 6) {
+    stat "currentlevel" set "%stat.player/e/zminer%"
+    stat "maxlevel" set 50
+}
+if (stat "toenchant" = 7) {
+    stat "currentlevel" set "%stat.player/e/cap%"
+    stat "maxlevel" set 50
+}
+if (stat "toenchant" = 8) {
+    stat "currentlevel" set "%stat.player/e/explosive%"
+    stat "maxlevel" set 100
+}
+if (stat "toenchant" = 9) {
+    stat "currentlevel" set "%stat.player/e/edupe%"
+    stat "maxlevel" set 25
+}
+
+stat "currentlevel" inc "%stat.player/amountoupgrade%"
+
+if (stat "currentlevel" <= "%stat.player/maxlevel%") {
+    stat "canupgrade" set 1
+}

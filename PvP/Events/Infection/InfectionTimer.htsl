@@ -1,0 +1,36 @@
+if (globalstat "event" = 3) {
+    
+} else {
+    exit
+}
+
+if (globalstat "inf/waiting" > 1) {
+    globalstat "inf/waiting" dec 1
+    exit
+}
+if (globalstat "inf/waiting" = 1) {
+    globalstat "inf/waiting" set 0
+    function "SendInInfection" true
+    exit
+}
+
+globalstat "inf/timer" dec 1
+
+if (globalstat "inf/timer" <= 0) {
+    globalstat "event" set 0
+    globalstat "inf/endbc" set 0
+    function "InfectionEnd" true
+    exit
+}
+if (placeholder "%player.team.players/Survivor%" <= 0) {
+    globalstat "event" set 0
+    globalstat "inf/endbc" set 1
+    function "InfectionEnd" true
+    exit
+}
+if (placeholder "%player.team.players/Infected%" <= 0, globalstat "inf/infected" = 1) {
+    globalstat "event" set 0
+    globalstat "inf/endbc" set 2
+    function "InfectionEnd" true
+    exit
+}

@@ -1,0 +1,24 @@
+if (stat "hitsound" = 0) {
+    exit
+}
+
+if (stat "hitsound" = 1) {
+    sound "entity.experience_orb.pickup" 0.7 0.7 "invokers_location"
+    exit
+}
+if (stat "hitsound" = 2) {
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    exit
+}
+if (stat "hitsound" = 3) {
+    sound "entity.experience_orb.pickup" 0.7 1.3 "invokers_location"
+    exit
+}
+if (stat "hitsound" = 4) {
+    sound "block.lava.pop" 0.7 2.0 "invokers_location"
+    exit
+}
+if (stat "hitsound" = 5) {
+    sound "entity.player.levelup" 0.7 2.0 "invokers_location"
+    exit
+}

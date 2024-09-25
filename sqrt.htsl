@@ -1,0 +1,119 @@
+// by Variouscacti, with help from Anotherslime
+
+// How to Use:
+// Name function "sqrt" for compatibility with my other functions
+// Input a value to the stat "sqrtInput", where 0 < input <= 100,000,000,000,000,000 (10^17, 100 quadrillion)
+// Output will be in the stat "sqrtOutput" (Note: Input and output are integers, so for more accuracy, multiply input by x^2, and output/x will be the intended output. For example, sqrt(2) = 1, but sqrt(2*1,000,000) = 1,414)
+
+// Desmos graph: https://www.desmos.com/calculator/hdo97titz1
+// Source for estimation: https://en.wikipedia.org/wiki/Methods_of_computing_square_roots (Modified version of Bakhshali method used)
+
+// Enjoy!
+
+// check input
+if and (stat sqrtInput > 0, stat sqrtInput <= 100000000000000000) {
+stat sqrtTemp0 = %stat.player/sqrtInput%
+} else {
+chat "Error! Invalid sqrt input!"
+exit
+}
+
+// keep input near seed
+if and (stat sqrtInput >= 10000000000) {
+stat sqrtRefine = 1000
+stat sqrtInput *= 50
+} else {
+stat sqrtRefine = 1
+stat sqrtInput *= 50000000
+}
+
+// iteration 1
+if and () {
+stat sqrtTemp0 /= 20
+stat sqrtTemp0 /= %stat.player/sqrtRefine%
+stat sqrtTemp0 /= %stat.player/sqrtRefine%
+stat sqrtTemp0 -= 5000000
+stat sqrtTemp1 = 10000000
+}
+if and () {
+stat sqrtTemp1 += %stat.player/sqrtTemp0%
+stat sqrtTemp0 *= %stat.player/sqrtTemp0%
+stat sqrtTemp0 /= 2
+stat sqrtTemp0 /= %stat.player/sqrtTemp1%
+stat sqrtTemp1 -= %stat.player/sqrtTemp0%
+}
+
+// iterations 2-5
+if and () {
+stat sqrtTemp0 = %stat.player/sqrtInput%
+stat sqrtTemp0 /= %stat.player/sqrtTemp1%
+stat sqrtTemp2 = %stat.player/sqrtTemp1%
+stat sqrtTemp2 /= 2
+stat sqrtTemp0 -= %stat.player/sqrtTemp2%
+}
+if and () {
+stat sqrtTemp1 += %stat.player/sqrtTemp0%
+stat sqrtTemp0 *= %stat.player/sqrtTemp0%
+stat sqrtTemp0 /= 2
+stat sqrtTemp0 /= %stat.player/sqrtTemp1%
+stat sqrtTemp1 -= %stat.player/sqrtTemp0%
+}
+if and () {
+stat sqrtTemp0 = %stat.player/sqrtInput%
+stat sqrtTemp0 /= %stat.player/sqrtTemp1%
+stat sqrtTemp2 = %stat.player/sqrtTemp1%
+stat sqrtTemp2 /= 2
+stat sqrtTemp0 -= %stat.player/sqrtTemp2%
+}
+if and () {
+stat sqrtTemp1 += %stat.player/sqrtTemp0%
+stat sqrtTemp0 *= %stat.player/sqrtTemp0%
+stat sqrtTemp0 /= 2
+stat sqrtTemp0 /= %stat.player/sqrtTemp1%
+stat sqrtTemp1 -= %stat.player/sqrtTemp0%
+}
+if and () {
+stat sqrtTemp0 = %stat.player/sqrtInput%
+stat sqrtTemp0 /= %stat.player/sqrtTemp1%
+stat sqrtTemp2 = %stat.player/sqrtTemp1%
+stat sqrtTemp2 /= 2
+stat sqrtTemp0 -= %stat.player/sqrtTemp2%
+}
+if and () {
+stat sqrtTemp1 += %stat.player/sqrtTemp0%
+stat sqrtTemp0 *= %stat.player/sqrtTemp0%
+stat sqrtTemp0 /= 2
+stat sqrtTemp0 /= %stat.player/sqrtTemp1%
+stat sqrtTemp1 -= %stat.player/sqrtTemp0%
+}
+if and () {
+stat sqrtTemp0 = %stat.player/sqrtInput%
+stat sqrtTemp0 /= %stat.player/sqrtTemp1%
+stat sqrtTemp2 = %stat.player/sqrtTemp1%
+stat sqrtTemp2 /= 2
+stat sqrtTemp0 -= %stat.player/sqrtTemp2%
+}
+if and () {
+stat sqrtTemp1 += %stat.player/sqrtTemp0%
+stat sqrtTemp0 *= %stat.player/sqrtTemp0%
+stat sqrtTemp0 /= 2
+stat sqrtTemp0 /= %stat.player/sqrtTemp1%
+stat sqrtTemp1 -= %stat.player/sqrtTemp0%
+}
+
+// get final result
+if and () {
+stat sqrtTemp1 *= %stat.player/sqrtRefine%
+stat sqrtTemp1 += 5000
+stat sqrtTemp1 /= 10000
+stat sqrtOutput = %stat.player/sqrtTemp1%
+}
+
+// cleanup
+if and () {
+stat sqrtTemp0 = 0
+stat sqrtTemp1 = 0
+stat sqrtTemp2 = 0
+stat sqrtRefine = 0
+stat sqrtInput = 0
+}

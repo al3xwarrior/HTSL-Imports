@@ -1,0 +1,54 @@
+stat "sell" dec 1
+if (stat "sell" <= 0) {
+
+} else {
+    exit
+}
+
+if (stat "eggsindep" <= 0) {
+    stat "sell" set 0
+    exit
+}
+
+stat "sell" set 11
+stat "sell" dec "%stat.player/sellspeed%"
+
+stat "selltemp" set "%stat.player/eggsindep%"
+stat "selltemp" mult "%stat.player/moneymult%"
+
+// moneymultpotion13 moneymultpotion17 moneymultpotion23 moneymultpotion30
+if (stat "p/moneymultid" = 1) {
+    stat "selltemp" mult 13
+    stat "selltemp" div 10
+}
+if (stat "p/moneymultid" = 2) {
+    stat "selltemp" mult 17
+    stat "selltemp" div 10
+}
+if (stat "p/moneymultid" = 3) {
+    stat "selltemp" mult 23
+    stat "selltemp" div 10
+}
+if (stat "p/moneymultid" = 4) {
+    stat "selltemp" mult 3
+}
+if (globalstat "m/mayor" = 2) {
+    stat "selltemp" mult 11
+    stat "selltemp" div 10
+}
+
+stat "money" inc "%stat.player/selltemp%"
+
+if (stat "s/sellmsg" = 2, globalstat "m/mayor" = 2) {
+    chat "&2&l[$] &aYou sold &e%stat.player/eggsindep% Eggs &afor &2$%stat.player/selltemp% &7(%stat.player/moneymult%x + Mayor 1.1x Bonus)"
+    stat "eggsindep" set 0
+    stat "selltemp" set 0
+    exit
+}
+
+if (stat "s/sellmsg" = 2) {
+    chat "&2&l[$] &aYou sold &e%stat.player/eggsindep% Eggs &afor &2$%stat.player/selltemp% &7(%stat.player/moneymult%x)"
+}
+
+stat "eggsindep" set 0
+stat "selltemp" set 0

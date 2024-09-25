@@ -1,0 +1,109 @@
+if (stat "kit" = 5) {
+
+} else {
+    exit
+}
+
+if (hasItem "pyro_sword2" metaData Hand anyAmount, stat "weaponslot" = 1) {
+    removeItem "pyro_sword2"
+    giveItem "pyro_sword1" false 0 true
+    exit
+}
+if (hasItem "pyro_sword2" metaData Hand anyAmount, stat "weaponslot" = 2) {
+    removeItem "pyro_sword2"
+    giveItem "pyro_sword1" false 1 true
+    exit
+}
+if (hasItem "pyro_sword2" metaData Hand anyAmount, stat "weaponslot" = 3) {
+    removeItem "pyro_sword2"
+    giveItem "pyro_sword1" false 2 true
+    exit
+}
+if (hasItem "pyro_sword2" metaData Hand anyAmount, stat "weaponslot" = 4) {
+    removeItem "pyro_sword2"
+    giveItem "pyro_sword1" false 3 true
+    exit
+}
+if (hasItem "pyro_sword2" metaData Hand anyAmount, stat "weaponslot" = 5) {
+    removeItem "pyro_sword2"
+    giveItem "pyro_sword1" false 4 true
+    exit
+}
+if (hasItem "pyro_sword2" metaData Hand anyAmount, stat "weaponslot" = 6) {
+    removeItem "pyro_sword2"
+    giveItem "pyro_sword1" false 5 true
+    exit
+}
+if (hasItem "pyro_sword2" metaData Hand anyAmount, stat "weaponslot" = 7) {
+    removeItem "pyro_sword2"
+    giveItem "pyro_sword1" false 6 true
+    exit
+}
+if (hasItem "pyro_sword2" metaData Hand anyAmount, stat "weaponslot" = 8) {
+    removeItem "pyro_sword2"
+    giveItem "pyro_sword1" false 7 true
+    exit
+}
+if (hasItem "pyro_sword2" metaData Hand anyAmount, stat "weaponslot" = 9) {
+    removeItem "pyro_sword2"
+    giveItem "pyro_sword1" false 8 true
+    exit
+}
+
+stat "pyro/rng" set "%random.int/1 8%"
+if (stat "pyro/rng" = 1) {
+    stat "pyro/rng" set 0
+} else {
+    stat "pyro/rng" set 0
+    exit
+}
+
+if (stat "weaponslot" = 1) {
+    removeItem "pyro_sword1"
+    giveItem "pyro_sword2" false 0 true
+    exit
+}
+if (stat "weaponslot" = 2) {
+    removeItem "pyro_sword1"
+    giveItem "pyro_sword2" false 1 true
+    exit
+}
+if (stat "weaponslot" = 3) {
+    removeItem "pyro_sword1"
+    giveItem "pyro_sword2" false 2 true
+    exit
+}
+if (stat "weaponslot" = 4) {
+    removeItem "pyro_sword1"
+    giveItem "pyro_sword2" false 3 true
+    exit
+}
+
+function "PyroSword2"
+goto function "PyroSword2"
+
+if (stat "weaponslot" = 5) {
+    removeItem "pyro_sword1"
+    giveItem "pyro_sword2" false 4 true
+    exit
+}
+if (stat "weaponslot" = 6) {
+    removeItem "pyro_sword1"
+    giveItem "pyro_sword2" false 5 true
+    exit
+}
+if (stat "weaponslot" = 7) {
+    removeItem "pyro_sword1"
+    giveItem "pyro_sword2" false 6 true
+    exit
+}
+if (stat "weaponslot" = 8) {
+    removeItem "pyro_sword1"
+    giveItem "pyro_sword2" false 7 true
+    exit
+}
+if (stat "weaponslot" = 9) {
+    removeItem "pyro_sword1"
+    giveItem "pyro_sword2" false 8 true
+    exit
+}

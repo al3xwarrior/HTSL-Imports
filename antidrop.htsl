@@ -1,0 +1,7 @@
+if (stat "drop" = 0) {
+    cancelEvent
+    chat "&c&lDrop again to confirm!"
+    stat "drop" set 1
+    pause 10
+    stat "drop" set 0
+}

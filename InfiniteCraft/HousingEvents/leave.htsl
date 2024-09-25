@@ -1,0 +1,4 @@
+if (stat "bot" = 1) {
+    globalstat "bot" set 0
+    function "botLeft" true
+}

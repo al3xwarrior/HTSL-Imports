@@ -1,0 +1,14 @@
+if (inRegion "ServerWallZone") {
+    
+} else {
+    exit
+}
+
+tp custom_coordinates "-57.5 201 -27.5"
+
+if (hasItem "antiblindness" metadata Inventory anyAmount) {
+
+} else {
+    applyPotion "blindness" 1 1 true
+}
+sound "entity.enderman.teleport" 0.7 2.0 "invokers_location"

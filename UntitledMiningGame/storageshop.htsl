@@ -1,0 +1,9 @@
+if (stat "money" < 25000) {
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    chat "&cYou do not have enough money!"
+    exit
+}
+
+stat "money" dec 25000
+stat "maxstorage" inc 10000
+sound "Level Up" 0.7 1 "invokers_location"

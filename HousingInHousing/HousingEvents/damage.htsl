@@ -1,0 +1,21 @@
+if (damageCause "Entity Attack", stat "p_s_pvp" = 4) {
+    cancelEvent
+}
+
+if (damageCause "Lava", stat "p_s_fd" = 4) {
+    cancelEvent
+}
+if (damageCause "Fire", stat "p_s_fd" = 4) {
+    cancelEvent
+}
+if (damageCause "Fire Tick", stat "p_s_fd" = 4) {
+    cancelEvent
+}
+
+if (damageCause "Poison", stat "p_s_pd" = 4) {
+    cancelEvent
+}
+
+if (damageCause "Suffocation", stat "p_s_sd" = 4) {
+    cancelEvent
+}

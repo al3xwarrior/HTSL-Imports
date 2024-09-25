@@ -1,0 +1,33 @@
+if (inRegion "ParkourEventStart") {
+
+} else {
+    exit
+}
+
+title "&0" "&6&lGO!" 0 5 3
+sound "entity.wither.spawn" 0.7 0.8 "invokers_location"
+
+if (globalstat "par/mapid" = 1) {
+    tp "custom_coordinates" "56.5 111 32.5 0.0 0.0"
+    exit
+}
+if (globalstat "par/mapid" = 2) {
+    tp "custom_coordinates" "48.5 112 33.5 0.0 0.0"
+    exit
+}
+if (globalstat "par/mapid" = 3) {
+    tp "custom_coordinates" "40.5 113 32.5 0.0 0.0"
+    exit
+}
+if (globalstat "par/mapid" = 4) {
+    tp "custom_coordinates" "33.5 113 33.5 0.0 0.0"
+    exit
+}
+if (globalstat "par/mapid" = 5) {
+    tp "custom_coordinates" "26.5 112 32.5 0.0 0.0"
+    exit
+}
+if (globalstat "par/mapid" = 6) {
+    tp "custom_coordinates" "19.5 113 32.5 0.0 0.0"
+    exit
+}

@@ -1,0 +1,11 @@
+if or (hasGroup "EmeraldLobby", hasGroup "EmeraldArena") {
+
+} else {
+    exit
+}
+
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+stat "c/suit" set 10
+chat "&a&lSuit Equiped! &2&l✓"
+
+//function "ApplySpawnCosmetics"

@@ -1,0 +1,9 @@
+
+if (hasGroup "Editing") {
+    changePlayerGroup "Guest" false
+}
+
+resetInventory
+giveItem "visitormenu" false 8 true
+
+stat "parkourtimer" set -1

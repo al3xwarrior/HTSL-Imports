@@ -1,0 +1,22 @@
+if (stat "carriersleep" = 0, stat "breedersleep" = 0) {
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    chat "&4&l[!] &cAll workers are already awake!"
+    exit
+}
+
+if (stat "carriersleep" = 1) {
+    stat "carriersleep" = 0
+    chat "&3&l[☺] &bYour Carrier has woken up!"
+}
+if (stat "breedersleep" = 1) {
+    stat "breedersleep" = 0
+    chat "&3&l[☺] &bYour Breeder has woken up!"
+}
+
+sound "block.note_block.snare" 0.7 0.5 "invokers_location"
+pause 3
+sound "block.note_block.snare" 0.7 0.7 "invokers_location"
+pause 3
+sound "block.note_block.snare" 0.7 0.8 "invokers_location"
+pause 3
+sound "block.note_block.snare" 0.7 1.1 "invokers_location"

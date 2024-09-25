@@ -1,0 +1,53 @@
+
+stat "strengthforge" set 0
+
+if (inRegion "Area1-StrengthGain") {
+    stat "strengthforge" set 1
+}
+if (inRegion "Area2-StrengthGain") {
+    stat "strengthforge" set 3
+}
+if (inRegion "Area3-StrengthGain") {
+    stat "strengthforge" set 7
+}
+if (inRegion "Area4-StrengthGain") {
+    stat "strengthforge" set 13
+}
+if (inRegion "Area5-StrengthGain") {
+    stat "strengthforge" set 25
+}
+if (inRegion "Area6-StrengthGain") {
+    stat "strengthforge" set 75
+}
+if (inRegion "Area7-StrengthGain") {
+    stat "strengthforge" set 125
+}
+if (inRegion "Area8-StrengthGain") {
+    stat "strengthforge" set 250
+}
+if (inRegion "Area9-StrengthGain") {
+    stat "strengthforge" set 500
+}
+if (inRegion "Area10-StrengthGain") {
+    stat "strengthforge" set 750
+}
+
+if (stat "strengthforge" = 0) {
+    exit
+}
+
+stat "gaintime" inc 1
+stat "gainamount" inc "%stat.player/strengthforge%"
+
+stat "basestrength" inc "%stat.player/strengthforge%"
+
+sound "block.note.bass" 0.7 1.5 "invokers_location"
+title "&8+%stat.player/strengthforge%&l⸕" "&e&l⸕ &r &r &r &r &7&l⬆" 0 1 1
+pause 5
+
+if (stat "strengthforge" = 0) {
+    exit
+}
+
+sound "block.note.bass" 0.7 2.0 "invokers_location"
+title "&c+%stat.player/strengthforge%&l⸕" "&e&l⸕ &6&l⬆" 0 1 1

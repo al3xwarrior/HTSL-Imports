@@ -1,0 +1,4 @@
+stat "deaths" inc 1
+setTeam "Lobby"
+changePlayerGroup "Lobby" true
+function "updateKDR" false

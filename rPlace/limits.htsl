@@ -1,0 +1,27 @@
+// prevent players from leaving the map
+
+if (hasGroup "Staff" true) {
+    exit
+}
+
+if (placeholder "%player.location.y%" < 254) {
+    chat "&c&lHow did you even get under?"
+    houseSpawn
+}
+
+if (placeholder "%player.location.x%" < -119) {
+    chat "&c&lYou cannot go past the border!"
+    tp "custom_coordinates" "~15 ~0 ~0"
+}
+if (placeholder "%player.location.z%" > 130) {
+    chat "&c&lYou cannot go past the border!"
+    tp "custom_coordinates" "~0 ~0 ~-15"
+}
+if (placeholder "%player.location.x%" > 64) {
+    chat "&c&lYou cannot go past the border!"
+    tp "custom_coordinates" "~-15 ~0 ~0"
+}
+if (placeholder "%player.location.z%" < -54) {
+    chat "&c&lYou cannot go past the border!"
+    tp "custom_coordinates" "~0 ~0 ~15"
+}

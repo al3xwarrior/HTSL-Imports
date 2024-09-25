@@ -1,0 +1,4 @@
+if (stat "zone" >= 12) {
+    tp current_location
+    applyPotion "blindness" 1 1 true
+}

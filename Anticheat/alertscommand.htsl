@@ -1,0 +1,17 @@
+if (hasGroup "Admin" true) {
+
+} else {
+    chat "&c&lNice try! &4&l✘"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+if (stat "ac/alerts" = 0) {
+    stat "ac/alerts" set 1
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    chat "&a&lYou will see AntiCheat Alerts! &2&l✔"
+} else {
+    stat "ac/alerts" set 0
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    chat "&a&lYou will &nno longer&r &a&lsee AntiCheat Alerts! &2&l✔"
+}

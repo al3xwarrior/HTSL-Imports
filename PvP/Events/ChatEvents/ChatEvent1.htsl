@@ -1,0 +1,98 @@
+if (globalstat "bot/online" = 0) {
+    exit
+}
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+chat "&r"
+chat "&d&lCHAT EVENT"
+if (globalstat "CE/id" = 2) {
+    chat "&fFirst to solve &a20 + (20 * 5) &fgets a reward!"
+}
+if (globalstat "CE/id" = 3) {
+    chat "&fFirst to solve &a(10 * 2) - 5 &fgets a reward!"
+}
+if (globalstat "CE/id" = 4) {
+    chat "&fFirst to solve &a8 * 4 + 2 &fgets a reward!"
+}
+if (globalstat "CE/id" = 5) {
+    chat "&fFirst to solve &a(25 / 5) + 10 &fgets a reward!"
+}
+if (globalstat "CE/id" = 6) {
+    chat "&fFirst to solve &a15 - (5 * 2) &fgets a reward!"
+}
+if (globalstat "CE/id" = 7) {
+    chat "&fFirst to solve &a(12 + 3) * 2 &fgets a reward!"
+}
+if (globalstat "CE/id" = 8) {
+    chat "&fFirst to solve &a(30 / 3) - 4 &fgets a reward!"
+}
+if (globalstat "CE/id" = 9) {
+    chat "&fFirst to solve &a40 - (4 * 7) &fgets a reward!"
+}
+if (globalstat "CE/id" = 10) {
+    chat "&fFirst to solve &a(16 / 4) + 6 &fgets a reward!"
+}
+if (globalstat "CE/id" = 11) {
+    chat "&fFirst to solve &a5 * 5 - 5 &fgets a reward!"
+}
+if (globalstat "CE/id" = 12) {
+    chat "&fFirst to solve &a(18 + 2) * 3 &fgets a reward!"
+}
+if (globalstat "CE/id" = 13) {
+    chat "&fFirst to solve &a(24 / 4) + 3 &fgets a reward!"
+}
+if (globalstat "CE/id" = 14) {
+    chat "&fFirst to solve &a9 * 3 - 6 &fgets a reward!"
+}
+if (globalstat "CE/id" = 15) {
+    chat "&fFirst to solve &a(45 / 5) + 5 &fgets a reward!"
+}
+
+function "ChatEvent2" false
+goto function "ChatEvent2"
+
+if (globalstat "CE/id" = 16) {
+    chat "&fFirst to solve &a20 - (3 * 3) &fgets a reward!"
+}
+if (globalstat "CE/id" = 17) {
+    chat "&fFirst to solve &a(8 + 2) * 4 &fgets a reward!"
+}
+if (globalstat "CE/id" = 18) {
+    chat "&fFirst to solve &a(36 / 6) + 2 &fgets a reward!"
+}
+if (globalstat "CE/id" = 19) {
+    chat "&fFirst to solve &a16 * 2 - 4 &fgets a reward!"
+}
+if (globalstat "CE/id" = 20) {
+    chat "&fFirst to solve &a(25 + 5) * 2 &fgets a reward!"
+}
+if (globalstat "CE/id" = 21) {
+    chat "&fFirst to solve &a(48 / 6) - 2 &fgets a reward!"
+}
+if (globalstat "CE/id" = 22) {
+    chat "&fFirst to solve &a7 * 7 - 7 &fgets a reward!"
+}
+if (globalstat "CE/id" = 23) {
+    chat "&fFirst to solve &a(30 + 10) / 8 &fgets a reward!"
+}
+if (globalstat "CE/id" = 24) {
+    chat "&fFirst to solve &a(64 / 8) + 2 &fgets a reward!"
+}
+if (globalstat "CE/id" = 25) {
+    chat "&fFirst to solve &a9 * 3 + 3 &fgets a reward!"
+}
+if (globalstat "CE/id" = 26) {
+    chat "&fFirst to solve &a(25 - 5) * 2 &fgets a reward!"
+}
+if (globalstat "CE/id" = 27) {
+    chat "&fFirst to solve &a(40 + 8) / 7 &fgets a reward!"
+}
+if (globalstat "CE/id" = 28) {
+    chat "&fFirst to solve &a(84 / 12) + 3 &fgets a reward!"
+}
+if (globalstat "CE/id" = 29) {
+    chat "&fFirst to solve &a12 * 3 - 6 &fgets a reward!"
+}
+if (globalstat "CE/id" = 30) {
+    chat "&fFirst to solve &a(20 - 3) * 4 &fgets a reward!"
+}
+chat "&e"

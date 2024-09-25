@@ -1,0 +1,32 @@
+// globalstat "ENDTIME" unix value of the end
+
+if (globalstat "unix" < "%date.unix%") {
+    globalstat "unix" set "%date.unix%"
+} else {
+    exit
+}
+
+globalstat "TIMELEFT" set "%stat.global/endtime%"
+globalstat "TIMELEFT" dec "%date.unix%"
+
+if () {
+globalstat "timetemp" set "%stat.global/timeleft%"
+globalstat "timetemp" div 3600
+globalstat "TIMERHOURS" set "%stat.global/timetemp%"
+globalstat "timetemp" set "%stat.global/TIMERHOURS%"
+globalstat "timetemp" mult 3600
+globalstat "TIMELEFT" dec "%stat.global/timetemp%"
+}
+
+if () {
+globalstat "timetemp" set "%stat.global/timeleft%"
+globalstat "timetemp" div 60
+globalstat "TIMERMINUTES" set "%stat.global/timetemp%"
+globalstat "timetemp" set "%stat.global/TIMERMINUTES%"
+globalstat "timetemp" mult 60
+globalstat "TIMELEFT" dec "%stat.global/timetemp%"
+}
+
+globalstat "TIMERSECONDS" set "%stat.global/timeleft%"
+
+// Return is %stat.global/TIMERHOURS% %stat.global/TIMERMINUTES% %stat.global/TIMERSECONDS%

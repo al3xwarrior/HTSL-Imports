@@ -1,0 +1,4 @@
+if (stat "playerid" = "%stat.global/p1%") {
+    globalstat "p1" set 0
+    globalstat "p1_open" set 2
+}

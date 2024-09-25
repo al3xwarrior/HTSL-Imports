@@ -1,0 +1,6 @@
+
+if (globalstat "par/endbcid" = 0) {
+    globalstat "event" set 0
+    globalstat "par/endbcid" set "%stat.player/playerid%"
+    function "ParkourEnd" true
+}

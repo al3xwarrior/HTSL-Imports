@@ -1,0 +1,67 @@
+// moneymultpotion13 moneymultpotion17 moneymultpotion23 moneymultpotion30
+// p/moneymultid
+// p/moneymulttime
+
+// should stack
+if (stat "p/moneymultid" = 1, hasItem "moneymultpotion13" metadata Hand anyAmount) {
+    removeItem "moneymultpotion13"
+    stat "p/moneymulttime" inc 600
+    sound "entity.generic.drink" 0.7 1.5 "invokers_location"
+    chat "&5&l[♨] &dYou drank a Money Multiplier 1.2x Potion! &7(Total Time: %stat.player/p/moneymulttime%s)"
+    exit
+}
+if (stat "p/moneymultid" = 2, hasItem "moneymultpotion17" metadata Hand anyAmount) {
+    removeItem "moneymultpotion17"
+    stat "p/moneymulttime" inc 900
+    sound "entity.generic.drink" 0.7 1.5 "invokers_location"
+    chat "&5&l[♨] &dYou drank a Money Multiplier 1.7x Potion! &7(Total Time: %stat.player/p/moneymulttime%s)"
+    exit
+}
+if (stat "p/moneymultid" = 3, hasItem "moneymultpotion23" metadata Hand anyAmount) {
+    removeItem "moneymultpotion23"
+    stat "p/moneymulttime" inc 1200
+    sound "entity.generic.drink" 0.7 1.5 "invokers_location"
+    chat "&5&l[♨] &dYou drank a Money Multiplier 2.3x Potion! &7(Total Time: %stat.player/p/moneymulttime%s)"
+    exit
+}
+if (stat "p/moneymultid" = 4, hasItem "moneymultpotion30" metadata Hand anyAmount) {
+    removeItem "moneymultpotion30"
+    stat "p/moneymulttime" inc 1800
+    sound "entity.generic.drink" 0.7 1.5 "invokers_location"
+    chat "&5&l[♨] &dYou drank a Money Multiplier 3.0x Potion! &7(Total Time: %stat.player/p/moneymulttime%s)"
+    exit
+}
+
+// different potion
+if (hasItem "moneymultpotion13" metadata Hand anyAmount) {
+    removeItem "moneymultpotion13"
+    stat "p/moneymultid" set 1
+    stat "p/moneymulttime" set 600
+    sound "entity.generic.drink" 0.7 1.5 "invokers_location"
+    chat "&5&l[♨] &dYou drank a Money Multiplier 1.2x Potion! &7(Time: %stat.player/p/moneymulttime%s)"
+    exit
+}
+if (hasItem "moneymultpotion17" metadata Hand anyAmount) {
+    removeItem "moneymultpotion17"
+    stat "p/moneymultid" set 2
+    stat "p/moneymulttime" set 900
+    sound "entity.generic.drink" 0.7 1.5 "invokers_location"
+    chat "&5&l[♨] &dYou drank a Money Multiplier 1.7x Potion! &7(Time: %stat.player/p/moneymulttime%s)"
+    exit
+}
+if (hasItem "moneymultpotion23" metadata Hand anyAmount) {
+    removeItem "moneymultpotion23"
+    stat "p/moneymultid" set 3
+    stat "p/moneymulttime" set 1200
+    sound "entity.generic.drink" 0.7 1.5 "invokers_location"
+    chat "&5&l[♨] &dYou drank a Money Multiplier 2.3x Potion! &7(Time: %stat.player/p/moneymulttime%s)"
+    exit
+}
+if (hasItem "moneymultpotion30" metadata Hand anyAmount) {
+    removeItem "moneymultpotion30"
+    stat "p/moneymultid" set 4
+    stat "p/moneymulttime" set 1800
+    sound "entity.generic.drink" 0.7 1.5 "invokers_location"
+    chat "&5&l[♨] &dYou drank a Money Multiplier 3.0x Potion! &7(Time: %stat.player/p/moneymulttime%s)"
+    exit
+}

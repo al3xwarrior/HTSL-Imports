@@ -1,0 +1,19 @@
+// p_s_pvp - pvp
+// p_s_fs - fire damage
+// p_s_pd - poison damage
+// p_s_sd - suffication
+// p_s_de - item drops
+// p_s_ht - housing type
+
+if (stat "p_s_de" = 2) {
+    stat "p_s_de" set 4
+    chat "&c&lDISABLED Suffication Damage in this Plot!"
+    chat "&7&o(Click apply settings to update the plot!)"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+} else {
+    stat "p_s_de" set 2
+    chat "&a&lENABLED Suffication Damage in this Plot!"
+    chat "&7&o(Click apply settings to update the plot!)"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+}
+displayMenu "House Settings"

@@ -1,0 +1,14 @@
+if (inRegion "KOTH_WaitingRoom") {
+
+} else {
+    exit
+}
+
+sound "entity.wither.spawn" 0.7 0.8 "invokers_location"
+
+random {
+    tp "custom_coordinates" "97.5 100 -107.5 0.0 0.0"
+    tp "custom_coordinates" "116.5 100 -88.5 89.8 0.84"
+    tp "custom_coordinates" "97.54 100 -69.41 -179.74 2.67"
+    tp "custom_coordinates" "78.53 100 -88.52 -90.68 10"
+}

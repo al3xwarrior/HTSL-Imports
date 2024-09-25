@@ -1,0 +1,14 @@
+// stat "toenchant" set
+//  1=efficiency 2=haste 3=tokenmulti 4=gemfinder 5=keyfinder 6=zombieminer 7=copyandpaste
+//  8=explosive 9=enchantduper
+
+// stat "enchantcost" set "%stat.player/efficiency1cost%" EX
+
+// function openEnchantUpgrades
+
+stat "e1cost" set "%stat.player/enchantcost%"
+stat "e2cost" set "%stat.player/enchantcost%"
+stat "e2cost" mult 5
+stat "e3cost" set "%stat.player/enchantcost%"
+stat "e3cost" mult 10
+displayMenu "Enchant Upgrade"

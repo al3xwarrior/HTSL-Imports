@@ -1,0 +1,15 @@
+// %stat.global/punishmentid%
+// %stat.global/punishmentpid%
+
+if (globalstat "punishmentid" = 1) {
+    chat "&c&lSOMEONE WAS JUST PUNISHED FOR &4&lCOMBAT LOGGING&c&l! L"
+    exit
+}
+if (globalstat "punishmentid" = 2) {
+    chat "&c&lSOMEONE WAS JUST PUNISHED FOR &2&lTOXICITY&c&l! L"
+    exit
+}
+if (globalstat "punishmentid" = 3) {
+    chat "&c&lSOMEONE WAS JUST PUNISHED FOR &b&lEXCESSIVE TARGETING&c&l! L"
+    exit
+}

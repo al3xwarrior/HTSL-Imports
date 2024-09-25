@@ -1,0 +1,114 @@
+/*
+if (gamemode Creative) {
+    exit
+}
+
+// x4 then x1
+
+// Cobblestone
+if (hasItem null Metadata Anywhere "Any Amount") {
+    removeItem null
+    stat "storage" inc 4
+    stat "minedblocks" inc 4
+    sound "Wood Click" 1.0 1.6 "invokers_location"
+    pause 2
+    sound "Wood Click" 1.0 2.0 "invokers_location"
+}
+if (hasItem null Metadata Anywhere "Any Amount") {
+    removeItem null
+    stat "storage" inc 1
+    stat "minedblocks" inc 1
+    sound "Wood Click" 1.0 1.6 "invokers_location"
+    pause 2
+    sound "Wood Click" 1.0 2.0 "invokers_location"
+}
+// Coal
+if (hasItem null Metadata Anywhere "Any Amount") {
+    removeItem null
+    stat "storage" inc 12
+    stat "minedblocks" inc 4
+    sound "Wood Click" 1.0 1.6 "invokers_location"
+    pause 2
+    sound "Wood Click" 1.0 2.0 "invokers_location"
+}
+if (hasItem null Metadata Anywhere "Any Amount") {
+    removeItem null
+    stat "storage" inc 3
+    stat "minedblocks" inc 1
+    sound "Wood Click" 1.0 1.6 "invokers_location"
+    pause 2
+    sound "Wood Click" 1.0 2.0 "invokers_location"
+}
+// Iron
+if (hasItem null Metadata Anywhere "Any Amount") {
+    removeItem null
+    stat "storage" inc 28
+    stat "minedblocks" inc 4
+    sound "Wood Click" 1.0 1.6 "invokers_location"
+    pause 2
+    sound "Wood Click" 1.0 2.0 "invokers_location"
+}
+if (hasItem null Metadata Anywhere "Any Amount") {
+    removeItem null
+    stat "storage" inc 7
+    stat "minedblocks" inc 1
+    sound "Wood Click" 1.0 1.6 "invokers_location"
+    pause 2
+    sound "Wood Click" 1.0 2.0 "invokers_location"
+}
+// Gold
+if (hasItem null Metadata Anywhere "Any Amount") {
+    removeItem null
+    stat "storage" inc 48
+    stat "minedblocks" inc 4
+    sound "Wood Click" 1.0 1.6 "invokers_location"
+    pause 2
+    sound "Wood Click" 1.0 2.0 "invokers_location"
+}
+if (hasItem null Metadata Anywhere "Any Amount") {
+    removeItem null
+    stat "storage" inc 12
+    stat "minedblocks" inc 1
+    sound "Wood Click" 1.0 1.6 "invokers_location"
+    pause 2
+    sound "Wood Click" 1.0 2.0 "invokers_location"
+}
+// Diamond
+if (hasItem null Metadata Anywhere "Any Amount") {
+    removeItem null
+    stat "storage" inc 60
+    stat "minedblocks" inc 4
+    sound "Wood Click" 1.0 1.6 "invokers_location"
+    pause 2
+    sound "Wood Click" 1.0 2.0 "invokers_location"
+}
+if (hasItem null Metadata Anywhere "Any Amount") {
+    removeItem null
+    stat "storage" inc 15
+    stat "minedblocks" inc 1
+    sound "Wood Click" 1.0 1.6 "invokers_location"
+    pause 2
+    sound "Wood Click" 1.0 2.0 "invokers_location"
+}
+// Emerald
+if (hasItem null Metadata Anywhere "Any Amount") {
+    removeItem null
+    stat "storage" inc 60
+    stat "minedblocks" inc 4
+    sound "Wood Click" 1.0 1.6 "invokers_location"
+    pause 2
+    sound "Wood Click" 1.0 2.0 "invokers_location"
+}
+if (hasItem null Metadata Anywhere "Any Amount") {
+    removeItem null
+    stat "storage" inc 15
+    stat "minedblocks" inc 1
+    sound "Wood Click" 1.0 1.6 "invokers_location"
+    pause 2
+    sound "Wood Click" 1.0 2.0 "invokers_location"
+}
+*/
+
+if (stat "storage" > "%stat.player/maxstorage%") {
+    stat "storage" set "%stat.player/maxstorage%"
+}

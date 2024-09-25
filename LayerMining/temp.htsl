@@ -1,0 +1,11 @@
+
+if (stat "diamonds" >= 15000) {
+
+} else {
+    chat "&c&lYou don't have enough diamonds!"
+    sound "block.anvil.land" 0.7 0.5 "invokers_location"
+    exit
+}
+
+stat "diamonds" dec 15000
+sound "entity.player.levelup" 0.7 2.0 "invokers_location"

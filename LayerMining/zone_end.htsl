@@ -1,0 +1,48 @@
+
+if (hasItem "gold1" metadata Inventory anyAmount) {
+    stat "togive" mult 2
+}
+if (hasItem "gold2" metadata Inventory anyAmount) {
+    stat "togive" mult 3
+}
+if (hasItem "gold3" metadata Inventory anyAmount) {
+    stat "togive" mult 4
+}
+
+stat "gold" inc "%stat.player/togive%"
+sound "entity.player.levelup" 0.7 2.0 "invokers_location"
+title "&0" "&e+%stat.player/togive%⛃" 0 2 1
+
+if (hasItem "antiblindness" metadata Inventory anyAmount) {
+
+} else {
+    applyPotion "blindness" 1 1 true
+}
+
+stat "temp" set "%random.int/1 101%"
+if (hasItem "diamonds1" metadata Inventory anyAmount) {
+    stat "temp" inc 10
+}
+if (hasItem "diamonds2" metadata Inventory anyAmount) {
+    stat "temp" inc 20
+}
+if (hasItem "diamonds3" metadata Inventory anyAmount) {
+    stat "temp" inc 30
+}
+if (hasItem "diamonds4" metadata Inventory anyAmount) {
+    stat "temp" inc 40
+}
+if (hasItem "diamonds5" metadata Inventory anyAmount) {
+    stat "temp" inc 50
+}
+if (hasItem "diamonds6" metadata Inventory anyAmount) {
+    stat "temp" inc 60
+}
+
+if (stat "temp" >= 90) {
+    stat "temp" set "%random.int/1 11"
+    stat "diamonds" inc "%stat.player/temp%"
+    title "&a&lLUCKY!" "&b+%stat.player/temp%❄ &f+ &e+%stat.player/togive%⛃" 0 2 1
+} else {
+    title "&0" "&e+%stat.player/togive%⛃" 0 2 1
+}

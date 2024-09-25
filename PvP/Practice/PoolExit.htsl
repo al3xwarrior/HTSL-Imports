@@ -1,0 +1,7 @@
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+chat "&6&m-------------------------------------------"
+chat "&4&lHEALING PRACTICE END"
+chat "&r"
+chat "&aTime Spent: %stat.player/practicetimer%s"
+chat "&6Best Time: %stat.player/besthealtime%s"
+chat "&6&m-------------------------------------------"

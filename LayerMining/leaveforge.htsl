@@ -1,0 +1,2 @@
+sound "entity.player.levelup" 0.7 1.0 "invokers_location"
+title "&c&lLeft Forge" "&cTotal Gained: %stat.player/gainamount%&l⸕ &8- &aTime Spent: %stat.player/gaintime%s" 0 2 1

@@ -1,0 +1,10 @@
+
+Prefix: sp/
+
+Skill points: skillpoints
+
+Mana Regen: sp/manaregen
+Mana: sp/mana
+
+Health Regen: sp/hpregen
+Health: sp/hp

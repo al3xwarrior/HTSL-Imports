@@ -1,0 +1,18 @@
+// display different actionbars based on different conditions
+
+if (stat "status" >= 1, stat "status" <= 6) {
+    actionBar "&2&lBlock Page %stat.player/status%/6"
+    exit
+}
+
+if (stat "status" = -1) {
+    actionBar "&4&lBreak any Block!"
+    exit
+}
+
+if (stat "canaction" = 1) {
+    actionBar "&2&l⇨ &a&lYOU CAN PLACE / BREAK A BLOCK! &2&l⇦"
+    exit
+}
+
+actionBar "&c&lNext Action Avaliable in &4&l%stat.player/mins%:%stat.player/bigsecs%%stat.player/minisecs%"

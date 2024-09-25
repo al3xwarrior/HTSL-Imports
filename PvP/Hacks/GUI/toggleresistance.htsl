@@ -1,0 +1,31 @@
+if (hasGroup "Owner" true) {
+
+} else {
+    exit
+}
+
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+if (stat "h/resistance" = 0) {
+    stat "h/resistance" set 1
+    chat "&7[&4&lHACKS&7] &cResistance Level set to &4&l%stat.player/h/resistance%&c!"
+    displayMenu "Secret Hacks"
+    exit
+}
+if (stat "h/resistance" = 1) {
+    stat "h/resistance" set 2
+    chat "&7[&4&lHACKS&7] &cResistance Level set to &4&l%stat.player/h/resistance%&c!"
+    displayMenu "Secret Hacks"
+    exit
+}
+if (stat "h/resistance" = 2) {
+    stat "h/resistance" set 3
+    chat "&7[&4&lHACKS&7] &cResistance Level set to &4&l%stat.player/h/resistance%&c!"
+    displayMenu "Secret Hacks"
+    exit
+}
+if (stat "h/resistance" = 3) {
+    stat "h/resistance" set 0
+    chat "&7[&4&lHACKS&7] &cResistance Level set to &4&l%stat.player/h/resistance%&c!"
+    displayMenu "Secret Hacks"
+    exit
+}

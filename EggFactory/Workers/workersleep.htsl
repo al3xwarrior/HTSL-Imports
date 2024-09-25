@@ -1,0 +1,21 @@
+// carriersleep - breedersleep
+
+if (globalstat "m/mayor" = 2) {
+    exit
+}
+
+stat "sleeptemp" set "%random.int/1 101%"
+
+if (stat "carriersleep" = 0, stat "sleeptemp" = 100, stat "carrierlvl" >= 1) {
+    stat "carriersleep" set 1
+    sound "entity.bat.hurt" 0.7 0.5 "invokers_location"
+    chat "&4&l[☺] &cYour Carrier Worker went to sleep! Go wake him up at the &aHire Workers NPC&c!"
+}
+
+stat "sleeptemp" set "%random.int/1 101%"
+
+if (stat "breedersleep" = 0, stat "sleeptemp" = 100, stat "breederlvl" >= 1) {
+    stat "breedersleep" set 1
+    sound "entity.bat.hurt" 0.7 0.5 "invokers_location"
+    chat "&4&l[☺] &cYour Breeder Worker went to sleep! Go wake him up at the &aHire Workers NPC&c!"
+}

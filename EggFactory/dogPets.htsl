@@ -1,0 +1,83 @@
+if or (hasItem "dogpet1" metadata Armor anyAmount, hasItem "dogpet2" metadata Armor anyAmount, hasItem "dogpet3" metadata Armor anyAmount, hasItem "dogpet4" metadata Armor anyAmount) {
+
+} else {
+    exit
+}
+
+stat "dogrng" set "%random.int/1 2001%"
+
+if (hasItem "dogpet2" metadata Armor anyAmount) {
+    stat "dogrng" dec 5
+}
+if (hasItem "dogpet3" metadata Armor anyAmount) {
+    stat "dogrng" dec 10
+}
+if (hasItem "dogpet4" metadata Armor anyAmount) {
+    stat "dogrng" dec 20
+}
+
+if (stat "dogrng" > 1) {
+    exit
+}
+
+stat "dogrng" set 0
+
+stat "rng" set "%random.int/1 23%"
+sound "entity.wolf.pant" 0.7 1.0 "invokers_location"
+if (stat "rng" <= 5) {
+    stat "randommoney" set "%random.int/5000 10001%"
+    stat "money" inc "%stat.player/randommoney%"
+    chat "&6&l[⭐] &eYour Dog Pet sniffed out &a$%stat.player/randommoney%&e!"
+    stat "randommoney" set 0
+    exit
+}
+if (stat "rng" <= 10) {
+    stat "randomeggs" set "%random.int/5000 10001%"
+    stat "eggs" inc "%stat.player/randomeggs%"
+    chat "&6&l[⭐] &eYour Dog Pet sniffed out &6%stat.player/randomeggs% Eggs&e!"
+    stat "randomeggs" set 0
+    exit
+}
+// eggproductionpotion12 eggproductionpotion15 eggproductionpotion20 eggproductionpotion35
+// moneymultpotion13 moneymultpotion17 moneymultpotion23 moneymultpotion30
+if (stat "rng" <= 12) {
+    giveItem "eggproductionpotion12" true "First Slot" false
+    chat "&6&l[⭐] &eYour Dog Pet sniffed out a &6Egg Production 1.2x Potion&e!"
+    exit
+}
+if (stat "rng" <= 14) {
+    giveItem "eggproductionpotion15" true "First Slot" false
+    chat "&6&l[⭐] &eYour Dog Pet sniffed out a &6Egg Production 1.5x Potion&e!"
+    exit
+}
+if (stat "rng" = 15) {
+    giveItem "eggproductionpotion20" true "First Slot" false
+    chat "&6&l[⭐] &eYour Dog Pet sniffed out a &6Egg Production 2.0x Potion&e!"
+    exit
+}
+if (stat "rng" <= 17) {
+    giveItem "moneymultpotion13" true "First Slot" false
+    chat "&6&l[⭐] &eYour Dog Pet sniffed out a &aMoney Multiplier 1.3x Potion&e!"
+    exit
+}
+if (stat "rng" <= 19) {
+    giveItem "moneymultpotion17" true "First Slot" false
+    chat "&6&l[⭐] &eYour Dog Pet sniffed out a &aMoney Multiplier 1.7x Potion&e!"
+    exit
+}
+if (stat "rng" = 20) {
+    giveItem "moneymultpotion23" true "First Slot" false
+    chat "&6&l[⭐] &eYour Dog Pet sniffed out a &aMoney Multiplier 2.3x Potion&e!"
+    exit
+}
+
+if (stat "rng" = 21) {
+    giveItem "depositstone1" true "First Slot" false
+    chat "&6&l[⭐] &eYour Dog Pet sniffed out a &bDeposit Stone&e!"
+    exit
+}
+if (stat "rng" = 22) {
+    giveItem "withdrawbasket1" true "First Slot" false
+    chat "&6&l[⭐] &eYour Dog Pet sniffed out a Small Basket!"
+    exit
+}

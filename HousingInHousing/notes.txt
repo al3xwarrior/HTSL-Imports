@@ -1,0 +1,41 @@
+LEFT OFF IN ENTER_REGION WORKING ON GIVING EDITING MENU
+
+
+REGIONS:
+
+p<id> = the plots entire region. This is also the bounds at which the owner had editing permissions.
+p<id>_enter = the plots ENTRY region. This is the bridge that teleports them in.
+
+STATS:
+
+globalstat p<id> = the player id of the user that owns the plot.
+globalstat p<id>_cookies = the amount of cookies the house has earned.
+globalstat p<id>_open = determines if the house is open or closed (2 = open, 4 = closed)
+
+globalstat p<id>_settings = house settings (8 characters Default: 9444421)
+    - 1st is placeholder
+    - 2nd determineds if pvp is enabled on the plot (4 = no, 2 = yes)
+    - 3rd determineds if fire damage is enabled on the plot (4 = no, 2 = yes)
+    - 4th determineds if poison damage is enabled on the plot (4 = no, 2 = yes)
+    - 5th determineds if suffication damage is enabled on the plot (4 = no, 2 = yes)
+    - 6th settings within the drop event in the region
+        - 2 = allow drops
+        - 6 = confirm drops
+        - 4 = no drops
+    - 7th the type of the house defined by the owner
+        - 1 = no type set
+        - 2 = parkour house
+        - 3 = pvp house
+        - 4 = roleplay
+        - 5 = event
+
+globalstat p<id>_join_x = x position the visitor should go to opon joining.
+globalstat p<id>_join_y = y position the visitor should go to opon joining.
+globalstat p<id>_join_z = z position the visitor should go to opon joining.
+
+globalstat p<id>_pstart_x = x position of the parkour start.
+globalstat p<id>_pstart_y = y position of the parkour start.
+globalstat p<id>_pstart_z = z position of the parkour start.
+globalstat p<id>_pend_x = x position of the parkour end.
+globalstat p<id>_pend_y = y position of the parkour end.
+globalstat p<id>_pend_z = z position of the parkour end.

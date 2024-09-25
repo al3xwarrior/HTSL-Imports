@@ -1,0 +1,9 @@
+if (stat "goldeneggs" >= 750) {
+    stat "goldeneggs" dec 750
+} else {
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    chat "&4&l[!] &cYou don't have enough money!"
+    exit
+}
+sound "Orb Pickup" 0.7 1 "invokers_location"
+giveItem "redtreasurechest" true "First Slot" false

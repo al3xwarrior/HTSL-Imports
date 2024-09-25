@@ -1,0 +1,27 @@
+stat "temp" set 9
+
+// Player Already has that slot selected
+if (stat "weaponslot" = "%stat.player/temp%") {
+    chat "&c&lThat slot is already selected! &4&l✗"
+    sound "Anvil Land" 0.7 0.5 "invokers_location"
+    exit
+}
+
+// Player Selected that slot for their abilityslot (swap the 2)
+if (stat "temp" = "%stat.player/abilityslot%") {
+    
+    stat "abilityslot" set "%stat.player/weaponslot%"
+    stat "weaponslot" set "%stat.player/temp%"
+
+    chat "&2&lSwapped your Ability and Weapon Slot &6&l↺"
+    chat "&7Weapon Slot #%stat.player/weaponslot% &8- &7Ability Slot #%stat.player/abilityslot%"
+
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+
+    exit
+
+}
+
+stat "weaponslot" set "%stat.player/temp%"
+chat "&a&lWeapon slot changed to %stat.player/temp%! &2&l✓"
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"

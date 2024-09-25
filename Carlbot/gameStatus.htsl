@@ -1,0 +1,3 @@
+if (placeholder "%player.team.players/Playing%" = 1) {
+    function "endGame" true
+}

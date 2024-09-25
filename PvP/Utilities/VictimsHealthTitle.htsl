@@ -1,0 +1,110 @@
+// victimhptime
+// victimhealth
+
+// %stat.player/titlemsg% = 0, 1, 2 (0 = off, 1 = victim, 2 = you)
+
+if (stat "titlemsg" = 0) {
+    exit
+}
+if (stat "titlemsg" = 1, stat "victimhptime" <= 0) {
+    exit
+}
+if (stat "titlemsg" = 2, stat "combat" <= 0) {
+    exit
+}
+
+if (stat "titlemsg" = 1) {
+    stat "health" set "%stat.player/victimhealth%"
+} else {
+    stat "health" set "%player.health%"
+}
+
+if (stat "health" >= 20) {
+    title "&0" "&4❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 19) {
+    title "&0" "&4❤️❤️❤️❤️❤️❤️❤️❤️❤️&c❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 18) {
+    title "&0" "&4❤️❤️❤️❤️❤️❤️❤️❤️❤️&7❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 17) {
+    title "&0" "&4❤️❤️❤️❤️❤️❤️❤️❤️&c❤️&7❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 16) {
+    title "&0" "&4❤️❤️❤️❤️❤️❤️❤️❤️&7❤️❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 15) {
+    title "&0" "&4❤️❤️❤️❤️❤️❤️❤️&c❤️&7❤️❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 14) {
+    title "&0" "&4❤️❤️❤️❤️❤️❤️❤️&7❤️❤️❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 13) {
+    title "&0" "&4❤️❤️❤️❤️❤️❤️&c❤️&7❤️❤️❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 12) {
+    title "&0" "&4❤️❤️❤️❤️❤️❤️&7❤️❤️❤️❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 11) {
+    title "&0" "&4❤️❤️❤️❤️❤️&c❤️&7❤️❤️❤️❤️" 0 1 0
+    exit
+}
+
+function "VictimsHealthTitle2"
+goto function "VictimsHealthTitle2"
+
+if (stat "health" >= 10) {
+    title "&0" "&4❤️❤️❤️❤️❤️&7❤️❤️❤️❤️❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 9) {
+    title "&0" "&4❤️❤️❤️❤️&c❤️&7❤️❤️❤️❤️❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 8) {
+    title "&0" "&4❤️❤️❤️❤️&7❤️❤️❤️❤️❤️❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 7) {
+    title "&0" "&4❤️❤️❤️&c❤️&7❤️❤️❤️❤️❤️❤️" 0 1 0
+    exit
+}
+
+if (stat "health" >= 6) {
+    title "&0" "&4❤️❤️❤️&7❤️❤️❤️❤️❤️❤️❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 5) {
+    title "&0" "&4❤️❤️&c❤️&7❤️❤️❤️❤️❤️❤️❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 4) {
+    title "&0" "&4❤️❤️&7❤️❤️❤️❤️❤️❤️❤️❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 3) {
+    title "&0" "&4❤️&c❤️&7❤️❤️❤️❤️❤️❤️❤️❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 2) {
+    title "&0" "&4❤️&7❤️❤️❤️❤️❤️❤️❤️❤️❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 1) {
+    title "&0" "&c❤️&7❤️❤️❤️❤️❤️❤️❤️❤️❤️" 0 1 0
+    exit
+}
+if (stat "health" >= 0) {
+    title "&0" "&7❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️" 0 1 0
+    exit
+}

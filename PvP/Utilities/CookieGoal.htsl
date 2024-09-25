@@ -1,0 +1,46 @@
+sound "entity.player.levelup" 0.7 2.0 "invokers_location"
+chat "&r"
+chat "&e&k|&r &6&lCOOKIE GOAL REACHED &e&k|&r"
+chat "&fThanks for the &ecookies&f! &c&l❤"
+chat "&0"
+chat "&6&lRewards:"
+
+stat "goldtemp" set "%random.int/6 11%"
+// 1.5x Gold
+if (hasGroup "Gold") {
+    stat "goldtemp" mult 15
+    stat "goldtemp" div 10
+}
+// 2.0
+if (hasGroup "Diamond") {
+    stat "goldtemp" mult 2
+}
+// 2.5
+if (hasGroup "EmeraldArena", hasGroup "EmeraldLobby") {
+    stat "goldtemp" mult 25
+    stat "goldtemp" div 10
+}
+chat "&e+%stat.player/goldtemp% &7(%player.group.tag% Perks&7)"
+stat "gold" inc "%stat.player/goldtemp%"
+stat "goldtemp" set 0
+
+stat "xptemp" set "%random.int/5 10"
+// 1.2x
+if (hasGroup "Gold") {
+    stat "xptemp" mult 12
+    stat "xptemp" div 10
+}
+// 1.5x
+if (hasGroup "Diamond") {
+    stat "xptemp" mult 15
+    stat "xptemp" div 10
+}
+// 2.0x
+if (hasGroup "EmeraldArena", hasGroup "EmeraldLobby") {
+    stat "xptemp" mult 2
+}
+chat "&b+%stat.player/xptemp% &7(%player.group.tag% Perks&7)"
+stat "xpneeded" dec "%stat.player/xptemp%"
+stat "xptemp" set 0
+
+chat "&f"

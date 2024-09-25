@@ -1,0 +1,56 @@
+// triggered from shift event
+
+if or (stat "ability_cd" > 0, gamemode creative) {
+    exit
+}
+if (stat "kit" = 15, stat "shifting" = 0, isSneaking) {
+    stat "shifting" set 1
+    title "&0❀" "&0" 0 1 1
+    sound "block.lava.pop" 1.2 0.8 "invokers_location"
+} else {
+    stat "shifting" set 0
+    exit
+}
+pause 5
+if (stat "kit" = 15, stat "shifting" = 1, isSneaking) {
+    stat "shifting" set 2
+    title "&8❀" "&0" 0 1 1
+    sound "block.lava.pop" 1.2 0.9 "invokers_location"
+} else {
+    stat "shifting" set 0
+    exit
+}
+pause 5
+if (stat "kit" = 15, stat "shifting" = 2, isSneaking) {
+    stat "shifting" set 3
+    title "&7❀" "&0" 0 1 1
+    sound "block.lava.pop" 1.2 1.0 "invokers_location"
+} else {
+    stat "shifting" set 0
+    exit
+}
+pause 5
+if (stat "kit" = 15, stat "shifting" = 3, isSneaking) {
+    stat "shifting" set 4
+    title "&d❀" "&0" 0 1 1
+    sound "block.lava.pop" 1.2 1.1 "invokers_location"
+} else {
+    stat "shifting" set 0
+    exit
+}
+pause 5
+if (stat "kit" = 15, stat "shifting" = 4, isSneaking) {
+    stat "ability_cd" set 20
+    chat "&a&lDance Ability used! &2&l✓"
+    stat "shifting" set 0
+    title "&5❀" "&0" 0 1 1
+    sound "Cat Purr" 1.3 1 "invokers_location"
+    globalstat "ability_id" set 8
+    globalstat "xpos" set "%player.location.x%"
+    globalstat "ypos" set "%player.location.y%"
+    globalstat "zpos" set "%player.location.z%"
+    globalstat "ability_plrid" set "%stat.player/playerid%"
+    function "GetNearbyPlayers" true
+} else {
+    stat "shifting" set 0
+}

@@ -1,0 +1,60 @@
+// p_settings should be defined when the player enteres the entry region
+
+// Get PvP Setting
+if () {
+    stat "modtemp" set "%stat.player/p_settings%"
+    stat "p_s_pvp" set "%stat.player/p_settings%"
+    stat "modtemp" /= 1000000
+    stat "modtemp" *= 1000000
+    stat "p_s_pvp" -= "%stat.player/modtemp%"
+    stat "p_s_pvp" /= 100000
+}
+
+// Get Fire Damage Setting
+if () {
+    stat "modtemp" set "%stat.player/p_settings%"
+    stat "p_s_fd" set "%stat.player/p_settings%"
+    stat "modtemp" /= 100000
+    stat "modtemp" *= 100000
+    stat "p_s_fd" -= "%stat.player/modtemp%"
+    stat "p_s_fd" /= 10000
+}
+
+// Get Poison Damage Setting
+if () {
+    stat "modtemp" set "%stat.player/p_settings%"
+    stat "p_s_pd" set "%stat.player/p_settings%"
+    stat "modtemp" /= 10000
+    stat "modtemp" *= 10000
+    stat "p_s_pd" -= "%stat.player/modtemp%"
+    stat "p_s_pd" /= 1000
+}
+
+// Get Suffication Damage Setting
+if () {
+    stat "modtemp" set "%stat.player/p_settings%"
+    stat "p_s_sd" set "%stat.player/p_settings%"
+    stat "modtemp" /= 1000
+    stat "modtemp" *= 1000
+    stat "p_s_sd" -= "%stat.player/modtemp%"
+    stat "p_s_sd" /= 100
+}
+
+// Get Drops Setting
+if () {
+    stat "modtemp" set "%stat.player/p_settings%"
+    stat "p_s_de" set "%stat.player/p_settings%"
+    stat "modtemp" /= 100
+    stat "modtemp" *= 100
+    stat "p_s_de" -= "%stat.player/modtemp%"
+    stat "p_s_de" /= 10
+}
+
+// Get House Type Setting
+if () {
+    stat "modtemp" set "%stat.player/p_settings%"
+    stat "p_s_ht" set "%stat.player/p_settings%"
+    stat "modtemp" /= 10
+    stat "modtemp" *= 10
+    stat "p_s_ht" -= "%stat.player/modtemp%"
+}

@@ -1,0 +1,87 @@
+if (stat "fquest_id" >= 1, stat "fquest_id" <= 7) {
+
+} else {
+    exit
+}
+
+if (stat "fquest_prog" >= "%stat.player/fquest_max%") {
+
+} else {
+    exit
+}
+
+sound "entity.player.levelup" 0.7 2.0 "invokers_location"
+chat "&8&m----------------------------"
+chat "&b&lFISHING QUEST COMPLETE"
+chat "&6Rewards:"
+
+if (stat "fquest_id" = 1) {
+    stat "fquest_prog" set 0
+    stat "fquest_max" set 20
+    stat "fquest_id" set 2
+    giveItem "diamonds4" true "First Slot" false
+    chat "&7- &bDiamonds Talisman IV"
+    chat "&8&m----------------------------"
+    exit
+}
+if (stat "fquest_id" = 2) {
+    stat "fquest_prog" set 0
+    stat "fquest_max" set 1
+    stat "fquest_id" set 3
+    stat "gold" inc 100000000
+    chat "&7- &6100,000,000⛃"
+    chat "&8&m----------------------------"
+    exit
+}
+if (stat "fquest_id" = 3) {
+    stat "fquest_prog" set 0
+    stat "fquest_max" set 1
+    stat "fquest_id" set 4
+    giveItem "gold1" true "First Slot" false
+    chat "&7- &6Gold Talisman I"
+    chat "&8&m----------------------------"
+    exit
+}
+if (stat "fquest_id" = 4) {
+    stat "fquest_prog" set 0
+    stat "fquest_max" set 40
+    stat "fquest_id" set 5
+    giveItem "jumpboostpants" true "First Slot" false
+    chat "&7- &aJump Boost Pants"
+    chat "&8&m----------------------------"
+    exit
+}
+if (stat "fquest_id" = 5) {
+    stat "fquest_prog" set 0
+    stat "fquest_max" set 100
+    stat "fquest_id" set 6
+    stat "diamonds" inc 1000
+    giveItem "sharkpet" true "First Slot" false
+    chat "&7- &9Shark Pet"
+    chat "&7- &b1,000❄"
+    chat "&8&m----------------------------"
+    exit
+}
+if (stat "fquest_id" = 6) {
+    stat "fquest_prog" set 0
+    stat "fquest_max" set 150
+    stat "fquest_id" set 7
+    stat "diamonds" inc 1000
+    giveItem "fishingboots" true "First Slot" false
+    chat "&7- &9Fishing Boots"
+    chat "&7- &b1,000❄"
+    chat "&8&m----------------------------"
+    exit
+}
+if (stat "fquest_id" = 7) {
+    stat "fquest_prog" set 0
+    stat "fquest_max" set 9999999
+    stat "fquest_id" set 8
+    stat "diamonds" inc 1000
+    giveItem "gold2" true "First Slot" false
+    giveItem "diamonds5" true "First Slot" false
+    chat "&7- &6Gold Talisman II"
+    chat "&7- &bDiamonds Talisman V"
+    chat "&8&m----------------------------"
+    exit
+}

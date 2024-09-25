@@ -1,0 +1,9 @@
+sound "Orb Pickup" 0.7 1.1 "invokers_location"
+if (stat "healingmethod" = 0) {
+    stat "healingmethod" set 1 // pots
+    chat "&a&lHealing Method switched to Pots &2&l✓"
+} else {
+    stat "healingmethod" set 0 // pots
+    chat "&a&lHealing Method switched to Soup &2&l✓"
+}
+displayMenu "Settings"

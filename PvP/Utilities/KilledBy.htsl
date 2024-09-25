@@ -1,0 +1,70 @@
+if (globalstat "killby/kit" = 1) {
+    chat "&7Using Kit: &fPvP"
+    exit
+}
+if (globalstat "killby/kit" = 2) {
+    chat "&7Using Kit: &bFisherman"
+    exit
+}
+if (globalstat "killby/kit" = 3) {
+    chat "&7Using Kit: &7Stomper"
+    exit
+}
+if (globalstat "killby/kit" = 4) {
+    chat "&7Using Kit: &9Ninja"
+    exit
+}
+if (globalstat "killby/kit" = 5) {
+    chat "&7Using Kit: &6Pyro"
+    exit
+}
+if (globalstat "killby/kit" = 6) {
+    chat "&7Using Kit: &dPortal"
+    exit
+}
+if (globalstat "killby/kit" = 7) {
+    chat "&7Using Kit: &5Witch"
+    exit
+}
+if (globalstat "killby/kit" = 8) {
+    chat "&7Using Kit: &aHunter"
+    exit
+}
+if (globalstat "killby/kit" = 9) {
+    chat "&7Using Kit: &eScientist"
+    exit
+}
+if (globalstat "killby/kit" = 10) {
+    chat "&7Using Kit: &cWarlord"
+    exit
+}
+if (globalstat "killby/kit" = 11) {
+    chat "&7Using Kit: &9Shark"
+    exit
+}
+if (globalstat "killby/kit" = 12) {
+    chat "&7Using Kit: &2Zombie"
+    exit
+}
+if (globalstat "killby/kit" = 13) {
+    chat "&7Using Kit: &dBaker"
+    exit
+}
+if (globalstat "killby/kit" = 14) {
+    chat "&7Using Kit: &bBlizzard"
+    exit
+}
+if (globalstat "killby/kit" = 15) {
+    chat "&7Using Kit: &dJester"
+    exit
+}
+function "KilledBy2"
+goto function "KilledBy2"
+if (globalstat "killby/kit" = 16) {
+    chat "&7Using Kit: &aTurtle"
+    exit
+}
+if (globalstat "killby/kit" = 999) {
+    chat "&7Using Kit: &6Juggernaut"
+    exit
+}

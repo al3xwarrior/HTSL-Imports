@@ -1,0 +1,87 @@
+// by Variouscacti
+
+// How To Use:
+// Name function "cos" for compatibility with my other functions
+// Input a value to the stat "cosInput" 1000 times the intended input
+// Output will be in the stat "cosOutput", 1000 times the intended output, where -1000 <= output <= 1000 (Calculation is in degrees)
+
+// Desmos graph: https://www.desmos.com/calculator/j97uxyypkl
+// Source for estimation: https://scholarworks.umt.edu/cgi/viewcontent.cgi?article=1313&context=tme
+
+// Enjoy!
+
+// convert to sin calculations
+stat cosInput += 90000
+
+// check for negative
+if () {
+stat cosTemp0 = %stat.player/cosInput%
+stat cosTemp0 /= 360000
+stat cosTemp0 *= 360000
+stat cosTemp1 = %stat.player/cosInput%
+stat cosTemp1 -= %stat.player/cosTemp0%
+}
+if or (stat cosTemp1 > 180000, stat cosTemp1 < -180000) {
+stat cosNegative = -1
+
+// modulate input to 180
+stat cosTemp0 = %stat.player/cosInput%
+stat cosTemp0 /= 180000
+stat cosTemp0 *= 180000
+stat cosInput -= %stat.player/cosTemp0%
+} else {
+stat cosNegative = 1
+stat cosTemp0 = %stat.player/cosInput%
+stat cosTemp0 /= 180000
+stat cosTemp0 *= 180000
+stat cosInput -= %stat.player/cosTemp0%
+}
+
+// calculate sin (but actually cos)
+if (stat cosInput < 0) {
+stat cosNegative *= -1
+stat cosInput += 180000
+stat cosOutput = 180000
+stat cosOutput -= %stat.player/cosInput%
+stat cosOutput *= %stat.player/cosInput%
+} else {
+stat cosOutput = 180000
+stat cosOutput -= %stat.player/cosInput%
+stat cosOutput *= %stat.player/cosInput%
+}
+if () {
+stat cosTemp0 = 2000000
+stat cosTemp0 *= %stat.player/cosOutput%
+stat cosTemp1 = 40500000000
+stat cosTemp1 -= %stat.player/cosOutput%
+stat cosTemp0 /= %stat.player/cosTemp1%
+}
+if () {
+stat cosTemp1 = 3100
+stat cosTemp1 *= %stat.player/cosOutput%
+stat cosTemp1 /= 64800000
+stat cosOutput = 180000
+stat cosOutput -= %stat.player/cosInput%
+}
+if () {
+stat cosOutput *= %stat.player/cosOutput%
+stat cosOutput /= 10000000
+stat cosOutput *= %stat.player/cosInput%
+stat cosOutput *= %stat.player/cosInput%
+stat cosOutput /= 58320000
+}
+if () {
+stat cosOutput += %stat.player/cosTemp0%
+stat cosOutput += %stat.player/cosTemp1%
+stat cosOutput += 500
+stat cosOutput /= 1000
+stat cosOutput *= %stat.player/cosNegative%
+}
+
+// cleanup
+if () {
+stat cosInput = 0
+stat cosTemp0 = 0
+stat cosTemp1 = 0
+stat cosNegative = 0
+}

@@ -1,0 +1,64 @@
+// stat "clickeramount" set <WHATEVER> by the item actions
+stat "clickeramount" mult "%stat.player/up/clickermulti%"
+title "&7● ● ●" "&r" 0 2 0
+if (stat "s/clickersounds" = 2) {
+    sound "block.note_block.flute" 0.7 0.6 "invokers_location"
+}
+pause 2
+if (stat "s/clickersounds" = 2) {
+    sound "block.note_block.flute" 0.7 0.8 "invokers_location"
+}
+title "&6● &7● ●" "&r" 0 2 0
+pause 2
+if (stat "s/clickersounds" = 2) {
+    sound "block.note_block.flute" 0.7 1.0 "invokers_location"
+}
+title "&6● ● &7●" "&r" 0 2 0
+pause 2
+if (stat "s/clickersounds" = 2) {
+    sound "block.note_block.flute" 0.7 1.2 "invokers_location"
+}
+title "&6● ● ●" "&r" 0 2 0
+pause 4
+
+if (stat "clickeramount" = 1) {
+    title "&%random.int/1 10%☺" "&e+%stat.player/clickeramount% Chickens!" 0 2 0
+}
+if (stat "clickeramount" = 2) {
+    title "&%random.int/1 10%☺ &%random.int/1 10%☺" "&e+%stat.player/clickeramount% Chickens!" 0 2 0
+}
+if (stat "clickeramount" = 3) {
+    title "&%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺" "&e+%stat.player/clickeramount% Chickens!" 0 2 0
+}
+if (stat "clickeramount" = 4) {
+    title "&%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺" "&e+%stat.player/clickeramount% Chickens!" 0 2 0
+}
+if (stat "clickeramount" = 5) {
+    title "&%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺" "&e+%stat.player/clickeramount% Chickens!" 0 2 0
+}
+if (stat "clickeramount" = 6) {
+    title "&%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺" "&e+%stat.player/clickeramount% Chickens!" 0 2 0
+}
+if (stat "clickeramount" = 7) {
+    title "&%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺" "&e+%stat.player/clickeramount% Chickens!" 0 2 0
+}
+if (stat "clickeramount" = 8) {
+    title "&%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺" "&e+%stat.player/clickeramount% Chickens!" 0 2 0
+}
+if (stat "clickeramount" >= 9) {
+    title "&%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺ &%random.int/1 10%☺" "&e+%stat.player/clickeramount% Chickens!" 0 2 0
+}
+
+stat "chickens" inc "%stat.player/clickeramount%"
+
+if (stat "s/clickersounds" = 2) {
+    
+} else {
+    exit
+}
+random {
+    sound "entity.chicken.egg" 0.7 0.9 "invokers_location"
+    sound "entity.chicken.egg" 0.7 1.0 "invokers_location"
+    sound "entity.chicken.egg" 0.7 1.1 "invokers_location"
+    sound "entity.chicken.egg" 0.7 1.2 "invokers_location"
+}

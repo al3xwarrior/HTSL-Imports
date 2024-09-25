@@ -1,0 +1,8 @@
+applyPotion "Blindness" 5 1 true
+stat "targetx" set "%player.location.x%"
+stat "targety" set "%player.location.y%"
+stat "targetz" set "%player.location.z%"
+tp "custom_coordinates" "-2.5 133 -48.5"
+
+globalstat "queue" dec 1
+function "decreaseQueue" true

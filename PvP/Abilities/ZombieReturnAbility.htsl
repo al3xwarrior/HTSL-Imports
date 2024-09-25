@@ -1,0 +1,24 @@
+if (globalstat "zombie_plrs" = 0) {
+    sound "entity.zombie.infect" 0.7 2.0 "invokers_location"
+    chat "&c&lThere was no one nearby! :("
+    globalstat "zombie_plrs" set 0
+    exit
+}
+
+sound "entity.zombie.infect" 0.7 1.1 "invokers_location"
+chat "&a&lThere were &2&l%stat.global/zombie_plrs% &a&lnearby!"
+
+if (globalstat "zombie_plrs" = 1) {
+    applyPotion "regeneration" 2 2 true
+}
+if (globalstat "zombie_plrs" = 2) {
+    applyPotion "regeneration" 3 2 true
+}
+if (globalstat "zombie_plrs" = 3) {
+    applyPotion "regeneration" 4 2 true
+}
+if (globalstat "zombie_plrs" >= 4) {
+    applyPotion "regeneration" 5 2 true
+}
+
+globalstat "zombie_plrs" set 0

@@ -1,0 +1,112 @@
+if or (inRegion "Spawn", globalstat "ability_plrid" = "%stat.player/playerid%", gamemode creative) {
+    exit
+}
+
+function "xDistanceCalculation" true
+function "yDistanceCalculation" true
+function "zDistanceCalculation" true
+
+stat "playerxpos" set 0
+stat "globalxpos" set 0
+stat "playerypos" set 0
+stat "globalypos" set 0
+stat "playerzpos" set 0
+stat "globalzpos" set 0
+
+// Stomper
+if (globalstat "ability_id" = 1, stat "returnx" < 5, stat "returny" < 4, stat "returnz" < 5) {
+    sound "block.anvil.land" 0.7 0.5 "invokers_location"
+    applyPotion "blindness" 3 1 true
+    applyPotion "slowness" 3 4 true
+    applyPotion "wither" 2 2 true
+    changeHealth dec 5
+    chat "&c&lSomeone hit you with their STOMP Ability!"
+}
+
+// Posion Kit
+if (globalstat "ability_id" = 2, stat "returnx" < 5, stat "returny" < 4, stat "returnz" < 5) {
+    sound "entity.slime.attack" 0.9 0.5 "invokers_location"
+    applyPotion "poison" 3 4 true
+    chat "&c&lSomeone hit you with their Stank Ability!"
+}
+
+// Juggernaut Kit
+if (globalstat "ability_id" = 3, stat "returnx" < 7, stat "returny" < 6, stat "returnz" < 7) {
+    globalstat "jugger_aplrs" inc 1
+}
+
+// Red Team Heal
+if (globalstat "ability_id" = 4, hasTeam "Red", stat "returnx" < 5, stat "returny" < 4, stat "returnz" < 5) {
+    sound "block.note_block.xylophone" 0.7 2.0 "invokers_location"
+    applyPotion "regeneration" 4 2 false
+    applyPotion "resistance" 4 1 false
+    applyPotion "speed" 4 2 true
+    chat "&a&lAn Ally gave you some positive effect you!"
+}
+// Blue Team Heal
+if (globalstat "ability_id" = 5, hasTeam "Blue", stat "returnx" < 5, stat "returny" < 4, stat "returnz" < 5) {
+    sound "block.note_block.xylophone" 0.7 2.0 "invokers_location"
+    applyPotion "regeneration" 4 2 false
+    applyPotion "resistance" 4 1 false
+    applyPotion "speed" 4 2 true
+    chat "&a&lAn Ally gave you some positive effect you!"
+}
+
+// Juggernaut Kit
+if (globalstat "ability_id" = 6, stat "returnx" < 6, stat "returny" < 5, stat "returnz" < 6) {
+    globalstat "zombie_plrs" inc 1
+    changeHealth dec 3
+    chat "&4&lOUCH! &cA Zombie bit you!"
+    sound "entity.zombie.ambient" 0.7 1.0 "invokers_location"
+}
+
+// Jester Kit 1
+if (globalstat "ability_id" = 7, stat "returnx" < 6, stat "returny" < 5, stat "returnz" < 6) {
+    changeHealth dec 3
+    chat "&4&lWHAT? &cA Jester is making you the laughing stock!"
+    sound "entity.witch.ambient" 0.7 1.0 "invokers_location"
+    tp "custom_coordinates" "~0 ~0 ~0 90 0"
+    pause 5
+    tp "custom_coordinates" "~0 ~0 ~0 179 0"
+    pause 5
+    tp "custom_coordinates" "~0 ~0 ~0 -90 0"
+    pause 5
+    tp "custom_coordinates" "~0 ~0 ~0 0 0"
+    pause 5
+    tp "custom_coordinates" "~0 ~0 ~0 90 0"
+}
+
+// Jester Kit 2
+if (globalstat "ability_id" = 8, stat "returnx" < 6, stat "returny" < 5, stat "returnz" < 6) {
+    changeHealth dec 3
+    chat "&4&lCAREFUL! &cA Jester set some of your items too Poison!"
+    sound "entity.witch.throw" 0.7 1.0 "invokers_location"
+    removeItem "healpotion"
+    removeItem "soup"
+    removeItem "healpotion"
+    removeItem "soup"
+    removeItem "healpotion"
+    removeItem "soup"
+    giveItem "poisonsoup" true -1 false
+    giveItem "poisonsoup" true -1 false
+    giveItem "poisonsoup" true -1 false
+}
+
+// Blizzard Ability
+if (globalstat "ability_id" = 9, stat "returnx" < 6, stat "returny" < 5, stat "returnz" < 6) {
+    changeHealth dec 2
+    chat "&9&lBRRR! &bA Blizzard Kit just Froze you!"
+    sound "Glass" 0.8 0.7 "invokers_location"
+    applyPotion "Slowness" 3 8 true
+    applyPotion "Blindness" 2 10 true
+    applyPotion "Nausea" 1 1 true
+}
+
+if () {
+stat "returnx" set 0
+stat "returny" set 0
+stat "returnz" set 0
+stat "targetx" set 0
+stat "targety" set 0
+stat "targetz" set 0
+}

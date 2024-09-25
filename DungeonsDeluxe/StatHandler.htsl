@@ -1,0 +1,60 @@
+
+stat "dmg" Set 1
+stat "maxmana" Set 25
+stat "managain" Set 1
+stat "hpgain" Set 1
+stat "maxhp" Set 20
+
+// Skill Points
+if () {
+    stat "hpgain" inc "%stat.player/sp/hpregen%"
+    stat "managain" inc "%stat.player/sp/manaregen%"
+
+    stat "temp" set "%stat.player/sp/mana%"
+    stat "temp" mult 3
+    stat "maxmana" inc "%stat.player/temp%"
+    stat "temp" set "%stat.player/sp/hp%"
+    stat "temp" mult 3
+    stat "maxhp" inc "%stat.player/temp%"
+}
+
+// Calc Items
+function "CalcWeapons1" false
+function "CalcArmor1" false
+function "%BasedStatIncreases" false
+
+// HP
+if (stat "hp" < "%stat.player/maxhp%") {
+    stat "hp" inc "%stat.player/hpgain%"
+}
+if (stat "hp" > "%stat.player/maxhp%") {
+    stat "hp" set "%stat.player/maxhp%"
+}
+
+if (stat "hp" <= 0) {
+    stat "hp" set "%stat.player/maxhp%"
+    kill
+    function "Random Death Title 1" false
+} else {
+    maxHealth set "%stat.player/maxhp%" false
+    changeHealth Set "%stat.player/hp%"
+}
+
+if (stat "hp" <= 10, stat "heartbeat" = 0) {
+    sound "game.player.hurt.fall.big" 0.7 0.5 custom_coordinates "~ ~ ~"
+    applyPotion "Nausea" 1 5 true
+    title "&f" "&7(&c❤&7)" 0 1 1
+    pause 4
+    title "&f" "&7(&4 ❤ &7)" 0 1 1
+}
+
+// MANA
+if (stat "mana" < "%stat.player/maxmana%") {
+    stat "mana" inc "%stat.player/managain%"
+}
+if (stat "mana" > "%stat.player/maxmana%") {
+    stat "mana" set "%stat.player/maxmana%"
+}
+
+
+actionBar "&8[&c❤&8]: &c%stat.player/hp%&7/&c%stat.player/maxhp% &f &f &f &8[&3⚡&8]: &b%stat.player/mana%&7/&b%stat.player/maxmana% &f &f &f &8[&4⚔&8]&8: &c%stat.player/dmg%"

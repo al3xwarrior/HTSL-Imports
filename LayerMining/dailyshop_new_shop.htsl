@@ -1,0 +1,42 @@
+
+globalstat "shop_id" inc 1
+
+if (globalstat "shop_id" >= 4) {
+    globalstat "shop_id" set 1
+}
+
+function "new_shop_broadcast" true
+
+if (globalstat "shop_id" = 1) {
+    globalstat "shopitem1_cost" set 200
+    globalstat "shopitem1_stock" set 12
+
+    globalstat "shopitem2_cost" set 450
+    globalstat "shopitem2_stock" set 8
+    
+    globalstat "shopitem3_cost" set 600
+    globalstat "shopitem3_stock" set 5
+    exit
+}
+if (globalstat "shop_id" = 2) {
+    globalstat "shopitem1_cost" set 200
+    globalstat "shopitem1_stock" set 10
+
+    globalstat "shopitem2_cost" set 500
+    globalstat "shopitem2_stock" set 5
+    
+    globalstat "shopitem3_cost" set 750
+    globalstat "shopitem3_stock" set 3
+    exit
+}
+if (globalstat "shop_id" = 3) {
+    globalstat "shopitem1_cost" set 150
+    globalstat "shopitem1_stock" set 10
+
+    globalstat "shopitem2_cost" set 300
+    globalstat "shopitem2_stock" set 5
+    
+    globalstat "shopitem3_cost" set 500
+    globalstat "shopitem3_stock" set 3
+    exit
+}

@@ -1,0 +1,5 @@
+sound "entity.wither.spawn" 0.7 1.1 "invokers_location"
+chat "&8&m------------------------------------"
+chat "&c&lRed &f&lvs &b&lBlue &f&lEvent!"
+chat "&fEliminate the other team! &6&l/event"
+chat "&8&m------------------------------------"

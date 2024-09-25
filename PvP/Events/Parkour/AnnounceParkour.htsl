@@ -1,0 +1,5 @@
+sound "entity.wither.spawn" 0.7 1.1 "invokers_location"
+chat "&8&m------------------------------------"
+chat "&e&lParkour &f&lEvent"
+chat "&fGet to the other side! &6&l/event"
+chat "&8&m------------------------------------"

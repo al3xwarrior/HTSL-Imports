@@ -1,0 +1,4 @@
+stat "sp/manaregen" set 0
+stat "sp/mana" set 0
+stat "sp/hpregen" set 0
+stat "sp/hp" set 0

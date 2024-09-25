@@ -1,0 +1,63 @@
+applyPotion "Invisibility" 200 10 true
+
+tp custom_coordinates "94.5 207 -85.5 46.6 22.2"
+
+title "&0" "&e&lLook in chat!" 1 2 1
+
+if () {
+chat "&8&m----------&r&a&l Tutorial (1/5) &8&m----------"
+chat "&e&lHey %player.name%! Look down here!"
+chat "&fWelcome to %house.name%&f! This tutorial will"
+chat "&fgo over the basics!"
+chat "&8&m---------------------------------------"
+}
+
+pause 140
+
+tp custom_coordinates "78.5 207 -73.5 94.1 27.5"
+if () {
+chat "&8&m----------&r&a&l Tutorial (2/5) &8&m----------"
+chat "&fYour going to want to start by &emining"
+chat "&fthrough the &clayers &fhere with your shovel!"
+chat "&8&m---------------------------------------"
+}
+
+pause 140
+
+tp custom_coordinates "84.5 207 -78.5 -53.2 40.1"
+if () {
+chat "&8&m----------&r&a&l Tutorial (3/5) &8&m----------"
+chat "&fHere you can &6permanently &fupgrade your &cstrength"
+chat "&fwhich is used to &emine &ffaster!"
+chat "&8&m---------------------------------------"
+}
+
+pause 140
+
+tp custom_coordinates "77.5 207 -77.5 179.52 48.81"
+if () {
+chat "&8&m----------&r&a&l Tutorial (4/5) &8&m----------"
+chat "&fHere you can &apurchase &ecrates &fused for stronger"
+chat "&4tools &for &2pets&f!"
+chat "&8&m---------------------------------------"
+}
+
+pause 140
+
+tp custom_coordinates "109.5 229 -100.5 44.64 38.79"
+if () {
+chat "&8&m----------&r&a&l Tutorial (5/5) &8&m----------"
+chat "&fThats all! Have fun exploring the different zones!"
+chat "&fAnd heres a &aFREE &fpet to help you start off!"
+chat "&8&m---------------------------------------"
+}
+
+if (stat "tutorial" = 0) {
+    stat "tutorial" set 1
+    giveItem "tutorialpet" true "First Slot" false
+}
+
+pause 140
+
+houseSpawn
+applyPotion "Invisibility" 1 1 true

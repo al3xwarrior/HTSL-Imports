@@ -1,0 +1,3 @@
+if (globalstat "subs" >= 1000) {
+    actionBar "&4&k|&r &c&l1,000 SUBSCRIBERS REACHED ❤ &4&k|"
+}

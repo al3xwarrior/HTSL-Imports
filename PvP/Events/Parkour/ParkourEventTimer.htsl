@@ -1,0 +1,26 @@
+if (globalstat "event" = 4) {
+    
+} else {
+    exit
+}
+
+function "ParkourEventTimerTitle" true
+
+if (globalstat "par/waiting" > 1) {
+    globalstat "par/waiting" dec 1
+    exit
+}
+if (globalstat "par/waiting" = 1) {
+    globalstat "par/waiting" set 0
+    function "SendInParkour" true
+    exit
+}
+
+globalstat "par/timer" dec 1
+
+if (globalstat "par/timer" <= 0) {
+    globalstat "event" set 0
+    globalstat "par/endbc" set 0
+    function "ParkourEnd" true
+    exit
+}

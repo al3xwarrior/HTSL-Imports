@@ -1,0 +1,100 @@
+// Original action "Guns In Housing Tutorial (NOT BY ME)" by Al3xWarrior
+stat "raycast_radius" set "%stat.global/raycast_radius%"
+if (stat "los" = 1) {
+    stat "los" set 0
+    exit
+}
+if () {
+    stat "sqrtInput" set 0
+    stat "x" set "%stat.global/x%"
+    stat "y" set "%stat.global/y%"
+    stat "z" set "%stat.global/z%"
+    stat "pitch" set "%stat.global/pitch%"
+    stat "yaw" set "%stat.global/yaw%"
+    stat "xx" set "%stat.global/x%"
+    stat "yy" set "%stat.global/y%"
+    stat "zz" set "%stat.global/z%"
+}
+if () {
+    stat "x" dec "%player.location.x%"
+    stat "y" dec "%player.location.y%"
+    stat "z" dec "%player.location.z%"
+    stat "x" mult "%stat.player/x%"
+    stat "y" mult "%stat.player/y%"
+    stat "z" mult "%stat.player/z%"
+    stat "sqrtInput" inc "%stat.player/x%"
+    stat "sqrtInput" inc "%stat.player/y%"
+    stat "sqrtInput" inc "%stat.player/z%"
+    stat "sqrtInput" mult 1000000
+    function "sqrt" false
+}
+if () {
+    stat "r" set "%stat.player/sqrtOutput%"
+    stat "xx" mult 1000000000
+    stat "yy" mult 1000000
+    stat "zz" mult 1000000000
+}
+if () {
+    stat "v" set "%stat.player/pitch%"
+    stat "v" inc 90
+    stat "v" mult 1000
+    stat "h" set "%stat.player/yaw%"
+    stat "h" inc 90
+    stat "h" mult 1000
+    stat "sinInput" set "%stat.player/v%"
+    stat "cosInput" set "%stat.player/h%"
+}
+if () {
+    function "sin 1" false
+    function "cos 1" false
+    stat "N_x" set "%stat.player/r%"
+    stat "N_x" mult "%stat.player/sinOutput%"
+    stat "N_x" mult "%stat.player/cosOutput%"
+    stat "N_x" inc "%stat.player/xx%"
+    stat "N_x" div 1000000000
+}
+if () {
+    stat "cosInput" set "%stat.player/v%"
+    function "cos 2" false
+    stat "N_y" set "%stat.player/r%"
+    stat "N_y" mult "%stat.player/cosOutput%"
+    stat "N_y" inc "%stat.player/yy%"
+    stat "N_y" div 1000000
+    stat "N_y" inc 1
+}
+if () {
+    stat "N_z" set "%stat.player/r%"
+    stat "N_z" mult "%stat.player/sinOutput%"
+    stat "sinInput" set "%stat.player/h%"
+    function "sin 2" false
+    stat "N_z" mult "%stat.player/sinOutput%"
+    stat "N_z" inc "%stat.player/zz%"
+}
+if () {
+    stat "N_z" div 1000000000
+    stat "N_x_min" set "%stat.player/N_x%"
+    stat "N_x_min" dec "%stat.player/raycast_radius%"
+    stat "N_x_max" set "%stat.player/N_x%"
+    stat "N_x_max" inc "%stat.player/raycast_radius%"
+}
+if () {
+    stat "N_y_min" set "%stat.player/N_y%"
+    stat "N_y_min" dec "%stat.player/raycast_radius%"
+    stat "N_y_max" set "%stat.player/N_y%"
+    stat "N_y_max" inc "%stat.player/raycast_radius%"
+}
+if () {
+    stat "N_z_min" set "%stat.player/N_z%"
+    stat "N_z_min" dec "%stat.player/raycast_radius%"
+    stat "N_z_max" set "%stat.player/N_z%"
+    stat "N_z_max" inc "%stat.player/raycast_radius%"
+    stat "range" set "%stat.player/r%"
+    stat "range" div 1000
+}
+if (placeholder "%player.location.x%" >= "%stat.player/N_x_min%", placeholder "%player.location.x%" <= "%stat.player/N_x_max%", placeholder "%player.location.y%" >= "%stat.player/N_y_min%", placeholder "%player.location.y%" <= "%stat.player/N_y_max%", placeholder "%player.location.z%" >= "%stat.player/N_z_min%", placeholder "%player.location.z%" <= "%stat.player/N_z_max%", stat "range" <= "%stat.global/range%") {
+    globalstat "raycast" set 1
+} else {
+    exit
+}
+sound "note.pling" "0.7" "1" invokers_location
+title "raycaster is staring at you :)" "&r" 0 2 1

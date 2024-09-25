@@ -1,0 +1,61 @@
+if (stat yTP == -8) {
+    tp "custom_coordinates" "~ ~-8 ~"
+    exit
+}
+if (stat yTP == -7) {
+    tp "custom_coordinates" "~ ~-7 ~"
+    exit
+}
+if (stat yTP == -6) {
+    tp "custom_coordinates" "~ ~-6 ~"
+    exit
+}
+if (stat yTP == -5) {
+    tp "custom_coordinates" "~ ~-5 ~"
+    exit
+}
+if (stat yTP == -4) {
+    tp "custom_coordinates" "~ ~-4 ~"
+    exit
+}
+if (stat yTP == -3) {
+    tp "custom_coordinates" "~ ~-3 ~"
+    exit
+}
+if (stat yTP == -2) {
+    tp "custom_coordinates" "~ ~-2 ~"
+    exit
+}
+if (stat yTP == -1) {
+    tp "custom_coordinates" "~ ~-1 ~"
+    exit
+}
+if (stat yTP == 1) {
+    tp "custom_coordinates" "~ ~1 ~"
+    exit
+}
+if (stat yTP == 2) {
+    tp "custom_coordinates" "~ ~2 ~"
+    exit
+}
+if (stat yTP == 3) {
+    tp "custom_coordinates" "~ ~3 ~"
+    exit
+}
+if (stat yTP == 4) {
+    tp "custom_coordinates" "~ ~4 ~"
+    exit
+}
+if (stat yTP == 5) {
+    tp "custom_coordinates" "~ ~5 ~"
+    exit
+}
+if (stat yTP == 6) {
+    tp "custom_coordinates" "~ ~6 ~"
+    exit
+}
+if (stat yTP == 7) {
+    tp "custom_coordinates" "~ ~7 ~"
+    exit
+}
+tp "custom_coordinates" "~ ~8 ~"

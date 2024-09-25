@@ -1,0 +1,12 @@
+if (stat "zone" < 5) {
+    exit
+}
+
+sound "block.note.bass" 0.7 2 "invokers_location"
+chat "&8&m---------------------------"
+chat "&6&lNEW SHOP REFRESH AT ZONE 5"
+chat "&8&m---------------------------"
+
+if (inRegion "RotatingShopZone") {
+    tp custom_coordinates "81.5 201 40.5"
+}

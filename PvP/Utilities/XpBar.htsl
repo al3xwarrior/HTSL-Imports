@@ -1,0 +1,96 @@
+xpLevel 2147483647
+
+if (stat "kit" > 0, stat "ability_cd" > 0) {
+
+} else {
+    exit
+}
+
+if (stat "ability_cd" = 1) {
+    xpLevel 1
+    exit
+}
+if (stat "ability_cd" = 2) {
+    xpLevel 2
+    exit
+}
+if (stat "ability_cd" = 3) {
+    xpLevel 3
+    exit
+}
+if (stat "ability_cd" = 4) {
+    xpLevel 4
+    exit
+}
+if (stat "ability_cd" = 5) {
+    xpLevel 5
+    exit
+}
+if (stat "ability_cd" = 6) {
+    xpLevel 6
+    exit
+}
+if (stat "ability_cd" = 7) {
+    xpLevel 7
+    exit
+}
+if (stat "ability_cd" = 8) {
+    xpLevel 8
+    exit
+}
+if (stat "ability_cd" = 9) {
+    xpLevel 9
+    exit
+}
+if (stat "ability_cd" = 10) {
+    xpLevel 10
+    exit
+}
+if (stat "ability_cd" = 11) {
+    xpLevel 11
+    exit
+}
+if (stat "ability_cd" = 12) {
+    xpLevel 12
+    exit
+}
+if (stat "ability_cd" = 13) {
+    xpLevel 13
+    exit
+}
+if (stat "ability_cd" = 14) {
+    xpLevel 14
+    exit
+}
+
+function "XpBar2"
+goto function "XpBar2"
+
+if (stat "ability_cd" = 15) {
+    xpLevel 15
+    exit
+}
+if (stat "ability_cd" = 16) {
+    xpLevel 16
+    exit
+}
+if (stat "ability_cd" = 17) {
+    xpLevel 17
+    exit
+}
+if (stat "ability_cd" = 18) {
+    xpLevel 18
+    exit
+}
+if (stat "ability_cd" = 19) {
+    xpLevel 19
+    exit
+}
+if (stat "ability_cd" = 20) {
+    xpLevel 20
+    exit
+}
+if (stat "ability_cd" = 21) {
+    xpLevel 21
+    exit
+}

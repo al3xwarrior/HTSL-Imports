@@ -1,0 +1,50 @@
+// timer that runs the action cooldown.
+
+if (stat "canaction" = 1) {
+    exit
+}
+
+if (globalstat "eventover" = 1) {
+    stat "canaction" set 1
+    stat "mins" set 0
+    stat "bigsecs" set 0
+    stat "minisecs" set 0
+    exit
+}
+
+if (globalstat "cookiegoaltimer" >= 0) {
+    stat "minisecs" dec 5
+} else {
+    stat "minisecs" dec 1
+}
+
+if (stat "mins" <= 0, stat "bigsecs" <= 0, stat "minisecs" <= 0) {
+    stat "canaction" set 1
+
+    stat "mins" set 0
+    stat "bigsecs" set 3
+    stat "minisecs" set 0
+    exit
+}
+
+if (stat "bigsecs" <= 0, stat "minisecs" < 0) {
+    stat "mins" dec 1
+    stat "bigsecs" set 5
+    stat "minisecs" set 9
+    exit
+}
+if (stat "minisecs" < 0) {
+    stat "bigsecs" dec 1
+    stat "minisecs" set 9
+    exit
+}
+
+if (stat "mins" < 0) {
+    stat "canaction" set 1
+    chat "&dYou can place another block!"
+    sound "block.anvil.land" 0.6 1.0 "invokers_location"
+
+    stat "mins" set 0
+    stat "bigsecs" set 3
+    stat "minisecs" set 0
+}

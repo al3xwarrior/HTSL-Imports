@@ -1,0 +1,69 @@
+if or (hasGroup "Admin" true, hasPermission "Fly") {
+    exit
+}
+
+stat "AC/avgDist" set 0
+
+// X
+if (stat "lastx" = "%player.location.x%") {
+    stat "AC/XDist" set 0
+} else {
+    stat "AC/XDist" set "%player.location.x%"
+    stat "AC/XDist" dec "%stat.player/lastx%"
+}
+if (stat "AC/XDist" < 0) {
+    stat "AC/XDist" mult -1
+}
+stat "AC/avgDist" inc "%stat.player/AC/XDist%"
+
+// Y
+if (stat "lasty" = "%player.location.y%") {
+    stat "AC/YDist" set 0
+} else {
+    stat "AC/YDist" set "%player.location.y%"
+    stat "AC/YDist" dec "%stat.player/lasty%"
+}
+if (stat "AC/YDist" < 0) {
+    stat "AC/YDist" mult -1
+}
+stat "AC/avgDist" inc "%stat.player/AC/YDist%"
+
+// Z
+if (stat "lastz" = "%player.location.z%") {
+    stat "AC/ZDist" set 0
+} else {
+    stat "AC/ZDist" set "%player.location.z%"
+    stat "AC/ZDist" dec "%stat.player/lastz%"
+}
+if (stat "AC/ZDist" < 0) {
+    stat "AC/ZDist" mult -1
+}
+stat "AC/avgDist" inc "%stat.player/AC/ZDist%"
+
+if (stat "AC/avgDist" >= 8) {
+    stat "AC/flyvio" inc 1
+} else {
+    exit
+}
+
+// Find values for different ping
+if (placeholder "%player.ping%" <= 60) {
+    stat "AC/maxflyvio" set 10
+}
+if (placeholder "%player.ping%" > 60, placeholder "%player.ping%" <= 100) {
+    stat "AC/maxflyvio" set 15
+}
+if (placeholder "%player.ping%" >= 101) {
+    stat "AC/maxflyvio" set 20
+}
+
+if (stat "ac/flyvio" > "%stat.player/AC/maxflyvio%") {
+    globalstat "ac/id" set 1
+    globalstat "ac/plrid" set "%stat.player/playerid%"
+    globalstat "ac/x" set "%player.location.x%"
+    globalstat "ac/y" set "%player.location.y%"
+    globalstat "ac/z" set "%player.location.z%"
+    globalstat "ac/ping" set "%player.ping%"
+    globalstat "ac/vio" set "%stat.player/AC/flyvio%"
+    function "Alert" true
+}

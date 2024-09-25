@@ -1,0 +1,50 @@
+// %stat.player/hitsound%
+
+//0 = off
+// 1 = low pitch orb
+// 2 = medium pitch orb
+// 3 = high pitch orb
+// 4 = pop
+// 5 = level up
+
+if (stat "hitsound" = 5) {
+    stat "hitsound" set 0
+    chat "&a&lHit Sounds Disabled! &2&l✓"
+    displayMenu "Settings"
+    exit
+}
+if (stat "hitsound" = 4) {
+    stat "hitsound" set 5
+    chat "&a&lHit Sounds set to Level Up! &2&l✓"
+    sound "entity.player.levelup" 0.7 2.0 "invokers_location"
+    displayMenu "Settings"
+    exit
+}
+if (stat "hitsound" = 3) {
+    stat "hitsound" set 4
+    chat "&a&lHit Sounds set to Pop! &2&l✓"
+    sound "block.lava.pop" 0.7 2.0 "invokers_location"
+    displayMenu "Settings"
+    exit
+}
+if (stat "hitsound" = 2) {
+    stat "hitsound" set 3
+    chat "&a&lHit Sounds set to High Pitch Orb! &2&l✓"
+    sound "entity.experience_orb.pickup" 0.7 1.3 "invokers_location"
+    displayMenu "Settings"
+    exit
+}
+if (stat "hitsound" = 1) {
+    stat "hitsound" set 2
+    chat "&a&lHit Sounds set to Medium Pitch Orb! &2&l✓"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    displayMenu "Settings"
+    exit
+}
+if (stat "hitsound" = 0) {
+    stat "hitsound" set 1
+    chat "&a&lHit Sounds set to Low Pitch Orb! &2&l✓"
+    sound "entity.experience_orb.pickup" 0.7 0.7 "invokers_location"
+    displayMenu "Settings"
+    exit
+}

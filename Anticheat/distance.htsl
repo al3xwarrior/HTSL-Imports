@@ -1,0 +1,9 @@
+if (stat "lastx" = "%player.location.x%", stat "lasty" = "%player.location.y%", stat "lastz" = "%player.location.z%") {
+    exit
+}
+
+function "speed" false
+
+stat "lastx" set "%player.location.x%"
+stat "lasty" set "%player.location.y%"
+stat "lastz" set "%player.location.z%"

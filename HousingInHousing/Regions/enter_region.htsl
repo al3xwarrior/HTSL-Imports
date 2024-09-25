@@ -1,0 +1,16 @@
+if (stat "playerid" = "%stat.global/p1%") {
+    removeItem "visitormenu"
+    removeItem "PlayerMenu"
+    giveItem "plotpickaxe" false 0 true
+    giveItem "plotaxe" false 1 true
+    giveItem "plotshovel" false 2 true
+    giveItem "creatormenu" false 8 true
+    changePlayerGroup "Editing" true
+} else {
+    giveItem "playermenu" false 8 true
+    removeItem "CreatorMenu"
+    removeItem "plotpickaxe"
+    removeItem "plotaxe"
+    removeItem "plotshovel"
+    removeItem "visitormenu"
+}

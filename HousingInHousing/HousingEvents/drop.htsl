@@ -1,0 +1,25 @@
+// 2 = allow drops
+// 6 = confirm drops
+// 4 = no drops
+
+// p_s_de
+
+if or (stat "p_s_de" = 0, stat "p_s_de" = 2) {
+    exit
+}
+
+if (stat "p_s_de" = 6, stat "drop" = 1) {
+    stat "drop" set 1
+    exit
+}
+if (stat "p_s_de" = 6, stat "drop" = 0) {
+    cancelEvent
+    chat "&c&lDrop again to confirm!"
+    stat "drop" set 1
+    pause 15
+    stat "drop" set 0
+}
+
+if (stat "p_s_de" = 4) {
+    cancelEvent
+}

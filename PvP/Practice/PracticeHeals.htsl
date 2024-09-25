@@ -1,0 +1,29 @@
+
+// 4 ticks
+
+if (gamemode "creative") {
+    exit
+}
+
+if or (inRegion "PracticePool", inRegion "PracticeRoom") {
+
+} else {
+    exit
+}
+
+if (hasItem "soup" metadata anywhere anyamount, stat "healingmethod" = 0) {
+    exit
+}
+if (hasItem "healpotion" metadata anywhere anyamount, stat "healingmethod" = 1) {
+    exit
+}
+
+if (stat "healingmethod" = 0) {
+    applyLayout "Soup"
+    giveItem "soup" true "Hotbar Slot 9" true
+    exit
+}
+if (stat "healingmethod" = 1) {
+    applyLayout "Pots"
+    giveItem "healpotion" true "Hotbar Slot 9" true
+}

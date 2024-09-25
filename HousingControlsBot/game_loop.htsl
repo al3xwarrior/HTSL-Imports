@@ -1,0 +1,75 @@
+// For Debugging. If the globalstat "pause" is true (1) then it stops the rest of the code from running
+if (globalstat pause = 1) {
+    exit
+}
+
+// Because the function triggers every second, then decrease "timer" by 1
+globalstat timer dec 1
+
+// If the timer is still greater than 0 then stop the rest from running
+if (globalstat timer > 0) {
+    exit
+}
+
+// Reset the timer
+globalstat timer set 10
+
+
+//░█▀▀█ ░█─░█ ░█▀▀▀ ░█▀▀█ ░█─▄▀ 　 ░█▀▀▄ ▀█▀ ░█▀▀█ ░█▀▀▀ ░█▀▀█ ▀▀█▀▀ ▀█▀ ░█▀▀▀█ ░█▄─░█
+//░█─── ░█▀▀█ ░█▀▀▀ ░█─── ░█▀▄─ 　 ░█─░█ ░█─ ░█▄▄▀ ░█▀▀▀ ░█─── ─░█── ░█─ ░█──░█ ░█░█░█
+//░█▄▄█ ░█─░█ ░█▄▄▄ ░█▄▄█ ░█─░█ 　 ░█▄▄▀ ▄█▄ ░█─░█ ░█▄▄▄ ░█▄▄█ ─░█── ▄█▄ ░█▄▄▄█ ░█──▀█
+
+// Based on the votes, check the direction that should occur
+
+// All equal
+if (globalstat votes_w = %stat.global/votes_l%, globalstat votes_l = %stat.global/votes_r%) {
+    globalstat broadcast_id set 1
+    globalstat move_type set %random.int/1 4%
+    globalstat votes_l set 0
+    globalstat votes_w set 0
+    globalstat votes_r set 0
+    function broadcast true
+    exit
+}
+
+// W is greater than both
+if (globalstat votes_w > %stat.global/votes_l%, globalstat votes_w > %stat.global/votes_r%) {
+    globalstat broadcast_id set 2
+    globalstat move_type set 2
+    globalstat votes_l set 0
+    globalstat votes_w set 0
+    globalstat votes_r set 0
+    function broadcast true
+    exit
+}
+// L is greater than both
+if (globalstat votes_l > %stat.global/votes_w%, globalstat votes_l > %stat.global/votes_r%) {
+    globalstat broadcast_id set 2
+    globalstat move_type set 1
+    globalstat votes_l set 0
+    globalstat votes_w set 0
+    globalstat votes_r set 0
+    function broadcast true
+    exit
+}
+// R is greater than both
+if (globalstat votes_r > %stat.global/votes_w%, globalstat votes_r > %stat.global/votes_l%) {
+    globalstat broadcast_id set 2
+    globalstat move_type set 3
+    globalstat votes_l set 0
+    globalstat votes_w set 0
+    globalstat votes_r set 0
+    function broadcast true
+    exit
+}
+
+// An error occured or the votes were tied some other way (should not ever happen)
+if () {
+    globalstat broadcast_id set 3
+    globalstat move_type set %random.int/1 4%
+    globalstat votes_l set 0
+    globalstat votes_w set 0
+    globalstat votes_r set 0
+    function broadcast true
+    exit
+}

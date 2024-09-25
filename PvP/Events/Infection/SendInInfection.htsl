@@ -1,0 +1,40 @@
+
+if (hasTeam "Survivor") {
+
+} else {
+    exit
+}
+
+random {
+    tp "custom_coordinates" "5.52 65 58.28 -168.9 0.4"
+    tp "custom_coordinates" "44.71 65 54.82 106.68 1.16"
+    tp "custom_coordinates" "-29.78 65 92.74 -130.19 3.95"
+    tp "custom_coordinates" "-40.03 64 44.43 -90.08 0.19"
+    tp "custom_coordinates" "6.52 67 32.99 -0.38 2.87"
+}
+
+sound "entity.wither.spawn" 0.7 0.8 "invokers_location"
+
+pause 40
+
+chat "&a&lINFECTION &fA random player will be &2Infected &fin &e5.."
+pause 20
+chat "&a&lINFECTION &fA random player will be &2Infected &fin &e4.."
+pause 20
+chat "&a&lINFECTION &fA random player will be &2Infected &fin &e3.."
+pause 20
+chat "&a&lINFECTION &fA random player will be &2Infected &fin &e2.."
+pause 20
+chat "&a&lINFECTION &fA random player will be &2Infected &fin &e1.."
+pause 20
+
+if (globalstat "inf/infected" = 0) {
+    globalstat "inf/infected" set 1
+    setTeam "Infected"
+    applyLayout "Infected"
+    chat "&2&lINFECTION &fYOU HAVE BEEN CHOSEN TO BE THE STARTING INFECTOR!"
+    applyPotion "Speed" 2000000 3 true
+    sound "entity.zombie.infect" 0.7 1.0 "invokers_location"
+} else {
+    applyPotion "Slowness" 2000000 1 true
+}

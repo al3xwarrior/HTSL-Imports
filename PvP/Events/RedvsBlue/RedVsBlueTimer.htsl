@@ -1,0 +1,36 @@
+if (globalstat "event" = 1) {
+    
+} else {
+    exit
+}
+
+if (globalstat "rvb/waiting" > 1) {
+    globalstat "rvb/waiting" dec 1
+    exit
+}
+if (globalstat "rvb/waiting" = 1) {
+    globalstat "rvb/waiting" set 0
+    function "SendInRedVsBlue" true
+    exit
+}
+
+globalstat "rvb/timer" dec 1
+
+if (globalstat "rvb/timer" <= 0) {
+    globalstat "event" set 0
+    globalstat "rvb/endbc" set 0
+    function "RedVsBlueEnd" true
+    exit
+}
+if (placeholder "%player.team.players/Red%" <= 0) {
+    globalstat "event" set 0
+    globalstat "rvb/endbc" set 1
+    function "RedVsBlueEnd" true
+    exit
+}
+if (placeholder "%player.team.players/Blue%" <= 0) {
+    globalstat "event" set 0
+    globalstat "rvb/endbc" set 2
+    function "RedVsBlueEnd" true
+    exit
+}

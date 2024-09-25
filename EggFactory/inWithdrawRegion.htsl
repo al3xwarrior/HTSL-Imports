@@ -1,0 +1,55 @@
+
+// in any withdraw region
+if or (inRegion "zone1_withdraw", inRegion "zone2_withdraw", inRegion "zone3_withdraw") {
+
+} else {
+    exit
+}
+
+stat "withdrawtimer" inc 1
+if (stat "withdrawtimer" >= "%stat.player/withdrawreq%") {
+    stat "withdrawtimer" set 0
+} else {
+    exit
+}
+
+if (stat "eggstowith" <= 0) {
+    title "&6Collecting..." "&c&oNothing to withdraw!" 0 1 1
+    exit
+}
+
+stat "towithdraw" set "%stat.player/withdrawamount%"
+if (hasItem "withdrawbasket1" metadata Armor anyAmount) {
+    stat "towithdraw" mult 2
+}
+if (hasItem "withdrawbasket2" metadata Armor anyAmount) {
+    stat "towithdraw" mult 3
+}
+if (hasItem "withdrawbasket3" metadata Armor anyAmount) {
+    stat "towithdraw" mult 4
+}
+if (hasItem "withdrawbasket4" metadata Armor anyAmount) {
+    stat "towithdraw" mult 5
+}
+
+if (stat "towithdraw" > "%stat.player/eggstowith%") {
+    stat "eggs" inc "%stat.player/eggstowith%"
+    title "&6Collecting..." "&e%stat.player/eggs% Eggs &7(+%stat.player/eggstowith%)" 0 1 1
+    stat "eggstowith" set 0
+} else {
+    stat "eggs" inc "%stat.player/towithdraw%"
+    title "&6Collecting..." "&e%stat.player/eggs% Eggs &7(+%stat.player/towithdraw%)" 0 1 1
+    stat "eggstowith" dec "%stat.player/towithdraw%"
+}
+
+if (stat "s/withdrawsound" = 2) {
+
+} else {
+    exit
+}
+
+random {
+    sound "entity.item.pickup" 0.7 0.9 "invokers_location"
+    sound "entity.item.pickup" 0.7 1.0 "invokers_location"
+    sound "entity.item.pickup" 0.7 1.1 "invokers_location"
+}

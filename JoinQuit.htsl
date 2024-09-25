@@ -1,0 +1,6 @@
+if and (globalstat "temp" = "1") {
+    chat "&a>&d>&b> &eThey joined for the first time and will be known as &6Player#%stat.global/idtobroadcast%&e! &b<&d<&a<"
+}
+if and (globalstat "temp" = "2") {
+    chat "&eThey are also known as &6Player#%stat.global/idtobroadcast%&e!"
+}

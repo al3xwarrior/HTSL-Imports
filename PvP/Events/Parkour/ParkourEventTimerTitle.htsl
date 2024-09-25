@@ -1,0 +1,21 @@
+if or (inRegion "ParkourEventEnd", inRegion "ParkourEventBottom", inRegion "ParkourEventRegion", inRegion "ParkourEventStart") {
+
+} else {
+    exit
+}
+
+if (globalstat "par/waiting" = 4) {
+    title "&a&l3" "&0" 0 5 3
+    sound "Orb Pickup" 0.7 0.8 "invokers_location"
+    exit
+}
+if (globalstat "par/waiting" = 3) {
+    title "&6&l2" "&0" 0 5 3
+    sound "Orb Pickup" 0.7 1.0 "invokers_location"
+    exit
+}
+if (globalstat "par/waiting" = 2) {
+    title "&c&l1" "&0" 0 5 3
+    sound "Orb Pickup" 0.7 1.2 "invokers_location"
+    exit
+}

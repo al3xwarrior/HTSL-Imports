@@ -1,0 +1,28 @@
+// click on the item to enter the "placing block mode"
+
+if (stat "canaction" = 0) {
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    chat "&c&lYou still need to wait %stat.player/mins%:%stat.player/bigsecs%%stat.player/minisecs% to do this!"
+    exit
+}
+
+applyLayout "Building"
+
+applyPotion "Mining Fatigue" 2000000 10 true
+stat "status" set 1
+gamemode survival
+
+if (globalstat "eventover" = 1) {
+    giveItem "rplace_black" false 1 true
+    giveItem "rplace_black" false 2 true
+    giveItem "rplace_black" false 3 true
+    giveItem "rplace_black" false 4 true
+    giveItem "rplace_black" false 5 true
+    exit
+}
+
+giveItem "rplace_stone" false 1 true
+giveItem "rplace_cobblestone" false 2 true
+giveItem "rplace_dirt" false 3 true
+giveItem "rplace_coarsedirt" false 4 true
+giveItem "rplace_diorite" false 5 true

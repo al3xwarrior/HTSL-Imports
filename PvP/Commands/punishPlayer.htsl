@@ -1,0 +1,2 @@
+globalstat "punishmentpid" set "%stat.player/playerid%"
+function "openPunishmentMenu" true

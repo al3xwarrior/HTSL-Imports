@@ -1,0 +1,15 @@
+if (stat "s/workernoti" = 2) {
+
+} else {
+    exit
+}
+
+if (stat "carriergains" > 0) {
+    chat "&3&l[☺] &bThe carrier has transported &e%stat.player/carriergains% Eggs &bin the last 60s!"
+}
+if (stat "breedergains" > 0) {
+    chat "&6&l[☺] &eThe breeder has bred &f%stat.player/breedergains% Chickens &ein the last 60s!"
+}
+
+stat "carriergains" set 0
+stat "breedergains" set 0

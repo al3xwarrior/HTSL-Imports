@@ -1,0 +1,42 @@
+if (stat "skillpoints" < 1) {
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    chat "&cYou do not have the required skill points!"
+    exit
+}
+
+stat "skillpoints" dec 1
+stat "sp/hpregen" inc 1
+displayMenu "Skill Point System"
+
+applyPotion "Blindness" 3 10 true
+applyPotion "Nausea" 3 10 true
+
+sound "Orb Pickup" 0.7 0.5 "invokers_location"
+pause 7
+sound "Orb Pickup" 0.7 0.6 "invokers_location"
+pause 7
+sound "Orb Pickup" 0.7 0.7 "invokers_location"
+pause 7
+sound "Orb Pickup" 0.7 0.8 "invokers_location"
+pause 6
+sound "Orb Pickup" 0.7 0.9 "invokers_location"
+pause 6
+sound "Orb Pickup" 0.7 1.0 "invokers_location"
+pause 5
+sound "Orb Pickup" 0.7 1.1 "invokers_location"
+pause 5
+sound "Orb Pickup" 0.7 1.2 "invokers_location"
+pause 4
+sound "Orb Pickup" 0.7 1.3 "invokers_location"
+pause 4
+sound "Orb Pickup" 0.7 1.4 "invokers_location"
+pause 3
+sound "Orb Pickup" 0.7 1.5 "invokers_location"
+pause 3
+sound "Orb Pickup" 0.7 1.6 "invokers_location"
+pause 2
+sound "Orb Pickup" 0.7 1.7 "invokers_location"
+pause 1
+sound "Orb Pickup" 0.7 1.8 "invokers_location"
+pause 1
+sound "Level Up" 0.7 1.2 "invokers_location"

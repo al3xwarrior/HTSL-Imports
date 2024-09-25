@@ -1,0 +1,5 @@
+stat "kills" inc 1
+stat "rng" set "%random.int/5 16%"
+stat "gold" inc "%stat.player/rng%"
+chat "&4&lKILL &cYou earned &6%stat.player/rng% Gold &cfrom this kill!"
+function "updateKDR" false

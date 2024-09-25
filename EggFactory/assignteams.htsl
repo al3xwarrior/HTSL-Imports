@@ -1,0 +1,12 @@
+if (inRegion "Barn", globalstat "m/mayor" = 1) {
+    setTeam "Sir Cluckington"
+    exit
+}
+if (inRegion "Barn", globalstat "m/mayor" = 2) {
+    setTeam "Farmer Joe"
+    exit
+}
+if (inRegion "Barn", globalstat "m/mayor" = 3) {
+    setTeam "Miner Bob"
+    exit
+}

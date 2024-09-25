@@ -1,0 +1,53 @@
+// Hunter
+if (stat "kit" = 8) {
+    giveItem "32arrows" false "Inventory Slot 27" true
+    chat "&e+32 Arrows"
+    exit
+}
+
+// Scientist
+if (stat "kit" = 9, stat "abilityslot" = 1) {
+    giveItem "scientist_ability" false "Hotbar Slot 1" true
+    chat "&e+2 Harming Potions"
+    exit
+}
+if (stat "kit" = 9, stat "abilityslot" = 2) {
+    giveItem "scientist_ability" false "Hotbar Slot 2" true
+    chat "&e+2 Harming Potions"
+    exit
+}
+if (stat "kit" = 9, stat "abilityslot" = 3) {
+    giveItem "scientist_ability" false "Hotbar Slot 3" true
+    chat "&e+2 Harming Potions"
+    exit
+}
+if (stat "kit" = 9, stat "abilityslot" = 4) {
+    giveItem "scientist_ability" false "Hotbar Slot 4" true
+    chat "&e+2 Harming Potions"
+    exit
+}
+if (stat "kit" = 9, stat "abilityslot" = 5) {
+    giveItem "scientist_ability" false "Hotbar Slot 5" true
+    chat "&e+2 Harming Potions"
+    exit
+}
+if (stat "kit" = 9, stat "abilityslot" = 6) {
+    giveItem "scientist_ability" false "Hotbar Slot 6" true
+    chat "&e+2 Harming Potions"
+    exit
+}
+if (stat "kit" = 9, stat "abilityslot" = 7) {
+    giveItem "scientist_ability" false "Hotbar Slot 7" true
+    chat "&e+2 Harming Potions"
+    exit
+}
+if (stat "kit" = 9, stat "abilityslot" = 8) {
+    giveItem "scientist_ability" false "Hotbar Slot 8" true
+    chat "&e+2 Harming Potions"
+    exit
+}
+if (stat "kit" = 9, stat "abilityslot" = 9) {
+    giveItem "scientist_ability" false "Hotbar Slot 9" true
+    chat "&e+2 Harming Potions"
+    exit
+}

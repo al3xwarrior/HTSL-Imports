@@ -1,0 +1,59 @@
+// depending on the page they should be at, give them an item.
+
+if (globalstat "eventover" = 1) {
+    giveItem "rplace_black" false 1 true
+    giveItem "rplace_black" false 2 true
+    giveItem "rplace_black" false 3 true
+    giveItem "rplace_black" false 4 true
+    giveItem "rplace_black" false 5 true
+    exit
+}
+
+if (stat "status" = 1) {
+    giveItem "rplace_stone" false 1 true
+    giveItem "rplace_cobblestone" false 2 true
+    giveItem "rplace_dirt" false 3 true
+    giveItem "rplace_coarsedirt" false 4 true
+    giveItem "rplace_diorite" false 5 true
+    exit
+}
+if (stat "status" = 2) {
+    giveItem "rplace_grass" false 1 true
+    giveItem "rplace_podzol" false 2 true
+    giveItem "rplace_oakplanks" false 3 true
+    giveItem "rplace_oakwood" false 4 true
+    giveItem "rplace_glass" false 5 true
+    exit
+}
+if (stat "status" = 3) {
+    giveItem "rplace_red" false 1 true
+    giveItem "rplace_orange" false 2 true
+    giveItem "rplace_yellow" false 3 true
+    giveItem "rplace_green" false 4 true
+    giveItem "rplace_blue" false 5 true
+    exit
+}
+if (stat "status" = 4) {
+    giveItem "rplace_purple" false 1 true
+    giveItem "rplace_gold" false 2 true
+    giveItem "rplace_diamond" false 3 true
+    giveItem "rplace_glowstone" false 4 true
+    giveItem "rplace_redstone" false 5 true
+    exit
+}
+if (stat "status" = 5) {
+    giveItem "rplace_crafting" false 1 true
+    giveItem "rplace_furnace" false 2 true
+    giveItem "rplace_whiteglass" false 3 true
+    giveItem "rplace_stonebricks" false 4 true
+    giveItem "rplace_bricks" false 5 true
+    exit
+}
+if (stat "status" = 6) {
+    giveItem "rplace_black" false 1 true
+    giveItem "rplace_white" false 1 true
+    giveItem "rplace_darkblue" false 1 true
+    giveItem "rplace_pink" false 1 true
+    giveItem "rplace_gray" false 1 true
+    exit
+}

@@ -1,0 +1,67 @@
+sound "entity.ender_dragon.growl" 0.7 1.0 "invokers_location"
+
+chat "&8&m---------------------------------------------"
+chat "&c&l1,000 SUBSCRIBERS REACHED &e&k|&r&6&lGG&e&k|"
+chat "&8&m---------------------------------------------"
+
+if () {
+title "&6&l1,000" "&6&lSubscribers!" 0 1 1
+pause 10
+title "&e&l1,000" "&e&lSubscribers!" 0 1 1
+pause 10
+title "&6&l1,000" "&6&lSubscribers!" 0 1 1
+sound "entity.firework_rocket.twinkle" 0.7 1.0 "invokers_location"
+pause 10
+}
+if () {
+title "&e&l1,000" "&e&lSubscribers!" 0 1 1
+pause 10
+title "&6&l1,000" "&6&lSubscribers!" 0 1 1
+sound "entity.firework_rocket.twinkle" 0.7 1.0 "invokers_location"
+pause 10
+title "&e&l1,000" "&e&lSubscribers!" 0 1 1
+sound "entity.firework_rocket.twinkle" 0.7 1.0 "invokers_location"
+pause 10
+}
+if () {
+title "&6&l1,000" "&6&lSubscribers!" 0 1 1
+sound "entity.firework_rocket.large_blast" 0.7 1.0 "invokers_location"
+pause 10
+title "&e&l1,000" "&e&lSubscribers!" 0 1 1
+pause 10
+title "&6&l1,000" "&6&lSubscribers!" 0 1 1
+pause 10
+title "&e&l1,000" "&e&lSubscribers!" 0 1 1
+sound "entity.firework_rocket.blast" 0.7 1.0 "invokers_location"
+pause 10
+}
+if () {
+title "&6&l1,000" "&6&lSubscribers!" 0 1 1
+pause 10
+title "&e&l1,000" "&e&lSubscribers!" 0 1 1
+pause 10
+title "&6&l1,000" "&6&lSubscribers!" 0 1 1
+pause 10
+title "&e&l1,000" "&e&lSubscribers!" 0 1 1
+sound "entity.firework_rocket.large_blast" 0.7 1.0 "invokers_location"
+}
+if () {
+pause 10
+title "&6&l1,000" "&6&lSubscribers!" 0 5 1
+pause 10
+title "&e&l1,000" "&e&lSubscribers!" 0 5 1
+pause 10
+title "&6&l1,000" "&6&lSubscribers!" 0 5 1
+pause 10
+title "&e&l1,000" "&e&lSubscribers!" 0 1 1
+sound "entity.firework_rocket.blast" 0.7 1.0 "invokers_location"
+}
+if () {
+pause 10
+title "&6&l1,000" "&6&lSubscribers!" 0 1 1
+pause 10
+title "&e&l1,000" "&e&lSubscribers!" 0 5 1
+}
+
+pause 100
+title "&c❤" "&6&lW" 0 10 1

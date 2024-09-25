@@ -1,0 +1,18 @@
+// p<id>_pstart_x
+// p<id>_pend_x
+
+function "isOwner"
+if (stat "isOwner" = 0) {
+    exit
+}
+
+if (inRegion "p1") {
+    globalstat "p1_pend_x" set "%player.location.x%"
+    globalstat "p1_pend_y" set "%player.location.y%"
+    globalstat "p1_pend_z" set "%player.location.z%"
+    chat "&e&lEnd Position of Parkour set to %player.location.x%x %player.location.y%y %player.location.z%z!"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    exit
+}
+
+chat "&cAn error occured!"

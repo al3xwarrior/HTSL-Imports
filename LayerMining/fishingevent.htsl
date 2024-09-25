@@ -1,0 +1,27 @@
+stat "fishcaught" inc 1
+
+stat "temp" set 0
+if (fishingEnv "Water") {
+    stat "wfishcaught" inc 1
+    stat "temp" set 1
+} else {
+    stat "lfishcaught" inc 1
+    stat "temp" set 2
+}
+
+if (stat "temp" = 1) {
+    title "&0" "&b&lFish Caught!" 1 1 1
+} else {
+    title "&0" "&6&lFish Caught!" 1 1 1
+}
+sound "block.note.bass" 0.7 2 "invokers_location"
+
+
+if (stat "fquest_id" = 2, stat "temp" = 2) {
+    stat "fquest_prog" inc 1
+    exit
+}
+if or (stat "fquest_id" = 1, stat "fquest_id" = 5, stat "fquest_id" = 6, stat "fquest_id" = 7) {
+    stat "fquest_prog" inc 1
+    exit
+}

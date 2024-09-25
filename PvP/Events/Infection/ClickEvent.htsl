@@ -1,0 +1,22 @@
+if (globalstat "event" > 0) {
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    chat "&c&lThere is already a active event! &4&l✘"
+    exit
+}
+
+if or (globalstat "event_cd" <= 0, hasGroup "Admin" true) {
+
+} else {
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    chat "&c&lHosting an Event is on cooldown! &4&l✘ &7(%stat.global/event_cd%s)"
+    exit
+}
+
+globalstat "event_cd" set 500
+globalstat "event" set 3
+globalstat "inf/infected" set 0
+globalstat "inf/waiting" set 30
+globalstat "inf/timer" set 300
+function "AnnounceInfection" true
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+closeMenu

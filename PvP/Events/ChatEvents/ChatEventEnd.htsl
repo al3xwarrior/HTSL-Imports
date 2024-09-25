@@ -1,0 +1,21 @@
+if (globalstat "CE/winner" = "%stat.player/playerid%") {
+    chat "&r"
+    chat "&d&lCHAT EVENT ENDED"
+    chat "&6%player.name% &fwon!"
+    chat "&7You earned &6%stat.player/givegold%⛃ &7and &b%stat.player/givexp%✥"
+    chat "&e"
+    exit
+}
+if (globalstat "CE/winner" = 0) {
+    chat "&r"
+    chat "&d&lCHAT EVENT ENDED"
+    chat "&cNo one could figure it out :("
+    chat "&e"
+    exit
+} else {
+    chat "&r"
+    chat "&d&lCHAT EVENT ENDED"
+    chat "&6Player#%stat.global/ce/winner% &fwon!"
+    chat "&e"
+    exit
+}

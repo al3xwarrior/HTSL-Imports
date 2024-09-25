@@ -1,0 +1,15 @@
+if (hasItem "diamonds10" metadata Hand anyAmount) {
+    removeItem "diamonds10"
+    stat "diamonds" inc 10
+    exit
+}
+if (hasItem "diamonds100" metadata Hand anyAmount) {
+    removeItem "diamonds100"
+    stat "diamonds" inc 100
+    exit
+}
+if (hasItem "diamonds1000" metadata Hand anyAmount) {
+    removeItem "diamonds1000"
+    stat "diamonds" inc 1000
+    exit
+}

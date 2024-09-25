@@ -1,0 +1,45 @@
+// when the player enters the ENTRY part of a plot
+// stuff in here is for checking if there is an active owner and if its open.
+
+// not setup?
+if (globalstat "p1_open" = 0) {
+    globalstat "p1_open" set 2
+    globalstat "p1" set 0
+    globalstat "p1_cookies" set 0
+}
+
+// plotclaiming is the plot id the player is trying to claim
+// tp is outside of plot entry region
+if (globalstat "p1" = 0) {
+    stat "plotclaiming" set 1
+    displayMenu "Plot Unclaimed! Claim It?"
+    tp "custom_coordinates" "13.5 115 -97.5"
+    exit
+}
+
+// if the plot is opened continue the code otherwise
+// play some sounds and tp them outside of plot entry region
+if or (globalstat "p1_open" = 2, stat "playerid" = "%stat.global/p1%") {
+
+} else {
+    title "&4&lCLOSED" "&cThe owner has his plot closed!" 1 1 1
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    tp "custom_coordinates" "13.5 115 -97.5"
+    exit
+}
+
+stat "enteredplot" set 1
+stat "p_settings" set "%stat.global/p1_settings%"
+stat "p_open" set "%stat.global/p1_open%"
+function "GetPlotSettings" false
+
+stat "targetx" set "%stat.global/p1_join_x%"
+stat "targety" set "%stat.global/p1_join_y%"
+stat "targetz" set "%stat.global/p1_join_z%"
+function "DT1"
+
+function "EnterPlotActions"
+
+if (stat "playerid" = "%stat.global/p1%") {
+    chat "&2&lYou are the owner of this plot! Welcome back!"
+}

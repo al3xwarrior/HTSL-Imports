@@ -1,0 +1,40 @@
+stat "temp" set 0
+
+if (inRegion "serverWall") {
+    function "MineServerWall"
+    exit
+}
+if or (inRegion "Area1-1", inRegion "Area1-2", inRegion "Area1-3", inRegion "Area1-4", inRegion "Area2-1", inRegion "Area2-2", inRegion "Area2-3", inRegion "Area2-4", inRegion "Area3-1", inRegion "Area3-2", inRegion "Area3-3", inRegion "Area3-4", inRegion "Area4-1", inRegion "Area4-2", inRegion "Area4-3", inRegion "Area4-4", inRegion "Area5-1", inRegion "Area5-2", inRegion "Area5-3", inRegion "Area5-4") {
+    stat "temp" set 1
+}
+if or (inRegion "Area6-1", inRegion "Area6-2", inRegion "Area6-3", inRegion "Area6-4", inRegion "Area7-1", inRegion "Area7-2", inRegion "Area7-3", inRegion "Area7-4", inRegion "Area8-1", inRegion "Area8-2", inRegion "Area8-3", inRegion "Area8-4", inRegion "Area9-1", inRegion "Area9-2", inRegion "Area9-3", inRegion "Area9-4", inRegion "Area10-1", inRegion "Area10-2", inRegion "Area10-3", inRegion "Area10-4") {
+    stat "temp" set 1
+}
+if or (inRegion "Area11-1", inRegion "Area11-2", inRegion "Area11-3", inRegion "Area11-4") {
+    stat "temp" set 1
+}
+
+if (stat "temp" = 0, gamemode "survival") {
+    chat "&c&lYou are not allowed to break that block!"
+    sound "block.anvil.land" 0.7 0.5 "invokers_location"
+    applyPotion "mining_fatigue" 1 10 true
+    exit
+}
+
+stat "wallhealth" dec %stat.player/strength%
+
+function "mining_animation" false
+
+if (stat "wallhealth" > 0) {
+    exit
+}
+
+tp custom_coordinates "~-5 ~ ~"
+
+if (hasItem "antiblindness" metadata Inventory anyAmount) {
+
+} else {
+    applyPotion "blindness" 1 1 true
+}
+
+sound "entity.enderman.teleport" 0.7 2.0 "invokers_location"

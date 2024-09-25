@@ -1,0 +1,62 @@
+// punishment ids
+// 1 = combat logging (too many warnings)
+// 2 = toxicity
+// 3 = targetting
+
+if (stat "warnings" >= 3) {
+    stat "warnings" set 0
+    stat "punishments" inc 1
+    stat "punish/id" set 1
+    stat "punish/mins" set 60
+    stat "punish/secs" set 0
+    stat "punished" set 1
+}
+
+if or (stat "punished" = 1) {
+    stat "punish/secs" dec 1
+} else {
+    exit
+}
+
+if (hasGroup "Punished" false) {
+    
+} else {
+    changePlayerGroup "Punished" false
+}
+
+title "&0" "&cTime Left: &4%stat.player/punish/mins%m %stat.player/punish/secs%s" 0 1 1
+
+if (stat "punish/mins" <= 0, stat "punish/secs" <= 0) {
+    stat "punished" set 0
+    stat "punish/id" set 0
+    chat "&c&lYou have served your time!"
+    houseSpawn
+}
+if (stat "punish/mins" > 0, stat "punish/secs" <= 0) {
+    stat "punish/mins" dec 1
+    stat "punish/secs" set 59
+}
+
+chat "&6&m-------------------------------------------"
+chat "&r &c█ &r &r &r &r &r &r &4&lYOU WERE PUNISHED!"
+chat "&r &c█ &r &r &r &r &r &r &fYou must stay here until"
+chat "&r &c█ &r &r &r &r &r &r &fthe time runs out!"
+chat "&r &c█ &r &r &r &r &r &r "
+if (stat "punishment/id" = 1) {
+    chat "&r &c███████ &r &r &r &r &fReason: &cCombat Logging"
+}
+if (stat "punishment/id" = 2) {
+    chat "&r &c███████ &r &r &r &r &fReason: &2Toxicity"
+}
+if (stat "punishment/id" = 3) {
+    chat "&r &c███████ &r &r &r &r &fReason: &bTargetting"
+}
+chat "&6&m-------------------------------------------"
+
+if (inRegion "Jail", stat "punished" = 1) {
+
+} else {
+    tp "custom_coordinates" "56.5 134 9.5"
+    chat "&c&lFor attempting to escape... a minute has been added!"
+    stat "punish/mins" inc 1
+}

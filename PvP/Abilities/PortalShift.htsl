@@ -1,0 +1,34 @@
+// triggered from shift event
+
+if (stat "kit" = 6) {
+
+} else {
+    exit
+}
+
+if (stat "portal_x" = 0, stat "portal_y" = 0, stat "portal_z" = 0) {
+    exit
+}
+
+if (stat "ability_cd" > 0) {
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    chat "&c&lYou are on cooldown! &4&l✘"
+    exit
+}
+
+stat "targetx" set "%stat.player/portal_x%"
+stat "targety" set "%stat.player/portal_y%"
+stat "targetz" set "%stat.player/portal_z%"
+
+applyPotion "Blindness" 3 1 true
+function "DT1" false
+pause 1
+sound "Level Up" 0.7 2.0 "invokers_location"
+
+stat "ability_cd" set 25
+chat "&a&lTeleport Ability used! &2&l✓"
+chat "&7(You are now on a %stat.player/ability_cd%s cooldown!)"
+
+stat "portal_x" set 0
+stat "portal_y" set 0
+stat "portal_z" set 0

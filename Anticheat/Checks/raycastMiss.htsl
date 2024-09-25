@@ -1,0 +1,15 @@
+// KA Check
+if (globalstat "raycastid" = 1) {
+    stat "AC/kavio" inc 1
+}
+if (globalstat "raycastid" = 1, stat "AC/kavio" > 2) {
+    globalstat "ac/id" set 3
+    globalstat "ac/plrid" set "%stat.player/playerid%"
+    globalstat "ac/x" set "%player.location.x%"
+    globalstat "ac/y" set "%player.location.y%"
+    globalstat "ac/z" set "%player.location.z%"
+    globalstat "ac/ping" set "%player.ping%"
+    globalstat "ac/vio" set "%stat.player/AC/kavio%"
+    function "Alert" true
+    exit
+}

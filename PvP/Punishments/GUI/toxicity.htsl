@@ -1,0 +1,12 @@
+if (hasGroup "T-Mod" true) {
+
+} else {
+    chat "&c&lYou need &e&lTrial Mod &c&lor higher to execute punishments!"
+    exit
+}
+
+globalstat "punishmentid" set 2
+
+sound "Orb Pickup" 0.7 1.1 "invokers_location"
+chat "&6&lPunishment: &2Toxicity"
+chat "&a&lClick CONFIRM to send the punishment!"

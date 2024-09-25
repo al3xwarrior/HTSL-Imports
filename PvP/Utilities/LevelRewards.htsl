@@ -1,0 +1,60 @@
+// LEVEL REWARDS:
+// Level 2:
+// - Ability to Purchase Row 2 Kits
+// Level 3:
+// - Access to Healing Practice
+// Level 4:
+// - Ability to Purchase Row 3 Kits
+// Level 5:
+// - Ability to Purchase Ranks
+// - Access to Perks
+// Level 6:
+// - Ability to Purchase Row 4 Kits
+// - Access to Duels (When avaliable)
+// Level 7:
+// - Access to Row 2 Perks
+// Level 8:
+// - Access to Perk Slot 2
+// Level 10:
+// - Access to Row 3 Perks
+// - Access to Perk Slot 3
+
+if (stat "level" = 2) {
+    chat "&7- &fAbility to Purchase &6Row 2 Kits"
+    exit
+}
+if (stat "level" = 3) {
+    chat "&7- &fAccess to Healing Practice &7(Menu)"
+    exit
+}
+if (stat "level" = 4) {
+    chat "&7- &fAbility to Purchase &aRow 3 Kits"
+    exit
+}
+if (stat "level" = 5) {
+    chat "&7- &fAccess to &ePerks"
+    chat "&7- &fAbility to Purchase &bRanks"
+    exit
+}
+if (stat "level" = 6) {
+    chat "&7- &fAbility to Purchase &bRow 4 Kits"
+    chat "&7- &fAccess to &6Duels"
+    exit
+}
+if (stat "level" = 7) {
+    chat "&7- &fAccess to &6Row 2 Perks"
+    exit
+}
+if (stat "level" = 8) {
+    chat "&7- &fAccess to &ePerk Slot 2"
+    exit
+}
+if (stat "level" = 10) {
+    chat "&7- &fAccess to &ePerk Slot 3"
+    chat "&7- &fAccess to &aRow 3 Perks"
+    chat "&7- &eAbility to Create Clans"
+    chat "&9&o*MAX LEVEL"
+    exit
+}
+
+chat "&7- &fNothing :("

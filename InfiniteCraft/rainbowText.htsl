@@ -1,0 +1,37 @@
+if (hasTeam "4") {
+    setTeam "c"
+    exit
+}
+if (hasTeam "c") {
+    setTeam "6"
+    exit
+}
+if (hasTeam "6") {
+    setTeam "e"
+    exit
+}
+if (hasTeam "e") {
+    setTeam "a"
+    exit
+}
+if (hasTeam "a") {
+    setTeam "2"
+    exit
+}
+if (hasTeam "2") {
+    setTeam "b"
+    exit
+}
+if (hasTeam "b") {
+    setTeam "9"
+    exit
+}
+if (hasTeam "9") {
+    setTeam "d"
+    exit
+}
+if (hasTeam "d") {
+    setTeam "5"
+    exit
+}
+setTeam "4"

@@ -1,0 +1,53 @@
+if (stat "wallhealth" <= 0) {
+    title "&2&lBROKEN" "&a❑❑❑❑❑❑❑❑❑&6&l⸕&e❑" 0 1 1
+    exit
+}
+
+// Do math
+stat "temp" set %stat.player/wallhealth%
+stat "temp1" set %stat.player/wallmaxhealth%
+stat "temp" mult 1000
+stat "temp1" mult 10
+stat "temp" div %stat.player/temp1%
+
+// temp will now be between 0 and 100
+if (stat "temp" < 10) {
+    title "&c%stat.player/wallhealth%❤&7/&c%stat.player/wallmaxhealth%❤" "&a❑❑❑❑❑❑❑❑❑&6&l⸕&e❑&7" 0 1 1
+    exit
+}
+if (stat "temp" < 20) {
+    title "&c%stat.player/wallhealth%❤&7/&c%stat.player/wallmaxhealth%❤" "&a❑❑❑❑❑❑❑❑&6&l⸕&e❑&7❑" 0 1 1
+    exit
+}
+if (stat "temp" < 30) {
+    title "&c%stat.player/wallhealth%❤&7/&c%stat.player/wallmaxhealth%❤" "&a❑❑❑❑❑❑❑&6&l⸕&e❑&7❑❑" 0 1 1
+    exit
+}
+if (stat "temp" < 40) {
+    title "&c%stat.player/wallhealth%❤&7/&c%stat.player/wallmaxhealth%❤" "&a❑❑❑❑❑❑&6&l⸕&e❑&7❑❑❑" 0 1 1
+    exit
+}
+if (stat "temp" < 50) {
+    title "&c%stat.player/wallhealth%❤&7/&c%stat.player/wallmaxhealth%❤" "&a❑❑❑❑❑&6&l⸕&e❑&7❑❑❑❑" 0 1 1
+    exit
+}
+if (stat "temp" < 60) {
+    title "&c%stat.player/wallhealth%❤&7/&c%stat.player/wallmaxhealth%❤" "&a❑❑❑❑&6&l⸕&e❑&7❑❑❑❑❑" 0 1 1
+    exit
+}
+if (stat "temp" < 70) {
+    title "&c%stat.player/wallhealth%❤&7/&c%stat.player/wallmaxhealth%❤" "&a❑❑❑&6&l⸕&e❑&7❑❑❑❑❑❑" 0 1 1
+    exit
+}
+if (stat "temp" < 80) {
+    title "&c%stat.player/wallhealth%❤&7/&c%stat.player/wallmaxhealth%❤" "&a❑❑&6&l⸕&e❑&7❑❑❑❑❑❑❑" 0 1 1
+    exit
+}
+if (stat "temp" < 90) {
+    title "&c%stat.player/wallhealth%❤&7/&c%stat.player/wallmaxhealth%❤" "&a❑&6&l⸕&e❑&7❑❑❑❑❑❑❑❑" 0 1 1
+    exit
+}
+if (stat "temp" < 100) {
+    title "&c%stat.player/wallhealth%❤&7/&c%stat.player/wallmaxhealth%❤" "&6&l⸕&e❑&7❑❑❑❑❑❑❑❑❑" 0 1 1
+    exit
+}

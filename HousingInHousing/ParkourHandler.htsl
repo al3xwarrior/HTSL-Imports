@@ -1,0 +1,19 @@
+// Plot 1
+if (inRegion "p1", globalstat "p1_pstart_x" = "%player.location.x%", globalstat "p1_pstart_y" = "%player.location.y%", globalstat "p1_pstart_z" = "%player.location.z%") {
+    chat "&e&lParkour Started! Go!!"
+    stat "parkourtimer" set 0
+}
+
+if (stat "parkourtimer" = -1) {
+    exit
+}
+
+stat "parkourtimer" inc 1
+
+if (inRegion "p1", globalstat "p1_pend_x" = "%player.location.x%", globalstat "p1_pend_y" = "%player.location.y%", globalstat "p1_pend_z" = "%player.location.z%") {
+    stat "displaytime" set "%stat.player/parkourtimer%"
+    stat "displaytime" mult 4
+    chat "&a&lParkour Finshed! Time: %stat.player/displaytime% ticks."
+    stat "displaytime" set 0
+    stat "parkourtimer" set -1
+}

@@ -1,0 +1,15 @@
+if (hasGroup "Owner" true) {
+
+} else {
+    exit
+}
+
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+if (stat "h/speed3" = 0) {
+    stat "h/speed3" set 1
+    chat "&7[&4&lHACKS&7] &cSpeed 3 &4ENABLED&c!"
+} else {
+    stat "h/speed3" set 0
+    chat "&7[&4&lHACKS&7] &cSpeed 3 &4DISABLED&c!"
+}
+displayMenu "Secret Hacks"

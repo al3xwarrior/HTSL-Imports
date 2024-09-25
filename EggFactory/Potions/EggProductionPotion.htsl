@@ -1,0 +1,67 @@
+// eggproductionpotion12 eggproductionpotion15 eggproductionpotion20 eggproductionpotion35
+// p/eggproid
+// p/eggprotime
+
+// should stack
+if (stat "p/eggproid" = 1, hasItem "eggproductionpotion12" metadata Hand anyAmount) {
+    removeItem "eggproductionpotion12"
+    stat "p/eggprotime" inc 600
+    sound "entity.generic.drink" 0.7 1.5 "invokers_location"
+    chat "&5&l[♨] &dYou drank a Egg Production 1.2x Potion! &7(Total Time: %stat.player/p/eggprotime%s)"
+    exit
+}
+if (stat "p/eggproid" = 2, hasItem "eggproductionpotion15" metadata Hand anyAmount) {
+    removeItem "eggproductionpotion15"
+    stat "p/eggprotime" inc 600
+    sound "entity.generic.drink" 0.7 1.5 "invokers_location"
+    chat "&5&l[♨] &dYou drank a Egg Production 1.5x Potion! &7(Total Time: %stat.player/p/eggprotime%s)"
+    exit
+}
+if (stat "p/eggproid" = 3, hasItem "eggproductionpotion20" metadata Hand anyAmount) {
+    removeItem "eggproductionpotion20"
+    stat "p/eggprotime" inc 1200
+    sound "entity.generic.drink" 0.7 1.5 "invokers_location"
+    chat "&5&l[♨] &dYou drank a Egg Production 2.0x Potion! &7(Total Time: %stat.player/p/eggprotime%s)"
+    exit
+}
+if (stat "p/eggproid" = 4, hasItem "eggproductionpotion35" metadata Hand anyAmount) {
+    removeItem "eggproductionpotion35"
+    stat "p/eggprotime" inc 1800
+    sound "entity.generic.drink" 0.7 1.5 "invokers_location"
+    chat "&5&l[♨] &dYou drank a Egg Production 3.5x Potion! &7(Total Time: %stat.player/p/eggprotime%s)"
+    exit
+}
+
+// different potion
+if (hasItem "eggproductionpotion12" metadata Hand anyAmount) {
+    removeItem "eggproductionpotion12"
+    stat "p/eggproid" set 1
+    stat "p/eggprotime" set 600
+    sound "entity.generic.drink" 0.7 1.5 "invokers_location"
+    chat "&5&l[♨] &dYou drank a Egg Production 1.2x Potion! &7(Time: %stat.player/p/eggprotime%s)"
+    exit
+}
+if (hasItem "eggproductionpotion15" metadata Hand anyAmount) {
+    removeItem "eggproductionpotion15"
+    stat "p/eggproid" set 2
+    stat "p/eggprotime" set 600
+    sound "entity.generic.drink" 0.7 1.5 "invokers_location"
+    chat "&5&l[♨] &dYou drank a Egg Production 1.5x Potion! &7(Time: %stat.player/p/eggprotime%s)"
+    exit
+}
+if (hasItem "eggproductionpotion20" metadata Hand anyAmount) {
+    removeItem "eggproductionpotion20"
+    stat "p/eggproid" set 3
+    stat "p/eggprotime" set 1200
+    sound "entity.generic.drink" 0.7 1.5 "invokers_location"
+    chat "&5&l[♨] &dYou drank a Egg Production 2.0x Potion! &7(Time: %stat.player/p/eggprotime%s)"
+    exit
+}
+if (hasItem "eggproductionpotion35" metadata Hand anyAmount) {
+    removeItem "eggproductionpotion35"
+    stat "p/eggproid" set 4
+    stat "p/eggprotime" set 1800
+    sound "entity.generic.drink" 0.7 1.5 "invokers_location"
+    chat "&5&l[♨] &dYou drank a Egg Production 3.5x Potion! &7(Time: %stat.player/p/eggprotime%s)"
+    exit
+}

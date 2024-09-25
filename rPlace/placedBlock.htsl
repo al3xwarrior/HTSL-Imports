@@ -1,0 +1,42 @@
+// if they are placing a block, check what page they are on and if they have the block
+
+if or (stat "status" < 1, stat "canaction" = 0, gamemode creative) {
+    exit
+}
+
+if (globalstat "eventover" = 1, hasItem "rplace_black" metaData Anywhere "Any Amount") {
+    exit
+}
+
+if (stat "status" = 1, hasItem "rplace_stone" metaData Anywhere "Any Amount", hasItem "rplace_cobblestone" metaData Anywhere "Any Amount", hasItem "rplace_dirt" metaData Anywhere "Any Amount", hasItem "rplace_coarsedirt" metaData Anywhere "Any Amount", hasItem "rplace_diorite" metaData Anywhere "Any Amount") {
+    exit
+}
+if (stat "status" = 2, hasItem "rplace_grass" metaData Anywhere "Any Amount", hasItem "rplace_podzol" metaData Anywhere "Any Amount", hasItem "rplace_oakplanks" metaData Anywhere "Any Amount", hasItem "rplace_oakwood" metaData Anywhere "Any Amount", hasItem "rplace_glass" metaData Anywhere "Any Amount") {
+    exit
+}
+if (stat "status" = 3, hasItem "rplace_red" metaData Anywhere "Any Amount", hasItem "rplace_orange" metaData Anywhere "Any Amount", hasItem "rplace_yellow" metaData Anywhere "Any Amount", hasItem "rplace_green" metaData Anywhere "Any Amount", hasItem "rplace_blue" metaData Anywhere "Any Amount") {
+    exit
+}
+if (stat "status" = 4, hasItem "rplace_purple" metaData Anywhere "Any Amount", hasItem "rplace_gold" metaData Anywhere "Any Amount", hasItem "rplace_diamond" metaData Anywhere "Any Amount", hasItem "rplace_glowstone" metaData Anywhere "Any Amount", hasItem "rplace_redstone" metaData Anywhere "Any Amount") {
+    exit
+}
+if (stat "status" = 5, hasItem "rplace_crafting" metaData Anywhere "Any Amount", hasItem "rplace_furnace" metaData Anywhere "Any Amount", hasItem "rplace_whiteglass" metaData Anywhere "Any Amount", hasItem "rplace_stonebricks" metaData Anywhere "Any Amount", hasItem "rplace_bricks" metaData Anywhere "Any Amount") {
+    exit
+}
+if (stat "status" = 6, hasItem "rplace_black" metaData Anywhere "Any Amount", hasItem "rplace_white" metaData Anywhere "Any Amount", hasItem "rplace_darkblue" metaData Anywhere "Any Amount", hasItem "rplace_pink" metaData Anywhere "Any Amount", hasItem "rplace_gray" metaData Anywhere "Any Amount") {
+    exit
+}
+
+stat "blocksplaced" inc 1
+globalstat "blocksplaced" inc 1
+stat "status" set 0
+stat "canaction" set 0
+applyLayout "Static"
+gamemode adventure
+applyPotion "Mining Fatigue" 2000000 10 true
+pause 20
+stat "status" set 0
+stat "canaction" set 0
+applyLayout "Static"
+gamemode adventure
+applyPotion "Mining Fatigue" 2000000 10 true

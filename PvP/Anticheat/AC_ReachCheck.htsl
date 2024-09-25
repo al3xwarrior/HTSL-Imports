@@ -1,0 +1,33 @@
+
+stat "AC/XDist" set "%stat.global/ac/attackerx%"
+stat "AC/XDist" dec "%stat.global/ac/victimx%"
+if (stat "AC/XDist" < 0) {
+    stat "AC/XDist" mult -1
+}
+
+stat "AC/YDist" set "%stat.global/ac/attackery%"
+stat "AC/YDist" dec "%stat.global/ac/victimy%"
+if (stat "AC/YDist" < 0) {
+    stat "AC/YDist" mult -1
+}
+
+stat "AC/ZDist" set "%stat.global/ac/attackerz%"
+stat "AC/ZDist" dec "%stat.global/ac/victimz%"
+if (stat "AC/ZDist" < 0) {
+    stat "AC/ZDist" mult -1
+}
+
+// chat "X:%stat.player/AC/XDist% Y:%stat.player/AC/YDist% Z:%stat.player/AC/ZDist%"
+
+// MAX REACH IS 5 (4 for Y)
+if or (stat "AC/XDist" > 5, stat "AC/YDist" > 4, stat "AC/ZDist" > 5) {
+    stat "AC/reachvio" inc 1
+    globalstat "ac/id" set 2
+    globalstat "ac/plrid" set "%stat.player/playerid%"
+    globalstat "ac/x" set "%player.location.x%"
+    globalstat "ac/y" set "%player.location.y%"
+    globalstat "ac/z" set "%player.location.z%"
+    globalstat "ac/ping" set "%player.ping%"
+    globalstat "ac/vio" set "%stat.player/AC/reachvio%"
+    function "AC_Alert" true
+}

@@ -1,0 +1,31 @@
+if (stat "level" = 0) {
+    stat "level" set 1
+    stat "xpneeded" set 25
+    exit
+}
+
+if (stat "level" >= 10, stat "xpneeded" <= 0) {
+    stat "xpneeded" set 0
+    exit
+}
+
+if (stat "xpneeded" <= 0) {
+    stat "oldlevel" set "%stat.player/level%"
+    stat "level" inc 1
+    stat "xpneeded" set 25
+    stat "xpneeded" mult "%stat.player/level%"
+} else {
+    exit
+}
+
+title "&3&lLevel Up!" "&7%stat.player/oldlevel% &8➔ &b%stat.player/level%" 1 1 1
+sound "entity.player.levelup" 0.7 1.0 "invokers_location"
+
+chat "&r"
+chat "&3&lLEVEL UP! &8(&7%stat.player/oldlevel% &8➔ &b%stat.player/level%&8)"
+chat "&0"
+chat "&e&lNew Perks:"
+function "LevelRewards" false
+chat "&f"
+
+stat "oldlevel" set 0

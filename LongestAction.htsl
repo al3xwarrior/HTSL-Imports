@@ -1,0 +1,3869 @@
+applyLayout "test"
+applyLayout "test"
+applyLayout "test"
+applyLayout "test"
+applyLayout "test"
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+applyPotion "speed" 1 1 true
+balanceTeam
+globalstat "test" inc 1
+globalstat "test" inc 1
+globalstat "test" inc 1
+globalstat "test" inc 1
+globalstat "test" inc 1
+globalstat "test" inc 1
+globalstat "test" inc 1
+globalstat "test" inc 1
+globalstat "test" inc 1
+globalstat "test" inc 1
+changeHealth inc 1
+changeHealth inc 1
+changeHealth inc 1
+changeHealth inc 1
+changeHealth inc 1
+changePlayerGroup "Visitor" true
+stat "test" inc 1
+teamstat "test" "test" inc 1
+teamstat "test" "test" inc 1
+teamstat "test" "test" inc 1
+teamstat "test" "test" inc 1
+teamstat "test" "test" inc 1
+teamstat "test" "test" inc 1
+teamstat "test" "test" inc 1
+teamstat "test" "test" inc 1
+teamstat "test" "test" inc 1
+teamstat "test" "test" inc 1
+clearEffects
+clearEffects
+clearEffects
+clearEffects
+clearEffects
+actionBar "TEST"
+actionBar "TEST"
+actionBar "TEST"
+actionBar "TEST"
+actionBar "TEST"
+displayMenu "hi"
+displayMenu "hi"
+displayMenu "hi"
+displayMenu "hi"
+displayMenu "hi"
+displayMenu "hi"
+displayMenu "hi"
+displayMenu "hi"
+displayMenu "hi"
+displayMenu "hi"
+title "HELLO" "HELLO" 1 2 1
+title "HELLO" "HELLO" 1 2 1
+title "HELLO" "HELLO" 1 2 1
+title "HELLO" "HELLO" 1 2 1
+title "HELLO" "HELLO" 1 2 1
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+enchant "sharpness" 10
+failParkour "hi"
+fullHeal
+fullHeal
+fullHeal
+fullHeal
+fullHeal
+xpLevel 69
+xpLevel 69
+xpLevel 69
+xpLevel 69
+xpLevel 69
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+giveItem "soup" true "First Slot" false
+houseSpawn
+kill
+parkCheck
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+sound "Anvil Land" 0.7 1.0 "invokers_location"
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+pause 1
+resetInventory
+chat "TEST"
+chat "TEST"
+chat "TEST"
+chat "TEST"
+chat "TEST"
+lobby "Main"
+compassTarget "custom_coordinates" "0 0 0"
+gamemode "creative"
+hungerLevel increment 5
+hungerLevel increment 5
+hungerLevel increment 5
+hungerLevel increment 5
+hungerLevel increment 5
+maxHealth increment 5
+maxHealth increment 5
+maxHealth increment 5
+maxHealth increment 5
+maxHealth increment 5
+setTeam "test"
+tp "custom_coordinates" "invokers_location"
+function "nothing" false
+function "nothing" false
+function "nothing" false
+function "nothing" false
+function "nothing" false
+function "nothing" false
+function "nothing" false
+function "nothing" false
+function "nothing" false
+function "nothing" false
+consumeItem
+if (hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue") {
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    balanceTeam
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changePlayerGroup "Visitor" true
+    stat "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    failParkour "hi"
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    houseSpawn
+    kill
+    parkCheck
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    resetInventory
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    lobby "Main"
+    compassTarget "custom_coordinates" "0 0 0"
+    gamemode "creative"
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    setTeam "test"
+    tp "custom_coordinates" "invokers_location"
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    consumeItem
+}
+if (hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue") {
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    balanceTeam
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changePlayerGroup "Visitor" true
+    stat "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    failParkour "hi"
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    houseSpawn
+    kill
+    parkCheck
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    resetInventory
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    lobby "Main"
+    compassTarget "custom_coordinates" "0 0 0"
+    gamemode "creative"
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    setTeam "test"
+    tp "custom_coordinates" "invokers_location"
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    consumeItem
+}
+if (hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue") {
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    balanceTeam
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changePlayerGroup "Visitor" true
+    stat "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    failParkour "hi"
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    houseSpawn
+    kill
+    parkCheck
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    resetInventory
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    lobby "Main"
+    compassTarget "custom_coordinates" "0 0 0"
+    gamemode "creative"
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    setTeam "test"
+    tp "custom_coordinates" "invokers_location"
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    consumeItem
+}
+if (hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue") {
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    balanceTeam
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changePlayerGroup "Visitor" true
+    stat "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    failParkour "hi"
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    houseSpawn
+    kill
+    parkCheck
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    resetInventory
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    lobby "Main"
+    compassTarget "custom_coordinates" "0 0 0"
+    gamemode "creative"
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    setTeam "test"
+    tp "custom_coordinates" "invokers_location"
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    consumeItem
+}
+if (hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue") {
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    balanceTeam
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changePlayerGroup "Visitor" true
+    stat "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    failParkour "hi"
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    houseSpawn
+    kill
+    parkCheck
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    resetInventory
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    lobby "Main"
+    compassTarget "custom_coordinates" "0 0 0"
+    gamemode "creative"
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    setTeam "test"
+    tp "custom_coordinates" "invokers_location"
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    consumeItem
+}
+if (hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue") {
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    balanceTeam
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changePlayerGroup "Visitor" true
+    stat "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    failParkour "hi"
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    houseSpawn
+    kill
+    parkCheck
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    resetInventory
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    lobby "Main"
+    compassTarget "custom_coordinates" "0 0 0"
+    gamemode "creative"
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    setTeam "test"
+    tp "custom_coordinates" "invokers_location"
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    consumeItem
+}
+if (hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue") {
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    balanceTeam
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changePlayerGroup "Visitor" true
+    stat "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    failParkour "hi"
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    houseSpawn
+    kill
+    parkCheck
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    resetInventory
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    lobby "Main"
+    compassTarget "custom_coordinates" "0 0 0"
+    gamemode "creative"
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    setTeam "test"
+    tp "custom_coordinates" "invokers_location"
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    consumeItem
+}
+if (hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue") {
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    balanceTeam
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changePlayerGroup "Visitor" true
+    stat "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    failParkour "hi"
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    houseSpawn
+    kill
+    parkCheck
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    resetInventory
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    lobby "Main"
+    compassTarget "custom_coordinates" "0 0 0"
+    gamemode "creative"
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    setTeam "test"
+    tp "custom_coordinates" "invokers_location"
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    consumeItem
+}
+if (hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue") {
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    balanceTeam
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changePlayerGroup "Visitor" true
+    stat "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    failParkour "hi"
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    houseSpawn
+    kill
+    parkCheck
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    resetInventory
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    lobby "Main"
+    compassTarget "custom_coordinates" "0 0 0"
+    gamemode "creative"
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    setTeam "test"
+    tp "custom_coordinates" "invokers_location"
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    consumeItem
+}
+if (hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue") {
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    balanceTeam
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changePlayerGroup "Visitor" true
+    stat "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    failParkour "hi"
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    houseSpawn
+    kill
+    parkCheck
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    resetInventory
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    lobby "Main"
+    compassTarget "custom_coordinates" "0 0 0"
+    gamemode "creative"
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    setTeam "test"
+    tp "custom_coordinates" "invokers_location"
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    consumeItem
+}
+if (hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue") {
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    balanceTeam
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changePlayerGroup "Visitor" true
+    stat "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    failParkour "hi"
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    houseSpawn
+    kill
+    parkCheck
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    resetInventory
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    lobby "Main"
+    compassTarget "custom_coordinates" "0 0 0"
+    gamemode "creative"
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    setTeam "test"
+    tp "custom_coordinates" "invokers_location"
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    consumeItem
+}
+if (hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue") {
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    balanceTeam
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changePlayerGroup "Visitor" true
+    stat "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    failParkour "hi"
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    houseSpawn
+    kill
+    parkCheck
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    resetInventory
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    lobby "Main"
+    compassTarget "custom_coordinates" "0 0 0"
+    gamemode "creative"
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    setTeam "test"
+    tp "custom_coordinates" "invokers_location"
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    consumeItem
+}
+if (hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue") {
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    balanceTeam
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changePlayerGroup "Visitor" true
+    stat "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    failParkour "hi"
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    houseSpawn
+    kill
+    parkCheck
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    resetInventory
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    lobby "Main"
+    compassTarget "custom_coordinates" "0 0 0"
+    gamemode "creative"
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    setTeam "test"
+    tp "custom_coordinates" "invokers_location"
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    consumeItem
+}
+if (hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue") {
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    balanceTeam
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changePlayerGroup "Visitor" true
+    stat "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    failParkour "hi"
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    houseSpawn
+    kill
+    parkCheck
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    resetInventory
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    lobby "Main"
+    compassTarget "custom_coordinates" "0 0 0"
+    gamemode "creative"
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    setTeam "test"
+    tp "custom_coordinates" "invokers_location"
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    consumeItem
+}
+if (hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasGroup "Guest" true, hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", hasPermission "Fly", doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, doingParkour, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, globalstat "Kills" = 10, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasItem "soup" metadata Hand anyAmount, hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", hasPotion "Speed", isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, isSneaking, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, maxHealth = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, placeholder %player.ping% = 10, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, isFlying, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, health = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, hunger = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, stat "Kills" = 10, gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", gamemode "creative", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue", hasTeam "Blue") {
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyLayout "test"
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    applyPotion "speed" 1 1 true
+    balanceTeam
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    globalstat "test" inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changeHealth inc 1
+    changePlayerGroup "Visitor" true
+    stat "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    teamstat "test" "test" inc 1
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    clearEffects
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    actionBar "TEST"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    displayMenu "hi"
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    title "HELLO" "HELLO" 1 2 1
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    enchant "sharpness" 10
+    failParkour "hi"
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    fullHeal
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    xpLevel 69
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    giveItem "soup" true "First Slot" false
+    houseSpawn
+    kill
+    parkCheck
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    pause 1
+    resetInventory
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    chat "TEST"
+    lobby "Main"
+    compassTarget "custom_coordinates" "0 0 0"
+    gamemode "creative"
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    hungerLevel increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    maxHealth increment 5
+    setTeam "test"
+    tp "custom_coordinates" "invokers_location"
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    function "nothing" false
+    consumeItem
+}

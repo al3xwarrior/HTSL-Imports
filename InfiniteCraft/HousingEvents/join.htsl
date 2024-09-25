@@ -1,0 +1,44 @@
+if (stat "playerid" = 0) {
+    globalstat "playerids" inc 1
+    stat "playerid" set "%stat.global/playerids%"
+}
+
+if (stat "bot" = 1) {
+    globalstat "bot" set 1
+    applyPotion "Invisibility" 2000000 10 true
+}
+
+// send plr id to bot
+globalstat "plridforbc" set "%stat.player/playerid%"
+function "SendJoinToBot" true
+
+if (stat "idlogged" = 1) {
+    exit
+}
+
+pause 2
+tp "custom_coordinates" "-37.5 142 3.5 -90.0 0.0"
+
+title "&4&lLOADING DATA..." "&cRead chat for more information." 0 10 0
+
+chat "&7&m----------------------------------------------&r"
+chat "&4&lLOADING YOUR DATA!"
+chat "&7In order to &caccurately &7store &fPlayer Data&7,"
+chat "&7this house uses &dPlayer IDs &7to communicate with"
+chat "&2Bot&7! This should only take a second."
+chat "&7&m----------------------------------------------"
+
+pause 150
+
+if (stat "idlogged" = 0) {
+    title "&4&lUNABLE TO LOAD DATA!" "&cRead chat for more information." 0 10 0
+    chat "&7&m----------------------------------------------&r"
+    chat "&4&lUNABLE TO LOAD DATA!"
+    chat "&7This might of happened if too many people joined"
+    chat "&7at the same time... Try rejoining using &f/visit Al3xWarrior"
+    chat "&r"
+    chat "&7Another possibility is the &3BOT &7is offline or"
+    chat "&7theres an issue. Please be patient if so!"
+    chat "&7&m----------------------------------------------"
+    function "SendToHousingLobby" false
+}

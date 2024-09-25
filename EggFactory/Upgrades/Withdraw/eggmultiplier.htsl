@@ -1,0 +1,18 @@
+if (stat "money" >= "%stat.player/eggmulticost%") {
+
+} else {
+    chat "&4&l[!] &cYou don't have enough money! &7($%stat.player/money%/$%stat.player/eggmulticost%)"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+stat "money" dec "%stat.player/eggmulticost%"
+stat "eggmulticost" mult 12
+stat "eggmulticost" div 10
+
+chat "&2&l[✔] &aPurchase Successful!"
+sound "entity.player.levelup" 0.7 1.0 "invokers_location"
+
+stat "up/eggmulti" inc 1
+
+displayMenu "(!) Withdraw Upgrades (!)"

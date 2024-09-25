@@ -1,0 +1,18 @@
+if (stat "money" >= "%stat.player/breedercost%") {
+
+} else {
+    chat "&4&l[!] &cYou don't have enough money! &7($%stat.player/money%/$%stat.player/breedercost%)"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+stat "money" dec "%stat.player/breedercost%"
+stat "breedercost" mult 15
+stat "breedercost" div 10
+
+chat "&2&l[✔] &aPurchase Successful!"
+sound "entity.player.levelup" 0.7 1.0 "invokers_location"
+
+stat "breederlvl" inc 1
+
+displayMenu "(⸕) Hire Workers (⸕)"

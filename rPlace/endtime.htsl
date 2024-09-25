@@ -1,0 +1,35 @@
+// a whole lot of math to calculate the end time, you can set the globalstat "endtime" to the unix time in
+// seconds to your target time. You can use the globalstats TIMERHOURS, TIMERMINUTES, and TIMERSECONDS
+// as the display.
+
+globalstat "TIMELEFT" set "%stat.global/endtime%"
+globalstat "TIMELEFT" dec "%date.unix%"
+if () {
+    globalstat "timetemp" set "%stat.global/timeleft%"
+    globalstat "timetemp" div 3600
+    globalstat "TIMERHOURS" set "%stat.global/timetemp%"
+    globalstat "timetemp" set "%stat.global/TIMERHOURS%"
+    globalstat "timetemp" mult 3600
+    globalstat "TIMELEFT" dec "%stat.global/timetemp%"
+}
+if () {
+    globalstat "timetemp" set "%stat.global/timeleft%"
+    globalstat "timetemp" div 60
+    globalstat "TIMERMINUTES" set "%stat.global/timetemp%"
+    globalstat "timetemp" set "%stat.global/TIMERMINUTES%"
+    globalstat "timetemp" mult 60
+    globalstat "TIMELEFT" dec "%stat.global/timetemp%"
+}
+globalstat "TIMERSECONDS" set "%stat.global/timeleft%"
+
+if (globalstat "eventover" = 1) {
+    globalstat "TIMERHOURS" set 0
+    globalstat "TIMERMINUTES" set 0
+    globalstat "TIMERSECONDS" set 0
+    exit
+}
+
+if (globalstat "TIMERHOURS" <= 0, globalstat "TIMERMINUTES" <= 0, globalstat "TIMERSECONDS" <= 0) {
+    globalstat "eventover" set 1
+    function "endbroadcast" true
+}

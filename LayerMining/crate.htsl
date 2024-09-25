@@ -1,0 +1,53 @@
+stat "temp" set "%random.int/1 101%"
+
+if (stat "temp" < 10) {
+    title "&7&lCOMMON" "&9Blue Ice Pet" 0 1 1
+    exit
+}
+if (stat "temp" < 20) {
+    title "&7&lCOMMON" "&bIce Pet" 0 1 1
+    exit
+}
+if (stat "temp" < 30) {
+    title "&7&lCOMMON" "&6Ice Fisherman Pet" 0 1 1
+    exit
+}
+if (stat "temp" < 50) {
+    title "&a&lUNCOMMON" "&bIce Pheonix Pet" 0 1 1
+    exit
+}
+if (stat "temp" < 70) {t
+    title "&a&lUNCOMMON" "&dIce Cream Pet" 0 1 1
+    exit
+}
+if (stat "temp" < 85) {
+    title "&9&lRARE" "&bFrozen Water Pet" 0 1 1
+    exit
+}
+if (stat "temp" < 95) {
+    title "&d&lEPIC" "&fBowl of Eye Scream Pet" 0 1 1
+    exit
+}
+if (stat "temp" < 101) {
+    title "&6&lLEGENDARY" "&bAl3xWarrior's Eye" 0 1 1
+    exit
+}
+
+/*
+if (stat "temp" < 40) {
+    title "&7&lCOMMON" "&7Basic Axe" 0 1 1
+    exit
+}
+if (stat "temp" < 60) {
+    title "&a&lUNCOMMON" "&7Upgrade Axe" 0 1 1
+    exit
+}
+if (stat "temp" < 80) {
+    title "&a&lUNCOMMON" "&7Good Axe" 0 1 1
+    exit
+}
+if (stat "temp" < 101) {
+    title "&9&lRARE" "&9Better Axe" 0 1 1
+    exit
+}
+*/

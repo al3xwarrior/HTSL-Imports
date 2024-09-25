@@ -1,0 +1,12 @@
+// give them different mining fatigue based on the item they have
+
+if (stat "status" > -1) {
+    exit
+}
+
+if or (hasItem "rplace_shovel" metaData Hand "Any Amount", hasItem "rplace_axe" metaData Hand "Any Amount", hasItem "rplace_pickaxe" metaData Hand "Any Amount") {
+    applyPotion "Mining Fatigue" 2000000 1 true
+    exit
+}
+
+applyPotion "Mining Fatigue" 2000000 10 true

@@ -1,0 +1,13 @@
+
+if (hasItem "checker_tool" metadata Hand anyAmount, hasGroup "T-Mod" true) {
+    displayMenu "Checker's Stats (STAFF)"
+    removeItem "checker_tool"
+    giveItem "disabledchecker" false 1 true
+    exit
+}
+
+if (hasItem "checker_tool" metadata Hand anyAmount) {
+    displayMenu "Checker's Stats"
+    removeItem "checker_tool"
+    giveItem "disabledchecker" false 1 true
+}

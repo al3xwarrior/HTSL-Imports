@@ -1,0 +1,9 @@
+sound "Orb Pickup" 0.7 1.1 "invokers_location"
+if (stat "playtimeearn" = 4) {
+    stat "playtimeearn" set 2
+    chat "&a&lPlaytime Earning Messages Enabled &2&l✓"
+} else {
+    stat "playtimeearn" set 4
+    chat "&a&lPlaytime Earning Messages Disabled &2&l✓"
+}
+displayMenu "Settings"

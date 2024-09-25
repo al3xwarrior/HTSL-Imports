@@ -1,0 +1,17 @@
+
+if (stat "sociallevel" = 0) {
+    stat "sociallevel" set 1
+    stat "sxp" set 0
+    stat "sxpneed" set 10
+    exit
+}
+
+if (stat "sxp" >= "%stat.player/sxpneed%") {
+    stat "temp" set "%stat.player/sociallevel%"
+    stat "sxp" dec "%stat.player/sxpneed%"
+    stat "sxpneed" inc 10
+    chat "&8&m----------------------------------------"
+    chat "&r &r &r &r &r &3&lSocial Level Up! &7%stat.player/temp% &a➜ &b&l%stat.player/sociallevel%"
+    chat "&8&m----------------------------------------"
+    sound "entity.player.levelup" 0.7 1.0 "invokers_location"
+}

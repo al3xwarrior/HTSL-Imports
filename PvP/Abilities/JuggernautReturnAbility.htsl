@@ -1,0 +1,54 @@
+if (globalstat "jugger_aplrs" = 0) {
+    sound "entity.ender_dragon.growl" 0.7 2.0 "invokers_location"
+    chat "&c&lThere was no one nearby! :("
+    globalstat "jugger_aplrs" set 0
+    exit
+}
+
+sound "entity.ender_dragon.growl" 0.7 1.1 "invokers_location"
+chat "&a&lThere were &2&l%stat.global/jugger_aplrs% &a&lnearby! Thats &2&l%stat.global/jugger_aplrs% seconds &a&lof &c&lSTRENGTH II&a&l!"
+
+if (globalstat "jugger_aplrs" = 1) {
+    applyPotion "strength" 1 2 true
+}
+if (globalstat "jugger_aplrs" = 2) {
+    applyPotion "strength" 2 2 true
+}
+if (globalstat "jugger_aplrs" = 3) {
+    applyPotion "strength" 3 2 true
+}
+if (globalstat "jugger_aplrs" = 4) {
+    applyPotion "strength" 4 2 true
+}
+if (globalstat "jugger_aplrs" = 5) {
+    applyPotion "strength" 5 2 true
+}
+if (globalstat "jugger_aplrs" = 6) {
+    applyPotion "strength" 6 2 true
+}
+if (globalstat "jugger_aplrs" = 7) {
+    applyPotion "strength" 7 2 true
+}
+if (globalstat "jugger_aplrs" = 8) {
+    applyPotion "strength" 8 2 true
+}
+if (globalstat "jugger_aplrs" = 9) {
+    applyPotion "strength" 9 2 true
+}
+if (globalstat "jugger_aplrs" = 10) {
+    applyPotion "strength" 10 2 true
+}
+if (globalstat "jugger_aplrs" = 11) {
+    applyPotion "strength" 11 2 true
+}
+if (globalstat "jugger_aplrs" = 12) {
+    applyPotion "strength" 12 2 true
+}
+if (globalstat "jugger_aplrs" = 13) {
+    applyPotion "strength" 13 2 true
+}
+if (globalstat "jugger_aplrs" = 14) {
+    applyPotion "strength" 14 2 true
+}
+
+globalstat "jugger_aplrs" set 0

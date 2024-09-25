@@ -1,0 +1,13 @@
+function "isOwner"
+if (stat "isOwner" = 0) {
+    exit
+}
+
+if (inRegion "p1") {
+    globalstat "p1_join_x" set "%player.location.x%"
+    globalstat "p1_join_y" set "%player.location.y%"
+    globalstat "p1_join_z" set "%player.location.z%"
+}
+
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+chat "&a&lLocation Updated to %player.location.x%x %player.location.y%y %player.location.z%z!"

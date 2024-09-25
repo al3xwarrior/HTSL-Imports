@@ -1,0 +1,16 @@
+if (hasGroup "Owner" true) {
+
+} else {
+    exit
+}
+
+if (stat "h/velocity" <= 0) {
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    chat "&7[&4&lHACKS&7] &cYou are current at the lowest &4Velocity&c! &7(%stat.player/h/velocity%%)"
+    exit
+}
+
+stat "h/velocity" dec 10
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+chat "&7[&4&lHACKS&7] &cVelocity level &4DECREASED&c! &7(%stat.player/h/velocity%%)"
+displayMenu "Secret Hacks"

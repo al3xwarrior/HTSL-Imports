@@ -1,0 +1,20 @@
+// &7[&4&lHAC&7] &f
+
+if (stat "AC/alerts" = 0) {
+    exit
+}
+
+// 1 = fly
+
+if (globalstat "ac/id" = 1) {
+    chat "&7[&4&lHAC&7] &ePlayer#%stat.global/ac/plrid% &fmight be flying! &7[%stat.global/ac/x%x %stat.global/ac/y%y %stat.global/ac/z%z] &7(Violation: %stat.global/ac/vio%) (&a%stat.global/ac/ping%ms&7)"
+    exit
+}
+if (globalstat "ac/id" = 2) {
+    chat "&7[&4&lHAC&7] &ePlayer#%stat.global/ac/plrid% &fmight be using reach! &7[%stat.global/ac/x%x %stat.global/ac/y%y %stat.global/ac/z%z] &7(Violation: %stat.global/ac/vio%) (&a%stat.global/ac/ping%ms&7)"
+    exit
+}
+if (globalstat "ac/id" = 3) {
+    chat "&7[&4&lHAC&7] &ePlayer#%stat.global/ac/plrid% &fwas not aiming correctly! &7[%stat.global/ac/x%x %stat.global/ac/y%y %stat.global/ac/z%z] &7(Violation: %stat.global/ac/vio%) (&a%stat.global/ac/ping%ms&7)"
+    exit
+}

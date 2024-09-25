@@ -1,0 +1,21 @@
+
+function "isOwner" false
+if (stat "isOwner" = 0) {
+    chat "&cAn error occured!"
+    exit
+}
+
+if (stat "p_open" = 2) {
+    stat "p_open" set 4
+    chat "&c&lPlot has been CLOSED!"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+} else {
+    stat "p_open" set 2
+    chat "&a&lPlot has been OPENED!"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+}
+displayMenu "Creator Menu"
+
+if (inRegion "p1") {
+    globalstat "p1_open" set "%stat.player/p_open%"
+}

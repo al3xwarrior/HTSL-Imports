@@ -1,0 +1,27 @@
+
+if (stat "gold" < 65) {
+    chat "&c&lYou don't have enough gold! &4&l✘ &7(%stat.player/gold%⛃&8/&765⛃)"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+stat "gold" dec 65
+
+if (stat "perks/selup" = 1) {
+    stat "perks/midas" inc 1
+}
+if (stat "perks/selup" = 2) {
+    stat "perks/vamp" inc 1
+}
+if (stat "perks/selup" = 3) {
+    stat "perks/chef" inc 1
+}
+if (stat "perks/selup" = 4) {
+    stat "perks/thick" inc 1
+}
+
+chat "&e&lPerk Upgraded! &6&l✔"
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+
+closeMenu
+displayMenu "Perks"

@@ -1,0 +1,16 @@
+
+if or (inRegion "Area1-StrengthGain", inRegion "Area2-StrengthGain", inRegion "Area3-StrengthGain", inRegion "Area4-StrengthGain", inRegion "Area5-StrengthGain", inRegion "Area6-StrengthGain", inRegion "Area7-StrengthGain", inRegion "Area8-StrengthGain", inRegion "Area9-StrengthGain", inRegion "Area10-StrengthGain", inRegion "Area11-StrengthGain", inRegion "Area12-StrengthGain") {
+    actionBar "&4Strength Gain: %stat.player/gainamount%&l⸕ &8- &aTime: %stat.player/gaintime%s"
+    exit
+}
+
+if (inRegion "Fishing", stat "fquest_id" > 7) {
+    actionBar "&b&lFish Caught: %stat.player/fishcaught% &7(&9Water: %stat.player/wfishcaught% &8| &6Lava: %stat.player/lfishcaught%) &2&lQUESTS COMPLETED!"
+    exit
+}
+if (inRegion "Fishing") {
+    actionBar "&b&lFish Caught: %stat.player/fishcaught% &7(&9Water: %stat.player/wfishcaught% &8| &6Lava: %stat.player/lfishcaught%) &8- &2&lQuest Progress: &f%stat.player/fquest_prog%&7/&f%stat.player/fquest_max%"
+    exit
+}
+
+actionBar "&c&lStrength: %stat.player/strength%&l⸕&r &8- &6&lGold: %stat.player/gold%⛃ &8- &a&lPlaytime: %stat.player/hours%h %stat.player/minutes%m %stat.player/seconds%s"

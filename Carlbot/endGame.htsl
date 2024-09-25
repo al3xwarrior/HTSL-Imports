@@ -1,0 +1,17 @@
+if (hasTeam "Playing") {
+    globalstat "winnerid" set "%stat.player/playerid%"
+}
+
+setTeam "Lobby"
+tp "house_spawn"
+
+pause 5
+
+if (globalstat "winnerid" == "%stat.player/playerid%") {
+    title "&a&lWINNER" "&eYou won!" 1 5 1
+    sound "Level Up" 0.7 1 "invokers_location"
+    stat "wins" inc 1
+} else {
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    title "&c&lGAME OVER!" "&ePlayer#%stat.global/winnerid% won!" 1 5 1
+}

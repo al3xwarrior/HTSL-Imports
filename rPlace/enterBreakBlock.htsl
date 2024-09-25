@@ -1,0 +1,15 @@
+// click on the item to enter the "breaking block mode"
+
+if (stat "canaction" = 0) {
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    chat "&c&lYou still need to wait %stat.player/mins%:%stat.player/bigsecs%%stat.player/minisecs% to do this!"
+    exit
+}
+
+applyLayout "Breaking"
+
+stat "blocksbroken" inc 1
+globalstat "blocksbroken" inc 1
+applyPotion "Mining Fatigue" 2000000 5 true
+stat "status" set -1
+gamemode survival

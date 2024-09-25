@@ -1,0 +1,29 @@
+stat "idlogged" set 1
+pause 22
+title "&0" "&0" 0 0 0
+tp "house_spawn"
+
+if () {
+chat "&r"
+chat "&a"
+chat "&b"
+chat "&c"
+chat "&d"
+chat "&e"
+chat "&f"
+chat "&1"
+chat "&2"
+chat "&3"
+}
+if () {
+chat "&4"
+chat "&5"
+chat "&6"
+chat "&7"
+chat "&8"
+chat "&9"
+chat "&0"
+}
+
+sound "Level Up" 0.7 1 "invokers_location"
+chat "&2&kB&r &a&lDATA LOADED! &2&kB&r"

@@ -1,0 +1,15 @@
+if (hasGroup "Owner" true) {
+
+} else {
+    exit
+}
+
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+if (stat "h/autosoup" = 0) {
+    stat "h/autosoup" set 1
+    chat "&7[&4&lHACKS&7] &cAuto Soup &4ENABLED&c!"
+} else {
+    stat "h/autosoup" set 0
+    chat "&7[&4&lHACKS&7] &cAuto Soup &4DISABLED&c!"
+}
+displayMenu "Secret Hacks"

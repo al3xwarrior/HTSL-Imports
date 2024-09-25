@@ -1,0 +1,213 @@
+// 〇⬤
+// ↪ ↩
+
+if (hasItem "greentreasurechest" metadata Hand anyAmount) {
+    removeItem "greentreasurechest"
+} else {
+    exit
+}
+
+sound "block.chest.open" 1.0 2.0 "invokers_location"
+
+title "&7↪ &a⬤ &7↩" "&eOpening..." 0 1 1
+pause 10
+sound "block.note_block.pling" 0.7 1.6 "invokers_location"
+title "&7↪ &a〇 &7↩" "&eOpening..." 0 1 1
+pause 8
+sound "block.note_block.pling" 0.7 0.5 "invokers_location"
+title "&7↪ &%random.int/1 10%&kB&r &7↩" "&eOpening..." 0 1 1
+pause 3
+sound "block.note_block.pling" 0.7 0.9 "invokers_location"
+title "&7↪ &%random.int/1 10%&kB&r &7↩" "&eOpening..." 0 1 1
+pause 3
+sound "block.note_block.pling" 0.7 1.3 "invokers_location"
+title "&7↪ &%random.int/1 10%&kB&r &7↩" "&eOpening..." 0 1 1
+pause 3
+if () {
+    sound "block.note_block.pling" 0.7 1.7 "invokers_location"
+title "&7↪ &%random.int/1 10%&kB&r &7↩" "&eOpening..." 0 1 1
+}
+pause 15
+
+stat "chestrng" set "%random.int/1 9%"
+if (stat "chestrng" = 1) {
+    giveItem "teenomatic" true "First Slot" false
+    title "&7↪ &fTeen-o-Matic &7↩" "&a&lUNCOMMON" 0 1 1
+}
+if (stat "chestrng" = 2) {
+    giveItem "bunnypet" true "First Slot" false
+    title "&7↪ &eBunny Pet &7↩" "&a&lUNCOMMON" 0 1 1
+}
+if (stat "chestrng" = 3) {
+    giveItem "eggplant" true "First Slot" false
+    title "&7↪ &eEgg Plant &7↩" "&a&lUNCOMMON" 0 1 1
+}
+if (stat "chestrng" = 4) {
+    giveItem "depositstone1" true "First Slot" false
+    title "&7↪ &bDeposit Stone &7↩" "&a&lUNCOMMON" 0 1 1
+}
+if (stat "chestrng" = 5) {
+    giveItem "dogpet" true "First Slot" false
+    title "&7↪ &eDog Pet &7↩" "&a&lUNCOMMON" 0 1 1
+}
+if (stat "chestrng" = 6) {
+    giveItem "moneymultpotion13" true "First Slot" false
+    title "&7↪ &aMoney Potion &7(1.3x) &7↩" "&a&lUNCOMMON" 0 1 1
+}
+if (stat "chestrng" = 7) {
+    giveItem "withdrawbasket1" true "First Slot" false
+    title "&7↪ &eSmall Basket &7↩" "&a&lUNCOMMON" 0 1 1
+}
+if (stat "chestrng" = 8) {
+    giveItem "eggproductionpotion12" true "First Slot" false
+    title "&7↪ &6Egg Production Potion &7(1.2x) &7↩" "&a&lUNCOMMON" 0 1 1
+}
+sound "block.note_block.pling" 0.7 2.0 "invokers_location"
+stat "chestrng" set 0
+
+
+// BLUE
+goto function "bluetreasurechest"
+
+if (hasItem "bluetreasurechest" metadata Hand anyAmount) {
+    removeItem "bluetreasurechest"
+} else {
+    exit
+}
+
+sound "block.chest.open" 1.0 2.0 "invokers_location"
+
+title "&7↪ &3⬤ &7↩" "&eOpening..." 0 1 1
+pause 10
+sound "block.note_block.pling" 0.7 1.6 "invokers_location"
+title "&7↪ &3〇 &7↩" "&eOpening..." 0 1 1
+pause 8
+sound "block.note_block.pling" 0.7 0.5 "invokers_location"
+title "&7↪ &%random.int/1 10%&kB&r &7↩" "&eOpening..." 0 1 1
+pause 3
+sound "block.note_block.pling" 0.7 0.9 "invokers_location"
+title "&7↪ &%random.int/1 10%&kB&r &7↩" "&eOpening..." 0 1 1
+pause 3
+sound "block.note_block.pling" 0.7 1.3 "invokers_location"
+title "&7↪ &%random.int/1 10%&kB&r &7↩" "&eOpening..." 0 1 1
+pause 3
+if () {
+    sound "block.note_block.pling" 0.7 1.7 "invokers_location"
+title "&7↪ &%random.int/1 10%&kB&r &7↩" "&eOpening..." 0 1 1
+}
+pause 15
+
+stat "chestrng" set "%random.int/1 9%"
+if (stat "chestrng" = 1) {
+    giveItem "chickenomatic" true "First Slot" false
+    title "&7↪ &eChicken-O-Matic &7↩" "&9&lRARE" 0 1 1
+}
+if (stat "chestrng" = 2) {
+    giveItem "speedybunnypet" true "First Slot" false
+    title "&7↪ &fSpeedy Bunny &7↩" "&9&lRARE" 0 1 1
+}
+if (stat "chestrng" = 3) {
+    giveItem "eggplantpurple" true "First Slot" false
+    title "&7↪ &dEgg Plant &7↩" "&9&lRARE" 0 1 1
+}
+if (stat "chestrng" = 4) {
+    giveItem "browndog" true "First Slot" false
+    title "&7↪ &6Brown Dog &7↩" "&9&lRARE" 0 1 1
+}
+if (stat "chestrng" = 5) {
+    giveItem "withdrawbasket2" true "First Slot" false
+    title "&7↪ &eMedium Basket &7↩" "&9&lRARE" 0 1 1
+}
+if (stat "chestrng" = 6) {
+    giveItem "eggproductionpotion15" true "First Slot" false
+    title "&7↪ &6Egg Production Potion &7(1.5x) &7↩" "&9&lRARE" 0 1 1
+}
+if (stat "chestrng" = 7) {
+    giveItem "moneymultpotion17" true "First Slot" false
+    title "&7↪ &aMoney Potion &7(1.7x) &7↩" "&9&lRARE" 0 1 1
+}
+if (stat "chestrng" = 8) {
+    giveItem "depositstone2" true "First Slot" false
+    title "&7↪ &aDeposit Stone &7↩" "&9&lRARE" 0 1 1
+}
+sound "block.note_block.pling" 0.7 2.0 "invokers_location"
+stat "chestrng" set 0
+
+// RED
+goto function "redtreasurechest"
+
+if (hasItem "redtreasurechest" metadata Hand anyAmount) {
+    removeItem "redtreasurechest"
+} else {
+    exit
+}
+
+sound "block.chest.open" 1.0 2.0 "invokers_location"
+
+title "&7↪ &c⬤ &7↩" "&eOpening..." 0 1 1
+pause 10
+sound "block.note_block.pling" 0.7 1.6 "invokers_location"
+title "&7↪ &c〇 &7↩" "&eOpening..." 0 1 1
+pause 8
+sound "block.note_block.pling" 0.7 0.5 "invokers_location"
+title "&7↪ &%random.int/1 10%&kB&r &7↩" "&eOpening..." 0 1 1
+pause 3
+sound "block.note_block.pling" 0.7 0.9 "invokers_location"
+title "&7↪ &%random.int/1 10%&kB&r &7↩" "&eOpening..." 0 1 1
+pause 3
+sound "block.note_block.pling" 0.7 1.3 "invokers_location"
+title "&7↪ &%random.int/1 10%&kB&r &7↩" "&eOpening..." 0 1 1
+pause 3
+if () {
+    sound "block.note_block.pling" 0.7 1.7 "invokers_location"
+title "&7↪ &%random.int/1 10%&kB&r &7↩" "&eOpening..." 0 1 1
+}
+pause 15
+
+stat "chestrng" set "%random.int/1 9%"
+if (stat "chestrng" = 1) {
+    giveItem "oldchickenomatic" true "First Slot" false
+    title "&7↪ &fOld Chicken-O-Matic &7↩" "&d&lEPIC" 0 1 1
+}
+if (stat "chestrng" = 2) {
+    giveItem "frogpet" true "First Slot" false
+    title "&7↪ &aFrog Pet &7↩" "&d&lEPIC" 0 1 1
+}
+if (stat "chestrng" = 3) {
+    giveItem "pinkbunny" true "First Slot" false
+    title "&7↪ &dPink bunny &7↩" "&6&lLEGENDARY" 0 1 1
+}
+if (stat "chestrng" = 4) {
+    giveItem "eggplantepic" true "First Slot" false
+    title "&7↪ &dEgg Plant &7↩" "&d&lEPIC" 0 1 1
+}
+if (stat "chestrng" = 5) {
+    giveItem "easteregg" true "First Slot" false
+    title "&7↪ &5&kB&r &dEaster Egg &5&kB&r &7↩" "&d&lEPIC" 0 1 1
+}
+if (stat "chestrng" = 6) {
+    giveItem "grandmawolf" true "First Slot" false
+    title "&7↪ &6Grandma Wolf &7↩" "&d&lEPIC" 0 1 1
+}
+if (stat "chestrng" = 7) {
+    giveItem "darkwolf" true "First Slot" false
+    title "&7↪ &6Dark Wolf &7↩" "&d&lEPIC" 0 1 1
+}
+if (stat "chestrng" = 8) {
+    giveItem "moneymultpotion23" true "First Slot" false
+    title "&7↪ &aMoney Potion &7(2.3x) &7↩" "&d&lEPIC" 0 1 1
+}
+if (stat "chestrng" = 9) {
+    giveItem "eggproductionpotion20" true "First Slot" false
+    title "&7↪ &6Egg Production Potion &7(2.0x) &7↩" "&d&lEPIC" 0 1 1
+}
+if (stat "chestrng" = 10) {
+    giveItem "depositstone3" true "First Slot" false
+    title "&7↪ &5Deposit Stone &7↩" "&d&lEPIC" 0 1 1
+}
+if (stat "chestrng" = 11) {
+    giveItem "withdrawbasket3" true "First Slot" false
+    title "&7↪ &eLarge Basket &7↩" "&d&lEPIC" 0 1 1
+}
+sound "block.note_block.pling" 0.7 2.0 "invokers_location"
+stat "chestrng" set 0

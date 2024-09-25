@@ -1,0 +1,35 @@
+// update givegold
+// update givexp
+
+// - 1.5x Gold
+// - 1.2x XP
+if (hasGroup "Gold" false) {
+    stat "givegold" mult 15
+    stat "givegold" div 10
+    stat "givexp" mult 12
+    stat "givexp" div 10
+}
+
+// - 2.0x Gold
+// - 1.5x XP
+if (hasGroup "Diamond" false) {
+    stat "givegold" mult 2
+    stat "givexp" mult 15
+    stat "givexp" div 10
+}
+
+// - 2.5x Gold
+// - 2.0x XP
+if or (hasGroup "EmeraldLobby" true, hasGroup "EmeraldArena" true) {
+    stat "givegold" mult 25
+    stat "givegold" div 10
+    stat "givexp" mult 2
+}
+
+// perks
+if or (stat "perks/1" = 5, stat "perks/2" = 5, stat "perks/3" = 5) {
+    stat "givegold" inc "%random.int/4 7%"
+}
+if or (stat "perks/1" = 9, stat "perks/2" = 9, stat "perks/3" = 9) {
+    stat "givexp" inc "%random.int/5 8%"
+}

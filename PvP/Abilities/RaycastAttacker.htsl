@@ -1,0 +1,16 @@
+// Duel Request Requester (attacker)
+if (globalstat "raycastid" == 2, inRegion "DuelsLobby") {
+    globalstat "duels/outgoingid" set "%stat.player/playerid%"
+    pause 1
+    stat "duels/incomingid" set "%stat.global/duels/incomingid%"
+    chat "&aYou sent a duel request to &2Player#%stat.player/duels/incomingid%"
+} else {
+    exit
+}
+
+pause 200
+
+if (stat "duels/incomingid" > 0) {
+    stat "duels/incomingid" set 0
+    chat "&cDuel request expired! They didnt accept :("
+}

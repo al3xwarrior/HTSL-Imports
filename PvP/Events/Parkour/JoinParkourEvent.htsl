@@ -1,0 +1,36 @@
+
+random {
+    giveItem "parkour_event_boots1" false "Helmet" true
+    giveItem "parkour_event_boots2" false "Helmet" true
+    giveItem "parkour_event_boots3" false "Helmet" true
+    giveItem "parkour_event_boots4" false "Helmet" true
+    giveItem "parkour_event_boots5" false "Helmet" true
+    giveItem "parkour_event_boots6" false "Helmet" true
+    giveItem "parkour_event_boots7" false "Helmet" true
+    giveItem "parkour_event_boots8" false "Helmet" true
+}
+
+if (globalstat "par/mapid" = 1) {
+    tp "custom_coordinates" "56.5 111 27.5 0.0 0.0"
+    exit
+}
+if (globalstat "par/mapid" = 2) {
+    tp "custom_coordinates" "48.5 112 27.5 0.0 0.0"
+    exit
+}
+if (globalstat "par/mapid" = 3) {
+    tp "custom_coordinates" "40.5 113 27.5 0.0 0.0"
+    exit
+}
+if (globalstat "par/mapid" = 4) {
+    tp "custom_coordinates" "33.5 113 27.5 0.0 0.0"
+    exit
+}
+if (globalstat "par/mapid" = 5) {
+    tp "custom_coordinates" "26.5 112 27.5 0.0 0.0"
+    exit
+}
+if (globalstat "par/mapid" = 6) {
+    tp "custom_coordinates" "19.5 113 27.5 0.0 0.0"
+    exit
+}

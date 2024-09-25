@@ -1,0 +1,63 @@
+if (globalstat "botbusy" > 0) {
+    chat "&c&lSorry! Due to Housing Limits... you will need to wait a second before using this!"
+    exit
+}
+
+// if (x < -106 && z > 116) {x = -106; z = 116}
+if (placeholder "%player.location.x%" < -106, placeholder "%player.location.z%" > 116) {
+    chat "&c&lSorry! You can use this ability here!"
+    exit
+}
+
+globalstat "botbusy" set 16
+stat "ability_cd" set 40
+chat "&a&lGrowth Ability used! &2&l✓"
+chat "&7(You are now on a %stat.player/ability_cd%s cooldown!)"
+sound "item.hoe.till" 0.7 0.5 "invokers_location"
+
+globalstat "bot/tpx" set "%player.location.x%"
+globalstat "bot/tpy" set "%player.location.y%"
+globalstat "bot/tpz" set "%player.location.z%"
+globalstat "botbcid" set 2
+
+function "botactions" true
+
+stat "forestBoarderX" set "%player.location.x%"
+stat "forestBoarderY" set "%player.location.y%"
+stat "forestBoarderZ" set "%player.location.z%"
+
+title "&7" "&7■ ■ ■" 0 5 1
+sound "block.note_block.bass" 1.0 1.0 "invokers_location"
+pause 43
+title "&7" "&2■ &7■ ■" 0 5 1
+sound "block.note_block.bass" 1.0 1.2 "invokers_location"
+pause 43
+title "&7" "&2■ ■ &7■" 0 5 1
+sound "block.note_block.bass" 1.0 1.4 "invokers_location"
+pause 43
+
+if () {
+stat "forestBoarderX" dec "%player.location.x%"
+stat "forestBoarderY" dec "%player.location.y%"
+stat "forestBoarderZ" dec "%player.location.z%"
+}
+if (stat "forestBoarderX" < 0) {
+    stat "forestBoarderX" mult -1
+}
+if (stat "forestBoarderY" < 0) {
+    stat "forestBoarderY" mult -1
+}
+if (stat "forestBoarderZ" < 0) {
+    stat "forestBoarderZ" mult -1
+}
+
+if (stat "forestBoarderX" <= 7, stat "forestBoarderY" <= 7, stat "forestBoarderZ" <= 7) {
+    title "&7" "&a■ ■ ■" 0 1 1
+    sound "block.note_block.pling" 1.0 2.0 "invokers_location"
+    applyPotion "Strength" 6 1 true
+} else {
+    title "&7" "&c■ ■ ■" 0 1 1
+    sound "block.note_block.pling" 1.0 0.5 "invokers_location"
+    chat "&c&lYou were not inside the walls!"
+}
+

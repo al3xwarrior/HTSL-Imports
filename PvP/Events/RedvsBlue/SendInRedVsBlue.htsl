@@ -1,0 +1,9 @@
+sound "entity.wither.spawn" 0.7 0.8 "invokers_location"
+if (hasTeam "Red") {
+    tp "custom_coordinates" "120.5 101 -21.5 90.0 0.0"
+    exit
+}
+if (hasTeam "Blue") {
+    tp "custom_coordinates" "28.5 101 -21.5 -90.0 -0.0"
+    exit
+}

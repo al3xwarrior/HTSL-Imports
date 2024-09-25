@@ -1,0 +1,8 @@
+if (stat "combat" > 0) {
+    chat "&c&lYou cannot do this while in Combat! &4&l✘"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+stat "kit" set 1
+tp "custom_coordinates" "-116.5 135 127.5 45.0 0"

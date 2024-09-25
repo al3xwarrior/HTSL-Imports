@@ -1,0 +1,12 @@
+
+// Function is triggered every 4 ticks
+
+// Depending on if the player voted or not, display a actionbar
+
+if (stat vote = 0) {
+    actionBar "&e&lClick a item to &6&lVOTE&e&l! &7[&aL: %stat.global/votes_l%&7] &7[&aF: %stat.global/votes_w%&7] &7[&aR: %stat.global/votes_R%&7] &8[&7Time Left: %stat.global/timer%s&8]"
+    exit
+}
+if (stat vote = 1) {
+    actionBar "&2&lVOTED! &7[&aL: %stat.global/votes_l%&7] &7[&aF: %stat.global/votes_w%&7] &7[&aR: %stat.global/votes_R%&7] &8[&7Time Left: %stat.global/timer%s&8]"
+}

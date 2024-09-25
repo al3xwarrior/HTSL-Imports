@@ -1,0 +1,21 @@
+// KA Check
+if (globalstat "raycastid" = 1) {
+    stat "AC/kavio" inc 1
+}
+if (globalstat "raycastid" = 1, stat "AC/kavio" > 3) {
+    globalstat "ac/id" set 3
+    globalstat "ac/plrid" set "%stat.player/playerid%"
+    globalstat "ac/x" set "%player.location.x%"
+    globalstat "ac/y" set "%player.location.y%"
+    globalstat "ac/z" set "%player.location.z%"
+    globalstat "ac/ping" set "%player.ping%"
+    globalstat "ac/vio" set "%stat.player/AC/kavio%"
+    function "AC_Alert" true
+    exit
+}
+
+// Duel Request Miss
+if (globalstat "raycastid" = 2) {
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    chat "&c&lYou were not looking at a player! &4&l✘"
+}

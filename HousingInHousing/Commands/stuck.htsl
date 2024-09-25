@@ -1,0 +1,8 @@
+function "isOwner" false
+if (stat "isOwner" = 0) {
+    houseSpawn
+    chat "&a&lSent to Spawn!"
+    exit
+}
+
+chat "&c&lIn order to leave your Plot, you must abandon house! &4/abandonhouse"

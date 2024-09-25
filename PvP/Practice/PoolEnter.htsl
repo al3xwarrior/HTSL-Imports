@@ -1,0 +1,9 @@
+stat "practicetimer" set 0
+
+sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+chat "&6&m-------------------------------------------"
+chat "&c&lHEALING PRACTICE"
+chat "&r"
+chat "&fSee how long you can &asurvive&f!"
+chat "&6Best Time: %stat.player/besthealtime%s"
+chat "&6&m-------------------------------------------"

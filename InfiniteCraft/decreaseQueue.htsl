@@ -1,0 +1,3 @@
+if (stat "queuepos" > 0) {
+    stat "queuepos" dec 1
+}

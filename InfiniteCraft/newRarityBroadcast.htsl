@@ -1,0 +1,10 @@
+if (globalstat "raritybroadcast" = 1) {
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    chat "&7Someone craft a new &6&lLEGENDARY &7item!"
+    exit
+}
+if (globalstat "raritybroadcast" = 2) {
+    sound "Enderdragon Growl" 0.5 1 "invokers_location"
+    chat "&4&kB&r &7Someone craft a new &c&lMYTHIC &7item! &4&kB&r"
+    exit
+}

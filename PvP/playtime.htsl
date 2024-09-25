@@ -1,0 +1,30 @@
+if (stat "unix" < %date.unix%) {
+    stat "unix" set "%date.unix%"
+    stat "seconds" inc 1
+    stat "refill_cd" dec 1
+    stat "safefall" dec 1
+    stat "combat" dec 1
+    stat "ability_cd" dec 1
+}
+if (stat "seconds" >= 60) {
+    stat "seconds" set 0
+    stat "minutes" inc 1
+}
+if (stat "minutes" >= 60) {
+    stat "minutes" set 0
+    stat "hours" inc 1
+}
+
+if (globalstat "unix" < "%date.unix%") {
+    globalstat "unix" set "%date.unix%"
+    globalstat "seconds" inc 1
+    globalstat "event_cd" dec 1
+}
+if (globalstat "seconds" >= 60) {
+    globalstat "seconds" set 0
+    globalstat "minutes" inc 1
+}
+if (globalstat "minutes" >= 60) {
+    globalstat "minutes" set 0
+    globalstat "hours" inc 1
+}

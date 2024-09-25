@@ -1,0 +1,29 @@
+
+stat "tempbounty1" set "%random.int/1 4%"
+stat "tempbounty2" set "%random.int/0 10%"
+stat "tempbounty" set "%stat.player/tempbounty1%"
+stat "tempbounty" mult 10
+stat "tempbounty" inc "%stat.player/tempbounty2%"
+stat "bounty" inc "%stat.player/tempbounty%"
+
+sound "entity.wither.spawn" 0.7 1.1 "invokers_location"
+
+chat "&7&m-------------------------------------------"
+chat "&6&lBOUNTY EVENT STARTED"
+chat "&fEveryone has been given a &arandom &ebounty&f!"
+chat "&7&m-------------------------------------------"
+
+title "&6&lBounty Event" "&eBounty Increased by &7﴾ &6&k00&r&6⛃ &7﴿&e!" 1 2 1
+pause 17
+sound "entity.experience_orb.pickup" 0.7 1.1 "invokers_location"
+title "&6&lBounty Event" "&eBounty Increased by &7﴾ &6%stat.player/tempbounty1%&k0&r&6⛃ &7﴿&e!" 0 2 1
+pause 15
+sound "entity.experience_orb.pickup" 0.7 1.3 "invokers_location"
+title "&6&lBounty Event" "&eBounty Increased by &7﴾ &6%stat.player/tempbounty1%%stat.player/tempbounty2%&r&6⛃ &7﴿&e!" 0 2 1
+pause 10
+sound "entity.experience_orb.pickup" 0.7 1.5 "invokers_location"
+title "&6&lBounty Event" "&eBounty Increased by &7﴾ &6&l%stat.player/tempbounty1%%stat.player/tempbounty2%⛃ &7﴿&e!" 0 1 1
+
+stat "tempbounty1" set 0
+stat "tempbounty2" set 0
+stat "tempbounty" set 0

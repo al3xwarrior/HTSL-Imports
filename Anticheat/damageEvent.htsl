@@ -1,0 +1,52 @@
+// Cancel Thorns + Anticheat Attacker
+if (damageCause "Thorns", globalstat "ac/washit" = 1) {
+    cancelEvent
+    globalstat "ac/washit" set 0
+    globalstat "ac/attackerx" set "%player.location.x%"
+    globalstat "ac/attackery" set "%player.location.y%"
+    globalstat "ac/attackerz" set "%player.location.z%"
+    function "reach" false
+    globalstat "raycast_radius" set 2
+    globalstat "range" set 7
+    globalstat "raycastid" set 1
+    function "raycast" false
+}
+
+// Anticheat Victim
+if (damageCause "Entity Attack") {
+    globalstat "ac/washit" set 1
+    globalstat "ac/victimx" set "%player.location.x%"
+    globalstat "ac/victimy" set "%player.location.y%"
+    globalstat "ac/victimz" set "%player.location.z%"
+} else {
+    globalstat "ac/washit" set 0
+}
+
+// Velocity Check
+if (damageCause "Entity Attack") {
+    stat "velocityx" set "%player.location.x%"
+    stat "velocityy" set "%player.location.y%"
+    stat "velocityz" set "%player.location.z%"
+} else {
+    exit
+}
+
+pause 9
+
+if (stat "velocityx" = "%player.location.x%", stat "velocityy" = "%player.location.y%", stat "velocityz" = "%player.location.z%") {
+    // player hasnt moved
+    stat "ac/velvio" inc 1
+} else {
+    exit
+}
+
+if (stat "ac/velvio" > 3) {
+    globalstat "ac/id" set 4
+    globalstat "ac/plrid" set "%stat.player/playerid%"
+    globalstat "ac/x" set "%player.location.x%"
+    globalstat "ac/y" set "%player.location.y%"
+    globalstat "ac/z" set "%player.location.z%"
+    globalstat "ac/ping" set "%player.ping%"
+    globalstat "ac/vio" set "%stat.player/AC/velvio%"
+    function "Alert" true
+}
