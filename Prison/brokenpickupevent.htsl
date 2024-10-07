@@ -1,4 +1,3 @@
-/*
 if (gamemode Creative) {
     exit
 }
@@ -6,108 +5,143 @@ if (gamemode Creative) {
 // x4 then x1
 
 // Cobblestone
-if (hasItem null Metadata Anywhere "Any Amount") {
-    removeItem null
+if (hasItem "4cobble" Metadata Anywhere "Any Amount") {
+    removeItem "4cobble"
     stat "storage" inc 4
     stat "minedblocks" inc 4
+    globalstat "minedblocks" inc 4
+    globalstat "blocksgoal" inc 4
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
     sound "Wood Click" 1.0 2.0 "invokers_location"
 }
-if (hasItem null Metadata Anywhere "Any Amount") {
-    removeItem null
+if (hasItem "cobble" Metadata Anywhere "Any Amount") {
+    removeItem "cobble"
     stat "storage" inc 1
     stat "minedblocks" inc 1
+    globalstat "minedblocks" inc 1
+    globalstat "blocksgoal" inc 1
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
     sound "Wood Click" 1.0 2.0 "invokers_location"
 }
 // Coal
-if (hasItem null Metadata Anywhere "Any Amount") {
-    removeItem null
+if (hasItem "4coal" Metadata Anywhere "Any Amount") {
+    removeItem "4coal"
     stat "storage" inc 12
     stat "minedblocks" inc 4
+    globalstat "minedblocks" inc 4
+    globalstat "blocksgoal" inc 4
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
     sound "Wood Click" 1.0 2.0 "invokers_location"
 }
-if (hasItem null Metadata Anywhere "Any Amount") {
-    removeItem null
+if (hasItem "coal" Metadata Anywhere "Any Amount") {
+    removeItem "coal"
     stat "storage" inc 3
     stat "minedblocks" inc 1
+    globalstat "minedblocks" inc 1
+    globalstat "blocksgoal" inc 1
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
     sound "Wood Click" 1.0 2.0 "invokers_location"
 }
 // Iron
-if (hasItem null Metadata Anywhere "Any Amount") {
-    removeItem null
+if (hasItem "4iron" Metadata Anywhere "Any Amount") {
+    removeItem "4iron"
     stat "storage" inc 28
     stat "minedblocks" inc 4
+    globalstat "minedblocks" inc 4
+    globalstat "blocksgoal" inc 4
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
     sound "Wood Click" 1.0 2.0 "invokers_location"
 }
-if (hasItem null Metadata Anywhere "Any Amount") {
-    removeItem null
+if (hasItem "iron" Metadata Anywhere "Any Amount") {
+    removeItem "iron"
     stat "storage" inc 7
     stat "minedblocks" inc 1
+    globalstat "minedblocks" inc 1
+    globalstat "blocksgoal" inc 1
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
     sound "Wood Click" 1.0 2.0 "invokers_location"
 }
 // Gold
-if (hasItem null Metadata Anywhere "Any Amount") {
-    removeItem null
+if (hasItem "4gold" Metadata Anywhere "Any Amount") {
+    removeItem "4gold"
     stat "storage" inc 60
     stat "minedblocks" inc 4
+    globalstat "minedblocks" inc 4
+    globalstat "blocksgoal" inc 4
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
     sound "Wood Click" 1.0 2.0 "invokers_location"
 }
-if (hasItem null Metadata Anywhere "Any Amount") {
-    removeItem null
+if (hasItem "gold" Metadata Anywhere "Any Amount") {
+    removeItem "gold"
     stat "storage" inc 15
     stat "minedblocks" inc 1
+    globalstat "minedblocks" inc 1
+    globalstat "blocksgoal" inc 1
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
     sound "Wood Click" 1.0 2.0 "invokers_location"
 }
 // Diamond
-if (hasItem null Metadata Anywhere "Any Amount") {
-    removeItem null
+if (hasItem "4diamond" Metadata Anywhere "Any Amount") {
+    removeItem "4diamond"
     stat "storage" inc 88
     stat "minedblocks" inc 4
+    globalstat "minedblocks" inc 4
+    globalstat "blocksgoal" inc 4
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
     sound "Wood Click" 1.0 2.0 "invokers_location"
 }
-if (hasItem null Metadata Anywhere "Any Amount") {
-    removeItem null
+if (hasItem "diamond" Metadata Anywhere "Any Amount") {
+    removeItem "diamond"
     stat "storage" inc 22
     stat "minedblocks" inc 1
+    globalstat "minedblocks" inc 1
+    globalstat "blocksgoal" inc 1
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
     sound "Wood Click" 1.0 2.0 "invokers_location"
 }
 // Emerald
-if (hasItem null Metadata Anywhere "Any Amount") {
-    removeItem null
+if (hasItem "4emerald" Metadata Anywhere "Any Amount") {
+    removeItem "4emerald"
     stat "storage" inc 100
     stat "minedblocks" inc 4
+    globalstat "minedblocks" inc 4
+    globalstat "blocksgoal" inc 4
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
     sound "Wood Click" 1.0 2.0 "invokers_location"
 }
-if (hasItem null Metadata Anywhere "Any Amount") {
-    removeItem null
+if (hasItem "emerald" Metadata Anywhere "Any Amount") {
+    removeItem "emerald"
     stat "storage" inc 25
     stat "minedblocks" inc 1
+    globalstat "minedblocks" inc 1
+    globalstat "blocksgoal" inc 1
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
     sound "Wood Click" 1.0 2.0 "invokers_location"
 }
-*/
+
+// Luckyblock / sponge
+if (hasItem "sponge" Metadata Anywhere "Any Amount") {
+    removeItem "sponge"
+    stat "minedblocks" inc 1
+    globalstat "minedblocks" inc 1
+    globalstat "blocksgoal" inc 1
+    function "luckyblock" false
+    sound "Wood Click" 1.0 1.6 "invokers_location"
+    pause 2
+    sound "Wood Click" 1.0 2.0 "invokers_location"
+}
 
 if (stat "storage" > "%stat.player/maxstorage%") {
     title "&cFull Storage" "&7Do &c/sell&7! Upgrade with &a/storageshop&7." 0 1 1
