@@ -1,0 +1,119 @@
+if (hasItem "diamondkey" metadata Hand anyAmount) {
+    
+} else {
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    chat "&cYou don't have a key!"
+    exit
+}
+
+giveItem "fillitem" true "First Slot" false
+if (hasItem "fillitem" metadata Anywhere anyAmount) {
+    removeItem "fillitem"
+} else {
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    chat "&cYour inventory is full!"
+    exit
+}
+
+removeItem "diamondkey"
+
+sound "Click" 0.7 0.8 "invokers_location"
+title "&%random.int/1 10%&k%random.int/1 100000%" "&bOpening Diamond Crate..." 0 1 1
+pause 2
+sound "Click" 0.7 1.5 "invokers_location"
+title "&%random.int/1 10%&k%random.int/1 100000%" "&bOpening Diamond Crate..." 0 1 1
+pause 2
+sound "Click" 0.7 2.0 "invokers_location"
+title "&a&lOPENED!!" "&bOpening Diamond Crate..." 0 1 1
+
+stat "craterng" set "%random.int/1 34%"
+
+if (stat "craterng" = 1) {
+    giveItem "ocelot_pet" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 2) {
+    giveItem "rat_pet" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 3) {
+    giveItem "glow_squid_pet" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 4) {
+    giveItem "cat_pet" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 5) {
+    giveItem "sheep_pet" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 6) {
+    giveItem "dinosaur_pet" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 7) {
+    giveItem "capybara_pet" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 8) {
+    giveItem "doge_pet" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 9) {
+    giveItem "monkey_pet" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 10) {
+    giveItem "money_helmet_1.3x" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 11) {
+    giveItem "money_chestplate_1.3x" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 12) {
+    giveItem "money_leggings_1.3x" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 13) {
+    giveItem "money_boots_1.3x" true "First Slot" false
+    exit
+}
+
+random {
+    giveItem "money_helmet_1.4x" true "First Slot" false
+    giveItem "money_chestplate_1.4x" true "First Slot" false
+    giveItem "money_leggings_1.4x" true "First Slot" false
+    giveItem "money_boots_1.4x" true "First Slot" false
+
+    giveItem "gem_helmet_1.3x" true "First Slot" false
+    giveItem "gem_chestplate_1.3x" true "First Slot" false
+    giveItem "gem_leggings_1.3x" true "First Slot" false
+    giveItem "gem_boots_1.3x" true "First Slot" false
+    giveItem "gem_helmet_1.4x" true "First Slot" false
+    giveItem "gem_chestplate_1.4x" true "First Slot" false
+    giveItem "gem_leggings_1.4x" true "First Slot" false
+    giveItem "gem_boots_1.4x" true "First Slot" false
+
+    giveItem "token_helmet_1.3x" true "First Slot" false
+    giveItem "token_chestplate_1.3x" true "First Slot" false
+    giveItem "token_leggings_1.3x" true "First Slot" false
+    giveItem "token_boots_1.3x" true "First Slot" false
+    giveItem "token_helmet_1.4x" true "First Slot" false
+    giveItem "token_chestplate_1.4x" true "First Slot" false
+    giveItem "token_leggings_1.4x" true "First Slot" false
+    giveItem "token_boots_1.4x" true "First Slot" false
+}

@@ -1,0 +1,65 @@
+applyPotion "Blindness" 1 1 true
+
+tp "custom_coordinates" "0.5 157 11.5 179.84 40.78"
+chat "&7&m----------------------------------------"
+chat "&6&lTUTORIAL &7(&e1&7/&e5&7)"
+chat "&fWelcome to %house.name%&f! This is a tutorial to help you get started."
+chat "&fDon't worry... it will be &dquick&7!"
+chat "&7&m----------------------------------------"
+
+pause 130
+
+if () {
+tp "custom_coordinates" "-7.5 157 -10.5 -141.89 37.55"
+chat "&7&m----------------------------------------"
+chat "&6&lTUTORIAL &7(&e2&7/&e5&7)"
+chat "&fHere is where your going to want to go to get started."
+chat "&fJump in and click &a&lForest Mine &fto start &emining&7!"
+chat "&7&m----------------------------------------"
+}
+
+pause 130
+
+if () {
+tp "custom_coordinates" "-67.5 156 24.5 179.37 33.5"
+chat "&7&m----------------------------------------"
+chat "&6&lTUTORIAL &7(&e3&7/&e5&7)"
+chat "&fStart mining ores here. Your &6Storage &fwill fill up so"
+chat "&fdo &c/sell &fto sell them!"
+chat "&7&m----------------------------------------"
+}
+
+pause 130
+
+if () {
+tp "custom_coordinates" "-82.5 157 -14.5 -46.29 30.81"
+chat "&7&m----------------------------------------"
+chat "&6&lTUTORIAL &7(&e4&7/&e5&7)"
+chat "&fYou will also earn &eTokens&f. Use those tokens to"
+chat "&denchant &fyour pickaxe! &7&o(Right-Click your pickaxe)"
+chat "&7&m----------------------------------------"
+}
+
+pause 130
+
+if () {
+tp "custom_coordinates" "-9.5 156 6.5 116.6 28.11"
+chat "&7&m----------------------------------------"
+chat "&6&lTUTORIAL &7(&e5&7/&e5&7)"
+chat "&fThats all! You can now start mining ores. Explore"
+chat "&fspawn for some extra stuff!"
+chat "&7&m----------------------------------------"
+}
+
+pause 130
+tp "house_spawn"
+
+if (stat "tutorial" = 0) {
+    stat "tutorial" set 1
+    giveItem "redstonekey" true "First Slot" false
+    giveItem "redstonekey" true "First Slot" false
+    stat "tokens" inc 250
+    chat "&e+250 Tokens"
+    stat "money" inc 1000
+    chat "&a+1,000 Money"
+}

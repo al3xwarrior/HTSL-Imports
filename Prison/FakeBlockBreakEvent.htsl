@@ -1,0 +1,58 @@
+// tokens (tokenmulti)
+if (placeholder "%random.int/1 4%" >= 3) {
+    stat "givetokens" set "%random.int/2 6%"
+    stat "givetokens" mult "%stat.player/e/tokenmulti%"
+    stat "givetokens" mult "%stat.player/i/tokenmulti%"
+    stat "givetokens" div 10
+    stat "tokens" inc "%stat.player/givetokens%"
+    chat "&e&lTOKENS &7You found &e%stat.player/givetokens%☀ &8(x%stat.player/e/tokenmulti%)"
+}
+
+// gems (gemfinder)
+stat "gemrng" set "%random.int/1 100%"
+stat "gemrng" inc "%stat.player/e/gemfinder%"
+if (stat "gemrng" >= 100) {
+    stat "givegems" set "%random.int/1 4%"
+    stat "givegems" mult "%stat.player/i/gemmulti%"
+    stat "givegems" div 10
+    stat "gems" inc "%stat.player/givegems%"
+    chat "&c&lGEMS &7You found &c%stat.player/givegems%♦"
+}
+
+// key finder (e/keyfinder)
+stat "keyrng" set "%random.int/1 200%"
+stat "keyrng" inc "%stat.player/e/keyfinder%"
+if (stat "keyrng" >= 200) {
+    function "giveKey" false
+}
+
+// zombie miner (e/zminer)
+stat "zminerrng" set "%random.int/1 500%"
+stat "zminerrng" inc "%stat.player/e/zminer%"
+if (stat "zminerrng" >= 500, stat "zminerprog" <= 0) {
+    stat "zminermax" set "%random.int/30 51%"
+    stat "zminerprog" set "%stat.player/zminermax%"
+    chat "&a&lZOMBIE MINER &7A &2Zombie Miner &7has spawned and will last for &f%stat.player/zminerprog% seconds&7!"
+    sound "Zombie Infect" 0.7 1.2 "invokers_location"
+}
+
+// copy and paste (e/cap)
+function "copyandpaste" true
+
+// explode (e/explosive)
+stat "exploderng" set "%random.int/1 500%"
+stat "exploderng" inc "%stat.player/e/explosive%"
+if (stat "exploderng" >= 500) {
+    function "explodeenchant"
+    chat "&c&lEXPLOSIVE &7Has triggered!"
+    sound "Explode" 0.7 1 "invokers_location"
+}
+
+// enchant duper (e/edupe)
+stat "eduperng" set "%random.int/1 75%"
+stat "eduperng" inc "%stat.player/edupe%"
+if (stat "eduperng" >= 300) {
+    pause 4
+    function "FakeBlockBreakEvent"
+    chat "&5&lENCHANT DUPER &7Has triggered!"
+}

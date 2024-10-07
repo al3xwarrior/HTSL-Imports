@@ -1,0 +1,27 @@
+
+stat "givekeyrng" set "%random.int/1 7%"
+if (stat "givekeyrng" <= 3) {
+    giveItem "redstonekey" true "First Slot" false
+    exit
+}
+if (stat "givekeyrng" <= 4) {
+    giveItem "diamondkey" true "First Slot" false
+    exit
+}
+if (stat "givekeyrng" = 6) {
+    giveItem "emeraldkey" true "First Slot" false
+    exit
+}
+
+// for settings
+/*
+if (stat "givekeyrng" = 1) {
+    chat "&c&lKEY FINDER &7You found a &cRedstone Key&7!"
+}
+if (stat "givekeyrng" = 2) {
+    chat "&c&lKEY FINDER &7You found a &bDiamond Key&7!"
+}
+if (stat "givekeyrng" = 3) {
+    chat "&c&lKEY FINDER &7You found a &2Emerald Key&7!"
+}
+    */

@@ -59,7 +59,7 @@ if (hasItem null Metadata Anywhere "Any Amount") {
 // Gold
 if (hasItem null Metadata Anywhere "Any Amount") {
     removeItem null
-    stat "storage" inc 48
+    stat "storage" inc 60
     stat "minedblocks" inc 4
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
@@ -67,7 +67,7 @@ if (hasItem null Metadata Anywhere "Any Amount") {
 }
 if (hasItem null Metadata Anywhere "Any Amount") {
     removeItem null
-    stat "storage" inc 12
+    stat "storage" inc 15
     stat "minedblocks" inc 1
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
@@ -76,7 +76,7 @@ if (hasItem null Metadata Anywhere "Any Amount") {
 // Diamond
 if (hasItem null Metadata Anywhere "Any Amount") {
     removeItem null
-    stat "storage" inc 60
+    stat "storage" inc 88
     stat "minedblocks" inc 4
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
@@ -84,7 +84,7 @@ if (hasItem null Metadata Anywhere "Any Amount") {
 }
 if (hasItem null Metadata Anywhere "Any Amount") {
     removeItem null
-    stat "storage" inc 15
+    stat "storage" inc 22
     stat "minedblocks" inc 1
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
@@ -93,7 +93,7 @@ if (hasItem null Metadata Anywhere "Any Amount") {
 // Emerald
 if (hasItem null Metadata Anywhere "Any Amount") {
     removeItem null
-    stat "storage" inc 60
+    stat "storage" inc 100
     stat "minedblocks" inc 4
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
@@ -101,7 +101,7 @@ if (hasItem null Metadata Anywhere "Any Amount") {
 }
 if (hasItem null Metadata Anywhere "Any Amount") {
     removeItem null
-    stat "storage" inc 15
+    stat "storage" inc 25
     stat "minedblocks" inc 1
     sound "Wood Click" 1.0 1.6 "invokers_location"
     pause 2
@@ -110,5 +110,6 @@ if (hasItem null Metadata Anywhere "Any Amount") {
 */
 
 if (stat "storage" > "%stat.player/maxstorage%") {
+    title "&cFull Storage" "&7Do &c/sell&7! Upgrade with &a/storageshop&7." 0 1 1
     stat "storage" set "%stat.player/maxstorage%"
 }

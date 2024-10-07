@@ -4,6 +4,9 @@ if (stat "endmine" = 2) {
     pause 15
     tp "current_location"
     sound "Enderman Teleport" 0.7 2.0 "current_location"
+}
+
+if (stat "endmine" = 2) {
     exit
 }
 

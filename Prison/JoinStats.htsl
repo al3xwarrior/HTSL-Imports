@@ -13,6 +13,9 @@ if (stat "haste1cost" = 0) {
 if (stat "tokenmulti1cost" = 0) {
     stat "tokenmulti1cost" set 100
 }
+if (stat "e/tokenmulti" = 0) {
+    stat "e/tokenmulti" set 1
+}
 if (stat "gemfinder1cost" = 0) {
     stat "gemfinder1cost" set 100
 }
@@ -30,7 +33,4 @@ if (stat "explode1cost" = 0) {
 }
 if (stat "edupe1cost" = 0) {
     stat "edupe1cost" set 2500
-}
-if (stat "sellmulti" = 0) {
-    stat "sellmulti" set 10
 }

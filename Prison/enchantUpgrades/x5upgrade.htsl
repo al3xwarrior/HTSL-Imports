@@ -1,7 +1,7 @@
 // e1cost
 
 // Does the player have enough tokens?
-if (stat "tokens" < "%stat.player/e1cost%") {
+if (stat "tokens" < "%stat.player/e5cost%") {
     sound "Anvil Land" 0.7 1 "invokers_location"
     chat "&cSorry you don't have enough tokens."
     exit

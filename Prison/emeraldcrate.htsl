@@ -1,0 +1,91 @@
+if (hasItem "emeraldkey" metadata Hand anyAmount) {
+    
+} else {
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    chat "&cYou don't have a key!"
+    exit
+}
+
+giveItem "fillitem" true "First Slot" false
+if (hasItem "fillitem" metadata Anywhere anyAmount) {
+    removeItem "fillitem"
+} else {
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    chat "&cYour inventory is full!"
+    exit
+}
+
+removeItem "emeraldkey"
+
+sound "Click" 0.7 0.8 "invokers_location"
+title "&%random.int/1 10%&k%random.int/1 100000%" "&aOpening Emerald Crate..." 0 1 1
+pause 4
+sound "Click" 0.7 1.5 "invokers_location"
+title "&%random.int/1 10%&k%random.int/1 100000%" "&aOpening Emerald Crate..." 0 1 1
+pause 4
+sound "Click" 0.7 2.0 "invokers_location"
+title "&a&lOPENED!!" "&aOpening Emerald Crate..." 0 1 1
+
+stat "craterng" set "%random.int/1 22%"
+
+if (stat "craterng" = 1) {
+    giveItem "brown_bunny_pet" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 2) {
+    giveItem "goat_pet" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 3) {
+    giveItem "blue_axolotl_pet" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 4) {
+    giveItem "festive_jerry_pet" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 5) {
+    giveItem "beaver_pet" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 6) {
+    giveItem "shark_pet" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 7) {
+    giveItem "penguin_pet" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 8) {
+    giveItem "happy_emoji_pet" true "First Slot" false
+    exit
+}
+
+if (stat "craterng" = 9) {
+    giveItem "bedrock_pet" true "First Slot" false
+    exit
+}
+
+random {
+    giveItem "money_helmet_1.5x" true "First Slot" false
+    giveItem "money_chestplate_1.5x" true "First Slot" false
+    giveItem "money_leggings_1.5x" true "First Slot" false
+    giveItem "money_boots_1.5x" true "First Slot" false
+
+    giveItem "gem_helmet_1.5x" true "First Slot" false
+    giveItem "gem_chestplate_1.5x" true "First Slot" false
+    giveItem "gem_leggings_1.5x" true "First Slot" false
+    giveItem "gem_boots_1.5x" true "First Slot" false
+
+    giveItem "token_helmet_1.5x" true "First Slot" false
+    giveItem "token_chestplate_1.5x" true "First Slot" false
+    giveItem "token_leggings_1.5x" true "First Slot" false
+    giveItem "token_boots_1.5x" true "First Slot" false
+}

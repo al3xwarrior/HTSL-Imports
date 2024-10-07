@@ -1,0 +1,339 @@
+
+/*
+stat "i/moneymulti" set 0
+stat "i/tokenmulti" set 0
+stat "i/gemmulti" set 0
+
+if (hasItem "amethyst_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 18
+    stat "i/tokenmulti" inc 20
+    stat "i/gemmulti" inc 22
+}
+if (hasItem "gold_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 15
+    stat "i/tokenmulti" inc 15
+}
+if (hasItem "mummy_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 15
+    stat "i/tokenmulti" inc 11
+}
+if (hasItem "gray_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 13
+    stat "i/tokenmulti" inc 12
+}
+if (hasItem "amber_pet" metadata Hotbar anyAmount) { 
+    stat "i/tokenmulti" inc 25
+}
+if (hasItem "blaze_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 25
+    stat "i/tokenmulti" inc 20
+    stat "i/gemmulti" inc 15
+}
+if (hasItem "fly_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 20
+    stat "i/tokenmulti" inc 15
+}
+if (hasItem "crazy_fox_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 13
+    stat "i/tokenmulti" inc 18
+}
+if (hasItem "frog_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 12
+    stat "i/tokenmulti" inc 13
+}
+if (hasItem "ocelot_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 12
+    stat "i/tokenmulti" inc 11
+}
+if (hasItem "rat_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 15
+    stat "i/gemmulti" inc 12
+}
+if (hasItem "glow_squid_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 15
+    stat "i/tokenmulti" inc 13
+}
+if (hasItem "cat_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 12
+    stat "i/gemmulti" inc 13
+}
+if (hasItem "sheep_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 13
+    stat "i/gemmulti" inc 16
+}
+if (hasItem "dinosaur_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 22
+}
+
+function "StatsIncreaser2" false
+goto function "StatsIncreaser2"
+*/
+
+if (hasItem "capybara_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 13
+    stat "i/tokenmulti" inc 14
+}
+if (hasItem "doge_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 16
+    stat "i/tokenmulti" inc 14
+}
+if (hasItem "monkey_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 13
+    stat "i/tokenmulti" inc 12
+}
+if (hasItem "brown_bunny_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 14
+    stat "i/tokenmulti" inc 10
+}
+if (hasItem "goat_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 15
+    stat "i/tokenmulti" inc 12
+}
+if (hasItem "blue_axolotl_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 14
+    stat "i/gemmulti" inc 16
+}
+if (hasItem "festive_jerry_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 14
+    stat "i/tokenmulti" inc 12
+}
+if (hasItem "beaver_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 14
+    stat "i/tokenmulti" inc 11
+}
+if (hasItem "shark_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 19
+    stat "i/tokenmulti" inc 15
+}
+if (hasItem "penguin_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 15
+    stat "i/tokenmulti" inc 20
+}
+if (hasItem "happy_emoji_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 16
+    stat "i/tokenmulti" inc 15
+}
+if (hasItem "bedrock_pet" metadata Hotbar anyAmount) { 
+    stat "i/moneymulti" inc 15
+    stat "i/tokenmulti" inc 14
+}
+
+// Money Armor
+if (hasItem "money_boots_1.1x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 11
+}
+if (hasItem "money_boots_1.2x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 12
+}
+if (hasItem "money_boots_1.3x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 13
+}
+
+function "StatsIncreaser3" false
+goto function "StatsIncreaser3"
+
+if (hasItem "money_boots_1.4x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 14
+}
+if (hasItem "money_boots_1.5x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 15
+}
+if (hasItem "money_leggings_1.1x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 11
+}
+if (hasItem "money_leggings_1.2x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 12
+}
+if (hasItem "money_leggings_1.3x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 13
+}
+if (hasItem "money_leggings_1.4x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 14
+}
+if (hasItem "money_leggings_1.5x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 15
+}
+if (hasItem "money_chestplate_1.1x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 11
+}
+if (hasItem "money_chestplate_1.2x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 12
+}
+if (hasItem "money_chestplate_1.3x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 13
+}
+if (hasItem "money_chestplate_1.4x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 14
+}
+if (hasItem "money_chestplate_1.5x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 15
+}
+if (hasItem "money_helmet_1.1x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 11
+}
+if (hasItem "money_helmet_1.2x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 12
+}
+if (hasItem "money_helmet_1.3x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 13
+}
+
+function "StatsIncreaser4" false
+goto function "StatsIncreaser4"
+
+if (hasItem "money_helmet_1.4x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 14
+}
+if (hasItem "money_helmet_1.5x" metadata Armor anyAmount) { 
+    stat "i/moneymulti" inc 15
+}
+
+if (hasItem "token_boots_1.1x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 11
+}
+if (hasItem "token_boots_1.2x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 12
+}
+if (hasItem "token_boots_1.3x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 13
+}
+if (hasItem "token_boots_1.4x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 14
+}
+if (hasItem "token_boots_1.5x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 15
+}
+
+if (hasItem "token_leggings_1.1x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 11
+}
+if (hasItem "token_leggings_1.2x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 12
+}
+if (hasItem "token_leggings_1.3x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 13
+}
+if (hasItem "token_leggings_1.4x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 14
+}
+if (hasItem "token_leggings_1.5x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 15
+}
+
+if (hasItem "token_chestplate_1.1x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 11
+}
+if (hasItem "token_chestplate_1.2x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 12
+}
+
+function "StatsIncreaser5" false
+goto function "StatsIncreaser5"
+
+if (hasItem "token_chestplate_1.3x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 13
+}
+if (hasItem "token_chestplate_1.4x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 14
+}
+if (hasItem "token_chestplate_1.5x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 15
+}
+
+if (hasItem "token_helmet_1.1x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 11
+}
+if (hasItem "token_helmet_1.2x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 12
+}
+if (hasItem "token_helmet_1.3x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 13
+}
+if (hasItem "token_helmet_1.4x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 14
+}
+if (hasItem "token_helmet_1.5x" metadata Armor anyAmount) { 
+    stat "i/tokenmulti" inc 15
+}
+
+if (hasItem "gem_boots_1.1x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 11
+}
+if (hasItem "gem_boots_1.2x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 12
+}
+if (hasItem "gem_boots_1.3x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 13
+}
+if (hasItem "gem_boots_1.4x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 14
+}
+if (hasItem "gem_boots_1.5x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 15
+}
+
+if (hasItem "gem_leggings_1.1x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 11
+}
+if (hasItem "gem_leggings_1.2x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 12
+}
+
+function "StatsIncreaser6" false
+goto function "StatsIncreaser6"
+
+if (hasItem "gem_leggings_1.3x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 13
+}
+if (hasItem "gem_leggings_1.4x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 14
+}
+if (hasItem "gem_leggings_1.5x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 15
+}
+
+if (hasItem "gem_chestplate_1.1x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 11
+}
+if (hasItem "gem_chestplate_1.2x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 12
+}
+if (hasItem "gem_chestplate_1.3x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 13
+}
+if (hasItem "gem_chestplate_1.4x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 14
+}
+if (hasItem "gem_chestplate_1.5x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 15
+}
+
+if (hasItem "gem_helmet_1.1x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 11
+}
+if (hasItem "gem_helmet_1.2x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 12
+}
+if (hasItem "gem_helmet_1.3x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 13
+}
+if (hasItem "gem_helmet_1.4x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 14
+}
+if (hasItem "gem_helmet_1.5x" metadata Armor anyAmount) { 
+    stat "i/gemmulti" inc 15
+}
+
+if (stat "i/moneymulti" = 0) {
+    stat "i/moneymulti" set 10
+}
+if (stat "i/tokenmulti" = 0) {
+    stat "i/tokenmulti" set 10
+}
+
+function "StatsIncreaser7" false
+goto function "StatsIncreaser7"
+
+if (stat "i/gemmulti" = 0) {
+    stat "i/gemmulti" set 10
+}

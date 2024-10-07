@@ -1,0 +1,70 @@
+// zminerprog
+// zminermax
+
+if (stat "zminerprog" <= 0) {
+    exit
+} 
+
+stat "zminerprog" dec 1
+
+// get the percentage of the progress
+
+stat "zminertemp" set "%stat.player/zminerprog%"
+stat "zminertemp" mult 100
+stat "zminertemp" div "%stat.player/zminermax%"
+
+// because the percentage is decreasing, we need to correct it
+// by setting the percentage to the maximum value
+// and then decrementing it by the percentage of the progress
+stat "zminercorrection" set 100
+stat "zminercorrection" dec "%stat.player/zminertemp%"
+
+stat "zminerprocrng" set "%random.int/1 4%"
+if (stat "zminerprocrng" = 1) {
+    stat "givestorage" set "%random.int/50 300%"
+    stat "storage" inc "%stat.player/givestorage%"
+    chat "&2&lZOMBIE MINER &7Found you &6%stat.player/givestorage% storage&7!"
+    sound "Zombie Idle" 0.7 1 "invokers_location"
+}
+
+// conditionals to check the progresses by 10%'s (10, 20, 30)
+if (stat "zminercorrection" < 10) {
+    title "&0" "&2☠&6⸕&7██████████ &8(&7%stat.player/zminercorrection%%&8)" 0 3 0
+    exit
+}
+if (stat "zminercorrection" < 20) {
+    title "&0" "&a█&2☠&6⸕&7█████████ &8(&7%stat.player/zminercorrection%%&8)" 0 3 0
+    exit
+}
+if (stat "zminercorrection" < 30) {
+    title "&0" "&a██&2☠&6⸕&7████████ &8(&7%stat.player/zminercorrection%%&8)" 0 3 0
+    exit
+}
+if (stat "zminercorrection" < 40) {
+    title "&0" "&a███&2☠&6⸕&7██████ &8(&7%stat.player/zminercorrection%%&8)" 0 3 0
+    exit
+}
+if (stat "zminercorrection" < 50) {
+    title "&0" "&a████&2☠&6⸕&7█████ &8(&7%stat.player/zminercorrection%%&8)" 0 3 0
+    exit
+}
+if (stat "zminercorrection" < 60) {
+    title "&0" "&a█████&2☠&6⸕&7████ &8(&7%stat.player/zminercorrection%%&8)" 0 3 0
+    exit
+}
+if (stat "zminercorrection" < 70) {
+    title "&0" "&a██████&2☠&6⸕&7███ &8(&7%stat.player/zminercorrection%%&8)" 0 3 0
+    exit
+}
+if (stat "zminercorrection" < 80) {
+    title "&0" "&a███████&2☠&6⸕&7██ &8(&7%stat.player/zminercorrection%%&8)" 0 3 0
+    exit
+}
+if (stat "zminercorrection" < 90) {
+    title "&0" "&a████████&2☠&6⸕&7█ &8(&7%stat.player/zminercorrection%%&8)" 0 3 0
+    exit
+}
+if (stat "zminercorrection" <= 100) {
+    title "&0" "&a█████████&2☠&6⸕ &8(&7%stat.player/zminercorrection%%&8)" 0 3 0
+    exit
+}

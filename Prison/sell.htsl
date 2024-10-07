@@ -5,7 +5,7 @@ if (stat "storage" < 1) {
 }
 
 stat "togive" set "%stat.player/storage%"
-stat "togive" mult "%stat.player/sellmulti%"
+stat "togive" mult "%stat.player/i/moneymulti%"
 stat "togive" div 10
 
 stat "money" inc "%stat.player/togive%"

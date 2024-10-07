@@ -42,6 +42,6 @@ if (stat "toenchant" = 9) {
 
 stat "currentlevel" inc "%stat.player/amountoupgrade%"
 
-if (stat "currentlevel" <= "%stat.player/maxlevel%") {
+if (stat "currentlevel" < "%stat.player/maxlevel%") {
     stat "canupgrade" set 1
 }

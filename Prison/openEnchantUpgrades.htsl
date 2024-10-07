@@ -7,8 +7,8 @@
 // function openEnchantUpgrades
 
 stat "e1cost" set "%stat.player/enchantcost%"
-stat "e2cost" set "%stat.player/enchantcost%"
-stat "e2cost" mult 5
-stat "e3cost" set "%stat.player/enchantcost%"
-stat "e3cost" mult 10
+stat "e5cost" set "%stat.player/enchantcost%"
+stat "e5cost" mult 5
+stat "e10cost" set "%stat.player/enchantcost%"
+stat "e10cost" mult 10
 displayMenu "Enchant Upgrade"

@@ -1,0 +1,60 @@
+removeItem "pickaxe_e0"
+removeItem "pickaxe_e1"
+removeItem "pickaxe_e2"
+removeItem "pickaxe_e3"
+removeItem "pickaxe_e4"
+if () {
+removeItem "pickaxe_e5"
+removeItem "pickaxe_e6"
+removeItem "pickaxe_e7"
+removeItem "pickaxe_e8"
+removeItem "pickaxe_e9"
+}
+if () {
+removeItem "pickaxe_e10"
+}
+
+if (stat "e/efficiency" = 0) {
+    giveItem "pickaxe_e0" false "0" false
+    exit
+}
+if (stat "e/efficiency" = 1) {
+    giveItem "pickaxe_e1" false "0" false
+    exit
+}
+if (stat "e/efficiency" = 2) {
+    giveItem "pickaxe_e2" false "0" false
+    exit
+}
+if (stat "e/efficiency" = 3) {
+    giveItem "pickaxe_e3" false "0" false
+    exit
+}
+if (stat "e/efficiency" = 4) {
+    giveItem "pickaxe_e4" false "0" false
+    exit
+}
+if (stat "e/efficiency" = 5) {
+    giveItem "pickaxe_e5" false "0" false
+    exit
+}
+if (stat "e/efficiency" = 6) {
+    giveItem "pickaxe_e6" false "0" false
+    exit
+}
+if (stat "e/efficiency" = 7) {
+    giveItem "pickaxe_e7" false "0" false
+    exit
+}
+if (stat "e/efficiency" = 8) {
+    giveItem "pickaxe_e8" false "0" false
+    exit
+}
+if (stat "e/efficiency" = 9) {
+    giveItem "pickaxe_e9" false "0" false
+    exit
+}
+if (stat "e/efficiency" >= 10) {
+    giveItem "pickaxe_e10" false "0" false
+    exit
+}

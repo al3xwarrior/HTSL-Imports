@@ -1,7 +1,6 @@
 if (stat "toenchant" = 1) {
-    stat "efficiency1cost" mult 12
+    stat "efficiency1cost" mult 20
     stat "efficiency1cost" div 10
-    stat "e/efficiency" inc 1
     exit
 }
 if (stat "toenchant" = 2) {
@@ -9,17 +8,17 @@ if (stat "toenchant" = 2) {
     exit
 }
 if (stat "toenchant" = 3) {
-    stat "tokenmulti1cost" mult 13
+    stat "tokenmulti1cost" mult 15
     stat "tokenmulti1cost" div 10
     exit
 }
 if (stat "toenchant" = 4) {
-    stat "gemfinder1cost" mult 13
+    stat "gemfinder1cost" mult 18
     stat "gemfinder1cost" div 10
     exit
 }
 if (stat "toenchant" = 5) {
-    stat "keyfinder1cost" mult 18
+    stat "keyfinder1cost" mult 20
     stat "keyfinder1cost" div 10
     exit
 }

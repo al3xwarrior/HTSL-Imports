@@ -1,0 +1,8 @@
+stat "copypasterng" set "%random.int/1 2000%"
+stat "copypasterng" inc "%stat.player/e/cap%"
+
+if (stat "copypasterng" >= 2000) {
+    stat "givestorage" set "%random.int/40 101%"
+    stat "storage" inc "%stat.player/givestorage%"
+    chat "&9&lCOPY AND PASTE &7Your were given &6%stat.player/givestorage%!"
+}

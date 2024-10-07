@@ -1,0 +1,11 @@
+if (hasGroup "Co-Owner" true) {
+    exit
+}
+
+if or (inRegion "snowmineregion", inRegion "minemineregion", inRegion "nethermineregion", inRegion "endmineregion", inRegion "forestmineregion") {
+    changePlayerGroup "Mining" false
+    gamemode "Survival"
+} else {
+    changePlayerGroup "Default" false
+    gamemode "Adventure"
+}
