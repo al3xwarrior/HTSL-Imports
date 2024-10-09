@@ -1,5 +1,5 @@
 // tokens (tokenmulti)
-if (placeholder "%random.int/1 4%" >= 3) {
+if (placeholder "%random.int/1 5%" = 4) {
     stat "givetokens" set "%random.int/2 6%"
     stat "givetokens" mult "%stat.player/e/tokenmulti%"
     stat "givetokens" mult "%stat.player/i/tokenmulti%"
@@ -9,10 +9,10 @@ if (placeholder "%random.int/1 4%" >= 3) {
 }
 
 // gems (gemfinder)
-stat "gemrng" set "%random.int/1 100%"
+stat "gemrng" set "%random.int/1 400%"
 stat "gemrng" inc "%stat.player/e/gemfinder%"
-if (stat "gemrng" >= 100) {
-    stat "givegems" set "%random.int/1 4%"
+if (stat "gemrng" >= 400) {
+    stat "givegems" set "%random.int/1 5%"
     stat "givegems" mult "%stat.player/i/gemmulti%"
     stat "givegems" div 10
     stat "gems" inc "%stat.player/givegems%"

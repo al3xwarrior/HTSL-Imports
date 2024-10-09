@@ -1,0 +1,74 @@
+sound "Orb Pickup" 0.7 1.1 "invokers_location"
+pause 2
+sound "Orb Pickup" 0.7 1.3 "invokers_location"
+pause 2
+sound "Orb Pickup" 0.7 1.8 "invokers_location"
+
+// 1-3 = common money lucky block
+// 4-5 = rare money lucky block
+// 6 = legendary money lucky block
+
+// 7-9 = common money lucky block
+// 10-11 = rare money lucky block
+// 12 = legendary money lucky block
+
+// 13 = 1 redstone key
+// 14 = 1 diamond key
+// 15 = 1 emerald key
+
+stat "luckblockrng" set "%random.int/1 16%"
+if (stat "luckblockrng" >= 1, stat "luckblockrng" <= 3) {
+    stat "togive" set "%random.int/50 351%"
+    stat "money" inc "%stat.player/togive%"
+    chat "&e&lLUCKYBLOCK &7You found &a$%stat.player/togive%&7! &8(&7COMMON&8)"
+    exit
+}
+if (stat "luckblockrng" >= 4, stat "luckblockrng" <= 5) {
+    stat "togive" set "%random.int/350 1001%"
+    stat "money" inc "%stat.player/togive%"
+    chat "&e&lLUCKYBLOCK &7You found &a$%stat.player/togive%&7! &8(&9RARE&8)"
+    exit
+}
+if (stat "luckblockrng" = 6) {
+    stat "togive" set "%random.int/1000 5001%"
+    stat "money" inc "%stat.player/togive%"
+    chat "&e&lLUCKYBLOCK &7You found &a$%stat.player/togive%&7! &8(&6LEGENDARY&8)"
+    exit
+}
+
+if (stat "luckblockrng" >= 7, stat "luckblockrng" <= 9) {
+    stat "givetokens" set "%random.int/10 51%"
+    stat "tokens" inc "%stat.player/givetokens%"
+    chat "&e&lLUCKYBLOCK &7You found &e%stat.player/givetokens%☀ &8(&7COMMON&8)"
+    exit
+}
+if (stat "luckblockrng" >= 10, stat "luckblockrng" <= 11) {
+    stat "givetokens" set "%random.int/50 101%"
+    stat "tokens" inc "%stat.player/givetokens%"
+    chat "&e&lLUCKYBLOCK &7You found &e%stat.player/givetokens%☀ &8(&9RARE&8)"
+    exit
+}
+if (stat "luckblockrng" = 12) {
+    stat "givetokens" set "%random.int/100 201%"
+    stat "tokens" inc "%stat.player/givetokens%"
+    chat "&e&lLUCKYBLOCK &7You found &e%stat.player/givetokens%☀ &8(&6LEGENDARY&8)"
+    exit
+}
+
+if (stat "luckblockrng" = 13) {
+    giveItem "redstonekey" true "First Slot" false
+    chat "&e&lLUCKBLOCK &7You found a &4Redstone Key&7! &8(&7COMMON&8)"
+    exit
+}
+if (stat "luckblockrng" = 14) {
+    giveItem "diamondkey" true "First Slot" false
+    chat "&e&lLUCKBLOCK &7You found a &bDiamond Key&7! &8(&9RARE&8)"
+    exit
+}
+if (stat "luckblockrng" = 15) {
+    giveItem "emeraldkey" true "First Slot" false
+    chat "&e&lLUCKBLOCK &7You found a &2Emerald Key&7! &8(&6LEGENDARY&8)"
+    exit
+}
+
+stat "luckblockrng" set 0
