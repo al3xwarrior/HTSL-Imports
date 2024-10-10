@@ -1,0 +1,85 @@
+if (stat "pt/reward1time" > 1) {
+    stat "pt/reward1time" dec 1
+}
+if (stat "pt/reward2time" > 1) {
+    stat "pt/reward2time" dec 1
+}
+if (stat "pt/reward3time" > 1) {
+    stat "pt/reward3time" dec 1
+}
+if (stat "pt/reward4time" > 1) {
+    stat "pt/reward4time" dec 1
+}
+if (stat "pt/reward5time" > 1) {
+    stat "pt/reward5time" dec 1
+}
+if (stat "pt/reward6time" > 1) {
+    stat "pt/reward6time" dec 1
+}
+if (stat "pt/reward7time" > 1) {
+    stat "pt/reward7time" dec 1
+}
+
+if (stat "pt/reward1time" = 1) {
+    stat "pt/reward1time" set 0
+    chat "&7&m----------------------------------------"
+    chat "&5&lPLAYTIME REWARD #1 &8(&7&o/playtime to claim!&8)"
+    chat "&8- &e100 Tokens"
+    chat "&7&m----------------------------------------"
+}
+if (stat "pt/reward2time" = 1) {
+    stat "pt/reward2time" set 0
+    chat "&7&m----------------------------------------"
+    chat "&5&lPLAYTIME REWARD #2 &8(&7&o/playtime to claim!&8)"
+    chat "&8- &e250 Tokens"
+    chat "&8- &a$1,000 Money"
+    chat "&7&m----------------------------------------"
+}
+if (stat "pt/reward3time" = 1) {
+    stat "pt/reward3time" set 0
+    chat "&7&m----------------------------------------"
+    chat "&5&lPLAYTIME REWARD #3 &8(&7&o/playtime to claim!&8)"
+    chat "&8- &e500 Tokens"
+    chat "&8- &a$2,500 Money"
+    chat "&8- &4x1 Redstone Key"
+    chat "&7&m----------------------------------------"
+}
+if (stat "pt/reward4time" = 1) {
+    stat "pt/reward4time" set 0
+    chat "&7&m----------------------------------------"
+    chat "&5&lPLAYTIME REWARD #4 &8(&7&o/playtime to claim!&8)"
+    chat "&8- &e1,000 Tokens"
+    chat "&8- &a$5,000 Money"
+    chat "&8- &bx1 Diamond Key"
+    chat "&7&m----------------------------------------"
+}
+if (stat "pt/reward5time" = 1) {
+    stat "pt/reward5time" set 0
+    chat "&7&m----------------------------------------"
+    chat "&5&lPLAYTIME REWARD #5 &8(&7&o/playtime to claim!&8)"
+    chat "&8- &e1,000 Tokens"
+    chat "&8- &a$5,000 Money"
+    chat "&8- &ax1 Emerald Key"
+    chat "&7&m----------------------------------------"
+}
+if (stat "pt/reward6time" = 1) {
+    stat "pt/reward6time" set 0
+    chat "&7&m----------------------------------------"
+    chat "&5&lPLAYTIME REWARD #6 &8(&7&o/playtime to claim!&8)"
+    chat "&8- &e1,000 Tokens"
+    chat "&8- &a$5,000 Money"
+    chat "&8- &4x3 Redstone Keys"
+    chat "&8- &bx2 Diamond Keys"
+    chat "&7&m----------------------------------------"
+}
+if (stat "pt/reward7time" = 1) {
+    stat "pt/reward7time" set 0
+    chat "&7&m----------------------------------------"
+    chat "&5&lPLAYTIME REWARD #7 &8(&7&o/playtime to claim!&8)"
+    chat "&8- &e2,000 Tokens"
+    chat "&8- &a$10,000 Money"
+    chat "&8- &4x3 Redstone Keys"
+    chat "&8- &bx2 Diamond Key"
+    chat "&8- &ax1 Emerald Key"
+    chat "&7&m----------------------------------------"
+}
