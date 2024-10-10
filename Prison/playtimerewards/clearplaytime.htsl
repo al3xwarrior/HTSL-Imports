@@ -1,0 +1,7 @@
+stat "pt/reward1time" set 3
+stat "pt/reward2time" set 7
+stat "pt/reward3time" set 14
+stat "pt/reward4time" set 25
+stat "pt/reward5time" set 50
+stat "pt/reward6time" set 90
+stat "pt/reward7time" set 120
