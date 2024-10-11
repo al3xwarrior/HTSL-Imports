@@ -35,7 +35,8 @@ chat "&8- &bx2 Diamond Key"
 chat "&8- &ax1 Emerald Key"
 */
 
-if (stat "pt/reward1time" = 0) {
+if (stat "pt/reward3time" = 0) {
+    stat "pt/reward3time" set -1
     sound "Level Up" 0.7 1.2 "invokers_location"
     stat "tokens" inc 500
     stat "money" inc 2500
@@ -45,5 +46,5 @@ if (stat "pt/reward1time" = 0) {
     chat "&eYou gained &4x1 Redstone Key"
 } else {
     sound "Anvil Land" 0.7 1.0 "invokers_location"
-    chat "&cSorry but you need to wait %stat.player/pt/reward1time% minutes before claiming!"
+    chat "&cSorry but you need to wait %stat.player/pt/reward3time% minutes before claiming!"
 }

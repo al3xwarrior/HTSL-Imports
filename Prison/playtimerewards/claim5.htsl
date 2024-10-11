@@ -1,0 +1,50 @@
+/*
+chat "&5&lPLAYTIME REWARD #1 &8(&7&o/playtime to claim!&8)"
+chat "&8- &e100 Tokens"
+
+chat "&5&lPLAYTIME REWARD #2 &8(&7&o/playtime to claim!&8)"
+chat "&8- &e250 Tokens"
+chat "&8- &a$1,000 Money"
+
+chat "&5&lPLAYTIME REWARD #3 &8(&7&o/playtime to claim!&8)"
+chat "&8- &e500 Tokens"
+chat "&8- &a$2,500 Money"
+chat "&8- &4x1 Redstone Key"
+
+chat "&5&lPLAYTIME REWARD #4 &8(&7&o/playtime to claim!&8)"
+chat "&8- &e1,000 Tokens"
+chat "&8- &a$5,000 Money"
+chat "&8- &bx1 Diamond Key"
+
+chat "&5&lPLAYTIME REWARD #5 &8(&7&o/playtime to claim!&8)"
+chat "&8- &e1,000 Tokens"
+chat "&8- &a$5,000 Money"
+chat "&8- &ax1 Emerald Key"
+
+chat "&5&lPLAYTIME REWARD #6 &8(&7&o/playtime to claim!&8)"
+chat "&8- &e1,000 Tokens"
+chat "&8- &a$5,000 Money"
+chat "&8- &4x3 Redstone Keys"
+chat "&8- &bx2 Diamond Keys"
+
+chat "&5&lPLAYTIME REWARD #7 &8(&7&o/playtime to claim!&8)"
+chat "&8- &e2,000 Tokens"
+chat "&8- &a$10,000 Money"
+chat "&8- &4x3 Redstone Keys"
+chat "&8- &bx2 Diamond Key"
+chat "&8- &ax1 Emerald Key"
+*/
+
+if (stat "pt/reward5time" = 0) {
+    stat "pt/reward5time" set -1
+    sound "Level Up" 0.7 1.2 "invokers_location"
+    stat "tokens" inc 1000
+    stat "money" inc 5000
+    giveItem "emeraldkey" true "First Slot" false
+    chat "&eYou gained 1,000 Tokens"
+    chat "&eYou gained &a$5,000"
+    chat "&eYou gained &a1x Emerald Key"
+} else {
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    chat "&cSorry but you need to wait %stat.player/pt/reward5time% minutes before claiming!"
+}

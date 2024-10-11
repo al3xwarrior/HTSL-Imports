@@ -1,0 +1,13 @@
+pause 1
+if (globalstat "pvpgems" > 0) {
+    stat "gems" inc "%stat.global/pvpgems%"
+    chat "&aYou killed a player and got 10% of their gems! &7(&c%stat.global/pvpgems% gems&7)"
+} else {
+    chat "&aYou killed a player, but they had no gems to steal!"
+}
+
+sound "Note Pling" 0.7 1 "invokers_location"
+pause 2
+sound "Note Pling" 0.7 1.2 "invokers_location"
+pause 2
+sound "Note Pling" 0.7 1.4 "invokers_location"

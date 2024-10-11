@@ -36,6 +36,7 @@ chat "&8- &ax1 Emerald Key"
 */
 
 if (stat "pt/reward1time" = 0) {
+    stat "pt/reward1time" set -1
     sound "Level Up" 0.7 1.2 "invokers_location"
     stat "tokens" inc 100
     chat "&eYou gained 100 Tokens"

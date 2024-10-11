@@ -1,3 +1,6 @@
+
+
+/*
 if (gamemode Creative) {
     exit
 }
@@ -169,6 +172,7 @@ if (hasItem "4ironblock" Metadata Anywhere "Any Amount") {
 
 function "brokenpickupevent2" false
 goto function "brokenpickupevent2"
+*/
 
 if (hasItem "ironblock" Metadata Anywhere "Any Amount") {
     removeItem "ironblock"
@@ -269,7 +273,15 @@ if (hasItem "goldblock" Metadata Anywhere "Any Amount") {
     sound "Wood Click" 1.0 2.0 "invokers_location"
 }
 
+if (stat "storage" > "%stat.player/maxstorage%", hasItem "autosell_jerry_pet" metadata Hotbar anyAmount) {
+    function "sell" false
+    sound "Villager Yes" 0.7 1 "invokers_location"
+    chat "&6&lAUTOSELL JERRY &7Sold all your storage!"
+    exit
+}
+
 if (stat "storage" > "%stat.player/maxstorage%") {
     title "&cFull Storage" "&7Do &c/sell&7! Upgrade with &a/storageshop&7." 0 1 1
     stat "storage" set "%stat.player/maxstorage%"
+    exit
 }

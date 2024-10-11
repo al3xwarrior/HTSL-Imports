@@ -1,0 +1,11 @@
+globalstat "pvpgems" set "%stat.player/gems%"
+globalstat "pvpgems" div 10
+stat "storage" set 0
+stat "gems" dec "%stat.global/pvpgems%"
+chat "&cYou died and lost all your storage and 10% of your gems! :("
+
+sound "Note Pling" 0.7 1 "invokers_location"
+pause 2
+sound "Note Pling" 0.7 0.8 "invokers_location"
+pause 4
+sound "Note Pling" 0.7 0.6 "invokers_location"
