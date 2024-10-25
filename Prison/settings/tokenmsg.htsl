@@ -1,0 +1,10 @@
+if (stat "s/tokenmsg" = 2) {
+    stat "s/tokenmsg" set 4
+    chat "&eToken messages are now &cdisabled&e."
+} else {
+    stat "s/tokenmsg" set 2
+    chat "&eToken messages are now &aenabled&e."
+}
+
+sound "Orb Pickup" 0.7 1 "invokers_location"
+displayMenu "Settings"

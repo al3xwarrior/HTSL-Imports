@@ -1,0 +1,16 @@
+if (hasItem null metadata Hand anyAmount, placeholder "%random.int/1 71%" = 70) {
+    function "Wool Clusters Give" false
+    exit
+}
+if (hasItem null metadata Hand anyAmount, placeholder "%random.int/1 81%" = 80) {
+    function "Wool Clusters Give" false
+    exit
+}
+if (hasItem null metadata Hand anyAmount, placeholder "%random.int/1 91%" = 90) {
+    function "Wool Clusters Give" false
+    exit
+}
+if (placeholder "%random.int/1 101%" = 100) {
+    function "Wool Clusters Give" false
+    exit
+}

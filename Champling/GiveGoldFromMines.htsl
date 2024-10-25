@@ -1,0 +1,50 @@
+
+stat "toGive" set 0
+
+if (inRegion "White Wool Mine") {
+    stat "toGive" inc 1
+}
+if (inRegion "Yellow Wool Mine") {
+    stat "toGive" inc 3
+}
+if (inRegion "Lime Wool Mine") {
+    stat "toGive" inc 5
+}
+if (inRegion "Light Blue Wool Mine") {
+    stat "toGive" inc 10
+}
+
+stat "mathforgivegold" set "%stat.player/toGive%"
+// Gold Rush 1
+if (hasItem null metadata Hand anyAmount) {
+    stat "mathforgivegold" mult 5
+    stat "mathforgivegold" div 100
+}
+
+// Gold Rush 2
+if (hasItem null metadata Hand anyAmount) {
+    stat "mathforgivegold" mult 10
+    stat "mathforgivegold" div 100
+}
+
+// Gold Rush 3
+if (hasItem null metadata Hand anyAmount) {
+    stat "mathforgivegold" mult 15
+    stat "mathforgivegold" div 100
+}
+
+// Gold Rush 4
+if (hasItem null metadata Hand anyAmount) {
+    stat "mathforgivegold" mult 25
+    stat "mathforgivegold" div 100
+}
+
+if or (stat "mathforgivegold" = "%stat.player/toGive%", stat "mathforgivegold" = 0) {
+    
+} else {
+    stat "toGive" inc "%stat.player/mathforgivegold%"
+}
+
+stat "Gold" inc "%stat.player/toGive%"
+
+actionBar "YOU JUST EARNED %stat.player/toGive% GOLD! bald bald bald"

@@ -1,0 +1,99 @@
+if (stat "toenchant" = 1) {
+    stat "e10cost" mult 20
+    exit
+}
+if (stat "toenchant" = 2) {
+    stat "e10cost" mult 20
+    exit
+}
+if (stat "toenchant" = 3) {
+    stat "e10cost" mult 15
+    stat "e10cost" div 10
+    stat "e10cost" mult 15
+    stat "e10cost" div 10
+    stat "e10cost" mult 15
+    stat "e10cost" div 10
+    stat "e10cost" mult 15
+    stat "e10cost" div 10
+    stat "e10cost" mult 15
+    stat "e10cost" div 10
+}
+if (stat "toenchant" = 3) {
+    stat "e10cost" mult 15
+    stat "e10cost" div 10
+    stat "e10cost" mult 15
+    stat "e10cost" div 10
+    stat "e10cost" mult 15
+    stat "e10cost" div 10
+    stat "e10cost" mult 15
+    stat "e10cost" div 10
+    stat "e10cost" mult 15
+    stat "e10cost" div 10
+    exit
+}
+if (stat "toenchant" = 4) {
+    stat "e10cost" mult 18
+    stat "e10cost" div 10
+    stat "e10cost" mult 18
+    stat "e10cost" div 10
+    stat "e10cost" mult 18
+    stat "e10cost" div 10
+    stat "e10cost" mult 18
+    stat "e10cost" div 10
+    stat "e10cost" mult 18
+    stat "e10cost" div 10
+}
+if (stat "toenchant" = 4) {
+    stat "e10cost" mult 18
+    stat "e10cost" div 10
+    stat "e10cost" mult 18
+    stat "e10cost" div 10
+    stat "e10cost" mult 18
+    stat "e10cost" div 10
+    stat "e10cost" mult 18
+    stat "e10cost" div 10
+    stat "e10cost" mult 18
+    stat "e10cost" div 10
+    exit
+}
+if (stat "toenchant" = 5) {
+    stat "e10cost" mult 20
+    exit
+}
+if (stat "toenchant" = 6) {
+    stat "e10cost" mult 20
+    exit
+}
+if (stat "toenchant" = 7) {
+    stat "e10cost" mult 20
+    exit
+}
+if (stat "toenchant" = 8) {
+    stat "e10cost" mult 25
+    stat "e10cost" div 10
+    stat "e10cost" mult 25
+    stat "e10cost" div 10
+    stat "e10cost" mult 25
+    stat "e10cost" div 10
+    stat "e10cost" mult 25
+    stat "e10cost" div 10
+    stat "e10cost" mult 25
+    stat "e10cost" div 10
+}
+if (stat "toenchant" = 8) {
+    stat "e10cost" mult 25
+    stat "e10cost" div 10
+    stat "e10cost" mult 25
+    stat "e10cost" div 10
+    stat "e10cost" mult 25
+    stat "e10cost" div 10
+    stat "e10cost" mult 25
+    stat "e10cost" div 10
+    stat "e10cost" mult 25
+    stat "e10cost" div 10
+    exit
+}
+if (stat "toenchant" = 9) {
+    stat "e10cost" mult 30
+    exit
+}

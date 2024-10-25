@@ -4,8 +4,12 @@ if (stat "storage" < 1) {
     exit
 }
 
+stat "rebirthmulti" set "%stat.player/rebirths%"
+stat "rebirthmulti" inc 1
+
 stat "togive" set "%stat.player/storage%"
 stat "togive" mult "%stat.player/i/moneymulti%"
+stat "togive" mult "%stat.player/rebirthmulti%"
 stat "togive" div 10
 
 stat "money" inc "%stat.player/togive%"

@@ -8,7 +8,7 @@
 
 stat "e1cost" set "%stat.player/enchantcost%"
 stat "e5cost" set "%stat.player/enchantcost%"
-stat "e5cost" mult 5
+function "calcx5cost" false
 stat "e10cost" set "%stat.player/enchantcost%"
-stat "e10cost" mult 10
+function "calcx10cost" false
 displayMenu "Enchant Upgrade"

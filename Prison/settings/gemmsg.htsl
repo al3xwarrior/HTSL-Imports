@@ -1,0 +1,10 @@
+if (stat "s/gemmsg" = 2) {
+    stat "s/gemmsg" set 4
+    chat "&eGem messages are now &cdisabled&e."
+} else {
+    stat "s/gemmsg" set 2
+    chat "&eGem messages are now &aenabled&e."
+}
+
+sound "Orb Pickup" 0.7 1 "invokers_location"
+displayMenu "Settings"

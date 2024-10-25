@@ -1,0 +1,13 @@
+// goldpersecond
+
+if (stat "Gold" >= "%stat.player/whitewoolc%") {
+    stat "Gold" dec "%stat.player/whitewoolc%"
+    stat "whitegoldps" inc 1
+    stat "goldpersecond" inc 1
+    stat "whitewoolc" inc 50
+    chat "&a✔ Upgraded!"
+    sound "Orb Pickup" 0.7 1.0 "invokers_location"
+} else {
+    chat "&c✖ You cannot afford this!"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+}

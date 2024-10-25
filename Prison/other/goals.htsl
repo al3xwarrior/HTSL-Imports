@@ -1,0 +1,11 @@
+if (globalstat "cookiegoal" <= "%house.cookies%") {
+    globalstat "cookiegoal" inc 30
+    globalstat "cookiegoals" inc 1
+    function "cookiegoal" true
+}
+
+if (globalstat "blocksgoal" >= 100000) {
+    globalstat "blocksgoal" set 0
+    globalstat "blockgoals" inc 1
+    function "blockgoal" true
+}

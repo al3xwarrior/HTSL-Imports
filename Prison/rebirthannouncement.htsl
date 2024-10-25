@@ -1,0 +1,4 @@
+sound "Enderdragon Growl" 0.7 1 "invokers_location"
+chat "&8&m--------------------------------------"
+chat "&7Player#%stat.global/broadcastid% just &c&lR&6&lE&e&lB&a&lI&b&lR&d&lT&c&lH&6&lE&e&lD&7 to &f#%stat.global/broadcastid%&7!"
+chat "&8&m--------------------------------------"

@@ -1,0 +1,32 @@
+if (stat "selling" = 1) {
+    chat "&cYou are already selling!"
+    exit
+}
+
+if (inRegion "pvpmineregion") {
+    function "sell"
+    exit
+}
+
+stat "selling" set 1
+chat "&eYou will sell in 3 seconds, don't move!"
+sound "Orb Pickup" 0.7 1 "invokers_location"
+pause 20
+if (stat "selling" = 0) {
+    exit
+}
+chat "&eYou will sell in 2 seconds, don't move!"
+sound "Orb Pickup" 0.7 1.2 "invokers_location"
+pause 20
+if (stat "selling" = 0) {
+    exit
+}
+chat "&eYou will sell in 1 seconds, don't move!"
+sound "Orb Pickup" 0.7 1.4 "invokers_location"
+pause 20
+if (stat "selling" = 0) {
+    exit
+}
+function "sell"
+stat "selling" set 0
+

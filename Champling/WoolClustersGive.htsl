@@ -1,0 +1,17 @@
+function "Wool Cluster Jingle" false
+if (inRegion "White Wool Mine") {
+    giveItem null true "First Available Slot" false
+    chat "&b&lRARE DROP! &a+1 White Wool Cluster"
+}
+if (inRegion "Yellow Wool Mine") {
+    giveItem null true "First Available Slot" false
+    chat "&b&lRARE DROP! &a+1 Yellow Wool Cluster"
+}
+if (inRegion "Lime Wool Mine") {
+    giveItem null true "First Available Slot" false
+    chat "&b&lRARE DROP! &a+1 Lime Wool Cluster"
+}
+if (inRegion "Light Blue Wool Mine") {
+    giveItem null true "First Available Slot" false
+    chat "&b&lRARE DROP! &a+1 Light Blue Wool Cluster"
+}

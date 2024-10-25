@@ -1,0 +1,44 @@
+if (stat "rebirths" = 1) {
+    setTeam "R1"
+    exit
+}
+if (stat "rebirths" = 2) {
+    setTeam "R2"
+    exit
+}
+if (stat "rebirths" = 3) {
+    setTeam "R3"
+    exit
+}
+if (stat "rebirths" = 4) {
+    setTeam "R4"
+    exit
+}
+if (stat "rebirths" = 5) {
+    setTeam "R5"
+    exit
+}
+if (stat "rebirths" = 10) {
+    setTeam "R10"
+    exit
+}
+if (stat "rebirths" = 15) {
+    setTeam "R15"
+    exit
+}
+if (stat "rebirths" = 20) {
+    setTeam "R20"
+    exit
+}
+if (stat "rebirths" = 30) {
+    setTeam "R30"
+    exit
+}
+if (stat "rebirths" = 40) {
+    setTeam "R40"
+    exit
+}
+if (stat "rebirths" = 50) {
+    setTeam "R50"
+    exit
+}

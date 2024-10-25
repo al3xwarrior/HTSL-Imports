@@ -18,7 +18,7 @@ sound "Orb Pickup" 0.7 1.8 "invokers_location"
 
 stat "luckblockrng" set "%random.int/1 16%"
 if (stat "luckblockrng" >= 1, stat "luckblockrng" <= 3) {
-    stat "togive" set "%random.int/50 351%"
+    stat "togive" set "%random.int/100 1001%"
     stat "money" inc "%stat.player/togive%"
     chat "&e&lLUCKYBLOCK &7You found &a$%stat.player/togive%&7! &8(&7COMMON&8)"
     exit
@@ -30,26 +30,26 @@ if (stat "luckblockrng" >= 4, stat "luckblockrng" <= 5) {
     exit
 }
 if (stat "luckblockrng" = 6) {
-    stat "togive" set "%random.int/1000 5001%"
+    stat "togive" set "%random.int/1500 6001%"
     stat "money" inc "%stat.player/togive%"
     chat "&e&lLUCKYBLOCK &7You found &a$%stat.player/togive%&7! &8(&6LEGENDARY&8)"
     exit
 }
 
 if (stat "luckblockrng" >= 7, stat "luckblockrng" <= 9) {
-    stat "givetokens" set "%random.int/10 51%"
+    stat "givetokens" set "%random.int/50 150%"
     stat "tokens" inc "%stat.player/givetokens%"
     chat "&e&lLUCKYBLOCK &7You found &e%stat.player/givetokens%☀ &8(&7COMMON&8)"
     exit
 }
 if (stat "luckblockrng" >= 10, stat "luckblockrng" <= 11) {
-    stat "givetokens" set "%random.int/50 101%"
+    stat "givetokens" set "%random.int/150 250%"
     stat "tokens" inc "%stat.player/givetokens%"
     chat "&e&lLUCKYBLOCK &7You found &e%stat.player/givetokens%☀ &8(&9RARE&8)"
     exit
 }
 if (stat "luckblockrng" = 12) {
-    stat "givetokens" set "%random.int/100 201%"
+    stat "givetokens" set "%random.int/300 400%"
     stat "tokens" inc "%stat.player/givetokens%"
     chat "&e&lLUCKYBLOCK &7You found &e%stat.player/givetokens%☀ &8(&6LEGENDARY&8)"
     exit

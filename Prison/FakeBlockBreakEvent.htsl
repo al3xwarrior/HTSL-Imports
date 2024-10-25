@@ -1,10 +1,18 @@
+stat "rebirthmulti" set "%stat.player/rebirths%"
+stat "rebirthmulti" inc 1
+
 // tokens (tokenmulti)
-if (placeholder "%random.int/1 5%" = 4) {
+stat "tokenrng" set "%random.int/1 5%"
+if (stat "tokenrng" = 4) {
     stat "givetokens" set "%random.int/2 6%"
     stat "givetokens" mult "%stat.player/e/tokenmulti%"
     stat "givetokens" mult "%stat.player/i/tokenmulti%"
     stat "givetokens" div 10
+    stat "givetokens" mult "%stat.player/rebirthmulti%"
     stat "tokens" inc "%stat.player/givetokens%"
+    chat "&e&lTOKENS &7You found &e%stat.player/givetokens%☀ &8(x%stat.player/e/tokenmulti%)"
+}
+if (stat "tokenrng" = 4, stat "s/tokenmsg" = 2) {
     chat "&e&lTOKENS &7You found &e%stat.player/givetokens%☀ &8(x%stat.player/e/tokenmulti%)"
 }
 
@@ -15,7 +23,10 @@ if (stat "gemrng" >= 400) {
     stat "givegems" set "%random.int/1 5%"
     stat "givegems" mult "%stat.player/i/gemmulti%"
     stat "givegems" div 10
+    stat "givegems" mult "%stat.player/rebirthmulti%"
     stat "gems" inc "%stat.player/givegems%"
+}
+if (stat "gemrng" >= 400, stat "s/gemmsg" = 2) {
     chat "&c&lGEMS &7You found &c%stat.player/givegems%♦"
 }
 
@@ -39,6 +50,9 @@ if (stat "zminerrng" >= 500, stat "zminerprog" <= 0) {
 // copy and paste (e/cap)
 function "copyandpaste" true
 
+function "FakeBlockBreakEvent2"
+goto function "FakeBlockBreakEvent2"
+
 // explode (e/explosive)
 stat "exploderng" set "%random.int/1 500%"
 stat "exploderng" inc "%stat.player/e/explosive%"
@@ -54,5 +68,5 @@ stat "eduperng" inc "%stat.player/edupe%"
 if (stat "eduperng" >= 300) {
     pause 4
     function "FakeBlockBreakEvent"
-    chat "&5&lENCHANT DUPER &7Has triggered!"
+    chat "&5&lENCHANT DUPER &7Has triggered! All enchants had a chance of triggering again!"
 }

@@ -103,7 +103,7 @@ if (hasItem "gold" Metadata Anywhere "Any Amount") {
 if (hasItem "4diamond" Metadata Anywhere "Any Amount") {
     removeItem "4diamond"
     function "FakeBlockBreakEvent" false
-    stat "storage" inc 88
+    stat "storage" inc 120
     stat "minedblocks" inc 4
     globalstat "minedblocks" inc 4
     globalstat "blocksgoal" inc 4
@@ -114,7 +114,7 @@ if (hasItem "4diamond" Metadata Anywhere "Any Amount") {
 if (hasItem "diamond" Metadata Anywhere "Any Amount") {
     removeItem "diamond"
     function "FakeBlockBreakEvent" false
-    stat "storage" inc 22
+    stat "storage" inc 30
     stat "minedblocks" inc 1
     globalstat "minedblocks" inc 1
     globalstat "blocksgoal" inc 1

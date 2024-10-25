@@ -1,0 +1,23 @@
+
+stat "tm/add" set "%stat.player/tm/increase%"
+stat "mm/add" set "%stat.player/mm/increase%"
+
+if (inRegion "robots") {
+    stat "tm/add" mult 4
+    stat "mm/add" mult 4
+}
+
+if (stat "tm/toclaim" < "%stat.player/tm/max%") {
+    stat "tm/toclaim" inc "%stat.player/tm/add%"
+}
+if (stat "mm/toclaim" < "%stat.player/mm/max%") {
+    stat "mm/toclaim" inc "%stat.player/mm/add%"
+}
+
+// Set to max if over max
+if (stat "tm/toclaim" >= "%stat.player/tm/max%") {
+    stat "tm/toclaim" set "%stat.player/tm/max%"
+}
+if (stat "mm/toclaim" >= "%stat.player/mm/max%") {
+    stat "mm/toclaim" set "%stat.player/mm/max%"
+}

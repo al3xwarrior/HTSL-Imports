@@ -1,0 +1,49 @@
+tp "house_spawn"
+
+stat "rebirths" inc 1
+
+globalstat "broadcastid" set "%stat.player/playerid%"
+globalstat "rebirthbroadcast" set "%stat.player/rebirths%"
+function "RebirthAnnouncement" true
+
+if () {
+stat "maxstorage" set 100
+stat "efficiency1cost" set 50
+stat "haste1cost" set 500
+stat "tokenmulti1cost" set 200
+stat "e/tokenmulti" set 1
+stat "gemfinder1cost" set 100
+stat "keyfinder1cost" set 250
+stat "zminer1cost" set 150
+stat "copy1cost" set 1000
+stat "explode1cost" set 1000
+}
+if () {
+stat "edupe1cost" set 2500
+stat "tm/increase" set 1
+stat "tm/max" set 100
+stat "tm/maxupcost" set 1000
+stat "mm/increase" set 1
+stat "mm/max" set 100
+stat "mm/maxupcost" set 1000
+stat "tokens" set 0
+stat "money" set 0
+stat "gems" set 0
+}
+if () {
+stat "e/efficiency" set 0
+stat "e/haste" set 0
+stat "e/tokenmulti" set 0
+stat "e/gemfinder" set 0
+stat "e/keyfinder" set 0
+stat "e/zminer" set 0
+stat "e/cap" set 0
+stat "e/explosive" set 0
+stat "e/edupe" set 0
+stat "snowymine" set 0
+}
+if () {
+stat "minemine" set 0
+stat "nethermine" set 0
+stat "endmine" set 0
+}

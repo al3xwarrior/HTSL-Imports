@@ -1,6 +1,7 @@
 if (stat "maxstorage" = 0) {
     stat "maxstorage" set 100
 }
+
 // enchants
 // efficiency1cost haste1cost tokenmulti1cost gemfinder1cost keyfinder1cost zminer1cost copycost explode1cost edupe1cost
 
@@ -11,7 +12,7 @@ if (stat "haste1cost" = 0) {
     stat "haste1cost" set 500
 }
 if (stat "tokenmulti1cost" = 0) {
-    stat "tokenmulti1cost" set 100
+    stat "tokenmulti1cost" set 200
 }
 if (stat "e/tokenmulti" = 0) {
     stat "e/tokenmulti" set 1
@@ -33,4 +34,18 @@ if (stat "explode1cost" = 0) {
 }
 if (stat "edupe1cost" = 0) {
     stat "edupe1cost" set 2500
+}
+if (stat "tm/increase" = 0) {
+    stat "tm/increase" set 1
+    stat "tm/max" set 100
+    stat "tm/maxupcost" set 1000
+}
+if (stat "mm/increase" = 0) {
+    stat "mm/increase" set 1
+    stat "mm/max" set 100
+    stat "mm/maxupcost" set 1000
+}
+if (stat "s/tokenmsg" = 0) {
+    stat "s/tokenmsg" set 2
+    stat "s/gemmsg" set 2
 }

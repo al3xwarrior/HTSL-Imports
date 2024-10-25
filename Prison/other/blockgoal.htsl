@@ -1,0 +1,10 @@
+stat "goalmoney" set "%random.int/100 10000%"
+stat "money" inc "%stat.player/goalmoney%"
+
+chat "&7&m-----------------------------------"
+chat "&2&lBLOCK GOAL REACHED!"
+chat "&7- &a$%stat.player/goalmoney% Money"
+chat "&7&m-----------------------------------"
+sound "Orb Pickup" 0.7 1 "invokers_location"
+
+stat "goalmoney" set 0

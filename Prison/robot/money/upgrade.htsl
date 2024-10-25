@@ -1,0 +1,13 @@
+if (stat "money" >= "%stat.player/mm/maxupcost%") {
+    stat "money" dec "%stat.player/mm/maxupcost%"
+    stat "mm/max" inc 100
+    stat "mm/maxupcost" mult 15
+    stat "mm/maxupcost" div 10
+    chat "&aYou have upgraded your money robots max to &e%stat.player/mm/max%&a!"
+    sound "Level Up" 0.7 1 "invokers_location"
+    displayMenu "Token Robot"
+} else {
+    chat "&cYou do not have enough money to upgrade your token robots max!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}

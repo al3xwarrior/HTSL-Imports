@@ -1,0 +1,16 @@
+if or (blockType "white_wool" false, blockType "yellow_wool" false, blockType "lime_wool" false, blockType "lightblue_wool" false) {
+    
+} else {
+    exit
+}
+
+if or (inRegion "White Wool Mine", inRegion "Yellow Wool Mine", inRegion "Lime Wool Mine", inRegion "Light Blue Wool Mine") {
+    
+} else {
+    exit
+}
+
+function "GiveGoldFromMines" false
+
+sound "Orb Pickup" 0.7 1.0 "invokers_location"
+function "Wool Clusters" false

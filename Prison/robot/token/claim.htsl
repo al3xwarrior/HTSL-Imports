@@ -1,0 +1,11 @@
+if (stat "tm/toclaim" > 0) {
+    stat "tokens" inc "%stat.player/tm/toclaim%"
+    stat "tm/toclaim" set 0
+    sound "Chest Close" 0.7 1 "invokers_location"
+    displayMenu "Token Robot"
+    chat "&aYou have claimed &e%stat.player/tm/toclaim% &etokens&a!"
+} else {
+    chat "&cYou have no tokens to claim!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}

@@ -1,0 +1,14 @@
+stat "goalmoney" set "%random.int/1000 10000%"
+stat "money" inc "%stat.player/goalmoney%"
+stat "goaltokens" set "%random.int/100 1000%"
+stat "tokens" inc "%stat.player/goaltokens%"
+
+chat "&7&m-----------------------------------"
+chat "&6&lCOOKIE GOAL REACHED!"
+chat "&7- &a$%stat.player/goalmoney% Money"
+chat "&7- &e%stat.player/goaltokens% Tokens"
+chat "&7&m-----------------------------------"
+sound "Orb Pickup" 0.7 1 "invokers_location"
+
+stat "goalmoney" set 0
+stat "goaltokens" set 0
