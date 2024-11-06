@@ -1,0 +1,26 @@
+// Zone 1-1
+if (placeholder "%player.location.x% >= 1, placeholder "%player.location.x% <= 1, placeholder "%player.location.y% >= 1, placeholder "%player.location.y% <= 1, placeholder "%player.location.z% >= 1, placeholder "%player.location.z% <= 1) {
+    stat "layer1hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer1hp%"
+    stat "layermaxhp" set "%stat.player/layer1maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x% >= 1, placeholder "%player.location.x% <= 1, placeholder "%player.location.y% >= 1, placeholder "%player.location.y% <= 1, placeholder "%player.location.z% >= 1, placeholder "%player.location.z% <= 1) {
+    stat "layer2hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer2hp%"
+    stat "layermaxhp" set "%stat.player/layer2maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x% >= 1, placeholder "%player.location.x% <= 1, placeholder "%player.location.y% >= 1, placeholder "%player.location.y% <= 1, placeholder "%player.location.z% >= 1, placeholder "%player.location.z% <= 1) {
+    stat "layer3hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer3hp%"
+    stat "layermaxhp" set "%stat.player/layer3maxhp%"
+    function "MineAnimation" false
+    exit
+}
+
+applyPotion "Slowness" 1 1 true
+applyPotion "Mining Fatigue" 1 1 true
+chat "&cYou can not break this block! If you are trying to mine make sure you are inside the mine!"

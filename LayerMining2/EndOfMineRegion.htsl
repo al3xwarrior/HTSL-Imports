@@ -1,0 +1,13 @@
+
+if or (stat "layer1hp" > 0, stat "layer2hp" > 0, stat "layer3hp" > 0) {
+    globalstat "alert/plrid" set "%stat.player/playerid%"
+    globalstat "alert/x" set "%player.location.x%"
+    globalstat "alert/y" set "%player.location.y%"
+    globalstat "alert/z" set "%player.location.z%"
+    function "StaffAlert" true
+    exit
+}
+
+tp "custom_coordinates" "~ ~? ~"
+sound "Level Up" 0.7 2.0 "invokers_location"
+title "&6&l+⛃" "&e&oYou reached the end!" 0 1 1

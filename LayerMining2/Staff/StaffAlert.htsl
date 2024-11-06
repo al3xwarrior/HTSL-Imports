@@ -1,0 +1,9 @@
+if (stat "alerts" = 0) {
+    exit
+}
+
+// Entered the end region for a mine without breaking layer 1, 2, or 3
+if (globalstat "alertid" = 1) {
+    chat "&7[Staff] &4Player#%stat.global/alert/plrid% &cillegally entered the end of a mine."
+    exit
+}
