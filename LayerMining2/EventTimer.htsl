@@ -1,0 +1,10 @@
+globalstat "eventsecs" dec 1
+
+if (globalstat "eventsecs" < 0) {
+    globalstat "eventmins" dec 1
+    globalstat "eventsecs" set 59
+}
+
+if (globalstat "eventmins" <= 0, globalstat "eventsecs" <= 0) {
+    globalstat "eventid" set "%random.int/1
+}

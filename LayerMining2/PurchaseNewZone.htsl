@@ -1,0 +1,56 @@
+// The current zone the player is in
+stat "zonerequirement" set 1
+// The cost
+stat "zonecost" set 500
+
+if (stat "zone" > "%stat.player/zonerequirement%") {
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    chat "&cYou already have this zone unlocked!"
+    stat "zonerequirement" set 0
+    stat "zonecost" set 0
+    exit
+}
+
+if (stat "gold" < "%stat.player/zonecost%") {
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    chat "&cYou don't have enough gold!"
+    stat "zonerequirement" set 0
+    stat "zonecost" set 0
+    exit
+}
+
+stat "gold" dec "%stat.player/zonecost%"
+stat "zonerequirement" set 0
+stat "zonecost" set 0
+stat "zone" inc 1
+
+sound "note.pling" 0.7 1.0 "invokers_location"
+title "&0" "&7&o&l&nZON" 0 1 1
+pause 10
+sound "note.pling" 0.7 1.4 "invokers_location"
+title "&0" "&7&o&l&nZONE UN" 0 1 1
+pause 8
+sound "note.pling" 0.7 1.6 "invokers_location"
+title "&0" "&7&o&l&nZONE UNLOC" 0 1 1
+pause 6
+
+sound "orb.pickup" 0.7 2.0 "invokers_location"
+title "&0" "&%random.int/1 10%&o&l&nZONE UNLOCKED!" 0 1 1
+pause 2
+sound "orb.pickup" 0.7 1.9 "invokers_location"
+title "&0" "&%random.int/1 10%&o&l&nZONE UNLOCKED!" 0 1 1
+pause 2
+sound "orb.pickup" 0.7 2.0 "invokers_location"
+title "&0" "&%random.int/1 10%&o&l&nZONE UNLOCKED!" 0 1 1
+pause 2
+sound "orb.pickup" 0.7 1.9 "invokers_location"
+title "&0" "&%random.int/1 10%&o&l&nZONE UNLOCKED!" 0 1 1
+pause 2
+sound "orb.pickup" 0.7 2.0 "invokers_location"
+title "&0" "&%random.int/1 10%&o&l&nZONE UNLOCKED!" 0 1 1
+pause 2
+sound "orb.pickup" 0.7 1.9 "invokers_location"
+title "&0" "&%random.int/1 10%&o&l&nZONE UNLOCKED!" 0 1 1
+pause 2
+sound "orb.pickup" 0.7 2.0 "invokers_location"
+title "&0" "&%random.int/1 10%&o&l&nZONE UNLOCKED!" 0 1 1
