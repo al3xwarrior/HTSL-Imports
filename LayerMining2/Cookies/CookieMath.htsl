@@ -1,0 +1,19 @@
+// Sunday Cookie Reset Handler
+if (placeholder "%house.cookies%" = 0) {
+    stat "cookiegoal" set 30
+    stat "cookiescalced" set 0
+}
+
+// Someone gave a cookie handler
+if (placeholder "%house.cookies%" > "%stat.global/cookiescalced%") {
+    globalstat "cookiegiven" set "%house.cookies%"
+    globalstat "cookiegiven" dec "%stat.global/cookiescalced%"
+    function "SomeoneGaveCookies" true
+    globalstat "cookiescalced" set "%house.cookies%"
+}
+
+// Cookie Goal
+if (globalstat "cookiegoal" <= "%house.cookies%") {
+    stat "cookiegoal" inc 30
+    function "CookieGoal" true
+}

@@ -1,0 +1,19 @@
+chat "&2"
+chat "&r &r &r &r &r &a★ &2&lEVENT &a★"
+if (globalstat "eventid" = 1) {
+    chat "&6Haste II &7for &c10 seconds&7!"
+    stat "eventhaste" set 2
+    chat "&3"
+    pause 200
+    stat "eventhaste" set 0
+    exit
+}
+if (globalstat "eventid" = 2) {
+    chat "&6Haste III &7for &c10 seconds&7!"
+    stat "eventhaste" set 3
+    chat "&3"
+    pause 200
+    stat "eventhaste" set 0
+    exit
+}
+chat "&3"

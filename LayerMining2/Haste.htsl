@@ -1,0 +1,46 @@
+stat "haste" set 0
+
+function "CalculateHaste1" false
+
+stat "haste" inc "%stat.player/eventhaste%"
+
+if (stat "haste" = 1) {
+    applyPotion "Haste" 2 1 true
+    exit
+}
+if (stat "haste" = 2) {
+    applyPotion "Haste" 2 2 true
+    exit
+}
+if (stat "haste" = 3) {
+    applyPotion "Haste" 2 3 true
+    exit
+}
+if (stat "haste" = 4) {
+    applyPotion "Haste" 2 4 true
+    exit
+}
+if (stat "haste" = 5) {
+    applyPotion "Haste" 2 5 true
+    exit
+}
+if (stat "haste" = 6) {
+    applyPotion "Haste" 2 6 true
+    exit
+}
+if (stat "haste" = 7) {
+    applyPotion "Haste" 2 7 true
+    exit
+}
+if (stat "haste" = 8) {
+    applyPotion "Haste" 2 8 true
+    exit
+}
+if (stat "haste" = 9) {
+    applyPotion "Haste" 2 9 true
+    exit
+}
+if (stat "haste" >= 10) {
+    applyPotion "Haste" 2 10 true
+    exit
+}
