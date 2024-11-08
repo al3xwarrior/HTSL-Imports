@@ -1,0 +1,4 @@
+stat "subjects" set 100
+stat "gold" set 100
+stat "happyness" set 20
+stat "day" set 1
