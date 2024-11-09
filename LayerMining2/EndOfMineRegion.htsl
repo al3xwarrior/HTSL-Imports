@@ -8,6 +8,10 @@ if or (stat "layer1hp" > 0, stat "layer2hp" > 0, stat "layer3hp" > 0) {
     exit
 }
 
-tp "custom_coordinates" "~ ~? ~"
+tp "custom_coordinates" "~ ~28 ~"
 sound "Level Up" 0.7 2.0 "invokers_location"
-title "&6&l+⛃" "&e&oYou reached the end!" 0 1 1
+
+stat "togive" set "%stat.player/layergold%"
+function "FinishMineBonuses" false
+title "&6&l+%stat.player/togive%&r&6⛃" "&e&oYou reached the end!" 0 1 1
+stat "gold" inc "%stat.player/togive%"

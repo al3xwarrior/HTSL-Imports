@@ -1,0 +1,25 @@
+giveItem "fillitem" true "First Slot" false
+
+if (hasItem "fillitem" metadata Anywhere anyAmount) {
+    removeItem "fillitem"
+} else {
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    chat "&cYour inventory is full!"
+    exit
+}
+
+if (stat "gold" >= 20) {
+    stat "gold" dec 20
+    giveItem "woodenpickaxe" true "First Slot" false
+} else {
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    chat "&cYou don't have enough gold to buy a pickaxe!"
+    exit
+}
+
+chat "&aYou bought a wooden pickaxe for 20 gold! Combine it to upgrade!"
+sound "Orb Pickup" 0.7 1 "invokers_location"
+pause 2
+sound "Orb Pickup" 0.7 1.2 "invokers_location"
+pause 2
+sound "Orb Pickup" 0.7 1.6 "invokers_location"

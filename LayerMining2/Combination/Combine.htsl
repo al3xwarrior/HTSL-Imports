@@ -1,0 +1,19 @@
+if (hasItem "diamondpickaxee4" metadata Anywhere anyAmount) {
+    removeItem "diamondpickaxee4"
+} else {
+    chat "&cYou don't 2 diamond pickaxes!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "diamondpickaxee4" metadata Anywhere anyAmount) {
+    
+} else {
+    giveItem "diamondpickaxee4" true "First Slot" false
+    chat "&cYou don't 2 diamond pickaxes!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+removeItem "diamondpickaxee4"
+giveItem "diamondpickaxee5" true "First Slot" false
+sound "Anvil Use" 0.7 1 "invokers_location"

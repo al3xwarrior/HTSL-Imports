@@ -3,7 +3,7 @@
 if (stat "layerhp" <= 0) {
     applyPotion "Blindness" 1 1 true
     tp "custom_coordinates" "~ ~-2.8 ~"
-    title "&a&l&oCOMPLETED" "&d&k|&r &a██████████&e&l⛏&r&6⛃ &d&k|&r" 0 1 1
+    title "&a&l&oCOMPLETED" "&d&k|&r &a██████████&r &d&k|&r" 0 1 1
     sound "Level Up" 0.7 1.6 "invokers_location"
     exit
 }
@@ -11,46 +11,59 @@ if (stat "layerhp" <= 0) {
 stat "percent" set "%stat.player/layerhp%"
 stat "percent" mult 100
 stat "percent" div "%stat.player/layermaxhp%"
+stat "temp" set 100
+stat "temp" dec "%stat.player/percent%"
+stat "percent" set "%stat.player/temp%"
 
 // sound in each
 
 if (stat "percent" < 10) {
-    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&e&l⛏&6█&c█████████&6⛃" 0 1 1
+    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&6█&c█████████" 0 1 1
+    sound "Note Pling" 0.7 1 "invokers_location"
     exit
 }
 if (stat "percent" < 20) {
-    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a█&e&l⛏&6█&c████████&6⛃" 0 1 1
+    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a█&6█&c████████" 0 1 1
+    sound "Note Pling" 0.7 1.1 "invokers_location"
     exit
 }
 if (stat "percent" < 30) {
-    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a██&e&l⛏&6█&c███████&6⛃" 0 1 1
+    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a██&6█&c███████" 0 1 1
+    sound "Note Pling" 0.7 1.2 "invokers_location"
     exit
 }
 if (stat "percent" < 40) {
-    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a███&e&l⛏&6█&c██████&6⛃" 0 1 1
+    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a███&6█&c██████" 0 1 1
+    sound "Note Pling" 0.7 1.3 "invokers_location"
     exit
 }
 if (stat "percent" < 50) {
-    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a████&e&l⛏&6█&c█████&6⛃" 0 1 1
+    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a████&6█&c█████" 0 1 1
+    sound "Note Pling" 0.7 1.4 "invokers_location"
     exit
 }
 if (stat "percent" < 60) {
-    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a█████&e&l⛏&6█&c████&6⛃" 0 1 1
+    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a█████&6█&c████" 0 1 1
+    sound "Note Pling" 0.7 1.5 "invokers_location"
     exit
 }
 if (stat "percent" < 70) {
-    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a██████&e&l⛏&6█&c███&6⛃" 0 1 1
+    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a██████&6█&c███" 0 1 1
+    sound "Note Pling" 0.7 1.6 "invokers_location"
     exit
 }
 if (stat "percent" < 80) {
-    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a███████&e&l⛏&6█&c██&6⛃" 0 1 1
+    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a███████&6█&c██" 0 1 1
+    sound "Note Pling" 0.7 1.7 "invokers_location"
     exit
 }
 if (stat "percent" < 90) {
-    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a████████&e&l⛏&6█&c█&6⛃" 0 1 1
+    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a████████&6█&c█" 0 1 1
+    sound "Note Pling" 0.7 1.8 "invokers_location"
     exit
 }
 if (stat "percent" < 100) {
-    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a█████████&e&l⛏&6█&6⛃" 0 1 1
+    title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&a█████████&6█" 0 1 1
+    sound "Note Pling" 0.7 2.0 "invokers_location"
     exit
 }

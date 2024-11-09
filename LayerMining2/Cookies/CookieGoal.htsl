@@ -8,7 +8,7 @@ stat "diamonds" inc "%stat.player/cookiegoaldia%"
 
 sound "Orb Pickup" 0.7 1.0 "invokers_location"
 chat "&r"
-chat "&r &r &r &r &r &c❤️ &6&lCOOKIE GOAL &c❤️"
+chat "&r &r &r &r &r &c❤ &6&lCOOKIE GOAL &c❤ "
 chat "&6+%stat.player/cookiegoalgold% &7| &b+%stat.player/cookiegoaldia%"
 chat "&b"
 

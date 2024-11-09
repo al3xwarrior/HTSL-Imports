@@ -1,26 +1,29 @@
 // Zone 1-1
-if (placeholder "%player.location.x% >= 1, placeholder "%player.location.x% <= 1, placeholder "%player.location.y% >= 1, placeholder "%player.location.y% <= 1, placeholder "%player.location.z% >= 1, placeholder "%player.location.z% <= 1) {
+if (placeholder "%player.location.x%" >= 103, placeholder "%player.location.x%" <= 109, placeholder "%player.location.y%" >= 196, placeholder "%player.location.y%" <= 198, placeholder "%player.location.z%" >= 115, placeholder "%player.location.z%" <= 121) {
     stat "layer1hp" dec "%stat.player/strength%"
     stat "layerhp" set "%stat.player/layer1hp%"
     stat "layermaxhp" set "%stat.player/layer1maxhp%"
     function "MineAnimation" false
     exit
 }
-if (placeholder "%player.location.x% >= 1, placeholder "%player.location.x% <= 1, placeholder "%player.location.y% >= 1, placeholder "%player.location.y% <= 1, placeholder "%player.location.z% >= 1, placeholder "%player.location.z% <= 1) {
+if (placeholder "%player.location.x%" >= 103, placeholder "%player.location.x%" <= 109, placeholder "%player.location.y%" >= 191, placeholder "%player.location.y%" <= 193, placeholder "%player.location.z%" >= 115, placeholder "%player.location.z%" <= 121) {
     stat "layer2hp" dec "%stat.player/strength%"
     stat "layerhp" set "%stat.player/layer2hp%"
     stat "layermaxhp" set "%stat.player/layer2maxhp%"
     function "MineAnimation" false
     exit
 }
-if (placeholder "%player.location.x% >= 1, placeholder "%player.location.x% <= 1, placeholder "%player.location.y% >= 1, placeholder "%player.location.y% <= 1, placeholder "%player.location.z% >= 1, placeholder "%player.location.z% <= 1) {
+if (placeholder "%player.location.x%" >= 103, placeholder "%player.location.x%" <= 109, placeholder "%player.location.y%" >= 186, placeholder "%player.location.y%" <= 188, placeholder "%player.location.z%" >= 115, placeholder "%player.location.z%" <= 121) {
     stat "layer3hp" dec "%stat.player/strength%"
     stat "layerhp" set "%stat.player/layer3hp%"
     stat "layermaxhp" set "%stat.player/layer3maxhp%"
     function "MineAnimation" false
     exit
 }
-
-applyPotion "Slowness" 1 1 true
-applyPotion "Mining Fatigue" 1 1 true
-chat "&cYou can not break this block! If you are trying to mine make sure you are inside the mine!"
+if (placeholder "%player.location.x%" >= 103, placeholder "%player.location.x%" <= 109, placeholder "%player.location.y%" >= 181, placeholder "%player.location.y%" <= 183, placeholder "%player.location.z%" >= 115, placeholder "%player.location.z%" <= 121) {
+    stat "layer4hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer4hp%"
+    stat "layermaxhp" set "%stat.player/layer4maxhp%"
+    function "MineAnimation" false
+    exit
+}

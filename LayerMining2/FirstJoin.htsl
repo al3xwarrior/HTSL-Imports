@@ -1,0 +1,6 @@
+if (stat "zone" = 0) {
+    stat "zone" set 1
+}
+if (stat "basestrength" = 0) {
+    stat "basestrength" set 1
+}

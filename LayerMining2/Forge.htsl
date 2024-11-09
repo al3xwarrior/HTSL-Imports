@@ -1,0 +1,18 @@
+stat "forgegive" set 0
+if (inRegion "Forge1-1") {
+    stat "forgegive" set 1
+}
+if (inRegion "Forge1-2") {
+    stat "forgegive" set 3
+}
+if (inRegion "Forge1-3") {
+    stat "forgegive" set 5
+}
+if (inRegion "Forge1-4") {
+    stat "forgegive" set 7
+}
+if (inRegion "Forge1-5") {
+    stat "forgegive" set 10
+}
+
+stat "basestrength" inc "%stat.forgegive%"

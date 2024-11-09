@@ -1,0 +1,9 @@
+stat "multithreadmine" inc 1
+if (stat "multithreadmine" >= 2) {
+    stat "multithreadmine" set 0
+    function "Mine1/2" false
+    exit
+} else {
+    function "Mine1/1" false
+    exit
+}

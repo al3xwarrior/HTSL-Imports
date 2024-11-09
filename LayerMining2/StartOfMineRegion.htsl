@@ -1,8 +1,10 @@
 stat "layer1maxhp" set 5
 stat "layer2maxhp" set 5
-stat "layer3maxhp" set 10
+stat "layer3maxhp" set 8
+stat "layer4maxhp" set 10
 stat "layergold" set 5
 
 stat "layer1hp" set "%stat.player/layer1maxhp%"
 stat "layer2hp" set "%stat.player/layer2maxhp%"
 stat "layer3hp" set "%stat.player/layer3maxhp%"
+stat "layer4hp" set "%stat.player/layer4maxhp%"
