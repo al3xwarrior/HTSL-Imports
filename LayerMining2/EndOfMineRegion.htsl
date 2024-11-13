@@ -14,5 +14,10 @@ sound "Level Up" 0.7 2.0 "invokers_location"
 
 stat "togive" set "%stat.player/layergold%"
 function "FinishMineBonuses" false
+
+if (stat "eventgold" > 0) {
+    stat "togive" mult "%stat.player/eventgold%"
+}
+
 title "&6&l+%stat.player/togive%&r&6⛃" "&e&oYou reached the end!" 0 1 1
 stat "gold" inc "%stat.player/togive%"

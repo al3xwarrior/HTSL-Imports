@@ -18,7 +18,25 @@ if (globalstat "eventid" = 2) {
     chat "&6Haste III &7for &c10 seconds&7!"
     stat "eventhaste" set 3
 }
+if (globalstat "eventid" = 3) {
+    chat "&c2x Forge &7for &c10 seconds&7!"
+    stat "eventforge" set 2
+}
+if (globalstat "eventid" = 4) {
+    chat "&c3x Forge &7for &c10 seconds&7!"
+    stat "eventforge" set 3
+}
+if (globalstat "eventid" = 3) {
+    chat "&62x Gold &7for &c10 seconds&7!"
+    stat "eventgold" set 2
+}
+if (globalstat "eventid" = 4) {
+    chat "&62x Gold &7for &c10 seconds&7!"
+    stat "eventgold" set 3
+}
 chat "&3"
 
 pause 200
 stat "eventhaste" set 0
+stat "eventgold" set 0
+stat "eventforge" set 0
