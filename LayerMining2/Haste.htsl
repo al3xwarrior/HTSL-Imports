@@ -1,4 +1,4 @@
-stat "haste" set 0
+stat "haste" set "%stat.player/basehaste%"
 
 function "CalculateHaste1" false
 

@@ -35,7 +35,7 @@ if (stat "forgegive" = 0) {
     exit
 }
 
-function "ForgeBonusCalc" false
+stat "forgegive" inc "%stat.player/baseforge%"
 
 stat "basestrength" inc "%stat.player/forgegive%"
 
