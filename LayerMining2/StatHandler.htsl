@@ -1,0 +1,4 @@
+stat "strength" set "%stat.player/basestrength%"
+function "CalcStrength" false
+
+actionBar "&8[&4⸕&8] &c%stat.player/strength% &r &r &r &8[&6⛃&8] &e%stat.player/gold% &r &r &r &8[&3❄&8] &b%stat.player/diamonds% &r &r &r &8[&a⌚&8] &2%stat.player/hours%h&7:&2%stat.player/minutes%m&7:&2%stat.player/seconds%s"

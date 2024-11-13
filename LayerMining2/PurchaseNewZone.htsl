@@ -1,7 +1,7 @@
 // The current zone the player is in
-stat "zonerequirement" set 1
+stat "zonerequirement" set 10
 // The cost
-stat "zonecost" set 500
+stat "zonecost" set 2500000000
 
 if (stat "zone" > "%stat.player/zonerequirement%") {
     sound "Anvil Land" 0.7 1.0 "invokers_location"
@@ -24,33 +24,53 @@ stat "zonerequirement" set 0
 stat "zonecost" set 0
 stat "zone" inc 1
 
+if () {
 sound "note.pling" 0.7 1.0 "invokers_location"
-title "&0" "&7&o&l&nZON" 0 1 1
+title "&0" "&7&lZON" 0 1 1
+}
 pause 10
+if () {
 sound "note.pling" 0.7 1.4 "invokers_location"
-title "&0" "&7&o&l&nZONE UN" 0 1 1
+title "&0" "&7&lZONE UN" 0 1 1
+}
 pause 8
+if () {
 sound "note.pling" 0.7 1.6 "invokers_location"
-title "&0" "&7&o&l&nZONE UNLOC" 0 1 1
+title "&0" "&7&lZONE UNLOC" 0 1 1
+}
 pause 6
 
-sound "orb.pickup" 0.7 2.0 "invokers_location"
-title "&0" "&%random.int/1 10%&o&l&nZONE UNLOCKED!" 0 1 1
+if () {
+sound "Orb Pickup" 0.7 2.0 "invokers_location"
+title "&0" "&%random.int/1 10%&lZONE UNLOCKED!" 0 1 1
+}
 pause 2
-sound "orb.pickup" 0.7 1.9 "invokers_location"
-title "&0" "&%random.int/1 10%&o&l&nZONE UNLOCKED!" 0 1 1
+if () {
+sound "Orb Pickup" 0.7 1.9 "invokers_location"
+title "&0" "&%random.int/1 10%&lZONE UNLOCKED!" 0 1 1
+}
 pause 2
-sound "orb.pickup" 0.7 2.0 "invokers_location"
-title "&0" "&%random.int/1 10%&o&l&nZONE UNLOCKED!" 0 1 1
+if () {
+sound "Orb Pickup" 0.7 2.0 "invokers_location"
+title "&0" "&%random.int/1 10%&lZONE UNLOCKED!" 0 1 1
+}
 pause 2
-sound "orb.pickup" 0.7 1.9 "invokers_location"
-title "&0" "&%random.int/1 10%&o&l&nZONE UNLOCKED!" 0 1 1
+if () {
+sound "Orb Pickup" 0.7 1.9 "invokers_location"
+title "&0" "&%random.int/1 10%&lZONE UNLOCKED!" 0 1 1
+}
 pause 2
-sound "orb.pickup" 0.7 2.0 "invokers_location"
-title "&0" "&%random.int/1 10%&o&l&nZONE UNLOCKED!" 0 1 1
+if () {
+sound "Orb Pickup" 0.7 2.0 "invokers_location"
+title "&0" "&%random.int/1 10%&lZONE UNLOCKED!" 0 1 1
+}
 pause 2
-sound "orb.pickup" 0.7 1.9 "invokers_location"
-title "&0" "&%random.int/1 10%&o&l&nZONE UNLOCKED!" 0 1 1
+if () {
+sound "Orb Pickup" 0.7 1.9 "invokers_location"
+title "&0" "&%random.int/1 10%&lZONE UNLOCKED!" 0 1 1
+}
 pause 2
-sound "orb.pickup" 0.7 2.0 "invokers_location"
-title "&0" "&%random.int/1 10%&o&l&nZONE UNLOCKED!" 0 1 1
+if () {
+sound "Orb Pickup" 0.7 2.0 "invokers_location"
+title "&0" "&%random.int/1 10%&lZONE UNLOCKED!" 0 1 1
+}

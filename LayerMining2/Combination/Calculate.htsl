@@ -5,7 +5,7 @@
 // - We know the player has 1 tool, if they have 2 tools, give the first one back and set the stat to 2 (green)
 // - They didnt have 2 tools, so give the first one back and set the stat to 4 (red)
 
-// Wooden Pickaxe - require1
+// Wooden axe - require1
 stat "temprequire" set 0
 if (stat "gold" >= 20) {
     stat "require1" set 2
@@ -13,170 +13,170 @@ if (stat "gold" >= 20) {
     stat "require1" set 4
 }
 
-// Stone Pickaxe - require2
-if (hasItem "woodenpickaxe" metadata Anywhere anyAmount) {
-    removeItem "woodenpickaxe"
+// Stone axe - require2
+if (hasItem "woodenaxe" metadata Anywhere anyAmount) {
+    removeItem "woodenaxe"
     stat "temprequire" set 1
 } else {
     stat "require2" set 4
 }
-if (stat "temprequire" = 1, hasItem "woodenpickaxe" metadata Anywhere anyAmount) {
-    giveItem "woodenpickaxe" true "First Slot" false
+if (stat "temprequire" = 1, hasItem "woodenaxe" metadata Anywhere anyAmount) {
+    giveItem "woodenaxe" true "First Slot" false
     stat "require2" set 2
     stat "temprequire" set 0
 }
 if (stat "temprequire" = 1) {
-    giveItem "woodenpickaxe" true "First Slot" false
+    giveItem "woodenaxe" true "First Slot" false
     stat "require2" set 4
     stat "temprequire" set 0
 }
 
-// Golden Pickaxe - require3
-if (hasItem "stonepickaxe" metadata Anywhere anyAmount) {
-    removeItem "stonepickaxe"
+// Golden axe - require3
+if (hasItem "stoneaxe" metadata Anywhere anyAmount) {
+    removeItem "stoneaxe"
     stat "temprequire" set 1
 } else {
     stat "require3" set 4
 }
-if (stat "temprequire" = 1, hasItem "stonepickaxe" metadata Anywhere anyAmount) {
-    giveItem "stonepickaxe" true "First Slot" false
+if (stat "temprequire" = 1, hasItem "stoneaxe" metadata Anywhere anyAmount) {
+    giveItem "stoneaxe" true "First Slot" false
     stat "require3" set 2
     stat "temprequire" set 0
 }
 if (stat "temprequire" = 1) {
-    giveItem "stonepickaxe" true "First Slot" false
+    giveItem "stoneaxe" true "First Slot" false
     stat "require3" set 4
     stat "temprequire" set 0
 }
 
-// Iron Pickaxe - require4
-if (hasItem "goldenpickaxe" metadata Anywhere anyAmount) {
-    removeItem "goldenpickaxe"
+// Iron axe - require4
+if (hasItem "goldenaxe" metadata Anywhere anyAmount) {
+    removeItem "goldenaxe"
     stat "temprequire" set 1
 } else {
     stat "require4" set 4
 }
-if (stat "temprequire" = 1, hasItem "goldenpickaxe" metadata Anywhere anyAmount) {
-    giveItem "goldenpickaxe" true "First Slot" false
+if (stat "temprequire" = 1, hasItem "goldenaxe" metadata Anywhere anyAmount) {
+    giveItem "goldenaxe" true "First Slot" false
     stat "require4" set 2
     stat "temprequire" set 0
 }
 if (stat "temprequire" = 1) {
-    giveItem "goldenpickaxe" true "First Slot" false
+    giveItem "goldenaxe" true "First Slot" false
     stat "require4" set 4
     stat "temprequire" set 0
 }
 
-// Diamond Pickaxe - require5
-if (hasItem "ironpickaxe" metadata Anywhere anyAmount) {
-    removeItem "ironpickaxe"
+// Diamond axe - require5
+if (hasItem "ironaxe" metadata Anywhere anyAmount) {
+    removeItem "ironaxe"
     stat "temprequire" set 1
 } else {
     stat "require5" set 4
 }
-if (stat "temprequire" = 1, hasItem "ironpickaxe" metadata Anywhere anyAmount) {
-    giveItem "ironpickaxe" true "First Slot" false
+if (stat "temprequire" = 1, hasItem "ironaxe" metadata Anywhere anyAmount) {
+    giveItem "ironaxe" true "First Slot" false
     stat "require5" set 2
     stat "temprequire" set 0
 }
 if (stat "temprequire" = 1) {
-    giveItem "ironpickaxe" true "First Slot" false
+    giveItem "ironaxe" true "First Slot" false
     stat "require5" set 4
     stat "temprequire" set 0
 }
 
-// Diamond Pickaxe E1 - require6
-if (hasItem "diamondpickaxe" metadata Anywhere anyAmount) {
-    removeItem "diamondpickaxe"
+// Diamond axe E1 - require6
+if (hasItem "diamondaxe" metadata Anywhere anyAmount) {
+    removeItem "diamondaxe"
     stat "temprequire" set 1
 } else {
     stat "require6" set 4
 }
-if (stat "temprequire" = 1, hasItem "diamondpickaxe" metadata Anywhere anyAmount) {
-    giveItem "diamondpickaxe" true "First Slot" false
+if (stat "temprequire" = 1, hasItem "diamondaxe" metadata Anywhere anyAmount) {
+    giveItem "diamondaxe" true "First Slot" false
     stat "require6" set 2
     stat "temprequire" set 0
 }
 
-function "CombinePickaxes2" false
-goto function "CombinePickaxes2"
+function "CombineAxes2" false
+goto function "CombineAxes2"
 
 if (stat "temprequire" = 1) {
-    giveItem "diamondpickaxe" true "First Slot" false
+    giveItem "diamondaxe" true "First Slot" false
     stat "require6" set 4
     stat "temprequire" set 0
 }
 
-// Diamond Pickaxe E2 - require7
-if (hasItem "diamondpickaxee1" metadata Anywhere anyAmount) {
-    removeItem "diamondpickaxee1"
+// Diamond axe E2 - require7
+if (hasItem "diamondaxee1" metadata Anywhere anyAmount) {
+    removeItem "diamondaxee1"
     stat "temprequire" set 1
 } else {
     stat "require7" set 4
 }
-if (stat "temprequire" = 1, hasItem "diamondpickaxee1" metadata Anywhere anyAmount) {
-    giveItem "diamondpickaxee1" true "First Slot" false
+if (stat "temprequire" = 1, hasItem "diamondaxee1" metadata Anywhere anyAmount) {
+    giveItem "diamondaxee1" true "First Slot" false
     stat "require7" set 2
     stat "temprequire" set 0
 }
 if (stat "temprequire" = 1) {
-    giveItem "diamondpickaxee1" true "First Slot" false
+    giveItem "diamondaxee1" true "First Slot" false
     stat "require7" set 4
     stat "temprequire" set 0
 }
 
-// Diamond Pickaxe E3 - require8
-if (hasItem "diamondpickaxee2" metadata Anywhere anyAmount) {
-    removeItem "diamondpickaxee2"
+// Diamond axe E3 - require8
+if (hasItem "diamondaxee2" metadata Anywhere anyAmount) {
+    removeItem "diamondaxee2"
     stat "temprequire" set 1
 } else {
     stat "require8" set 4
 }
-if (stat "temprequire" = 1, hasItem "diamondpickaxee2" metadata Anywhere anyAmount) {
-    giveItem "diamondpickaxee2" true "First Slot" false
+if (stat "temprequire" = 1, hasItem "diamondaxee2" metadata Anywhere anyAmount) {
+    giveItem "diamondaxee2" true "First Slot" false
     stat "require8" set 2
     stat "temprequire" set 0
 }
 if (stat "temprequire" = 1) {
-    giveItem "diamondpickaxee2" true "First Slot" false
+    giveItem "diamondaxee2" true "First Slot" false
     stat "require8" set 4
     stat "temprequire" set 0
 }
 
-// Diamond Pickaxe E4 - require9
-if (hasItem "diamondpickaxee3" metadata Anywhere anyAmount) {
-    removeItem "diamondpickaxee3"
+// Diamond axe E4 - require9
+if (hasItem "diamondaxee3" metadata Anywhere anyAmount) {
+    removeItem "diamondaxee3"
     stat "temprequire" set 1
 } else {
     stat "require9" set 4
 }
-if (stat "temprequire" = 1, hasItem "diamondpickaxee3" metadata Anywhere anyAmount) {
-    giveItem "diamondpickaxee3" true "First Slot" false
+if (stat "temprequire" = 1, hasItem "diamondaxee3" metadata Anywhere anyAmount) {
+    giveItem "diamondaxee3" true "First Slot" false
     stat "require9" set 2
     stat "temprequire" set 0
 }
 if (stat "temprequire" = 1) {
-    giveItem "diamondpickaxee3" true "First Slot" false
+    giveItem "diamondaxee3" true "First Slot" false
     stat "require9" set 4
     stat "temprequire" set 0
 }
 
-// Diamond Pickaxe E5 - require10
-if (hasItem "diamondpickaxee4" metadata Anywhere anyAmount) {
-    removeItem "diamondpickaxee4"
+// Diamond axe E5 - require10
+if (hasItem "diamondaxee4" metadata Anywhere anyAmount) {
+    removeItem "diamondaxee4"
     stat "temprequire" set 1
 } else {
     stat "require10" set 4
 }
-if (stat "temprequire" = 1, hasItem "diamondpickaxee4" metadata Anywhere anyAmount) {
-    giveItem "diamondpickaxee4" true "First Slot" false
+if (stat "temprequire" = 1, hasItem "diamondaxee4" metadata Anywhere anyAmount) {
+    giveItem "diamondaxee4" true "First Slot" false
     stat "require10" set 2
     stat "temprequire" set 0
 }
 if (stat "temprequire" = 1) {
-    giveItem "diamondpickaxee4" true "First Slot" false
+    giveItem "diamondaxee4" true "First Slot" false
     stat "require10" set 4
     stat "temprequire" set 0
 }
 
-displayMenu "Combine Pickaxes"
+displayMenu "Combine axes"

@@ -1,0 +1,12 @@
+if or (stat "zone" >= 5, gamemode "Creative") {
+    tp "current_location"
+    applyPotion "Blindness" 1 1 true
+    sound "Enderman Teleport" 0.7 2.0 "invokers_location"
+    exit
+}
+
+tp "current_location"
+sound "Anvil Land" 0.7 1 "invokers_location"
+applyPotion "Slowness" 1 1 true
+applyPotion "Blindness" 1 1 true
+chat "&cYou do not have this zone unlocked!"

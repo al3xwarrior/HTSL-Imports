@@ -15,8 +15,6 @@ stat "temp" set 100
 stat "temp" dec "%stat.player/percent%"
 stat "percent" set "%stat.player/temp%"
 
-// sound in each
-
 if (stat "percent" < 10) {
     title "&e%stat.player/layerhp% &7/ &6%stat.player/layermaxhp%" "&6█&c█████████" 0 1 1
     sound "Note Pling" 0.7 1 "invokers_location"

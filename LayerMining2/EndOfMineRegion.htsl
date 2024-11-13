@@ -4,6 +4,7 @@ if or (stat "layer1hp" > 0, stat "layer2hp" > 0, stat "layer3hp" > 0) {
     globalstat "alert/x" set "%player.location.x%"
     globalstat "alert/y" set "%player.location.y%"
     globalstat "alert/z" set "%player.location.z%"
+    globalstat "alertid" set 1
     function "StaffAlert" true
     exit
 }

@@ -15,4 +15,35 @@ if (inRegion "Forge1-5") {
     stat "forgegive" set 10
 }
 
-stat "basestrength" inc "%stat.forgegive%"
+if (inRegion "Forge2-1") {
+    stat "forgegive" set 25
+}
+if (inRegion "Forge2-2") {
+    stat "forgegive" set 75
+}
+if (inRegion "Forge2-3") {
+    stat "forgegive" set 150
+}
+if (inRegion "Forge2-4") {
+    stat "forgegive" set 250
+}
+if (inRegion "Forge2-5") {
+    stat "forgegive" set 500
+}
+
+if (stat "forgegive" = 0) {
+    exit
+}
+
+function "ForgeBonusCalc" false
+
+stat "basestrength" inc "%stat.player/forgegive%"
+
+sound "Note Snare Drum" 1 1 "invokers_location"
+title "&e&l⸕  &f&l♨" "&7&o+%stat.player/forgegive% Strength" 0 1 1
+pause 3
+sound "Note Snare Drum" 1 1.3 "invokers_location"
+title "&6&l⸕ &f&l♨" "&7&o+%stat.player/forgegive% Strength" 0 1 1
+pause 3
+sound "Anvil Land" 1 2.0 "invokers_location"
+title "&6&l⸕&c&l♨" "&e&n+%stat.player/forgegive% Strength" 0 1 1
