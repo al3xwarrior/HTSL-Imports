@@ -1,0 +1,25 @@
+
+if () {
+stat "fishluck" set "%random.int/1 101%"
+stat "fishluck" inc "%stat.player/f/deeplure%"
+stat "luckenchant" set "%stat.player/f/luck%"
+stat "luckenchant" mult "%stat.player/f/luck%"
+stat "fishluck" inc "%stat.player/luckenchant%"
+}
+
+if (stat "f/virtualfish" >= "%random.int/1 21%") {
+    stat "temptime" set "%random.int/10 21%"
+    stat "virtualfishtime" inc "%stat.player/temptime%"
+    chat "&7Your virtual fishing enchant just gave you &3%stat.player/temptime%s&7."
+    // insert a sound
+}
+
+if (stat "f/multirod" >= "%random.int/2 11%") {
+    cancelEvent
+    title "&b&lMULTI ROD" "&7Reel in again!" 0 1 1
+    // insert a sound
+}
+
+stat "fishluck" set 0
+stat "luckenchant" set 0
+stat "temptime" set 0

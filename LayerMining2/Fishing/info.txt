@@ -1,0 +1,13 @@
+Entering the fishing area gives you a rod. You can upgrade you rod with enchants
+
+Enchants:
+    - Lure f/lure fc/lure
+    - Multi rod f/multirod fc/multirod
+        - Using the Cancel Event action, you can have a small chance
+        of being able to pull multiple times.
+    - Luck f/luck fc/luck
+    - Deep Lure f/deeplure fc/deeplure
+        - Increases the base luck level
+    - Virtual Fisher f/virtualfish fc/virtualfish
+        - Have a chance to spawn a virtual fishing friend that triggers
+        the same code that happens when you fish
