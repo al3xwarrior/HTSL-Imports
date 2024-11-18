@@ -1,11 +1,13 @@
 
 if () {
-stat "fishluck" set "%random.int/1 101%"
+stat "fishluck" set "%random.int/1 21%"
 stat "fishluck" inc "%stat.player/f/deeplure%"
 stat "luckenchant" set "%stat.player/f/luck%"
 stat "luckenchant" mult "%stat.player/f/luck%"
 stat "fishluck" inc "%stat.player/luckenchant%"
 }
+
+function "CatchFish" false
 
 if (stat "f/virtualfish" >= "%random.int/1 21%") {
     stat "temptime" set "%random.int/10 21%"

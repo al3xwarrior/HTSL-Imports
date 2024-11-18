@@ -1,0 +1,14 @@
+// 1-2 rusty rusty can
+// 3-5 dirt
+// 6
+
+if (stat "fishluck" <= 2) {
+    // not so lucky sound
+    chat "&b&lFISH &7You caught a &8Rusty Can&7!"
+    exit
+}
+if (stat "fishluck" <= 5)  {
+    // not so lucky sound
+    chat "&b&lFISH &7You caught some &8Dirt&7!"
+    exit  
+}
