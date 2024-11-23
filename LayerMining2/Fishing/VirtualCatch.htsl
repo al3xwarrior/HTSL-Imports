@@ -1,0 +1,13 @@
+if () {
+stat "fishluck" set "%random.int/1 101%"
+stat "fishluck" inc "%stat.player/f/deeplure%"
+stat "luckenchant" set "%stat.player/f/luck%"
+stat "luckenchant" mult "%stat.player/f/luck%"
+stat "fishluck" inc "%stat.player/luckenchant%"
+}
+
+function "CatchFish" false
+
+stat "fishluck" set 0
+stat "luckenchant" set 0
+stat "temptime" set 0

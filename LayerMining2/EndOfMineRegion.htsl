@@ -13,11 +13,17 @@ tp "custom_coordinates" "~ ~28 ~"
 sound "Level Up" 0.7 2.0 "invokers_location"
 
 stat "togive" set "%stat.player/layergold%"
-function "FinishMineBonuses" false
+stat "togive" inc "%stat.player/finishgold%"
+function "FinishGoldMultipliers"
 
 if (stat "eventgold" > 0) {
     stat "togive" mult "%stat.player/eventgold%"
 }
 
-title "&6&l+%stat.player/togive%&r&6⛃" "&e&oYou reached the end!" 0 1 1
 stat "gold" inc "%stat.player/togive%"
+if (stat "finishdiamonds" > 0) {
+    stat "diamonds" inc "%stat.player/finishdiamonds%"
+    title "&6&l+%stat.player/togive%&r&6⛃" "&b&l+%stat.player/finishdiamonds%&r&b❄" 0 1 1
+} else {
+    title "&6&l+%stat.player/togive%&r&6⛃" "&e&oYou reached the end!" 0 1 1
+}

@@ -1,0 +1,337 @@
+if (stat "gold" >= 10000) {
+
+} else {
+    chat "&cYou don't have enough gold!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+stat "gold" dec 10000
+
+title "&%random.int/1 10%&kddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1 "invokers_location"
+pause 4
+
+title "&%random.int/1 10%&kdddddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1.2 "invokers_location"
+pause 4
+
+title "&%random.int/1 10%&kdddddd ddddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1.4 "invokers_location"
+pause 4
+
+sound "Note Pling" 0.7 1.6 "invokers_location"
+
+stat "petrng" set "%random.int/1 9%"
+if (stat "petrng" == 1) {
+    title "&fSnowy Oak Log Pet" "&a&oOpened!" 0 5 3
+    giveItem "snowy_oak_log_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 2) {
+    title "&6Oak Log Pet" "&a&oOpened!" 0 5 3
+    giveItem "oak_log_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 3) {
+    title "&6Oak Planks Pet" "&a&oOpened!" 0 5 3
+    giveItem "oak_planks_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 4) {
+    title "&6Stripped Oak Log Pet" "&a&oOpened!" 0 5 3
+    giveItem "stripped_oak_log_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 5) {
+    title "&eLumberjack Pet" "&a&oOpened!" 0 5 3
+    giveItem "lumberjack_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 6) {
+    title "&cAnt Pet" "&a&oOpened!" 0 5 3
+    giveItem "ant_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 7) {
+    title "&aFrog Pet" "&a&oOpened!" 0 5 3
+    giveItem "frog_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 8) {
+    title "&fPug Pet" "&a&oOpened!" 0 5 3
+    giveItem "pug_pet" true "First Slot" false
+    exit
+}
+
+goto npc "zone 2"
+
+if (stat "gold" >= 10000) {
+
+} else {
+    chat "&cYou don't have enough gold!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+stat "gold" dec 10000
+
+title "&%random.int/1 10%&kddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1 "invokers_location"
+pause 4
+
+title "&%random.int/1 10%&kdddddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1.2 "invokers_location"
+pause 4
+
+title "&%random.int/1 10%&kdddddd ddddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1.4 "invokers_location"
+pause 4
+
+sound "Note Pling" 0.7 1.6 "invokers_location"
+
+stat "petrng" set "%random.int/1 9%"
+if (stat "petrng" == 1) {
+    title "&fBirch Bark Pet" "&a&oOpened!" 0 5 3
+    giveItem "birch_bark_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 2) {
+    title "&fBirch Log Pet" "&a&oOpened!" 0 5 3
+    giveItem "birch_log_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 3) {
+    title "&fSnowy Birch Log Pet" "&a&oOpened!" 0 5 3
+    giveItem "snowy_birch_log_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 4) {
+    title "&fBirch Planks Pet" "&a&oOpened!" 0 5 3
+    giveItem "birch_planks_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 5) {
+    title "&cStrawberry Pet" "&a&oOpened!" 0 5 3
+    giveItem "strawberry_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 6) {
+    title "&6Flowery Candle Pet" "&a&oOpened!" 0 5 3
+    giveItem "flowery_candle_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 7) {
+    title "&dBasket of Flowers! (pet)" "&a&oOpened!" 0 5 3
+    giveItem "basket_of_flowers!_(pet)" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 8) {
+    title "&aKiwi Pet" "&a&oOpened!" 0 5 3
+    giveItem "kiwi_pet" true "First Slot" false
+    exit
+}
+
+goto npc "zone 3"
+
+if (stat "gold" >= 10000) {
+
+} else {
+    chat "&cYou don't have enough gold!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+stat "gold" dec 10000
+
+title "&%random.int/1 10%&kddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1 "invokers_location"
+pause 4
+
+title "&%random.int/1 10%&kdddddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1.2 "invokers_location"
+pause 4
+
+title "&%random.int/1 10%&kdddddd ddddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1.4 "invokers_location"
+pause 4
+
+sound "Note Pling" 0.7 1.6 "invokers_location"
+
+stat "petrng" set "%random.int/1 9%"
+if (stat "petrng" == 1) {
+    title "&7Dark Oak Planks Pet" "&a&oOpened!" 0 5 3
+    giveItem "dark_oak_planks_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 2) {
+    title "&7Dark Oak Pet" "&a&oOpened!" 0 5 3
+    giveItem "dark_oak_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 3) {
+    title "&7Stripped Dark Oak Pet" "&a&oOpened!" 0 5 3
+    giveItem "stripped_dark_oak_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 4) {
+    title "&2Grass Block Pet" "&a&oOpened!" 0 5 3
+    giveItem "grass_block_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 5) {
+    title "&2Forest Gremlin Pet" "&a&oOpened!" 0 5 3
+    giveItem "forest_gremlin_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 6) {
+    title "&dGrimwood Pet" "&a&oOpened!" 0 5 3
+    giveItem "grimwood_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 7) {
+    title "&eG&6l&ki&r&et&6c&e&nh&r &6W&n&eo&ko&r&ed" "&a&oOpened!" 0 5 3
+    giveItem "glitch_wood" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 8) {
+    title "&aWood Creeper Pet" "&a&oOpened!" 0 5 3
+    giveItem "wood_creeper_pet" true "First Slot" false
+    exit
+}
+
+goto npc "zone 4"
+
+if (stat "gold" >= 10000) {
+
+} else {
+    chat "&cYou don't have enough gold!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+stat "gold" dec 10000
+
+title "&%random.int/1 10%&kddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1 "invokers_location"
+pause 4
+
+title "&%random.int/1 10%&kdddddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1.2 "invokers_location"
+pause 4
+
+title "&%random.int/1 10%&kdddddd ddddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1.4 "invokers_location"
+pause 4
+
+sound "Note Pling" 0.7 1.6 "invokers_location"
+
+stat "petrng" set "%random.int/1 9%"
+if (stat "petrng" == 1) {
+    title "&6Jungle Bark Pet" "&a&oOpened!" 0 5 3
+    giveItem "jungle_bark_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 2) {
+    title "&6Jungle Planks Pet" "&a&oOpened!" 0 5 3
+    giveItem "jungle_planks_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 3) {
+    title "&fSnowy Jungle Pet" "&a&oOpened!" 0 5 3
+    giveItem "snowy_jungle_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 4) {
+    title "&6Jungle Wood Pet" "&a&oOpened!" 0 5 3
+    giveItem "jungle_wood_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 5) {
+    title "&bMonkey Pet" "&a&oOpened!" 0 5 3
+    giveItem "monkey_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 6) {
+    title "&6Fly Pet" "&a&oOpened!" 0 5 3
+    giveItem "fly_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 7) {
+    title "&9Mole Pet" "&a&oOpened!" 0 5 3
+    giveItem "mole_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 8) {
+    title "&fSheep Pet" "&a&oOpened!" 0 5 3
+    giveItem "sheep_pet" true "First Slot" false
+    exit
+}
+
+goto npc "zone 5"
+
+if (stat "gold" >= 10000) {
+
+} else {
+    chat "&cYou don't have enough gold!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+stat "gold" dec 10000
+
+title "&%random.int/1 10%&kddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1 "invokers_location"
+pause 4
+
+title "&%random.int/1 10%&kdddddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1.2 "invokers_location"
+pause 4
+
+title "&%random.int/1 10%&kdddddd ddddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1.4 "invokers_location"
+pause 4
+
+sound "Note Pling" 0.7 1.6 "invokers_location"
+
+stat "petrng" set "%random.int/1 9%"
+if (stat "petrng" == 1) {
+    title "&aMossy Wood Pet" "&a&oOpened!" 0 5 3
+    giveItem "mossy_wood_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 2) {
+    title "&2Dragonblood Wood Pet" "&a&oOpened!" 0 5 3
+    giveItem "dragonblood_wood_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 3) {
+    title "&dVenom Wood Pet" "&a&oOpened!" 0 5 3
+    giveItem "venom_wood_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 4) {
+    title "&6Lava Wood Pet" "&a&oOpened!" 0 5 3
+    giveItem "lava_wood_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 5) {
+    title "&cBlazewood Pet" "&a&oOpened!" 0 5 3
+    giveItem "blazewood_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 6) {
+    title "&cCherry Wood Pet" "&a&oOpened!" 0 5 3
+    giveItem "cherry_wood_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 7) {
+    title "&cRedwood Pet" "&a&oOpened!" 0 5 3
+    giveItem "redwood_pet" true "First Slot" false
+    exit
+}
+if (stat "petrng" == 8) {
+    title "&5Rosewood Pet" "&a&oOpened!" 0 5 3
+    giveItem "rosewood_pet" true "First Slot" false
+    exit
+}

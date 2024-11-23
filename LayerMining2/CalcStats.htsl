@@ -1,0 +1,250 @@
+
+/*
+stat "finishdiamonds" set 0
+stat "finishgold" set 0
+stat "extraforge" set 0
+stat "haste" set 0
+stat "strength" set "%stat.player/basestrength%"
+
+if (hasItem "snow_ocelot_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 20
+}
+if (hasItem "snowglobe_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 20
+}
+if (hasItem "snow_grass_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 1
+}
+if (hasItem "snow_sheep_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 17
+    stat "extraforge" inc 17
+}
+if (hasItem "white_tiger_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 25
+    stat "extragold" inc 1
+    stat "finishdiamonds" inc 1
+}
+if (hasItem "sea_pickle_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 1
+}
+if (hasItem "fish_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 2
+}
+if (hasItem "pufferfish_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 3
+}
+if (hasItem "clownfish_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 3
+}
+if (hasItem "beachball_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 1
+}
+if (hasItem "egg_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 2
+}
+if (hasItem "sunflower_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 2
+    stat "extraforge" inc 2
+}
+if (hasItem "piranha_pet" metadata Hotbar anyAmount) {
+    stat "haste" inc 1
+}
+if (hasItem "coal_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 4
+    stat "extraforge" inc 4
+}
+if (hasItem "emerald_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 5
+}
+
+function "CalcStats2" false
+goto function "CalcStats2"
+
+if (hasItem "cobalt_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 5
+}
+if (hasItem "amethyst_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 6
+}
+if (hasItem "diamond_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 3
+    stat "extraforge" inc 3
+}
+if (hasItem "gold_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 3
+    stat "extraforge" inc 2
+}
+if (hasItem "lapis_lazuli_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 4
+}
+if (hasItem "mythril_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 10
+    stat "extraforge" inc 10
+}
+if (hasItem "soul_sand_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 10
+}
+if (hasItem "sand_bucket_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 10
+}
+if (hasItem "sand_creeper_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 11
+}
+if (hasItem "red_sand_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 15
+}
+if (hasItem "black_sand_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 12
+}
+if (hasItem "blue_sand_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 17
+}
+if (hasItem "sandcastle_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 13
+    stat "extraforge" inc 13
+}
+if (hasItem "snowball_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 18
+}
+if (hasItem "ice_villager" metadata Hotbar anyAmount) {
+    stat "extragold" inc 20
+}
+
+function "CalcStats3" false
+goto function "CalcStats3"
+
+if (hasItem "jungle_wood_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 120
+}
+if (hasItem "mole_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 200
+}
+if (hasItem "sheep_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 69
+    stat "finishdiamonds" inc 1
+}
+if (hasItem "mossy_wood_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 150
+}
+if (hasItem "dragonblood_wood_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 150
+}
+if (hasItem "venom_wood_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 200
+}
+if (hasItem "snowy_oak_log_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 25
+}
+if (hasItem "oak_log_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 25
+}
+if (hasItem "oak_planks_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 25
+    stat "extraforge" inc 25
+}
+if (hasItem "stripped_oak_log_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 30
+}
+if (hasItem "lumberjack_pet" metadata Hotbar anyAmount) {
+    stat "finishdiamonds" inc 1
+    stat "haste" inc 1
+}
+if (hasItem "ant_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 35
+}
+if (hasItem "frog_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 35
+}
+if (hasItem "pug_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 20
+    stat "extraforge" inc 20
+}
+if (hasItem "birch_bark_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 40
+}
+
+function "CalcStats4" false
+goto function "CalcStats4"
+
+if (hasItem "birch_log_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 40
+}
+if (hasItem "snowy_birch_log_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 30
+    stat "extraforge" inc 30
+}
+if (hasItem "birch_planks_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 35
+}
+if (hasItem "strawberry_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 37
+}
+if (hasItem "flowery_candle_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 42
+}
+if (hasItem "basket_of_flowers!_(pet)" metadata Hotbar anyAmount) {
+    stat "finishdiamonds" inc 1
+}
+if (hasItem "kiwi_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 38
+    stat "extraforge" inc 15
+}
+if (hasItem "dark_oak_planks_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 50
+}
+if (hasItem "dark_oak_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 50
+}
+if (hasItem "stripped_dark_oak_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 45
+    stat "extraforge" inc 40
+}
+if (hasItem "grass_block_pet" metadata Hotbar anyAmount) {
+    stat "haste" inc 2
+}
+if (hasItem "forest_gremlin_pet" metadata Hotbar anyAmount) {
+    stat "finishdiamonds" inc 1
+}
+if (hasItem "grimwood_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 50
+    stat "extraforge" inc 55
+}
+if (hasItem "glitch_wood" metadata Hotbar anyAmount) {
+    stat "extragold" inc 75
+}
+if (hasItem "wood_creeper_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 75
+}
+
+function "CalcStats5" false
+goto function "CalcStats5"
+
+if (hasItem "jungle_bark_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 100
+}
+if (hasItem "jungle_planks_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 100
+}
+if (hasItem "snowy_jungle_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 90
+    stat "extraforge" inc 90
+}
+*/
+
+if (hasItem "lava_wood_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 200
+}
+if (hasItem "blazewood_pet" metadata Hotbar anyAmount) {
+    stat "haste" inc 2
+}
+if (hasItem "cherry_wood_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 210
+}
+if (hasItem "redwood_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 200
+    stat "extraforge" inc 200
+}
+if (hasItem "rosewood_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 225
+    stat "extraforge" inc 225
+}

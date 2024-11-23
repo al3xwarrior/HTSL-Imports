@@ -35,7 +35,8 @@ if (stat "forgegive" = 0) {
     exit
 }
 
-stat "forgegive" inc "%stat.player/baseforge%"
+// pets
+stat "forgegive" inc "%stat.player/extraforge%"
 
 stat "basestrength" inc "%stat.player/forgegive%"
 

@@ -1,0 +1,10 @@
+if (stat "keypadinput" = 1234) {
+    
+} else {
+    chat "&cYou have entered the wrong code!"
+    exit
+}
+
+chat "&aYou have entered the correct code!"
+stat "keypadinput" set 0
+displayMenu "Keypad"

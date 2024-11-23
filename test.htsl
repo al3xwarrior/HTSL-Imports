@@ -1,0 +1,25 @@
+if (hasItem "sea_pickle_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 1
+}
+if (hasItem "fish_pet" metadata Hotbar anyAmount) {
+    stat "finishgold" inc 2
+}
+if (hasItem "pufferfish_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 3
+}
+if (hasItem "clownfish_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 3
+}
+if (hasItem "beachball_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 1
+}
+if (hasItem "egg_pet" metadata Hotbar anyAmount) {
+    stat "finishgold" inc 2
+}
+if (hasItem "sunflower_pet" metadata Hotbar anyAmount) {
+    stat "extraforge" inc 2
+    stat "finishgold" inc 2
+}
+if (hasItem "piranha_pet" metadata Hotbar anyAmount) {
+    stat "haste" inc 1
+}

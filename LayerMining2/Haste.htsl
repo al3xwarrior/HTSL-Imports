@@ -1,9 +1,3 @@
-stat "haste" set "%stat.player/basehaste%"
-
-function "CalculateHaste1" false
-
-stat "haste" inc "%stat.player/eventhaste%"
-
 if (stat "haste" = 1) {
     applyPotion "Haste" 2 1 true
     exit

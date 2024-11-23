@@ -1,0 +1,3 @@
+stat "keypadinput" set 0
+chat "&aYou have cleared the code!"
+displayMenu "Keypad"

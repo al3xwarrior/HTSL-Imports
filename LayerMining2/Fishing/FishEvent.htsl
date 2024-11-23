@@ -7,19 +7,20 @@ stat "luckenchant" mult "%stat.player/f/luck%"
 stat "fishluck" inc "%stat.player/luckenchant%"
 }
 
+stat "fish" inc 1
 function "CatchFish" false
 
 if (stat "f/virtualfish" >= "%random.int/1 21%") {
     stat "temptime" set "%random.int/10 21%"
     stat "virtualfishtime" inc "%stat.player/temptime%"
     chat "&7Your virtual fishing enchant just gave you &3%stat.player/temptime%s&7."
-    // insert a sound
+    sound "Burp" 0.7 1.8 "invokers_location"
 }
 
 if (stat "f/multirod" >= "%random.int/2 11%") {
     cancelEvent
     title "&b&lMULTI ROD" "&7Reel in again!" 0 1 1
-    // insert a sound
+    sound "Level Up" 0.7 0.5 "invokers_location"
 }
 
 stat "fishluck" set 0
