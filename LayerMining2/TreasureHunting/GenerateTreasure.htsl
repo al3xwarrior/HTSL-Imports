@@ -1,0 +1,75 @@
+stat "tcooldown" set "%date.unix%"
+stat "tcooldown" dec "%stat.player/treasure/done%"
+
+if (stat "tcooldown" > 300) {
+    chat "&cSorry, but theres a 5 minute cooldown!"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+stat "treasurechooser" set "%random.int/1 15%"
+if (stat "treasurechooser" == 1) {
+    stat "treasure/x" set 1
+    stat "treasure/z" set 1
+}
+if (stat "treasurechooser" == 2) {
+    stat "treasure/x" set 1
+    stat "treasure/z" set 1
+}
+if (stat "treasurechooser" == 3) {
+    stat "treasure/x" set 1
+    stat "treasure/z" set 1
+}
+if (stat "treasurechooser" == 4) {
+    stat "treasure/x" set 1
+    stat "treasure/z" set 1
+}
+if (stat "treasurechooser" == 5) {
+    stat "treasure/x" set 1
+    stat "treasure/z" set 1
+}
+if (stat "treasurechooser" == 6) {
+    stat "treasure/x" set 1
+    stat "treasure/z" set 1
+}
+if (stat "treasurechooser" == 7) {
+    stat "treasure/x" set 1
+    stat "treasure/z" set 1
+}
+if (stat "treasurechooser" == 8) {
+    stat "treasure/x" set 1
+    stat "treasure/z" set 1
+}
+if (stat "treasurechooser" == 9) {
+    stat "treasure/x" set 1
+    stat "treasure/z" set 1
+}
+if (stat "treasurechooser" == 10) {
+    stat "treasure/x" set 1
+    stat "treasure/z" set 1
+}
+if (stat "treasurechooser" == 11) {
+    stat "treasure/x" set 1
+    stat "treasure/z" set 1
+}
+if (stat "treasurechooser" == 12) {
+    stat "treasure/x" set 1
+    stat "treasure/z" set 1
+}
+if (stat "treasurechooser" == 13) {
+    stat "treasure/x" set 1
+    stat "treasure/z" set 1
+}
+if (stat "treasurechooser" == 14) {
+    stat "treasure/x" set 1
+    stat "treasure/z" set 1
+}
+
+stat "treasure/x" inc "%random.int/-3 4%"
+stat "treasure/z" inc "%random.int/-3 4%"
+
+stat "treasure/active" set 1
+
+title "﴾ &6&lTREASURE STARTED ﴿" "&e%stat.player/treasure/x%x %stat.player/treasure/z%z"
+
+stat "treasurechooser" set 0

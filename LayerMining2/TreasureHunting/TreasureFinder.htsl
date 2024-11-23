@@ -1,0 +1,105 @@
+if (stat "treasure/active" == 0) {
+    exit
+}
+
+stat "treasure/disx" set "%stat.player/treasure/x%"
+stat "treasure/disx" dec "%player.location.x%"
+if (stat "treasure/disx" < 0) {
+    stat "treasure/disx" mult -1
+} 
+
+stat "treasure/disz" set "%stat.player/treasure/z%"
+stat "treasure/disz" dec "%player.location.z%"
+if (stat "treasure/disz" < 0) {
+    stat "treasure/disz" mult -1
+} 
+
+if (stat "treasure/disx" >= 45) {
+    stat "treasure/cx" set 4
+}
+if (stat "treasure/disx" < 35) {
+    stat "treasure/cx" set 6
+}
+if (stat "treasure/disx" < 10) {
+    stat "treasure/cx" set 2
+}
+if (stat "treasure/disz" >= 45) {
+    stat "treasure/cz" set 4
+}
+if (stat "treasure/disz" < 35) {
+    stat "treasure/cz" set 6
+}
+if (stat "treasure/disz" < 10) {
+    stat "treasure/cz" set 2
+}
+
+stat "treasure/avg" set "%stat.player/treasure/x%"
+stat "treasure/avg" inc "%stat.player/treasure/z%"
+stat "treasure/avg" div 2
+
+title "&7" "(( &7&oTarget: %stat.player/treasure/x%x %stat.player/treasure/z%z &8| &7&oDistance: %stat.player/treasure/disx%x %stat.player/treasure/disz%z ))" 0 1 1
+
+if (stat "treasure/avg" <= 3, placeholder "%random.int/1 101%") {
+    stat "treasure/done" set "%date.unix%"
+    stat "treasure/active" set 0
+
+    stat "gold" inc "%stat.player/treasure/gold%"
+    stat "diamonds" inc "%stat.player/treasure/diamond%"
+
+    sound "Orb Pickup" 0.7 2.0 "invokers_location"
+    title "&6✦ &e&lTREASURE FOUND &6✦" "&7wait..." 1 2 1
+    pause 20
+    sound "Level Up" 0.7 2.0 "invokers_location"
+    title "&6✦ &e&lTREASURE FOUND &6✦" "&eA &6x3⛃ &e+ &cx3&l⸕ &ePet?!?" 1 2 1
+    exit
+}
+if (stat "treasure/avg" <= 3) {
+    stat "treasure/done" set "%date.unix%"
+    stat "treasure/active" set 0
+
+    stat "treasure/gold" set "%random.int/500 1001%"
+    stat "treasure/gold" mult "%stat.player/zone%"
+
+    stat "treasure/diamond" set "%random.int/5 11%"
+    stat "treasure/diamond" mult "%stat.player/zone%"
+
+    stat "gold" inc "%stat.player/treasure/gold%"
+    stat "diamonds" inc "%stat.player/treasure/diamond%"
+
+    sound "Orb Pickup" 0.7 2.0 "invokers_location"
+    title "&6✦ &e&lTREASURE FOUND &6✦" "&6+&k%stat.player/treasure/gold%&6⛃ &r &r &b+&k%stat.player/treasure/diamond%❄" 1 2 1
+    pause 20
+    sound "Level Up" 0.7 2.0 "invokers_location"
+    title "&6✦ &e&lTREASURE FOUND &6✦" "&6+%stat.player/treasure/gold%⛃ &r &r &b+%stat.player/treasure/diamond%❄" 1 2 1
+    exit
+}
+
+if (stat "treasure/avg" <= 8) {
+    sound "Note Pling" 0.7 1.8 "invokers_location"
+    pause 3
+    sound "Note Pling" 0.7 2.0 "invokers_location"
+    exit
+}
+if (stat "treasure/avg" <= 12) {
+    sound "Note Pling" 0.7 1.5 "invokers_location"
+    pause 3
+    sound "Note Pling" 0.7 1.7 "invokers_location"
+    exit
+}
+if (stat "treasure/avg" <= 18) {
+    sound "Note Pling" 0.7 1.2 "invokers_location"
+    pause 3
+    sound "Note Pling" 0.7 1.4 "invokers_location"
+    exit
+}
+
+if (stat "treasure/avg" <= 25) {
+    sound "Note Pling" 0.7 0.9 "invokers_location"
+    pause 3
+    sound "Note Pling" 0.7 1.1 "invokers_location"
+    exit
+}
+
+sound "Note Pling" 0.7 0.5 "invokers_location"
+pause 3
+sound "Note Pling" 0.7 0.7 "invokers_location"
