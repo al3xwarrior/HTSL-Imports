@@ -13,7 +13,7 @@ tp "custom_coordinates" "~ ~28 ~"
 sound "Level Up" 0.7 2.0 "invokers_location"
 
 stat "togive" set "%stat.player/layergold%"
-stat "togive" inc "%stat.player/finishgold%"
+stat "togive" inc "%stat.player/extragold%"
 function "FinishGoldMultipliers"
 
 if (stat "eventgold" > 0) {

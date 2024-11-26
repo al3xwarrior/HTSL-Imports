@@ -1,7 +1,7 @@
 
 /*
 stat "finishdiamonds" set 0
-stat "finishgold" set 0
+stat "extragold" set 0
 stat "extraforge" set 0
 stat "haste" set 0
 stat "strength" set "%stat.player/basestrength%"
@@ -247,4 +247,8 @@ if (hasItem "redwood_pet" metadata Hotbar anyAmount) {
 if (hasItem "rosewood_pet" metadata Hotbar anyAmount) {
     stat "extragold" inc 225
     stat "extraforge" inc 225
+}
+if (hasItem "tutorial_pet" metadata Hotbar anyAmount) {
+    stat "extragold" inc 3
+    stat "extraforge" inc 1
 }

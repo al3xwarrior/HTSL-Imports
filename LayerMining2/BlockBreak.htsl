@@ -7,6 +7,8 @@ if (stat "trialpick" <= 0, hasItem "trialpick" metadata Hand anyAmount) {
     sound "Item Break" 0.7 1 "invokers_location"
 }
 
+stat "blockbreak" set 8
+
 stat "multithreadmine" inc 1
 if (stat "multithreadmine" >= 2) {
     stat "multithreadmine" set 0

@@ -1,0 +1,40 @@
+stat "blockbreak" dec 1
+if (placeholder "%player.location.y%" <= 196, placeholder "%player.location.pitch%" >= 89, stat "blockbreak" <= 0) {
+    
+} else {
+    exit
+}
+
+stat "afkminepercent" inc "%random.int/8 16%"
+if (stat "afkminepercent" >= 100) {
+    stat "afkminepercent" set 0
+    function "Mine1/1" false
+    exit
+}
+
+// &a &2 &e &6 &c
+if (stat "afkminepercent" >= 80) {
+    sound "Note Piano" 0.7 1.5 "invokers_location"
+    title "&4&l⸕ &a%stat.player/afkminepercent%%" "&7You are &bAFK Mining&7!" 0 2 1
+    exit
+}
+if (stat "afkminepercent" >= 60) {
+    sound "Note Piano" 0.7 1.3 "invokers_location"
+    title "&4&l⸕ &2%stat.player/afkminepercent%%" "&7You are &bAFK Mining&7!" 0 2 1
+    exit
+}
+if (stat "afkminepercent" >= 40) {
+    sound "Note Piano" 0.7 1.1 "invokers_location"
+    title "&4&l⸕ &e%stat.player/afkminepercent%%" "&7You are &bAFK Mining&7!" 0 2 1
+    exit
+}
+if (stat "afkminepercent" >= 20) {
+    sound "Note Piano" 0.7 0.9 "invokers_location"
+    title "&4&l⸕ &6%stat.player/afkminepercent%%" "&7You are &bAFK Mining&7!" 0 2 1
+    exit
+}
+if (stat "afkminepercent" >= 0) {
+    sound "Note Piano" 0.7 0.7 "invokers_location"
+    title "&4&l⸕ &c%stat.player/afkminepercent%%" "&7You are &bAFK Mining&7!" 0 2 1
+    exit
+}

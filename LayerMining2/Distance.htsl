@@ -1,0 +1,9 @@
+if (stat "lastx" = "%player.location.x%", stat "lasty" = "%player.location.y%", stat "lastz" = "%player.location.z%") {
+    exit
+}
+
+stat "lastx" = "%player.location.x%"
+stat "lasty" = "%player.location.y%"
+stat "lastz" = "%player.location.z%"
+
+stat "distance" inc 1

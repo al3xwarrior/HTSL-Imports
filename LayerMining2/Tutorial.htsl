@@ -1,0 +1,65 @@
+applyPotion "Invisibility" 17 1 true
+
+if () {
+applyPotion "Blindness" 1 1 true
+tp "custom_coordinates" "95.5 204 129.5 -135.19 27.47"
+sound "Enderman Teleport" 0.7 2.0 "invokers_location"
+chat "&7&m----------------------------------------&r"
+chat "&r &r &r &r &r &r &e&lTUTORIAL"
+chat "&fDon't worry we will make this quick! Welcome to"
+chat "&2Layer Mining 2&f!"
+chat "&7&m----------------------------------------"
+}
+
+pause 100
+
+if () {
+applyPotion "Blindness" 1 1 true
+tp "custom_coordinates" "100.5 204 118.5 -89.8 57.33"
+sound "Enderman Teleport" 0.7 2.0 "invokers_location"
+chat "&7&m----------------------------------------&r"
+chat "&r &r &r &r &r &r &e&lTUTORIAL"
+chat "&fHere is where you mine for &6Gold&f!"
+chat "&7&m----------------------------------------"
+}
+
+pause 80
+
+if () {
+applyPotion "Blindness" 1 1 true
+tp "custom_coordinates" "110.5 202 118.5 -90.23 37.82"
+sound "Enderman Teleport" 0.7 2.0 "invokers_location"
+chat "&7&m----------------------------------------&r"
+chat "&r &r &r &r &r &r &e&lTUTORIAL"
+chat "&fUse that &6gold &fto purchase or upgrade your pick!"
+chat "&7&m----------------------------------------"
+}
+
+pause 80
+
+if () {
+applyPotion "Blindness" 1 1 true
+tp "custom_coordinates" "100.5 203 113.5 54.56 46.12"
+sound "Enderman Teleport" 0.7 2.0 "invokers_location"
+chat "&7&m----------------------------------------&r"
+chat "&r &r &r &r &r &r &e&lTUTORIAL"
+chat "&fGet more &cstrength &fhere!"
+chat "&7&m----------------------------------------"
+}
+
+pause 80
+
+if () {
+applyPotion "Blindness" 1 1 true
+tp "house_spawn"
+sound "Enderman Teleport" 0.7 2.0 "invokers_location"
+chat "&7&m----------------------------------------&r"
+chat "&r &r &r &r &r &r &e&lTUTORIAL"
+chat "&fYou can figure out the rest! Have fun!"
+chat "&7&m----------------------------------------"
+}
+
+if (stat "tutorial" == 0) {
+    stat "tutorial" set 1
+    giveItem "tutorial_pet" true "First Slot" false
+}

@@ -1,0 +1,34 @@
+if (stat "s/tips" = 0) {
+    exit
+}
+
+stat "tiprng" set "%random.int/1 15%"
+
+if (stat "tiprng" = 1) {
+    chat "&c&lTIP &7Use &f/visibility 0 &7to hide other players!"
+    exit
+}
+if (stat "tiprng" = 2) {
+    chat "&c&lTIP &7You can use &f/zone &7to teleport to your current zone!"
+    exit
+}
+if (stat "tiprng" = 3) {
+    chat "&c&lTIP &7When you unlock a new area, get some &cstrength&7!"
+    exit
+}
+if (stat "tiprng" = 4) {
+    chat "&c&lTIP &7Don't forget to combine your tools!"
+    exit
+}
+if (stat "tiprng" = 5) {
+    chat "&c&lTIP &7Are you not in the &9HousingHub Discord&7? Join now! &9&o/disc"
+    exit
+}
+if (stat "tiprng" = 6) {
+    chat "&c&lTIP &7Want to make a &cHouse &7like this? Check out some tutorials! &c&o/youtube"
+    exit
+}
+if (stat "tiprng" = 7) {
+    chat "&c&lTIP &7Toggle these tips using &f/tiptoggle&7!"
+    exit
+}

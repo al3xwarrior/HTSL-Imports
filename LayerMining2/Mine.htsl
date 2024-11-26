@@ -153,7 +153,6 @@ if (placeholder "%player.location.x%" >= 103, placeholder "%player.location.x%" 
     function "MineAnimation" false
     exit
 }
-*/
 
 // Zone 2-1
 if (placeholder "%player.location.x%" >= 44, placeholder "%player.location.x%" <= 50, placeholder "%player.location.y%" >= 196, placeholder "%player.location.y%" <= 198, placeholder "%player.location.z%" >= 115, placeholder "%player.location.z%" <= 121) {
@@ -308,3 +307,4 @@ if (placeholder "%player.location.x%" >= 44, placeholder "%player.location.x%" <
     function "MineAnimation" false
     exit
 }
+*/

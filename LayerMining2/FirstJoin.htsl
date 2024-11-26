@@ -4,3 +4,6 @@ if (stat "zone" = 0) {
 if (stat "basestrength" = 0) {
     stat "basestrength" set 1
 }
+if (stat "s/tips" = 0) {
+    stat "s/tips" set 2
+}

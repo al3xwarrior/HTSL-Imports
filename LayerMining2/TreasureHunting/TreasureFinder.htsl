@@ -14,32 +14,23 @@ if (stat "treasure/disz" < 0) {
     stat "treasure/disz" mult -1
 } 
 
-if (stat "treasure/disx" >= 45) {
-    stat "treasure/cx" set 4
-}
-if (stat "treasure/disx" < 35) {
-    stat "treasure/cx" set 6
-}
-if (stat "treasure/disx" < 10) {
-    stat "treasure/cx" set 2
-}
-if (stat "treasure/disz" >= 45) {
-    stat "treasure/cz" set 4
-}
-if (stat "treasure/disz" < 35) {
-    stat "treasure/cz" set 6
-}
-if (stat "treasure/disz" < 10) {
-    stat "treasure/cz" set 2
-}
-
-stat "treasure/avg" set "%stat.player/treasure/x%"
-stat "treasure/avg" inc "%stat.player/treasure/z%"
+stat "treasure/avg" set "%stat.player/treasure/disx%"
+stat "treasure/avg" inc "%stat.player/treasure/disz%"
 stat "treasure/avg" div 2
 
-title "&7" "(( &7&oTarget: %stat.player/treasure/x%x %stat.player/treasure/z%z &8| &7&oDistance: %stat.player/treasure/disx%x %stat.player/treasure/disz%z ))" 0 1 1
+if (stat "treasure/avg" >= 45) {
+    stat "treasure/color" set 4
+}
+if (stat "treasure/avg" < 45) {
+    stat "treasure/color" set 6
+}
+if (stat "treasure/avg" < 15) {
+    stat "treasure/color" set 2
+}
 
-if (stat "treasure/avg" <= 3, placeholder "%random.int/1 101%") {
+actionBar "&8(( &7&oDistance: &%stat.player/treasure/color%%stat.player/treasure/avg% &8))" 0 1 1
+
+if (stat "treasure/avg" <= 1, placeholder "%random.int/1 101%") {
     stat "treasure/done" set "%date.unix%"
     stat "treasure/active" set 0
 
@@ -51,9 +42,10 @@ if (stat "treasure/avg" <= 3, placeholder "%random.int/1 101%") {
     pause 20
     sound "Level Up" 0.7 2.0 "invokers_location"
     title "&6✦ &e&lTREASURE FOUND &6✦" "&eA &6x3⛃ &e+ &cx3&l⸕ &ePet?!?" 1 2 1
+    giveItem "treasure_chest_pet" true "First Slot" false
     exit
 }
-if (stat "treasure/avg" <= 3) {
+if (stat "treasure/avg" <= 1) {
     stat "treasure/done" set "%date.unix%"
     stat "treasure/active" set 0
 
@@ -74,32 +66,23 @@ if (stat "treasure/avg" <= 3) {
     exit
 }
 
-if (stat "treasure/avg" <= 8) {
-    sound "Note Pling" 0.7 1.8 "invokers_location"
-    pause 3
+sound "Note Pling" 0.7 0.7 "invokers_location"
+
+pause 2
+
+if (stat "treasure/avg" <= 7) {
     sound "Note Pling" 0.7 2.0 "invokers_location"
     exit
 }
-if (stat "treasure/avg" <= 12) {
+if (stat "treasure/avg" <= 15) {
     sound "Note Pling" 0.7 1.5 "invokers_location"
-    pause 3
-    sound "Note Pling" 0.7 1.7 "invokers_location"
     exit
 }
-if (stat "treasure/avg" <= 18) {
+if (stat "treasure/avg" <= 20) {
     sound "Note Pling" 0.7 1.2 "invokers_location"
-    pause 3
-    sound "Note Pling" 0.7 1.4 "invokers_location"
     exit
 }
-
-if (stat "treasure/avg" <= 25) {
+if (stat "treasure/avg" <= 30) {
     sound "Note Pling" 0.7 0.9 "invokers_location"
-    pause 3
-    sound "Note Pling" 0.7 1.1 "invokers_location"
     exit
 }
-
-sound "Note Pling" 0.7 0.5 "invokers_location"
-pause 3
-sound "Note Pling" 0.7 0.7 "invokers_location"

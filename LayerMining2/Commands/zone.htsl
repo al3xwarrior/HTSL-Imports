@@ -1,0 +1,34 @@
+applyPotion "Blindness" 1 1 true
+
+if (stat "zone" = 1) {
+    tp "house_spawn"
+}
+if (stat "zone" = 2) {
+    tp "custom_coordinates" "106.5 197 96.5 179.63 2.02"
+}
+if (stat "zone" = 3) {
+    tp "custom_coordinates" "106.31 197 58.65 179.63 2.02"
+}
+if (stat "zone" = 4) {
+    tp "custom_coordinates" "106.28 197 20.2 179.63 2.02"
+}
+if (stat "zone" = 5) {
+    tp "custom_coordinates" "106.44 197 -17.75 -179.93 2.02"
+}
+if (stat "zone" = 6) {
+    tp "custom_coordinates" "47.5 197 130.73 -179.83 -0.35"
+}
+if (stat "zone" = 7) {
+    tp "custom_coordinates" "47.51 197 96.24 -179.83 -0.35"
+}
+if (stat "zone" = 8) {
+    tp "custom_coordinates" "47.52 197 58.74 -179.83 -0.35"
+}
+if (stat "zone" = 9) {
+    tp "custom_coordinates" "47.53 197 21.01 -179.83 -0.35"
+}
+if (stat "zone" = 10) {
+    tp "custom_coordinates" "47.53 197 -17.3 -179.83 -0.35"
+}
+
+sound "Enderman Teleport" 0.7 2.0 "invokers_location"

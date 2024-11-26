@@ -19,18 +19,18 @@ if (globalstat "eventid" = 2) {
     stat "eventhaste" set 3
 }
 if (globalstat "eventid" = 3) {
-    chat "&c2x Forge &7for &c10 seconds&7!"
+    chat "&c2x Strength &7for &c10 seconds&7!"
     stat "eventforge" set 2
 }
 if (globalstat "eventid" = 4) {
-    chat "&c3x Forge &7for &c10 seconds&7!"
+    chat "&c3x Strength &7for &c10 seconds&7!"
     stat "eventforge" set 3
 }
-if (globalstat "eventid" = 3) {
+if (globalstat "eventid" = 5) {
     chat "&62x Gold &7for &c10 seconds&7!"
     stat "eventgold" set 2
 }
-if (globalstat "eventid" = 4) {
+if (globalstat "eventid" = 6) {
     chat "&62x Gold &7for &c10 seconds&7!"
     stat "eventgold" set 3
 }
