@@ -1,0 +1,25 @@
+if (stat "level" < 10) {
+    chat "&c&lYou need Level 7 to create a Clan!"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+if (stat "clan" > 0) {
+    chat "&c&lYou are already in a Clan!"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+globalstat "clans" inc 1
+stat "clan" set "%stat.global/clans%"
+stat "clan/owner" set "%stat.player/playerid%"
+stat "clan/maxmembers" set 5
+stat "clan/members" set 1
+stat "clan/level" set 1
+stat "clan/xpneed" set 250
+stat "clan/kills" set 0
+stat "clan/deaths" set 0
+stat "clan/gold" set 0
+
+title "&a&lClan Created!" "&2You now own Clan #%stat.player/clan%!" 1 2 1
+sound "Level Up" 0.7 1.2 "invokers_location"

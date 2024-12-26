@@ -1,0 +1,32 @@
+if or (globalstat "dueltemp1" = "%stat.player/playerid%", globalstat "dueltemp2" = "%stat.player/playerid%") {
+
+} else {
+    exit
+}
+
+if (globalstat "arena/1" >= 0, globalstat "arena/1" <= 1, globalstat "dueltemp1" = "%stat.player/playerid%") {
+    globalstat "arena/1" inc 1
+    globalstat "arena/1/t" set 120
+    stat "duels/status" set 1
+    applyLayout "Soup"
+    giveItem "pvp_sword" false 0 true
+    giveItem "pvp_helmet" false "Helmet" true
+    giveItem "pvp_chestplate" false "Chestplate" true
+    giveItem "pvp_leggings" false "Leggings" true
+    giveItem "pvp_boots" false "Boots" true
+    tp "custom_coordinates" "81.5 109 32.5 -0.0 0.0"
+    exit
+}
+if (globalstat "arena/1" >= 0, globalstat "arena/1" <= 1, globalstat "dueltemp2" = "%stat.player/playerid%") {
+    globalstat "arena/1" inc 1
+    globalstat "arena/1/t" set 120
+    stat "duels/status" set 1
+    applyLayout "Soup"
+    giveItem "pvp_sword" false 0 true
+    giveItem "pvp_helmet" false "Helmet" true
+    giveItem "pvp_chestplate" false "Chestplate" true
+    giveItem "pvp_leggings" false "Leggings" true
+    giveItem "pvp_boots" false "Boots" true
+    tp "custom_coordinates" "81.5 109 79.5 180.0 -0.0"
+    exit
+}

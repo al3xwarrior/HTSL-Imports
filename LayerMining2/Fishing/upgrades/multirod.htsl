@@ -1,0 +1,19 @@
+if (stat "fishgold" < "%stat.player/fc/multirod%", ) {
+    chat "&7You don't have enough gold to upgrade your multi rod enchant."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+if (stat "f/multirod" >= 5) {
+    chat "&7You have reached the maximum level for your multi rod enchant."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+stat "fishgold" dec "%stat.player/fc/multirod%"
+stat "fc/multirod" mult 2
+stat "f/multirod" inc 1
+chat "&7You have upgraded your multi rod to level &3%stat.player/f/multirod%&7!"
+sound "Level Up" 0.7 1 "invokers_location"
+
+function "OpenRodUpgrades" false

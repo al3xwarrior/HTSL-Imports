@@ -18,7 +18,7 @@ if (stat "AC/ZDist" < 0) {
 }
 
 // debug
-//chat "X:%stat.player/AC/XDist% Y:%stat.player/AC/YDist% Z:%stat.player/AC/ZDist%"
+chat "X:%stat.player/AC/XDist% Y:%stat.player/AC/YDist% Z:%stat.player/AC/ZDist%"
 
 // Find values for different ping
 if (placeholder "%player.ping%" <= 60) {

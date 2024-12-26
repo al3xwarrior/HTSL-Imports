@@ -1,0 +1,82 @@
+
+/*
+if (stat "s/clickersounds" = 0) {
+    stat "s/clickersounds" set 2
+}
+if (stat "s/withdrawsound" = 0) {
+    stat "s/withdrawsound" set 2
+}
+if (stat "s/depositsound" = 0) {
+    stat "s/depositsound" set 2
+}
+if (stat "up/clickermulti" = 0) {
+    stat "up/clickermulti" set 1
+}
+if (stat "up/eggmulti" = 0) {
+    stat "up/eggmulti" set 1
+}
+if (stat "withdrawamount" = 0) {
+    stat "withdrawamount" set 3
+}
+if (stat "depositamount" = 0) {
+    stat "depositamount" set 3
+}
+if (stat "withdrawreq" = 0) {
+    stat "withdrawreq" set 5
+}
+if (stat "eggspawnreq" = 0) {
+    stat "eggspawnreq" set 5
+}
+if (stat "withspeedlvl" = 0) {
+    stat "withspeedlvl" set 1
+}
+if (stat "withspeedcost" = 0) {
+    stat "withspeedcost" set 100
+}
+if (stat "withamountcost" = 0) {
+    stat "withamountcost" set 250
+}
+if (stat "eggmulticost" = 0) {
+    stat "eggmulticost" set 500
+}
+if (stat "moneymult" = 0) {
+    stat "moneymult" set 1
+}
+if (stat "moneymulticost" = 0) {
+    stat "moneymulticost" set 500
+}
+
+function "JoinStats2"
+goto function "JoinStats2"
+
+if (stat "depositspeedcost" = 0) {
+    stat "depositspeedcost" set 100
+}
+if (stat "depositreq" = 0) {
+    stat "depositreq" set 5
+}
+if (stat "depositlvl" = 0) {
+    stat "depositlvl" set 1
+}
+if (stat "sellspeed" = 0) {
+    stat "sellspeed" set 1
+}
+if (stat "sellspeedcost" = 0) {
+    stat "sellspeedcost" set 200
+}
+if (stat "depamountcost" = 0) {
+    stat "depamountcost" set 250
+}
+if (stat "breedercost" = 0) {
+    stat "breedercost" set 500
+}
+if (stat "carriercost" = 0) {
+    stat "carriercost" set 500
+}
+if (stat "s/workernoti" = 0) {
+    stat "s/workernoti" set 2
+}
+*/
+if (stat "s/sellmsg" = 0) {
+    stat "s/sellmsg" set 2
+}

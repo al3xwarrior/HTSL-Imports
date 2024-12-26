@@ -1,0 +1,12 @@
+sound "Note Pling" 0.7 1 "invokers_location"
+pause 5
+sound "Note Pling" 0.7 1.5 "invokers_location"
+pause 3
+sound "Note Pling" 0.7 2.0 "invokers_location"
+
+chat "&6&lCookies Given!"
+if (globalstat "calculation" > 1) {
+    chat "&e%stat.global/calculation% cookies &7have been added!"
+} else {
+    chat "&e%stat.global/calculation% cookie &7has been added!"
+}

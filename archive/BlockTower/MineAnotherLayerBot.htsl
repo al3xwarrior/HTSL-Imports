@@ -1,0 +1,5 @@
+if (stat "bot" = 0) {
+    exit
+}
+
+chat "RESET LAYER %stat.global/layerqueued%"

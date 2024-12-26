@@ -1,1 +1,1 @@
-{"item": "{id:\"minecraft:golden_sword\",Count:1b,tag:{ench:[0:{lvl:10s,id:16s},1:{lvl:1s,id:20s}],HideFlags:39,display:{Lore:[0:\"\",1:\"§fHit a §2Infected §fplayer with this to turn\",2:\"§fthem back into a §eSurvivor§f!\",3:\"\"],Name:\"§fZombie Cure §7(Punch)\"}},Damage:500s}"}
+{"item": "{id:\"minecraft:golden_sword\",Count:1b,tag:{ench:[0:{lvl:10s,id:16s}],HideFlags:39,display:{Lore:[0:\"\",1:\"§fHit a §2Infected §fplayer with this to turn\",2:\"§fthem back into a §eSurvivor§f!\",3:\"\"],Name:\"§fZombie Cure §7(Punch)\"}},Damage:500s}"}

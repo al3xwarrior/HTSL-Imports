@@ -4,3 +4,13 @@ if (stat "virtualfishtime" > 0) {
     exit
 }
 
+if () {
+stat "fishluck" set "%random.int/1 4%"
+stat "fishluck" inc "%stat.player/f/deeplure%"
+stat "fishluck" inc "%stat.player/f/luck%"
+}
+
+function "CatchFish" false
+
+stat "fishluck" set 0
+stat "temptime" set 0

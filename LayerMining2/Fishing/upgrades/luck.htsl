@@ -1,0 +1,18 @@
+if (stat "fishgold" < "%stat.player/fc/luck%", ) {
+    chat "&7You don't have enough gold to upgrade your luck enchant."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+if (stat "f/luck" >= 10) {
+    chat "&7You have reached the maximum level for your luck enchant."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+stat "fishgold" dec "%stat.player/fc/luck%"
+stat "fc/luck" inc 50
+chat "&7You have upgraded your luck to level &3%stat.player/f/luck%&7!"
+sound "Level Up" 0.7 1 "invokers_location"
+
+function "OpenRodUpgrades" false

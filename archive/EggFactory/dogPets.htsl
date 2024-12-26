@@ -1,0 +1,29 @@
+if or (hasItem "dogpet1" metadata Armor anyAmount, hasItem "dogpet2" metadata Armor anyAmount, hasItem "dogpet3" metadata Armor anyAmount, hasItem "dogpet4" metadata Armor anyAmount) {
+
+} else {
+    exit
+}
+
+stat "dogrng" set "%random.int/1 1001%"
+
+if (hasItem "dogpet2" metadata Armor anyAmount) {
+    stat "dogrng" dec 5
+}
+if (hasItem "dogpet3" metadata Armor anyAmount) {
+    stat "dogrng" dec 10
+}
+if (hasItem "dogpet4" metadata Armor anyAmount) {
+    stat "dogrng" dec 20
+}
+
+if (stat "dogrng" > 1) {
+    exit
+}
+
+stat "dogrng" set 0
+
+sound "entity.wolf.pant" 0.7 1.0 "invokers_location"
+chat "&6&l[⭐] &eYour Dog Pet sniffed out something interesting!"
+random {
+    // to be added
+}

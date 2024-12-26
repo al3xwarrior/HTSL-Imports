@@ -1,0 +1,111 @@
+if (stat "combat" > 0) {
+    chat "&c&lYou cannot do this while in combat! &4&l✘"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+if (globalstat "event" = 0) {
+    chat "&c&lThere is no active event! &4&l✘"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+if (globalstat "event" = 1, globalstat "rvb/waiting" = 0) {
+    chat "&c&lSorry! There is already an active event! &4&l✘"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+if (globalstat "event" = 2, globalstat "koth/waiting" = 0) {
+    chat "&c&lSorry! There is already an active event! &4&l✘"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+if (globalstat "event" = 3, globalstat "inf/waiting" = 0) {
+    chat "&c&lSorry! There is already an active event! &4&l✘"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+// Red Vs Blue
+if (globalstat "event" = 1) {
+    chat "&8&m------------------------------------"
+    chat "&c&lRed &f&lvs &b&lBlue &f&lEvent!"
+    chat "&fEliminate the other team!"
+    chat "&r"
+}
+if (globalstat "event" = 1, stat "healingmethod" = 0) {
+    resetInventory
+    applyLayout "Soup"
+} 
+if (globalstat "event" = 1, stat "healingmethod" = 1) {
+    resetInventory
+    applyLayout "Pots"
+}
+if (globalstat "event" = 1, globalstat "rvb/teamassign" = 1) {
+    globalstat "rvb/teamassign" set 0
+    setTeam "Blue"
+    chat "&fYou are on the &b&lBLUE &fteam!"
+    chat "&8&m------------------------------------"
+    giveItem "blueteam_sword" false 0 true
+    giveItem "blueteam_ability" false 1 true
+    giveItem "blueteam_helmet" false "Helmet" true
+    giveItem "blueteam_chestplate" false "Chestplate" true
+    giveItem "blueteam_leggings" false "Leggings" true
+    giveItem "blueteam_boots" false "Boots" true
+    tp "custom_coordinates" "74.5 115 -21.5"
+    exit
+}
+if (globalstat "event" = 1, globalstat "rvb/teamassign" = 0) {
+    globalstat "rvb/teamassign" set 1
+    setTeam "Red"
+    chat "&fYou are on the &c&lRED &fteam!"
+    chat "&8&m------------------------------------"
+    giveItem "redteam_sword" false 0 true
+    giveItem "redteam_ability" false 1 true
+    giveItem "redteam_helmet" false "Helmet" true
+    giveItem "redteam_chestplate" false "Chestplate" true
+    giveItem "redteam_leggings" false "Leggings" true
+    giveItem "redteam_boots" false "Boots" true
+    tp "custom_coordinates" "74.5 115 -21.5"
+    exit
+} 
+
+// KOTH
+if (globalstat "event" = 2) {
+    stat "kit" set 1
+    stat "koth" set 0
+    chat "&8&m------------------------------------"
+    chat "&6&lKOTH &f&lEvent!"
+    chat "&fStay at the top for the longest time!"
+    chat "&8&m------------------------------------"
+
+    tp "custom_coordinates" "97.5 114 -107.5 0.0 5.69"
+
+    resetInventory
+    
+    giveItem "koth_knockback" false 0 true
+    giveItem "koth_boots" false "Boots" true
+
+    applyPotion "Regeneration" 150 10 true
+    applyPotion "Resistance" 150 10 true
+
+    exit
+}
+
+// INFECTION
+if (globalstat "event" = 3) {
+    stat "kit" set 1
+    chat "&8&m------------------------------------"
+    chat "&a&lInfection &f&lEvent!"
+    chat "&fBe the last survivor alive!"
+    chat "&8&m------------------------------------"
+
+    tp "custom_coordinates" "6.5 88 63.5 179.46 7.3"
+
+    resetInventory
+
+    setTeam "Survivor"
+    applyLayout "Survivor"
+
+    exit
+}

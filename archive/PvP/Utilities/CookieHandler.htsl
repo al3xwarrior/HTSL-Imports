@@ -1,0 +1,14 @@
+if (globalstat "cookies" < "%house.cookies%") {
+    globalstat "cookietemp" set "%house.cookies%"
+    globalstat "cookietemp" dec "%stat.global/cookies%"
+    globalstat "cookies" set "%house.cookies%"
+    function "CookiesChanged" true
+    pause 5
+    globalstat "cookietemp" set 0
+    exit
+}
+
+if (globalstat "cookiegoal" <= "%house.cookies%") {
+    globalstat "cookiegoal" inc 30
+    function "CookieGoal" true
+}

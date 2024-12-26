@@ -1,0 +1,3 @@
+if (isItem "tpbow" metadata Hand anyAmount) {
+    globalstat "tpbow/id" set "%stat.player/playerid%"
+}

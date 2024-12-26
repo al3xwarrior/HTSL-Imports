@@ -1,0 +1,18 @@
+if (stat "fishgold" < "%stat.player/fc/deeplure%", ) {
+    chat "&7You don't have enough gold to upgrade your deep lure enchant."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+if (stat "f/deeplure" >= 8) {
+    chat "&7You have reached the maximum level for your deep lure enchant."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+stat "fishgold" dec "%stat.player/fc/deeplure%"
+stat "fc/deeplure" inc 200
+chat "&7You have upgraded your deep lure to level &3%stat.player/f/deeplure%&7!"
+sound "Level Up" 0.7 1 "invokers_location"
+
+function "OpenRodUpgrades" false

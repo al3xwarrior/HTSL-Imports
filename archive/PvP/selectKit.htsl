@@ -1,0 +1,112 @@
+// requires specific level
+if (stat "level" >= 2) {
+    chat "&c&lThis row requires Level 2!"
+    sound "block.anvil.land" 0.7 0.5 "invokers_location"
+    exit
+}
+
+// temp stat
+stat "kit_cost" set 100
+
+// Not currently owned the kit but can buy it
+if (stat "kit_zombie" = 4, stat "gold" >= "%stat.player/kit_cost%") {
+    stat "kit_zombie" set 2
+    stat "gold" dec "%stat.player/kit_cost%"
+    chat "&a&lYou have purchased this kit! &2&l✔ &7(-%stat.player/kit_cost%⛃)"
+    sound "entity.experience_orb.pickup" 0.7 1.0 "invokers_location"
+    stat "kit_cost" set 0
+    displayMenu "Kits"
+    exit
+}
+// Not owned and cant buy it
+if (stat "kit_zombie" = 4, stat "gold" < "%stat.player/kit_cost%") {
+    chat "&c&lYou don't have enough gold! &4&l✘ &7(%stat.player/gold%⛃&8/&7%stat.player/kit_cost%⛃)"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    stat "kit_cost" set 0
+    exit
+}
+
+stat "kit_cost" set 0
+
+closeMenu
+
+resetInventory
+stat "kit" set 5
+
+chat "&e&lKit Equiped! &6&l✔"
+
+giveItem "zombie_helmet" false "Helmet" true
+giveItem "zombie_chestplate" false "Chestplate" true
+giveItem "zombie_leggings" false "Leggings" true
+giveItem "zombie_boots" false "Boots" true
+
+if (stat "healingmethod" = 0) {
+    applyLayout "Soup"
+} else {
+    applyLayout "Pots"
+}
+
+//  %stat.player/weaponslot% = 1 - 9 (for kit editor)
+//  %stat.player/abilityslot% = 1 - 9 (for kit editor)
+
+if (stat "weaponslot" = 1) {
+    giveItem "zombie_sword" false 0 true
+}
+if (stat "weaponslot" = 2) {
+    giveItem "zombie_sword" false 1 true
+}
+if (stat "weaponslot" = 3) {
+    giveItem "zombie_sword" false 2 true
+}
+if (stat "weaponslot" = 4) {
+    giveItem "zombie_sword" false 3 true
+}
+if (stat "weaponslot" = 5) {
+    giveItem "zombie_sword" false 4 true
+}
+if (stat "weaponslot" = 6) {
+    giveItem "zombie_sword" false 5 true
+}
+if (stat "weaponslot" = 7) {
+    giveItem "zombie_sword" false 6 true
+}
+if (stat "weaponslot" = 8) {
+    giveItem "zombie_sword" false 7 true
+}
+if (stat "weaponslot" = 9) {
+    giveItem "zombie_sword" false 8 true
+}
+
+/*
+if (stat "abilityslot" = 1) {
+    giveItem "zombie_ability" false 0 true
+}
+if (stat "abilityslot" = 2) {
+    giveItem "zombie_ability" false 1 true
+}
+
+function "Zombie_KitExtra" false
+goto function "Zombie_KitExtra"
+
+if (stat "abilityslot" = 3) {
+    giveItem "zombie_ability" false 2 true
+}
+if (stat "abilityslot" = 4) {
+    giveItem "zombie_ability" false 3 true
+}
+if (stat "abilityslot" = 5) {
+    giveItem "zombie_ability" false 4 true
+}
+if (stat "abilityslot" = 6) {
+    giveItem "zombie_ability" false 5 true
+}
+if (stat "abilityslot" = 7) {
+    giveItem "zombie_ability" false 6 true
+}
+if (stat "abilityslot" = 8) {
+    giveItem "zombie_ability" false 7 true
+}
+if (stat "abilityslot" = 9) {
+    giveItem "zombie_ability" false 8 true
+}
+*/

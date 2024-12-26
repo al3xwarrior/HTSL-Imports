@@ -1,0 +1,13 @@
+if (stat "money" >= "%stat.player/rebirthreq%") {
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    chat "&4&l[!] &cYou don't have enough money!"
+    exit
+}
+stat "money" set 0
+
+stat "rebirths" inc 1
+
+globalstat "rebirthbc" set "%stat.player/rebirths%"
+globalstat "rebirthid" set "%stat.player/playerid%"
+
+function "BroadcastRebirth" true

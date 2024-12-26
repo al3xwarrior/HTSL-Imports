@@ -1,0 +1,35 @@
+if (stat "streamer" = 1) {
+    globalstat "streamerx" set "%player.location.x%"
+    globalstat "streamery" set "%player.location.y%"
+    globalstat "streamerz" set "%player.location.z%"
+    exit
+}
+
+stat "distx" set "%player.location.x%"
+stat "distx" dec "%globalstat.streamerx%"
+
+stat "disty" set "%player.location.y%"
+stat "disty" dec "%globalstat.streamery%"
+
+stat "distz" set "%player.location.z%"
+stat "distz" dec "%globalstat.streamerz%"
+
+if (stat "disx" < 0) {
+    stat "disx" mult -1
+}
+if (stat "disy" < 0) {
+    stat "disy" mult -1
+}
+if (stat "disz" < 0) {
+    stat "disz" mult -1
+}
+
+stat "dist" set "%stat.distx%"
+stat "dist" inc "%stat.disty%"
+stat "dist" inc "%stat.distz%"
+if (stat "dist" < 6) {
+    tp "custom_coordinates" "~ ~15 ~"
+    chat "&cYou are too close to Alex! Don't get in his way!!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}

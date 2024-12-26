@@ -1,0 +1,66 @@
+// RED VS BLUE
+if (inRegion "RvBWaitingRoom") {
+    actionBar "&e&lWaiting for Event to Start! &bBlue: %player.team.players/Blue% &7: &cRed: %player.team.players/Red% &8(&f%stat.global/rvb/waiting%s&8)"
+    exit
+}
+if (globalstat "event" = 1, hasTeam "Red") {
+    actionBar "&c&lEliminate the Blue Team! &bBlue: %player.team.players/Blue% &7: &cRed: %player.team.players/Red% &8(&f%stat.global/rvb/timer%s&8)"
+    exit
+}
+if (globalstat "event" = 1, hasTeam "Blue") {
+    actionBar "&b&lEliminate the Red Team! &9Blue: %player.team.players/Blue% &7: &cRed: %player.team.players/Red% &8(&f%stat.global/rvb/timer%s&8)"
+    exit
+}
+
+// INFECTION
+if (hasTeam "Survivor", globalstat "inf/waiting" > 0) {
+    actionBar "&e&lWaiting for Event to Start! &8(&f%stat.global/inf/waiting%s&8)"
+    exit
+}
+if (globalstat "inf/timer" > 0, hasTeam "Infected") {
+    actionBar "&c&lEliminate the Survivors! &eSurvivors: %player.team.players/Survivor% &7: &2Infected: %player.team.players/Infected% &8(&f%stat.global/inf/timer%s&8)"
+    exit
+}
+if (globalstat "inf/timer" > 0, hasTeam "Survivor") {
+    actionBar "&c&lDon't let the Infected find you! &eSurvivors: %player.team.players/Survivor% &7: &2Infected: %player.team.players/Infected% &8(&f%stat.global/inf/timer%s&8)"
+    exit
+}
+
+// KOTH EVENT
+if (inRegion "KOTH", globalstat "koth/waiting" > 0) {
+    actionBar "&e&lWaiting for Event to Start! &8(&f%stat.global/koth/waiting%s&8)"
+    exit
+}
+if or (inRegion "KOTH_Event", inRegion "KOTH") {
+    actionBar "&a&lTime Left: &2&l%stat.global/koth/timer%s &8- &6&lPoints: &e&l%stat.player/koth% &7(Highest: %stat.global/koth/highest%)"
+    exit
+}
+
+// IN SPAWN
+if (inRegion "Spawn") {
+    actionBar "&e&lChoose a Kit and Jump Down! &8- &a&lPing: %player.ping%"
+    exit
+}
+
+// IN PRACTICE
+if (inRegion "PracticePool") {
+    actionBar "&6&lTime Alive: %stat.player/practicetimer%s &8- &4&lYour Best: %stat.player/besthealtime%s &8- &a&lPing: %player.ping%"
+    exit
+}
+
+// COOLDOWNS
+if (stat "combat" > 0, stat "ability_cd" > 0) {
+    actionBar "&c&lCombat Timer: &4&l%stat.player/combat%s &8- &b&lAbility Cooldown: &3&l%stat.player/ability_cd%s &8- &a&lPing: %player.ping% &8- &6&lCombo: &e&l%stat.player/combo%"
+    exit
+}
+if (stat "combat" > 0) {
+    actionBar "&c&lCombat Timer: &4&l%stat.player/combat%s &8- &a&lPing: %player.ping% &8- &6&lCombo: &e&l%stat.player/combo%"
+    exit
+}
+if (stat "ability_cd" > 0) {
+    actionBar "&b&lAbility Cooldown: &3&l%stat.player/ability_cd%s &8- &a&lPing: %player.ping% &8- &6&lCombo: &e&l%stat.player/combo%"
+    exit
+}
+
+// OTHER
+actionBar "&a&lPing: %player.ping%"

@@ -1,0 +1,22 @@
+if (stat "bot" = 1) {
+    globalstat "bot/online" set 0
+}
+
+if (stat "combat" > 0) {
+    stat "leftincombat" set 1
+}
+
+if (stat "duels/status" > 0) {
+    
+} else {
+    exit
+}
+
+if (globalstat "arena/1/p1" = "%stat.player/playerid%") {
+    globalstat "arena/1/p1" set 0
+    exit
+}
+if (globalstat "arena/1/p2" = "%stat.player/playerid%") {
+    globalstat "arena/1/p2" set 0
+    exit
+}

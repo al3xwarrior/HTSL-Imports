@@ -1,0 +1,17 @@
+if (globalstat "layerqueued" >= 1) {
+    function "MineAnotherLayerBot" true
+    globalstat "layerqueued" set 0
+}
+
+if (globalstat "cookies" >= "%house.cookies%") {
+    // pass
+    exit
+}
+
+globalstat "calculation" set "%house.cookies%"
+globalstat "calculation" dec "%stat.global/cookies%"
+globalstat "layerqueued" inc "%stat.global/calculation%"
+
+globalstat "cookies" set "%house.cookies%"
+
+function "AnnounceLayers" true

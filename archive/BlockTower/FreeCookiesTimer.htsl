@@ -1,0 +1,11 @@
+stat "freecookclaims" dec 1
+
+if (stat "freecookclaims" < 0) {
+    stat "freecookclaimm" dec 1
+    stat "freecookclaims" set 59
+}
+
+if (stat "freecookclaimm" < 0) {
+    stat "freecookclaimm" set 0
+    stat "freecookclaims" set 0
+}

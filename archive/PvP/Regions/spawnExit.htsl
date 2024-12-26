@@ -1,0 +1,12 @@
+if or (stat "punish/id" > 0, stat "duels/status" = -1, hasTeam "Blue", hasTeam "Red") {
+    exit
+}
+
+if (stat "kit" = 0, gamemode "adventure") {
+    houseSpawn
+    chat "&c&lYou must choose a Kit before leaving spawn! &4✗"
+    sound "block.anvil.land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+stat "safefall" set 2

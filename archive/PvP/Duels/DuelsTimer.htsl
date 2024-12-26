@@ -1,0 +1,10 @@
+// in playtime function
+
+if (globalstat "arena/1/t" > 0, globalstat "arena/1" > 0) {
+    globalstat "arena/1/t" dec 1
+}
+if (globalstat "arena/1/t" <= 0, globalstat "arena/1" > 0) {
+    globalstat "temp" set 1
+    function "DuelsEnded" true
+    exit
+}

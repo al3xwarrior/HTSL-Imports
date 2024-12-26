@@ -1,0 +1,31 @@
+if (stat "fishgold" >= "%stat.player/fc/lure%", stat "f/lure" < 6) {
+    stat "require1" set 2
+} else {
+    stat "require1" set 4
+}
+
+if (stat "fishgold" >= "%stat.player/fc/multirod%", stat "f/multirod" < 5) {
+    stat "require2" set 2
+} else {
+    stat "require2" set 4
+}
+
+if (stat "fishgold" >= "%stat.player/fc/luck%", stat "f/luck" < 10) {
+    stat "require3" set 2
+} else {
+    stat "require3" set 4
+}
+
+if (stat "fishgold" >= "%stat.player/fc/deeplure%", stat "f/deeplure" < 8) {
+    stat "require4" set 2
+} else {
+    stat "require4" set 4
+}
+
+if (stat "fishgold" >= "%stat.player/fc/virtualfish%", stat "f/virtualfish" < 5) {
+    stat "require5" set 2
+} else {
+    stat "require5" set 4
+}
+
+displayMenu "Rod Upgrades"

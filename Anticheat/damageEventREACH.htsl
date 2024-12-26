@@ -1,0 +1,19 @@
+// Cancel Thorns + Anticheat Attacker
+if (damageCause "Thorns", globalstat "ac/washit" = 1) {
+    cancelEvent
+    globalstat "ac/washit" set 0
+    globalstat "ac/attackerx" set "%player.location.x%"
+    globalstat "ac/attackery" set "%player.location.y%"
+    globalstat "ac/attackerz" set "%player.location.z%"
+    function "reach" false
+}
+
+// Anticheat Victim
+if (damageCause "Entity Attack") {
+    globalstat "ac/washit" set 1
+    globalstat "ac/victimx" set "%player.location.x%"
+    globalstat "ac/victimy" set "%player.location.y%"
+    globalstat "ac/victimz" set "%player.location.z%"
+} else {
+    globalstat "ac/washit" set 0
+}

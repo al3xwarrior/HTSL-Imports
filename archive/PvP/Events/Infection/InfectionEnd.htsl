@@ -1,0 +1,54 @@
+// 0 = timer ran out
+// 1 = blue win
+// 2 = red win
+
+if or (hasTeam "Survivor", hasTeam "Infected") {
+
+} else {
+    exit
+}
+
+sound "entity.wither.spawn" 0.7 1.1 "invokers_location"
+chat "&8&m------------------------------------"
+chat "&a&lINFECTION &f&lEVENT &4&lENDED"
+chat "&r"
+if (globalstat "inf/endbc" = 0, hasTeam "Survivor") {
+    stat "givegold" set 20
+    stat "givexp" set 20
+    function "CalcBonusStats"
+    stat "gold" inc "%stat.player/givegold%"
+    stat "xpneeded" dec "%stat.player/givexp%"
+    chat "&aYou won the event! &6%stat.player/givegold%⛃ &aand &b%stat.player/givexp%✥"
+    stat "gold" set 0
+    stat "xpneeded" set 0
+}
+if (globalstat "inf/endbc" = 0, hasTeam "Infected") {
+    chat "&cYou lost the event! :("
+}
+if (globalstat "inf/endbc" = 1, hasTeam "Infected") {
+    stat "givegold" set 20
+    stat "givexp" set 20
+    function "CalcBonusStats"
+    stat "gold" inc "%stat.player/givegold%"
+    stat "xpneeded" dec "%stat.player/givexp%"
+    chat "&aYou won the event! &6%stat.player/givegold%⛃ &aand &b%stat.player/givexp%✥"
+    stat "gold" set 0
+    stat "xpneeded" set 0
+}
+if (globalstat "inf/endbc" = 2) {
+    stat "givegold" set 5
+    stat "givexp" set 3
+    function "CalcBonusStats"
+    stat "gold" inc "%stat.player/givegold%"
+    stat "xpneeded" dec "%stat.player/givexp%"
+    chat "&cAll the Infected left! Heres &6%stat.player/givegold%⛃ &cand &b%stat.player/givexp%✥ &cfor participating."
+    stat "gold" set 0
+    stat "xpneeded" set 0
+}
+chat "&8&m------------------------------------"
+
+houseSpawn
+resetInventory
+stat "kit" set 0
+clearEffects
+setTeam "None"

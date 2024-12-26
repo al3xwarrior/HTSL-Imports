@@ -1,17 +1,17 @@
 
 if () {
-stat "fishluck" set "%random.int/1 21%"
+stat "fishluck" set "%random.int/1 6%"
 stat "fishluck" inc "%stat.player/f/deeplure%"
 stat "luckenchant" set "%stat.player/f/luck%"
 stat "luckenchant" mult "%stat.player/f/luck%"
-stat "fishluck" inc "%stat.player/luckenchant%"
+stat "fishluck" inc "%stat.player/f/luckenchant%"
 }
 
 stat "fish" inc 1
 function "CatchFish" false
 
 if (stat "f/virtualfish" >= "%random.int/1 21%") {
-    stat "temptime" set "%random.int/10 21%"
+    stat "temptime" set "%random.int/5 16%"
     stat "virtualfishtime" inc "%stat.player/temptime%"
     chat "&7Your virtual fishing enchant just gave you &3%stat.player/temptime%s&7."
     sound "Burp" 0.7 1.8 "invokers_location"

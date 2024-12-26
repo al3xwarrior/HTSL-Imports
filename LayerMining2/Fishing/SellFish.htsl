@@ -1,0 +1,374 @@
+if (hasItem null type Anywhere anyAmount) {
+
+} else {
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    chat "&cGo talk to &bLacy &cfirst for a rod!"
+    exit
+}
+
+// Bin
+if (hasItem "fish_bin4" type Hand anyAmount) {
+    removeItem "fish_bin4"
+    stat "tempgold" set 16
+    chat "&b&lFISH &7You sold a &cx4 Bin&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_bin" type Hand anyAmount) {
+    removeItem "fish_bin"
+    stat "tempgold" set 4
+    chat "&b&lFISH &7You sold a &cBin&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+// Cobweb
+if (hasItem "fish_cobweb4" type Hand anyAmount) {
+    removeItem "fish_cobweb4"
+    stat "tempgold" set 12
+    chat "&b&lFISH &7You sold a &fx4 Cobweb&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_cobweb" type Hand anyAmount) {
+    removeItem "fish_cobweb"
+    stat "tempgold" set 3
+    chat "&b&lFISH &7You sold a &fCobweb&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+// Clay
+if (hasItem "fish_clay4" type Hand anyAmount) {
+    removeItem "fish_clay4"
+    stat "tempgold" set 12
+    chat "&b&lFISH &7You sold a &6x4 Clay&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_clay" type Hand anyAmount) {
+    removeItem "fish_clay"
+    stat "tempgold" set 3
+    chat "&b&lFISH &7You sold a &6Clay&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+// Seeds
+if (hasItem "fish_seeds4" type Hand anyAmount) {
+    removeItem "fish_seeds4"
+    stat "tempgold" set 20
+    chat "&b&lFISH &7You sold a &ax4 Seeds&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_seeds" type Hand anyAmount) {
+    removeItem "fish_seeds"
+    stat "tempgold" set 5
+    chat "&b&lFISH &7You sold a &aSeeds&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+// Coal
+if (hasItem "fish_coal4" type Hand anyAmount) {
+    removeItem "fish_coal4"
+    stat "tempgold" set 16
+    chat "&b&lFISH &7You sold a &8x4 Coal&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_coal" type Hand anyAmount) {
+    removeItem "fish_coal"
+    stat "tempgold" set 4
+    chat "&b&lFISH &7You sold a &8Coal&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+// Cooked Fish
+if (hasItem "fish_cooked_fish4" type Hand anyAmount) {
+    removeItem "fish_cooked_fish4"
+    stat "tempgold" set 32
+    chat "&b&lFISH &7You sold a &6x4 Cookied Fish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_cooked_fish" type Hand anyAmount) {
+    removeItem "fish_cooked_fish"
+    stat "tempgold" set 8
+    chat "&b&lFISH &7You sold a &6Cookied Fish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+//Puffer Fish
+if (hasItem "fish_puffer_fish4" type Hand anyAmount) {
+    removeItem "fish_puffer_fish4"
+    stat "tempgold" set 36
+    chat "&b&lFISH &7You sold a &9x4 Puffer Fish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_puffer_fish" type Hand anyAmount) {
+    removeItem "fish_puffer_fish"
+    stat "tempgold" set 9
+    chat "&b&lFISH &7You sold a &9Puffer Fish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+function "SellFish2" false
+goto function "SellFish2"
+
+// Raw Fish
+if (hasItem "fish_raw_fish4" type Hand anyAmount) {
+    removeItem "fish_raw_fish4"
+    stat "tempgold" set 40
+    chat "&b&lFISH &7You sold a &fx4 Raw Fish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_raw_fish" type Hand anyAmount) {
+    removeItem "fish_raw_fish"
+    stat "tempgold" set 10
+    chat "&b&lFISH &7You sold a &fRaw Fish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+// Clownfish
+if (hasItem "fish_clownfish4" type Hand anyAmount) {
+    removeItem "fish_clownfish4"
+    stat "tempgold" set 40
+    chat "&b&lFISH &7You sold a &cx4 Clownfish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_clownfish" type Hand anyAmount) {
+    removeItem "fish_clownfish"
+    stat "tempgold" set 10
+    chat "&b&lFISH &7You sold a &cClownfish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+// Fsh
+if (hasItem "fish_fsh4" type Hand anyAmount) {
+    removeItem "fish_fsh4"
+    stat "tempgold" set 76
+    chat "&b&lFISH &7You sold a &9x4 Fsh&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_fsh" type Hand anyAmount) {
+    removeItem "fish_fsh"
+    stat "tempgold" set 19
+    chat "&b&lFISH &7You sold a &9Fsh&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+// Pufferfish
+if (hasItem "fish_2pufferfish4" type Hand anyAmount) {
+    removeItem "fish_2pufferfish4"
+    stat "tempgold" set 92
+    chat "&b&lFISH &7You sold a &9x4 Pufferfish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_2pufferfish" type Hand anyAmount) {
+    removeItem "fish_2pufferfish"
+    stat "tempgold" set 23
+    chat "&b&lFISH &7You sold a &9Pufferfish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+// Clownfish
+if (hasItem "fish_2clownfish4" type Hand anyAmount) {
+    removeItem "fish_2clownfish4"
+    stat "tempgold" set 80
+    chat "&b&lFISH &7You sold a &cx4 Clownfish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_2clownfish" type Hand anyAmount) {
+    removeItem "fish_2clownfish"
+    stat "tempgold" set 20
+    chat "&b&lFISH &7You sold a &cClownfish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+// Blue Tropical Fish
+if (hasItem "fish_blue_tropical_fish4" type Hand anyAmount) {
+    removeItem "fish_blue_tropical_fish4"
+    stat "tempgold" set 76
+    chat "&b&lFISH &7You sold a &9x4 Blue Tropical Fish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_blue_tropical_fish" type Hand anyAmount) {
+    removeItem "fish_blue_tropical_fish"
+    stat "tempgold" set 19
+    chat "&b&lFISH &7You sold a &9Blue Tropical Fish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+// Clownfish
+if (hasItem "fish_3clownfish4" type Hand anyAmount) {
+    removeItem "fish_3clownfish4"
+    stat "tempgold" set 88
+    chat "&b&lFISH &7You sold a &cx4 Clownfish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_3clownfish" type Hand anyAmount) {
+    removeItem "fish_3clownfish"
+    stat "tempgold" set 22
+    chat "&b&lFISH &7You sold a &cClownfish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+// Fish Head
+if (hasItem "fish_fish_head4" type Hand anyAmount) {
+    removeItem "fish_fish_head4"
+    stat "tempgold" set 80
+    chat "&b&lFISH &7You sold a &9x4 Fish Head&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+function "SellFish3" false
+goto function "SellFish3"
+
+if (hasItem "fish_fish_head" type Hand anyAmount) {
+    removeItem "fish_fish_head"
+    stat "tempgold" set 20
+    chat "&b&lFISH &7You sold a &9Fish Head&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+// Fish Body
+if (hasItem "fish_fish_body4" type Hand anyAmount) {
+    removeItem "fish_fish_body4"
+    stat "tempgold" set 80
+    chat "&b&lFISH &7You sold a &9x4 Fish Body&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_fish_body" type Hand anyAmount) {
+    removeItem "fish_fish_body"
+    stat "tempgold" set 20
+    chat "&b&lFISH &7You sold a &9Fish Body&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+// Fish Tail
+if (hasItem "fish_fish_tail4" type Hand anyAmount) {
+    removeItem "fish_fish_tail4"
+    stat "tempgold" set 80
+    chat "&b&lFISH &7You sold a &9x4 Fish Tail&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_fish_tail" type Hand anyAmount) {
+    removeItem "fish_fish_tail"
+    stat "tempgold" set 20
+    chat "&b&lFISH &7You sold a &9Fish Tail&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+// Candy Fish
+if (hasItem "fish_candy_fish4" type Hand anyAmount) {
+    removeItem "fish_candy_fish4"
+    stat "tempgold" set 140
+    chat "&b&lFISH &7You sold a &6x4 Candy Fish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_candy_fish" type Hand anyAmount) {
+    removeItem "fish_candy_fish"
+    stat "tempgold" set 35
+    chat "&b&lFISH &7You sold a &6Candy Fish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+// Red Fish
+if (hasItem "fish_red_fish4" type Hand anyAmount) {
+    removeItem "fish_red_fish4"
+    stat "tempgold" set 140
+    chat "&b&lFISH &7You sold a &cx4 Red Fish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_red_fish" type Hand anyAmount) {
+    removeItem "fish_red_fish"
+    stat "tempgold" set 35
+    chat "&b&lFISH &7You sold a &cRed Fish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+
+// Royal Pufferfish
+if (hasItem "fish_royal_pufferfish4" type Hand anyAmount) {
+    removeItem "fish_royal_pufferfish4"
+    stat "tempgold" set 400
+    chat "&b&lFISH &7You sold a &9x4 Royal Pufferfish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}
+if (hasItem "fish_royal_pufferfish" type Hand anyAmount) {
+    removeItem "fish_royal_pufferfish"
+    stat "tempgold" set 100
+    chat "&b&lFISH &7You sold a &9Royal Pufferfish&7 for &3%stat.player/tempgold% Fish Bucks&7."
+    stat "fishgold" inc "%stat.player/tempgold%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    exit
+}

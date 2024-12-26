@@ -1,0 +1,51 @@
+if (stat "fishgold" < "%stat.player/fc/lure%", ) {
+    chat "&7You don't have enough gold to upgrade your lure enchant."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+if (stat "f/lure" >= 6) {
+    chat "&7You have reached the maximum level for your lure enchant."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+stat "fishgold" dec "%stat.player/fc/lure%"
+stat "fc/lure" mult 15
+stat "fc/lure" div 10
+stat "f/lure" inc 1
+chat "&7You have upgraded your lure to level &3%stat.player/f/lure%&7!"
+sound "Level Up" 0.7 1 "invokers_location"
+
+removeItem "fishingrodlure2"
+removeItem "fishingrodlure3"
+removeItem "fishingrodlure4"
+removeItem "fishingrodlure5"
+removeItem "fishingrodlure6"
+removeItem "fishingrodlure7"
+removeItem "fishingrodlure8"
+
+if (stat "f/lure" == 1) {
+    giveItem "fishingrodlure2" true "First Slot" false
+}
+if (stat "f/lure" == 2) {
+    giveItem "fishingrodlure3" true "First Slot" false
+}
+if (stat "f/lure" == 3) {
+    giveItem "fishingrodlure4" true "First Slot" false
+}
+if (stat "f/lure" == 4) {
+    giveItem "fishingrodlure5" true "First Slot" false
+}
+if (stat "f/lure" == 5) {
+    giveItem "fishingrodlure6" true "First Slot" false
+}
+if (stat "f/lure" == 6) {
+    giveItem "fishingrodlure7" true "First Slot" false
+}
+if (stat "f/lure" == 7) {
+    giveItem "fishingrodlure8" true "First Slot" false
+}
+
+
+function "OpenRodUpgrades" false

@@ -1,0 +1,42 @@
+stat "eggspawntimer" inc 1
+if (stat "eggspawntimer" >= "%stat.player/eggspawnreq%") {
+    stat "eggspawntimer" set 0
+} else {
+    exit
+}
+
+stat "eggtemp" set "%stat.player/chickens%"
+stat "eggtemp" mult "%stat.player/up/eggmulti%"
+
+if (globalstat "m/mayor" = 1) {
+    stat "eggtemp" mult 125
+    stat "eggtemp" div 100
+}
+
+stat "eggstowith" inc "%stat.player/eggtemp%"
+
+stat "goldeneggrng" set "%random.int/1 701%"
+if (globalstat "m/mayor" = 1) {
+    stat "goldeneggrng" dec 7
+}
+if (hasItem "eggplant1" metadata Hotbar "Any Amount") {
+    stat "goldeneggrng" dec 2
+}
+if (hasItem "eggplant2" metadata Hotbar "Any Amount") {
+    stat "goldeneggrng" dec 4
+}
+if (hasItem "eggplant3" metadata Hotbar "Any Amount") {
+    stat "goldeneggrng" dec 7
+}
+if (hasItem "eggplant4" metadata Hotbar "Any Amount") {
+    stat "goldeneggrng" dec 15
+}
+
+if (stat "goldeneggrng" <= 1) {
+    stat "temp" set "%random.int/1 4%"
+    stat "goldeneggs" inc "%stat.player/temp%"
+    chat "&6&l[!] &eYou got lucky and earned &6+%stat.player/temp% Golden Eggs&e!"
+}
+
+// cleanup
+stat "eggtemp" set 0
