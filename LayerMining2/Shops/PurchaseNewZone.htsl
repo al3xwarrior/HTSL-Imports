@@ -1,7 +1,7 @@
-// The current zone the player is in
-stat "zonerequirement" set 10
+// The current zone the player is going to
+stat "zonerequirement" set 14
 // The cost
-stat "zonecost" set 2500000000
+stat "zonecost" set 1000000000
 
 if (stat "zone" > "%stat.player/zonerequirement%") {
     sound "Anvil Land" 0.7 1.0 "invokers_location"

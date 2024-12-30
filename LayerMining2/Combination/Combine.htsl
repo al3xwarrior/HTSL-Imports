@@ -1,19 +1,19 @@
-if (hasItem "diamondpickaxee4" metadata Anywhere anyAmount) {
-    removeItem "diamondpickaxee4"
+if (hasItem slot_9 Anywhere anyAmount) {
+    removeItem slot_9
 } else {
-    chat "&cYou don't have 2 diamond pickaxes!"
+    chat "&cYou don't have 2 diamond shovels!"
     sound "Anvil Land" 0.7 1 "invokers_location"
     exit
 }
-if (hasItem "diamondpickaxee4" metadata Anywhere anyAmount) {
+if (hasItem slot_9 metadata Anywhere anyAmount) {
     
 } else {
-    giveItem "diamondpickaxee4" true "First Slot" false
-    chat "&cYou don't have 2 diamond pickaxes!"
+    giveItem slot_9 true "First Slot" false
+    chat "&cYou don't have 2 diamond shovels!"
     sound "Anvil Land" 0.7 1 "invokers_location"
     exit
 }
 
-removeItem "diamondpickaxee4"
-giveItem "diamondpickaxee5" true "First Slot" false
+removeItem slot_9
+giveItem slot_10 true "First Slot" false
 sound "Anvil Use" 0.7 1 "invokers_location"

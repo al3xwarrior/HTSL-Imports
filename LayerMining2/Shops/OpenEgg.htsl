@@ -1,0 +1,69 @@
+stat "eggcost" set 10000
+
+if (stat "gold" >= "%stat.player/eggcost%") {
+
+} else {
+    chat "&cYou don't have enough gold!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    stat "eggcost" set 0
+    exit
+}
+
+stat "gold" dec "%stat.player/eggcost%"
+stat "eggcost" set 0
+
+title "&%random.int/1 10%&kddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1 "invokers_location"
+pause 4
+
+title "&%random.int/1 10%&kdddddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1.2 "invokers_location"
+pause 4
+
+title "&%random.int/1 10%&kdddddd ddddd" "&7&oOpening..." 0 5 3
+sound "Note Pling" 0.7 1.4 "invokers_location"
+pause 4
+
+sound "Note Pling" 0.7 1.6 "invokers_location"
+
+stat "petrng" set "%random.int/1 9%"
+if (stat "petrng" == 1) {
+    title "&fMushroom Stem Pet" "&a&oOpened!" 0 5 3
+    giveItem slot_1 true "First Slot" false
+    exit
+}
+if (stat "petrng" == 2) {
+    title "&cMushroom Block Pet" "&a&oOpened!" 0 5 3
+    giveItem slot_2 true "First Slot" false
+    exit
+}
+if (stat "petrng" == 3) {
+    title "&cWeird Guy Pet" "&a&oOpened!" 0 5 3
+    giveItem slot_3 true "First Slot" false
+    exit
+}
+if (stat "petrng" == 4) {
+    title "&9Weirdo Guy Pet" "&a&oOpened!" 0 5 3
+    giveItem slot_4 true "First Slot" false
+    exit
+}
+if (stat "petrng" == 5) {
+    title "&dWeird Guy Pet" "&a&oOpened!" 0 5 3
+    giveItem slot_5 true "First Slot" false
+    exit
+}
+if (stat "petrng" == 6) {
+    title "&dFlower Pet" "&a&oOpened!" 0 5 3
+    giveItem slot_6 true "First Slot" false
+    exit
+}
+if (stat "petrng" == 7) {
+    title "&fFlower Pet" "&a&oOpened!" 0 5 3
+    giveItem slot_7 true "First Slot" false
+    exit
+}
+if (stat "petrng" == 8) {
+    title "&6Candle Pet" "&a&oOpened!" 0 5 3
+    giveItem slot_8 true "First Slot" false
+    exit
+}

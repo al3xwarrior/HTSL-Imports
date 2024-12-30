@@ -1,0 +1,22 @@
+if (inRegion "AuctionHouse") {
+    applyPotion "Blindness" 1 1 true
+    tp "custom_coordinates" "111.9 197 -3.14 -132.45 -2.24"
+    sound "Enderman Teleport" 0.7 2.0 "invokers_location"
+}
+
+if (stat "zone" >= 1, stat "rebirths" > 0) {
+
+} else {
+    exit
+}
+
+sound "Enderdragon Growl" 0.7 1 "invokers_location"
+
+chat "&b"
+chat "&6&lAUCTION HOUSE"
+if (stat "playerid" = "%stat.global/currentbidid%") {
+    chat "&eYou have won the auction for &b%stat.global/currentbid% diamonds&e!"
+} else {
+    chat "&eThe auction has ended! &6Player#%stat.global/currentbidid% &ehas won the auction for &b%stat.global/currentbid% diamonds&e!"
+}
+chat "&6"

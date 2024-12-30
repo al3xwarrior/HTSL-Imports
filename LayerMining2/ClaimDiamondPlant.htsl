@@ -1,0 +1,21 @@
+if (stat "dplant5" = 3) {
+    stat "dplant5s" set 450
+    stat "dplant5" set 4
+
+    stat "tempdiamonds" set "%random.int/10 101%"
+    stat "diamonds" inc "%stat.player/tempdiamonds%"
+    chat "&bYou claimed your diamond plant! It gave you &3%stat.player/tempdiamonds% &bdiamonds!"
+    sound "Level Up" 0.7 1 "invokers_location"
+    exit
+}
+
+if (stat "dplant5" = 6) {
+    sound "Cat Hiss" 0.7 1 "invokers_location"
+    chat "&cYour diamond plant is not ready to be claimed yet... but I feel its close!"
+    exit
+}
+
+if (stat "dplant5" = 4) {
+    sound "Cat Hiss" 0.7 1 "invokers_location"
+    chat "&cYour diamond plant is not ready to be claimed yet!"
+}

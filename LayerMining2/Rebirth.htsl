@@ -1,0 +1,9 @@
+if (stat "zone" < 15) {
+    globalstat "alert/plrid" set "%stat.player/playerid%"
+    globalstat "alert/x" set "%player.location.x%"
+    globalstat "alert/y" set "%player.location.y%"
+    globalstat "alert/z" set "%player.location.z%"
+    globalstat "alertid" set 2
+    function "StaffAlert" true
+    exit
+}

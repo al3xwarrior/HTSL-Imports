@@ -1,0 +1,70 @@
+// dplant1
+
+if (stat "dplant1s" > 0) {
+    stat "dplant1s" dec 5
+}
+if (stat "dplant1s" > 200) {
+    stat "dplant1" set 4
+}
+if (stat "dplant1s" < 200) {
+    stat "dplant1" set 6
+}
+if (stat "dplant1s" <= 0) {
+    stat "dplant1" set 3
+}
+
+if (stat "dplant2s" > 0) {
+    stat "dplant2s" dec 5
+}
+if (stat "dplant2s" > 200) {
+    stat "dplant2" set 4
+}
+if (stat "dplant2s" < 200) {
+    stat "dplant2" set 6
+}
+if (stat "dplant2s" <= 0) {
+    stat "dplant2" set 3
+}
+
+if (stat "dplant3s" > 0) {
+    stat "dplant3s" dec 5
+}
+if (stat "dplant3s" > 200) {
+    stat "dplant3" set 4
+}
+if (stat "dplant3s" < 200) {
+    stat "dplant3" set 6
+}
+if (stat "dplant3s" <= 0) {
+    stat "dplant3" set 3
+}
+
+if (stat "dplant4s" > 0) {
+    stat "dplant4s" dec 5
+}
+if (stat "dplant4s" > 200) {
+    stat "dplant4" set 4
+}
+if (stat "dplant4s" < 200) {
+    stat "dplant4" set 6
+}
+
+function "DiamondPlant2" false
+goto function "DiamondPlant2"
+
+if (stat "dplant4s" <= 0) {
+    stat "dplant4" set 3
+}
+
+if (stat "dplant5s" > 0) {
+    stat "dplant5s" dec 5
+}
+if (stat "dplant5s" > 200) {
+    stat "dplant5" set 4
+}
+if (stat "dplant5s" < 200) {
+    stat "dplant5" set 6
+}
+if (stat "dplant5s" <= 0) {
+    stat "dplant5" set 3
+}

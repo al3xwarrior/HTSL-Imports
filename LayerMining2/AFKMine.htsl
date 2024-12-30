@@ -1,5 +1,5 @@
 stat "blockbreak" dec 1
-if (placeholder "%player.location.y%" <= 196, placeholder "%player.location.pitch%" >= 89, stat "blockbreak" <= 0) {
+if (placeholder "%player.location.z%" <= 128, placeholder "%player.location.z%" >= -42, placeholder "%player.location.x%" <= 115, placeholder "%player.location.x%" >= -78, placeholder "%player.location.y%" <= 196, placeholder "%player.location.y%" >= 166, placeholder "%player.location.pitch%" >= 89, stat "blockbreak" <= 0) {
     
 } else {
     exit

@@ -8,9 +8,27 @@ if (stat "eventforge" > 0) {
 stat "haste" inc "%stat.player/eventhaste%"
 function "Haste" false
 
+if (stat "strengthnugsec" > 1) {
+    stat "strengthnugsec" dec 1
+    stat "strength" mult "%stat.player/strengthnug%"
+    stat "strength" div 10
+}
+if (stat "strengthnugsec" = 1) {
+    stat "strengthnugsec" set 0
+    chat "&cYour strength nugget has worn off!"
+    sound "Eat" 0.7 0.5 "invokers_location"
+}
+
 if (stat "treasure/active" == 1) {
     exit
 }
+
+if (inRegion "AuctionHouse") {
+    stat "displaycurrency" set 0
+    actionBar "&b%stat.player/diamonds% &r &r &r &8[&a⌚&8] &2%stat.player/hours%h&7:&2%stat.player/minutes%m&7:&2%stat.player/seconds%s"
+    exit
+}
+
 if (inRegion "Fishing") {
     stat "displaycurrency" set "%stat.player/fishgold%"
     setTeam "Bait Bucks"

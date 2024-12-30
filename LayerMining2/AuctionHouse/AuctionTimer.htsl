@@ -1,0 +1,29 @@
+
+if (globalstat "auctiontime" > 0) {
+    globalstat "auctiontime" dec 1
+    exit
+}
+
+if (globalstat "auctionsec" <= 0, globalstat "auctionsec" <= 0, globalstat "auctionmin" <= 0) {
+    globalstat "auctionmin" dec 15
+    globalstat "auctionsec" set 0
+    function "EndAuction" true
+    exit
+}
+
+// Start Auction
+if (globalstat "auctionsec" <= 0, globalstat "auctionmin" <= 0) {
+    globalstat "auctiontime" set 30
+    globalstat "auctionbcid" set 1
+    globalstat "auctionitem" set "%random.int/1 11%"
+    function "AuctionBroadcast" false
+    exit
+}
+
+if (stat "auctionsec" <= 0) {
+    stat "auctionmin" dec 1
+    stat "auctionsec" set 59
+    exit
+}
+
+stat "auctionsec" dec 1

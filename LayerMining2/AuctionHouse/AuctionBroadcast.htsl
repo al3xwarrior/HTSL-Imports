@@ -1,0 +1,15 @@
+if (stat "zone" >= 1, stat "rebirths" > 0) {
+
+} else {
+    exit
+}
+
+if (globalstat "auctionbcid" = 1) {
+    sound "Chest Open" 0.7 1.8 "invokers_location"
+    chat "&r"
+    chat "&6&lAUCTION HOUSE"
+    chat "&eThe Auction House has opened! &7&o/auction"
+    chat "&eYou are bidding for "
+    chat "&f"
+    exit
+}

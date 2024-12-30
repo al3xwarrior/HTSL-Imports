@@ -1,0 +1,70 @@
+
+/*
+if (stat "cratemulti" > 0) {
+    chat "&cYou are already opening a crate!"
+    exit
+}
+
+stat "cratemulti" set 0
+
+if (hasItem slot_1 metadata Hand anyAmount) {
+    stat "digit1" set 0
+    stat "digit2" set "%random.int/1 6%"
+    stat "digit3" set "%random.int/1 10%"
+    stat "cratemulti" set 1
+}
+if (hasItem slot_2 metadata Hand anyAmount) {
+    stat "digit1" set "%random.int/0 2%"
+    stat "digit2" set "%random.int/1 10%"
+    stat "digit3" set "%random.int/1 10%"
+    stat "cratemulti" set 2
+}
+if (hasItem slot_3 metadata Hand anyAmount) {
+    stat "digit1" set "%random.int/0 4%"
+    stat "digit2" set "%random.int/1 10%"
+    stat "digit3" set "%random.int/1 10%"
+    stat "cratemulti" set 3
+}
+
+// Illegal Opening
+if (stat "cratemulti" = 0) {
+    globalstat "alert/plrid" set "%stat.player/playerid%"
+    globalstat "alert/x" set "%player.location.x%"
+    globalstat "alert/y" set "%player.location.y%"
+    globalstat "alert/z" set "%player.location.z%"
+    globalstat "alertid" set 3
+    function "StaffAlert" true
+    exit
+}
+
+stat "total" set "%stat.player/digit1%"
+stat "total" mult 10
+stat "total" inc "%stat.player/digit2%"
+stat "total" mult 10
+stat "total" inc "%stat.player/digit3%"
+*/
+
+sound "Anvil Use" 0.7 1 "invokers_location"
+title "&b&k0&r &b&k0 &r&b&k0&r &b❄" "&0" 0 5 3
+pause 6
+title "&b%stat.player/digit1% &k0&r &b0&r &b❄" "&0" 0 5 3
+pause 6
+title "&b%stat.player/digit1%&r &b%stat.player/digit2%&r &b&k0&r &b❄" "&0" 0 5 3
+pause 6
+title "&b%stat.player/digit1% %stat.player/digit2% %stat.player/digit3% ❄" "&0" 0 5 3
+pause 9
+
+sound "Anvil Land" 0.7 1.5 "invokers_location"
+if (stat "cratemulti" = 1) {
+    title "&b%stat.player/total% ❄" "&7&lCOMMON" 0 1 1
+}
+if (stat "cratemulti" = 2) {
+    title "&b%stat.player/total% ❄" "&e&lRARE" 0 1 1
+}
+if (stat "cratemulti" = 3) {
+    title "&b%stat.player/total% ❄" "&6&lLEGENDARY" 0 1 1
+}
+
+stat "diamonds" inc "%stat.player/total%"
+
+stat "cratemulti" set 0

@@ -1,7 +1,4 @@
-if or (stat "zone" >= 5, gamemode "Creative") {
-    tp "current_location"
-    applyPotion "Blindness" 1 1 true
-    sound "Enderman Teleport" 0.7 2.0 "invokers_location"
+if or (stat "zone" >= 14, gamemode "Creative") {
     exit
 }
 

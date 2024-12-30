@@ -1,3 +1,5 @@
+
+/*
 stat "forgegive" set 0
 if (inRegion "Forge1-1") {
     stat "forgegive" set 1
@@ -29,6 +31,42 @@ if (inRegion "Forge2-4") {
 }
 if (inRegion "Forge2-5") {
     stat "forgegive" set 500
+}
+
+if (inRegion "Forge3-1") {
+    stat "forgegive" set 2500
+}
+if (inRegion "Forge3-2") {
+    stat "forgegive" set 7500
+}
+if (inRegion "Forge3-3") {
+    stat "forgegive" set 12000
+}
+if (inRegion "Forge3-4") {
+    stat "forgegive" set 50000
+}
+if (inRegion "Forge3-5") {
+    stat "forgegive" set 200000
+}
+
+function "Forge2" false
+*/
+goto function "Forge2"
+
+if (inRegion "Forge4-1") {
+    stat "forgegive" set 500000
+}
+if (inRegion "Forge4-2") {
+    stat "forgegive" set 600000
+}
+if (inRegion "Forge4-3") {
+    stat "forgegive" set 700000
+}
+if (inRegion "Forge4-4") {
+    stat "forgegive" set 800000
+}
+if (inRegion "Forge4-5") {
+    stat "forgegive" set 1000000
 }
 
 if (stat "forgegive" = 0) {

@@ -5,178 +5,178 @@
 // - We know the player has 1 tool, if they have 2 tools, give the first one back and set the stat to 2 (green)
 // - They didnt have 2 tools, so give the first one back and set the stat to 4 (red)
 
-// Wooden axe - require1
+// Wooden shovel - require1
 stat "temprequire" set 0
-if (stat "gold" >= 20) {
+if (stat "gold" >= 100000) {
     stat "require1" set 2
 } else {
     stat "require1" set 4
 }
 
-// Stone axe - require2
-if (hasItem "woodenaxe" metadata Anywhere anyAmount) {
-    removeItem "woodenaxe"
+// Stone shovel - require2
+if (hasItem slot_29 metadata Anywhere anyAmount) {
+    removeItem slot_29
     stat "temprequire" set 1
 } else {
     stat "require2" set 4
 }
-if (stat "temprequire" = 1, hasItem "woodenaxe" metadata Anywhere anyAmount) {
-    giveItem "woodenaxe" true "First Slot" false
+if (stat "temprequire" = 1, hasItem slot_29 metadata Anywhere anyAmount) {
+    giveItem slot_29 true "First Slot" false
     stat "require2" set 2
     stat "temprequire" set 0
 }
 if (stat "temprequire" = 1) {
-    giveItem "woodenaxe" true "First Slot" false
+    giveItem slot_29 true "First Slot" false
     stat "require2" set 4
     stat "temprequire" set 0
 }
 
-// Golden axe - require3
-if (hasItem "stoneaxe" metadata Anywhere anyAmount) {
-    removeItem "stoneaxe"
+// Golden shovel - require3
+if (hasItem slot_30 metadata Anywhere anyAmount) {
+    removeItem slot_30
     stat "temprequire" set 1
 } else {
     stat "require3" set 4
 }
-if (stat "temprequire" = 1, hasItem "stoneaxe" metadata Anywhere anyAmount) {
-    giveItem "stoneaxe" true "First Slot" false
+if (stat "temprequire" = 1, hasItem slot_30 metadata Anywhere anyAmount) {
+    giveItem slot_30 true "First Slot" false
     stat "require3" set 2
     stat "temprequire" set 0
 }
 if (stat "temprequire" = 1) {
-    giveItem "stoneaxe" true "First Slot" false
+    giveItem slot_30 true "First Slot" false
     stat "require3" set 4
     stat "temprequire" set 0
 }
 
-// Iron axe - require4
-if (hasItem "goldenaxe" metadata Anywhere anyAmount) {
-    removeItem "goldenaxe"
+// Iron shovel - require4
+if (hasItem slot_31 metadata Anywhere anyAmount) {
+    removeItem slot_31
     stat "temprequire" set 1
 } else {
     stat "require4" set 4
 }
-if (stat "temprequire" = 1, hasItem "goldenaxe" metadata Anywhere anyAmount) {
-    giveItem "goldenaxe" true "First Slot" false
+if (stat "temprequire" = 1, hasItem slot_31 metadata Anywhere anyAmount) {
+    giveItem slot_31 true "First Slot" false
     stat "require4" set 2
     stat "temprequire" set 0
 }
 if (stat "temprequire" = 1) {
-    giveItem "goldenaxe" true "First Slot" false
+    giveItem slot_31 true "First Slot" false
     stat "require4" set 4
     stat "temprequire" set 0
 }
 
-// Diamond axe - require5
-if (hasItem "ironaxe" metadata Anywhere anyAmount) {
-    removeItem "ironaxe"
+// Diamond shovel - require5
+if (hasItem slot_32 metadata Anywhere anyAmount) {
+    removeItem slot_32
     stat "temprequire" set 1
 } else {
     stat "require5" set 4
 }
-if (stat "temprequire" = 1, hasItem "ironaxe" metadata Anywhere anyAmount) {
-    giveItem "ironaxe" true "First Slot" false
+if (stat "temprequire" = 1, hasItem slot_32 metadata Anywhere anyAmount) {
+    giveItem slot_32 true "First Slot" false
     stat "require5" set 2
     stat "temprequire" set 0
 }
 if (stat "temprequire" = 1) {
-    giveItem "ironaxe" true "First Slot" false
+    giveItem slot_32 true "First Slot" false
     stat "require5" set 4
     stat "temprequire" set 0
 }
 
-// Diamond axe E1 - require6
-if (hasItem "diamondaxe" metadata Anywhere anyAmount) {
-    removeItem "diamondaxe"
+// Diamond shovel E1 - require6
+if (hasItem slot_33 metadata Anywhere anyAmount) {
+    removeItem slot_33
     stat "temprequire" set 1
 } else {
     stat "require6" set 4
 }
-if (stat "temprequire" = 1, hasItem "diamondaxe" metadata Anywhere anyAmount) {
-    giveItem "diamondaxe" true "First Slot" false
+if (stat "temprequire" = 1, hasItem slot_33 metadata Anywhere anyAmount) {
+    giveItem slot_33 true "First Slot" false
     stat "require6" set 2
     stat "temprequire" set 0
 }
 
-function "CombineAxes2" false
-goto function "CombineAxes2"
+function "CombineShovels2" false
+goto function "CombineShovels2"
 
 if (stat "temprequire" = 1) {
-    giveItem "diamondaxe" true "First Slot" false
+    giveItem slot_33 true "First Slot" false
     stat "require6" set 4
     stat "temprequire" set 0
 }
 
-// Diamond axe E2 - require7
-if (hasItem "diamondaxee1" metadata Anywhere anyAmount) {
-    removeItem "diamondaxee1"
+// Diamond shovel E2 - require7
+if (hasItem slot_34 metadata Anywhere anyAmount) {
+    removeItem slot_34
     stat "temprequire" set 1
 } else {
     stat "require7" set 4
 }
-if (stat "temprequire" = 1, hasItem "diamondaxee1" metadata Anywhere anyAmount) {
-    giveItem "diamondaxee1" true "First Slot" false
+if (stat "temprequire" = 1, hasItem slot_34 metadata Anywhere anyAmount) {
+    giveItem slot_34 true "First Slot" false
     stat "require7" set 2
     stat "temprequire" set 0
 }
 if (stat "temprequire" = 1) {
-    giveItem "diamondaxee1" true "First Slot" false
+    giveItem slot_34 true "First Slot" false
     stat "require7" set 4
     stat "temprequire" set 0
 }
 
-// Diamond axe E3 - require8
-if (hasItem "diamondaxee2" metadata Anywhere anyAmount) {
-    removeItem "diamondaxee2"
+// Diamond shovel E3 - require8
+if (hasItem slot_35 metadata Anywhere anyAmount) {
+    removeItem slot_35
     stat "temprequire" set 1
 } else {
     stat "require8" set 4
 }
-if (stat "temprequire" = 1, hasItem "diamondaxee2" metadata Anywhere anyAmount) {
-    giveItem "diamondaxee2" true "First Slot" false
+if (stat "temprequire" = 1, hasItem slot_35 metadata Anywhere anyAmount) {
+    giveItem slot_35 true "First Slot" false
     stat "require8" set 2
     stat "temprequire" set 0
 }
 if (stat "temprequire" = 1) {
-    giveItem "diamondaxee2" true "First Slot" false
+    giveItem slot_35 true "First Slot" false
     stat "require8" set 4
     stat "temprequire" set 0
 }
 
-// Diamond axe E4 - require9
-if (hasItem "diamondaxee3" metadata Anywhere anyAmount) {
-    removeItem "diamondaxee3"
+// Diamond shovel E4 - require9
+if (hasItem slot_19 metadata Anywhere anyAmount) {
+    removeItem slot_19
     stat "temprequire" set 1
 } else {
     stat "require9" set 4
 }
-if (stat "temprequire" = 1, hasItem "diamondaxee3" metadata Anywhere anyAmount) {
-    giveItem "diamondaxee3" true "First Slot" false
+if (stat "temprequire" = 1, hasItem slot_19 metadata Anywhere anyAmount) {
+    giveItem slot_19 true "First Slot" false
     stat "require9" set 2
     stat "temprequire" set 0
 }
 if (stat "temprequire" = 1) {
-    giveItem "diamondaxee3" true "First Slot" false
+    giveItem slot_19 true "First Slot" false
     stat "require9" set 4
     stat "temprequire" set 0
 }
 
-// Diamond axe E5 - require10
-if (hasItem "diamondaxee4" metadata Anywhere anyAmount) {
-    removeItem "diamondaxee4"
+// Diamond shovel E5 - require10
+if (hasItem slot_20 metadata Anywhere anyAmount) {
+    removeItem slot_20
     stat "temprequire" set 1
 } else {
     stat "require10" set 4
 }
-if (stat "temprequire" = 1, hasItem "diamondaxee4" metadata Anywhere anyAmount) {
-    giveItem "diamondaxee4" true "First Slot" false
+if (stat "temprequire" = 1, hasItem slot_20 metadata Anywhere anyAmount) {
+    giveItem slot_20 true "First Slot" false
     stat "require10" set 2
     stat "temprequire" set 0
 }
 if (stat "temprequire" = 1) {
-    giveItem "diamondaxee4" true "First Slot" false
+    giveItem slot_20 true "First Slot" false
     stat "require10" set 4
     stat "temprequire" set 0
 }
 
-displayMenu "Combine axes"
+displayMenu "Combine Shovels"

@@ -1,0 +1,33 @@
+
+if (hasItem slot_1 metadata Hand anyAmount) {
+    stat "strengthnugsec" inc 600
+    stat "strengthnug" set 12
+    title "&cx1.2 Strength" "&7Total: %stat.player/strengthnugsec%s" 0 1 1
+}
+if (hasItem slot_2 metadata Hand anyAmount) {
+    stat "strengthnugsec" inc 480
+    stat "strengthnug" set 15
+    title "&cx1.5 Strength" "&7Total: %stat.player/strengthnugsec%s" 0 1 1
+}
+if (hasItem slot_3 metadata Hand anyAmount) {
+    stat "strengthnugsec" inc 480
+    stat "strengthnug" set 18
+    title "&cx1.8 Strength" "&7Total: %stat.player/strengthnugsec%s" 0 1 1
+}
+if (hasItem slot_4 metadata Hand anyAmount) {
+    stat "strengthnugsec" inc 480
+    stat "strengthnug" set 20
+    title "&cx2.0 Strength" "&7Total: %stat.player/strengthnugsec%s" 0 1 1
+}
+if (hasItem slot_5 metadata Hand anyAmount) {
+    stat "strengthnugsec" inc 600
+    stat "strengthnug" set 25
+    title "&cx2.5 Strength" "&7Total: %stat.player/strengthnugsec%s" 0 1 1
+}
+if (hasItem slot_6 metadata Hand anyAmount) {
+    stat "strengthnugsec" inc 600
+    stat "strengthnug" set 30
+    title "&cx3.0 Strength" "&7Total: %stat.player/strengthnugsec%s" 0 1 1
+}
+
+sound "Eat" 0.7 1.2 "invokers_location"

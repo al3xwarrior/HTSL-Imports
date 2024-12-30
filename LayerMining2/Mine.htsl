@@ -1,4 +1,5 @@
 
+
 /*
 // Zone 1-1
 if (placeholder "%player.location.x%" >= 103, placeholder "%player.location.x%" <= 109, placeholder "%player.location.y%" >= 196, placeholder "%player.location.y%" <= 198, placeholder "%player.location.z%" >= 115, placeholder "%player.location.z%" <= 121) {
@@ -308,3 +309,308 @@ if (placeholder "%player.location.x%" >= 44, placeholder "%player.location.x%" <
     exit
 }
 */
+
+// Zone 3-1
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 196, placeholder "%player.location.y%" <= 198, placeholder "%player.location.z%" >= 115, placeholder "%player.location.z%" <= 121) {
+    stat "layer1hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer1hp%"
+    stat "layermaxhp" set "%stat.player/layer1maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 191, placeholder "%player.location.y%" <= 193, placeholder "%player.location.z%" >= 115, placeholder "%player.location.z%" <= 121) {
+    stat "layer2hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer2hp%"
+    stat "layermaxhp" set "%stat.player/layer2maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 186, placeholder "%player.location.y%" <= 188, placeholder "%player.location.z%" >= 115, placeholder "%player.location.z%" <= 121) {
+    stat "layer3hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer3hp%"
+    stat "layermaxhp" set "%stat.player/layer3maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 181, placeholder "%player.location.y%" <= 183, placeholder "%player.location.z%" >= 115, placeholder "%player.location.z%" <= 121) {
+    stat "layer4hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer4hp%"
+    stat "layermaxhp" set "%stat.player/layer4maxhp%"
+    function "MineAnimation" false
+    exit
+}
+
+// Zone 3-2
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 196, placeholder "%player.location.y%" <= 198, placeholder "%player.location.z%" >= 77, placeholder "%player.location.z%" <= 83) {
+    stat "layer1hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer1hp%"
+    stat "layermaxhp" set "%stat.player/layer1maxhp%"
+    function "MineAnimation" false
+    exit
+}
+
+function "Mine4/2" false
+goto function "Mine4/2"
+
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 191, placeholder "%player.location.y%" <= 193, placeholder "%player.location.z%" >= 77, placeholder "%player.location.z%" <= 83) {
+    stat "layer2hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer2hp%"
+    stat "layermaxhp" set "%stat.player/layer2maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 186, placeholder "%player.location.y%" <= 188, placeholder "%player.location.z%" >= 77, placeholder "%player.location.z%" <= 83) {
+    stat "layer3hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer3hp%"
+    stat "layermaxhp" set "%stat.player/layer3maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 181, placeholder "%player.location.y%" <= 183, placeholder "%player.location.z%" >= 77, placeholder "%player.location.z%" <= 83) {
+    stat "layer4hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer4hp%"
+    stat "layermaxhp" set "%stat.player/layer4maxhp%"
+    function "MineAnimation" false
+    exit
+}
+
+// Zone 3-3
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 196, placeholder "%player.location.y%" <= 198, placeholder "%player.location.z%" >= 39, placeholder "%player.location.z%" <= 45) {
+    stat "layer1hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer1hp%"
+    stat "layermaxhp" set "%stat.player/layer1maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 191, placeholder "%player.location.y%" <= 193, placeholder "%player.location.z%" >= 39, placeholder "%player.location.z%" <= 45) {
+    stat "layer2hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer2hp%"
+    stat "layermaxhp" set "%stat.player/layer2maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 186, placeholder "%player.location.y%" <= 188, placeholder "%player.location.z%" >= 39, placeholder "%player.location.z%" <= 45) {
+    stat "layer3hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer3hp%"
+    stat "layermaxhp" set "%stat.player/layer3maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 181, placeholder "%player.location.y%" <= 183, placeholder "%player.location.z%" >= 39, placeholder "%player.location.z%" <= 45) {
+    stat "layer4hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer4hp%"
+    stat "layermaxhp" set "%stat.player/layer4maxhp%"
+    function "MineAnimation" false
+}
+
+// Zone 3-4
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 196, placeholder "%player.location.y%" <= 198, placeholder "%player.location.z%" >= 1, placeholder "%player.location.z%" <= 7) {
+    stat "layer1hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer1hp%"
+    stat "layermaxhp" set "%stat.player/layer1maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 191, placeholder "%player.location.y%" <= 193, placeholder "%player.location.z%" >= 1, placeholder "%player.location.z%" <= 7) {
+    stat "layer2hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer2hp%"
+    stat "layermaxhp" set "%stat.player/layer2maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 186, placeholder "%player.location.y%" <= 188, placeholder "%player.location.z%" >= 1, placeholder "%player.location.z%" <= 7) {
+    stat "layer3hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer3hp%"
+    stat "layermaxhp" set "%stat.player/layer3maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 181, placeholder "%player.location.y%" <= 183, placeholder "%player.location.z%" >= 1, placeholder "%player.location.z%" <= 7) {
+    stat "layer4hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer4hp%"
+    stat "layermaxhp" set "%stat.player/layer4maxhp%"
+    function "MineAnimation" false
+}
+
+// Zone 3-5
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 196, placeholder "%player.location.y%" <= 198, placeholder "%player.location.z%" >= -36, placeholder "%player.location.z%" <= -30) {
+    stat "layer1hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer1hp%"
+    stat "layermaxhp" set "%stat.player/layer1maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 191, placeholder "%player.location.y%" <= 193, placeholder "%player.location.z%" >= -36, placeholder "%player.location.z%" <= -30) {
+    stat "layer2hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer2hp%"
+    stat "layermaxhp" set "%stat.player/layer2maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 186, placeholder "%player.location.y%" <= 188, placeholder "%player.location.z%" >= -36, placeholder "%player.location.z%" <= -30) {
+    stat "layer3hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer3hp%"
+    stat "layermaxhp" set "%stat.player/layer3maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -14, placeholder "%player.location.x%" <= -8, placeholder "%player.location.y%" >= 181, placeholder "%player.location.y%" <= 183, placeholder "%player.location.z%" >= -36, placeholder "%player.location.z%" <= -30) {
+    stat "layer4hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer4hp%"
+    stat "layermaxhp" set "%stat.player/layer4maxhp%"
+    function "MineAnimation" false
+}
+
+function "Mine5/2" false
+goto function "Mine5/2"
+
+// Zone 4-1
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 196, placeholder "%player.location.y%" <= 198, placeholder "%player.location.z%" >= 115, placeholder "%player.location.z%" <= 121) {
+    stat "layer1hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer1hp%"
+    stat "layermaxhp" set "%stat.player/layer1maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 191, placeholder "%player.location.y%" <= 193, placeholder "%player.location.z%" >= 115, placeholder "%player.location.z%" <= 121) {
+    stat "layer2hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer2hp%"
+    stat "layermaxhp" set "%stat.player/layer2maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 186, placeholder "%player.location.y%" <= 188, placeholder "%player.location.z%" >= 115, placeholder "%player.location.z%" <= 121) {
+    stat "layer3hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer3hp%"
+    stat "layermaxhp" set "%stat.player/layer3maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 181, placeholder "%player.location.y%" <= 183, placeholder "%player.location.z%" >= 115, placeholder "%player.location.z%" <= 121) {
+    stat "layer4hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer4hp%"
+    stat "layermaxhp" set "%stat.player/layer4maxhp%"
+    function "MineAnimation" false
+    exit
+}
+
+// Zone 4-2
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 196, placeholder "%player.location.y%" <= 198, placeholder "%player.location.z%" >= 77, placeholder "%player.location.z%" <= 83) {
+    stat "layer1hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer1hp%"
+    stat "layermaxhp" set "%stat.player/layer1maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 191, placeholder "%player.location.y%" <= 193, placeholder "%player.location.z%" >= 77, placeholder "%player.location.z%" <= 83) {
+    stat "layer2hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer2hp%"
+    stat "layermaxhp" set "%stat.player/layer2maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 186, placeholder "%player.location.y%" <= 188, placeholder "%player.location.z%" >= 77, placeholder "%player.location.z%" <= 83) {
+    stat "layer3hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer3hp%"
+    stat "layermaxhp" set "%stat.player/layer3maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 181, placeholder "%player.location.y%" <= 183, placeholder "%player.location.z%" >= 77, placeholder "%player.location.z%" <= 83) {
+    stat "layer4hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer4hp%"
+    stat "layermaxhp" set "%stat.player/layer4maxhp%"
+    function "MineAnimation" false
+    exit
+}
+
+// Zone 4-3
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 196, placeholder "%player.location.y%" <= 198, placeholder "%player.location.z%" >= 39, placeholder "%player.location.z%" <= 45) {
+    stat "layer1hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer1hp%"
+    stat "layermaxhp" set "%stat.player/layer1maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 191, placeholder "%player.location.y%" <= 193, placeholder "%player.location.z%" >= 39, placeholder "%player.location.z%" <= 45) {
+    stat "layer2hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer2hp%"
+    stat "layermaxhp" set "%stat.player/layer2maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 186, placeholder "%player.location.y%" <= 188, placeholder "%player.location.z%" >= 39, placeholder "%player.location.z%" <= 45) {
+    stat "layer3hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer3hp%"
+    stat "layermaxhp" set "%stat.player/layer3maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 181, placeholder "%player.location.y%" <= 183, placeholder "%player.location.z%" >= 39, placeholder "%player.location.z%" <= 45) {
+    stat "layer4hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer4hp%"
+    stat "layermaxhp" set "%stat.player/layer4maxhp%"
+    function "MineAnimation" false
+}
+
+// Zone 4-4
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 196, placeholder "%player.location.y%" <= 198, placeholder "%player.location.z%" >= 1, placeholder "%player.location.z%" <= 7) {
+    stat "layer1hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer1hp%"
+    stat "layermaxhp" set "%stat.player/layer1maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 191, placeholder "%player.location.y%" <= 193, placeholder "%player.location.z%" >= 1, placeholder "%player.location.z%" <= 7) {
+    stat "layer2hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer2hp%"
+    stat "layermaxhp" set "%stat.player/layer2maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 186, placeholder "%player.location.y%" <= 188, placeholder "%player.location.z%" >= 1, placeholder "%player.location.z%" <= 7) {
+    stat "layer3hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer3hp%"
+    stat "layermaxhp" set "%stat.player/layer3maxhp%"
+    function "MineAnimation" false
+    exit
+}
+
+function "Mine6/2" false
+goto function "Mine6/2"
+
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 181, placeholder "%player.location.y%" <= 183, placeholder "%player.location.z%" >= 1, placeholder "%player.location.z%" <= 7) {
+    stat "layer4hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer4hp%"
+    stat "layermaxhp" set "%stat.player/layer4maxhp%"
+    function "MineAnimation" false
+}
+
+// Zone 4-5
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 196, placeholder "%player.location.y%" <= 198, placeholder "%player.location.z%" >= -36, placeholder "%player.location.z%" <= -30) {
+    stat "layer1hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer1hp%"
+    stat "layermaxhp" set "%stat.player/layer1maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 191, placeholder "%player.location.y%" <= 193, placeholder "%player.location.z%" >= -36, placeholder "%player.location.z%" <= -30) {
+    stat "layer2hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer2hp%"
+    stat "layermaxhp" set "%stat.player/layer2maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 186, placeholder "%player.location.y%" <= 188, placeholder "%player.location.z%" >= -36, placeholder "%player.location.z%" <= -30) {
+    stat "layer3hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer3hp%"
+    stat "layermaxhp" set "%stat.player/layer3maxhp%"
+    function "MineAnimation" false
+    exit
+}
+if (placeholder "%player.location.x%" >= -73, placeholder "%player.location.x%" <= -67, placeholder "%player.location.y%" >= 181, placeholder "%player.location.y%" <= 183, placeholder "%player.location.z%" >= -36, placeholder "%player.location.z%" <= -30) {
+    stat "layer4hp" dec "%stat.player/strength%"
+    stat "layerhp" set "%stat.player/layer4hp%"
+    stat "layermaxhp" set "%stat.player/layer4maxhp%"
+    function "MineAnimation" false
+}
