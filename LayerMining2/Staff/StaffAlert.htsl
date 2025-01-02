@@ -21,3 +21,9 @@ if (globalstat "alertid" = 3) {
     chat "&7[Staff] &4Player#%stat.global/alert/plrid% &cillegally attempted to open a crate. &7(/stafftp)"
     exit
 }
+
+// Improper Bid
+if (globalstat "alertid" = 4) {
+    chat "&7[Staff] &4Player#%stat.global/alert/plrid% &cillegally attempted to bid. &7(/stafftp)"
+    exit
+}

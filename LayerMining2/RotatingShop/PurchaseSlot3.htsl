@@ -1,0 +1,18 @@
+if (globalstat "rsstock3" <= 0) {
+    chat "&cThis slot is out of stock!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+if (stat "diamonds" < "%stat.global/rsprice3%") {
+    chat "&cYou don't have enough diamonds!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+globalstat "rsstock3" dec 1
+stat "diamonds" dec "%stat.global/rsprice3%"
+
+sound "Level Up" 0.7 1 "invokers_location"
+
+giveItem slot_3 true "First Slot" false

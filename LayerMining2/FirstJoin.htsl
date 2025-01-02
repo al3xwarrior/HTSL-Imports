@@ -1,3 +1,4 @@
+
 if (stat "zone" = 0) {
     stat "zone" set 1
 }
@@ -6,4 +7,12 @@ if (stat "basestrength" = 0) {
 }
 if (stat "s/tips" = 0) {
     stat "s/tips" set 2
+}
+
+if or (stat "fc/deeplure" = 0, stat "fc/luck" = 0, stat "fc/lure" = 0, stat "fc/multirod" = 0, stat "fc/virtualfish" = 0) {
+    stat "fc/deeplure" set 150
+    stat "fc/luck" set 30
+    stat "fc/lure" set 50
+    stat "fc/multirod" set 100
+    stat "fc/virtualfish" set 500
 }

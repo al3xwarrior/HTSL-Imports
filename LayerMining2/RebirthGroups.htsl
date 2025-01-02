@@ -1,0 +1,36 @@
+if (stat "rebirths" >= 1, hasGroup "Player" false) {
+    changePlayerGroup "R1" true
+}
+if (stat "rebirths" >= 2, hasGroup "R1" false) {
+    changePlayerGroup "R2" true
+}
+if (stat "rebirths" >= 3, hasGroup "R2" false) {
+    changePlayerGroup "R3" true
+}
+if (stat "rebirths" >= 4, hasGroup "R3" false) {
+    changePlayerGroup "R4" true
+}
+if (stat "rebirths" >= 5, hasGroup "R4" false) {
+    changePlayerGroup "R5" true
+}
+if (stat "rebirths" >= 10, hasGroup "R5" false) {
+    changePlayerGroup "R10" true
+}
+if (stat "rebirths" >= 20, hasGroup "R10" false) {
+    changePlayerGroup "R20" true
+}
+if (stat "rebirths" >= 30, hasGroup "R20" false) {
+    changePlayerGroup "R30" true
+}
+if (stat "rebirths" >= 40, hasGroup "R30" false) {
+    changePlayerGroup "R40" true
+}
+if (stat "rebirths" >= 50, hasGroup "R40" false) {
+    changePlayerGroup "R50" true
+}
+if (stat "rebirths" >= 100, hasGroup "R50" false) {
+    changePlayerGroup "R100" true
+}
+if (stat "rebirths" >= 1000, hasGroup "R100" false) {
+    changePlayerGroup "R1000" true
+}

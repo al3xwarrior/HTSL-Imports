@@ -7,3 +7,18 @@ if (stat "zone" < 15) {
     function "StaffAlert" true
     exit
 }
+
+stat "rebirths" inc 1
+
+stat "zone" set 1
+stat "gold" set 0
+stat "basestrength" set 1
+
+applyPotion "Blindness" 2 1 true
+tp "house_spawn"
+sound "Enderman Teleport" 0.7 2.0 "invokers_location"
+
+globalstat "rebirthid" set "%stat.player/playerid%"
+globalstat "rebirthamount" set "%stat.player/rebirths%"
+
+function "RebirthBc" true

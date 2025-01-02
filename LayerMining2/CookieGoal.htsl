@@ -1,0 +1,4 @@
+if (placeholder "%house.cookies%" >= "%stat.global/cookiegoal%") {
+    stat "cookiegoal" inc 30
+    function "CookieGoalRewards" true
+}

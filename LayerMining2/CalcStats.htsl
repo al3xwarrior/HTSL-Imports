@@ -416,3 +416,6 @@ if (hasItem "spacepet" metadata Hotbar anyAmount) {
     stat "extragold" inc 50000
     stat "finishdiamonds" inc 10
 }
+if (hasItem "huntpet" metadata Hotbar anyAmount) {
+    stat "finishdiamonds" inc 20
+}

@@ -1,0 +1,23 @@
+if (stat "f/lure" = 0) {
+    giveItem slot_1 false "First Slot" false
+}
+if (stat "f/lure" = 1) {
+    giveItem slot_2 false "First Slot" false
+}
+if (stat "f/lure" = 2) {
+    giveItem slot_3 false "First Slot" false
+}
+if (stat "f/lure" = 3) {
+    giveItem slot_4 false "First Slot" false
+}
+if (stat "f/lure" = 4) {
+    giveItem slot_5 false "First Slot" false
+}
+if (stat "f/lure" = 5) {
+    giveItem slot_6 false "First Slot" false
+}
+if (stat "f/lure" = 6) {
+    giveItem slot_7 false "First Slot" false
+}
+closeMenu
+sound "Anvil Use" 0.7 1 "invokers_location"

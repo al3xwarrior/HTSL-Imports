@@ -1,0 +1,41 @@
+// currentbidid
+// currentbid
+// nextbid
+
+if or (stat "zone" >= 4, stat "rebirths" > 0) {
+
+} else {
+    globalstat "alert/plrid" set "%stat.player/playerid%"
+    globalstat "alert/x" set "%player.location.x%"
+    globalstat "alert/y" set "%player.location.y%"
+    globalstat "alert/z" set "%player.location.z%"
+    globalstat "alertid" set 4
+    function "StaffAlert" true
+    exit
+}
+
+if (stat "playerid" = "%stat.global/currentbidid%") {
+    chat "&cYou are the current highest bidder!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+if (stat "diamonds" < "%stat.global/nextbid%") {
+    chat "&cYou do not have enough diamonds to bid!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+globalstat "currentbidid" set "%stat.player/playerid%"
+globalstat "currentbid" set "%stat.global/nextbid%"
+globalstat "nextbid" inc 50
+globalstat "auctiontime" set 20
+
+chat "&6&lAUCTION HOUSE &e%player.name% &ehas bid &b%stat.global/currentbid%❄&e!"
+function "BidBroadcast" true
+
+sound "Orb Pickup" 0.7 1 "invokers_location"
+pause 3
+sound "Orb Pickup" 0.7 1.2 "invokers_location"
+pause 3
+sound "Orb Pickup" 0.7 1.4 "invokers_location"

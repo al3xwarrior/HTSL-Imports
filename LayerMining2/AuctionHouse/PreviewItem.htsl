@@ -1,0 +1,26 @@
+if (globalstat "auctionitem" = 1) {
+    displayMenu "Auction Preview: 1"
+}
+if (globalstat "auctionitem" = 2) {
+    displayMenu "Auction Preview: 2"
+}
+if (globalstat "auctionitem" = 3) {
+    displayMenu "Auction Preview: 3"
+}
+if (globalstat "auctionitem" = 4) {
+    displayMenu "Auction Preview: 4"
+}
+if (globalstat "auctionitem" = 5) {
+    displayMenu "Auction Preview: 5"
+}
+if (globalstat "auctionitem" = 6) {
+    displayMenu "Auction Preview: 6"
+}
+if (globalstat "auctionitem" = 7) {
+    displayMenu "Auction Preview: 7"
+}
+if (globalstat "auctionitem" = 8) {
+    displayMenu "Auction Preview: 8"
+}
+
+sound "Chest Open" 0.7 1 "invokers_location"

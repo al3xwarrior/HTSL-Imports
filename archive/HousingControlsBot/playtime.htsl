@@ -17,7 +17,6 @@ if (stat "minutes" >= 60) {
 if (globalstat "unix" < %date.unix%) {
     globalstat "unix" set %date.unix%
     globalstat "seconds" inc 1
-    function game_loop false
 }
 if (globalstat "seconds" >= 60) {
     globalstat "seconds" set 0

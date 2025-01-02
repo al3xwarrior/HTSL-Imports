@@ -1,0 +1,11 @@
+if or (stat "zone" >= 14, stat "rebirths" > 0) {
+
+} else {
+    exit
+}
+
+sound "Chest Close" 0.7 2.0 "invokers_location"
+chat "&1"
+chat "&4&lROTATING SHOP"
+chat "&cThe shop has been updated and refreshed!!"
+chat "&2"

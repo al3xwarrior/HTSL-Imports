@@ -1,0 +1,44 @@
+// rsrefreshm
+// rsrefreshs
+
+globalstat "rsrefreshs" dec 1
+
+if (globalstat "rsrefreshs" <= 0, globalstat "rsrefreshm" > 0) {
+    globalstat "rsrefreshs" set 59
+    globalstat "rsrefreshm" dec 1
+}
+
+if (globalstat "rsrefreshm" <= 0, globalstat "rsrefreshs" <= 0) {
+    globalstat "rsrefreshm" set 20
+    globalstat "rsrefreshs" set 0
+} else {
+    exit
+}
+
+globalstat "rsshopid" inc 1
+if (globalstat "rsshopid" > 3) {
+    globalstat "rsshopid" set 1
+}
+
+if (globalstat "rsshopid" == 1) {
+    globalstat "rsstock1" set 5
+    globalstat "rsprice1" set 1000
+    globalstat "rsstock2" set 5
+    globalstat "rsprice2" set 1000
+    globalstat "rsstock3" set 5
+    globalstat "rsprice3" set 1000
+}
+if (globalstat "rsshopid" == 2) {
+    globalstat "rsstock1" set 3
+    globalstat "rsprice1" set 2500
+    globalstat "rsstock2" set 8
+    globalstat "rsprice2" set 1000
+    globalstat "rsstock3" set 8
+    globalstat "rsprice3" set 1000
+}
+if (globalstat "rsshopid" == 1) {
+    globalstat "rsstock1" set 3
+    globalstat "rsprice1" set 5000
+}
+
+function "RotatingShopBc" true

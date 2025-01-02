@@ -1,0 +1,2 @@
+sound "Enderdragon Growl" 0.7 1 "invokers_location"
+chat "&d&lREBIRTH &5Player#%stat.global/rebirthid% &7just rebirthed to &d%stat.global/rebirthamount%&7! &%random.int/1 10%&lGG!"

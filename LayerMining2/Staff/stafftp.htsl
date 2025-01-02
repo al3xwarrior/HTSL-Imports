@@ -1,0 +1,10 @@
+if (hasGroup "Helper" true) {
+
+} else {
+    exit
+}
+
+stat "targetx" set "%stat.global/alert/x%"
+stat "targety" set "%stat.global/alert/y%"
+stat "targetz" set "%stat.global/alert/z%"
+function "DT1" false

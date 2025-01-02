@@ -12,6 +12,7 @@ if (stat "f/virtualfish" >= 5) {
 
 stat "fishgold" dec "%stat.player/fc/virtualfish%"
 stat "fc/virtualfish" inc 500
+stat "f/virtualfish" inc 1
 chat "&7You have upgraded your deep lure to level &3%stat.player/f/virtualfish%&7!"
 sound "Level Up" 0.7 1 "invokers_location"
 

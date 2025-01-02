@@ -1,0 +1,10 @@
+if (globalstat "rsshopid" = 1) {
+    displayMenu "Rotating Shop 1"
+}
+if (globalstat "rsshopid" = 2) {
+    displayMenu "Rotating Shop 2"
+}
+if (globalstat "rsshopid" = 3) {
+    displayMenu "Rotating Shop 3"
+}
+sound "Chest Open" 0.7 1 "invokers_location"

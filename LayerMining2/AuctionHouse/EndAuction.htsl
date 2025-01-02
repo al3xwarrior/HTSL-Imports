@@ -4,7 +4,7 @@ if (inRegion "AuctionHouse") {
     sound "Enderman Teleport" 0.7 2.0 "invokers_location"
 }
 
-if (stat "zone" >= 1, stat "rebirths" > 0) {
+if or (stat "zone" >= 4, stat "rebirths" > 0) {
 
 } else {
     exit
@@ -16,7 +16,35 @@ chat "&b"
 chat "&6&lAUCTION HOUSE"
 if (stat "playerid" = "%stat.global/currentbidid%") {
     chat "&eYou have won the auction for &b%stat.global/currentbid% diamonds&e!"
+    stat "diamonds" dec "%stat.global/currentbid%"
+    chat "&6"
 } else {
     chat "&eThe auction has ended! &6Player#%stat.global/currentbidid% &ehas won the auction for &b%stat.global/currentbid% diamonds&e!"
+    chat "&6"
+    exit
 }
-chat "&6"
+
+if (globalstat "auctionitem" = 1) {
+    giveItem slot_1 true "First Slot" false
+}
+if (globalstat "auctionitem" = 2) {
+    giveItem slot_2 true "Second Slot" false
+}
+if (globalstat "auctionitem" = 3) {
+    giveItem slot_3 true "Third Slot" false
+}
+if (globalstat "auctionitem" = 4) {
+    giveItem slot_4 true "Fourth Slot" false
+}
+if (globalstat "auctionitem" = 5) {
+    giveItem slot_5 true "Fifth Slot" false
+}
+if (globalstat "auctionitem" = 6) {
+    giveItem slot_6 true "Sixth Slot" false
+}
+if (globalstat "auctionitem" = 7) {
+    giveItem slot_7 true "Seventh Slot" false
+}
+if (globalstat "auctionitem" = 8) {
+    giveItem slot_8 true "Eighth Slot" false
+}

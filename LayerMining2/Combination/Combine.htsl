@@ -1,7 +1,7 @@
 if (hasItem slot_9 Anywhere anyAmount) {
     removeItem slot_9
 } else {
-    chat "&cYou don't have 2 diamond shovels!"
+    chat "&cYou don't have 2 diamond axes!"
     sound "Anvil Land" 0.7 1 "invokers_location"
     exit
 }
@@ -9,7 +9,7 @@ if (hasItem slot_9 metadata Anywhere anyAmount) {
     
 } else {
     giveItem slot_9 true "First Slot" false
-    chat "&cYou don't have 2 diamond shovels!"
+    chat "&cYou don't have 2 diamond axes!"
     sound "Anvil Land" 0.7 1 "invokers_location"
     exit
 }

@@ -5,6 +5,12 @@ if (stat "eventforge" > 0) {
     stat "strength" mult "%stat.player/eventforge%"
 }
 
+if (stat "rebirths" > 0) {
+    stat "temprebirth" set 1
+    stat "temprebirth" inc "%stat.player/rebirths%"
+    stat "strength" mult "%stat.player/temprebirth%"
+}
+
 stat "haste" inc "%stat.player/eventhaste%"
 function "Haste" false
 
@@ -24,6 +30,7 @@ if (stat "treasure/active" == 1) {
 }
 
 if (inRegion "AuctionHouse") {
+    function "AuctionTeam" false
     stat "displaycurrency" set 0
     actionBar "&b%stat.player/diamonds% &r &r &r &8[&a⌚&8] &2%stat.player/hours%h&7:&2%stat.player/minutes%m&7:&2%stat.player/seconds%s"
     exit

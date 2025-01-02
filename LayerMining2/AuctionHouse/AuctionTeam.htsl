@@ -1,0 +1,30 @@
+if (inRegion "AuctionHouse") {
+
+} else {
+    exit
+}
+
+if (globalstat "auctionitem" = 1) {
+    setTeam "Speed Boots"
+}
+if (globalstat "auctionitem" = 2) {
+    setTeam "Jump Pants"
+}
+if (globalstat "auctionitem" = 3) {
+    setTeam "Spaceman Pet"
+}
+if (globalstat "auctionitem" = 4) {
+    setTeam "Enhanced D-Pick"
+}
+if (globalstat "auctionitem" = 5) {
+    setTeam "Enhanced D-Shov"
+}
+if (globalstat "auctionitem" = 6) {
+    setTeam "Enhanced D-Axe"
+}
+if (globalstat "auctionitem" = 7) {
+    setTeam "Strength Nugget"
+}
+if (globalstat "auctionitem" = 8) {
+    setTeam "Strength Nugget"
+}

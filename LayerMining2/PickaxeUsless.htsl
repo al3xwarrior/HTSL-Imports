@@ -1,0 +1,13 @@
+if or (hasItem slot_1 "Item Type" Hand anyAmount, hasItem slot_2 "Item Type" Hand anyAmount, hasItem slot_3 "Item Type" Hand anyAmount, hasItem slot_4 "Item Type" Hand anyAmount, hasItem slot_5 "Item Type" Hand anyAmount) {
+
+} else {
+    exit
+}
+
+if (placeholder "%player.location.x%" < 90) {
+
+} else {
+    exit
+}
+
+applyPotion "Mining Fatigue" 3 10 true

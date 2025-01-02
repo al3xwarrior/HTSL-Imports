@@ -1,15 +1,37 @@
-if (stat "zone" >= 1, stat "rebirths" > 0) {
+if or (stat "zone" >= 4, stat "rebirths" > 0) {
 
 } else {
     exit
 }
 
-if (globalstat "auctionbcid" = 1) {
-    sound "Chest Open" 0.7 1.8 "invokers_location"
-    chat "&r"
-    chat "&6&lAUCTION HOUSE"
-    chat "&eThe Auction House has opened! &7&o/auction"
-    chat "&eYou are bidding for "
-    chat "&f"
-    exit
+sound "Chest Open" 0.7 1.8 "invokers_location"
+chat "&r"
+chat "&6&lAUCTION HOUSE"
+chat "&eThe Auction House has opened! &7&o/auction"
+
+if (globalstat "auctionitem" = 1) {
+    chat "&eYou are bidding for &9Speed Boots&e!"
 }
+if (globalstat "auctionitem" = 2) {
+    chat "&eYou are bidding for &aJump Pants&e!"
+}
+if (globalstat "auctionitem" = 3) {
+    chat "&eYou are bidding for &5Spaceman Pet&e!"
+}
+if (globalstat "auctionitem" = 4) {
+    chat "&eYou are bidding for &bEnhanced Diamond Pickaxe&e!"
+}
+if (globalstat "auctionitem" = 5) {
+    chat "&eYou are bidding for &bEnhanced Diamond Shovel&e!"
+}
+if (globalstat "auctionitem" = 6) {
+    chat "&eYou are bidding for &bEnhanced Diamond Axe&e!"
+}
+if (globalstat "auctionitem" = 7) {
+    chat "&eYou are bidding for &cStrength Nugget 2.5x&e!"
+}
+if (globalstat "auctionitem" = 8) {
+    chat "&eYou are bidding for &cStrength Nugget 3.0x&e!"
+}
+
+chat "&f"

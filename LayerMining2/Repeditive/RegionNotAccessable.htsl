@@ -1,4 +1,4 @@
-if or (stat "zone" >= 14, gamemode "Creative") {
+if or (stat "zone" >= 15, gamemode "Creative") {
     exit
 }
 

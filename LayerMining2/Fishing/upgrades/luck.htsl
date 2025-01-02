@@ -12,6 +12,7 @@ if (stat "f/luck" >= 10) {
 
 stat "fishgold" dec "%stat.player/fc/luck%"
 stat "fc/luck" inc 50
+stat "f/luck" inc 1
 chat "&7You have upgraded your luck to level &3%stat.player/f/luck%&7!"
 sound "Level Up" 0.7 1 "invokers_location"
 

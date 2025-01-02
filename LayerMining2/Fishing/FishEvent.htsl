@@ -7,6 +7,19 @@ stat "luckenchant" mult "%stat.player/f/luck%"
 stat "fishluck" inc "%stat.player/f/luckenchant%"
 }
 
+if (hasItem slot_1 metadata Armor anyAmount) {
+    stat "fishluck" inc 1
+}
+if (hasItem slot_2 metadata Armor anyAmount) {
+    stat "fishluck" inc 1
+}
+if (hasItem slot_3 metadata Armor anyAmount) {
+    stat "fishluck" inc 1
+}
+if (hasItem slot_4 metadata Armor anyAmount) {
+    stat "fishluck" inc 1
+}
+
 stat "fish" inc 1
 function "CatchFish" false
 

@@ -1,0 +1,17 @@
+chat "&r"
+chat "&6&lCOOKIE GOAL"
+chat "&eWe reached the cookie goal!"
+
+stat "cookiegold" set "%random.int/1000 2001%"
+stat "cookiegold" mult "%stat.player/zone%"
+stat "gold" inc "%stat.player/cookiegold%"
+
+stat "cookiediamonds" set "%random.int/1 11%"
+stat "cookiediamonds" mult "%stat.player/zone%"
+stat "diamonds" inc "%stat.player/cookiediamonds%"
+
+chat "&6+%stat.player/cookiegold%⛃ &7- &b+%stat.player/cookiediamonds%❄"
+
+chat "&6"
+
+sound "Orb Pickup" 0.7 1 "invokers_location"
