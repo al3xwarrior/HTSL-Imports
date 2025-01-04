@@ -1,4 +1,9 @@
 
+if (fishingEnv "Lava") {
+    function "LavaCatchFish" false
+    exit
+}
+
 if () {
 stat "fishluck" set "%random.int/1 6%"
 stat "fishluck" inc "%stat.player/f/deeplure%"

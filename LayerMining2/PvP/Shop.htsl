@@ -1,0 +1,8 @@
+if (stat "diamonds" < 5000) {
+    chat "&cYou do not have enough diamonds!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+stat "diamonds" dec 5000
+giveItem slot_5 true "First Slot" false

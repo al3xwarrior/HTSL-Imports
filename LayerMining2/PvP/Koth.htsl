@@ -1,0 +1,19 @@
+if (inRegion "PvPKoth") {
+    
+} else {
+    exit
+}
+
+stat "kothreward" set 30
+stat "kothreward" div "%stat.global/pvpkothplrs%"
+
+sound "Note Pling" 0.7 2.0 "Invokers Location"
+
+stat "diamonds" inc "%stat.player/kothreward%"
+actionBar "&8[&r &b&l+%stat.player/kothreward%❄ Diamonds&r &8]"
+
+if (placeholder "%random.int/1 1001" = 500) {
+    giveItem slot_1 true "First Slot" false
+    sound "Level Up" 0.7 2.0 "Invokers Location"
+    chat "&a&lLUCKY! &7You got the &c0.1% &fToilet Paper Pet&7!"
+}

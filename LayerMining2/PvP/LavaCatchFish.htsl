@@ -1,0 +1,54 @@
+stat "lavafishluck" set 5
+stat "lavafishluck" dec "%stat.global/lavafishingplrs%"
+
+if (stat "lavafishluck" < 0) {
+    chat "&cThe lava fish have been scared away by the amount of players fishing."
+    sound "Cat Hiss" 0.7 1 "invokers_location"
+    exit
+}
+
+if (stat "lavafishluck" >= 4) {
+    stat "lavafishrng" set "%random.int/6 9%"
+}
+if (stat "lavafishluck" >= 2) {
+    stat "lavafishrng" set "%random.int/4 6%"
+}
+if (stat "lavafishluck" >= 0) {
+    stat "lavafishrng" set "%random.int/1 4%"
+}
+
+sound "Water Splash" 0.7 1 "invokers_location"
+if (stat "lavafishrng" = 1) {
+    giveItem slot_1 true "First Slot" false
+    chat "&6&lLAVA FISHING &7You caught a &7&lCOMMON &bDiamond Crate&7!"
+}
+if (stat "lavafishrng" = 2) {
+    giveItem slot_2 true "First Slot" false
+    chat "&6&lLAVA FISHING &7You caught a &cStrength Nugget 1.2x&7!"
+}
+if (stat "lavafishrng" = 3) {
+    giveItem slot_3 true "First Slot" false
+    chat "&6&lLAVA FISHING &7You caught a &cStrength Nugget 1.5x&7!"
+}
+
+if (stat "lavafishrng" = 4) {
+    giveItem slot_10 true "First Slot" false
+    chat "&6&lLAVA FISHING &7You caught a &9&lRARE &bDiamond Crate&7!"
+}
+if (stat "lavafishrng" = 5) {
+    giveItem slot_11 true "First Slot" false
+    chat "&6&lLAVA FISHING &7You caught a &cStrength Nugget 2.0x&7!"
+}
+
+if (stat "lavafishrng" = 6) {
+    giveItem slot_19 true "First Slot" false
+    chat "&6&lLAVA FISHING &7You caught a &6&lLEGENDARY &bDiamond Crate&7!"
+}
+if (stat "lavafishrng" = 7) {
+    giveItem slot_20 true "First Slot" false
+    chat "&6&lLAVA FISHING &7You caught a &cStrength Nugget 2.5x&7!"
+}
+if (stat "lavafishrng" = 8) {
+    giveItem slot_21 true "First Slot" false
+    chat "&6&lLAVA FISHING &7You caught a &cStrength Nugget 3.0x&7!"
+}

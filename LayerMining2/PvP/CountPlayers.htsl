@@ -1,0 +1,7 @@
+if (inRegion "LavaFishing") {
+    globalstat "lavafishingplrs" inc 1
+}
+
+if (inRegion "PvPKoth") {
+    globalstat "pvpkothplrs" inc 1
+}

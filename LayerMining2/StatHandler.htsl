@@ -29,6 +29,17 @@ if (stat "treasure/active" == 1) {
     exit
 }
 
+if (inRegion "PvPKoth") {
+    exit
+}
+
+if (inRegion "PvPArena", inRegion "PvPSpawn") {
+    stat "displaycurrency" set "%stat.player/gold%"
+    setTeam "Gold"
+    actionBar "&8[&4⚔&8] &c%stat.player/kills% &r &r &r &8[&c☠&8] &c%stat.player/deaths% &r &r &r &8[&4&lKS&8] &c%stat.player/ks% &r &r &r &8[&3❄&8] &b%stat.player/diamonds% &r &r &r &8[&a⌚&8] &2%stat.player/hours%h&7:&2%stat.player/minutes%m&7:&2%stat.player/seconds%s"
+    exit
+}
+
 if (inRegion "AuctionHouse") {
     function "AuctionTeam" false
     stat "displaycurrency" set 0

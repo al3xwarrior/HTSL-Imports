@@ -1,0 +1,17 @@
+
+stat "kills" inc 1
+stat "ks" inc 1
+stat "bounty" inc "%random.int/0 11%"
+
+pause 1
+if (globalstat "bountytoclaim" > 0) {
+    stat "diamonds" inc "%globalstat/bountytoclaim%"
+    chat "&aYou have claimed a bounty of &b%stat.global/bountytoclaim%❄"
+    sound "Level Up" 0.7 1 "invokers_location"
+}
+
+sound "Note Pling" 0.7 1 "invokers_location"
+pause 3
+sound "Note Pling" 0.7 1.5 "invokers_location"
+pause 3
+sound "Note Pling" 0.7 2 "invokers_location"

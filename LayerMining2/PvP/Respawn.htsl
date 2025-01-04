@@ -1,0 +1,4 @@
+pause 1
+
+applyPotion "Blindness" 1 1 true
+tp "custom_coordinates" "-15.5 204 -84.5"

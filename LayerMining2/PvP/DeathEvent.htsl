@@ -1,0 +1,6 @@
+
+stat "deaths" inc 1
+stat "ks" set 0
+
+globalstat "bountytoclaim" set "%stat.player/bounty%"
+stat "bounty" set 0
