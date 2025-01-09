@@ -1,4 +1,4 @@
-stat "eggcost" set 10000
+stat "eggcost" set 1000000000
 
 if (stat "gold" >= "%stat.player/eggcost%") {
 
@@ -28,42 +28,44 @@ sound "Note Pling" 0.7 1.6 "invokers_location"
 
 stat "petrng" set "%random.int/1 9%"
 if (stat "petrng" == 1) {
-    title "&fMushroom Stem Pet" "&a&oOpened!" 0 5 3
+    title "&bDiamond Pet" "&a&oOpened!" 0 5 3
     giveItem slot_1 true "First Slot" false
     exit
 }
 if (stat "petrng" == 2) {
-    title "&cMushroom Block Pet" "&a&oOpened!" 0 5 3
+    title "&cStrength Pet" "&a&oOpened!" 0 5 3
     giveItem slot_2 true "First Slot" false
     exit
 }
 if (stat "petrng" == 3) {
-    title "&cWeird Guy Pet" "&a&oOpened!" 0 5 3
+    title "&6Gold Pet" "&a&oOpened!" 0 5 3
     giveItem slot_3 true "First Slot" false
     exit
 }
 if (stat "petrng" == 4) {
-    title "&9Weirdo Guy Pet" "&a&oOpened!" 0 5 3
+    title "&eGold Pet" "&a&oOpened!" 0 5 3
     giveItem slot_4 true "First Slot" false
     exit
 }
 if (stat "petrng" == 5) {
-    title "&dWeird Guy Pet" "&a&oOpened!" 0 5 3
+    title "&d&kjwaijtwjtww&r &dPet" "&a&oOpened!" 0 5 3
     giveItem slot_5 true "First Slot" false
     exit
 }
+/*
 if (stat "petrng" == 6) {
-    title "&dFlower Pet" "&a&oOpened!" 0 5 3
+    title "&dTropical &5Fruit &dBowl &5Pet" "&a&oOpened!" 0 5 3
     giveItem slot_6 true "First Slot" false
     exit
 }
 if (stat "petrng" == 7) {
-    title "&fFlower Pet" "&a&oOpened!" 0 5 3
+    title "&1Kiwi Mango Pet" "&a&oOpened!" 0 5 3
     giveItem slot_7 true "First Slot" false
     exit
 }
 if (stat "petrng" == 8) {
-    title "&6Candle Pet" "&a&oOpened!" 0 5 3
+    title "&2Jar of Pickles Pet" "&a&oOpened!" 0 5 3
     giveItem slot_8 true "First Slot" false
     exit
 }
+    */

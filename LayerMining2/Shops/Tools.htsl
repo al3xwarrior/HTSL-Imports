@@ -8,7 +8,7 @@ if (hasItem slot_2 metadata Anywhere anyAmount) {
     exit
 }
 
-if (stat "gold" >= 100000) {
+if (stat "gold" >= 1000000) {
     stat "gold" dec 100000
     giveItem slot_1 true "First Slot" false
 } else {
@@ -17,7 +17,7 @@ if (stat "gold" >= 100000) {
     exit
 }
 
-chat "&aYou bought a wooden shovel for 100000 gold! Combine it to upgrade!"
+chat "&aYou bought shears for 1,000,000 gold! Combine it to upgrade!"
 sound "Orb Pickup" 0.7 1 "invokers_location"
 pause 2
 sound "Orb Pickup" 0.7 1.2 "invokers_location"

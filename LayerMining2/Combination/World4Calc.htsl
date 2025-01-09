@@ -1,0 +1,190 @@
+
+// require1
+
+// Conditional Explination
+// - Player has 1 tool
+// - We know the player has 1 tool, if they have 2 tools, give the first one back and set the stat to 2 (green)
+// - They didnt have 2 tools, so give the first one back and set the stat to 4 (red)
+
+// Wooden shovel - require1
+
+/*
+stat "temprequire" set 0
+if (stat "gold" >= 1000000) {
+    stat "require1" set 2
+} else {
+    stat "require1" set 4
+}
+
+// Stone shovel - require2
+if (hasItem slot_29 metadata Anywhere anyAmount) {
+    removeItem slot_29
+    stat "temprequire" set 1
+} else {
+    stat "require2" set 4
+}
+if (stat "temprequire" = 1, hasItem slot_29 metadata Anywhere anyAmount) {
+    giveItem slot_29 true "First Slot" false
+    stat "require2" set 2
+    stat "temprequire" set 0
+}
+if (stat "temprequire" = 1) {
+    giveItem slot_29 true "First Slot" false
+    stat "require2" set 4
+    stat "temprequire" set 0
+}
+
+// Golden shovel - require3
+if (hasItem slot_30 metadata Anywhere anyAmount) {
+    removeItem slot_30
+    stat "temprequire" set 1
+} else {
+    stat "require3" set 4
+}
+if (stat "temprequire" = 1, hasItem slot_30 metadata Anywhere anyAmount) {
+    giveItem slot_30 true "First Slot" false
+    stat "require3" set 2
+    stat "temprequire" set 0
+}
+if (stat "temprequire" = 1) {
+    giveItem slot_30 true "First Slot" false
+    stat "require3" set 4
+    stat "temprequire" set 0
+}
+
+// Iron shovel - require4
+if (hasItem slot_31 metadata Anywhere anyAmount) {
+    removeItem slot_31
+    stat "temprequire" set 1
+} else {
+    stat "require4" set 4
+}
+if (stat "temprequire" = 1, hasItem slot_31 metadata Anywhere anyAmount) {
+    giveItem slot_31 true "First Slot" false
+    stat "require4" set 2
+    stat "temprequire" set 0
+}
+if (stat "temprequire" = 1) {
+    giveItem slot_31 true "First Slot" false
+    stat "require4" set 4
+    stat "temprequire" set 0
+}
+
+// Diamond shovel - require5
+if (hasItem slot_32 metadata Anywhere anyAmount) {
+    removeItem slot_32
+    stat "temprequire" set 1
+} else {
+    stat "require5" set 4
+}
+if (stat "temprequire" = 1, hasItem slot_32 metadata Anywhere anyAmount) {
+    giveItem slot_32 true "First Slot" false
+    stat "require5" set 2
+    stat "temprequire" set 0
+}
+if (stat "temprequire" = 1) {
+    giveItem slot_32 true "First Slot" false
+    stat "require5" set 4
+    stat "temprequire" set 0
+}
+
+// Diamond shovel E1 - require6
+if (hasItem slot_33 metadata Anywhere anyAmount) {
+    removeItem slot_33
+    stat "temprequire" set 1
+} else {
+    stat "require6" set 4
+}
+if (stat "temprequire" = 1, hasItem slot_33 metadata Anywhere anyAmount) {
+    giveItem slot_33 true "First Slot" false
+    stat "require6" set 2
+    stat "temprequire" set 0
+}
+
+function "World4Calc2" false
+goto function "World4Calc2"
+
+*/
+
+if (stat "temprequire" = 1) {
+    giveItem slot_33 true "First Slot" false
+    stat "require6" set 4
+    stat "temprequire" set 0
+}
+
+// Diamond shovel E2 - require7
+if (hasItem slot_34 metadata Anywhere anyAmount) {
+    removeItem slot_34
+    stat "temprequire" set 1
+} else {
+    stat "require7" set 4
+}
+if (stat "temprequire" = 1, hasItem slot_34 metadata Anywhere anyAmount) {
+    giveItem slot_34 true "First Slot" false
+    stat "require7" set 2
+    stat "temprequire" set 0
+}
+if (stat "temprequire" = 1) {
+    giveItem slot_34 true "First Slot" false
+    stat "require7" set 4
+    stat "temprequire" set 0
+}
+
+// Diamond shovel E3 - require8
+if (hasItem slot_35 metadata Anywhere anyAmount) {
+    removeItem slot_35
+    stat "temprequire" set 1
+} else {
+    stat "require8" set 4
+}
+if (stat "temprequire" = 1, hasItem slot_35 metadata Anywhere anyAmount) {
+    giveItem slot_35 true "First Slot" false
+    stat "require8" set 2
+    stat "temprequire" set 0
+}
+if (stat "temprequire" = 1) {
+    giveItem slot_35 true "First Slot" false
+    stat "require8" set 4
+    stat "temprequire" set 0
+}
+
+/*
+// Diamond shovel E4 - require9
+if (hasItem slot_19 metadata Anywhere anyAmount) {
+    removeItem slot_19
+    stat "temprequire" set 1
+} else {
+    stat "require9" set 4
+}
+if (stat "temprequire" = 1, hasItem slot_19 metadata Anywhere anyAmount) {
+    giveItem slot_19 true "First Slot" false
+    stat "require9" set 2
+    stat "temprequire" set 0
+}
+if (stat "temprequire" = 1) {
+    giveItem slot_19 true "First Slot" false
+    stat "require9" set 4
+    stat "temprequire" set 0
+}
+
+// Diamond shovel E5 - require10
+if (hasItem slot_20 metadata Anywhere anyAmount) {
+    removeItem slot_20
+    stat "temprequire" set 1
+} else {
+    stat "require10" set 4
+}
+if (stat "temprequire" = 1, hasItem slot_20 metadata Anywhere anyAmount) {
+    giveItem slot_20 true "First Slot" false
+    stat "require10" set 2
+    stat "temprequire" set 0
+}
+if (stat "temprequire" = 1) {
+    giveItem slot_20 true "First Slot" false
+    stat "require10" set 4
+    stat "temprequire" set 0
+}
+
+*/
+
+displayMenu "Combine Shears"

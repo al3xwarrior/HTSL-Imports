@@ -8,6 +8,12 @@ if (stat "zone" < 15) {
     exit
 }
 
+if (stat "rebirths" >= 1) {
+    chat "&cYou have already rebirthed at least once! Move on to World 4!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
 stat "rebirths" inc 1
 
 stat "zone" set 1

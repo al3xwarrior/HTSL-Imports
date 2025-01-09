@@ -1,9 +1,9 @@
-if or (stat "zone" >= 15, gamemode "Creative") {
+if or (stat "zone" >= 17, gamemode "Creative") {
     exit
 }
 
 tp "current_location"
-sound "Anvil Land" 0.7 1 "invokers_location"
+sound "Anvil Land" 0.7 1 "current_location"
 applyPotion "Slowness" 1 1 true
 applyPotion "Blindness" 1 1 true
 chat "&cYou do not have this zone unlocked!"

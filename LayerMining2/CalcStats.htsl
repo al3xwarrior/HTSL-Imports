@@ -380,8 +380,6 @@ if (hasItem slot_34 metadata Hotbar anyAmount) {
     stat "extraforge" inc 60000
 }
 
-*/
-
 if (hasItem slot_1 metadata Hotbar anyAmount) {
     stat "extragold" inc "%random.int/10000 100000%"
     stat "extraforge" inc "%random.int/10000 100000%"
@@ -418,4 +416,114 @@ if (hasItem "spacepet" metadata Hotbar anyAmount) {
 }
 if (hasItem "huntpet" metadata Hotbar anyAmount) {
     stat "finishdiamonds" inc 20
+}
+
+if (hasItem slot_1 metadata Hotbar anyAmount) {
+    stat "extragold" inc 130000
+    stat "extraforge" inc 100000
+}
+if (hasItem slot_2 metadata Hotbar anyAmount) {
+    stat "extragold" inc 100000
+    stat "extraforge" inc 130000
+}
+if (hasItem slot_3 metadata Hotbar anyAmount) {
+    stat "extragold" inc 100000
+    stat "extraforge" inc 150000
+}
+if (hasItem slot_4 metadata Hotbar anyAmount) {
+    stat "extragold" inc 100000
+    stat "haste" inc 3
+}
+if (hasItem slot_5 metadata Hotbar anyAmount) {
+    stat "extragold" inc 100000
+    stat "haste" inc 3
+}
+if (hasItem slot_6 metadata Hotbar anyAmount) {
+    stat "extraforge" inc 150000
+    stat "haste" inc 3
+}
+if (hasItem slot_7 metadata Hotbar anyAmount) {
+    stat "extragold" inc 300000
+    stat "extraforge" inc 300000
+}
+if (hasItem slot_8 metadata Hotbar anyAmount) {
+    stat "extragold" inc 500000
+    stat "extraforge" dec 50000
+}
+if (hasItem slot_9 metadata Hotbar anyAmount) {
+    stat "extragold" dec 50000
+    stat "extraforge" inc 500000
+}
+
+function "CalcStats9" false
+goto function "CalcStats9"
+
+*/
+
+if (hasItem slot_10 metadata Hotbar anyAmount) {
+    stat "extragold" inc 500000
+    stat "extraforge" inc 400000
+}
+if (hasItem slot_11 metadata Hotbar anyAmount) {
+    stat "extragold" inc 500000
+    stat "extraforge" inc 500000
+}
+if (hasItem slot_12 metadata Hotbar anyAmount) {
+    stat "extragold" dec 100000
+}
+if (hasItem slot_13 metadata Hotbar anyAmount) {
+    stat "extragold" inc 750000
+    stat "extraforge" inc 100000
+}
+if (hasItem slot_14 metadata Hotbar anyAmount) {
+    stat "extragold" inc 1000000
+    stat "extraforge" inc 1000000
+}
+if (hasItem slot_16 metadata Hotbar anyAmount) {
+    stat "extraforge" dec 100000
+}
+if (hasItem slot_17 metadata Hotbar anyAmount) {
+    stat "extragold" inc 1200000
+    stat "extraforge" inc 1000000
+}
+if (hasItem slot_18 metadata Hotbar anyAmount) {
+    stat "extragold" inc 1000000
+    stat "extraforge" inc 1000000
+    stat "haste" inc 2
+    stat "finishdiamonds" inc 3
+}
+if (hasItem slot_19 metadata Hotbar anyAmount) {
+    stat "extragold" inc 1000000
+    stat "extraforge" inc 1000000
+    stat "haste" inc 2
+    stat "finishdiamonds" inc 3
+}
+if (hasItem slot_20 metadata Hotbar anyAmount) {
+    stat "extragold" inc 1000000
+    stat "extraforge" inc 1000000
+    stat "haste" inc 2
+    stat "finishdiamonds" inc 3
+}
+if (hasItem slot_21 metadata Hotbar anyAmount) {
+    stat "extragold" inc 1000000
+    stat "extraforge" inc 1000000
+    stat "haste" inc 2
+    stat "finishdiamonds" inc 3
+}
+if (hasItem slot_22 metadata Hotbar anyAmount) {
+    stat "extragold" inc 1000000
+    stat "extraforge" inc 1000000
+    stat "haste" inc 2
+    stat "finishdiamonds" inc 3
+}
+if (hasItem slot_23 metadata Hotbar anyAmount) {
+    stat "extragold" inc 2500000
+    stat "extraforge" inc 2500000
+}
+if (hasItem slot_24 metadata Hotbar anyAmount) {
+    stat "finishdiamonds" inc 100
+}
+if (hasItem slot_28 metadata Hotbar anyAmount) {
+    stat "haste" inc 5
+    stat "finishdiamonds" inc 25
 }

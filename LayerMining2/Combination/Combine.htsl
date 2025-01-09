@@ -1,19 +1,19 @@
-if (hasItem slot_9 Anywhere anyAmount) {
-    removeItem slot_9
+if (hasItem slot_7 Anywhere anyAmount) {
+    removeItem slot_7
 } else {
-    chat "&cYou don't have 2 diamond axes!"
+    chat "&cYou don't have 2 shears!"
     sound "Anvil Land" 0.7 1 "invokers_location"
     exit
 }
-if (hasItem slot_9 metadata Anywhere anyAmount) {
+if (hasItem slot_7 metadata Anywhere anyAmount) {
     
 } else {
-    giveItem slot_9 true "First Slot" false
-    chat "&cYou don't have 2 diamond axes!"
+    giveItem slot_7 true "First Slot" false
+    chat "&cYou don't have 2 shears!"
     sound "Anvil Land" 0.7 1 "invokers_location"
     exit
 }
 
-removeItem slot_9
-giveItem slot_10 true "First Slot" false
+removeItem slot_7
+giveItem slot_8 true "First Slot" false
 sound "Anvil Use" 0.7 1 "invokers_location"
