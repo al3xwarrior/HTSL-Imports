@@ -1,0 +1,6 @@
+setTeam "Waiting"
+
+if (stat "playerid" = 0) {
+    globalstat "playerids" inc 1
+    stat "playerid" set "%stat.global/playerids%"
+}

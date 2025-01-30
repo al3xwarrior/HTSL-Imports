@@ -1,0 +1,4 @@
+if (stat "incomingid" = 0) {
+    chat "&cYou do not have a incoming request!"
+    exit
+}

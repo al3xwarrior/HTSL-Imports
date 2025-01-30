@@ -1,0 +1,14 @@
+if (hasTeam "Playing") {
+    exit
+}
+
+if (stat "inputcode" = "%stat.player/playerid%) {
+    chat "&cNice try buddy."
+    exit
+}
+
+globalstat "outgoingid" set "%stat.player/inputcode%"
+function "SendRequest" true
+
+chat "&6&lREQUEST SENT! &7Tell them to &c/accept&7!
+// sound
