@@ -10,4 +10,4 @@ if (hasTeam "Playing") {
 stat "incomingid" set "%stat.global/outgoingid%"
 
 chat "&6&lREQUEST RECIEVED! &7The &ePlayer &7with ID &6%stat.player/incomingid% &7sent a join request! &a/accept &c/deny"
-// sound
+sound "Orb Pickup" 0.7 1 "invokers_location"

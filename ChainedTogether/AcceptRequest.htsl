@@ -1,0 +1,13 @@
+if (!stat "playerid" = "%stat.global/acceptedid%") {
+    exit
+}
+
+if (hasTeam "Playing") {
+    exit
+}
+
+stat "partnerid" set "%stat.global/acceptedidfrom%"
+setTeam "Playing"
+
+chat "&6&lTHEY ACCEPTED! &7You are now playing with &ePlayer ID %stat.global/acceptedidfrom%&7!"
+sound "Orb Pickup" 0.7 1 "invokers_location"

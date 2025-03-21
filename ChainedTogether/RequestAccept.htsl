@@ -2,3 +2,13 @@ if (stat "incomingid" = 0) {
     chat "&cYou do not have a incoming request!"
     exit
 }
+
+globalstat "acceptedidfrom" set "%stat.player/playerid%"
+globalstat "acceptedid" set "%stat.player/incomingid%"
+function "AcceptRequest" true
+
+chat "&6&lREQUEST ACCEPTED! &7You are now playing with &ePlayer ID %stat.player/incomingid%&7!"
+sound "Orb Pickup" 0.7 1 "invokers_location"
+
+stat "partnerid" set "%stat.player/incomingid%"
+setTeam "Playing"

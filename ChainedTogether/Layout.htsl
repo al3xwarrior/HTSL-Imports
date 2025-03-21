@@ -1,0 +1,11 @@
+if (gamemode "Creative") {
+    exit
+}
+
+if (hasTeam "Playing") {
+    applyLayout "Playing"
+}
+
+if (hasTeam "Waiting") {
+    applyLayout "Waiting"
+}

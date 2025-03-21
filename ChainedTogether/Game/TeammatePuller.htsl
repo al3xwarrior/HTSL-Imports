@@ -1,0 +1,37 @@
+
+function "GetOtherLocation" false
+if (stat "globalx" = -999, stat "globaly" = -999, stat "globalz" = -999) {
+    exit
+}
+
+stat "xdist" set "%stat.player/globalx%"
+stat "ydist" set "%stat.global/globaly%"
+stat "zdist" set "%stat.global/globalz%"
+
+stat "xdist" dec "%player.location.x%"
+if (stat "xdist" < 0) {
+    stat "xdist" mult -1
+}
+stat "ydist" dec "%player.location.y%"
+if (stat "ydist" < 0) {
+    stat "ydist" mult -1
+}
+stat "zdist" dec "%player.location.z%"
+if (stat "zdist" < 0) {
+    stat "zdist" mult -1
+}
+
+// Calculate Distance
+if () {
+    stat "dist" set "%stat.player/xdist%"
+    // stat "dist" inc "%stat.player/ydist%"
+    stat "dist" inc "%stat.player/zdist%"
+}
+
+actionBar "Distance: %stat.player/dist% | X: %stat.player/xdist% | &oY: %stat.player/ydist%&r | Z: %stat.player/zdist%"
+
+if (stat "dist" > 8) {
+    launchTarget "custom_coordinates" "%stat.player/globalx% %stat.player/globaly% %stat.player/globalz%" 1
+    chat "Attempting to pull with strength 1 to %stat.player/globalx% %stat.player/globaly% %stat.player/globalz%"
+    exit
+}

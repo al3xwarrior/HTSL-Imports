@@ -1,0 +1,55 @@
+if and (stat unix < %date.unix%) {
+stat unix = %date.unix%
+stat Seconds += 1
+} else {
+
+}
+if and (stat Seconds >= 60) {
+stat Seconds = 0
+stat Minutes += 1
+} else {
+
+}
+if and (stat Minutes >= 60) {
+stat Minutes = 0
+stat Hours += 1
+} else {
+
+}
+if and (globalstat unix < %date.unix%) {
+globalstat unix = %date.unix%
+globalstat seconds += 1
+function "Haste Timer Counter" false
+} else {
+
+}
+if and (globalstat seconds >= 60) {
+globalstat seconds = 0
+globalstat minutes += 1
+} else {
+
+}
+if and (globalstat minutes >= 60) {
+globalstat minutes = 0
+globalstat hours += 1
+} else {
+
+}
+if and (stat attunementhours == 0, stat attunementmins == 0, stat attunementsecs == 0) {
+exit
+} else {
+stat attunementsecs -= 1
+}
+if and (stat attunementsecs == 0) {
+stat attunementsecs = 59
+stat attunementmins -= 1
+} else {
+
+}
+if and (stat attunementsecs == 0, stat attunementmins == 0) {
+stat attunementsecs += 59
+stat attunementmins += 59
+stat attunementhours -= 1
+} else {
+
+}

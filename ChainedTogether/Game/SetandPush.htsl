@@ -1,0 +1,17 @@
+
+if (!hasTeam "Playing") {
+    exit
+}
+
+globalstat "id" inc 1
+if (globalstat "id" > 14) {
+    globalstat "id" set 1
+}
+
+if (globalstat "id" = 1) {
+    globalstat "1/id" set "%stat.player/partnerid%"
+    globalstat "1/x" set "%player.location.x%"
+    globalstat "1/y" set "%player.location.y%"
+    globalstat "1/z" set "%player.location.z%"
+    function "TeammatePuller" true
+}

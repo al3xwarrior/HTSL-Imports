@@ -1,0 +1,8 @@
+if (stat "partnerid" = 0) {
+    exit
+}
+
+globalstat "ileft" set "%stat.player/playerid%"
+function "ileft" true
+
+stat "partnerid" set 0

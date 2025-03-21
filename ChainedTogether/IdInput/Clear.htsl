@@ -1,0 +1,3 @@
+stat "inputcode" set 0
+sound "Orb Pickup" 0.7 1 "invokers_location"
+displayMenu "Enter Partner ID"

@@ -1,0 +1,96 @@
+
+stat "globalx" set -999
+stat "globaly" set -999
+stat "globalz" set -999
+
+if (globalstat "id" = 1, globalstat "1/id" = "%stat.player/partnerid%") {
+    stat "globalx" set "%stat.global/1/x%"
+    stat "globaly" set "%stat.global/1/y%"
+    stat "globalz" set "%stat.global/1/z%"
+    exit
+}
+if (globalstat "id" = 2, globalstat "2/id" = "%stat.player/partnerid%") {
+    stat "globalx" set "%stat.global/2/x%"
+    stat "globaly" set "%stat.global/2/y%"
+    stat "globalz" set "%stat.global/2/z%"
+
+    exit
+}
+if (globalstat "id" = 3, globalstat "3/id" = "%stat.player/partnerid%") {
+    stat "globalx" set "%stat.global/3/x%"
+    stat "globaly" set "%stat.global/3/y%"
+    stat "globalz" set "%stat.global/3/z%"
+    exit
+}
+if (globalstat "id" = 4, globalstat "4/id" = "%stat.player/partnerid%") {
+    stat "globalx" set "%stat.global/4/x%"
+    stat "globaly" set "%stat.global/4/y%"
+    stat "globalz" set "%stat.global/4/z%"
+    exit
+}
+if (globalstat "id" = 5, globalstat "5/id" = "%stat.player/partnerid%") {
+    stat "globalx" set "%stat.global/5/x%"
+    stat "globaly" set "%stat.global/5/y%"
+    stat "globalz" set "%stat.global/5/z%"
+    exit
+}
+if (globalstat "id" = 6, globalstat "6/id" = "%stat.player/partnerid%") {
+    stat "globalx" set "%stat.global/6/x%"
+    stat "globaly" set "%stat.global/6/y%"
+    stat "globalz" set "%stat.global/6/z%"
+    exit
+}
+if (globalstat "id" = 7, globalstat "7/id" = "%stat.player/partnerid%") {
+    stat "globalx" set "%stat.global/7/x%"
+    stat "globaly" set "%stat.global/7/y%"
+    stat "globalz" set "%stat.global/7/z%"
+    exit
+}
+if (globalstat "id" = 8, globalstat "8/id" = "%stat.player/partnerid%") {
+    stat "globalx" set "%stat.global/8/x%"
+    stat "globaly" set "%stat.global/8/y%"
+    stat "globalz" set "%stat.global/8/z%"
+    exit
+}
+if (globalstat "id" = 9, globalstat "9/id" = "%stat.player/partnerid%") {
+    stat "globalx" set "%stat.global/9/x%"
+    stat "globaly" set "%stat.global/9/y%"
+    stat "globalz" set "%stat.global/9/z%"
+    exit
+}
+if (globalstat "id" = 10, globalstat "10/id" = "%stat.player/partnerid%") {
+    stat "globalx" set "%stat.global/10/x%"
+    stat "globaly" set "%stat.global/10/y%"
+    stat "globalz" set "%stat.global/10/z%"
+    exit
+}
+if (globalstat "id" = 11, globalstat "11/id" = "%stat.player/partnerid%") {
+    stat "globalx" set "%stat.global/11/x%"
+    stat "globaly" set "%stat.global/11/y%"
+    stat "globalz" set "%stat.global/11/z%"
+    exit
+}
+if (globalstat "id" = 12, globalstat "12/id" = "%stat.player/partnerid%") {
+    stat "globalx" set "%stat.global/12/x%"
+    stat "globaly" set "%stat.global/12/y%"
+    stat "globalz" set "%stat.global/12/z%"
+    exit
+}
+if (globalstat "id" = 13, globalstat "13/id" = "%stat.player/partnerid%") {
+    stat "globalx" set "%stat.global/13/x%"
+    stat "globaly" set "%stat.global/13/y%"
+    stat "globalz" set "%stat.global/13/z%"
+    exit
+}
+if (globalstat "id" = 14, globalstat "14/id" = "%stat.player/partnerid%") {
+    stat "globalx" set "%stat.global/14/x%"
+    stat "globaly" set "%stat.global/14/y%"
+    stat "globalz" set "%stat.global/14/z%"
+    exit
+}
+if (globalstat "id" = 15, globalstat "15/id" = "%stat.player/partnerid%") {
+    stat "globalx" set "%stat.global/15/x%"
+    stat "globaly" set "%stat.global/15/y%"
+    stat "globalz" set "%stat.global/15/z%"
+    exit
+}

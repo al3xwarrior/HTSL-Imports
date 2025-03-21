@@ -1,0 +1,4 @@
+stat "inputcode" mult 10
+// stat "inputcode" inc 9
+sound "Orb Pickup" 0.7 1 "invokers_location"
+displayMenu "Enter Partner ID"

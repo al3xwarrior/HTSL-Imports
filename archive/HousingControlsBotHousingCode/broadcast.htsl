@@ -1,0 +1,74 @@
+
+// Depending on the ID determined in game_loop, send a different broadcast
+
+// IDS: (broadcast_id)
+// 1 = Random Move Type! All votes Equal
+// 2 = Defined Direction
+// 3 = Bot Chooses
+
+// Move Types: (move_type)
+// 1 = Left
+// 2 = Forward
+// 3 = Right
+
+stat vote set 0
+
+if (globalstat broadcast_id = 1, globalstat move_type = 1) {
+    chat "&4&lGAME MASTER &7> &fThe votes were all tied... so I will choose! The &bBot&f will move &eLEFT&f!"
+    title "&c&lLEFT" "&fThe &4game master &fwill choose!" 1 1 1
+    sound "Orb Pickup" 0.7 0.5 "invokers_location"
+    exit
+}
+if (globalstat broadcast_id = 1, globalstat move_type = 2) {
+    chat "&4&lGAME MASTER &7> &fThe votes were all tied... so I will choose! The &bBot&f will move &eFORWARD&f!"
+    title "&c&lFORWARD" "&fThe &4game master &fwill choose!" 1 1 1
+    sound "Orb Pickup" 0.7 0.5 "invokers_location"
+    exit
+}
+if (globalstat broadcast_id = 1, globalstat move_type = 3) {
+    chat "&4&lGAME MASTER &7> &fThe votes were all tied... so I will choose! The &bBot&f will move &eRIGHT&f!"
+    title "&c&lRIGHT" "&fThe &4game master &fwill choose!" 1 1 1
+    sound "Orb Pickup" 0.7 0.5 "invokers_location"
+    exit
+}
+
+if (globalstat broadcast_id = 2, globalstat move_type = 1) {
+    chat "&4&lGAME MASTER &7> &fThe players have spoken... &bBot&f move &eLEFT&f!"
+    title "&e&lLEFT" "&fThe players have chosen." 1 1 1
+    sound "Orb Pickup" 0.7 1.2 "invokers_location"
+    exit
+}
+if (globalstat broadcast_id = 2, globalstat move_type = 2) {
+    chat "&4&lGAME MASTER &7> &fThe players have spoken... &bBot&f move &eFORWARD&f!"
+    title "&e&lFORWARD" "&fThe players have chosen." 1 1 1
+    sound "Orb Pickup" 0.7 1.2 "invokers_location"
+    exit
+}
+if (globalstat broadcast_id = 2, globalstat move_type = 3) {
+    chat "&4&lGAME MASTER &7> &fThe players have spoken... &bBot&f move &eRIGHT&f!"
+    title "&e&lRIGHT" "&fThe players have chosen." 1 1 1
+    sound "Orb Pickup" 0.7 1.2 "invokers_location"
+    exit
+}
+
+if (globalstat broadcast_id = 3, globalstat move_type = 1) {
+    chat "&4&lGAME MASTER &7> &fYou couldn't decide... I'll let the &bBot &fchoose!"
+    chat "&b&lBOT &7> &fMOVING &eLEFT&f."
+    title "&b&lLEFT" "&fWork together!!" 1 1 1
+    sound "Orb Pickup" 0.7 1.2 "invokers_location"
+    exit
+}
+if (globalstat broadcast_id = 3, globalstat move_type = 2) {
+    chat "&4&lGAME MASTER &7> &fYou couldn't decide... I'll let the &bBot &fchoose!"
+    chat "&b&lBOT &7> &fMOVING &eFORWARD&f."
+    title "&b&lFORWARD" "&fWork together!!" 1 1 1
+    sound "Orb Pickup" 0.7 1.2 "invokers_location"
+    exit
+}
+if (globalstat broadcast_id = 3, globalstat move_type = 3) {
+    chat "&4&lGAME MASTER &7> &fYou couldn't decide... I'll let the &bBot &fchoose!"
+    chat "&b&lBOT &7> &fMOVING &eRIGHT&f."
+    title "&b&lRIGHT" "&fWork together!!" 1 1 1
+    sound "Orb Pickup" 0.7 1.2 "invokers_location"
+    exit
+}
