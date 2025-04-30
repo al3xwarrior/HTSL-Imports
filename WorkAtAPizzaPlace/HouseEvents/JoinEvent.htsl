@@ -1,0 +1,4 @@
+setTeam "Unemployed"
+
+// Remove Manager Items
+removeItem "ManagerPayout"

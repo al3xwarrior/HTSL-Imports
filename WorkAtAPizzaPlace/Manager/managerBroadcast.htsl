@@ -1,0 +1,18 @@
+// Triggered whenever the manager stat is updated to 0 or 1 as
+// it should broadcast to all players updates regarding the manager
+
+function "sound_alert" false
+
+// Empty Manager Broadcast
+if (globalstat "manager" == 0) {
+    chat "&r"
+    chat "&cThe [MANAGER] role is now open! Go into the Manager's Office to claim!"
+    chat "&e"
+}
+
+// New Manager Broadcast
+if (globalstat "manager" == 1) {
+    chat "&r"
+    chat "%var.global/manager.group% %var.global/manager.name% &fhas become a manager!"
+    chat "&e"
+}

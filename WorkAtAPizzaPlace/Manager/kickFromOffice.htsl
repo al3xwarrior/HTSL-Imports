@@ -1,0 +1,14 @@
+// Triggered globally whenever the manager wants to kick someone from the office
+// or when the manager leaves
+
+if (globalstat "manager" == "%stat.player/playerid%") {
+    exit
+}
+
+if (inRegion "manager_office") {
+    // TODO: Tp out of office
+    tp "custom_coordinates" "0 0 0" true
+    function "sound_error" false
+    chat "&cYou have been kicked from the manager's office!"
+    applyPotion "Blindness" 1 1 true true
+}

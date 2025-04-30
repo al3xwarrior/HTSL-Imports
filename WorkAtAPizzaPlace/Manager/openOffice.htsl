@@ -1,0 +1,14 @@
+if (globalstat "manageroffice" == 1) {
+    chat "&cThe office is already open!"
+    function "sound_error" false
+    exit
+}
+
+function "sound_success" false
+
+globalstat "manageroffice" set 1
+globalvar "managercurtain" unset
+
+chat "&e"
+chat "&aOffice opened! All players can enter!"
+chat "&7"

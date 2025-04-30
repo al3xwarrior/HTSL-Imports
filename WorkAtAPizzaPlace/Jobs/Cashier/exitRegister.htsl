@@ -1,0 +1,10 @@
+
+if (globalstat "register1" == "%stat.player/playerid%") {
+    globalstat "register1" set 0
+    globalvar "register1name" unset
+    globalvar "register1group" unset
+    function "sound_alert" false
+    chat "&r"
+    chat "&cYou have exited the register!"
+    chat "&3"
+}

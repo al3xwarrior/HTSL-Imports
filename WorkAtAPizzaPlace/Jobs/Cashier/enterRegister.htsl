@@ -1,0 +1,19 @@
+// When the player enters the region of the register
+
+if (globalstat "register1" > 0) {
+    function "sound_error" false
+    chat "&cSorry, but the register is already in use!"
+    applyPotion "Blindness" 1 1 true true
+    tp "custom_coordinates" "~ ~ ~-2" true
+    exit
+}
+
+function "sound_alert" false
+
+globalstat "register1" set "%stat.player/playerid%"
+globalvar "register1name" set "%player.name%"
+globalvar "register1group" set "%player.group.tag%"
+
+chat "&r"
+chat "&aYou have entered the register! Wait for the customer to order and select the item by clicking the register. Leaving this region will exit you from the register."
+chat "&3"
