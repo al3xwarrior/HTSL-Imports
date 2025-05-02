@@ -1,4 +1,4 @@
-if (globalstat "manageroffice" == 1) {
+if (globalvar "manageroffice" == 1) {
     chat "&cThe office is already open!"
     function "sound_error" false
     exit
@@ -6,7 +6,7 @@ if (globalstat "manageroffice" == 1) {
 
 function "sound_success" false
 
-globalstat "manageroffice" set 1
+globalvar "manageroffice" set 1
 globalvar "managercurtain" unset
 
 chat "&e"

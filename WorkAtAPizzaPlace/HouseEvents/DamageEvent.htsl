@@ -1,9 +1,9 @@
 // Manager Hit
 if (damageCause "Entity Attack", damageAmount > 8) {
     cancelEvent
-    globalstat "hitplrid" set "%stat.player/playerid%"
+    globalvar "hitplrid" set "%var.player/playerid%"
     globalvar "hitplrname" set "%player.name%"
-    globalvar "hitplrgroup" set "%player.group.tag%"
+    globalvar "hitplrgroup" set "%player.team.tag%"
     function "managerHit" true
 }
 

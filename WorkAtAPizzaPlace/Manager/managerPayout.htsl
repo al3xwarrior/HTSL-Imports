@@ -1,10 +1,10 @@
 
-if (globalstat "hitplrid" == "%stat.player/playerid%") {
+if (globalvar "hitplrid" == "%var.player/playerid%") {
     function "sound_alert" false
-    stat "money" inc "%stat.global/mngpayout%"
+    var "money" inc "%var.global/mngpayout%"
     chat "&r"
-    chat "&7The &cManager &7just gave you a payout of &a$%stat.global/mngpayout%&7!"
+    chat "&7The &cManager &7just gave you a payout of &a$%var.global/mngpayout%&7!"
     chat "&e"
 } else {
-    chat "&7The &cManager &7just gave a payout of &a$%stat.global/mngpayout%&7 to %var.global/hitplrgroup% %var.global/hitplrname%&7!"
+    chat "&7The &cManager &7just gave a payout of &a$%var.global/mngpayout%&7 to %var.global/hitplrgroup% %var.global/hitplrname%&7!"
 }

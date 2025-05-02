@@ -1,18 +1,20 @@
 // Triggered from the damage event
 
-if (!globalstat "manager" == "%stat.player/playerid%") {
+if (globalvar "manager" == "%var.player/playerid%") {
+    
+} else {
     exit
 }
 
-if (hasItem "ManagerPayout" metadata "Hand" anyAmount, globalstat "mngpayoutcd" <= 0) {
-    globalstat "mngpayoutcd" set 360
-    globalstat "mngpayout" set "%random.int/10 26%"
+if (hasItem "placeholder" metadata "Hand" anyAmount, globalvar "mngpayoutcd" <= 0) {
+    globalvar "mngpayoutcd" set 360
+    globalvar "mngpayout" set "%random.int/10 26%"
     function "managerPayout" true
     exit
 }
 
-if (hasItem "ManagerPayout" metadata "Hand" anyAmount, globalstat "mngpayoutcd" > 0) {
-    chat "&cYou have to wait %stat.global/mngpayoutcd%s before you can use this again!"
+if (hasItem "placeholder" metadata "Hand" anyAmount, globalvar "mngpayoutcd" > 0) {
+    chat "&cYou have to wait %var.global/mngpayoutcd%s before you can use this again!"
     function "sound_error" false
     exit
 }

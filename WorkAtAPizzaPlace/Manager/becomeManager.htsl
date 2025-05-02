@@ -1,6 +1,6 @@
 // Ran when the player applys for manager
 
-if (globalstat "manager" > 0) {
+if (globalvar "manager" > 0) {
     chat "&cThere is currently already a manager online! Wait till they leave or switch jobs."
     function "sound_error" false
     exit
@@ -8,16 +8,16 @@ if (globalstat "manager" > 0) {
 
 function "sound_promotion" false
 
-globalstat "manager" set "%stat.player/playerid%"
-globalvar "manager.group" set "%player.group.tag%"
+globalvar "manager" set "%var.player/playerid%"
+globalvar "manager.group" set "%player.team.tag%"
 globalvar "manager.name" set "%player.name%"
 
 title "&7You have been promoted to" "&cManager!" 1 2 1
 
 chat "&r"
-chat "&aYou have been promoted to Manager! Congrats!"
-chat "&7You should have recieved some items in your inventory."
-chat "&7If not, use the &fmenu &7to get them."
+chat "&aYou have been promoted to Manager! Congrats! &7You should have recieved some items in your inventory. If not, use the &fmenu &7to get them."
 chat "&7"
 
-giveItem "ManagerPayout" false "First Slot" false
+giveItem "placeholder" false "First Slot" false
+
+setTeam "Manager"

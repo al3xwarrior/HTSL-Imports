@@ -1,13 +1,12 @@
-if (globalstat "manager" == 0) {
+if (globalvar "manager" == 0) {
     function "becomeManager" false
     exit
 }
 
-if (globalstat "manageroffice" == 1) {
+if or (globalvar "manageroffice" == 1, gamemode "Creative") {
     exit
 }
 
 function "sound_error" false
-// TODO: Tp out of office
-tp "custom_coordinates" "0 0 0" true
+tp "custom_coordinates" "53 166 19.5 0 0" true
 chat "&cSorry! The manager currently has his office locked!"

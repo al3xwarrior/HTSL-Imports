@@ -1,23 +1,23 @@
-stat "seconds" inc 1
-if (stat "seconds" >= 60) {
-    stat "seconds" set 0
-    stat "minutes" inc 1
+var "seconds" inc 1 false
+if (var "seconds" >= 60) {
+    var "seconds" set 0 false
+    var "minutes" inc 1 false
 }
-if (stat "minutes" >= 60) {
-    stat "minutes" set 0
-    stat "hours" inc 1
+if (var "minutes" >= 60) {
+    var "minutes" set 0 false
+    var "hours" inc 1 false
 }
 
-if (globalstat "unix" < "%date.unix%") {
-    globalstat "unix" set "%date.unix%"
-    globalstat "seconds" inc 1
+if (globalvar "unix" < "%date.unix%") {
+    globalvar "unix" set "%date.unix%"
+    globalvar "seconds" inc 1 false
     function "managerTimers" false
 }
-if (globalstat "seconds" >= 60) {
-    globalstat "seconds" set 0
-    globalstat "minutes" inc 1
+if (globalvar "seconds" >= 60) {
+    globalvar "seconds" set 0 false
+    globalvar "minutes" inc 1 false
 }
-if (globalstat "minutes" >= 60) {
-    globalstat "minutes" set 0
-    globalstat "hours" inc 1
+if (globalvar "minutes" >= 60) {
+    globalvar "minutes" set 0 false
+    globalvar "hours" inc 1 false
 }

@@ -1,6 +1,6 @@
-if (globalstat "mngpayoutcd" > 0) {
-    globalstat "mngpayoutcd" dec 1
+if (globalvar "mngpayoutcd" > 0) {
+    globalvar "mngpayoutcd" dec 1
 }
-if (globalstat "mngeotm" > 0) {
-    globalstat "mngeotm" dec 1
+if (globalvar "mngeotm" > 0) {
+    globalvar "mngeotm" dec 1
 }
