@@ -1,0 +1,14 @@
+// shiftmins shiftsecs
+
+globalvar "shiftsecs" dec 1 false
+
+if (globalvar "shiftsecs" <= 0, globalvar "shiftmins" <= 0) {
+    function "newShift" true
+    globalvar "shiftmins" set 5 false
+    globalvar "shiftsecs" set 0 false
+}
+
+if (globalvar "shiftsecs" < 0) {
+    globalvar "shiftsecs" set 59 false
+    globalvar "shiftmins" dec 1 false
+}

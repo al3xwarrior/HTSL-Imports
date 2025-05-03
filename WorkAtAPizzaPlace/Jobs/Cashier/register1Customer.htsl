@@ -1,0 +1,44 @@
+if (!globalvar "register1" = "%var.player/playerid%") {
+    exit
+}
+
+function "sound_alert" false
+
+globalvar "register1food" set "%random.whole/1 5%"
+
+if (placeholder "%random.whole/1 11%" == 10) {
+    globalvar "r1customerrole" set "&e&l[VIP CUSTOMER]"
+} else {
+    globalvar "r1customerrole" set "&7&l[CUSTOMER]"
+}
+
+globalvar "r1customer" unset
+random {
+    globalvar "r1customer" set "Alex"
+    globalvar "r1customer" set "Bob"
+    globalvar "r1customer" set "Charlie"
+    globalvar "r1customer" set "David"
+    globalvar "r1customer" set "Eve"
+    globalvar "r1customer" set "Frank"
+    globalvar "r1customer" set "Grace"
+    globalvar "r1customer" set "Hannah"
+    globalvar "r1customer" set "Ian"
+    globalvar "r1customer" set "Jack"
+    globalvar "r1customer" set "Kate"
+    globalvar "r1customer" set "Liam"
+    globalvar "r1customer" set "Mia"
+    globalvar "r1customer" set "Noah"
+    globalvar "r1customer" set "Olivia"
+    globalvar "r1customer" set "Paul"
+    globalvar "r1customer" set "Colin"
+    globalvar "r1customer" set "Ryan"
+    globalvar "r1customer" set "Sophia"
+    globalvar "r1customer" set "Tyler"
+    globalvar "r1customer" set "Marcus"
+    globalvar "r1customer" set "Victor"
+    globalvar "r1customer" set "Will"
+    globalvar "r1customer" set "Joey"
+    globalvar "r1customer" set "Charlotte"
+}
+
+chat "&e"

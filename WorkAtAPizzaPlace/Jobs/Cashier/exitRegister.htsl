@@ -1,8 +1,8 @@
 
-if (globalvar "register1" == "%var.player/playerid%") {
-    globalvar "register1" set 0
-    globalvar "register1name" unset
-    globalvar "register1group" unset
+if (globalvar "register3" == "%var.player/playerid%") {
+    globalvar "register3" set 0
+    globalvar "register3name" unset
+    globalvar "register3group" unset
     function "sound_alert" false
     chat "&r"
     chat "&cYou have exited the register!"

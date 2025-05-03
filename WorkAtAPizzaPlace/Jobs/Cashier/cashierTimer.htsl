@@ -1,0 +1,36 @@
+
+// Register 1
+if (globalvar "register1timer" > 1) {
+    globalvar "register1timer" dec 1
+}
+
+if (globalvar "register1timer" == 1, globalvar "register1" > 0) {
+    globalvar "register1timer" set 0
+    function "register1Customer" true
+}
+
+// Register 2
+if (globalvar "register2timer" > 1) {
+    globalvar "register2timer" dec 1
+}
+
+if (globalvar "register2timer" == 1) {
+    globalvar "register2timer" set 0
+    function "sound_alert" false
+    chat "&e&lCASHIERS! &7The customer in &flane 2 &7is ready to be served!"
+
+    globalvar "register2food" set "%random.whole/1 5%"
+}
+
+// Register 3
+if (globalvar "register3timer" > 1) {
+    globalvar "register3timer" dec 1
+}
+
+if (globalvar "register3timer" == 1) {
+    globalvar "register3timer" set 0
+    function "sound_alert" false
+    chat "&e&lCASHIERS! &7The customer in &flane 3 &7is ready to be served!"
+
+    globalvar "register3food" set "%random.whole/1 5%"
+}

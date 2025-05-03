@@ -1,19 +1,18 @@
 
 // When the player enters the region of the register
 
-if (globalvar "register1" > 0) {
+if (globalvar "register3" > 0) {
     function "sound_error" false
     chat "&cSorry, but the register is already in use!"
     applyPotion "Blindness" 1 1 true true
-    tp "custom_coordinates" "~ ~ ~-2" true
     exit
 }
 
 function "sound_alert" false
 
-globalvar "register1" set "%var.player/playerid%"
-globalvar "register1name" set "%player.name%"
-globalvar "register1group" set "%player.team.tag%"
+globalvar "register3" set "%var.player/playerid%"
+globalvar "register3name" set "%player.name%"
+globalvar "register3group" set "%player.team.tag%"
 
 chat "&r"
 chat "&aYou have entered the register! &7Wait for the customer to order and select the item by clicking the register. Leaving this region will exit you from the register."
