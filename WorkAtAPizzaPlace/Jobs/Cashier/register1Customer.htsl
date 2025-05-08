@@ -1,44 +1,59 @@
-if (!globalvar "register1" = "%var.player/playerid%") {
+if (!globalvar "register3" = "%var.player/playerid%") {
     exit
 }
 
 function "sound_alert" false
 
-globalvar "register1food" set "%random.whole/1 5%"
+globalvar "register3foodi" unset
+globalvar "register3food" unset
+globalvar "register3foodi" set "%random.whole/1 5%"
 
-if (placeholder "%random.whole/1 11%" == 10) {
-    globalvar "r1customerrole" set "&e&l[VIP CUSTOMER]"
-} else {
-    globalvar "r1customerrole" set "&7&l[CUSTOMER]"
+if (globalvar "register3foodi" == 1) {
+    globalvar "register3food" set "&eCheese Pizza"
+}
+if (globalvar "register3foodi" == 2) {
+    globalvar "register3food" set "&cPeporoni Pizza"
+}
+if (globalvar "register3foodi" == 3) {
+    globalvar "register3food" set "&aVeggie Pizza"
+} 
+if (globalvar "register3foodi" == 4) {
+    globalvar "register3food" set "&bSoda"
 }
 
-globalvar "r1customer" unset
+if (placeholder "%random.whole/1 11%" == 10) {
+    globalvar "r3customerrole" set "&e&l[VIP CUSTOMER]"
+} else {
+    globalvar "r3customerrole" set "&7&l[CUSTOMER]"
+}
+
+globalvar "r3customer" unset
 random {
-    globalvar "r1customer" set "Alex"
-    globalvar "r1customer" set "Bob"
-    globalvar "r1customer" set "Charlie"
-    globalvar "r1customer" set "David"
-    globalvar "r1customer" set "Eve"
-    globalvar "r1customer" set "Frank"
-    globalvar "r1customer" set "Grace"
-    globalvar "r1customer" set "Hannah"
-    globalvar "r1customer" set "Ian"
-    globalvar "r1customer" set "Jack"
-    globalvar "r1customer" set "Kate"
-    globalvar "r1customer" set "Liam"
-    globalvar "r1customer" set "Mia"
-    globalvar "r1customer" set "Noah"
-    globalvar "r1customer" set "Olivia"
-    globalvar "r1customer" set "Paul"
-    globalvar "r1customer" set "Colin"
-    globalvar "r1customer" set "Ryan"
-    globalvar "r1customer" set "Sophia"
-    globalvar "r1customer" set "Tyler"
-    globalvar "r1customer" set "Marcus"
-    globalvar "r1customer" set "Victor"
-    globalvar "r1customer" set "Will"
-    globalvar "r1customer" set "Joey"
-    globalvar "r1customer" set "Charlotte"
+    globalvar "r3customer" set "Alex"
+    globalvar "r3customer" set "Bob"
+    globalvar "r3customer" set "Charlie"
+    globalvar "r3customer" set "David"
+    globalvar "r3customer" set "Eve"
+    globalvar "r3customer" set "Frank"
+    globalvar "r3customer" set "Grace"
+    globalvar "r3customer" set "Hannah"
+    globalvar "r3customer" set "Ian"
+    globalvar "r3customer" set "Jack"
+    globalvar "r3customer" set "Kate"
+    globalvar "r3customer" set "Liam"
+    globalvar "r3customer" set "Mia"
+    globalvar "r3customer" set "Noah"
+    globalvar "r3customer" set "Olivia"
+    globalvar "r3customer" set "Paul"
+    globalvar "r3customer" set "Colin"
+    globalvar "r3customer" set "Ryan"
+    globalvar "r3customer" set "Sophia"
+    globalvar "r3customer" set "Tyler"
+    globalvar "r3customer" set "Marcus"
+    globalvar "r3customer" set "Victor"
+    globalvar "r3customer" set "Will"
+    globalvar "r3customer" set "Joey"
+    globalvar "r3customer" set "Charlotte"
 }
 
 chat "&e"
