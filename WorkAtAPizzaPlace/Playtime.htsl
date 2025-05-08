@@ -13,6 +13,7 @@ if (globalvar "unix" < "%date.unix%") {
     globalvar "seconds" inc 1 false
     function "managerTimers" false
     function "shiftTimer" false
+    function "cashierTimer" false
 }
 if (globalvar "seconds" >= 60) {
     globalvar "seconds" set 0 false

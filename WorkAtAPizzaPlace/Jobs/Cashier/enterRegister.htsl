@@ -14,6 +14,8 @@ globalvar "register3" set "%var.player/playerid%"
 globalvar "register3name" set "%player.name%"
 globalvar "register3group" set "%player.team.tag%"
 
+globalvar "register3timer" set 5
+
 chat "&r"
 chat "&aYou have entered the register! &7Wait for the customer to order and select the item by clicking the register. Leaving this region will exit you from the register."
 chat "&3"

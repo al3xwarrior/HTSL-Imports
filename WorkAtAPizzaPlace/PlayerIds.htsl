@@ -3,4 +3,4 @@ if (var "playerid" >= 0) {
 }
 
 globalvar "playerids" inc 1
-globalvar "playerid" set "%var.global/playerids%"
+var "playerid" set "%var.global/playerids%"
