@@ -12,15 +12,9 @@ var "shiftearnings" mult 3 false
 title "&7Shift Over!" "&a+$&k%var.player/shiftearnings%" 0 5 3
 
 var "split" set "%var.player/shiftearnings%" false
-var "split" div 14 false
+var "split" div 13 false
 var "base" set "%var.player/split%" false
 
-if () {
-pause 15
-var "base" inc "%var.player/split%" false
-title "&7Shift Over!" "&a+$%var.player/base%" 0 5 3
-sound "Orb Pickup" 0.7 0.5 "invokers_location"
-}
 if () {
 pause 15
 var "base" inc "%var.player/split%" false
@@ -96,7 +90,7 @@ sound "Orb Pickup" 0.7 1.8 "invokers_location"
 if () {
 pause 40
 var "base" inc "%var.player/split%" false
-title "&2Total Earnings:" "&a+$%var.player/base%" 0 5 3
+title "&2Total Earnings:" "&a+$%var.player/base%" 0 3 1
 sound "Level Up" 0.7 1 "invokers_location"
 }
 
@@ -106,3 +100,23 @@ var "shift" unset
 var "shiftearnings" unset
 var "workpoints" set 0
 var "base" unset
+
+pause 80
+
+pause 5
+sound "Lava Pop" 0.7 0.5 "invokers_location"
+title "" "&7Employee &r &r &r &r &r &r &r &r &r &r &r &r &r" 0 5 3
+pause 5
+sound "Lava Pop" 0.7 0.8 "invokers_location"
+title "" "&7Employee Of &r &r &r &r &r &r &r &r &r &r &r" 0 5 3
+pause 5
+sound "Lava Pop" 0.7 1.1 "invokers_location"
+title "" "&7Employee Of The &r &r &r &r &r" 0 5 3
+pause 5
+if () {
+sound "Lava Pop" 0.7 1.4 "invokers_location"
+title "" "&7Employee Of The Shift" 0 5 3
+pause 5
+sound "Lava Pop" 0.7 2.0 "invokers_location"
+title "%var.global/eotscolor%%var.global/eotsname%" "&7Employee Of The Shift" 0 3 1
+}

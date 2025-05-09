@@ -3,6 +3,12 @@
 globalvar "shiftsecs" dec 1 false
 
 if (globalvar "shiftsecs" <= 0, globalvar "shiftmins" <= 0) {
+    globalvar "eotsid" unset
+    globalvar "eotsamt" set 0 true
+    globalvar "eotsname" unset
+    globalvar "eotscolor" unset
+    function "calcEOTS" true
+
     function "newShift" true
     globalvar "shiftmins" set 5 false
     globalvar "shiftsecs" set 0 false

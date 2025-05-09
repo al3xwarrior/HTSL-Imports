@@ -1,0 +1,11 @@
+//globalvar "eotsid" unset
+//globalvar "eotsamt" unset
+//globalvar "eotsname" unset
+//globalvar "eotscolor" unset
+
+if (var "workpoints" > "%var.global/eotsamt%") {
+    globalvar "eotsid" set "%var.player/playerid%" true
+    globalvar "eotsamt" set "%var.global/workpoints%" true
+    globalvar "eotsname" set "%player.name%" true
+    globalvar "eotscolor" set "%player.team.color%" true
+}
