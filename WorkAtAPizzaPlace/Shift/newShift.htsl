@@ -103,19 +103,18 @@ var "base" unset
 
 pause 80
 
-pause 5
 sound "Lava Pop" 0.7 0.5 "invokers_location"
-title "" "&7Employee &r &r &r &r &r &r &r &r &r &r &r &r &r" 0 5 3
+title "&r" "&7Employee &r &r &r &r &r &r &r &r &r &r &r &r &r" 0 5 3
 pause 5
 sound "Lava Pop" 0.7 0.8 "invokers_location"
-title "" "&7Employee Of &r &r &r &r &r &r &r &r &r &r &r" 0 5 3
+title "&r" "&7Employee Of &r &r &r &r &r &r &r &r &r &r &r" 0 5 3
 pause 5
 sound "Lava Pop" 0.7 1.1 "invokers_location"
-title "" "&7Employee Of The &r &r &r &r &r" 0 5 3
+title "&r" "&7Employee Of The &r &r &r &r &r" 0 5 3
 pause 5
 if () {
 sound "Lava Pop" 0.7 1.4 "invokers_location"
-title "" "&7Employee Of The Shift" 0 5 3
+title "&r" "&7Employee Of The Shift" 0 5 3
 pause 5
 sound "Lava Pop" 0.7 2.0 "invokers_location"
 title "%var.global/eotscolor%%var.global/eotsname%" "&7Employee Of The Shift" 0 3 1

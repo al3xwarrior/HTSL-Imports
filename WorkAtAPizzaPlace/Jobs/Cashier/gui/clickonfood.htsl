@@ -34,3 +34,6 @@ random {
     chat "%var.global/r1customerrole% %var.global/r1customer%&7: &fYou da best!"
     chat "%var.global/r1customerrole% %var.global/r1customer%&7: &fThanks!"
 }
+
+globalvar "r1customer" unset
+globalvar "r1customerrole" unset
