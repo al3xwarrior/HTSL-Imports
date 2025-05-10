@@ -1,39 +1,45 @@
 
-if (globalvar "register1" == "%var.player/playerid%") {
+if (!globalvar "register3" == "%var.player/playerid%") {
     chat "&cYou don't have access to this register!"
     function "sound_error" false
     exit
 }
 
-if (globalvar "register1timer" > 0) {
+if (globalvar "register3timer" > 0) {
     chat "&cPlease wait for the customer to be ready!"
     function "sound_error" false
     exit
 }
 
 // CHANGE 1 to the Food (Cheese Pizza - 1, Peperoni Pizza - 2, Veggie Pizza - 3, Soda - 4)
-if (!globalvar "register1foodi" == 1) {
+if (!globalvar "register3foodi" == 4) {
     sound "Villager No" 0.7 1 "invokers_location"
-    globalvar "register1timer" set "%random.whole/3 6%"
+    globalvar "register3timer" set "%random.whole/3 6%"
     chat "&cThis is not what the customer ordered and they got so mad that they left!"
+    globalvar "r3customer" unset
+    globalvar "r3customerrole" unset
+    globalvar "register3foodi" unset
+    closeMenu
     exit
 }
 
-globalvar "register1timer" set "%random.whole/3 7%"
+globalvar "register3timer" set "%random.whole/3 7%"
 var "workpoints" inc "%random.whole/3 11%" false
 function "sound_success" false
 
 random {
-    chat "%var.global/r1customerrole% %var.global/r1customer%&7: &fThank you!"
-    chat "%var.global/r1customerrole% %var.global/r1customer%&7: &fThanks for the food!"
-    chat "%var.global/r1customerrole% %var.global/r1customer%&7: &fI appreciate it!"
-    chat "%var.global/r1customerrole% %var.global/r1customer%&7: &fThanks for the meal!"
-    chat "%var.global/r1customerrole% %var.global/r1customer%&7: &fThis is delicious!"
-    chat "%var.global/r1customerrole% %var.global/r1customer%&7: &fI love this food!"
-    chat "%var.global/r1customerrole% %var.global/r1customer%&7: &fGee thanks!"
-    chat "%var.global/r1customerrole% %var.global/r1customer%&7: &fYou da best!"
-    chat "%var.global/r1customerrole% %var.global/r1customer%&7: &fThanks!"
+    chat "%var.global/r3customerrole% %var.global/r3customer%&7: &fThank you!"
+    chat "%var.global/r3customerrole% %var.global/r3customer%&7: &fThanks for the food!"
+    chat "%var.global/r3customerrole% %var.global/r3customer%&7: &fI appreciate it!"
+    chat "%var.global/r3customerrole% %var.global/r3customer%&7: &fThanks for the meal!"
+    chat "%var.global/r3customerrole% %var.global/r3customer%&7: &fThis is delicious!"
+    chat "%var.global/r3customerrole% %var.global/r3customer%&7: &fI love this food!"
+    chat "%var.global/r3customerrole% %var.global/r3customer%&7: &fGee thanks!"
+    chat "%var.global/r3customerrole% %var.global/r3customer%&7: &fYou da best!"
+    chat "%var.global/r3customerrole% %var.global/r3customer%&7: &fThanks!"
 }
 
-globalvar "r1customer" unset
-globalvar "r1customerrole" unset
+globalvar "r3customer" unset
+globalvar "r3customerrole" unset
+
+closeMenu
