@@ -1,0 +1,6 @@
+setTeam "Spectator"
+tp "house_spawn"
+resetInventory
+clearEffects
+
+globalvar "gametime" set 15

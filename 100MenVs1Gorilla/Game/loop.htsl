@@ -1,0 +1,29 @@
+if (globalvar "active" == 1 0, placeholder "%player.team.players/100Men%" <= 0 0) {
+    globalvar "active" set 0
+    globalvar "gameoverreason" unset
+    globalvar "gameoverreason" set "&e&lGorilla Wins!"
+    function "GameOver" true
+    exit
+}
+
+if (globalvar "active" == 1 0, placeholder "%player.team.players/Gorilla%" <= 0 0) {
+    globalvar "active" set 0
+    globalvar "gameoverreason" unset
+    globalvar "gameoverreason" set "&7&l100Men Win!"
+    function "GameOver" true
+    exit
+}
+
+if (globalvar "active" == 1 0, globalvar "gametime" <= 0 0) {
+    globalvar "active" set 0
+    globalvar "gameoverreason" unset
+    globalvar "gameoverreason" set "&c&lTime's Up!"
+    function "GameOver" true
+    exit
+}
+
+if (globalvar "active" == 0 0, globalvar "gametime" <= 0 0, placeholder "%house.players%" >= 2) {
+    globalvar "active" set 1
+    function "StartGame" true
+    exit
+}

@@ -1,0 +1,10 @@
+removeItem null
+
+title "&eMonke Mode" "&aACTIVATED" 2 5 3
+
+applyPotion "Regeneration" 2 7 true true
+applyPotion "Speed" 10 4 true true
+applyPotion "Jump Boost" 10 4 true true
+applyPotion "Strength" 10 1 true true
+
+sound "Level Up" 0.7 1 "invokers_location"

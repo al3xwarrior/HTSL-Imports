@@ -1,0 +1,45 @@
+if (!hasTeam "100Men") {
+    exit
+}
+
+// Math for calculating distance from the ground pound
+var "gpdistx" set "%player.location.x%"
+var "gpdistx" dec "%var.global/groundpoundx%"
+if (var "gpdistx" < 0) {
+    var "gpdistx" mult -1
+}
+
+var "gpdisty" set "%player.location.y%"
+var "gpdisty" dec "%var.global/groundpoundy%"
+if (var "gpdisty" < 0) {
+    var "gpdisty" mult -1
+}
+
+var "gpdistz" set "%player.location.z%"
+var "gpdistz" dec "%var.global/groundpoundz%"
+if (var "gpdistz" < 0) {
+    var "gpdistz" mult -1
+}
+
+var "gpdist" set "%var.player/gpdistx%"
+var "gpdist" inc "%var.player/gpdisty%"
+var "gpdist" inc "%var.player/gpdistz%"
+
+// If the player is within 6 blocks of the ground pound, deal damage
+if (var "gpdist" > 6) {
+    exit
+}
+
+sound "Fall Big" 0.7 1 "invokers_location"
+applyPotion "Wither" 5 10 true true
+applyPotion "Blindness" 1 1 true true
+
+changeVelocity 0 8 0
+pause 8
+changeVelocity 0 3 0
+pause 8
+changeVelocity 0 3 0
+pause 8
+changeVelocity 0 3 0
+
+clearEffects

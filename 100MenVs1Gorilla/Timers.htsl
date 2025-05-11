@@ -1,0 +1,7 @@
+if (globalvar "groundpoundcd" > 0) {
+    globalvar "groundpoundcd" dec 1
+}
+
+if (globalvar "gametime" > 0) {
+    globalvar "gametime" dec 1
+}

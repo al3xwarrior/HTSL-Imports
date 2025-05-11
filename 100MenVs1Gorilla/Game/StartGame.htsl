@@ -1,0 +1,20 @@
+if (placeholder "%player.team.players/Gorilla%" <= 0) {
+    setTeam "Gorilla"
+    title "&e&lYOU ARE THE GORILLA" "&cEliminate the men using your abilities!" 1 4 1
+    tp "custom_coordinates" "-3.5 103 -4.5 -179 0" true
+    applyLayout "Gorilla"
+    applyPotion "Resistance" 2000000 4 true true
+    applyPotion "Speed" 2000000 1 true true
+    maxHealth set 40
+} else {
+    setTeam "100Men"
+    title "&e" "&cEliminate the gorilla!" 1 4 1
+    tp "custom_coordinates" "-3 110 -56 0.1 6.1" true
+    applyLayout "Man"
+}
+
+gamemode "Survival"
+
+sound "Enderdragon Growl" 0.7 1 "invokers_location"
+
+globalvar "gametime" set 180

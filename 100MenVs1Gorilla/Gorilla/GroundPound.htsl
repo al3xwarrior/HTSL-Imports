@@ -1,0 +1,22 @@
+if (globalvar "groundpoundcd" > 0) {
+    chat "&cYou must wait %var.global/groundpoundcd% seconds before using this ability again."
+    sound "Orb Pickup" 0.7 0.5 "invokers_location"
+    exit
+}
+
+globalvar "groundpoundcd" set 10
+
+changeVelocity 0 18 0
+pause 20
+changeVelocity 0 3 0
+pause 15
+changeVelocity 0 -20 0
+pause 8
+
+globalvar "groundpoundx" set "%player.location.x%"
+globalvar "groundpoundy" set "%player.location.y%"
+globalvar "groundpoundz" set "%player.location.z%"
+
+sound "Fall Big" 0.7 1 "invokers_location"
+
+function "GroundPoundEffect" true
