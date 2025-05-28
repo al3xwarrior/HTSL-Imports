@@ -1,0 +1,7 @@
+var "fullinventory" set 0
+giveItem "placeholder" true "First Slot" false
+if (hasItem "placeholder" metadata "Anywhere" anyAmount) {
+    removeItem "placeholder"
+} else {
+    var "fullinventory" set 1
+}

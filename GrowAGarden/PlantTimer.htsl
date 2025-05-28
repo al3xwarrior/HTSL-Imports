@@ -1,0 +1,96 @@
+// Script that lowers the plant timer by 3 (if they are online)
+
+if (var "plot1/time" > 4) {
+    var "plot1/time" dec 3 true
+}
+if (var "plot1/time" <= 4) {
+    var "plot1/time" set 0
+    var "plantdonebc" set "Plot #1"
+    function "plantdone" false
+}
+
+if (var "plot2/time" > 4) {
+    var "plot2/time" dec 3 true
+}
+if (var "plot2/time" <= 4) {
+    var "plot2/time" set 0
+    var "plantdonebc" set "Plot #2"
+    function "plantdone" false
+}
+
+if (var "plot3/time" > 4) {
+    var "plot3/time" dec 3 true
+}
+if (var "plot3/time" <= 4) {
+    var "plot3/time" set 0
+    var "plantdonebc" set "Plot #3"
+    function "plantdone" false
+}
+
+if (var "plot4/time" > 4) {
+    var "plot4/time" dec 3 true
+}
+if (var "plot4/time" <= 4) {
+    var "plot4/time" set 0
+    var "plantdonebc" set "Plot #4"
+    function "plantdone" false
+}
+
+if (var "plot5/time" > 4) {
+    var "plot5/time" dec 3 true
+}
+if (var "plot5/time" <= 4) {
+    var "plot5/time" set 0
+    var "plantdonebc" set "Plot #5"
+    function "plantdone" false
+}
+
+if (var "plot6/time" > 4) {
+    var "plot6/time" dec 3 true
+}
+if (var "plot6/time" <= 4) {
+    var "plot6/time" set 0
+    var "plantdonebc" set "Plot #6"
+    function "plantdone" false
+}
+
+if (var "plot7/time" > 4) {
+    var "plot7/time" dec 3 true
+}
+if (var "plot7/time" <= 4) {
+    var "plot7/time" set 0
+    var "plantdonebc" set "Plot #7"
+    function "plantdone" false
+}
+
+if (var "plot8/time" > 4) {
+    var "plot8/time" dec 3 true
+}
+
+// break
+function "PlantTimer2" false
+goto function "PlantTimer2"
+
+if (var "plot8/time" <= 4) {
+    var "plot8/time" set 0
+    var "plantdonebc" set "Plot #8"
+    function "plantdone" false
+}
+
+if (var "plot9/time" > 4) {
+    var "plot9/time" dec 3 true
+}
+if (var "plot9/time" <= 4) {
+    var "plot9/time" set 0
+    var "plantdonebc" set "Plot #9"
+    function "plantdone" false
+}
+
+if (var "plot10/time" > 4) {
+    var "plot10/time" dec 3 true
+}
+if (var "plot10/time" <= 4) {
+    var "plot10/time" set 0
+    var "plantdonebc" set "Plot #10"
+    function "plantdone" false
+}

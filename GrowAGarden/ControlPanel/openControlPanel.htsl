@@ -1,0 +1,75 @@
+if (var "p2owned" == 0, var "money" >= "%var.global/p2c%") {
+    var "p2owned" set 1
+    var "money" dec "%var.global/p2c%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    chat "&aYou have purchased Plot #2!"
+    exit
+}
+
+if (var "p2cropid" > 0, var "plot2/time" <= 0) {
+    var "croptoclaim" set "%var.player/p2crop%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    function "GiveCrop" false
+    exit
+}
+
+sound "Orb Pickup" 0.7 1 "invokers_location"
+displayMenu "Control Panel #2"
+
+goto npc "Control Panel #3"
+
+if (var "p3owned" == 0, var "money" >= "%var.global/p3c%") {
+    var "p3owned" set 1
+    var "money" dec "%var.global/p3c%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    chat "&aYou have purchased Plot #3!"
+    exit
+}
+
+if (var "p3cropid" > 0, var "plot3/time" <= 0) {
+    var "croptoclaim" set "%var.player/p3crop%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    function "GiveCrop" false
+    exit
+}
+
+sound "Orb Pickup" 0.7 1 "invokers_location"
+displayMenu "Control Panel #3"
+
+goto npc "Control Panel #4"
+
+if (var "p4owned" == 0, var "money" >= "%var.global/p4c%") {
+    var "p4owned" set 1
+    var "money" dec "%var.global/p4c%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    chat "&aYou have purchased Plot #4!"
+    exit
+}
+
+if (var "p4cropid" > 0, var "plot4/time" <= 0) {
+    var "croptoclaim" set "%var.player/p4crop%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    function "GiveCrop" false
+    exit
+}
+
+sound "Orb Pickup" 0.7 1 "invokers_location"
+displayMenu "Control Panel #4"
+
+goto npc "Control Panel #5"
+
+if (var "p5owned" == 0, var "money" >= "%var.global/p5c%") {
+    var "p5owned" set 1
+    var "money" dec "%var.global/p5c%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    chat "&aYou have purchased Plot #5!"
+    exit
+}
+if (var "p5cropid" > 0, var "plot5/time" <= 0) {
+    var "croptoclaim" set "%var.player/p5crop%"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    function "GiveCrop" false
+    exit
+}
+sound "Orb Pickup" 0.7 1 "invokers_location"
+displayMenu "Control Panel #5"

@@ -1,0 +1,61 @@
+//bp = buyprice - sp = sellprice
+if () {
+globalvar "wheatbp" set 2
+globalvar "wheatsp" set 5
+}
+if () {
+globalvar "carrotbp" set 3
+globalvar "carrotsp" set 7
+}
+if () {
+globalvar "melonbp" set 4
+globalvar "melonsp" set 10
+}
+if () {
+globalvar "sugarbp" set 6
+globalvar "sugarsp" set 15
+}
+if () {
+globalvar "netherbp" set 8
+globalvar "nethersp" set 20
+}
+if () {
+globalvar "pumpkinbp" set 10
+globalvar "pumpkinsp" set 25
+}
+if () {
+globalvar "mushroombp" set 12
+globalvar "mushroomsp" set 30
+}
+if () {
+globalvar "porkbp" set 15
+globalvar "porksp" set 40
+}
+if () {
+globalvar "cakebp" set 20
+globalvar "cakesp" set 50
+}
+if () {
+globalvar "slimebp" set 25
+globalvar "slimesp" set 60
+}
+if () {
+globalvar "gunpowderbp" set 30
+globalvar "gunpowdersp" set 70
+}
+if () {
+globalvar "ironbp" set 35
+globalvar "ironsp" set 80
+}
+if () {
+globalvar "diamondbp" set 40
+globalvar "diamondsp" set 100
+}
+if () {
+globalvar "goldbp" set 50
+globalvar "goldsp" set 120
+}
+if () {
+globalvar "starbp" set 100
+globalvar "starsp" set 300
+}

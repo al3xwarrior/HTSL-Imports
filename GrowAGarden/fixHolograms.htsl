@@ -1,0 +1,75 @@
+// %var.player/p1owned%
+
+// &f&lPLOT #1
+// %var.player/p1line1%
+// %var.player/p1line2%
+
+// (not owned)
+// &f&lPLOT #2
+// &7Cost: &a$%var.global/p1c%
+
+// (owned)
+// &f&lPLOT #3
+// &7Crop: %var.player/p3crop%
+// &6%var.player/p3pr%%&7/&6100%
+
+if (var "p1owned" == 0 0) {
+    var "p1line1" set "&7Cost: &a$%var.global/p1c%"
+} else {
+    var "p1line1" set "&7Crop: %var.player/p1crop%"
+    var "p1line2" set "&6%var.player/p1pr%%&7/&6100%"
+}
+if (var "p2owned" == 0 0) {
+    var "p2line1" set "&7Cost: &a$%var.global/p2c%"
+} else {
+    var "p2line1" set "&7Crop: %var.player/p2crop%"
+    var "p2line2" set "&6%var.player/p2pr%%&7/&6100%"
+}
+if (var "p3owned" == 0 0) {
+    var "p3line1" set "&7Cost: &a$%var.global/p3c%"
+} else {
+    var "p3line1" set "&7Crop: %var.player/p3crop%"
+    var "p3line2" set "&6%var.player/p3pr%%&7/&6100%"
+}
+if (var "p4owned" == 0 0) {
+    var "p4line1" set "&7Cost: &a$%var.global/p4c%"
+} else {
+    var "p4line1" set "&7Crop: %var.player/p4crop%"
+    var "p4line2" set "&6%var.player/p4pr%%&7/&6100%"
+}
+if (var "p5owned" == 0 0) {
+    var "p5line1" set "&7Cost: &a$%var.global/p5c%"
+} else {
+    var "p5line1" set "&7Crop: %var.player/p5crop%"
+    var "p5line2" set "&6%var.player/p5pr%%&7/&6100%"
+}
+if (var "p6owned" == 0 0) {
+    var "p6line1" set "&7Cost: &a$%var.global/p6c%"
+} else {
+    var "p6line1" set "&7Crop: %var.player/p6crop%"
+    var "p6line2" set "&6%var.player/p6pr%%&7/&6100%"
+}
+if (var "p7owned" == 0 0) {
+    var "p7line1" set "&7Cost: &a$%var.global/p7c%"
+} else {
+    var "p7line1" set "&7Crop: %var.player/p7crop%"
+    var "p7line2" set "&6%var.player/p7pr%%&7/&6100%"
+}
+if (var "p8owned" == 0 0) {
+    var "p8line1" set "&7Cost: &a$%var.global/p8c%"
+} else {
+    var "p8line1" set "&7Crop: %var.player/p8crop%"
+    var "p8line2" set "&6%var.player/p8pr%%&7/&6100%"
+}
+if (var "p9owned" == 0 0) {
+    var "p9line1" set "&7Cost: &a$%var.global/p9c%"
+} else {
+    var "p9line1" set "&7Crop: %var.player/p9crop%"
+    var "p9line2" set "&6%var.player/p9pr%%&7/&6100%"
+}
+if (var "p10owned" == 0 0) {
+    var "p10line1" set "&7Cost: &a$%var.global/p10c%"
+} else {
+    var "p10line1" set "&7Crop: %var.player/p10crop%"
+    var "p10line2" set "&6%var.player/p10pr%%&7/&6100%"
+}

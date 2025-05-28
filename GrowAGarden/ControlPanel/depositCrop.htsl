@@ -1,0 +1,15 @@
+if (var "p1cropid" > 0) {
+    chat "&cYou already have a crop planted in this plot!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+stat "holdingid" set 0
+function "GetHoldingPlant"
+if (var "holdingid" == 0) {
+    chat "&cYou must be holding a crop to deposit it!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+function "Plot1Deposit" false

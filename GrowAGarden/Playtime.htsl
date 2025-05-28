@@ -1,0 +1,21 @@
+var "seconds" inc 1 true
+if (var "seconds" > 60) {
+    var "seconds" set 0
+    var "minutes" inc 1 true
+}
+if (var "minutes" > 60) {
+    var "minutes" set 0
+    var "hours" inc 1 true
+}
+if (globalvar "unix" < "%date.unix%") {
+    globalvar "unix" set "%date.unix%"
+    globalvar "seconds" inc 1 true
+}
+if (globalvar "seconds" > 60) {
+    globalvar "seconds" set 0
+    globalvar "minutes" inc 1 true
+}
+if (globalvar "minutes" > 60) {
+    globalvar "minutes" set 0
+    globalvar "hours" inc 1 true
+}

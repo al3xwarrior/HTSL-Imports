@@ -1,0 +1,37 @@
+pause 40
+
+var "timeoffline" set %date.unix%
+var "timeoffline" dec %var.player/leavetime%
+
+// Total Time
+var "timeofflinet" set %var.player/timeoffline%
+
+// Calc Hours
+var "timeofflineh" set 0
+
+if (var "timeoffline" >= 3600) {
+    var "timeofflineh" set %var.player/timeoffline%
+    var "timeofflineh" div 3600
+}
+
+if (var "timeofflineh" > 0) {
+    var "temp" set %var.player/timeofflineh%
+    var "temp" mult 3600
+    var "timeoffline" dec %var.player/temp%
+}
+
+// Calc Minutes
+var "timeofflinem" set 0
+if (var "timeoffline" >= 60) {
+    var "timeofflinem" set %var.player/timeoffline%
+    var "timeofflinem" div 60
+}
+if (var "timeofflinem" > 0) {
+    var "temp" set %var.player/timeofflinem%
+    var "temp" mult 60
+    var "timeoffline" dec %var.player/temp%
+}
+
+// Time offline is now in seconds
+
+chat "Offline for: %var.player/timeofflineh% hours, %var.player/timeofflinem% minutes, and %var.player/timeoffline% seconds. (%var.player/timeofflinet% total seconds)"

@@ -1,0 +1,71 @@
+if (var "cooking" = 1) {
+    chat "&cYou are already cooking something!"
+    function "sound_error" false
+    exit
+}
+
+if (hasItem "uncookedcheesepizza" metadata "Hand" anyAmount) {
+    removeItem "uncookedcheesepizza"
+    stat "cookingtype" set 1
+}
+if (hasItem "uncookedpepperonipizza" metadata "Hand" anyAmount) {
+    removeItem "uncookedpepperonipizza"
+    stat "cookingtype" set 2
+}
+if (hasItem "uncookedveggiepizza" metadata "Hand" anyAmount) {
+    removeItem "uncookedveggiepizza"
+    stat "cookingtype" set 3
+}
+
+if (var "cookingtype" == 0) {
+    chat "&cYou are not holding any uncooked pizza!"
+    function "sound_error" false
+    exit
+}
+
+var "cooking" set 1
+
+title "&6Cooking..." "&c█&7███████" 0 5 3
+sound "Lava Pop" 0.7 1 "invokers_location"
+pause 10
+title "&6Cooking..." "&c██&7██████" 0 5 3
+sound "Lava Pop" 0.7 1 "invokers_location"
+pause 10
+title "&6Cooking..." "&c███&7█████" 0 5 3
+sound "Lava Pop" 0.7 1 "invokers_location"
+pause 10
+if () {
+title "&6Cooking..." "&c████&7████" 0 5 3
+sound "Lava Pop" 0.7 1 "invokers_location"
+}
+pause 10
+if () {
+title "&6Cooking..." "&c█████&7███" 0 5 3
+sound "Lava Pop" 0.7 1 "invokers_location"
+}
+pause 10
+if () {
+title "&6Cooking..." "&c██████&7██" 0 5 3
+sound "Lava Pop" 0.7 1 "invokers_location"
+}
+pause 10
+if () {
+title "&6Cooking..." "&c███████&7█" 0 5 3
+sound "Lava Pop" 0.7 1 "invokers_location"
+}
+pause 10
+title "&6Cooking..." "&a&lDONE" 0 5 3
+
+function "sound_success" false
+if (stat "cookingtype" == 1) {
+    giveItem "cheesepizza" true "First Slot" false
+}
+if (stat "cookingtype" == 2) {
+    giveItem "pepperonipizza" true "First Slot" false
+}
+if (stat "cookingtype" == 3) {
+    giveItem "veggiepizza" true "First Slot" false
+}
+
+var "cooking" set 0
+var "cookingtype" set 0
