@@ -34,4 +34,19 @@ if (var "timeofflinem" > 0) {
 
 // Time offline is now in seconds
 
-chat "Offline for: %var.player/timeofflineh% hours, %var.player/timeofflinem% minutes, and %var.player/timeoffline% seconds. (%var.player/timeofflinet% total seconds)"
+title "&aWelcome back!" "&eYou have been offline for..." 1 5 3
+pause 50
+title "&a%var.player/timeofflineh%h %var.player/timeofflinem%m %var.player/timeoffline%s" "&ePlants have been updated!" 0 2 1
+
+if () {
+    var "plot1/time" dec "%var.player/timeofflinet%"
+    var "plot2/time" dec "%var.player/timeofflinet%"
+    var "plot3/time" dec "%var.player/timeofflinet%"
+    var "plot4/time" dec "%var.player/timeofflinet%"
+    var "plot5/time" dec "%var.player/timeofflinet%"
+    var "plot6/time" dec "%var.player/timeofflinet%"
+    var "plot7/time" dec "%var.player/timeofflinet%"
+    var "plot8/time" dec "%var.player/timeofflinet%"
+    var "plot9/time" dec "%var.player/timeofflinet%"
+    var "plot10/time" dec "%var.player/timeofflinet%"
+}

@@ -13,3 +13,6 @@ if (var "holdingid" == 0) {
 }
 
 function "Plot1Deposit" false
+
+var "p1cropid" set "%var.player/holdingid%"
+var "p1totaltime" set "%var.player/plot1/time%"
