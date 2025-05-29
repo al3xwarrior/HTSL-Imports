@@ -1,0 +1,928 @@
+if (var "holdingid" == 1) {
+    removeItem "wheat_seed"
+    var "p1crop" set "&eWheat"
+    var "plot1/time" set "%var.global/wheattime%"
+    exit
+}
+if (var "holdingid" == 2) {
+    removeItem "carrot_seed"
+    var "p1crop" set "&6Carrot"
+    var "plot1/time" set "%var.global/carrotstime%"
+    exit
+}
+if (var "holdingid" == 3) {
+    removeItem "melon_seed"
+    var "p1crop" set "&aMelon"
+    var "plot1/time" set "%var.global/melontime%"
+    exit
+}
+if (var "holdingid" == 4) {
+    removeItem "sugarcane_seed"
+    var "p1crop" set "&2Sugarcane"
+    var "plot1/time" set "%var.global/sugarcanetime%"
+    exit
+}
+if (var "holdingid" == 5) {
+    removeItem "netherwart_seed"
+    var "p1crop" set "&cNetherwart"
+    var "plot1/time" set "%var.global/netherwarttime%"
+    exit
+}
+if (var "holdingid" == 6) {
+    removeItem "pumpkin_seed"
+    var "p1crop" set "&6Pumpkin"
+    var "plot1/time" set "%var.global/pumpkintime%"
+    exit
+}
+if (var "holdingid" == 7) {
+    removeItem "mushroom_seed"
+    var "p1crop" set "&cMushroom"
+    var "plot1/time" set "%var.global/mushroomtime%"
+    exit
+}
+if (var "holdingid" == 8) {
+    removeItem "porkchop_seed"
+    var "p1crop" set "&dPorkchop"
+    var "plot1/time" set "%var.global/porkchoptime%"
+    exit
+}
+if (var "holdingid" == 9) {
+    removeItem "cake_seed"
+    var "p1crop" set "&dCake"
+    var "plot1/time" set "%var.global/caketime%"
+    exit
+}
+if (var "holdingid" == 10) {
+    removeItem "slimeball_seed"
+    var "p1crop" set "&2Slimeball"
+    var "plot1/time" set "%var.global/slimeballtime%"
+    exit
+}
+if (var "holdingid" == 11) {
+    removeItem "gunpowder_seed"
+    var "p1crop" set "&aGunpowder"
+    var "plot1/time" set "%var.global/gunpowdertime%"
+    exit
+}
+if (var "holdingid" == 12) {
+    removeItem "iron_seed"
+    var "p1crop" set "&fIron"
+    var "plot1/time" set "%var.global/irontime%"
+    exit
+}
+if (var "holdingid" == 13) {
+    removeItem "diamond_seed"
+    var "p1crop" set "&bDiamond"
+    var "plot1/time" set "%var.global/diamondtime%"
+    exit
+}
+if (var "holdingid" == 14) {
+    removeItem "gold_seed"
+    var "p1crop" set "&6Gold"
+    var "plot1/time" set "%var.global/goldtime%"
+    exit
+}
+if (var "holdingid" == 15) {
+    removeItem "netherstar_seed"
+    var "p1crop" set "&fNether Star"
+    var "plot1/time" set "%var.global/netherstartime%"
+    exit
+}
+
+goto function "Plot2Deposit"
+
+if (var "holdingid" == 1) {
+    removeItem "wheat_seed"
+    var "p2crop" set "&eWheat"
+    var "plot2/time" set "%var.global/wheattime%"
+    exit
+}
+if (var "holdingid" == 2) {
+    removeItem "carrot_seed"
+    var "p2crop" set "&6Carrot"
+    var "plot2/time" set "%var.global/carrotstime%"
+    exit
+}
+if (var "holdingid" == 3) {
+    removeItem "melon_seed"
+    var "p2crop" set "&aMelon"
+    var "plot2/time" set "%var.global/melontime%"
+    exit
+}
+if (var "holdingid" == 4) {
+    removeItem "sugarcane_seed"
+    var "p2crop" set "&2Sugarcane"
+    var "plot2/time" set "%var.global/sugarcanetime%"
+    exit
+}
+if (var "holdingid" == 5) {
+    removeItem "netherwart_seed"
+    var "p2crop" set "&cNetherwart"
+    var "plot2/time" set "%var.global/netherwarttime%"
+    exit
+}
+if (var "holdingid" == 6) {
+    removeItem "pumpkin_seed"
+    var "p2crop" set "&6Pumpkin"
+    var "plot2/time" set "%var.global/pumpkintime%"
+    exit
+}
+if (var "holdingid" == 7) {
+    removeItem "mushroom_seed"
+    var "p2crop" set "&cMushroom"
+    var "plot2/time" set "%var.global/mushroomtime%"
+    exit
+}
+if (var "holdingid" == 8) {
+    removeItem "porkchop_seed"
+    var "p2crop" set "&dPorkchop"
+    var "plot2/time" set "%var.global/porkchoptime%"
+    exit
+}
+if (var "holdingid" == 9) {
+    removeItem "cake_seed"
+    var "p2crop" set "&dCake"
+    var "plot2/time" set "%var.global/caketime%"
+    exit
+}
+if (var "holdingid" == 10) {
+    removeItem "slimeball_seed"
+    var "p2crop" set "&2Slimeball"
+    var "plot2/time" set "%var.global/slimeballtime%"
+    exit
+}
+if (var "holdingid" == 11) {
+    removeItem "gunpowder_seed"
+    var "p2crop" set "&aGunpowder"
+    var "plot2/time" set "%var.global/gunpowdertime%"
+    exit
+}
+if (var "holdingid" == 12) {
+    removeItem "iron_seed"
+    var "p2crop" set "&fIron"
+    var "plot2/time" set "%var.global/irontime%"
+    exit
+}
+if (var "holdingid" == 13) {
+    removeItem "diamond_seed"
+    var "p2crop" set "&bDiamond"
+    var "plot2/time" set "%var.global/diamondtime%"
+    exit
+}
+if (var "holdingid" == 14) {
+    removeItem "gold_seed"
+    var "p2crop" set "&6Gold"
+    var "plot2/time" set "%var.global/goldtime%"
+    exit
+}
+if (var "holdingid" == 15) {
+    removeItem "netherstar_seed"
+    var "p2crop" set "&fNether Star"
+    var "plot2/time" set "%var.global/netherstartime%"
+    exit
+}
+
+goto function "Plot3Deposit"
+
+if (var "holdingid" == 1) {
+    removeItem "wheat_seed"
+    var "p3crop" set "&eWheat"
+    var "plot3/time" set "%var.global/wheattime%"
+    exit
+}
+if (var "holdingid" == 2) {
+    removeItem "carrot_seed"
+    var "p3crop" set "&6Carrot"
+    var "plot3/time" set "%var.global/carrotstime%"
+    exit
+}
+if (var "holdingid" == 3) {
+    removeItem "melon_seed"
+    var "p3crop" set "&aMelon"
+    var "plot3/time" set "%var.global/melontime%"
+    exit
+}
+if (var "holdingid" == 4) {
+    removeItem "sugarcane_seed"
+    var "p3crop" set "&2Sugarcane"
+    var "plot3/time" set "%var.global/sugarcanetime%"
+    exit
+}
+if (var "holdingid" == 5) {
+    removeItem "netherwart_seed"
+    var "p3crop" set "&cNetherwart"
+    var "plot3/time" set "%var.global/netherwarttime%"
+    exit
+}
+if (var "holdingid" == 6) {
+    removeItem "pumpkin_seed"
+    var "p3crop" set "&6Pumpkin"
+    var "plot3/time" set "%var.global/pumpkintime%"
+    exit
+}
+if (var "holdingid" == 7) {
+    removeItem "mushroom_seed"
+    var "p3crop" set "&cMushroom"
+    var "plot3/time" set "%var.global/mushroomtime%"
+    exit
+}
+if (var "holdingid" == 8) {
+    removeItem "porkchop_seed"
+    var "p3crop" set "&dPorkchop"
+    var "plot3/time" set "%var.global/porkchoptime%"
+    exit
+}
+if (var "holdingid" == 9) {
+    removeItem "cake_seed"
+    var "p3crop" set "&dCake"
+    var "plot3/time" set "%var.global/caketime%"
+    exit
+}
+if (var "holdingid" == 10) {
+    removeItem "slimeball_seed"
+    var "p3crop" set "&2Slimeball"
+    var "plot3/time" set "%var.global/slimeballtime%"
+    exit
+}
+if (var "holdingid" == 11) {
+    removeItem "gunpowder_seed"
+    var "p3crop" set "&aGunpowder"
+    var "plot3/time" set "%var.global/gunpowdertime%"
+    exit
+}
+if (var "holdingid" == 12) {
+    removeItem "iron_seed"
+    var "p3crop" set "&fIron"
+    var "plot3/time" set "%var.global/irontime%"
+    exit
+}
+if (var "holdingid" == 13) {
+    removeItem "diamond_seed"
+    var "p3crop" set "&bDiamond"
+    var "plot3/time" set "%var.global/diamondtime%"
+    exit
+}
+if (var "holdingid" == 14) {
+    removeItem "gold_seed"
+    var "p3crop" set "&6Gold"
+    var "plot3/time" set "%var.global/goldtime%"
+    exit
+}
+if (var "holdingid" == 15) {
+    removeItem "netherstar_seed"
+    var "p3crop" set "&fNether Star"
+    var "plot3/time" set "%var.global/netherstartime%"
+    exit
+}
+
+goto function "Plot4Deposit"
+
+if (var "holdingid" == 1) {
+    removeItem "wheat_seed"
+    var "p4crop" set "&eWheat"
+    var "plot4/time" set "%var.global/wheattime%"
+    exit
+}
+if (var "holdingid" == 2) {
+    removeItem "carrot_seed"
+    var "p4crop" set "&6Carrot"
+    var "plot4/time" set "%var.global/carrotstime%"
+    exit
+}
+if (var "holdingid" == 3) {
+    removeItem "melon_seed"
+    var "p4crop" set "&aMelon"
+    var "plot4/time" set "%var.global/melontime%"
+    exit
+}
+if (var "holdingid" == 4) {
+    removeItem "sugarcane_seed"
+    var "p4crop" set "&2Sugarcane"
+    var "plot4/time" set "%var.global/sugarcanetime%"
+    exit
+}
+if (var "holdingid" == 5) {
+    removeItem "netherwart_seed"
+    var "p4crop" set "&cNetherwart"
+    var "plot4/time" set "%var.global/netherwarttime%"
+    exit
+}
+if (var "holdingid" == 6) {
+    removeItem "pumpkin_seed"
+    var "p4crop" set "&6Pumpkin"
+    var "plot4/time" set "%var.global/pumpkintime%"
+    exit
+}
+if (var "holdingid" == 7) {
+    removeItem "mushroom_seed"
+    var "p4crop" set "&cMushroom"
+    var "plot4/time" set "%var.global/mushroomtime%"
+    exit
+}
+if (var "holdingid" == 8) {
+    removeItem "porkchop_seed"
+    var "p4crop" set "&dPorkchop"
+    var "plot4/time" set "%var.global/porkchoptime%"
+    exit
+}
+if (var "holdingid" == 9) {
+    removeItem "cake_seed"
+    var "p4crop" set "&dCake"
+    var "plot4/time" set "%var.global/caketime%"
+    exit
+}
+if (var "holdingid" == 10) {
+    removeItem "slimeball_seed"
+    var "p4crop" set "&2Slimeball"
+    var "plot4/time" set "%var.global/slimeballtime%"
+    exit
+}
+if (var "holdingid" == 11) {
+    removeItem "gunpowder_seed"
+    var "p4crop" set "&aGunpowder"
+    var "plot4/time" set "%var.global/gunpowdertime%"
+    exit
+}
+if (var "holdingid" == 12) {
+    removeItem "iron_seed"
+    var "p4crop" set "&fIron"
+    var "plot4/time" set "%var.global/irontime%"
+    exit
+}
+if (var "holdingid" == 13) {
+    removeItem "diamond_seed"
+    var "p4crop" set "&bDiamond"
+    var "plot4/time" set "%var.global/diamondtime%"
+    exit
+}
+if (var "holdingid" == 14) {
+    removeItem "gold_seed"
+    var "p4crop" set "&6Gold"
+    var "plot4/time" set "%var.global/goldtime%"
+    exit
+}
+if (var "holdingid" == 15) {
+    removeItem "netherstar_seed"
+    var "p4crop" set "&fNether Star"
+    var "plot4/time" set "%var.global/netherstartime%"
+    exit
+}
+
+goto function "Plot5Deposit"
+
+if (var "holdingid" == 1) {
+    removeItem "wheat_seed"
+    var "p5crop" set "&eWheat"
+    var "plot5/time" set "%var.global/wheattime%"
+    exit
+}
+if (var "holdingid" == 2) {
+    removeItem "carrot_seed"
+    var "p5crop" set "&6Carrot"
+    var "plot5/time" set "%var.global/carrotstime%"
+    exit
+}
+if (var "holdingid" == 3) {
+    removeItem "melon_seed"
+    var "p5crop" set "&aMelon"
+    var "plot5/time" set "%var.global/melontime%"
+    exit
+}
+if (var "holdingid" == 4) {
+    removeItem "sugarcane_seed"
+    var "p5crop" set "&2Sugarcane"
+    var "plot5/time" set "%var.global/sugarcanetime%"
+    exit
+}
+if (var "holdingid" == 5) {
+    removeItem "netherwart_seed"
+    var "p5crop" set "&cNetherwart"
+    var "plot5/time" set "%var.global/netherwarttime%"
+    exit
+}
+if (var "holdingid" == 6) {
+    removeItem "pumpkin_seed"
+    var "p5crop" set "&6Pumpkin"
+    var "plot5/time" set "%var.global/pumpkintime%"
+    exit
+}
+if (var "holdingid" == 7) {
+    removeItem "mushroom_seed"
+    var "p5crop" set "&cMushroom"
+    var "plot5/time" set "%var.global/mushroomtime%"
+    exit
+}
+if (var "holdingid" == 8) {
+    removeItem "porkchop_seed"
+    var "p5crop" set "&dPorkchop"
+    var "plot5/time" set "%var.global/porkchoptime%"
+    exit
+}
+if (var "holdingid" == 9) {
+    removeItem "cake_seed"
+    var "p5crop" set "&dCake"
+    var "plot5/time" set "%var.global/caketime%"
+    exit
+}
+if (var "holdingid" == 10) {
+    removeItem "slimeball_seed"
+    var "p5crop" set "&2Slimeball"
+    var "plot5/time" set "%var.global/slimeballtime%"
+    exit
+}
+if (var "holdingid" == 11) {
+    removeItem "gunpowder_seed"
+    var "p5crop" set "&aGunpowder"
+    var "plot5/time" set "%var.global/gunpowdertime%"
+    exit
+}
+if (var "holdingid" == 12) {
+    removeItem "iron_seed"
+    var "p5crop" set "&fIron"
+    var "plot5/time" set "%var.global/irontime%"
+    exit
+}
+if (var "holdingid" == 13) {
+    removeItem "diamond_seed"
+    var "p5crop" set "&bDiamond"
+    var "plot5/time" set "%var.global/diamondtime%"
+    exit
+}
+if (var "holdingid" == 14) {
+    removeItem "gold_seed"
+    var "p5crop" set "&6Gold"
+    var "plot5/time" set "%var.global/goldtime%"
+    exit
+}
+if (var "holdingid" == 15) {
+    removeItem "netherstar_seed"
+    var "p5crop" set "&fNether Star"
+    var "plot5/time" set "%var.global/netherstartime%"
+    exit
+}
+
+goto function "Plot6Deposit"
+
+if (var "holdingid" == 1) {
+    removeItem "wheat_seed"
+    var "p6crop" set "&eWheat"
+    var "plot6/time" set "%var.global/wheattime%"
+    exit
+}
+if (var "holdingid" == 2) {
+    removeItem "carrot_seed"
+    var "p6crop" set "&6Carrot"
+    var "plot6/time" set "%var.global/carrotstime%"
+    exit
+}
+if (var "holdingid" == 3) {
+    removeItem "melon_seed"
+    var "p6crop" set "&aMelon"
+    var "plot6/time" set "%var.global/melontime%"
+    exit
+}
+if (var "holdingid" == 4) {
+    removeItem "sugarcane_seed"
+    var "p6crop" set "&2Sugarcane"
+    var "plot6/time" set "%var.global/sugarcanetime%"
+    exit
+}
+if (var "holdingid" == 5) {
+    removeItem "netherwart_seed"
+    var "p6crop" set "&cNetherwart"
+    var "plot6/time" set "%var.global/netherwarttime%"
+    exit
+}
+if (var "holdingid" == 6) {
+    removeItem "pumpkin_seed"
+    var "p6crop" set "&6Pumpkin"
+    var "plot6/time" set "%var.global/pumpkintime%"
+    exit
+}
+if (var "holdingid" == 7) {
+    removeItem "mushroom_seed"
+    var "p6crop" set "&cMushroom"
+    var "plot6/time" set "%var.global/mushroomtime%"
+    exit
+}
+if (var "holdingid" == 8) {
+    removeItem "porkchop_seed"
+    var "p6crop" set "&dPorkchop"
+    var "plot6/time" set "%var.global/porkchoptime%"
+    exit
+}
+
+if (var "holdingid" == 9) {
+    removeItem "cake_seed"
+    var "p6crop" set "&dCake"
+    var "plot6/time" set "%var.global/caketime%"
+    exit
+}
+if (var "holdingid" == 10) {
+    removeItem "slimeball_seed"
+    var "p6crop" set "&2Slimeball"
+    var "plot6/time" set "%var.global/slimeballtime%"
+    exit
+}
+if (var "holdingid" == 11) {
+    removeItem "gunpowder_seed"
+    var "p6crop" set "&aGunpowder"
+    var "plot6/time" set "%var.global/gunpowdertime%"
+    exit
+}
+if (var "holdingid" == 12) {
+    removeItem "iron_seed"
+    var "p6crop" set "&fIron"
+    var "plot6/time" set "%var.global/irontime%"
+    exit
+}
+if (var "holdingid" == 13) {
+    removeItem "diamond_seed"
+    var "p6crop" set "&bDiamond"
+    var "plot6/time" set "%var.global/diamondtime%"
+    exit
+}
+if (var "holdingid" == 14) {
+    removeItem "gold_seed"
+    var "p6crop" set "&6Gold"
+    var "plot6/time" set "%var.global/goldtime%"
+    exit
+}
+if (var "holdingid" == 15) {
+    removeItem "netherstar_seed"
+    var "p6crop" set "&fNether Star"
+    var "plot6/time" set "%var.global/netherstartime%"
+    exit
+}
+
+goto function "Plot7Deposit"
+
+if (var "holdingid" == 1) {
+    removeItem "wheat_seed"
+    var "p7crop" set "&eWheat"
+    var "plot7/time" set "%var.global/wheattime%"
+    exit
+}
+if (var "holdingid" == 2) {
+    removeItem "carrot_seed"
+    var "p7crop" set "&6Carrot"
+    var "plot7/time" set "%var.global/carrotstime%"
+    exit
+}
+if (var "holdingid" == 3) {
+    removeItem "melon_seed"
+    var "p7crop" set "&aMelon"
+    var "plot7/time" set "%var.global/melontime%"
+    exit
+}
+if (var "holdingid" == 4) {
+    removeItem "sugarcane_seed"
+    var "p7crop" set "&2Sugarcane"
+    var "plot7/time" set "%var.global/sugarcanetime%"
+    exit
+}
+if (var "holdingid" == 5) {
+    removeItem "netherwart_seed"
+    var "p7crop" set "&cNetherwart"
+    var "plot7/time" set "%var.global/netherwarttime%"
+    exit
+}
+if (var "holdingid" == 6) {
+    removeItem "pumpkin_seed"
+    var "p7crop" set "&6Pumpkin"
+    var "plot7/time" set "%var.global/pumpkintime%"
+    exit
+}
+if (var "holdingid" == 7) {
+    removeItem "mushroom_seed"
+    var "p7crop" set "&cMushroom"
+    var "plot7/time" set "%var.global/mushroomtime%"
+    exit
+}
+if (var "holdingid" == 8) {
+    removeItem "porkchop_seed"
+    var "p7crop" set "&dPorkchop"
+    var "plot7/time" set "%var.global/porkchoptime%"
+    exit
+}
+if (var "holdingid" == 9) {
+    removeItem "cake_seed"
+    var "p7crop" set "&dCake"
+    var "plot7/time" set "%var.global/caketime%"
+    exit
+}
+if (var "holdingid" == 10) {
+    removeItem "slimeball_seed"
+    var "p7crop" set "&2Slimeball"
+    var "plot7/time" set "%var.global/slimeballtime%"
+    exit
+}
+if (var "holdingid" == 11) {
+    removeItem "gunpowder_seed"
+    var "p7crop" set "&aGunpowder"
+    var "plot7/time" set "%var.global/gunpowdertime%"
+    exit
+}
+if (var "holdingid" == 12) {
+    removeItem "iron_seed"
+    var "p7crop" set "&fIron"
+    var "plot7/time" set "%var.global/irontime%"
+    exit
+}
+if (var "holdingid" == 13) {
+    removeItem "diamond_seed"
+    var "p7crop" set "&bDiamond"
+    var "plot7/time" set "%var.global/diamondtime%"
+    exit
+}
+if (var "holdingid" == 14) {
+    removeItem "gold_seed"
+    var "p7crop" set "&6Gold"
+    var "plot7/time" set "%var.global/goldtime%"
+    exit
+}
+if (var "holdingid" == 15) {
+    removeItem "netherstar_seed"
+    var "p7crop" set "&fNether Star"
+    var "plot7/time" set "%var.global/netherstartime%"
+    exit
+}
+
+goto function "Plot8Deposit"
+
+if (var "holdingid" == 1) {
+    removeItem "wheat_seed"
+    var "p8crop" set "&eWheat"
+    var "plot8/time" set "%var.global/wheattime%"
+    exit
+}
+if (var "holdingid" == 2) {
+    removeItem "carrot_seed"
+    var "p8crop" set "&6Carrot"
+    var "plot8/time" set "%var.global/carrotstime%"
+    exit
+}
+if (var "holdingid" == 3) {
+    removeItem "melon_seed"
+    var "p8crop" set "&aMelon"
+    var "plot8/time" set "%var.global/melontime%"
+    exit
+}
+if (var "holdingid" == 4) {
+    removeItem "sugarcane_seed"
+    var "p8crop" set "&2Sugarcane"
+    var "plot8/time" set "%var.global/sugarcanetime%"
+    exit
+}
+if (var "holdingid" == 5) {
+    removeItem "netherwart_seed"
+    var "p8crop" set "&cNetherwart"
+    var "plot8/time" set "%var.global/netherwarttime%"
+    exit
+}
+if (var "holdingid" == 6) {
+    removeItem "pumpkin_seed"
+    var "p8crop" set "&6Pumpkin"
+    var "plot8/time" set "%var.global/pumpkintime%"
+    exit
+}
+if (var "holdingid" == 7) {
+    removeItem "mushroom_seed"
+    var "p8crop" set "&cMushroom"
+    var "plot8/time" set "%var.global/mushroomtime%"
+    exit
+}
+if (var "holdingid" == 8) {
+    removeItem "porkchop_seed"
+    var "p8crop" set "&dPorkchop"
+    var "plot8/time" set "%var.global/porkchoptime%"
+    exit
+}
+if (var "holdingid" == 9) {
+    removeItem "cake_seed"
+    var "p8crop" set "&dCake"
+    var "plot8/time" set "%var.global/caketime%"
+    exit
+}
+if (var "holdingid" == 10) {
+    removeItem "slimeball_seed"
+    var "p8crop" set "&2Slimeball"
+    var "plot8/time" set "%var.global/slimeballtime%"
+    exit
+}
+if (var "holdingid" == 11) {
+    removeItem "gunpowder_seed"
+    var "p8crop" set "&aGunpowder"
+    var "plot8/time" set "%var.global/gunpowdertime%"
+    exit
+}
+if (var "holdingid" == 12) {
+    removeItem "iron_seed"
+    var "p8crop" set "&fIron"
+    var "plot8/time" set "%var.global/irontime%"
+    exit
+}
+if (var "holdingid" == 13) {
+    removeItem "diamond_seed"
+    var "p8crop" set "&bDiamond"
+    var "plot8/time" set "%var.global/diamondtime%"
+    exit
+}
+if (var "holdingid" == 14) {
+    removeItem "gold_seed"
+    var "p8crop" set "&6Gold"
+    var "plot8/time" set "%var.global/goldtime%"
+    exit
+}
+if (var "holdingid" == 15) {
+    removeItem "netherstar_seed"
+    var "p8crop" set "&fNether Star"
+    var "plot8/time" set "%var.global/netherstartime%"
+    exit
+}
+
+goto function "Plot9Deposit"
+
+if (var "holdingid" == 1) {
+    removeItem "wheat_seed"
+    var "p9crop" set "&eWheat"
+    var "plot9/time" set "%var.global/wheattime%"
+    exit
+}
+if (var "holdingid" == 2) {
+    removeItem "carrot_seed"
+    var "p9crop" set "&6Carrot"
+    var "plot9/time" set "%var.global/carrotstime%"
+    exit
+}
+if (var "holdingid" == 3) {
+    removeItem "melon_seed"
+    var "p9crop" set "&aMelon"
+    var "plot9/time" set "%var.global/melontime%"
+    exit
+}
+if (var "holdingid" == 4) {
+    removeItem "sugarcane_seed"
+    var "p9crop" set "&2Sugarcane"
+    var "plot9/time" set "%var.global/sugarcanetime%"
+    exit
+}
+if (var "holdingid" == 5) {
+    removeItem "netherwart_seed"
+    var "p9crop" set "&cNetherwart"
+    var "plot9/time" set "%var.global/netherwarttime%"
+    exit
+}
+if (var "holdingid" == 6) {
+    removeItem "pumpkin_seed"
+    var "p9crop" set "&6Pumpkin"
+    var "plot9/time" set "%var.global/pumpkintime%"
+    exit
+}
+if (var "holdingid" == 7) {
+    removeItem "mushroom_seed"
+    var "p9crop" set "&cMushroom"
+    var "plot9/time" set "%var.global/mushroomtime%"
+    exit
+}
+if (var "holdingid" == 8) {
+    removeItem "porkchop_seed"
+    var "p9crop" set "&dPorkchop"
+    var "plot9/time" set "%var.global/porkchoptime%"
+    exit
+}
+if (var "holdingid" == 9) {
+    removeItem "cake_seed"
+    var "p9crop" set "&dCake"
+    var "plot9/time" set "%var.global/caketime%"
+    exit
+}
+if (var "holdingid" == 10) {
+    removeItem "slimeball_seed"
+    var "p9crop" set "&2Slimeball"
+    var "plot9/time" set "%var.global/slimeballtime%"
+    exit
+}
+if (var "holdingid" == 11) {
+    removeItem "gunpowder_seed"
+    var "p9crop" set "&aGunpowder"
+    var "plot9/time" set "%var.global/gunpowdertime%"
+    exit
+}
+if (var "holdingid" == 12) {
+    removeItem "iron_seed"
+    var "p9crop" set "&fIron"
+    var "plot9/time" set "%var.global/irontime%"
+    exit
+}
+if (var "holdingid" == 13) {
+    removeItem "diamond_seed"
+    var "p9crop" set "&bDiamond"
+    var "plot9/time" set "%var.global/diamondtime%"
+    exit
+}
+if (var "holdingid" == 14) {
+    removeItem "gold_seed"
+    var "p9crop" set "&6Gold"
+    var "plot9/time" set "%var.global/goldtime%"
+    exit
+}
+if (var "holdingid" == 15) {
+    removeItem "netherstar_seed"
+    var "p9crop" set "&fNether Star"
+    var "plot9/time" set "%var.global/netherstartime%"
+    exit
+}
+
+goto function "Plot10Deposit"
+
+if (var "holdingid" == 1) {
+    removeItem "wheat_seed"
+    var "p10crop" set "&eWheat"
+    var "plot10/time" set "%var.global/wheattime%"
+    exit
+}
+if (var "holdingid" == 2) {
+    removeItem "carrot_seed"
+    var "p10crop" set "&6Carrot"
+    var "plot10/time" set "%var.global/carrotstime%"
+    exit
+}
+if (var "holdingid" == 3) {
+    removeItem "melon_seed"
+    var "p10crop" set "&aMelon"
+    var "plot10/time" set "%var.global/melontime%"
+    exit
+}
+if (var "holdingid" == 4) {
+    removeItem "sugarcane_seed"
+    var "p10crop" set "&2Sugarcane"
+    var "plot10/time" set "%var.global/sugarcanetime%"
+    exit
+}
+if (var "holdingid" == 5) {
+    removeItem "netherwart_seed"
+    var "p10crop" set "&cNetherwart"
+    var "plot10/time" set "%var.global/netherwarttime%"
+    exit
+}
+if (var "holdingid" == 6) {
+    removeItem "pumpkin_seed"
+    var "p10crop" set "&6Pumpkin"
+    var "plot10/time" set "%var.global/pumpkintime%"
+    exit
+}
+if (var "holdingid" == 7) {
+    removeItem "mushroom_seed"
+    var "p10crop" set "&cMushroom"
+    var "plot10/time" set "%var.global/mushroomtime%"
+    exit
+}
+if (var "holdingid" == 8) {
+    removeItem "porkchop_seed"
+    var "p10crop" set "&dPorkchop"
+    var "plot10/time" set "%var.global/porkchoptime%"
+    exit
+}
+if (var "holdingid" == 9) {
+    removeItem "cake_seed"
+    var "p10crop" set "&dCake"
+    var "plot10/time" set "%var.global/caketime%"
+    exit
+}
+if (var "holdingid" == 10) {
+    removeItem "slimeball_seed"
+    var "p10crop" set "&2Slimeball"
+    var "plot10/time" set "%var.global/slimeballtime%"
+    exit
+}
+if (var "holdingid" == 11) {
+    removeItem "gunpowder_seed"
+    var "p10crop" set "&aGunpowder"
+    var "plot10/time" set "%var.global/gunpowdertime%"
+    exit
+}
+if (var "holdingid" == 12) {
+    removeItem "iron_seed"
+    var "p10crop" set "&fIron"
+    var "plot10/time" set "%var.global/irontime%"
+    exit
+}
+if (var "holdingid" == 13) {
+    removeItem "diamond_seed"
+    var "p10crop" set "&bDiamond"
+    var "plot10/time" set "%var.global/diamondtime%"
+    exit
+}
+if (var "holdingid" == 14) {
+    removeItem "gold_seed"
+    var "p10crop" set "&6Gold"
+    var "plot10/time" set "%var.global/goldtime%"
+    exit
+}
+if (var "holdingid" == 15) {
+    removeItem "netherstar_seed"
+    var "p10crop" set "&fNether Star"
+    var "plot10/time" set "%var.global/netherstartime%"
+    exit
+}

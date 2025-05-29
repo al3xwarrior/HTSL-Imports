@@ -1,0 +1,60 @@
+if (hasItem "wheat_seed" metadata "Hand" anyAmount) {
+    var "holdingid" set 1
+    exit
+}
+if (hasItem "carrot_seed" metadata "Hand" anyAmount) {
+    var "holdingid" set 2
+    exit
+}
+if (hasItem "melon_seed" metadata "Hand" anyAmount) {
+    var "holdingid" set 3
+    exit
+}
+if (hasItem "sugarcane_seed" metadata "Hand" anyAmount) {
+    var "holdingid" set 4
+    exit
+}
+if (hasItem "netherwart_seed" metadata "Hand" anyAmount) {
+    var "holdingid" set 5
+    exit
+}
+if (hasItem "pumpkin_seed" metadata "Hand" anyAmount) {
+    var "holdingid" set 6
+    exit
+}
+if (hasItem "mushroom_seed" metadata "Hand" anyAmount) {
+    var "holdingid" set 7
+    exit
+}
+if (hasItem "porkchop_seed" metadata "Hand" anyAmount) {
+    var "holdingid" set 8
+    exit
+}
+if (hasItem "cake_seed" metadata "Hand" anyAmount) {
+    var "holdingid" set 9
+    exit
+}
+if (hasItem "slimeball_seed" metadata "Hand" anyAmount) {
+    var "holdingid" set 10
+    exit
+}
+if (hasItem "gunpowder_seed" metadata "Hand" anyAmount) {
+    var "holdingid" set 11
+    exit
+}
+if (hasItem "iron_seed" metadata "Hand" anyAmount) {
+    var "holdingid" set 12
+    exit
+}
+if (hasItem "diamond_seed" metadata "Hand" anyAmount) {
+    var "holdingid" set 13
+    exit
+}
+if (hasItem "gold_seed" metadata "Hand" anyAmount) {
+    var "holdingid" set 14
+    exit
+}
+if (hasItem "netherstar_seed" metadata "Hand" anyAmount) {
+    var "holdingid" set 15
+    exit
+}
