@@ -1,4 +1,4 @@
-if (var "p1cropid" > 0) {
+if (var "p5cropid" > 0) {
     chat "&cYou already have a crop planted in this plot!"
     sound "Anvil Land" 0.7 1 "invokers_location"
     exit
@@ -12,7 +12,7 @@ if (var "holdingid" == 0) {
     exit
 }
 
-function "Plot1Deposit" false
+function "Plot5Deposit" false
 
-var "p1cropid" set "%var.player/holdingid%"
-var "p1totaltime" set "%var.player/plot1/time%"
+var "p5cropid" set "%var.player/holdingid%"
+var "p5totaltime" set "%var.player/plot5/time%"

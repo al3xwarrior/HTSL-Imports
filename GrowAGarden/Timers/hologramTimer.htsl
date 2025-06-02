@@ -2,49 +2,61 @@
 // (divide the elapsed time by the total time and multiply by 100)
 // (plot1/time / p1totaltime)
 
-if () {
+if (var "plot1/time" > 0) {
 var "p1pr" set "%var.player/plot1/time%"
 var "p1pr" mult 100
 var "p1pr" div "%var.player/p1totaltime%"
+}
 
+if (var "plot2/time" > 0) {
 var "p2pr" set "%var.player/plot2/time%"
 var "p2pr" mult 100
 var "p2pr" div "%var.player/p2totaltime%"
+}
 
+if (var "plot3/time" > 0) {
 var "p3pr" set "%var.player/plot3/time%"
 var "p3pr" mult 100
 var "p3pr" div "%var.player/p3totaltime%"
 }
 
-if () {
+if (var "plot4/time" > 0) {
 var "p4pr" set "%var.player/plot4/time%"
 var "p4pr" mult 100
 var "p4pr" div "%var.player/p4totaltime%"
+}
 
+if (var "plot5/time" > 0) {
 var "p5pr" set "%var.player/plot5/time%"
 var "p5pr" mult 100
 var "p5pr" div "%var.player/p5totaltime%"
+}
 
+if (var "plot6/time" > 0) {
 var "p6pr" set "%var.player/plot6/time%"
 var "p6pr" mult 100
 var "p6pr" div "%var.player/p6totaltime%"
 }
 
-if () {
+if (var "plot7/time" > 0) {
 var "p7pr" set "%var.player/plot7/time%"
 var "p7pr" mult 100
 var "p7pr" div "%var.player/p7totaltime%"
+}
 
+if (var "plot8/time" > 0) {
 var "p8pr" set "%var.player/plot8/time%"
 var "p8pr" mult 100
 var "p8pr" div "%var.player/p8totaltime%"
+}
 
+if (var "plot9/time" > 0) {
 var "p9pr" set "%var.player/plot9/time%"
 var "p9pr" mult 100
 var "p9pr" div "%var.player/p9totaltime%"
 }
 
-if () {
+if (var "plot10/time" > 0) {
 var "p10pr" set "%var.player/plot10/time%"
 var "p10pr" mult 100
 var "p10pr" div "%var.player/p10totaltime%"

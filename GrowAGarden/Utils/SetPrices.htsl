@@ -41,21 +41,21 @@ globalvar "slimesp" set 60
 }
 if () {
 globalvar "gunpowderbp" set 30
-globalvar "gunpowdersp" set 70
+globalvar "gunpowdersp" set 120
 }
 if () {
 globalvar "ironbp" set 35
-globalvar "ironsp" set 80
+globalvar "ironsp" set 300
 }
 if () {
 globalvar "diamondbp" set 40
-globalvar "diamondsp" set 100
+globalvar "diamondsp" set 500
 }
 if () {
 globalvar "goldbp" set 50
-globalvar "goldsp" set 120
+globalvar "goldsp" set 750
 }
 if () {
 globalvar "starbp" set 100
-globalvar "starsp" set 300
+globalvar "starsp" set 5000
 }

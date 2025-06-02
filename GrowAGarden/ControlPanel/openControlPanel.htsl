@@ -1,13 +1,36 @@
-if (var "p2owned" == 0, var "money" >= "%var.global/p2c%") {
+
+/*
+if (var "p1cropid" > 0, var "plot1/time" <= 0) {
+    var "croptoclaim" set "%var.player/p1cropid%"
+    var "p1cropid" set 0
+    var "p1crop" set "&cNone"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+    function "GiveCrop" false
+    exit
+}
+
+sound "Orb Pickup" 0.7 1 "invokers_location"
+displayMenu "Control Panel #1"
+
+goto npc "Control Panel #2"
+*/
+
+if (var "p2owned" == 0 0, var "money" >= "%var.global/p2c%") {
     var "p2owned" set 1
     var "money" dec "%var.global/p2c%"
     sound "Orb Pickup" 0.7 1 "invokers_location"
     chat "&aYou have purchased Plot #2!"
     exit
 }
-
+if (var "p2owned" == 0 0, var "money" < "%var.global/p2c%") {
+    chat "&cYou do not have enough money to purchase Plot #2!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
 if (var "p2cropid" > 0, var "plot2/time" <= 0) {
-    var "croptoclaim" set "%var.player/p2crop%"
+    var "croptoclaim" set "%var.player/p2cropid%"
+    var "p2cropid" set 0
+    var "p2crop" set "&cNone"
     sound "Orb Pickup" 0.7 1 "invokers_location"
     function "GiveCrop" false
     exit
@@ -18,16 +41,22 @@ displayMenu "Control Panel #2"
 
 goto npc "Control Panel #3"
 
-if (var "p3owned" == 0, var "money" >= "%var.global/p3c%") {
+if (var "p3owned" == 0 0, var "money" >= "%var.global/p3c%") {
     var "p3owned" set 1
     var "money" dec "%var.global/p3c%"
     sound "Orb Pickup" 0.7 1 "invokers_location"
     chat "&aYou have purchased Plot #3!"
     exit
 }
-
+if (var "p3owned" == 0 0, var "money" < "%var.global/p3c%") {
+    chat "&cYou do not have enough money to purchase Plot #3!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
 if (var "p3cropid" > 0, var "plot3/time" <= 0) {
-    var "croptoclaim" set "%var.player/p3crop%"
+    var "croptoclaim" set "%var.player/p3cropid%"
+    var "p3cropid" set 0
+    var "p3crop" set "&cNone"
     sound "Orb Pickup" 0.7 1 "invokers_location"
     function "GiveCrop" false
     exit
@@ -38,16 +67,22 @@ displayMenu "Control Panel #3"
 
 goto npc "Control Panel #4"
 
-if (var "p4owned" == 0, var "money" >= "%var.global/p4c%") {
+if (var "p4owned" == 0 0, var "money" >= "%var.global/p4c%") {
     var "p4owned" set 1
     var "money" dec "%var.global/p4c%"
     sound "Orb Pickup" 0.7 1 "invokers_location"
     chat "&aYou have purchased Plot #4!"
     exit
 }
-
+if (var "p4owned" == 0 0, var "money" < "%var.global/p4c%") {
+    chat "&cYou do not have enough money to purchase Plot #4!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
 if (var "p4cropid" > 0, var "plot4/time" <= 0) {
-    var "croptoclaim" set "%var.player/p4crop%"
+    var "croptoclaim" set "%var.player/p4cropid%"
+    var "p4cropid" set 0
+    var "p4crop" set "&cNone"
     sound "Orb Pickup" 0.7 1 "invokers_location"
     function "GiveCrop" false
     exit
@@ -58,15 +93,22 @@ displayMenu "Control Panel #4"
 
 goto npc "Control Panel #5"
 
-if (var "p5owned" == 0, var "money" >= "%var.global/p5c%") {
+if (var "p5owned" == 0 0, var "money" >= "%var.global/p5c%") {
     var "p5owned" set 1
     var "money" dec "%var.global/p5c%"
     sound "Orb Pickup" 0.7 1 "invokers_location"
     chat "&aYou have purchased Plot #5!"
     exit
 }
+if (var "p5owned" == 0 0, var "money" < "%var.global/p5c%") {
+    chat "&cYou do not have enough money to purchase Plot #5!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
 if (var "p5cropid" > 0, var "plot5/time" <= 0) {
-    var "croptoclaim" set "%var.player/p5crop%"
+    var "croptoclaim" set "%var.player/p5cropid%"
+    var "p5cropid" set 0
+    var "p5crop" set "&cNone"
     sound "Orb Pickup" 0.7 1 "invokers_location"
     function "GiveCrop" false
     exit

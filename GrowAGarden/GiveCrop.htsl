@@ -1,0 +1,49 @@
+// croptoclaim
+
+sound "Level Up" 0.7 1 "invokers_location"
+
+if (var "croptoclaim" == 1) {
+    giveItem "wheat" true "First Slot" false
+}
+if (var "croptoclaim" == 2) {
+    giveItem "carrot" true "First Slot" false
+}
+if (var "croptoclaim" == 3) {
+    giveItem "melon" true "First Slot" false
+}
+if (var "croptoclaim" == 4) {
+    giveItem "sugarcane" true "First Slot" false
+}
+if (var "croptoclaim" == 5) {
+    giveItem "netherwart" true "First Slot" false
+}
+if (var "croptoclaim" == 6) {
+    giveItem "pumpkin" true "First Slot" false
+}
+if (var "croptoclaim" == 7) {
+    giveItem "mushroom" true "First Slot" false
+}
+if (var "croptoclaim" == 8) {
+    giveItem "porkchop" true "First Slot" false
+}
+if (var "croptoclaim" == 9) {
+    giveItem "cake" true "First Slot" false
+}
+if (var "croptoclaim" == 10) {
+    giveItem "slimeball" true "First Slot" false
+}
+if (var "croptoclaim" == 11) {
+    giveItem "gunpowder" true "First Slot" false
+}
+if (var "croptoclaim" == 12) {
+    giveItem "iron" true "First Slot" false
+}
+if (var "croptoclaim" == 13) {
+    giveItem "diamond" true "First Slot" false
+}
+if (var "croptoclaim" == 14) {
+    giveItem "gold" true "First Slot" false
+}
+if (var "croptoclaim" == 15) {
+    giveItem "netherstar" true "First Slot" false
+}

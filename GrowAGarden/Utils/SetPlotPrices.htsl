@@ -1,0 +1,7 @@
+// p1c
+
+globalvar "p1c" set 0
+globalvar "p2c" set 75
+globalvar "p3c" set 500
+globalvar "p4c" set 5000
+globalvar "p5c" set 25000

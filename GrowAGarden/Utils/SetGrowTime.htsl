@@ -1,0 +1,18 @@
+globalvar "wheattime" set 30
+globalvar "carrotstime" set 60
+globalvar "melontime" set 200
+globalvar "sugarcanetime" set 500
+globalvar "netherwarttime" set 750
+globalvar "pumpkintime" set 800
+globalvar "mushroomtime" set 950
+globalvar "porkchoptime" set 1200
+globalvar "caketime" set 1350
+
+if () {
+globalvar "slimeballtime" set 1500
+globalvar "gunpowdertime" set 2000
+globalvar "irontime" set 2700
+globalvar "diamondtime" set 3600
+globalvar "goldtime" set 7200
+globalvar "netherstartime" set 18000
+}
