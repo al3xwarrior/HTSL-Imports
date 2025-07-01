@@ -1,0 +1,4 @@
+//globalvar "promogroup" set %player.group.tag% true
+//globalvar "promoname" set %player.name% true
+
+chat "&aCongratulations %var.global/promoname%&a! You have been promoted to %var.global/promogroup% &arank! &%random.whole/1 10%&lGG!"

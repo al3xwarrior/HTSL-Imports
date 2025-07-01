@@ -1,0 +1,59 @@
+
+// Dont effect admins
+if (!gamemode "Survival") {
+    exit
+}
+
+if (globalvar "breakingtime" == 1) {
+    gamemode "Survival"
+    applyPotion "Haste" 2 5 true true
+    applyLayout "Ending"
+    exit
+}
+
+if (globalvar "TIMELEFT" <= 0) {
+    gamemode "Adventure"
+    // applyPotion "Haste" 2 5 true true
+    applyLayout "Nothing"
+    exit
+}
+
+// If the player is under the breaking status & still has all the items
+if (var "status" == 2, hasItem "rPlaceAxe" metadata "Hand" anyAmount) {
+    gamemode "Survival"
+    applyPotion "Haste" 2 5 true false
+    exit
+}
+
+// Player under breaking status but not holding axe
+if (var "status" == 2, hasItem "rPlaceAxe" metadata "Anywhere" anyAmount) {
+    gamemode "Survival"
+    applyPotion "Mining Fatigue" 2 10 true false
+    exit
+}
+
+// In block mode & has a peice of wool
+if (var "status" == 1, hasItem "wool" "Item Type" "Anywhere" anyAmount) {
+    gamemode "Survival"
+    applyPotion "Mining Fatigue" 2 10 true false
+    exit
+}
+
+if (var "status" == 1) {
+    globalvar "placed" inc 1 true
+    var "placed" inc 1 true
+    var "timer" set 30
+    var "status" set 0
+    applyLayout "Default"
+    function "BlockStats"
+}
+if (var "status" == 2) {
+    globalvar "broken" inc 1 true
+    var "broken" inc 1 true
+    var "timer" set 30
+    var "status" set 0
+    applyLayout "Default"
+}
+
+gamemode "Adventure"
+applyPotion "Mining Fatigue" 2 10 true false

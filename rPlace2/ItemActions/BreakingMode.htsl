@@ -1,0 +1,10 @@
+if (var "timer" > 0) {
+    chat "&cYou need to wait %var.player/timer% seconds before breaking blocks!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+var "status" set 2
+applyLayout "Breaking"
+clearEffects
+gamemode "Survival"

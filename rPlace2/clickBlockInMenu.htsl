@@ -1,0 +1,4 @@
+var "status" set 1
+tp "custom_coordinates" "~0 ~0 ~0" false
+sound "Orb Pickup" 1 1 "invokers_location"
+gamemode "Survival"

@@ -1,0 +1,74 @@
+// 25 - Red
+// 75 - Orange
+// 150 - Yellow
+// 250 - Lime
+// 500 - Light Blue
+// 1000 - Blue
+// 2500 - Purple
+// 5000 - Pink
+
+if (var "placed" > 1, var "broken" > 1) {
+    
+} else {
+    exit
+}
+
+var "totalactions" set %var.player/placed%
+var "totalactions" inc %var.player/broken%
+
+if (hasGroup "Player" false, var "totalactions" >= 25) {
+    changePlayerGroup "25" true
+    globalvar "promogroup" set %player.group.tag% true
+    globalvar "promoname" set %player.name% true
+    function "PromotionAnnounce" true
+    exit
+}
+if (hasGroup "25" false, var "totalactions" >= 75) {
+    changePlayerGroup "75" true
+    globalvar "promogroup" set %player.group.tag% true
+    globalvar "promoname" set %player.name% true
+    function "PromotionAnnounce" true
+    exit
+}
+if (hasGroup "75" false, var "totalactions" >= 150) {
+    changePlayerGroup "150" true
+    globalvar "promogroup" set %player.group.tag% true
+    globalvar "promoname" set %player.name% true
+    function "PromotionAnnounce" true
+    exit
+}
+if (hasGroup "150" false, var "totalactions" >= 250) {
+    changePlayerGroup "250" true
+    globalvar "promogroup" set %player.group.tag% true
+    globalvar "promoname" set %player.name% true
+    function "PromotionAnnounce" true
+    exit
+}
+if (hasGroup "250" false, var "totalactions" >= 500) {
+    changePlayerGroup "500" true
+    globalvar "promogroup" set %player.group.tag% true
+    globalvar "promoname" set %player.name% true
+    function "PromotionAnnounce" true
+    exit
+}
+if (hasGroup "500" false, var "totalactions" >= 1000) {
+    changePlayerGroup "1000" true
+    globalvar "promogroup" set %player.group.tag% true
+    globalvar "promoname" set %player.name% true
+    function "PromotionAnnounce" true
+    exit
+}
+if (hasGroup "1000" false, var "totalactions" >= 2500) {
+    changePlayerGroup "2500" true
+    globalvar "promogroup" set %player.group.tag% true
+    globalvar "promoname" set %player.name% true
+    function "PromotionAnnounce" true
+    exit
+}
+if (hasGroup "2500" false, var "totalactions" >= 5000) {
+    changePlayerGroup "5000" true
+    globalvar "promogroup" set %player.group.tag% true
+    globalvar "promoname" set %player.name% true
+    function "PromotionAnnounce" true
+    exit
+}

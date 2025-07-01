@@ -1,0 +1,11 @@
+closeMenu
+
+if (var "status" == 1) {
+    chat "&cYou already have a block! Either your lagging or your cheating!"
+    exit
+}
+
+applyLayout "Placing"
+giveItem "wool" true "First Slot" true
+var "blocktobe" set 1
+function "clickBlockInMenu" false

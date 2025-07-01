@@ -1,0 +1,77 @@
+if (var "blocktobe" == 1) {
+    var "blockred" inc 1 true
+    globalvar "blockred" inc 1 true
+    exit
+}
+if (var "blocktobe" == 2) {
+    var "blockorange" inc 1 true
+    globalvar "blockorange" inc 1 true
+    exit
+}
+if (var "blocktobe" == 3) {
+    var "blockyellow" inc 1 true
+    globalvar "blockyellow" inc 1 true
+    exit
+}
+if (var "blocktobe" == 4) {
+    var "blocklime" inc 1 true
+    globalvar "blocklime" inc 1 true
+    exit
+}
+if (var "blocktobe" == 5) {
+    var "blockgreen" inc 1 true
+    globalvar "blockgreen" inc 1 true
+    exit
+}  
+if (var "blocktobe" == 6) {
+    var "blockcyan" inc 1 true
+    globalvar "blockcyan" inc 1 true
+    exit
+}
+if (var "blocktobe" == 7) {
+    var "blocklightblue" inc 1 true
+    globalvar "blocklightblue" inc 1 true
+    exit
+}
+if (var "blocktobe" == 8) {
+    var "blockblue" inc 1 true
+    globalvar "blockblue" inc 1 true
+    exit
+}
+if (var "blocktobe" == 9) {
+    var "blockpurple" inc 1 true
+    globalvar "blockpurple" inc 1 true
+    exit
+}
+if (var "blocktobe" == 10) {
+    var "blockmagenta" inc 1 true
+    globalvar "blockmagenta" inc 1 true
+    exit
+}
+if (var "blocktobe" == 11) {
+    var "blockpink" inc 1 true
+    globalvar "blockpink" inc 1 true
+    exit
+}
+if (var "blocktobe" == 12) {
+    var "blocklightgray" inc 1 true
+    globalvar "blocklightgray" inc 1 true
+    exit
+}
+if (var "blocktobe" == 13) {
+    var "blockgray" inc 1 true
+    globalvar "blockgray" inc 1 true
+    exit
+}
+if (var "blocktobe" == 14) {
+    var "blockblack" inc 1 true
+    globalvar "blockblack" inc 1 true
+    exit
+}
+if (var "blocktobe" == 15) {
+    var "blockwhite" inc 1 true
+    globalvar "blockwhite" inc 1 true
+    exit
+}
+var "blockbrown" inc 1 true
+globalvar "blockbrown" inc 1 true

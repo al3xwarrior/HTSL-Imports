@@ -1,0 +1,8 @@
+if (var "timer" > 0) {
+    chat "&cYou need to wait %var.player/timer% seconds before placing blocks!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+sound "Orb Pickup" 0.7 1 "invokers_location"
+displayMenu "Blocks"

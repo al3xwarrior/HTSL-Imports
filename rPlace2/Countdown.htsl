@@ -1,0 +1,31 @@
+globalvar "TIMELEFT" set 1751382000 true
+globalvar "TIMELEFT" dec %date.unix%
+
+if (globalvar "TIMELEFT" <= 0) {
+    globalvar "TIMERHOURS" set "&c&lOVER"
+    globalvar "TIMERMINUTES" unset
+    globalvar "TIMERSECONDS" unset
+    exit
+}
+
+if () {
+globalvar "timetemp" set %var.global/timeleft% false
+globalvar "timetemp" div 3600
+globalvar "TIMERHOURS" set %var.global/timetemp% true
+globalvar "timetemp" set %var.global/TIMERHOURS% true
+globalvar "timetemp" mult 3600
+globalvar "TIMELEFT" dec %var.global/timetemp%
+}
+
+if () {
+globalvar "timetemp" set %var.global/timeleft% false
+globalvar "timetemp" div 60
+globalvar "TIMERMINUTES" set %var.global/timetemp% true
+globalvar "timetemp" set %var.global/TIMERMINUTES% true
+globalvar "timetemp" mult 60
+globalvar "TIMELEFT" dec %var.global/timetemp%
+}
+
+globalvar "TIMERSECONDS" set %var.global/timeleft% false
+
+// Return is %var.global/TIMERHOURS% %var.global/TIMERMINUTES% %var.global/TIMERSECONDS%

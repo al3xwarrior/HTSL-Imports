@@ -1,0 +1,14 @@
+if (var "timer" > 1) {
+    var "timer" dec 1
+}
+if (var "timer" == 1) {
+    var "timer" set 0
+    sound "Note Pling" 0.7 2.0 "house_spawn"
+    actionBar "&aYou can do another action!"
+}
+
+if (var "timer" > 0) {
+    var "timerstatus" set "&6%var.player/timer%s"
+} else {
+    var "timerstatus" set "&a&lREADY!"
+}
