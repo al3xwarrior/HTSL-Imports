@@ -1,0 +1,21 @@
+
+// If a light timer variable is greater than a time in the future its time to
+// switch the light.
+
+if (globalvar "lightTimer" > "%date.unix%") {
+    // Timer is not yet ready, so exit
+    exit
+}
+
+// Set a new future time for the light to change color
+globalvar "lightTimer" set %date.unix% true
+globalvar "lightTimer" inc %random.int/2 8% true
+
+// Change the color code
+if (globalvar "light" == "&c") {
+    globalvar "light" set "&a" true
+    function "LightBroadcast" true
+} else {
+    globalvar "light" set "&c" true
+    function "LightBroadcast" true
+}

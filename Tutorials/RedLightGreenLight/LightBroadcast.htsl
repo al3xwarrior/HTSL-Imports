@@ -1,0 +1,13 @@
+if or (inRegion "GameStart", inRegion "GameRegion", inRegion "GameFinish") {
+
+} else {
+    exit
+}
+
+
+if (globalvar "light" == "&c") {
+    var "amountmoved" set 0 true
+    title "&c&lRED LIGHT" "&7Don't move!" 0 2 1
+} else {
+    title "&a&lGREEN LIGHT" "&7Run!" 0 2 1
+}

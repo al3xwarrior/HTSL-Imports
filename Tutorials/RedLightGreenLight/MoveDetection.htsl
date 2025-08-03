@@ -1,0 +1,16 @@
+if (var lastx == %player.block.x%, var lasty == %player.block.y%, var lastz == %player.block.z%) {
+    // Player has not moved, exit
+    var "amountmoved" set 0 true
+    exit
+} else {
+    // Player has moved, update last known position
+    var "lastx" set %player.block.x% true
+    var "lasty" set %player.block.y% true
+    var "lastz" set %player.block.z% true
+    var "amountmoved" inc 1 true
+}
+
+if (var "amountmoved" > 2, inRegion "GameRegion", globalvar "light" == "&c") {
+    // Player moved AND is within the game region
+    tp "house_spawn" "0 0 0" true
+}

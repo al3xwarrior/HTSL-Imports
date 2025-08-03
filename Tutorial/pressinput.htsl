@@ -1,9 +1,0 @@
-if (stat "keypadinput" > 999) {
-    chat "&cYou can not input anymore characters, try pressing backspace!"
-    exit
-}
-
-stat "keypadinput" mult 10
-stat "keypadinput" inc 9
-
-displayMenu "Keypad"
