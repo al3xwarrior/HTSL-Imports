@@ -1,0 +1,139 @@
+if (hasItem "7u9en_0" metadata "Armor" anyAmount) {
+var "speed" inc 1
+}
+if (hasItem "7u9en_1" metadata "Armor" anyAmount) {
+var "maxenergy" inc 10
+}
+if (hasItem "7u9en_2" metadata "Armor" anyAmount) {
+var "earnperblock" inc 1
+}
+if (hasItem "7u9en_3" metadata "Armor" anyAmount) {
+var "speed" inc 2
+}
+if (hasItem "7u9en_4" metadata "Armor" anyAmount) {
+var "earnperblock" inc 2
+}
+if (hasItem "7u9en_5" metadata "Armor" anyAmount) {
+var "maxenergy" inc 15
+}
+if (hasItem "7u9en_6" metadata "Armor" anyAmount) {
+var "speed" inc 3
+}
+if (hasItem "7u9en_7" metadata "Armor" anyAmount) {
+var "earnperblock" inc 3
+}
+if (hasItem "7u9en_8" metadata "Armor" anyAmount) {
+var "speed" inc 4
+}
+if (hasItem "7u9en_9" metadata "Armor" anyAmount) {
+var "earnperblock" inc 5
+}
+if (hasItem "7u9en_10" metadata "Armor" anyAmount) {
+var "maxenergy" inc 25
+}
+if (hasItem "7u9en_11" metadata "Armor" anyAmount) {
+var "speed" inc 5
+}
+if (hasItem "7u9en_12" metadata "Armor" anyAmount) {
+var "speed" inc 6
+}
+if (hasItem "7u9en_13" metadata "Armor" anyAmount) {
+var "earnperblock" inc 6
+}
+if (hasItem "7u9en_14" metadata "Armor" anyAmount) {
+var "maxenergy" inc 30
+}
+
+function "CalcArmor2" false
+goto function "CalcArmor2"
+
+if (hasItem "7u9en_15" metadata "Armor" anyAmount) {
+var "speed" inc 7
+}
+if (hasItem "7u9en_16" metadata "Armor" anyAmount) {
+var "speed" inc 8
+var "earnperblock" inc 8
+var "maxenergy" inc 40
+}
+if (hasItem "7u9en_17" metadata "Armor" anyAmount) {
+var "earnperblock" inc 10
+var "maxenergy" inc 50
+}
+if (hasItem "7u9en_18" metadata "Armor" anyAmount) {
+var "speed" inc 9
+}
+if (hasItem "7u9en_19" metadata "Armor" anyAmount) {
+var "speed" inc 10
+var "earnperblock" inc 12
+var "maxenergy" inc 60
+}
+if (hasItem "7u9en_20" metadata "Armor" anyAmount) {
+var "speed" inc 1
+var "earnperblock" inc 1
+}
+if (hasItem "7u9en_21" metadata "Armor" anyAmount) {
+var "maxenergy" inc 12
+}
+if (hasItem "7u9en_22" metadata "Armor" anyAmount) {
+var "earnperblock" inc 2
+}
+if (hasItem "7u9en_23" metadata "Armor" anyAmount) {
+var "speed" inc 3
+}
+if (hasItem "7u9en_24" metadata "Armor" anyAmount) {
+var "maxenergy" inc 20
+}
+if (hasItem "7u9en_25" metadata "Armor" anyAmount) {
+var "earnperblock" inc 3
+}
+if (hasItem "7u9en_26" metadata "Armor" anyAmount) {
+var "speed" inc 4
+}
+if (hasItem "7u9en_27" metadata "Armor" anyAmount) {
+var "maxenergy" inc 18
+}
+if (hasItem "7u9en_28" metadata "Armor" anyAmount) {
+var "earnperblock" inc 4
+}
+if (hasItem "7u9en_29" metadata "Armor" anyAmount) {
+var "speed" inc 5
+}
+
+function "CalcArmor3" false
+goto function "CalcArmor3"
+
+if (hasItem "7u9en_30" metadata "Armor" anyAmount) {
+var "maxenergy" inc 22
+}
+if (hasItem "7u9en_31" metadata "Armor" anyAmount) {
+var "earnperblock" inc 5
+}
+if (hasItem "7u9en_32" metadata "Armor" anyAmount) {
+var "speed" inc 8
+}
+if (hasItem "7u9en_33" metadata "Armor" anyAmount) {
+var "earnperblock" inc 8
+}
+if (hasItem "7u9en_34" metadata "Armor" anyAmount) {
+var "maxenergy" inc 35
+}
+if (hasItem "7u9en_35" metadata "Armor" anyAmount) {
+var "speed" inc 9
+}
+if (hasItem "7u9en_36" metadata "Armor" anyAmount) {
+var "speed" inc 10
+var "earnperblock" inc 10
+var "maxenergy" inc 50
+}
+if (hasItem "7u9en_37" metadata "Armor" anyAmount) {
+var "earnperblock" inc 12
+var "maxenergy" inc 55
+}
+if (hasItem "7u9en_38" metadata "Armor" anyAmount) {
+var "speed" inc 11
+}
+if (hasItem "7u9en_39" metadata "Armor" anyAmount) {
+var "speed" inc 12
+var "earnperblock" inc 15
+var "maxenergy" inc 70
+}

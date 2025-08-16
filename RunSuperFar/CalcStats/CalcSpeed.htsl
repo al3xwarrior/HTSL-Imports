@@ -1,0 +1,48 @@
+if (var "speed" == 0) {
+    applyPotion "Slowness" 2 2 true true
+    exit
+}
+if (var "speed" == 1) {
+    applyPotion "Slowness" 2 1 true true
+    exit
+}
+if (var "speed" == 3) {
+    applyPotion "Speed" 2 1 true true
+    exit
+}
+if (var "speed" == 4) {
+    applyPotion "Speed" 2 2 true true
+    exit
+}
+if (var "speed" == 5) {
+    applyPotion "Speed" 2 3 true true
+    exit
+}
+if (var "speed" == 6) {
+    applyPotion "Speed" 2 4 true true
+    exit
+}
+if (var "speed" == 7) {
+    applyPotion "Speed" 2 5 true true
+    exit
+}
+if (var "speed" == 8) {
+    applyPotion "Speed" 2 6 true true
+    exit
+}
+if (var "speed" == 9) {
+    applyPotion "Speed" 2 7 true true
+    exit
+}
+if (var "speed" == 10) {
+    applyPotion "Speed" 2 8 true true
+    exit
+}
+if (var "speed" == 11) {
+    applyPotion "Speed" 2 9 true true
+    exit
+}
+if (var "speed" >= 12) {
+    applyPotion "Speed" 2 10 true true
+    exit
+}

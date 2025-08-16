@@ -1,0 +1,13 @@
+// triggered by entering spawn
+
+if (var "toearn" <= 0) {
+    exit
+}
+
+pause 2
+
+title "&a&l$%var.player/toearn%" "Travelled %var.player/saveddist% Blocks" 0 2 1
+var "money" inc %var.player/toearn% true
+sound "Level Up" 0.7 1 "invokers_location"
+
+var "toearn" set 0

@@ -1,0 +1,53 @@
+function "fullInventoryCheck" false
+if (var "fullinventory" == 1) {
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    chat "&cYou don't have enough inventory space!"
+    exit
+}
+
+// Change Price
+if (var "money" >= 100) {
+    var "money" dec 100
+}
+
+sound "Orb Pickup" 0.7 0.5 "invokers_location"
+title "&7◔" "&7Opening..." 0 5 3
+pause 3
+sound "Orb Pickup" 0.7 1.0 "invokers_location"
+title "&f◑" "&7Opening..." 0 5 3
+pause 3
+sound "Orb Pickup" 0.7 1.5 "invokers_location"
+title "&e◕" "&7Opening..." 0 5 3
+pause 3
+sound "Level Up" 0.7 1 "invokers_location"
+title "&6⬤" "&aCrate Opened!" 0 5 3
+
+// Make sure you do this right
+var "craterng" set %random.int/1 40%
+
+loop 13 index {
+    if (var "craterng" == {index + 1}) {
+        giveItem {"7u9en_" + index} true "First Slot" false
+        exit
+    }
+}
+
+function "W1Crate2-2" false
+goto function "W1Crate2-2"
+
+loop 15 index {
+    if (var "craterng" == {index + 13}) {
+        giveItem {"7u9en_" + (index + 12)} true "First Slot" false
+        exit
+    }
+}
+
+function "W1Crate2-3" false
+goto function "W1Crate2-3"
+
+loop 10 index {
+    if (var "craterng" == {index + 28}) {
+        giveItem {"7u9en_" + (index + 25)} true "First Slot" false
+        exit
+    }
+}

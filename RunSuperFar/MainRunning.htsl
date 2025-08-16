@@ -1,0 +1,58 @@
+// The player is now running at Z: -80
+// Calc the distance by doing Z + 80
+
+// loop cause i want it to be super fast so if it happens multiple times in
+// 1 function that is TUFF!!
+
+// add more regions
+if or (inRegion "race-1") {
+
+} else {
+    exit
+}
+
+if (gamemode "Creative") {
+    exit
+}
+
+loop 3 index {
+    var "distance" set %player.block.z%
+    var "distance" inc 80
+
+    if (var "distance" > %var.player/saveddist%) {
+        var "traveled" set %var.player/distance%
+        var "traveled" dec %var.player/saveddist%
+
+        var "saveddist" set %var.player/distance%
+
+        var "toearn" set %var.player/distance%
+        var "toearn" mult %var.player/earnperblock%
+
+        sound "Orb Pickup" 0.7 1 "invokers_location"
+        title "&a$%var.player/toearn%" "&7&oDistance: %var.player/saveddist% (%var.player/traveled% Blocks / tick)" 0 5 3
+    
+        // lamps
+        var "lampZ" set %player.pos.z%
+        var "lampZ" inc 3.5
+        dropItem "placeholder" "custom_coordinates" "-91.5 176.5 %var.player/lampZ%" false true false false
+        dropItem "placeholder" "custom_coordinates" "-111.5 176.5 %var.player/lampZ%" false true false false
+    } else {
+        title "&a$%var.player/toearn%" "&7&oDistance: %var.player/saveddist% (0 Blocks / tick)" 0 5 3
+    }
+
+    var "energy" dec 1
+    if (var "afk" == 0) {
+        actionBar "&d&l%var.player/energy% &7&l/ &5&l%var.player/maxenergy%"
+    } else {
+        actionBar "&a&lAFK ENABLED &7(/toggleafk) &8- &d&l%var.player/energy% &7&l/ &5&l%var.player/maxenergy%"
+    }
+    if (var "energy" <= 0) {
+        actionBar "&4[!] &cOut of Energy! &4[!]"
+        tp "house_spawn" "0 0 0" true
+        sound "Cat Hiss" 0.7 0.5 "invokers_location"
+    }
+
+    pause 1
+}
+
+function "CalcSpeed" false

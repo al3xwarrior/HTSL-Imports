@@ -1,0 +1,8 @@
+var "maxenergy" set 100
+
+var "earnperblock" set 1
+
+var "speed" set 0
+
+function "CalcPets" false
+function "CalcArmor" false

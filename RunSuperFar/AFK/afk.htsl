@@ -1,0 +1,7 @@
+if (var "afk" == 0) {
+    exit
+}
+
+changeVelocity 0 0 4
+pause 2
+changeVelocity 0 0 4

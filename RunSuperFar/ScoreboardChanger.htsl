@@ -1,0 +1,5 @@
+if (var "sbtext" == "&eyt.com/@al3xwarrior") {
+    var "sbtext" set "&e/disc"
+} else {
+    var "sbtext" set "&eyt.com/@al3xwarrior"
+}

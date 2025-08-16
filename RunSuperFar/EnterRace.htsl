@@ -1,0 +1,4 @@
+// triggered when they enter the race region
+
+var "saveddist" set 0
+var "energy" set %var.player/maxenergy%

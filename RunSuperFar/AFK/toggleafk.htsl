@@ -1,0 +1,9 @@
+sound "Click" 0.7 1 "invokers_location"
+
+if (var "afk" == 0) {
+    var "afk" set 1
+    actionBar "&a&lAFK ENABLED! &fUse &7/toggleafk &fto toggle!"
+} else {
+    var "afk" set 0
+    actionBar "&c&lAFK DISABLED! &fUse &7/toggleafk &fto toggle!"
+}
