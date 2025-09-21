@@ -1,0 +1,59 @@
+
+loop 10 amt {
+    goto function {"plantSystem" + (amt * 2 + 2)}
+    goto function {"plantSystem" + (amt * 2 + 3)}
+}
+
+loop 10 amt {
+    loop 5 x {
+        if or (globalvar {x + "-" + (amt * 2 + 0) + "-plant"} == 0 0, globalvar {x + "-" + (amt * 2 + 0) + "-health"} <= 0 0) {
+            globalvar {x + "-" + (amt * 2 + 0) + "-holo"} unset
+            globalvar {x + "-" + (0 + amt * 2) + "-plant"} unset
+            globalvar {x + "-" + (0 + amt * 2) + "-health"} unset
+            globalvar {x + "-" + (0 + amt * 2) + "-damage"} unset
+        } else {
+            globalvar {x + "-" + (0 + amt * 2) + "-holo"} set {"&c%var.global/" + x + "-" + (0 + amt * 2) + "-health%❤"}
+        }
+        if (globalvar {x + "-" + (amt * 2 + 0) + "-plant"} == 1 0) {
+            dropItem "sunflower" "custom_coordinates" {(5.5 - amt * 2 + 0) + " 103 " + (-35.5 + amt * 2 + 0)} false true false false 8 100
+        }
+        if (globalvar {x + "-" + (amt * 2 + 0) + "-plant"} == 2 0) {
+            dropItem "peashooter" "custom_coordinates" {(5.5 - amt * 2 + 0) + " 103 " + (-35.5 + amt * 2 + 0)} false true false false 8 100
+        }
+        if (globalvar {x + "-" + (amt * 2 + 0) + "-plant"} == 3 0) {
+            dropItem "wallnut" "custom_coordinates" {(5.5 - amt * 2 + 0) + " 103 " + (-35.5 + amt * 2 + 0)} false true false false 8 100
+        }
+        if (globalvar {x + "-" + (amt * 2 + 0) + "-plant"} == 4 0) {
+            dropItem "chomper" "custom_coordinates" {(5.5 - amt * 2 + 0) + " 103 " + (-35.5 + amt * 2 + 0)} false true false false 8 100
+        }
+    }
+
+    function {"plantSystem" + (amt * 2 + 2)} false
+    goto function {"plantSystem" + (amt * 2 + 2)}
+
+    loop 5 x {
+        if or (globalvar {(x + 5) + "-" + (1 + amt * 2) + "-plant"} == 0 0, globalvar {(x + 5) + "-" + (1 + amt * 2) + "-health"} <= 0 0) {
+            globalvar {(x + 5) + "-" + (1 + amt * 2) + "-holo"} unset
+            globalvar {(x + 5) + "-" + (1 + amt * 2) + "-plant"} unset
+            globalvar {(x + 5) + "-" + (1 + amt * 2) + "-health"} unset
+            globalvar {(x + 5) + "-" + (1 + amt * 2) + "-damage"} unset
+        } else {
+            globalvar {(x + 5) + "-" + (1 + amt * 2) + "-holo"} set {"&c%var.global/" + (x + 5) + "-" + (1 + amt * 2) + "-health%❤"}
+        }
+        if (globalvar {(x + 5) + "-" + (1 + (amt * 2)) + "-plant"} == 1 0) {
+            dropItem "sunflower" "custom_coordinates" {(5.5 - x + 5) + " 103 " + (-35.5 + (1 + amt * 2))} false true false false 8 100
+        }
+        if (globalvar {(x + 5) + "-" + (1 + (amt * 2)) + "-plant"} == 2 0) {
+            dropItem "peashooter" "custom_coordinates" {(5.5 - x + 5) + " 103 " + (-35.5 + (1 + amt * 2))} false true false false 8 100
+        }
+        if (globalvar {(x + 5) + "-" + (1 + (amt * 2)) + "-plant"} == 3 0) {
+            dropItem "wallnut" "custom_coordinates" {(5.5 - x + 5) + " 103 " + (-35.5 + (1 + amt * 2))} false true false false 8 100
+        }
+        if (globalvar {(x + 5) + "-" + (1 + (amt * 2)) + "-plant"} == 4 0) {
+            dropItem "chomper" "custom_coordinates" {(5.5 - x + 5) + " 103 " + (-35.5 + (1 + amt * 2))} false true false false 8 100
+        }
+    }
+
+    function {"plantSystem" + (amt * 2 + 3)} false
+    goto function {"plantSystem" + (amt * 2 + 3)}
+}

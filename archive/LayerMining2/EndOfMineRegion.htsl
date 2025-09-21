@@ -1,0 +1,29 @@
+
+if or (stat "layer1hp" > 0, stat "layer2hp" > 0, stat "layer3hp" > 0) {
+    globalstat "alert/plrid" set "%stat.player/playerid%"
+    globalstat "alert/x" set "%player.location.x%"
+    globalstat "alert/y" set "%player.location.y%"
+    globalstat "alert/z" set "%player.location.z%"
+    globalstat "alertid" set 1
+    function "StaffAlert" true
+    exit
+}
+
+tp "custom_coordinates" "~ ~28 ~"
+sound "Level Up" 0.7 2.0 "invokers_location"
+
+stat "togive" set "%stat.player/layergold%"
+stat "togive" inc "%stat.player/extragold%"
+function "FinishGoldMultipliers"
+
+if (stat "eventgold" > 0) {
+    stat "togive" mult "%stat.player/eventgold%"
+}
+
+stat "gold" inc "%stat.player/togive%"
+if (stat "finishdiamonds" > 0) {
+    stat "diamonds" inc "%stat.player/finishdiamonds%"
+    title "&6&l+%stat.player/togive%&r&6⛃" "&b&l+%stat.player/finishdiamonds%&r&b❄" 0 1 1
+} else {
+    title "&6&l+%stat.player/togive%&r&6⛃" "&e&oYou reached the end!" 0 1 1
+}

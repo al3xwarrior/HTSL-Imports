@@ -1,0 +1,14 @@
+
+// playerX - playerZ
+
+chat "%var.player/playerX% , %var.player/playerZ%"
+
+loop 10 x {
+    loop 2 z {
+        if (var "playerX" == {x}, var "playerZ" == {z}, globalvar {x + "-" + z + "-plant"} == 0 0) {
+            globalvar {x + "-" + z + "-plant"} set %var.player/plantingType%
+            globalvar {x + "-" + z + "-health"} set %var.player/plantingHealth%
+            globalvar {x + "-" + z + "-damage"} set %var.player/plantingDamage%
+        }
+    }
+}

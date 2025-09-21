@@ -1,0 +1,11 @@
+var "enough_elixir" set 0
+
+if (hasTeam "Blue", globalvar "blue_elixir" < %var.player/elixir_cost%) {
+    exit
+}
+
+if (hasTeam "Red", globalvar "red_elixir" >= %var.player/elixir_cost%) {
+    exit
+}
+
+var "enough_elixir" set 1

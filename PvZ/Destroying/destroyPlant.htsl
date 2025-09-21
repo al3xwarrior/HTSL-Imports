@@ -1,0 +1,73 @@
+var "playerX" set "%player.block.x%"
+var "playerX" dec 5
+var "playerZ" set "%player.block.z%"
+var "playerZ" inc 36
+
+if (var "playerX" < 0) {
+    var "playerX" mult -1
+}
+if (var "playerZ" < 0) {
+    var "playerZ" mult -1
+}
+
+loop 10 x {
+    loop 2 z {
+        if (var "playerX" == {x}, var "playerZ" == {z}) {
+            globalvar {x + "-" + z + "-plant"} unset
+            globalvar {x + "-" + z + "-health"} unset
+            globalvar {x + "-" + z + "-damage"} unset
+        }
+    }
+}
+
+function "destroyPlant2" false
+goto function "destroyPlant2"
+
+loop 10 x {
+    loop 2 z {
+        if (var "playerX" == {x}, var "playerZ" == {(z + 2)}) {
+            globalvar {x + "-" + (z + 2) + "-plant"} unset
+            globalvar {x + "-" + (z + 2) + "-health"} unset
+            globalvar {x + "-" + (z + 2) + "-damage"} unset
+        }
+    }
+}
+
+function "destroyPlant3" false
+goto function "destroyPlant3"
+
+loop 10 x {
+    loop 2 z {
+        if (var "playerX" == {x}, var "playerZ" == {(z + 4)}) {
+            globalvar {x + "-" + (z + 4) + "-plant"} unset
+            globalvar {x + "-" + (z + 4) + "-health"} unset
+            globalvar {x + "-" + (z + 4) + "-damage"} unset
+        }
+    }
+}
+
+function "destroyPlant4" false
+goto function "destroyPlant4"
+
+loop 10 x {
+    loop 2 z {
+        if (var "playerX" == {x}, var "playerZ" == {(z + 6)}) {
+            globalvar {x + "-" + (z + 6) + "-plant"} unset
+            globalvar {x + "-" + (z + 6) + "-health"} unset
+            globalvar {x + "-" + (z + 6) + "-damage"} unset
+        }
+    }
+}
+
+function "destroyPlant5" false
+goto function "destroyPlant5"
+
+loop 10 x {
+    loop 2 z {
+        if (var "playerX" == {x}, var "playerZ" == {(z + 8)}) {
+            globalvar {x + "-" + (z + 8) + "-plant"} unset
+            globalvar {x + "-" + (z + 8) + "-health"} unset
+            globalvar {x + "-" + (z + 8) + "-damage"} unset
+        }
+    }
+}

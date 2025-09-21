@@ -1,0 +1,16 @@
+if (!hasGroup "MANAGER" true) {
+    chat "&cNo."
+    exit
+}
+
+if (var "staffmode" == "&a&lON") {
+    resetInventory
+    chat "&cStaff mode is now disabled."
+    sound "Item Pickup" 0.7 1 "invokers_location"
+    var "staffmode" = "&c&lOFF"
+} else {
+    applyLayout "StaffMode"
+    chat "&cStaff mode is now enabled."
+    sound "Item Pickup" 0.7 1 "invokers_location"
+    var "staffmode" = "&a&lON"
+}

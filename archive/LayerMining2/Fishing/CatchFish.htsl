@@ -1,0 +1,123 @@
+// 1-5 trash
+// 6-9 uncommon fish
+// 10-17 rare fish
+// 18-19 epic fish
+// 20 legendary fish
+
+if (stat "fishluck" <= 9) {
+    sound "Swim" 0.7 0.5 "invokers_location"
+}
+if (stat "fishluck" > 9, stat "fishluck" <= 17) {
+    sound "Swim" 0.7 1.0 "invokers_location"
+}
+if (stat "fishluck" > 17, stat "fishluck" <= 20) {
+    sound "Swim" 0.7 1.5 "invokers_location"
+}
+if (stat "fishluck" = 21) {
+    sound "Swim" 0.7 2.0 "invokers_location"
+}
+
+if (stat "fishluck" = 1) {
+    chat "&b&lFISH &7You caught a &cBin&7!"
+    giveItem null true "First Slot" false
+    exit
+}
+if (stat "fishluck" = 2)  {
+    chat "&b&lFISH &7You caught a &7Cobweb&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+if (stat "fishluck" = 3)  {
+    chat "&b&lFISH &7You caught a &fClay&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+if (stat "fishluck" = 4)  {
+    chat "&b&lFISH &7You caught a &eWheat Seeds&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+if (stat "fishluck" = 5)  {
+    chat "&b&lFISH &7You caught a &8Coal&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+if (stat "fishluck" = 6)  {
+    chat "&b&lFISH &7You caught a &bCooked Fish&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+if (stat "fishluck" = 7)  {
+    chat "&b&lFISH &7You caught a &ePufferfish&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+if (stat "fishluck" = 8)  {
+    chat "&b&lFISH &7You caught a &7Raw Fish&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+if (stat "fishluck" = 9)  {
+    chat "&b&lFISH &7You caught a &6Clownfish&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+if (stat "fishluck" = 10)  {
+    chat "&b&lFISH &7You caught a &3Fsh&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+if (stat "fishluck" = 11)  {
+    chat "&b&lFISH &7You caught a &6Pufferfish&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+
+function "CatchFish2" false
+goto function "CatchFish2"
+
+if (stat "fishluck" = 12)  {
+    chat "&b&lFISH &7You caught a &6Clownfish&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+if (stat "fishluck" = 13)  {
+    chat "&b&lFISH &7You caught a &Blue Tropical Fish&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+if (stat "fishluck" = 14)  {
+    chat "&b&lFISH &7You caught a &6Clownfish&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+if (stat "fishluck" = 15)  {
+    chat "&b&lFISH &7You caught a &9Fish Head&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+if (stat "fishluck" = 16)  {
+    chat "&b&lFISH &7You caught a &9Fish Body&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+if (stat "fishluck" = 17)  {
+    chat "&b&lFISH &7You caught a &9Fish Tail&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+if (stat "fishluck" = 18)  {
+    chat "&b&lFISH &7You caught a &dC&ba&dn&bd&dy &bF&di&bs&dh&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+if (stat "fishluck" = 19)  {
+    chat "&b&lFISH &7You caught a &cRed Fish&7!"
+    giveItem null true "First Slot" false
+    exit  
+}
+if (stat "fishluck" = 20)  {
+    chat "&b&lFISH &7You caught a &6&lRoyal Pufferfish&7!"
+    giveItem null true "First Slot" false
+    exit  
+}

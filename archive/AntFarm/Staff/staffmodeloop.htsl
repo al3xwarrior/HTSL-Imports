@@ -1,0 +1,5 @@
+if (!var "staffmode" == "&a&lON") {
+    exit
+}
+
+actionBar "&7%player.team.players/staff% Staff Online &8- &c%player.team.players/red%&f-&b%player.team.players/blue%"

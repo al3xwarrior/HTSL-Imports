@@ -1,0 +1,12 @@
+if (globalvar "changeip" < 10) {
+    globalvar "changeip" inc 1 true
+    exit
+}
+
+globalvar "changeip" set 0
+
+if (globalvar "ip" == "&eyoutube.com/@Al3xWarrior") {
+    globalvar "ip" set "&ediscord.gg/housinghub"
+} else {
+    globalvar "ip" set "&eyoutube.com/@Al3xWarrior"
+}

@@ -1,0 +1,15 @@
+
+var "elixir_cost" set 3
+
+var "health" set 17
+var "damage" set 202
+
+// VERY_SLOW, SLOW, MEDIUM, FAST, VERY_FAST
+var "speed" set "MEDIUM"
+
+function "hasElixir" false
+if (var "enough_elixir" == 0) {
+    sound "Anvil Land" 0.7 1 "invokers_location"2
+    chat "&cYour team doesn't have enough elixir!"
+    exit
+} 

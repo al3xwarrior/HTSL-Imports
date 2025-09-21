@@ -1,0 +1,29 @@
+if (hasGroup "Builder" true) {
+
+} else {
+    exit
+}
+
+// Entered the end region for a mine without breaking layer 1, 2, or 3
+if (globalstat "alertid" = 1) {
+    chat "&7[Staff] &4Player#%stat.global/alert/plrid% &cillegally entered the end of a mine. &7(/stafftp)"
+    exit
+}
+
+// Attempted to rebirth without unlocking the zone
+if (globalstat "alertid" = 2) {
+    chat "&7[Staff] &4Player#%stat.global/alert/plrid% &cillegally attempted to rebirth. &7(/stafftp)"
+    exit
+}
+
+// Improper Crate Opening (staff abuse?)
+if (globalstat "alertid" = 3) {
+    chat "&7[Staff] &4Player#%stat.global/alert/plrid% &cillegally attempted to open a crate. &7(/stafftp)"
+    exit
+}
+
+// Improper Bid
+if (globalstat "alertid" = 4) {
+    chat "&7[Staff] &4Player#%stat.global/alert/plrid% &cillegally attempted to bid. &7(/stafftp)"
+    exit
+}

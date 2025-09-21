@@ -1,0 +1,22 @@
+
+chat "Attempting to plant..."
+
+function "determinePlant" false
+if (var "plantingType" == 0 0) {
+    chat "&cNo plant selected!"
+    exit
+}
+
+var "playerX" set "%player.block.x%"
+var "playerX" dec 5
+var "playerZ" set "%player.block.z%"
+var "playerZ" inc 36
+
+if (var "playerX" < 0) {
+    var "playerX" mult -1
+}
+if (var "playerZ" < 0) {
+    var "playerZ" mult -1
+}
+
+function "plantAtLocation" false

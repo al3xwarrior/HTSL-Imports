@@ -1,0 +1,46 @@
+
+var "plantingType" set 0
+var "plantingCost" set 0
+var "plantingHealth" set 0
+var "plantingDamage" set 0
+
+// Sunflower - 1
+// Peashooter - 2
+// Wall-nut - 3
+// Chomper - 4
+
+// Sunflower
+if (hasItem null "Metadata" "Hand" "Any Amount") {
+    var "plantingType" set 1
+    var "plantingCost" set 5
+    var "plantingHealth" set 10
+    var "plantingDamage" set 0
+    exit
+}
+
+// Peashooter
+if (hasItem null "Metadata" "Hand" "Any Amount") {
+    var "plantingType" set 2
+    var "plantingCost" set 10
+    var "plantingHealth" set 10
+    var "plantingDamage" set 1
+    exit
+}
+
+// Wall-nut
+if (hasItem null "Metadata" "Hand" "Any Amount") {
+    var "plantingType" set 3
+    var "plantingCost" set 15
+    var "plantingHealth" set 25
+    var "plantingDamage" set 0
+    exit
+}
+
+// Chomper
+if (hasItem null "Metadata" "Hand" "Any Amount") {
+    var "plantingType" set 4
+    var "plantingCost" set 20
+    var "plantingHealth" set 15
+    var "plantingDamage" set 3
+    exit
+}
