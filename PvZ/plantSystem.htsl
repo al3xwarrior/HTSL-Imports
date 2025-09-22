@@ -1,10 +1,5 @@
 
 loop 10 amt {
-    goto function {"plantSystem" + (amt * 2 + 2)}
-    goto function {"plantSystem" + (amt * 2 + 3)}
-}
-
-loop 10 amt {
     loop 5 x {
         if or (globalvar {x + "-" + (amt * 2 + 0) + "-plant"} == 0 0, globalvar {x + "-" + (amt * 2 + 0) + "-health"} <= 0 0) {
             globalvar {x + "-" + (amt * 2 + 0) + "-holo"} unset
