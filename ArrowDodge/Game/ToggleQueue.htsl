@@ -1,0 +1,9 @@
+if (var "queued" == 1 0) {
+    var "queued" set 0
+    chat "&aYou have left the queue."
+} else {
+    var "queued" set 1
+    chat "&aYou have joined the queue. You will be automatically added to the next game."
+}
+
+sound "Note Pling" 0.7 1 "invokers_location"

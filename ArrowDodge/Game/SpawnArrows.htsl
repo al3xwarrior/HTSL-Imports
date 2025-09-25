@@ -1,0 +1,23 @@
+// gameSpawnX, gameSpawnZ
+
+globalvar "spawnY" set "%var.global/gameSpawnY%"
+globalvar "spawnY" inc 10
+
+// Determine round of arrows
+// timer
+globalvar "temp" set "%var.global/timer%"
+globalvar "temp" div 10
+globalvar "rounds" set 12
+globalvar "rounds" dec "%var.global/temp%"
+
+loop 10 index {
+    if (globalvar "rounds" >= {index} 0) {
+        globalvar "randomOffsetX" set %var.global/gameSpawnX%
+        globalvar "randomOffsetZ" set %var.global/gameSpawnZ%
+        globalvar "randomOffsetX" inc %random.decimal/-8.0 8.0%
+        globalvar "randomOffsetZ" inc %random.decimal/-8.0 8.0%
+        dropItem "fallingArrow" "custom_coordinates" "%var.global/randomOffsetX% %var.global/spawnY% %var.global/randomOffsetZ%" false true false false 30 1
+        globalvar "arrowsDodged" inc 1
+        pause 1
+    }
+}

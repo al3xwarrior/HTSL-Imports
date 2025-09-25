@@ -1,0 +1,10 @@
+if (var "queued" == 0 0) {
+    exit
+}
+
+var "tpX" set "%var.global/gameSpawnX%"
+var "tpZ" set "%var.global/gameSpawnZ%"
+var "tpX" inc %random.decimal/-6.0 6.0%
+var "tpZ" inc %random.decimal/-6.0 6.0%
+tp "custom_coordinates" "%var.player/tpX% %var.global/gameSpawnY% %var.player/tpZ%" false
+setTeam "Playing"

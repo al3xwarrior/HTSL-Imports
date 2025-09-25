@@ -1,6 +1,0 @@
-if (globalvar "mngpayoutcd" > 0) {
-    globalvar "mngpayoutcd" dec 1
-}
-if (globalvar "mngeotm" > 0) {
-    globalvar "mngeotm" dec 1
-}

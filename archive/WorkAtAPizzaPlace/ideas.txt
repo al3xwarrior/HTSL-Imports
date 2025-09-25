@@ -1,3 +1,0 @@
-// Pinaple Pizza Easteregg
-// Best employee of the shift gets EOTM
-// AFK Timer for those who are sitting inside a position too long

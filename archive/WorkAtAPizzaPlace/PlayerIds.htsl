@@ -1,6 +1,0 @@
-if (var "playerid" >= 0) {
-    exit
-}
-
-globalvar "playerids" inc 1
-var "playerid" set "%var.global/playerids%"

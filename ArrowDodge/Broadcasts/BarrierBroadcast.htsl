@@ -1,0 +1,11 @@
+chat "&8[&6█&8] &7The barriers will move to a new location in &c3 seconds&7!"
+sound "Click" 0.7 1 "invokers_location"
+pause 20
+chat "&8[&6█&8] &7The barriers will move to a new location in &e2 seconds&7!"
+sound "Click" 0.7 1.2 "invokers_location"
+pause 20
+chat "&8[&6█&8] &7The barriers will move to a new location in &a1 second&7!"
+sound "Click" 0.7 1.4 "invokers_location"
+pause 20
+chat "&8[&6█&8] &7The barriers have moved!"
+sound "Irongolem Hit" 0.7 1.5 "invokers_location"

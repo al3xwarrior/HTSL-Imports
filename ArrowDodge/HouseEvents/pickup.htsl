@@ -1,0 +1,35 @@
+pause 1
+
+if (hasItem "fallingArrow" metadata null anyAmount) {
+    removeItem "fallingArrow"
+}
+
+var "distX" set %var.global/barrier1X%
+var "distZ" set %var.global/barrier1Z%
+var "distX" dec "%player.pos.x%"
+var "distZ" dec "%player.pos.z%"
+if (var "distX" < 0.0) {
+    var "distX" mult -1.0
+}
+if (var "distZ" < 0.0) {
+    var "distZ" mult -1.0
+}
+if (var "distX" < 1.0 && var "distZ" < 1.0) {
+    exit
+}
+
+var "distX" set %var.global/barrier2X%
+var "distZ" set %var.global/barrier2Z%
+var "distX" dec "%player.pos.x%"
+var "distZ" dec "%player.pos.z%"
+if (var "distX" < 0.0) {
+    var "distX" mult -1.0
+}
+if (var "distZ" < 0.0) {
+    var "distZ" mult -1.0
+}
+if (var "distX" < 1.0 && var "distZ" < 1.0) {
+    exit
+}
+
+function "Death" false

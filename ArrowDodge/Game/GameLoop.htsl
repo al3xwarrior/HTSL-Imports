@@ -1,0 +1,51 @@
+
+// GameState:
+// 0 = Intermission
+// 1 = In Game
+
+// Lobby
+if (globalvar "gameState" == 0 0, globalvar "timer" > 0 0) {
+    globalvar "timer" dec 1 true
+}
+
+// Start Game
+if (globalvar "gameState" == 0 0, globalvar "timer" <= 0 0) {
+    globalvar "gameState" set 1
+    globalvar "timer" set 120
+
+    globalvar "arrowsDodged" set 0
+
+    globalvar "1st" set "N/A"
+    globalvar "2nd" set "N/A"
+    globalvar "3rd" set "N/A"
+
+    // Tp players in
+    function "StartPlayers" true
+}
+
+// In Game
+if (globalvar "gameState" == 1 0, globalvar "timer" > 0 0) {
+    globalvar "timer" dec 1 true
+    function "SpawnArrows" false
+}
+
+// In game But no Players
+if (globalvar "gameState" == 1 0, globalvar "timer" > 0 0, placeholder %player.team.players/Playing% == 0) {
+    globalvar "gameState" set 0
+    globalvar "timer" set 15 true
+
+    function "EndGame" true
+}
+
+// Barrier Generation
+if (globalvar "gameState" == 1 0, globalvar "timer" > 0 0, placeholder %random.whole/1 6% == 1) {
+    function "GenerateBarrier" false
+}
+
+// End Game
+if (globalvar "gameState" == 1 0, globalvar "timer" <= 0 0) {
+    globalvar "gameState" set 0
+    globalvar "timer" set 15 true
+
+    function "EndGame" true
+}

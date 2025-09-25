@@ -1,0 +1,28 @@
+if (globalvar "makingbarriers" == 1 0) {
+    exit
+}
+
+function "BarrierBroadcast" true
+globalvar "makingbarriers" set 1
+
+pause 60
+
+globalvar "makingbarriers" set 0
+
+if () {
+    globalvar "barrier1Y" set "%var.global/gameSpawnY%"
+    globalvar "barrier1Y" inc 3
+    globalvar "barrier1X" set %var.global/gameSpawnX%
+    globalvar "barrier1Z" set %var.global/gameSpawnZ%
+    globalvar "barrier1X" inc %random.decimal/-6.0 6.0%
+    globalvar "barrier1Z" inc %random.decimal/-6.0 6.0%
+}
+
+if () {
+    globalvar "barrier2Y" set "%var.global/gameSpawnY%"
+    globalvar "barrier2Y" inc 3
+    globalvar "barrier2X" set %var.global/gameSpawnX%
+    globalvar "barrier2Z" set %var.global/gameSpawnZ%
+    globalvar "barrier2X" inc %random.decimal/-6.0 6.0%
+    globalvar "barrier2Z" inc %random.decimal/-6.0 6.0%
+}

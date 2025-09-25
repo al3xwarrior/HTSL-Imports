@@ -1,6 +1,0 @@
-if or (inRegion "deposit1", inRegion "deposit2") {
-
-} else {
-    exit
-}
-

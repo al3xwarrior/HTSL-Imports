@@ -1,0 +1,4 @@
+globalvar "gameSpawnX" set "%player.pos.x%"
+globalvar "gameSpawnY" set "%player.pos.y%"
+globalvar "gameSpawnZ" set "%player.pos.z%"
+chat "Game spawn set to %var.global/gameSpawnX%, %var.global/gameSpawnY%, %var.global/gameSpawnZ%"

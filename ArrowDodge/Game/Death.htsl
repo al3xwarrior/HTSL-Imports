@@ -1,0 +1,22 @@
+title "&c&lGame Over!" "&7You have died!" 0 2 1
+chat "&aYou are automatically re-queued for the next game. Type /queue to leave the queue."
+
+if (placeholder %player.team.players/Playing% == 3) {
+    globalvar "3rd" set %player.name%
+}
+if (placeholder %player.team.players/Playing% == 2) {
+    globalvar "2nd" set %player.name%
+}
+if (placeholder %player.team.players/Playing% == 1) {
+    globalvar "1st" set %player.name%
+}
+
+setTeam "Lobby"
+
+tp "house_spawn" "0 0 0" true
+sound "Cat Meow" 0.7 0.5 "invokers_location"
+
+globalvar "eliminatedname" set %player.name%
+globalvar "timeeliminated" set 120
+globalvar "timeeliminated" dec %var.global/timer%
+function "ElimBroadcast" true

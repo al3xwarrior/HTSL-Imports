@@ -1,0 +1,2 @@
+chat "&8[&4☠&8] &c%var.global/eliminatedname% &7has been eliminated! (Died @ %var.global/timeeliminated%s)"
+sound "Note Bass Drum" 0.7 0.7 "invokers_location"

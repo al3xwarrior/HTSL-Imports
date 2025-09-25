@@ -1,0 +1,83 @@
+
+
+// Barrier 1
+if () {
+// Set starting position (top-left of 3x3 grid)
+globalvar "dropX" set "%var.global/barrier1X%"
+globalvar "dropX" dec 0.4
+globalvar "dropZ" set "%var.global/barrier1Z%"
+globalvar "dropZ" dec 0.4
+// First row (3 blocks)
+globalvar "dropZ" set "%var.global/barrier1Z%"
+globalvar "dropZ" dec 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier1Y% %var.global/dropZ%" false true false false 2 100
+globalvar "dropZ" inc 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier1Y% %var.global/dropZ%" false true false false 2 100
+globalvar "dropZ" inc 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier1Y% %var.global/dropZ%" false true false false 2 100
+}
+if () {
+// Second row (3 blocks)
+globalvar "dropX" inc 0.4
+globalvar "dropZ" set "%var.global/barrier1Z%"
+globalvar "dropZ" dec 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier1Y% %var.global/dropZ%" false true false false 2 100
+globalvar "dropZ" inc 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier1Y% %var.global/dropZ%" false true false false 2 100
+globalvar "dropZ" inc 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier1Y% %var.global/dropZ%" false true false false 2 100
+}
+if () {
+// Third row (3 blocks)
+globalvar "dropX" inc 0.4
+globalvar "dropZ" set "%var.global/barrier1Z%"
+globalvar "dropZ" dec 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier1Y% %var.global/dropZ%" false true false false 2 100
+globalvar "dropZ" inc 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier1Y% %var.global/dropZ%" false true false false 2 100
+globalvar "dropZ" inc 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier1Y% %var.global/dropZ%" false true false false 2 100
+}
+
+// Barrier 2
+if () {
+// Set starting position (top-left of 3x3 grid)
+globalvar "dropX" set "%var.global/barrier2X%"
+globalvar "dropX" dec 0.4
+globalvar "dropZ" set "%var.global/barrier2Z%"
+globalvar "dropZ" dec 0.4
+// First row (3 blocks)
+globalvar "dropZ" set "%var.global/barrier2Z%"
+globalvar "dropZ" dec 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier2Y% %var.global/dropZ%" false true false false 2 100
+globalvar "dropZ" inc 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier2Y% %var.global/dropZ%" false true false false 2 100
+globalvar "dropZ" inc 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier2Y% %var.global/dropZ%" false true false false 2 100
+}
+if () {
+// Second row (3 blocks)
+globalvar "dropX" inc 0.4
+globalvar "dropZ" set "%var.global/barrier2Z%"
+globalvar "dropZ" dec 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier2Y% %var.global/dropZ%" false true false false 2 100
+globalvar "dropZ" inc 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier2Y% %var.global/dropZ%" false true false false 2 100
+globalvar "dropZ" inc 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier2Y% %var.global/dropZ%" false true false false 2 100
+}
+if () {
+// Third row (3 blocks)
+globalvar "dropX" inc 0.4
+globalvar "dropZ" set "%var.global/barrier2Z%"
+globalvar "dropZ" dec 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier2Y% %var.global/dropZ%" false true false false 2 100
+globalvar "dropZ" inc 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier2Y% %var.global/dropZ%" false true false false 2 100
+globalvar "dropZ" inc 0.4
+dropItem "arrow_barrier" "custom_coordinates" "%var.global/dropX% %var.global/barrier2Y% %var.global/dropZ%" false true false false 2 100
+}
+
+pause 1
+
+// COPY AND PASTE
