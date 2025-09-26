@@ -1,6 +1,8 @@
 title "&c&lGame Over!" "&7You have died!" 0 2 1
 chat "&aYou are automatically re-queued for the next game. Type /queue to leave the queue."
 
+var "arrowsDodged" inc %var.global/arrowsDodged% true
+
 if (placeholder %player.team.players/Playing% == 3) {
     globalvar "3rd" set %player.name%
 }

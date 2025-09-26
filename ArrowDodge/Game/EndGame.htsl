@@ -13,15 +13,15 @@ chat "&83rd: &e%var.global/3rd%"
 chat "&7&m-----------------------------&a"
 
 if (globalvar "1st" == "%player.name%") {
+    var "wins" inc 1 true
     title "&6&lCongrats!" "&7You were the last player standing!" 0 2 1
     exit
 }
 if (globalvar "2nd" == "%player.name%") {
-    title "&7&lSo close!" "&7You were the second last player standing!"
+    title "&6&lCongrats!" "&7You were the second last player standing!"
     exit
 }
 if (globalvar "3rd" == "%player.name%") {
-    title "&7&lNice!" "&7You were the third last player standing!"
-    var "wins" inc 1 true
+    title "&6&lCongrats!" "&7You were the third last player standing!"
     exit
 }

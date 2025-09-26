@@ -1,3 +1,5 @@
+// REIMPORT THIS
+
 pause 1
 
 if (hasItem "fallingArrow" metadata null anyAmount) {
