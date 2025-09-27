@@ -1,16 +1,22 @@
+sound "Level Up" 0.7 1 "invokers_location"
+
+chat "&7&m-----------------------------"
+chat "&6&lRound Over!"
+chat "&a%var.global/arrowsDodged% &7arrows were dropped!"
+if (placeholder %player.team.players/Playing% > 0 0) {
+    chat "&eMultiple players were left standing!"
+} else {
+    chat "&61st: &e%var.global/1st%"
+    chat "&72nd: &e%var.global/2nd%"
+    chat "&83rd: &e%var.global/3rd%"
+}
+chat "&7&m-----------------------------&a"
+
 if (inRegion "gameRegion") {
     tp "house_spawn" "0 0 0" true
 }
 
 setTeam "Lobby"
-
-chat "&7&m-----------------------------"
-chat "&6&lRound Over!"
-chat "&a%var.global/arrowsDodged% &7arrows were dropped!"
-chat "&61st: &e%var.global/1st%"
-chat "&72nd: &e%var.global/2nd%"
-chat "&83rd: &e%var.global/3rd%"
-chat "&7&m-----------------------------&a"
 
 if (globalvar "1st" == "%player.name%") {
     var "wins" inc 1 true

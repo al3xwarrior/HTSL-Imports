@@ -1,5 +1,9 @@
 // gameSpawnX, gameSpawnZ
 
+if (globalvar "timer" > 116 0) {
+    exit
+}
+
 globalvar "spawnY" set "%var.global/gameSpawnY%"
 globalvar "spawnY" inc 10
 

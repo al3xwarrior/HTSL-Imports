@@ -2,8 +2,10 @@
 
 pause 1
 
-if (hasItem "fallingArrow" metadata null anyAmount) {
-    removeItem "fallingArrow"
+if (hasItem null "Item Type" "Anywhere" "Any Amount") {
+    removeItem null
+} else {
+    exit
 }
 
 var "distX" set %var.global/barrier1X%
