@@ -1,0 +1,15 @@
+globalvar "y_acceleration" dec 0.05D false
+if (globalvar "y_acceleration" < -0.4D) {
+    globalvar "y_acceleration" set -0.4D
+}
+
+globalvar "bird_y" inc %var.global/y_acceleration%
+if (globalvar "bird_y" < 104.1D) {
+    globalvar "bird_y" set 104.1D
+}
+
+dropItem "Items/flappybird" "custom_coordinates" "1.5 %var.global/bird_y% -9.3" false true false false 1 100
+
+pause 1
+
+// COPY + PASTE
