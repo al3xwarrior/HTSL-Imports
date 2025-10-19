@@ -1,0 +1,27 @@
+sound "Drink" 0.7 1 "invokers_location"
+pause 5
+sound "Drink" 0.7 1.2 "invokers_location"
+pause 5
+sound "Drink" 0.7 1.4 "invokers_location"
+
+var "potion_x" set %player.pos.x%
+var "potion_y" set %player.pos.y%
+var "potion_y" inc 1.1D
+var "potion_z" set %player.pos.z%
+
+if () {
+    dropItem "StrengthEffect1" "custom_coordinates" "%var.player/potion_x% %var.player/potion_y% %var.player/potion_z%" true true false false 20 100
+    dropItem "StrengthEffect1" "custom_coordinates" "%var.player/potion_x% %var.player/potion_y% %var.player/potion_z%" true true false false 20 100
+    dropItem "StrengthEffect1" "custom_coordinates" "%var.player/potion_x% %var.player/potion_y% %var.player/potion_z%" true true false false 20 100
+    dropItem "StrengthEffect1" "custom_coordinates" "%var.player/potion_x% %var.player/potion_y% %var.player/potion_z%" true true false false 20 100
+}
+if () {
+    dropItem "StrengthEffect2" "custom_coordinates" "%var.player/potion_x% %var.player/potion_y% %var.player/potion_z%" true true false false 20 100
+    dropItem "StrengthEffect2" "custom_coordinates" "%var.player/potion_x% %var.player/potion_y% %var.player/potion_z%" true true false false 20 100
+    dropItem "StrengthEffect2" "custom_coordinates" "%var.player/potion_x% %var.player/potion_y% %var.player/potion_z%" true true false false 20 100
+    dropItem "StrengthEffect2" "custom_coordinates" "%var.player/potion_x% %var.player/potion_y% %var.player/potion_z%" true true false false 20 100
+}
+
+sound "Orb Pickup" 0.7 2.0 "invokers_location"
+
+applyPotion "Blindness" 1 1 true true

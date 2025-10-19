@@ -1,0 +1,6 @@
+loop 15 index {
+    if () {
+    dropItem "fire" "custom_coordinates" {"^ ^1.5 ^" + (index*0.5)} false true false false 25 100
+    pause 1
+    }
+}

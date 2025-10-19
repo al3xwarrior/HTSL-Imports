@@ -1,0 +1,65 @@
+// if (hasPermission "Fly") {
+//     exit
+// }
+
+var "fly_effect_x" set %player.pos.x%
+var "fly_effect_y" set %player.pos.y%
+var "fly_effect_z" set %player.pos.z%
+
+if () {
+    // Left
+    var "fly_x" set %var.player/fly_effect_x%
+    var "fly_z" set %var.player/fly_effect_z%
+    var "fly_x" dec 0.8D
+    dropItem "FlyEffect1" "custom_coordinates" "%var.player/fly_x% %var.player/fly_effect_y% %var.player/fly_z%" false true false false 15 100
+
+    // Right
+    var "fly_x" set %var.player/fly_effect_x%
+    var "fly_z" set %var.player/fly_effect_z%
+    var "fly_x" inc 0.8D
+    dropItem "FlyEffect1" "custom_coordinates" "%var.player/fly_x% %var.player/fly_effect_y% %var.player/fly_z%" false true false false 15 100
+
+    // Forward
+    var "fly_x" set %var.player/fly_effect_x%
+    var "fly_z" set %var.player/fly_effect_z%
+    var "fly_z" dec 0.8D
+    dropItem "FlyEffect1" "custom_coordinates" "%var.player/fly_x% %var.player/fly_effect_y% %var.player/fly_z%" false true false false 15 100
+
+    // Back
+    var "fly_x" set %var.player/fly_effect_x%
+    var "fly_z" set %var.player/fly_effect_z%
+    var "fly_z" inc 0.8D
+    dropItem "FlyEffect1" "custom_coordinates" "%var.player/fly_x% %var.player/fly_effect_y% %var.player/fly_z%" false true false false 15 100
+}
+
+if () {
+    // Forward Left
+    var "fly_x" set %var.player/fly_effect_x%
+    var "fly_z" set %var.player/fly_effect_z%
+    var "fly_x" dec 0.65D
+    var "fly_z" inc 0.65D
+    dropItem "FlyEffect2" "custom_coordinates" "%var.player/fly_x% %var.player/fly_effect_y% %var.player/fly_z%" false true false false 15 100
+
+    // Forward Right
+    var "fly_x" set %var.player/fly_effect_x%
+    var "fly_z" set %var.player/fly_effect_z%
+    var "fly_x" inc 0.65D
+    var "fly_z" inc 0.65D
+    dropItem "FlyEffect2" "custom_coordinates" "%var.player/fly_x% %var.player/fly_effect_y% %var.player/fly_z%" false true false false 15 100
+
+    // Backward Left
+    var "fly_x" set %var.player/fly_effect_x%
+    var "fly_z" set %var.player/fly_effect_z%
+    var "fly_x" inc 0.65D
+    var "fly_z" dec 0.65D
+    dropItem "FlyEffect2" "custom_coordinates" "%var.player/fly_x% %var.player/fly_effect_y% %var.player/fly_z%" false true false false 15 100
+
+    // Backward Right
+    var "fly_x" set %var.player/fly_effect_x%
+    var "fly_z" set %var.player/fly_effect_z%
+    var "fly_x" dec 0.65D
+    var "fly_z" dec 0.65D
+    dropItem "FlyEffect2" "custom_coordinates" "%var.player/fly_x% %var.player/fly_effect_y% %var.player/fly_z%" false true false false 15 100
+}
+
+sound "Bat Takeoff" 0.7 1 "invokers_location"

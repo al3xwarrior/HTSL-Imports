@@ -1,0 +1,82 @@
+if () {
+// --- 360° / 0° ---
+dropItem "PortalEffect1" "custom_coordinates" "-65.5 167.0 -38.5" false true false false 20 100
+pause 1
+// 345°
+dropItem "PortalEffect2" "custom_coordinates" "-65.57 167.0 -39.02" false true false false 20 100
+pause 1
+// 330°
+dropItem "PortalEffect1" "custom_coordinates" "-65.77 167.0 -39.5" false true false false 20 100
+pause 1
+// 315°
+dropItem "PortalEffect2" "custom_coordinates" "-66.09 167.0 -39.91" false true false false 20 100
+pause 1
+// 300°
+dropItem "PortalEffect1" "custom_coordinates" "-66.5 167.0 -40.23" false true false false 20 100
+pause 1
+}
+if () {
+// 285°
+dropItem "PortalEffect2" "custom_coordinates" "-66.98 167.0 -40.43" false true false false 20 100
+pause 1
+// 270°
+dropItem "PortalEffect1" "custom_coordinates" "-67.5 167.0 -40.5" false true false false 20 100
+pause 1
+// 255°
+dropItem "PortalEffect2" "custom_coordinates" "-68.02 167.0 -40.43" false true false false 20 100
+pause 1
+// 240°
+dropItem "PortalEffect1" "custom_coordinates" "-68.5 167.0 -40.23" false true false false 20 100
+pause 1
+// 225°
+dropItem "PortalEffect2" "custom_coordinates" "-68.91 167.0 -39.91" false true false false 20 100
+pause 1
+}
+if () {
+// 210°
+dropItem "PortalEffect1" "custom_coordinates" "-69.23 167.0 -39.5" false true false false 20 100
+pause 1
+// 195°
+dropItem "PortalEffect2" "custom_coordinates" "-69.43 167.0 -39.02" false true false false 20 100
+pause 1
+// 180°
+dropItem "PortalEffect1" "custom_coordinates" "-69.5 167.0 -38.5" false true false false 20 100
+pause 1
+// 165°
+dropItem "PortalEffect2" "custom_coordinates" "-69.43 167.0 -37.98" false true false false 20 100
+pause 1
+// 150°
+dropItem "PortalEffect1" "custom_coordinates" "-69.23 167.0 -37.5" false true false false 20 100
+pause 1
+}
+if () {
+// 120°
+dropItem "PortalEffect2" "custom_coordinates" "-68.91 167.0 -37.09" false true false false 20 100
+pause 1
+// 120°
+dropItem "PortalEffect1" "custom_coordinates" "-68.5 167.0 -36.77" false true false false 20 100
+pause 1
+// 105°
+dropItem "PortalEffect2" "custom_coordinates" "-68.02 167.0 -36.57" false true false false 20 100
+pause 1
+// 90°
+dropItem "PortalEffect1" "custom_coordinates" "-67.5 167.0 -36.5" false true false false 20 100
+pause 1
+// 75°
+dropItem "PortalEffect2" "custom_coordinates" "-66.98 167.0 -36.57" false true false false 20 100
+pause 1
+}
+if () {
+// 60°
+dropItem "PortalEffect1" "custom_coordinates" "-66.5 167.0 -36.77" false true false false 20 100
+pause 1
+// 45°
+dropItem "PortalEffect2" "custom_coordinates" "-66.09 167.0 -37.09" false true false false 20 100
+pause 1
+// 30°
+dropItem "PortalEffect1" "custom_coordinates" "-65.77 167.0 -37.5" false true false false 20 100
+pause 1
+// 15°
+dropItem "PortalEffect2" "custom_coordinates" "-65.57 167.0 -37.98" false true false false 20 100
+pause 1
+}

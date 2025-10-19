@@ -1,0 +1,96 @@
+var "xPos" set %player.pos.x%
+var "zPos" set %player.pos.z%
+var "yaw" set %player.pos.yaw%
+
+// Default facing South
+var "offx" set 0D
+var "offz" set -1D
+
+// South-Southwest
+if (var "yaw" >= 11.25, var "yaw" < 33.75) {
+    var "offx" set 0.38
+    var "offz" set -0.92
+}
+// Southwest
+if (var "yaw" >= 33.75, var "yaw" < 56.25) {
+    var "offx" set 0.71
+    var "offz" set -0.71
+}
+// West-Southwest
+if (var "yaw" >= 56.25, var "yaw" < 78.75) {
+    var "offx" set 0.92
+    var "offz" set -0.38
+}
+// West
+if (var "yaw" >= 78.75, var "yaw" < 101.25) {
+    var "offx" set 1.0
+    var "offz" set 0.0
+}
+// West-Northwest
+if (var "yaw" >= 101.25, var "yaw" < 123.75) {
+    var "offx" set 0.92
+    var "offz" set 0.38
+}
+// Northwest
+if (var "yaw" >= 123.75, var "yaw" < 146.25) {
+    var "offx" set 0.71
+    var "offz" set 0.71
+}
+// North-Northwest
+if (var "yaw" >= 146.25, var "yaw" < 168.75) {
+    var "offx" set 0.38
+    var "offz" set 0.92
+}
+// North
+if (var "yaw" >= 168.75) {
+    var "offx" set 0.0
+    var "offz" set 1.0
+}
+if (var "yaw" <= -168.75) {
+    var "offx" set 0.0
+    var "offz" set 1.0
+}
+// North-Northeast
+if (var "yaw" < -146.25, var "yaw" >= -168.75) {
+    var "offx" set -0.38
+    var "offz" set 0.92
+}
+// Northeast
+if (var "yaw" < -123.75, var "yaw" >= -146.25) {
+    var "offx" set -0.71
+    var "offz" set 0.71
+}
+// East-Northeast
+if (var "yaw" < -101.25, var "yaw" >= -123.75) {
+    var "offx" set -0.92
+    var "offz" set 0.38
+}
+// East
+if (var "yaw" < -78.75, var "yaw" >= -101.25) {
+    var "offx" set -1.0
+    var "offz" set 0.0
+}
+// East-Southeast
+if (var "yaw" < -56.25, var "yaw" >= -78.75) {
+    var "offx" set -0.92
+    var "offz" set -0.38
+}
+// Southeast
+if (var "yaw" < -33.75, var "yaw" >= -56.25) {
+    var "offx" set -0.71
+    var "offz" set -0.71
+}
+// South-Southeast
+if (var "yaw" < -11.25, var "yaw" >= -33.75) {
+    var "offx" set -0.38
+    var "offz" set -0.92
+}
+// (Default is South for -11.25 < yaw < 11.25)
+
+// Compute final position
+var "behind_x" set %var.player/xPos%D
+var "behind_z" set %var.player/zPos%D
+var "offx" mult 1.5D
+var "offz" mult 1.5D
+var "behind_x" inc %var.player/offx%D
+var "behind_z" inc %var.player/offz%D
