@@ -1,0 +1,24 @@
+if (var "monster1hp" <= 0, var "monster2hp" <= 0, var "monster3hp" <= 0) {
+    var "monster1hp" set 40
+    var "monster1xpos" set -97.5
+    var "monster1ypos" set 115.0
+    var "monster1zpos" set -48.5
+    var "monster2hp" set 20
+    var "monster2xpos" set -56.5
+    var "monster2ypos" set 115.0
+    var "monster2zpos" set -46.5
+    var "monster3hp" set 15
+    var "monster3xpos" set -58.5
+    var "monster3ypos" set 115.0
+    var "monster3zpos" set -22.5
+    var "monster4hp" set 25
+    var "monster4xpos" set -83.5
+    var "monster4ypos" set 115.0
+    var "monster4zpos" set -21.5
+    exit
+}
+
+changeVelocity 0 4 -10
+chat "&cYou must defeat all the monsters before proceeding!"
+sound "Villager No" 0.7 0.5 "invokers_location"
+applyPotion "Blindness" 1 1 true true

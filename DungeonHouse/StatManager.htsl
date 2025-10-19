@@ -1,0 +1,21 @@
+var "maxhealth" set 10
+var "healthregen" set 1
+var "damage" set 1
+var "speed" set 0
+var "maxmana" set 20
+var "manaregen" set 1
+
+function "CalculateItemStats" false
+
+if (var "health" < %var.player/maxhealth%) {
+    var "health" inc %var.player/healthregen% true
+} else {
+    var "health" set %var.player/maxhealth%
+}
+if (var "mana" < %var.player/maxmana%) {
+    var "mana" inc %var.player/manaregen% true
+} else {
+    var "mana" set %var.player/maxmana%
+}
+
+actionBar "&c%var.player/health%❤ &7/ &c%var.player/maxhealth%❤ &8(&7+%var.player/healthregen%❤/s&8) &r &r &r &r &4%var.player/damage%&l⚔&r &r &r &r &r &b%var.player/mana%✦ &7/ &b%var.player/maxmana%✦ &8(&7+%var.player/manaregen%✦/s&8)"

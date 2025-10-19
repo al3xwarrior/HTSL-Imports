@@ -1,0 +1,34 @@
+applyPotion "Blindness" 2 1 true true
+pause 2
+tp "custom_coordinates" "-100.5 115.0 -93.5" false
+sound "Enderman Teleport" 0.7 2.0 "invokers_location"
+
+stat "dungeon_stage" set 1
+
+// Monster Stats
+if () {
+var "monster1hp" set 10
+var "monster1xpos" set -105.5
+var "monster1ypos" set 115.0
+var "monster1zpos" set -85.5
+var "monster2hp" set 10
+var "monster2xpos" set -93.5
+var "monster2ypos" set 115.0
+var "monster2zpos" set -79.5
+var "monster3hp" set 15
+var "monster3xpos" set -102.5
+var "monster3ypos" set 115.0
+var "monster3zpos" set -69.5
+}
+
+title "&eWelcome to" "&f&kThe Broken Prison!" 1 3 2
+pause 40
+title "&eWelcome to" "&fThe &kBroken Prison!" 0 3 2
+sound "Anvil Use" 0.7 0.6 "invokers_location"
+pause 14
+title "&eWelcome to" "&fThe Broken &kPrison!" 0 3 2
+pause 14
+title "&eWelcome to" "&fThe Broken Prison!" 0 3 2
+pause 60
+title "&r" "&eDefeat the Skeletons!" 0 2 1
+sound "Skeleton Idle" 1.2 0.6 "invokers_location"
