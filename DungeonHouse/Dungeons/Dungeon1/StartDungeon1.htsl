@@ -3,7 +3,8 @@ pause 2
 tp "custom_coordinates" "-100.5 115.0 -93.5" false
 sound "Enderman Teleport" 0.7 2.0 "invokers_location"
 
-stat "dungeon_stage" set 1
+var "dungeon_stage" set 1
+var "gold_to_collect" set 0
 
 // Monster Stats
 if () {
@@ -29,6 +30,6 @@ pause 14
 title "&eWelcome to" "&fThe Broken &kPrison!" 0 3 2
 pause 14
 title "&eWelcome to" "&fThe Broken Prison!" 0 3 2
-pause 60
+pause 40
 title "&r" "&eDefeat the Skeletons!" 0 2 1
 sound "Skeleton Idle" 1.2 0.6 "invokers_location"

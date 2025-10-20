@@ -1,0 +1,3 @@
+// triggered when a monster is killed
+
+chat "&aYou got &6%var.player/random_gold%⛃ &afrom that Monster!"

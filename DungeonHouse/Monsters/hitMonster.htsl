@@ -1,8 +1,8 @@
-define monsterNumber 3
+define monsterNumber 4
 
 if (var {"monster"+monsterNumber+"hp"} <= 0) {
     sound "Cat Meow" 0.7 0.5 "invokers_location"
-    chat "&cThat monster has already been defeated!"
+    chat "&cThat monster has already been defeated! &4&l☠"
     exit
 }
 
@@ -14,13 +14,17 @@ if (var {"monster"+monsterNumber+"hp"} <= 0) {
     sound "Skeleton Death" 0.7 1 "invokers_location"
     function "Dungeon1SkeletonDrop" false
 
-    dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
-    dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
-    dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
-    dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
-    dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    // Change Gold Dropped
+    var "random_gold" set %random.whole/1 10%
+    var "goldtocollect" inc %var.player/random_gold%
 
-    title "&cMonster Defeated" "&40❤" 0 2 1
+    dropItem "../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    dropItem "../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    dropItem "../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    dropItem "../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    dropItem "../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+
+    title "&r" "&4☠ &cMonster Defeated &4☠" 0 2 1
 
     function "KillMonster" false
     exit

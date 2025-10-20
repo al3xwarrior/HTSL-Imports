@@ -1,3 +1,7 @@
+if or (var "dungeon_stage" > 1, gamemode "Creative") {
+    exit
+}
+
 if (var "monster1hp" <= 0, var "monster2hp" <= 0, var "monster3hp" <= 0) {
     var "monster1hp" set 40
     var "monster1xpos" set -97.5
@@ -15,6 +19,7 @@ if (var "monster1hp" <= 0, var "monster2hp" <= 0, var "monster3hp" <= 0) {
     var "monster4xpos" set -83.5
     var "monster4ypos" set 115.0
     var "monster4zpos" set -21.5
+    var "dungeon_stage" set 2
     exit
 }
 

@@ -1,4 +1,4 @@
-define monsterNumber 3
+define monsterNumber 1
 
 if (var {"monster"+monsterNumber+"hp"} <= 0) {
     sound "Cat Meow" 0.7 0.5 "invokers_location"
@@ -11,8 +11,8 @@ function "HurtMonster" false
 
 if (var {"monster"+monsterNumber+"hp"} <= 0) {
     // Change Sound + Drop Function
-    sound "Skeleton Death" 0.7 1 "invokers_location"
-    function "Dungeon1SkeletonDrop" false
+    sound "Irongolem Death" 0.7 1 "invokers_location"
+    function "Dungeon1BossDrop" false
 
     dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
     dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
@@ -20,23 +20,33 @@ if (var {"monster"+monsterNumber+"hp"} <= 0) {
     dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
     dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
 
-    title "&cMonster Defeated" "&40❤" 0 2 1
+    title "&6Boss Defeated" "&40❤" 0 2 1
 
     function "KillMonster" false
+
+    chat "&f&lWARDEN: &fNoooo!!"
+    function "FinishDungeon" false
     exit
 }
 
 // Change Monster Hurt Sound
-sound "Skeleton Hurt" 0.7 1 "invokers_location"
+sound "Irongolem Hit" 0.7 1 "invokers_location"
 
 title "&r" {"&c%var.player/monster"+monsterNumber+"hp%❤"} 0 1 1
 
 // Change Chance and Damage Values
-var "fightchance" set %random.whole/1 5%
-var "monsterdamage" set %random.whole/2 7%
+var "fightchance" set %random.whole/1 11%
+var "monsterdamage" set %random.whole/4 9%
 
 if (var "fightchance" == 1) {
-    sound "Hurt Flesh" 0.7 1 "invokers_location"
-    var "health" dec %var.player/monsterdamage%
-    title "&4-%var.player/monsterdamage%❤" {"&c%var.player/monster"+monsterNumber+"hp%❤"} 0 1 1
+    
+} else {
+    exit
 }
+
+sound "Hurt Flesh" 0.7 1 "invokers_location"
+sound "Irongolem Throw" 1.5 1 "invokers_location"
+applyPotion "Blindness" 1 1 true true
+var "health" dec %var.player/monsterdamage%
+title "&4-%var.player/monsterdamage%❤" {"&c%var.player/monster"+monsterNumber+"hp%❤"} 0 1 1
+changeVelocity 0 9 -12
