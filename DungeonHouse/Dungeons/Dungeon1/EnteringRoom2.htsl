@@ -23,7 +23,7 @@ if (var "monster1hp" <= 0, var "monster2hp" <= 0, var "monster3hp" <= 0) {
     exit
 }
 
-changeVelocity 0 4 -10
+changeVelocity -7 4 7
 chat "&cYou must defeat all the monsters before proceeding!"
 sound "Villager No" 0.7 0.5 "invokers_location"
 applyPotion "Blindness" 1 1 true true

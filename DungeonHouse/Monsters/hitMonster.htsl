@@ -1,4 +1,4 @@
-define monsterNumber 4
+define monsterNumber 3
 
 if (var {"monster"+monsterNumber+"hp"} <= 0) {
     sound "Cat Meow" 0.7 0.5 "invokers_location"
@@ -11,11 +11,13 @@ function "HurtMonster" false
 
 if (var {"monster"+monsterNumber+"hp"} <= 0) {
     // Change Sound + Drop Function
-    sound "Skeleton Death" 0.7 1 "invokers_location"
-    function "Dungeon1SkeletonDrop" false
+    sound "Skeleton Death" 0.7 0.6 "invokers_location"
+    function "Dungeon2PigmanDrop" false
+
+    var {"monster"+monsterNumber+"hp"} set 0
 
     // Change Gold Dropped
-    var "random_gold" set %random.whole/1 10%
+    var "random_gold" set %random.whole/5 20%
     var "goldtocollect" inc %var.player/random_gold%
 
     dropItem "../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
@@ -31,13 +33,13 @@ if (var {"monster"+monsterNumber+"hp"} <= 0) {
 }
 
 // Change Monster Hurt Sound
-sound "Skeleton Hurt" 0.7 1 "invokers_location"
+sound "Skeleton Hurt" 0.7 0.6 "invokers_location"
 
 title "&r" {"&c%var.player/monster"+monsterNumber+"hp%❤"} 0 1 1
 
 // Change Chance and Damage Values
 var "fightchance" set %random.whole/1 5%
-var "monsterdamage" set %random.whole/2 7%
+var "monsterdamage" set %random.whole/10 18%
 
 if (var "fightchance" == 1) {
     sound "Hurt Flesh" 0.7 1 "invokers_location"

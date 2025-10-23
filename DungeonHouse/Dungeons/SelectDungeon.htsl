@@ -1,0 +1,16 @@
+// Change This
+var "dungselected" set 2
+closeMenu
+
+random {
+    chat "&f&lDUNGEON MASTER: &fGreat choice. Enter the &dportal &fwhen you're ready..."
+    chat "&f&lDUNGEON MASTER: &fAn excellent choice! Step through the &dportal &fto begin your adventure..."
+    chat "&f&lDUNGEON MASTER: &fYou've chosen wisely. Walk through the &dportal &fto start your quest..."
+    chat "&f&lDUNGEON MASTER: &fA fine selection! Proceed through the &dportal &fto embark on your journey..."
+    chat "&f&lDUNGEON MASTER: &fBrave choice! Enter the &dportal &fto face the challenges ahead..."
+    chat "&f&lDUNGEON MASTER: &fWell chosen! Step into the &dportal &fto begin your dungeon crawl..."
+    chat "&f&lDUNGEON MASTER: &fA worthy choice! Walk through the &dportal &fto start your adventure..."
+    chat "&f&lDUNGEON MASTER: &fExcellent pick! Proceed through the &dportal &fto embark on your quest..."
+    chat "&f&lDUNGEON MASTER: &fA bold choice! Enter the &dportal &fto face the trials ahead..."
+    chat "&f&lDUNGEON MASTER: &fSplendid choice! Step into the &dportal &fto begin your dungeon journey..."
+}

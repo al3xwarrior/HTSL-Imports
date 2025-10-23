@@ -1,0 +1,178 @@
+
+/*
+if (hasItem "plastic_knife" metadata "Hand" anyAmount) {
+    var "damage" inc 1
+}
+
+if (hasItem "prisoner_arm" metadata "Hand" anyAmount) {
+    var "damage" inc 2
+}
+
+if (hasItem "guard_baton" metadata "Hand" anyAmount) {
+    var "damage" inc 3
+}
+
+if (hasItem "strong_prisoner_arm" metadata "Hand" anyAmount) {
+    var "damage" inc 3
+    var "maxhealth" inc 1
+}
+
+if (hasItem "cell_key_dagger" metadata "Hand" anyAmount) {
+    var "damage" inc 5
+}
+
+if (hasItem "executioners_axe" metadata "Hand" anyAmount) {
+    var "damage" inc 8
+}
+
+if (hasItem "wardens_fists" metadata "Hand" anyAmount) {
+    var "damage" inc 13
+    // Ability: Ground Slam (Costs 10✦, deals 25 damage to nearby monsters)
+}
+
+if (hasItem "enchanted_wardens_fists" metadata "Hand" anyAmount) {
+    var "damage" inc 28
+    // Ability: Ground Slam (Costs 10✦, deals 60 damage to nearby monsters)
+}
+
+// --- Warden Set ---
+if (hasItem "wardens_boots" metadata "Armor" anyAmount) {
+    var "damage" inc 3
+    var "maxhealth" inc 9
+    var "healthRegen" inc 2
+}
+
+if (hasItem "wardens_chestplate" metadata "Armor" anyAmount) {
+    var "damage" inc 3
+    var "maxhealth" inc 9
+    var "healthRegen" inc 2
+}
+
+if (hasItem "wardens_leggings" metadata "Armor" anyAmount) {
+    var "damage" inc 3
+    var "maxhealth" inc 9
+    var "healthRegen" inc 2
+}
+
+// --- Executioner Set ---
+if (hasItem "executioner_boots" metadata "Armor" anyAmount) {
+    var "damage" inc 1
+    var "maxhealth" inc 5
+    var "healthRegen" inc 1
+}
+
+if (hasItem "executioner_leggings" metadata "Armor" anyAmount) {
+    var "damage" inc 1
+    var "maxhealth" inc 5
+    var "healthRegen" inc 1
+}
+
+if (hasItem "executioner_chestplate" metadata "Armor" anyAmount) {
+    var "damage" inc 1
+    var "maxhealth" inc 5
+    var "healthRegen" inc 1
+}
+
+if (hasItem "executioner_helmet" metadata "Armor" anyAmount) {
+    var "damage" inc 1
+    var "maxhealth" inc 5
+    var "healthRegen" inc 1
+}
+
+// --- Reinforced Riot Set ---
+if (hasItem "reinforced_riot_boots" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 3
+    var "healthRegen" inc 2
+}
+
+if (hasItem "reinforced_riot_leggings" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 3
+    var "healthRegen" inc 2
+}
+
+if (hasItem "reinforced_riot_chestplate" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 3
+    var "healthRegen" inc 2
+}
+
+if (hasItem "reinforced_riot_helmet" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 3
+    var "healthRegen" inc 2
+}
+
+// --- Rusty Chainmail Set ---
+if (hasItem "rusty_chainmail_boots" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 2
+    var "healthRegen" inc 1
+}
+
+if (hasItem "rusty_chainmail_leggings" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 2
+    var "healthRegen" inc 1
+}
+
+if (hasItem "rusty_chainmail_chestplate" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 2
+    var "healthRegen" inc 1
+}
+
+if (hasItem "rusty_chainmail_helmet" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 2
+    var "healthRegen" inc 1
+}
+
+// --- Guard Set ---
+if (hasItem "guard_boots" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 3
+}
+
+if (hasItem "guard_leggings" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 3
+}
+
+// BREAK
+// BREAK
+// BREAK
+
+function "CalculateItemStats2" false
+goto function "CalculateItemStats2"
+
+if (hasItem "guard_chestplate" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 3
+}
+
+if (hasItem "guard_helmet" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 3
+}
+
+// --- Torn Prisoner Set ---
+if (hasItem "torn_prisoner_shoes" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 1
+}
+
+if (hasItem "torn_prisoner_pants" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 1
+}
+
+if (hasItem "torn_prisoner_shirt" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 1
+    var "healthRegen" inc 1
+}
+
+if (hasItem "torn_prisoner_cap" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 1
+}
+*/
+
+if (var "petEquipped" == "&fRat") {
+    var "speed" inc 1
+}
+
+if (var "petEquipped" == "&fWarden Eye") {
+    var "damage" inc 4
+}
+
+if (var "petEquipped" == "&fWarden") {
+    var "healthregen" inc 4
+    var "damage" inc 8
+}

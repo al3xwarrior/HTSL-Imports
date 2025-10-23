@@ -1,0 +1,186 @@
+// random roll 1-1000
+var "drop_roll" set %random.whole/1 1000%
+
+// If roll <= 331, player gets nothing (no-drop increased slightly)
+if (var "drop_roll" <= 331) {
+    exit
+}
+
+// Ranges after 331 (332-1000) - lowered chances for each item
+
+// Torn prisoner pieces (each 36/1000 = 3.6%)
+// 332-367 (36/1000 = 3.6%) - Torn Prisoner Shoes
+if (var "drop_roll" > 331, var "drop_roll" <= 367) {
+    giveItem "../../../Items/torn_prisoner_shoes" true "First Avaliable Slot" false
+    chat "&a+Torn Prisoner Shoes"
+    exit
+}
+// 368-403 (36/1000 = 3.6%) - Torn Prisoner Pants
+if (var "drop_roll" > 367, var "drop_roll" <= 403) {
+    giveItem "../../../Items/torn_prisoner_pants" true "First Avaliable Slot" false
+    chat "&a+Torn Prisoner Pants"
+    exit
+}
+// 404-439 (36/1000 = 3.6%) - Torn Prisoner Shirt
+if (var "drop_roll" > 403, var "drop_roll" <= 439) {
+    giveItem "../../../Items/torn_prisoner_shirt" true "First Avaliable Slot" false
+    chat "&a+Torn Prisoner Shirt"
+    exit
+}
+// 440-475 (36/1000 = 3.6%) - Torn Prisoner Cap
+if (var "drop_roll" > 439, var "drop_roll" <= 475) {
+    giveItem "../../../Items/torn_prisoner_cap" true "First Avaliable Slot" false
+    chat "&a+Torn Prisoner Cap"
+    exit
+}
+
+// Misc uncommon items (each 40/1000 = 4.0%)
+// 476-515 (40/1000 = 4.0%) - Plastic Knife
+if (var "drop_roll" > 475, var "drop_roll" <= 515) {
+    giveItem "../../../Items/plastic_knife" true "First Avaliable Slot" false
+    chat "&a+Plastic Knife"
+    exit
+}
+// 516-555 (40/1000 = 4.0%) - Prisoner Arm
+if (var "drop_roll" > 515, var "drop_roll" <= 555) {
+    giveItem "../../../Items/prisoner_arm" true "First Avaliable Slot" false
+    chat "&a+Prisoner Arm"
+    exit
+}
+// 556-595 (40/1000 = 4.0%) - Guard Baton
+if (var "drop_roll" > 555, var "drop_roll" <= 595) {
+    giveItem "../../../Items/guard_baton" true "First Avaliable Slot" false
+    chat "&a+Guard Baton"
+    exit
+}
+// 596-635 (40/1000 = 4.0%) - Strong Prisoner Arm
+if (var "drop_roll" > 595, var "drop_roll" <= 635) {
+    giveItem "../../../Items/strong_prisoner_arm" true "First Avaliable Slot" false
+    chat "&a+Strong Prisoner Arm"
+    exit
+}
+// 636-675 (40/1000 = 4.0%) - Rat Pet
+if (var "drop_roll" > 635, var "drop_roll" <= 675) {
+    giveItem "../../../Items/rat_pet" true "First Avaliable Slot" false
+    chat "&a+Rat Pet"
+    exit
+}
+// 676-715 (40/1000 = 4.0%) - Cell Key Dagger
+if (var "drop_roll" > 675, var "drop_roll" <= 715) {
+    giveItem "../../../Items/cell_key_dagger" true "First Avaliable Slot" false
+    chat "&a+Cell Key Dagger"
+    exit
+}
+
+// Armor sets - each piece has identical rarity (each 16/1000 = 1.6%)
+// 716-731 (16/1000 = 1.6%) - Rusty Chainmail Boots
+if (var "drop_roll" > 715, var "drop_roll" <= 731) {
+    giveItem "../../../Items/rusty_chainmail_boots" true "First Avaliable Slot" false
+    chat "&a+Rusty Chainmail Boots"
+    exit
+}
+// 732-747 (16/1000 = 1.6%) - Rusty Chainmail Leggings
+if (var "drop_roll" > 731, var "drop_roll" <= 747) {
+    giveItem "../../../Items/rusty_chainmail_leggings" true "First Avaliable Slot" false
+    chat "&a+Rusty Chainmail Leggings"
+    exit
+}
+// 748-763 (16/1000 = 1.6%) - Rusty Chainmail Chestplate
+if (var "drop_roll" > 747, var "drop_roll" <= 763) {
+    giveItem "../../../Items/rusty_chainmail_chestplate" true "First Avaliable Slot" false
+    chat "&a+Rusty Chainmail Chestplate"
+    exit
+}
+// 764-779 (16/1000 = 1.6%) - Rusty Chainmail Helmet
+if (var "drop_roll" > 763, var "drop_roll" <= 779) {
+    giveItem "../../../Items/rusty_chainmail_helmet" true "First Avaliable Slot" false
+    chat "&a+Rusty Chainmail Helmet"
+    exit
+}
+
+// 780-795 (16/1000 = 1.6%) - Guard Boots
+if (var "drop_roll" > 779, var "drop_roll" <= 795) {
+    giveItem "../../../Items/guard_boots" true "First Avaliable Slot" false
+    chat "&a+Guard Boots"
+    exit
+}
+// 796-811 (16/1000 = 1.6%) - Guard Leggings
+if (var "drop_roll" > 795, var "drop_roll" <= 811) {
+    giveItem "../../../Items/guard_leggings" true "First Avaliable Slot" false
+    chat "&a+Guard Leggings"
+    exit
+}
+// 812-827 (16/1000 = 1.6%) - Guard Chestplate
+if (var "drop_roll" > 811, var "drop_roll" <= 827) {
+    giveItem "../../../Items/guard_chestplate" true "First Avaliable Slot" false
+    chat "&a+Guard Chestplate"
+    exit
+}
+// 828-843 (16/1000 = 1.6%) - Guard Helmet
+if (var "drop_roll" > 827, var "drop_roll" <= 843) {
+    giveItem "../../../Items/guard_helmet" true "First Avaliable Slot" false
+    chat "&a+Guard Helmet"
+    exit
+}
+
+// 844-859 (16/1000 = 1.6%) - Reinforced Riot Boots
+if (var "drop_roll" > 843, var "drop_roll" <= 859) {
+    giveItem "../../../Items/reinforced_riot_boots" true "First Avaliable Slot" false
+    chat "&a+Reinforced Riot Boots"
+    exit
+}
+// 860-875 (16/1000 = 1.6%) - Reinforced Riot Leggings
+if (var "drop_roll" > 859, var "drop_roll" <= 875) {
+    giveItem "../../../Items/reinforced_riot_leggings" true "First Avaliable Slot" false
+    chat "&a+Reinforced Riot Leggings"
+    exit
+}
+// 876-891 (16/1000 = 1.6%) - Reinforced Riot Chestplate
+if (var "drop_roll" > 875, var "drop_roll" <= 891) {
+    giveItem "../../../Items/reinforced_riot_chestplate" true "First Avaliable Slot" false
+    chat "&a+Reinforced Riot Chestplate"
+    exit
+}
+// 892-907 (16/1000 = 1.6%) - Reinforced Riot Helmet
+if (var "drop_roll" > 891, var "drop_roll" <= 907) {
+    giveItem "../../../Items/reinforced_riot_helmet" true "First Avaliable Slot" false
+    chat "&a+Reinforced Riot Helmet"
+    exit
+}
+
+// 908-923 (16/1000 = 1.6%) - Executioner Boots
+if (var "drop_roll" > 907, var "drop_roll" <= 923) {
+    giveItem "../../../Items/executioner_boots" true "First Avaliable Slot" false
+    chat "&a+Executioner Boots"
+    exit
+}
+// 924-939 (16/1000 = 1.6%) - Executioner Leggings
+if (var "drop_roll" > 923, var "drop_roll" <= 939) {
+    giveItem "../../../Items/executioner_leggings" true "First Avaliable Slot" false
+    chat "&a+Executioner Leggings"
+    exit
+}
+
+function "Dungeon1SkeletonDrop2" false
+goto function "Dungeon1SkeletonDrop2"
+
+// 940-955 (16/1000 = 1.6%) - Executioner Chestplate
+if (var "drop_roll" > 939, var "drop_roll" <= 955) {
+    giveItem "../../../Items/executioner_chestplate" true "First Avaliable Slot" false
+    chat "&a+Executioner Chestplate"
+    exit
+}
+// 956-971 (16/1000 = 1.6%) - Executioner Helmet
+if (var "drop_roll" > 955, var "drop_roll" <= 971) {
+    giveItem "../../../Items/executioner_helmet" true "First Avaliable Slot" false
+    chat "&a+Executioner Helmet"
+    exit
+}
+
+// Executioner's Axe - rarer but not tiny
+// 972-1000 (29/1000 = 2.9%) - Executioner's Axe
+if (var "drop_roll" > 971, var "drop_roll" <= 1000) {
+    giveItem "../../../Items/executioners_axe" true "First Avaliable Slot" false
+    chat "&a+Executioner's Axe"
+    exit
+}

@@ -1,0 +1,74 @@
+define monsterNumber 1
+
+if (var {"monster"+monsterNumber+"hp"} <= 0) {
+    sound "Cat Meow" 0.7 0.5 "invokers_location"
+    chat "&cThat monster has already been defeated!"
+    exit
+}
+
+var {"monster"+monsterNumber+"hp"} dec %var.player/damage%
+function "HurtMonster" false
+
+if (var {"monster"+monsterNumber+"hp"} <= 0) {
+    // Change Sound + Drop Function
+    sound "Donkey Death" 0.7 0.5 "invokers_location"
+    function "Dungeon2BossDrop" false
+
+    dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+
+    title "&6Boss Defeated" "&40❤" 0 2 1
+
+    function "KillMonster" false
+
+    function "FinishDungeon" false
+
+    chat "&c&lGATEKEEPER: &fYou cannot stop the Nether's reach..."
+    pause 25
+    chat "&c&lGATEKEEPER: &fThe gate... will reopen..."
+    exit
+}
+
+// Change Monster Hurt Sound
+sound "Skeleton Hurt" 0.7 0.6 "invokers_location"
+
+title "&r" {"&c%var.player/monster"+monsterNumber+"hp%❤"} 0 1 1
+
+if (var "bossstage" == 1, var "monster1hp" <= 400) {
+    var "bossstage" set 2
+    sound "Wither Spawn" 0.7 1.0 "invokers_location"
+    chat "&c&lGATEKEEPER: &fYou dare push me this far?! Good luck avoiding my &ninvincible&r &fmagma cubes!"
+
+    var "magmacube1_x" set -19.0
+    var "magmacube1_z" set 42.3
+    var "cube1_vel_x" set 0
+    var "cube1_vel_z" set 0
+
+    var "magmacube2_x" set -8.5
+    var "magmacube2_z" set 51.0
+    var "cube2_vel_x" set 0
+    var "cube2_vel_z" set 0
+}
+
+// Change Chance and Damage Values
+var "fightchance" set %random.whole/1 11%
+var "monsterdamage" set %random.whole/12 20%
+
+if (var "fightchance" == 1) {
+    
+} else {
+    exit
+}
+
+sound "Wolf Pant" 0.7 2.0 "invokers_location"
+applyPotion "Blindness" 3 1 true true
+title "&5&kBB&r &d&lDISORIENTED &5&kBB" {"&c%var.player/monster"+monsterNumber+"hp%❤"} 0 1 1
+
+random {
+    tp "custom_coordinates" "-22.9 16 51.5" true
+    tp "custom_coordinates" "-22.3 16 55.5" true
+    tp "custom_coordinates" "-16.5 16 57.5" true
+}

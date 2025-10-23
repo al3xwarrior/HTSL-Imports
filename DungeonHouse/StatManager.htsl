@@ -7,14 +7,17 @@ var "manaregen" set 1
 
 function "CalculateItemStats" false
 
-if (var "health" < %var.player/maxhealth%) {
+var "regencooldown" dec 1
+if (var "regencooldown" <= 0) {
+    var "regencooldown" set 2
     var "health" inc %var.player/healthregen% true
-} else {
+    var "mana" inc %var.player/manaregen% true
+}
+
+if (var "health" > %var.player/maxhealth%) {
     var "health" set %var.player/maxhealth%
 }
-if (var "mana" < %var.player/maxmana%) {
-    var "mana" inc %var.player/manaregen% true
-} else {
+if (var "mana" > %var.player/maxmana%) {
     var "mana" set %var.player/maxmana%
 }
 

@@ -1,0 +1,25 @@
+if or (var "dungeon_stage" > 3, gamemode "Creative") {
+    exit
+}
+
+if (var "monster1hp" <= 0, var "monster2hp" <= 0, var "monster3hp" <= 0) {
+    var "monster1hp" set 150
+    var "monster1xpos" set -100.5
+    var "monster1ypos" set 116.0
+    var "monster1zpos" set 56.5
+    var "bossstage" set 1
+    var "dungeon_stage" set 4
+
+    chat "&f&lWARDEN: &fYou've done well to make it this far..."
+    sound "Irongolem Walk" 0.7 2.0 "invokers_location"
+    pause 40
+    chat "&f&lWARDEN: &fUnfortunately, the final challenge awaits!"
+    sound "Irongolem Walk" 0.7 2.0 "invokers_location"
+
+    exit
+}
+
+changeVelocity 0 4 -8
+chat "&cYou must defeat all the monsters before proceeding!"
+sound "Villager No" 0.7 0.5 "invokers_location"
+applyPotion "Blindness" 1 1 true true

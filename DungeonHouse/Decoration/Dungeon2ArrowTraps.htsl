@@ -1,0 +1,25 @@
+globalvar "d2arrowtrapcd" dec 1
+
+if (globalvar "d2arrowtrapcd" <= 0) {
+    globalvar "d2arrowtrapcd" set 2  
+} else {
+    exit
+}
+
+// (-50.5 - -45.5) 22.5 82.5
+if () {
+    dropItem "../Items/TrapArrow" "custom_coordinates" "-50.5 22.5 82.5" false true false false 20 1
+    dropItem "../Items/TrapArrow" "custom_coordinates" "-49.5 22.5 82.5" false true false false 20 1
+    dropItem "../Items/TrapArrow" "custom_coordinates" "-48.5 22.5 82.5" false true false false 20 1
+    dropItem "../Items/TrapArrow" "custom_coordinates" "-47.5 22.5 82.5" false true false false 20 1
+    dropItem "../Items/TrapArrow" "custom_coordinates" "-46.5 22.5 82.5" false true false false 20 1
+}
+if () {
+    dropItem "../Items/TrapArrow" "custom_coordinates" "-45.5 22.5 82.5" false true false false 20 1
+    dropItem "../Items/TrapArrow" "custom_coordinates" "-50.5 22.5 75.5" false true false false 20 1
+    dropItem "../Items/TrapArrow" "custom_coordinates" "-49.5 22.5 75.5" false true false false 20 1
+    dropItem "../Items/TrapArrow" "custom_coordinates" "-48.5 22.5 75.5" false true false false 20 1
+    dropItem "../Items/TrapArrow" "custom_coordinates" "-47.5 22.5 75.5" false true false false 20 1
+}
+dropItem "../Items/TrapArrow" "custom_coordinates" "-46.5 22.5 75.5" false true false false 20 1
+dropItem "../Items/TrapArrow" "custom_coordinates" "-45.5 22.5 75.5" false true false false 20 1

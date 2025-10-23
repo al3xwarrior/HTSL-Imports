@@ -4,7 +4,9 @@ tp "custom_coordinates" "-100.5 115.0 -93.5" false
 sound "Enderman Teleport" 0.7 2.0 "invokers_location"
 
 var "dungeon_stage" set 1
-var "gold_to_collect" set 0
+var "goldtocollect" set 0
+var "dungeon_start" set %date.unix%
+var "dungeon_id" set 1
 
 // Monster Stats
 if () {

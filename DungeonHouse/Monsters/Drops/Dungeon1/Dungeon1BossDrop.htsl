@@ -1,0 +1,55 @@
+// random roll 1-1000
+var "drop_roll" set %random.whole/1 1000%
+
+// No-drop chance: 1-200 (20%)
+if (var "drop_roll" <= 200) {
+    exit
+}
+
+// Remaining 201-1000 => 800 values split equally across 7 items (as even as possible)
+// Two items get 115 rolls (11.5%), five items get 114 rolls (11.4%)
+// Note: Warden pieces are single-item drops (boots/leggings/chestplate)
+
+// 201-315 (115/1000 = 11.5%) - Wardens Fists
+if (var "drop_roll" > 200, var "drop_roll" <= 315) {
+    giveItem "../../../Items/wardens_fists" true "First Avaliable Slot" false
+    chat "&a+Wardens Fists"
+    exit
+}
+// 316-430 (115/1000 = 11.5%) - Enchanted Wardens Fists
+if (var "drop_roll" > 315, var "drop_roll" <= 430) {
+    giveItem "../../../Items/enchanted_wardens_fists" true "First Avaliable Slot" false
+    chat "&a+Enchanted Wardens Fists"
+    exit
+}
+// 431-544 (114/1000 = 11.4%) - Warden Boots
+if (var "drop_roll" > 430, var "drop_roll" <= 544) {
+    giveItem "../../../Items/wardens_boots" true "First Avaliable Slot" false
+    chat "&a+Warden Boots"
+    exit
+}
+// 545-658 (114/1000 = 11.4%) - Warden Leggings
+if (var "drop_roll" > 544, var "drop_roll" <= 658) {
+    giveItem "../../../Items/wardens_leggings" true "First Avaliable Slot" false
+    chat "&a+Warden Leggings"
+    exit
+}
+// 659-772 (114/1000 = 11.4%) - Warden Chestplate
+if (var "drop_roll" > 658, var "drop_roll" <= 772) {
+    giveItem "../../../Items/wardens_chestplate" true "First Avaliable Slot" false
+    chat "&a+Warden Chestplate"
+    exit
+}
+// 773-886 (114/1000 = 11.4%) - Warden Eye Pet
+if (var "drop_roll" > 772, var "drop_roll" <= 886) {
+    giveItem "../../../Items/warden_eye_pet" true "First Avaliable Slot" false
+    chat "&a+Warden Eye Pet"
+    exit
+}
+// 887-1000 (114/1000 = 11.4%) - Warden Pet
+if (var "drop_roll" > 886, var "drop_roll" <= 1000) {
+    giveItem "../../../Items/warden_pet" true "First Avaliable Slot" false
+    chat "&a+Warden Pet"
+    exit
+}
+
