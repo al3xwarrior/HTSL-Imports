@@ -1,0 +1,137 @@
+
+// if (hasItem "../Items/cell_key_dagger" metadata "Hand" anyAmount) {
+//     removeItem "../Items/cell_key_dagger"
+//     exit
+// }
+// if (hasItem "../Items/enchanted_wardens_fists" metadata "Hand" anyAmount) {
+//     removeItem "../Items/enchanted_wardens_fists"
+//     exit
+// }
+// if (hasItem "../Items/executioners_axe" metadata "Hand" anyAmount) {
+//     removeItem "../Items/executioners_axe"
+//     exit
+// }
+// if (hasItem "../Items/executioner_boots" metadata "Hand" anyAmount) {
+//     removeItem "../Items/executioner_boots"
+//     exit
+// }
+// if (hasItem "../Items/executioner_chestplate" metadata "Hand" anyAmount) {
+//     removeItem "../Items/executioner_chestplate"
+//     exit
+// }
+// if (hasItem "../Items/executioner_helmet" metadata "Hand" anyAmount) {
+//     removeItem "../Items/executioner_helmet"
+//     exit
+// }
+// if (hasItem "../Items/executioner_leggings" metadata "Hand" anyAmount) {
+//     removeItem "../Items/executioner_leggings"
+//     exit
+// }
+// if (hasItem "../Items/guard_baton" metadata "Hand" anyAmount) {
+//     removeItem "../Items/guard_baton"
+//     exit
+// }
+// if (hasItem "../Items/guard_boots" metadata "Hand" anyAmount) {
+//     removeItem "../Items/guard_boots"
+//     exit
+// }
+// if (hasItem "../Items/guard_chestplate" metadata "Hand" anyAmount) {
+//     removeItem "../Items/guard_chestplate"
+//     exit
+// }
+// if (hasItem "../Items/guard_helmet" metadata "Hand" anyAmount) {
+//     removeItem "../Items/guard_helmet"
+//     exit
+// }
+// if (hasItem "../Items/guard_leggings" metadata "Hand" anyAmount) {
+//     removeItem "../Items/guard_leggings"
+//     exit
+// }
+// if (hasItem "../Items/plastic_knife" metadata "Hand" anyAmount) {
+//     removeItem "../Items/plastic_knife"
+//     exit
+// }
+// if (hasItem "../Items/prisoner_arm" metadata "Hand" anyAmount) {
+//     removeItem "../Items/prisoner_arm"
+//     exit
+// }
+// if (hasItem "../Items/rat_pet" metadata "Hand" anyAmount) {
+//     removeItem "../Items/rat_pet"
+//     exit
+// }
+// if (hasItem "../Items/reinforced_riot_boots" metadata "Hand" anyAmount) {
+//     removeItem "../Items/reinforced_riot_boots"
+//     exit
+// }
+// if (hasItem "../Items/reinforced_riot_chestplate" metadata "Hand" anyAmount) {
+//     removeItem "../Items/reinforced_riot_chestplate"
+//     exit
+// }
+// if (hasItem "../Items/reinforced_riot_helmet" metadata "Hand" anyAmount) {
+//     removeItem "../Items/reinforced_riot_helmet"
+//     exit
+// }
+// if (hasItem "../Items/reinforced_riot_leggings" metadata "Hand" anyAmount) {
+//     removeItem "../Items/reinforced_riot_leggings"
+//     exit
+// }
+// if (hasItem "../Items/rusty_chainmail_boots" metadata "Hand" anyAmount) {
+//     removeItem "../Items/rusty_chainmail_boots"
+//     exit
+// }
+// if (hasItem "../Items/rusty_chainmail_chestplate" metadata "Hand" anyAmount) {
+//     removeItem "../Items/rusty_chainmail_chestplate"
+//     exit
+// }
+// if (hasItem "../Items/rusty_chainmail_helmet" metadata "Hand" anyAmount) {
+//     removeItem "../Items/rusty_chainmail_helmet"
+//     exit
+// }
+// if (hasItem "../Items/rusty_chainmail_leggings" metadata "Hand" anyAmount) {
+//     removeItem "../Items/rusty_chainmail_leggings"
+//     exit
+// }
+
+// function "RemoveItemToBeSold2" false
+// goto function "RemoveItemToBeSold2"
+
+// if (hasItem "../Items/strong_prisoner_arm" metadata "Hand" anyAmount) {
+//     removeItem "../Items/strong_prisoner_arm"
+//     exit
+// }
+// if (hasItem "../Items/torn_prisoner_cap" metadata "Hand" anyAmount) {
+//     removeItem "../Items/torn_prisoner_cap"
+//     exit
+// }
+// if (hasItem "../Items/torn_prisoner_pants" metadata "Hand" anyAmount) {
+//     removeItem "../Items/torn_prisoner_pants"
+//     exit
+// }
+// if (hasItem "../Items/torn_prisoner_shirt" metadata "Hand" anyAmount) {
+//     removeItem "../Items/torn_prisoner_shirt"
+//     exit
+// }
+// if (hasItem "../Items/torn_prisoner_shoes" metadata "Hand" anyAmount) {
+//     removeItem "../Items/torn_prisoner_shoes"
+//     exit
+// }
+// if (hasItem "../Items/wardens_boots" metadata "Hand" anyAmount) {
+//     removeItem "../Items/wardens_boots"
+//     exit
+// }
+// if (hasItem "../Items/wardens_chestplate" metadata "Hand" anyAmount) {
+//     removeItem "../Items/wardens_chestplate"
+//     exit
+// }
+// if (hasItem "../Items/wardens_leggings" metadata "Hand" anyAmount) {
+//     removeItem "../Items/wardens_leggings"
+//     exit
+// }
+// if (hasItem "../Items/warden_eye_pet" metadata "Hand" anyAmount) {
+//     removeItem "../Items/warden_eye_pet"
+//     exit
+// }
+// if (hasItem "../Items/warden_pet" metadata "Hand" anyAmount) {
+//     removeItem "../Items/warden_pet"
+//     exit
+// }

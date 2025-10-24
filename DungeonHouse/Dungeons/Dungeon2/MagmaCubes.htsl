@@ -20,14 +20,12 @@ loop 2 index {
         var {"mc" + (index+1) + "_vel_z"} inc {"%var.player/mc" + (index+1) + "_dz%"}
 
         // Dampen (like friction)
-        var {"mc" + (index+1) + "_vel_x"} mult 0.8
-        var {"mc" + (index+1) + "_vel_z"} mult 0.8
+        var {"mc" + (index+1) + "_vel_x"} mult 0.03
+        var {"mc" + (index+1) + "_vel_z"} mult 0.03
 
         // Update Magma Cube Position
-        var "new_x" set {"%var.player/magmacube" + (index+1) + "_x%"}
-        var "new_x" inc {"%var.player/mc" + (index+1) + "_vel_x%"}
-        var "new_z" set {"%var.player/magmacube" + (index+1) + "_z%"}
-        var "new_z" inc {"%var.player/mc" + (index+1) + "_vel_z%"}
+        var {"magmacube" + (index+1) + "_x"} inc {"%var.player/mc" + (index+1) + "_vel_x%"}
+        var {"magmacube" + (index+1) + "_z"} inc {"%var.player/mc" + (index+1) + "_vel_z%"}
     }
 }
 
@@ -48,70 +46,43 @@ loop 2 index {
         var {"mc" + (index+1) + "_vel_z"} inc {"%var.player/mc" + (index+1) + "_dz%"}
 
         // Dampen (like friction)
-        var {"mc" + (index+1) + "_vel_x"} mult 0.8
-        var {"mc" + (index+1) + "_vel_z"} mult 0.8
+        var {"mc" + (index+1) + "_vel_x"} mult 0.03
+        var {"mc" + (index+1) + "_vel_z"} mult 0.03
 
         // Update Magma Cube Position
-        var "new_x" set {"%var.player/magmacube" + (index+1) + "_x%"}
-        var "new_x" inc {"%var.player/mc" + (index+1) + "_vel_x%"}
-        var "new_z" set {"%var.player/magmacube" + (index+1) + "_z%"}
-        var "new_z" inc {"%var.player/mc" + (index+1) + "_vel_z%"}
+        var {"magmacube" + (index+1) + "_x"} inc {"%var.player/mc" + (index+1) + "_vel_x%"}
+        var {"magmacube" + (index+1) + "_z"} inc {"%var.player/mc" + (index+1) + "_vel_z%"}
     }
 }
 
 dropItem "../../Items/MagmaCube" "custom_coordinates" "%var.player/magmacube1_x% 16.2 %var.player/magmacube1_z%" false true false false 2 100
 dropItem "../../Items/MagmaCube" "custom_coordinates" "%var.player/magmacube2_x% 16.2 %var.player/magmacube2_z%" false true false false 2 100
 
-var "magma_dist_x" set %player.pos.x%
-var "magma_dist_y" set %player.pos.y%
-var "magma_dist_z" set %player.pos.z%
-var "magma_dist_x" dec %var.player/magmacube1_x%
-var "magma_dist_y" dec 16.2
-var "magma_dist_z" dec %var.player/magmacube1_z%
+loop 2 index {
+    var "magma_dist_x" set %player.pos.x%
+    var "magma_dist_y" set %player.pos.y%
+    var "magma_dist_z" set %player.pos.z%
+    var "magma_dist_x" dec {"%var.player/magmacube" + (index+1) + "_x%"}
+    var "magma_dist_y" dec 16.2
+    var "magma_dist_z" dec {"%var.player/magmacube" + (index+1) + "_z%"}
 
-if (var "magma_dist_x" < 0) {
-    var "magma_dist_x" mult -1.0
-}
-if (var "magma_dist_y" < 0) {
-    var "magma_dist_y" mult -1.0
-}
-if (var "magma_dist_z" < 0) {
-    var "magma_dist_z" mult -1.0
-}
+    if (var "magma_dist_x" < 0) {
+        var "magma_dist_x" mult -1.0
+    }
+    if (var "magma_dist_y" < 0) {
+        var "magma_dist_y" mult -1.0
+    }
+    if (var "magma_dist_z" < 0) {
+        var "magma_dist_z" mult -1.0
+    }
 
-var "magma_distance" set %var.player/magma_dist_x%
-var "magma_distance" inc %var.player/magma_dist_y%
-var "magma_distance" inc %var.player/magma_dist_z%
+    var "magma_distance" set %var.player/magma_dist_x%
+    var "magma_distance" inc %var.player/magma_dist_y%
+    var "magma_distance" inc %var.player/magma_dist_z%
 
-if (var "magma_distance" < 1.5) {
-    var "playerhp" dec 5
-    title "&4-5❤" "&7From Magma Cube" 0 1 1
-    sound "Hurt Flesh" 0.7 1 "invokers_location"
-}
-
-var "magma_dist_x" set %player.pos.x%
-var "magma_dist_y" set %player.pos.y%
-var "magma_dist_z" set %player.pos.z%
-var "magma_dist_x" dec %var.player/magmacube2_x%
-var "magma_dist_y" dec 16.2
-var "magma_dist_z" dec %var.player/magmacube2_z%
-
-if (var "magma_dist_x" < 0) {
-    var "magma_dist_x" mult -1.0
-}
-if (var "magma_dist_y" < 0) {
-    var "magma_dist_y" mult -1.0
-}
-if (var "magma_dist_z" < 0) {
-    var "magma_dist_z" mult -1.0
-}
-
-var "magma_distance" set %var.player/magma_dist_x%
-var "magma_distance" inc %var.player/magma_dist_y%
-var "magma_distance" inc %var.player/magma_dist_z%
-
-if (var "magma_distance" < 1.5) {
-    var "playerhp" dec 5
-    title "&4-5❤" "&7From Magma Cube" 0 1 1
-    sound "Hurt Flesh" 0.7 1.0 "invokers_location"
+    if (var "magma_distance" < 1.5) {
+        var "health" dec 5
+        title "&4-5❤" "&7From Magma Cube" 0 1 1
+        sound "Hurt Flesh" 0.7 1 "invokers_location"
+    }
 }

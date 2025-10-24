@@ -1,0 +1,12 @@
+function "GetItemValue" false
+
+if (var "item_value" == 0) {
+    chat "&cYou have nothing to sell!"
+    exit
+}
+
+function "RemoveItemToBeSold" false
+
+var "gold" inc %var.player/item_value%
+chat "&aYou sold your item for &6%var.player/item_value%⛃&a!"
+sound "Item Break" 0.7 2.0 "invokers_location"

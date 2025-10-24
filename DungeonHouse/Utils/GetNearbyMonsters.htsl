@@ -1,0 +1,30 @@
+loop 4 index {
+
+    if () {
+        var {"monster"+(index+1)+"distx"} set %player.pos.x%
+        var {"monster"+(index+1)+"disty"} set %player.pos.y%
+        var {"monster"+(index+1)+"distz"} set %player.pos.z%
+        var {"monster"+(index+1)+"distx"} dec {"%var.player/monster"+(index+1)+"xpos%"}
+        var {"monster"+(index+1)+"disty"} dec {"%var.player/monster"+(index+1)+"ypos%"}
+        var {"monster"+(index+1)+"distz"} dec {"%var.player/monster"+(index+1)+"zpos%"}
+    }
+
+    // ABS values
+    if (var {"monster"+(index+1)+"distx"} < 0D) {
+        var {"monster"+(index+1)+"distx"} mult -1D
+    }
+    if (var {"monster"+(index+1)+"disty"} < 0D) {
+        var {"monster"+(index+1)+"disty"} mult -1D
+    }
+    if (var {"monster"+(index+1)+"distz"} < 0D) {
+        var {"monster"+(index+1)+"distz"} mult -1D
+    }
+
+    if () {
+        var {"monster"+(index+1)+"distance"} set {"%var.player/monster"+(index+1)+"distx%"}
+        var {"monster"+(index+1)+"distance"} inc {"%var.player/monster"+(index+1)+"disty%"}
+        var {"monster"+(index+1)+"distance"} inc {"%var.player/monster"+(index+1)+"distz%"}
+    }
+}
+
+// return value is monster1distance, monster2distance, etc

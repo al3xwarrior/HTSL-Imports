@@ -9,6 +9,9 @@ var "temp" mult 60
 var "d_seconds" dec %var.player/temp%
 var "temp" unset
 
+/*
+    * DUNGEON 1
+*/
 if (var "dungeon_id" == 1, var "dungeontime" < %var.global/d1_sr_time1%) {
     // Move Times Down
     globalvar "d1_sr_time3" set %var.global/d1_sr_time2%
@@ -35,7 +38,6 @@ if (var "dungeon_id" == 1, var "dungeontime" < %var.global/d1_sr_time1%) {
 
     exit
 }
-
 if (var "dungeon_id" == 1, var "dungeontime" < %var.global/d1_sr_time2%) {
     // Move Times Down
     globalvar "d1_sr_time3" set %var.global/d1_sr_time2%
@@ -57,7 +59,6 @@ if (var "dungeon_id" == 1, var "dungeontime" < %var.global/d1_sr_time2%) {
 
     exit
 }
-
 if (var "dungeon_id" == 1, var "dungeontime" < %var.global/d1_sr_time3%) {
     globalvar "d1_sr_time3" set %var.player/dungeontime%
     globalvar "d1_sr_name3" set %player.name%
@@ -67,6 +68,72 @@ if (var "dungeon_id" == 1, var "dungeontime" < %var.global/d1_sr_time3%) {
     globalvar "sr_bc_place" set "&83rd"
     globalvar "sr_bc_name" set %player.name%
     globalvar "sr_bc_dungeon" set "&fThe Broken Prison"
+    globalvar "sr_bc_mins" set %var.player/d_minutes%
+    globalvar "sr_bc_secs" set %var.player/d_seconds%
+    function "SpeedRunningBroadcast" false
+
+    exit
+}
+
+/*
+    * DUNGEON 2
+*/
+if (var "dungeon_id" == 2, var "dungeontime" < %var.global/d2_sr_time1%) {
+    // Move Times Down
+    globalvar "d2_sr_time3" set %var.global/d2_sr_time2%
+    globalvar "d2_sr_name3" set %var.global/d2_sr_name2%
+    globalvar "d2_sr_mins3" set %var.global/d2_sr_mins2%
+    globalvar "d2_sr_secs3" set %var.global/d2_sr_secs2%
+
+    globalvar "d2_sr_time2" set %var.global/d2_sr_time1%
+    globalvar "d2_sr_name2" set %var.global/d2_sr_name1%
+    globalvar "d2_sr_mins2" set %var.global/d2_sr_mins1%
+    globalvar "d2_sr_secs2" set %var.global/d2_sr_secs1%
+
+    globalvar "d2_sr_time1" set %var.player/dungeontime%
+    globalvar "d2_sr_name1" set %player.name%
+    globalvar "d2_sr_mins1" set %var.player/d_minutes%
+    globalvar "d2_sr_secs1" set %var.player/d_seconds%
+
+    globalvar "sr_bc_place" set "&61st"
+    globalvar "sr_bc_name" set %player.name%
+    globalvar "sr_bc_dungeon" set "&ci forgot the name"
+    globalvar "sr_bc_mins" set %var.player/d_minutes%
+    globalvar "sr_bc_secs" set %var.player/d_seconds%
+    function "SpeedRunningBroadcast" false
+
+    exit
+}
+if (var "dungeon_id" == 2, var "dungeontime" < %var.global/d2_sr_time2%) {
+    // Move Times Down
+    globalvar "d2_sr_time3" set %var.global/d2_sr_time2%
+    globalvar "d2_sr_name3" set %var.global/d2_sr_name2%
+    globalvar "d2_sr_mins3" set %var.global/d2_sr_mins2%
+    globalvar "d2_sr_secs3" set %var.global/d2_sr_secs2%
+
+    globalvar "d2_sr_time2" set %var.player/dungeontime%
+    globalvar "d2_sr_name2" set %player.name%
+    globalvar "d2_sr_mins2" set %var.player/d_minutes%
+    globalvar "d2_sr_secs2" set %var.player/d_seconds%
+
+    globalvar "sr_bc_place" set "&72nd"
+    globalvar "sr_bc_name" set %player.name%
+    globalvar "sr_bc_dungeon" set "&ci forgot the name"
+    globalvar "sr_bc_mins" set %var.player/d_minutes%
+    globalvar "sr_bc_secs" set %var.player/d_seconds%
+    function "SpeedRunningBroadcast" false
+
+    exit
+}
+if (var "dungeon_id" == 2, var "dungeontime" < %var.global/d2_sr_time3%) {
+    globalvar "d2_sr_time3" set %var.player/dungeontime%
+    globalvar "d2_sr_name3" set %player.name%
+    globalvar "d2_sr_mins3" set %var.player/d_minutes%
+    globalvar "d2_sr_secs3" set %var.player/d_seconds%
+    
+    globalvar "sr_bc_place" set "&83rd"
+    globalvar "sr_bc_name" set %player.name%
+    globalvar "sr_bc_dungeon" set "&ci forgot the name"
     globalvar "sr_bc_mins" set %var.player/d_minutes%
     globalvar "sr_bc_secs" set %var.player/d_seconds%
     function "SpeedRunningBroadcast" false

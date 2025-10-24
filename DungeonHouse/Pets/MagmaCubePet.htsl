@@ -1,0 +1,33 @@
+
+// Ensure Magma Pet is equipped
+if (var "petEquipped" == 2) {
+
+} else {
+    exit
+}
+
+// left_x, left_z & right_x, right_z
+function "GetPositionLeftOfPlayer" false
+function "GetPositionRightOfPlayer" false
+
+// monster1distance, monster2distance, etc
+function "GetNearbyMonsters" false
+
+var "magmacube_y" set %player.pos.y%
+var "magmacube_y" inc 0.3D
+
+var "magmacube_dmg" set %var.player/damage%
+var "magmacube_dmg" div 10
+
+loop 4 index {
+    if (var {"monster"+(index+1)+"distance"} < 4D, var {"monster"+(index+1)+"hp"} > %var.player/magmacube_dmg%) {
+        var {"monster"+(index+1)+"hp"} dec %var.player/magmacube_dmg%
+        sound "Slime Attack" 0.7 0.8 "invokers_location"
+    }
+}
+
+dropItem "../Items/MagmaCube" "custom_coordinates" "%var.player/left_x% %var.player/magmacube_y% %var.player/left_z%" false true false false 2 100
+dropItem "../Items/MagmaCube" "custom_coordinates" "%var.player/right_x% %var.player/magmacube_y% %var.player/right_z%" false true false false 2 100
+pause 2
+dropItem "../Items/MagmaCube" "custom_coordinates" "%var.player/left_x% %var.player/magmacube_y% %var.player/left_z%" false true false false 2 100
+dropItem "../Items/MagmaCube" "custom_coordinates" "%var.player/right_x% %var.player/magmacube_y% %var.player/right_z%" false true false false 2 100

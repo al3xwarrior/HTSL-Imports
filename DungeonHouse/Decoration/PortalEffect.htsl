@@ -1,3 +1,8 @@
+
+if (placeholder %house.players% >= 125) {
+    exit
+}
+
 if () {
 // --- 360° / 0° ---
 dropItem "PortalEffect1" "custom_coordinates" "-65.5 167.0 -38.5" false true false false 20 100

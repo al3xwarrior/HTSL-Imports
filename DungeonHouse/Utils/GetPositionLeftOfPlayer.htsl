@@ -1,0 +1,96 @@
+var "xPos" set %player.pos.x%
+var "zPos" set %player.pos.z%
+var "yaw" set %player.pos.yaw%
+
+// Default facing South — "left" is East
+var "offx" set 1D
+var "offz" set 0D
+
+// South-Southwest
+if (var "yaw" >= 11.25, var "yaw" < 33.75) {
+    var "offx" set 0.92
+    var "offz" set 0.38
+}
+// Southwest
+if (var "yaw" >= 33.75, var "yaw" < 56.25) {
+    var "offx" set 0.71
+    var "offz" set 0.71
+}
+// West-Southwest
+if (var "yaw" >= 56.25, var "yaw" < 78.75) {
+    var "offx" set 0.38
+    var "offz" set 0.92
+}
+// West
+if (var "yaw" >= 78.75, var "yaw" < 101.25) {
+    var "offx" set 0.0
+    var "offz" set 1.0
+}
+// West-Northwest
+if (var "yaw" >= 101.25, var "yaw" < 123.75) {
+    var "offx" set -0.38
+    var "offz" set 0.92
+}
+// Northwest
+if (var "yaw" >= 123.75, var "yaw" < 146.25) {
+    var "offx" set -0.71
+    var "offz" set 0.71
+}
+// North-Northwest
+if (var "yaw" >= 146.25, var "yaw" < 168.75) {
+    var "offx" set -0.92
+    var "offz" set 0.38
+}
+// North
+if (var "yaw" >= 168.75) {
+    var "offx" set -1.0
+    var "offz" set 0.0
+}
+if (var "yaw" <= -168.75) {
+    var "offx" set -1.0
+    var "offz" set 0.0
+}
+// North-Northeast
+if (var "yaw" < -146.25, var "yaw" >= -168.75) {
+    var "offx" set -0.92
+    var "offz" set -0.38
+}
+// Northeast
+if (var "yaw" < -123.75, var "yaw" >= -146.25) {
+    var "offx" set -0.71
+    var "offz" set -0.71
+}
+// East-Northeast
+if (var "yaw" < -101.25, var "yaw" >= -123.75) {
+    var "offx" set -0.38
+    var "offz" set -0.92
+}
+// East
+if (var "yaw" < -78.75, var "yaw" >= -101.25) {
+    var "offx" set 0.0
+    var "offz" set -1.0
+}
+// East-Southeast
+if (var "yaw" < -56.25, var "yaw" >= -78.75) {
+    var "offx" set 0.38
+    var "offz" set -0.92
+}
+// Southeast
+if (var "yaw" < -33.75, var "yaw" >= -56.25) {
+    var "offx" set 0.71
+    var "offz" set -0.71
+}
+// South-Southeast
+if (var "yaw" < -11.25, var "yaw" >= -33.75) {
+    var "offx" set 0.92
+    var "offz" set -0.38
+}
+// (Default is South for -11.25 < yaw < 11.25)
+
+// Compute final position (1.5 blocks to the left)
+var "left_x" set %var.player/xPos%D
+var "left_z" set %var.player/zPos%D
+var "offx" mult 1.5D
+var "offz" mult 1.5D
+var "left_x" inc %var.player/offx%D
+var "left_z" inc %var.player/offz%D

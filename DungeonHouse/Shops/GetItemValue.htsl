@@ -1,0 +1,228 @@
+
+// Use AddToGetItemValue.py to grab new items (dont forget toe delete non items)
+
+
+// if (hasItem "../Items/cell_key_dagger" metadata "Hand" anyAmount) {
+//     var "item_value" set 30
+//     exit
+// }
+// if (hasItem "../Items/enchanted_wardens_fists" metadata "Hand" anyAmount) {
+//     var "item_value" set 150
+//     exit
+// }
+// if (hasItem "../Items/executioner_boots" metadata "Hand" anyAmount) {
+//     var "item_value" set 35
+//     exit
+// }
+// if (hasItem "../Items/executioner_chestplate" metadata "Hand" anyAmount) {
+//     var "item_value" set 35
+//     exit
+// }
+// if (hasItem "../Items/executioner_leggings" metadata "Hand" anyAmount) {
+//     var "item_value" set 35
+//     exit
+// }
+// if (hasItem "../Items/executioner_helmet" metadata "Hand" anyAmount) {
+//     var "item_value" set 35
+//     exit
+// }
+// if (hasItem "../Items/executioners_axe" metadata "Hand" anyAmount) {
+//     var "item_value" set 40
+//     exit
+// }
+// if (hasItem "../Items/guard_baton" metadata "Hand" anyAmount) {
+//     var "item_value" set 20
+//     exit
+// }
+// if (hasItem "../Items/guard_boots" metadata "Hand" anyAmount) {
+//     var "item_value" set 20
+//     exit
+// }
+// if (hasItem "../Items/guard_leggings" metadata "Hand" anyAmount) {
+//     var "item_value" set 20
+//     exit
+// }
+// if (hasItem "../Items/guard_chestplate" metadata "Hand" anyAmount) {
+//     var "item_value" set 20
+//     exit
+// }
+// if (hasItem "../Items/guard_helmet" metadata "Hand" anyAmount) {
+//     var "item_value" set 20
+//     exit
+// }
+// if (hasItem "../Items/plastic_knife" metadata "Hand" anyAmount) {
+//     var "item_value" set 5
+//     exit
+// }
+// if (hasItem "../Items/prisoner_arm" metadata "Hand" anyAmount) {
+//     var "item_value" set 7
+//     exit
+// }
+// if (hasItem "../Items/rat_pet" metadata "Hand" anyAmount) {
+//     var "item_value" set 20
+//     exit
+// }
+// if (hasItem "../Items/reinforced_riot_boots" metadata "Hand" anyAmount) {
+//     var "item_value" set 15
+//     exit
+// }
+// if (hasItem "../Items/reinforced_riot_leggings" metadata "Hand" anyAmount) {
+//     var "item_value" set 15
+//     exit
+// }
+// if (hasItem "../Items/reinforced_riot_chestplate" metadata "Hand" anyAmount) {
+//     var "item_value" set 15
+//     exit
+// }
+// if (hasItem "../Items/reinforced_riot_helmet" metadata "Hand" anyAmount) {
+//     var "item_value" set 15
+//     exit
+// }
+// if (hasItem "../Items/strong_prisoner_arm" metadata "Hand" anyAmount) {
+//     var "item_value" set 15
+//     exit
+// }
+// if (hasItem "../Items/torn_prisoner_cap" metadata "Hand" anyAmount) {
+//     var "item_value" set 8
+//     exit
+// }
+// if (hasItem "../Items/torn_prisoner_pants" metadata "Hand" anyAmount) {
+//     var "item_value" set 8
+//     exit
+// }
+// if (hasItem "../Items/torn_prisoner_shirt" metadata "Hand" anyAmount) {
+//     var "item_value" set 8
+//     exit
+// }
+// if (hasItem "../Items/torn_prisoner_shoes" metadata "Hand" anyAmount) {
+//     var "item_value" set 8
+//     exit
+// }
+
+// function "GetItemValue2" false
+// goto function "GetItemValue2"
+
+// if (hasItem "../Items/warden_eye_pet" metadata "Hand" anyAmount) {
+//     var "item_value" set 30
+//     exit
+// }
+// if (hasItem "../Items/warden_pet" metadata "Hand" anyAmount) {
+//     var "item_value" set 50
+//     exit
+// }
+// if (hasItem "../Items/wardens_chestplate" metadata "Hand" anyAmount) {
+//     var "item_value" set 45
+//     exit
+// }
+// if (hasItem "../Items/wardens_leggings" metadata "Hand" anyAmount) {
+//     var "item_value" set 45
+//     exit
+// }
+// if (hasItem "../Items/wardens_boots" metadata "Hand" anyAmount) {
+//     var "item_value" set 45
+//     exit
+// }
+// if (hasItem "../Items/wardens_fists" metadata "Hand" anyAmount) {
+//     var "item_value" set 50
+//     exit
+// }
+// if (hasItem "../Items/rusty_chainmail_boots" metadata "Hand" anyAmount) {
+//     var "item_value" set 15
+//     exit
+// }
+// if (hasItem "../Items/rusty_chainmail_chestplate" metadata "Hand" anyAmount) {
+//     var "item_value" set 15
+//     exit
+// }
+// if (hasItem "../Items/rusty_chainmail_helmet" metadata "Hand" anyAmount) {
+//     var "item_value" set 15
+//     exit
+// }
+// if (hasItem "../Items/rusty_chainmail_leggings" metadata "Hand" anyAmount) {
+//     var "item_value" set 15
+//     exit
+// }
+if (hasItem "../Items/gatekeeper_blade" metadata "Hand" anyAmount) {
+    var "item_value" set 150
+exit
+}
+if (hasItem "../Items/gatekeeper_boots" metadata "Hand" anyAmount) {
+    var "item_value" set 80
+exit
+}
+if (hasItem "../Items/gatekeeper_chestplate" metadata "Hand" anyAmount) {
+    var "item_value" set 80
+exit
+}
+if (hasItem "../Items/gatekeeper_helmet" metadata "Hand" anyAmount) {
+    var "item_value" set 80
+exit
+}
+if (hasItem "../Items/gatekeeper_leggings" metadata "Hand" anyAmount) {
+    var "item_value" set 80
+exit
+}
+if (hasItem "../Items/gatekeeper_pet" metadata "Hand" anyAmount) {
+    var "item_value" set 200
+exit
+}
+if (hasItem "../Items/golden_axe" metadata "Hand" anyAmount) {
+    var "item_value" set 75
+exit
+}
+if (hasItem "../Items/golden_spear" metadata "Hand" anyAmount) {
+    var "item_value" set 75
+exit
+}
+if (hasItem "../Items/molten_blade" metadata "Hand" anyAmount) {
+    var "item_value" set 60
+exit
+}
+if (hasItem "../Items/pigman_sword" metadata "Hand" anyAmount) {
+    var "item_value" set 50
+exit
+}
+if (hasItem "../Items/pig_boots" metadata "Hand" anyAmount) {
+    var "item_value" set 60
+exit
+}
+if (hasItem "../Items/pig_chestplate" metadata "Hand" anyAmount) {
+    var "item_value" set 60
+exit
+}
+if (hasItem "../Items/pig_helmet" metadata "Hand" anyAmount) {
+    var "item_value" set 60
+exit
+}
+if (hasItem "../Items/pig_leggings" metadata "Hand" anyAmount) {
+    var "item_value" set 60
+exit
+}
+if (hasItem "../Items/villager_pet" metadata "Hand" anyAmount) {
+    var "item_value" set 70
+exit
+}
+
+function "GetItemValue3" false
+goto function "GetItemValue3"
+
+if (hasItem "../Items/wither_boots" metadata "Hand" anyAmount) {
+    var "item_value" set 90
+exit
+}
+if (hasItem "../Items/wither_chestplate" metadata "Hand" anyAmount) {
+    var "item_value" set 90
+exit
+}
+if (hasItem "../Items/wither_helmet" metadata "Hand" anyAmount) {
+    var "item_value" set 90
+exit
+}
+if (hasItem "../Items/wither_leggings" metadata "Hand" anyAmount) {
+    var "item_value" set 90
+exit
+}
+if (hasItem "../Items/wither_skeleton_scythe" metadata "Hand" anyAmount) {
+    var "item_value" set 90
+exit
+}

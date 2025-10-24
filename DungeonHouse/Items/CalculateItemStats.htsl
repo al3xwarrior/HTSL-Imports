@@ -164,15 +164,150 @@ if (hasItem "torn_prisoner_cap" metadata "Armor" anyAmount) {
 }
 */
 
-if (var "petEquipped" == "&fRat") {
-    var "speed" inc 1
+// if (var "petEquipped" == "&fRat") {
+//     var "speed" inc 1
+// }
+
+// if (var "petEquipped" == "&fWarden Eye") {
+//     var "damage" inc 4
+// }
+
+// if (var "petEquipped" == "&fWarden") {
+//     var "healthregen" inc 4
+//     var "damage" inc 8
+// }
+
+// --- Weapons ---
+// if (hasItem "pigman_sword" metadata "Hand" anyAmount) {
+//     var "damage" inc 20
+// }
+
+// if (hasItem "wither_skeleton_scythe" metadata "Hand" anyAmount) {
+//     var "damage" inc 25
+// }
+
+// if (hasItem "golden_spear" metadata "Hand" anyAmount) {
+//     var "damage" inc 35
+// }
+
+// if (hasItem "golden_axe" metadata "Hand" anyAmount) {
+//     var "damage" inc 45
+// }
+
+// if (hasItem "molten_blade" metadata "Hand" anyAmount) {
+//     var "damage" inc 50
+// }
+
+// if (hasItem "gatekeeper_blade" metadata "Hand" anyAmount) {
+//     var "damage" inc 75
+//     var "mana" inc 5
+//     var "manaRegen" inc 2
+//     var "speed" inc 1
+// }
+
+// // --- Pets ---
+// if (var "petEquipped" == "&eVillager") {
+//     var "maxhealth" inc 20
+//     var "healthRegen" inc 8
+// }
+
+// if (var "petEquipped" == "&cGatekeeper") {
+//     var "damage" inc 15
+//     var "maxhealth" inc 8
+//     var "healthRegen" inc 3
+// }
+
+// // --- Wither Set ---
+// if (hasItem "wither_boots" metadata "Armor" anyAmount) {
+//     var "maxhealth" inc 35
+//     var "healthRegen" inc 3
+// }
+
+// if (hasItem "wither_leggings" metadata "Armor" anyAmount) {
+//     var "maxhealth" inc 35
+//     var "healthRegen" inc 3
+// }
+
+// if (hasItem "wither_chestplate" metadata "Armor" anyAmount) {
+//     var "maxhealth" inc 35
+//     var "healthRegen" inc 3
+// }
+
+// if (hasItem "wither_helmet" metadata "Armor" anyAmount) {
+//     var "maxhealth" inc 35
+//     var "healthRegen" inc 3
+// }
+
+// // --- Pig Set ---
+// if (hasItem "pig_boots" metadata "Armor" anyAmount) {
+//     var "maxhealth" inc 15
+//     var "healthRegen" inc 3
+// }
+
+// if (hasItem "pig_leggings" metadata "Armor" anyAmount) {
+//     var "maxhealth" inc 15
+//     var "healthRegen" inc 3
+// }
+
+// if (hasItem "pig_chestplate" metadata "Armor" anyAmount) {
+//     var "maxhealth" inc 15
+//     var "healthRegen" inc 3
+// }
+
+function "CalculateItemStats3" false
+goto function "CalculateItemStats3"
+
+if (hasItem "pig_helmet" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 15
+    var "healthRegen" inc 3
 }
 
-if (var "petEquipped" == "&fWarden Eye") {
-    var "damage" inc 4
+// --- Gatekeeper Set (Gold + Leather Variants) ---
+if (hasItem "gatekeeper_boots" metadata "Armor" anyAmount) {
+    var "damage" inc 10
+    var "maxhealth" inc 60
+    var "healthRegen" inc 5
 }
 
-if (var "petEquipped" == "&fWarden") {
-    var "healthregen" inc 4
-    var "damage" inc 8
+if (hasItem "gatekeeper_leggings" metadata "Armor" anyAmount) {
+    var "damage" inc 10
+    var "maxhealth" inc 60
+    var "healthRegen" inc 5
+}
+
+if (hasItem "gatekeeper_chestplate" metadata "Armor" anyAmount) {
+    var "damage" inc 10
+    var "maxhealth" inc 60
+    var "healthRegen" inc 5
+}
+
+if (hasItem "gatekeeper_helmet" metadata "Armor" anyAmount) {
+    var "damage" inc 10
+    var "maxhealth" inc 60
+    var "healthRegen" inc 5
+}
+
+// --- Gatekeeper Leather Variants ---
+if (hasItem "gatekeeper_boots2" metadata "Armor" anyAmount) {
+    var "damage" inc 10
+    var "maxhealth" inc 60
+    var "healthRegen" inc 5
+}
+
+if (hasItem "gatekeeper_leggings2" metadata "Armor" anyAmount) {
+    var "damage" inc 10
+    var "maxhealth" inc 60
+    var "healthRegen" inc 5
+}
+
+if (hasItem "gatekeeper_chestplate2" metadata "Armor" anyAmount) {
+    var "damage" inc 10
+    var "maxhealth" inc 60
+    var "healthRegen" inc 5
+}
+
+if (hasItem "gatekeeper_helmet2" metadata "Armor" anyAmount) {
+    var "damage" inc 10
+    var "maxhealth" inc 60
+    var "healthRegen" inc 5
 }
