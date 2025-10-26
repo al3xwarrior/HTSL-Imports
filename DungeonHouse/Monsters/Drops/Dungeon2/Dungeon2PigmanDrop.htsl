@@ -1,0 +1,113 @@
+// random roll 1-1000
+var "drop_roll" set %random.whole/1 1000%
+
+// If roll <= 331, player gets nothing (33.1% no drop rate)
+if (var "drop_roll" <= 331) {
+    exit
+}
+
+// NEW ITEMS:
+// - gatekeeper_pet
+// - gatekeeper_helmet
+// - gatekeeper_chestplate
+// - gatekeeper_leggings
+// - gatekeeper_boots
+// - gatekeeper_blade
+
+// Ranges after 331 (332-1000 = 669 total drop chances)
+
+// Common weapons (55/1000 = 5.5% each)
+// 332-386 (55/1000 = 5.5%) - Pigman Sword
+if (var "drop_roll" > 331, var "drop_roll" <= 386) {
+    giveItem "../../../../Items/pigman_sword" true "First Avaliable Slot" false
+    chat "&a+Pigman Sword"
+    exit
+}
+// 387-441 (55/1000 = 5.5%) - Golden Spear
+if (var "drop_roll" > 386, var "drop_roll" <= 441) {
+    giveItem "../../../../Items/golden_spear" true "First Avaliable Slot" false
+    chat "&a+Golden Spear"
+    exit
+}
+
+// Slightly less common weapons (50/1000 = 5.0% each)
+// 442-491 (50/1000 = 5.0%) - Golden Axe
+if (var "drop_roll" > 441, var "drop_roll" <= 491) {
+    giveItem "../../../../Items/golden_axe" true "First Avaliable Slot" false
+    chat "&a+Golden Axe"
+    exit
+}
+// 492-541 (50/1000 = 5.0%) - Wither Skeleton Scythe
+if (var "drop_roll" > 491, var "drop_roll" <= 541) {
+    giveItem "../../../../Items/wither_skeleton_scythe" true "First Avaliable Slot" false
+    chat "&a+Wither Skeleton Scythe"
+    exit
+}
+
+// Pet (45/1000 = 4.5%)
+// 542-586 (45/1000 = 4.5%) - Villager Pet
+if (var "drop_roll" > 541, var "drop_roll" <= 586) {
+    giveItem "../../../../Items/villager_pet" true "First Avaliable Slot" false
+    chat "&a+Villager Pet"
+    exit
+}
+
+// Pig Armor Set - each piece (40/1000 = 4.0%)
+// 587-626 (40/1000 = 4.0%) - Pig Boots
+if (var "drop_roll" > 586, var "drop_roll" <= 626) {
+    giveItem "../../../../Items/pig_boots" true "First Avaliable Slot" false
+    chat "&a+Pig Boots"
+    exit
+}
+// 627-666 (40/1000 = 4.0%) - Pig Leggings
+if (var "drop_roll" > 626, var "drop_roll" <= 666) {
+    giveItem "../../../../Items/pig_leggings" true "First Avaliable Slot" false
+    chat "&a+Pig Leggings"
+    exit
+}
+// 667-706 (40/1000 = 4.0%) - Pig Chestplate
+if (var "drop_roll" > 666, var "drop_roll" <= 706) {
+    giveItem "../../../../Items/pig_chestplate" true "First Avaliable Slot" false
+    chat "&a+Pig Chestplate"
+    exit
+}
+// 707-746 (40/1000 = 4.0%) - Pig Helmet
+if (var "drop_roll" > 706, var "drop_roll" <= 746) {
+    giveItem "../../../../Items/pig_helmet" true "First Avaliable Slot" false
+    chat "&a+Pig Helmet"
+    exit
+}
+
+// Wither Armor Set - each piece (35/1000 = 3.5%)
+// 747-781 (35/1000 = 3.5%) - Wither Boots
+if (var "drop_roll" > 746, var "drop_roll" <= 781) {
+    giveItem "../../../../Items/wither_boots" true "First Avaliable Slot" false
+    chat "&a+Wither Boots"
+    exit
+}
+// 782-816 (35/1000 = 3.5%) - Wither Leggings
+if (var "drop_roll" > 781, var "drop_roll" <= 816) {
+    giveItem "../../../../Items/wither_leggings" true "First Avaliable Slot" false
+    chat "&a+Wither Leggings"
+    exit
+}
+// 817-851 (35/1000 = 3.5%) - Wither Chestplate
+if (var "drop_roll" > 816, var "drop_roll" <= 851) {
+    giveItem "../../../../Items/wither_chestplate" true "First Avaliable Slot" false
+    chat "&a+Wither Chestplate"
+    exit
+}
+// 852-886 (35/1000 = 3.5%) - Wither Helmet
+if (var "drop_roll" > 851, var "drop_roll" <= 886) {
+    giveItem "../../../../Items/wither_helmet" true "First Avaliable Slot" false
+    chat "&a+Wither Helmet"
+    exit
+}
+
+// Rare weapon (29/1000 = 2.9%) - Molten Blade
+// 887-915 (29/1000 = 2.9%) - Molten Blade
+if (var "drop_roll" > 886, var "drop_roll" <= 915) {
+    giveItem "../../../../Items/molten_blade" true "First Avaliable Slot" false
+    chat "&a+Molten Blade"
+    exit
+}

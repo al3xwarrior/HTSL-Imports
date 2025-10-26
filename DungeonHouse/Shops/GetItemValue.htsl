@@ -142,87 +142,175 @@
 //     var "item_value" set 15
 //     exit
 // }
-if (hasItem "../Items/gatekeeper_blade" metadata "Hand" anyAmount) {
-    var "item_value" set 150
-exit
-}
-if (hasItem "../Items/gatekeeper_boots" metadata "Hand" anyAmount) {
-    var "item_value" set 80
-exit
-}
-if (hasItem "../Items/gatekeeper_chestplate" metadata "Hand" anyAmount) {
-    var "item_value" set 80
-exit
-}
-if (hasItem "../Items/gatekeeper_helmet" metadata "Hand" anyAmount) {
-    var "item_value" set 80
-exit
-}
-if (hasItem "../Items/gatekeeper_leggings" metadata "Hand" anyAmount) {
-    var "item_value" set 80
-exit
-}
-if (hasItem "../Items/gatekeeper_pet" metadata "Hand" anyAmount) {
+// if (hasItem "../Items/gatekeeper_blade" metadata "Hand" anyAmount) {
+//     var "item_value" set 150
+// exit
+// }
+// if (hasItem "../Items/gatekeeper_boots" metadata "Hand" anyAmount) {
+//     var "item_value" set 80
+// exit
+// }
+// if (hasItem "../Items/gatekeeper_chestplate" metadata "Hand" anyAmount) {
+//     var "item_value" set 80
+// exit
+// }
+// if (hasItem "../Items/gatekeeper_helmet" metadata "Hand" anyAmount) {
+//     var "item_value" set 80
+// exit
+// }
+// if (hasItem "../Items/gatekeeper_leggings" metadata "Hand" anyAmount) {
+//     var "item_value" set 80
+// exit
+// }
+// if (hasItem "../Items/gatekeeper_pet" metadata "Hand" anyAmount) {
+//     var "item_value" set 200
+// exit
+// }
+// if (hasItem "../Items/golden_axe" metadata "Hand" anyAmount) {
+//     var "item_value" set 75
+// exit
+// }
+// if (hasItem "../Items/golden_spear" metadata "Hand" anyAmount) {
+//     var "item_value" set 75
+// exit
+// }
+// if (hasItem "../Items/molten_blade" metadata "Hand" anyAmount) {
+//     var "item_value" set 60
+// exit
+// }
+// if (hasItem "../Items/pigman_sword" metadata "Hand" anyAmount) {
+//     var "item_value" set 50
+// exit
+// }
+// if (hasItem "../Items/pig_boots" metadata "Hand" anyAmount) {
+//     var "item_value" set 60
+// exit
+// }
+// if (hasItem "../Items/pig_chestplate" metadata "Hand" anyAmount) {
+//     var "item_value" set 60
+// exit
+// }
+// if (hasItem "../Items/pig_helmet" metadata "Hand" anyAmount) {
+//     var "item_value" set 60
+// exit
+// }
+// if (hasItem "../Items/pig_leggings" metadata "Hand" anyAmount) {
+//     var "item_value" set 60
+// exit
+// }
+// if (hasItem "../Items/villager_pet" metadata "Hand" anyAmount) {
+//     var "item_value" set 70
+// exit
+// }
+
+// function "GetItemValue3" false
+// goto function "GetItemValue3"
+
+// if (hasItem "../Items/wither_boots" metadata "Hand" anyAmount) {
+//     var "item_value" set 90
+// exit
+// }
+// if (hasItem "../Items/wither_chestplate" metadata "Hand" anyAmount) {
+//     var "item_value" set 90
+// exit
+// }
+// if (hasItem "../Items/wither_helmet" metadata "Hand" anyAmount) {
+//     var "item_value" set 90
+// exit
+// }
+// if (hasItem "../Items/wither_leggings" metadata "Hand" anyAmount) {
+//     var "item_value" set 90
+// exit
+// }
+// if (hasItem "../Items/wither_skeleton_scythe" metadata "Hand" anyAmount) {
+//     var "item_value" set 90
+// exit
+// }
+if (hasItem "../../Items/alpha_hide_boots" metadata "Hand" anyAmount) {
     var "item_value" set 200
-exit
+    exit
 }
-if (hasItem "../Items/golden_axe" metadata "Hand" anyAmount) {
-    var "item_value" set 75
-exit
+if (hasItem "../../Items/alpha_hide_chestplate" metadata "Hand" anyAmount) {
+    var "item_value" set 200
+    exit
 }
-if (hasItem "../Items/golden_spear" metadata "Hand" anyAmount) {
-    var "item_value" set 75
-exit
+if (hasItem "../../Items/alpha_hide_helmet" metadata "Hand" anyAmount) {
+    var "item_value" set 200
+    exit
 }
-if (hasItem "../Items/molten_blade" metadata "Hand" anyAmount) {
-    var "item_value" set 60
-exit
+if (hasItem "../../Items/alpha_hide_leggings" metadata "Hand" anyAmount) {
+    var "item_value" set 200
+    exit
 }
-if (hasItem "../Items/pigman_sword" metadata "Hand" anyAmount) {
-    var "item_value" set 50
-exit
+if (hasItem "../../Items/wizard_boots" metadata "Hand" anyAmount) {
+    var "item_value" set 500
+    exit
 }
-if (hasItem "../Items/pig_boots" metadata "Hand" anyAmount) {
-    var "item_value" set 60
-exit
+if (hasItem "../../Items/wizard_chestplate" metadata "Hand" anyAmount) {
+    var "item_value" set 500
+    exit
 }
-if (hasItem "../Items/pig_chestplate" metadata "Hand" anyAmount) {
-    var "item_value" set 60
-exit
+if (hasItem "../../Items/wizard_helmet" metadata "Hand" anyAmount) {
+    var "item_value" set 500
+    exit
 }
-if (hasItem "../Items/pig_helmet" metadata "Hand" anyAmount) {
-    var "item_value" set 60
-exit
+if (hasItem "../../Items/wizard_leggings" metadata "Hand" anyAmount) {
+    var "item_value" set 500
+    exit
 }
-if (hasItem "../Items/pig_leggings" metadata "Hand" anyAmount) {
-    var "item_value" set 60
-exit
+if (hasItem "../../Items/wizard_mana_boots" metadata "Hand" anyAmount) {
+    var "item_value" set 150
+    exit
 }
-if (hasItem "../Items/villager_pet" metadata "Hand" anyAmount) {
-    var "item_value" set 70
-exit
+if (hasItem "../../Items/wizard_mana_chestplate" metadata "Hand" anyAmount) {
+    var "item_value" set 150
+    exit
+}
+if (hasItem "../../Items/wizard_mana_helmet" metadata "Hand" anyAmount) {
+    var "item_value" set 150
+    exit
+}
+if (hasItem "../../Items/wizard_mana_leggings" metadata "Hand" anyAmount) {
+    var "item_value" set 150
+    exit
+}
+if (hasItem "../../Items/wizard_staff" metadata "Hand" anyAmount) {
+    var "item_value" set 300
+    exit
+}
+if (hasItem "../../Items/wizard_strength_boots" metadata "Hand" anyAmount) {
+    var "item_value" set 150
+    exit
+}
+if (hasItem "../../Items/wizard_strength_chestplate" metadata "Hand" anyAmount) {
+    var "item_value" set 150
+    exit
+}
+if (hasItem "../../Items/wizard_strength_helmet" metadata "Hand" anyAmount) {
+    var "item_value" set 150
+    exit
+}
+if (hasItem "../../Items/wizard_strength_leggings" metadata "Hand" anyAmount) {
+    var "item_value" set 150
+    exit
+}
+if (hasItem "../../Items/wolf_bone" metadata "Hand" anyAmount) {
+    var "item_value" set 100
+    exit
+}
+if (hasItem "../../Items/wolf_claw" metadata "Hand" anyAmount) {
+    var "item_value" set 120
+    exit
+}
+if (hasItem "../../Items/wolf_dagger" metadata "Hand" anyAmount) {
+    var "item_value" set 130
+    exit
 }
 
-function "GetItemValue3" false
-goto function "GetItemValue3"
+function "GetItemValue4" false
+goto function "GetItemValue4"
 
-if (hasItem "../Items/wither_boots" metadata "Hand" anyAmount) {
-    var "item_value" set 90
-exit
-}
-if (hasItem "../Items/wither_chestplate" metadata "Hand" anyAmount) {
-    var "item_value" set 90
-exit
-}
-if (hasItem "../Items/wither_helmet" metadata "Hand" anyAmount) {
-    var "item_value" set 90
-exit
-}
-if (hasItem "../Items/wither_leggings" metadata "Hand" anyAmount) {
-    var "item_value" set 90
-exit
-}
-if (hasItem "../Items/wither_skeleton_scythe" metadata "Hand" anyAmount) {
-    var "item_value" set 90
-exit
+if (hasItem "../../Items/wolf_fang" metadata "Hand" anyAmount) {
+    var "item_value" set 130
+    exit
 }

@@ -6,6 +6,10 @@ if (var "dungselected" == 2 0) {
     function "StartDungeon2" false
     exit
 }
+if (var "dungselected" == 3 0) {
+    function "StartDungeon3" false
+    exit
+}
 
 changeVelocity 0 10 -10
 sound "Anvil Land" 0.7 0.5 "invokers_location"

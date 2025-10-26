@@ -1,0 +1,59 @@
+// random roll 1-1000
+var "drop_roll" set %random.whole/1 1000%
+
+// If roll <= 331, player gets nothing (33.1% no drop rate)
+if (var "drop_roll" <= 331) {
+    exit
+}
+
+// NEW ITEMS:
+// - gatekeeper_pet
+// - gatekeeper_helmet
+// - gatekeeper_chestplate
+// - gatekeeper_leggings
+// - gatekeeper_boots
+// - gatekeeper_blade
+
+// Ranges after 331 (332-1000 = 669 total drop chances)
+
+// Gatekeeper Pet (112/1000 = 11.2%)
+// 332-443 (112/1000 = 11.2%) - Gatekeeper Pet
+if (var "drop_roll" > 331, var "drop_roll" <= 443) {
+    giveItem "../../../../Items/gatekeeper_pet" true "First Avaliable Slot" false
+    chat "&a+Gatekeeper Pet"
+    exit
+}
+
+// Gatekeeper Armor Set - each piece identical rarity (112/1000 = 11.2% each)
+// 444-555 (112/1000 = 11.2%) - Gatekeeper Helmet
+if (var "drop_roll" > 443, var "drop_roll" <= 555) {
+    giveItem "../../../../Items/gatekeeper_helmet" true "First Avaliable Slot" false
+    chat "&a+Gatekeeper Helmet"
+    exit
+}
+// 556-667 (112/1000 = 11.2%) - Gatekeeper Chestplate
+if (var "drop_roll" > 555, var "drop_roll" <= 667) {
+    giveItem "../../../../Items/gatekeeper_chestplate" true "First Avaliable Slot" false
+    chat "&a+Gatekeeper Chestplate"
+    exit
+}
+// 668-779 (112/1000 = 11.2%) - Gatekeeper Leggings
+if (var "drop_roll" > 667, var "drop_roll" <= 779) {
+    giveItem "../../../../Items/gatekeeper_leggings" true "First Avaliable Slot" false
+    chat "&a+Gatekeeper Leggings"
+    exit
+}
+// 780-891 (112/1000 = 11.2%) - Gatekeeper Boots
+if (var "drop_roll" > 779, var "drop_roll" <= 891) {
+    giveItem "../../../../Items/gatekeeper_boots" true "First Avaliable Slot" false
+    chat "&a+Gatekeeper Boots"
+    exit
+}
+
+// Gatekeeper Blade - slightly rarer (109/1000 = 10.9%)
+// 892-1000 (109/1000 = 10.9%) - Gatekeeper Blade
+if (var "drop_roll" > 891, var "drop_roll" <= 1000) {
+    giveItem "../../../../Items/gatekeeper_blade" true "First Avaliable Slot" false
+    chat "&a+Gatekeeper Blade"
+    exit
+}

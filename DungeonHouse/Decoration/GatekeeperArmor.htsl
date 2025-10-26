@@ -1,0 +1,73 @@
+
+// 20 tick cycle:
+// - 1-5 & 10-15: Original Armor for Helmet and Leggings
+// - 6-9 & 16-20: Gatekeeper Armor for Helmet and Leggings
+
+if (hasItem "../../Items/gatekeeper_helmet2" "Metadata" "Inventory" "Any Amount") {
+    removeItem "../../Items/gatekeeper_helmet2"
+    giveItem "../../Items/gatekeeper_helmet" true "First Slot" false
+}
+if (hasItem "../../Items/gatekeeper_leggings2" "Metadata" "Inventory" "Any Amount") {
+    removeItem "../../Items/gatekeeper_leggings2"
+    giveItem "../../Items/gatekeeper_leggings" true "First Slot" false
+}
+if (hasItem "../../Items/gatekeeper_chestplate2" "Metadata" "Inventory" "Any Amount") {
+    removeItem "../../Items/gatekeeper_chestplate2"
+    giveItem "../../Items/gatekeeper_chestplate" true "First Slot" false
+}
+if (hasItem "../../Items/gatekeeper_boots2" "Metadata" "Inventory" "Any Amount") {
+    removeItem "../../Items/gatekeeper_boots2"
+    giveItem "../../Items/gatekeeper_boots" true "First Slot" false
+}
+
+if (var "armorticks" >= 1, var "armorticks" < 6, hasItem "../../Items/gatekeeper_boots" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/gatekeeper_boots2" true "Boots" true
+}
+if (var "armorticks" >= 6, var "armorticks" < 10, hasItem "../../Items/gatekeeper_boots2" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/gatekeeper_boots" true "Boots" true
+}
+if (var "armorticks" >= 10, var "armorticks" < 16, hasItem "../../Items/gatekeeper_boots" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/gatekeeper_boots2" true "Boots" true
+}
+if (var "armorticks" >= 16, var "armorticks" <= 20, hasItem "../../Items/gatekeeper_boots2" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/gatekeeper_boots" true "Boots" true
+}
+
+if (var "armorticks" >= 1, var "armorticks" < 6, hasItem "../../Items/gatekeeper_chestplate" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/gatekeeper_chestplate2" true "Chestplate" true
+}
+if (var "armorticks" >= 6, var "armorticks" < 10, hasItem "../../Items/gatekeeper_chestplate2" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/gatekeeper_chestplate" true "Chestplate" true
+}
+if (var "armorticks" >= 10, var "armorticks" < 16, hasItem "../../Items/gatekeeper_chestplate" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/gatekeeper_chestplate2" true "Chestplate" true
+}
+if (var "armorticks" >= 16, var "armorticks" <= 20, hasItem "../../Items/gatekeeper_chestplate2" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/gatekeeper_chestplate" true "Chestplate" true
+}
+
+if (var "armorticks" >= 1, var "armorticks" < 6, hasItem "../../Items/gatekeeper_leggings2" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/gatekeeper_leggings" true "Leggings" true
+}
+if (var "armorticks" >= 6, var "armorticks" < 10, hasItem "../../Items/gatekeeper_leggings" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/gatekeeper_leggings2" true "Leggings" true
+}
+if (var "armorticks" >= 10, var "armorticks" < 16, hasItem "../../Items/gatekeeper_leggings2" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/gatekeeper_leggings" true "Leggings" true
+}
+if (var "armorticks" >= 16, var "armorticks" <= 20, hasItem "../../Items/gatekeeper_leggings" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/gatekeeper_leggings2" true "Leggings" true
+}
+
+if (var "armorticks" >= 1, var "armorticks" < 6, hasItem "../../Items/gatekeeper_helmet2" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/gatekeeper_helmet" true "Helmet" true
+}
+if (var "armorticks" >= 6, var "armorticks" < 10, hasItem "../../Items/gatekeeper_helmet" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/gatekeeper_helmet2" true "Helmet" true
+}
+if (var "armorticks" >= 10, var "armorticks" < 16, hasItem "../../Items/gatekeeper_helmet2" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/gatekeeper_helmet" true "Helmet" true
+}
+if (var "armorticks" >= 16, var "armorticks" <= 20, hasItem "../../Items/gatekeeper_helmet" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/gatekeeper_helmet2" true "Helmet" true
+}

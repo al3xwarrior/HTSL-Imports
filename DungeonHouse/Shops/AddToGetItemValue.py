@@ -1,10 +1,10 @@
 import os
 
 # Read File names in ../Items
-item_files = os.listdir('DungeonHouse\\Items')
+item_files = os.listdir('../DungeonHouse\\Items')
 # Grab ItemValue script
 item_value_script = ""
-with open("DungeonHouse\\Shops\\GetItemValue.htsl", "r") as f:
+with open("../DungeonHouse\\Shops\\GetItemValue.htsl", "r") as f:
     item_value_script = f.read()
 
 for file_name in item_files:
@@ -25,9 +25,9 @@ for file_name in item_files:
         
 
         print(f"Adding {item_name} to GetItemValue.htsl")
-        item_value_script += f'\nif (hasItem "../Items/{item_name}" metadata "Hand" anyAmount) {{\n    var "item_value" set 1\nexit\n}}'
+        item_value_script += f'\nif (hasItem "../Items/{item_name}" metadata "Hand" anyAmount) {{\n    var "item_value" set 1\n    exit\n}}'
 
 # Write back to GetItemValue.htsl
-with open("DungeonHouse\\Shops\\GetItemValue.htsl", "w") as f:
+with open("../DungeonHouse\\Shops\\GetItemValue.htsl", "w") as f:
     f.write(item_value_script)
     print("Updated GetItemValue.htsl")

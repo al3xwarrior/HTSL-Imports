@@ -1,0 +1,25 @@
+if (inRegion "WizardTowerBridge") {
+
+} else {
+    exit
+}
+
+var "wtb_distx" set %player.pos.x%
+var "wtb_distz" set %player.pos.z%
+var "wtb_distx" dec 6.5D
+var "wtb_distz" dec %var.global/wplat_z%
+
+if (var "wtb_distx" < 0D) {
+    var "wtb_distx" mult -1D
+}
+if (var "wtb_distz" < 0D) {
+    var "wtb_distz" mult -1D
+}
+
+var "wtb_dist" set %var.player/wtb_distx%
+var "wtb_dist" inc %var.player/wtb_distz%
+
+if (var "wtb_dist" >= 2.0D) {
+    chat "&cOh no! You fell off the wizard tower bridge!"
+    tp "custom_coordinates" "~0 ~-1.5 ~0" false
+}

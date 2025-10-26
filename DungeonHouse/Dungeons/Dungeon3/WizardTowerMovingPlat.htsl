@@ -1,0 +1,51 @@
+// 6.5 41.1 93.5
+// 6.5 41.1 106.5
+
+if (globalvar "wplat_dir" == "FORWARD") {
+    globalvar "wplat_z" inc 0.2D
+}
+if (globalvar "wplat_dir" == "BACKWARD") {
+    globalvar "wplat_z" dec 0.2D
+}
+
+if (globalvar "wplat_z" >= 106.5D) {
+    globalvar "wplat_dir" set "BACKWARD"
+}
+if (globalvar "wplat_z" <= 93.5D) {
+    globalvar "wplat_dir" set "FORWARD"
+}
+
+// Drop platforms
+if () {
+    globalvar "wplat_dropx" set 6.5D
+    globalvar "wplat_dropx" inc 0.3D
+    globalvar "wplat_dropz" set %var.global/wplat_z%
+    globalvar "wplat_dropz" inc 0.3D
+    dropItem "../../Items/WizardPlat" "custom_coordinates" "%var.global/wplat_dropx% 41.1 %var.global/wplat_dropz%" false true false false 6 100
+    globalvar "wplat_dropz" dec 0.3D
+    dropItem "../../Items/WizardPlat" "custom_coordinates" "%var.global/wplat_dropx% 41.1 %var.global/wplat_dropz%" false true false false 6 100
+    globalvar "wplat_dropz" dec 0.3D
+    dropItem "../../Items/WizardPlat" "custom_coordinates" "%var.global/wplat_dropx% 41.1 %var.global/wplat_dropz%" false true false false 6 100
+    globalvar "wplat_dropx" set 6.5D
+    globalvar "wplat_dropz" set %var.global/wplat_z%
+    globalvar "wplat_dropz" inc 0.3D
+    dropItem "../../Items/WizardPlat" "custom_coordinates" "%var.global/wplat_dropx% 41.1 %var.global/wplat_dropz%" false true false false 6 100
+    globalvar "wplat_dropz" dec 0.3D
+    dropItem "../../Items/WizardPlat" "custom_coordinates" "%var.global/wplat_dropx% 41.1 %var.global/wplat_dropz%" false true false false 6 100
+}
+if () {
+    globalvar "wplat_dropz" dec 0.3D
+    dropItem "../../Items/WizardPlat" "custom_coordinates" "%var.global/wplat_dropx% 41.1 %var.global/wplat_dropz%" false true false false 6 100
+    globalvar "wplat_dropx" set 6.5D
+    globalvar "wplat_dropx" dec 0.3D
+    globalvar "wplat_dropz" set %var.global/wplat_z%
+    globalvar "wplat_dropz" inc 0.3D
+    dropItem "../../Items/WizardPlat" "custom_coordinates" "%var.global/wplat_dropx% 41.1 %var.global/wplat_dropz%" false true false false 6 100
+    globalvar "wplat_dropz" dec 0.3D
+    dropItem "../../Items/WizardPlat" "custom_coordinates" "%var.global/wplat_dropx% 41.1 %var.global/wplat_dropz%" false true false false 6 100
+    globalvar "wplat_dropz" dec 0.3D
+    dropItem "../../Items/WizardPlat" "custom_coordinates" "%var.global/wplat_dropx% 41.1 %var.global/wplat_dropz%" false true false false 6 100
+}
+pause 5
+
+// COPY AND PASTE 3 TIMES

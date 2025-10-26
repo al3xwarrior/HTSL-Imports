@@ -1,0 +1,21 @@
+// ground_slam is the damage amount
+
+var "needed_mana" set 10
+
+function "HasEnoughMana" false
+
+if (var "needed_mana" > 0) {
+    exit
+}
+
+function "GetNearbyMonsters" false
+
+sound "Anvil Land" 0.7 0.5 "invokers_location"
+applyPotion "Slowness" 1 2 true true
+
+// monster1distance, monster2distance, etc
+loop 4 index {
+    if (var {"monster"+(index+1)+"distance"} <= 5.0D, var {"monster"+(index+1)+"hp"} > %var.player/ground_slam%) {
+        var {"monster"+(index+1)+"hp"} dec %var.player/ground_slam%
+    }
+}

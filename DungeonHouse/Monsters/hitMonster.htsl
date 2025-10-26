@@ -1,4 +1,4 @@
-define monsterNumber 3
+define monsterNumber 2
 
 if (var {"monster"+monsterNumber+"hp"} <= 0) {
     sound "Cat Meow" 0.7 0.5 "invokers_location"
@@ -11,8 +11,8 @@ function "HurtMonster" false
 
 if (var {"monster"+monsterNumber+"hp"} <= 0) {
     // Change Sound + Drop Function
-    sound "Skeleton Death" 0.7 0.6 "invokers_location"
-    function "Dungeon2PigmanDrop" false
+    sound "Wolf Death" 0.7 1 "invokers_location"
+    function "Dungeon3WolfDrop" false
 
     var {"monster"+monsterNumber+"hp"} set 0
 
@@ -20,11 +20,11 @@ if (var {"monster"+monsterNumber+"hp"} <= 0) {
     var "random_gold" set %random.whole/5 20%
     var "goldtocollect" inc %var.player/random_gold%
 
-    dropItem "../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
-    dropItem "../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
-    dropItem "../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
-    dropItem "../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
-    dropItem "../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    dropItem "../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
 
     title "&r" "&4☠ &cMonster Defeated &4☠" 0 2 1
 
@@ -33,7 +33,7 @@ if (var {"monster"+monsterNumber+"hp"} <= 0) {
 }
 
 // Change Monster Hurt Sound
-sound "Skeleton Hurt" 0.7 0.6 "invokers_location"
+sound "Wolf Hurt" 0.7 1 "invokers_location"
 
 title "&r" {"&c%var.player/monster"+monsterNumber+"hp%❤"} 0 1 1
 

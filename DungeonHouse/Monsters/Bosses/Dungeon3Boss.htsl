@@ -1,0 +1,58 @@
+define monsterNumber 1
+
+if (var {"monster"+monsterNumber+"hp"} <= 0) {
+    sound "Cat Meow" 0.7 0.5 "invokers_location"
+    chat "&cThat monster has already been defeated!"
+    exit
+}
+
+var {"monster"+monsterNumber+"hp"} dec %var.player/damage%
+function "HurtMonster" false
+
+if (var {"monster"+monsterNumber+"hp"} <= 0) {
+    // Change Sound + Drop Function
+    function "Dungeon3BossDrop" false
+    sound "Villager Death" 0.7 1.2 "invokers_location"
+
+    dropItem "../../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    dropItem "../../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    dropItem "../../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    dropItem "../../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+    dropItem "../../../Items/MonsterDeathEffect" "custom_coordinates" {"%var.player/monster"+monsterNumber+"xpos% %var.player/monster"+monsterNumber+"ypos% %var.player/monster"+monsterNumber+"zpos%"} true true false false 15 100
+
+    title "&6Boss Defeated" "&40❤" 0 2 1
+
+    var "wizard_active" unset
+
+    function "KillMonster" false
+
+    function "FinishDungeon" false
+
+    chat "&d&lWIZARD: &fNo... this cannot be... I was... so close..."
+    exit
+}
+
+// Change Monster Hurt Sound
+sound "Villager Hit" 0.7 1.2 "invokers_location"
+
+title "&r" {"&c%var.player/monster"+monsterNumber+"hp%❤"} 0 1 1
+
+// Change Chance and Damage Values
+var "fightchance" set %random.whole/1 12%
+
+if (var "fightchance" == 1) {
+    
+} else {
+    exit
+}
+
+sound "Wither Spawn" 0.7 1.5 "invokers_location"
+var "wizard_active" set 1
+
+pause 30
+
+chat "&d&lWIZARD: &fYou dare strike me? Feel my wrath!"
+
+pause 60
+
+var "wizard_active" unset

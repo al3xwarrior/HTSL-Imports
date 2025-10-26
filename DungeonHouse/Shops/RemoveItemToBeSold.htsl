@@ -1,4 +1,5 @@
 
+
 // if (hasItem "../Items/cell_key_dagger" metadata "Hand" anyAmount) {
 //     removeItem "../Items/cell_key_dagger"
 //     exit
@@ -135,3 +136,179 @@
 //     removeItem "../Items/warden_pet"
 //     exit
 // }
+// if (hasItem "../../Items/gatekeeper_blade" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/gatekeeper_blade"
+//     exit
+// }
+// if (hasItem "../../Items/gatekeeper_boots" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/gatekeeper_boots"
+//     exit
+// }
+// if (hasItem "../../Items/gatekeeper_chestplate" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/gatekeeper_chestplate"
+//     exit
+// }
+// if (hasItem "../../Items/gatekeeper_helmet" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/gatekeeper_helmet"
+//     exit
+// }
+// if (hasItem "../../Items/gatekeeper_leggings" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/gatekeeper_leggings"
+//     exit
+// }
+// if (hasItem "../../Items/gatekeeper_pet" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/gatekeeper_pet"
+//     exit
+// }
+// if (hasItem "../../Items/golden_axe" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/golden_axe"
+//     exit
+// }
+// if (hasItem "../../Items/golden_spear" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/golden_spear"
+//     exit
+// }
+// if (hasItem "../../Items/molten_blade" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/molten_blade"
+//     exit
+// }
+// if (hasItem "../../Items/pigman_sword" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/pigman_sword"
+//     exit
+// }
+// if (hasItem "../../Items/pig_boots" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/pig_boots"
+//     exit
+// }
+// if (hasItem "../../Items/pig_chestplate" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/pig_chestplate"
+//     exit
+// }
+// if (hasItem "../../Items/pig_helmet" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/pig_helmet"
+//     exit
+// }
+// if (hasItem "../../Items/pig_leggings" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/pig_leggings"
+//     exit
+// }
+// if (hasItem "../../Items/villager_pet" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/villager_pet"
+//     exit
+// }
+
+// function "RemoveItemToBeSold3" false
+// goto function "RemoveItemToBeSold3"
+
+// if (hasItem "../../Items/wither_boots" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wither_boots"
+//     exit
+// }
+// if (hasItem "../../Items/wither_chestplate" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wither_chestplate"
+//     exit
+// }
+// if (hasItem "../../Items/wither_helmet" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wither_helmet"
+//     exit
+// }
+// if (hasItem "../../Items/wither_leggings" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wither_leggings"
+//     exit
+// }
+// if (hasItem "../../Items/wither_skeleton_scythe" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wither_skeleton_scythe"
+//     exit
+// }
+// if (hasItem "../../Items/alpha_hide_boots" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/alpha_hide_boots"
+//     exit
+// }
+// if (hasItem "../../Items/alpha_hide_chestplate" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/alpha_hide_chestplate"
+//     exit
+// }
+// if (hasItem "../../Items/alpha_hide_helmet" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/alpha_hide_helmet"
+//     exit
+// }
+// if (hasItem "../../Items/alpha_hide_leggings" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/alpha_hide_leggings"
+//     exit
+// }
+// if (hasItem "../../Items/fire" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/fire"
+//     exit
+// }
+// if (hasItem "../../Items/wizard_boots" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wizard_boots"
+//     exit
+// }
+// if (hasItem "../../Items/wizard_chestplate" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wizard_chestplate"
+//     exit
+// }
+// if (hasItem "../../Items/wizard_helmet" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wizard_helmet"
+//     exit
+// }
+// if (hasItem "../../Items/wizard_leggings" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wizard_leggings"
+//     exit
+// }
+// if (hasItem "../../Items/wizard_mana_boots" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wizard_mana_boots"
+//     exit
+// }
+// if (hasItem "../../Items/wizard_mana_chestplate" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wizard_mana_chestplate"
+//     exit
+// }
+// if (hasItem "../../Items/wizard_mana_helmet" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wizard_mana_helmet"
+//     exit
+// }
+// if (hasItem "../../Items/wizard_mana_leggings" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wizard_mana_leggings"
+//     exit
+// }
+// if (hasItem "../../Items/wizard_staff" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wizard_staff"
+//     exit
+// }
+// if (hasItem "../../Items/wizard_strength_boots" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wizard_strength_boots"
+//     exit
+// }
+// if (hasItem "../../Items/wizard_strength_chestplate" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wizard_strength_chestplate"
+//     exit
+// }
+// if (hasItem "../../Items/wizard_strength_helmet" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wizard_strength_helmet"
+//     exit
+// }
+// if (hasItem "../../Items/wizard_strength_leggings" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wizard_strength_leggings"
+//     exit
+// }
+// if (hasItem "../../Items/wolf_bone" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wolf_bone"
+//     exit
+// }
+// if (hasItem "../../Items/wolf_claw" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wolf_claw"
+//     exit
+// }
+
+function "RemoveItemToBeSold4" false
+goto function "RemoveItemToBeSold4"
+
+if (hasItem "../../Items/wolf_dagger" metadata "Hand" anyAmount) {
+    removeItem "../../Items/wolf_dagger"
+    exit
+}
+if (hasItem "../../Items/wolf_fang" metadata "Hand" anyAmount) {
+    removeItem "../../Items/wolf_fang"
+    exit
+}

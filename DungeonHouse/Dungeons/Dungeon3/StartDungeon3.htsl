@@ -1,0 +1,32 @@
+applyPotion "Blindness" 2 1 true true
+pause 2
+tp "custom_coordinates" "9.5 17 91.5 18.0 5.9" false
+sound "Enderman Teleport" 0.7 2.0 "invokers_location"
+
+var "dungeon_stage" set 1
+var "goldtocollect" set 0
+var "dungeon_start" set %date.unix%
+var "dungeon_id" set 3
+
+// Monster Stats
+if () {
+var "monster1hp" set 150
+var "monster1xpos" set 4.5
+var "monster1ypos" set 17.1
+var "monster1zpos" set 99.5
+var "monster2hp" set 175
+var "monster2xpos" set 10.5
+var "monster2ypos" set 17.1
+var "monster2zpos" set 105.5
+}
+
+title "&eWelcome to" "&d&kThe Sith Tower!" 1 3 2
+pause 40
+title "&eWelcome to" "&dThe &kSith Tower!" 0 3 2
+sound "Anvil Use" 0.7 0.6 "invokers_location"
+pause 14
+title "&eWelcome to" "&dThe Sith &kTower!" 0 3 2
+pause 14
+title "&eWelcome to" "&dThe Sith Tower!" 0 3 2
+pause 40
+title "&r" "&eDefeat the Wolfs!" 0 2 1

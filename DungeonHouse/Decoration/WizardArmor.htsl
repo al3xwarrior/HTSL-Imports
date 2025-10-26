@@ -1,0 +1,78 @@
+
+// 20 tick cycle
+
+loop 3 index {
+    if (hasItem {"../../Items/wizard_helmet"+(index+2)} "Metadata" "Inventory" "Any Amount") {
+        removeItem {"../../Items/wizard_helmet"+(index+2)}
+        giveItem "../../Items/wizard_helmet" true "First Slot" false
+    }
+    if (hasItem {"../../Items/wizard_chestplate"+(index+2)} "Metadata" "Inventory" "Any Amount") {
+        removeItem {"../../Items/wizard_chestplate"+(index+2)}
+        giveItem "../../Items/wizard_chestplate" true "First Slot" false
+    }
+    if (hasItem {"../../Items/wizard_leggings"+(index+2)} "Metadata" "Inventory" "Any Amount") {
+        removeItem {"../../Items/wizard_leggings"+(index+2)}
+        giveItem "../../Items/wizard_leggings" true "First Slot" false
+    }
+    if (hasItem {"../../Items/wizard_boots"+(index+2)} "Metadata" "Inventory" "Any Amount") {
+        removeItem {"../../Items/wizard_boots"+(index+2)}
+        giveItem "../../Items/wizard_boots" true "First Slot" false
+    }
+}
+
+// 12 conditionals so far
+
+if (hasItem "../../Items/wizard_helmet" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/wizard_helmet4" true "Helmet" true
+}
+if (hasItem "../../Items/wizard_chestplate" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/wizard_chestplate4" true "Chestplate" true
+}
+if (hasItem "../../Items/wizard_leggings" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/wizard_leggings4" true "Leggings" true
+}
+if (hasItem "../../Items/wizard_boots" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/wizard_boots4" true "Boots" true
+}
+
+if (var "armorticks" >= 1, var "armorticks" < 3, hasItem "../../Items/wizard_helmet4" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/wizard_helmet3" true "Helmet" true
+}
+if (var "armorticks" >= 1, var "armorticks" < 3, hasItem "../../Items/wizard_chestplate4" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/wizard_chestplate3" true "Chestplate" true
+}
+if (var "armorticks" >= 1, var "armorticks" < 3, hasItem "../../Items/wizard_leggings4" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/wizard_leggings3" true "Leggings" true
+}
+if (var "armorticks" >= 1, var "armorticks" < 3, hasItem "../../Items/wizard_boots4" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/wizard_boots3" true "Boots" true
+}
+
+if (var "armorticks" >= 3, var "armorticks" < 6, hasItem "../../Items/wizard_helmet3" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/wizard_helmet2" true "Helmet" true
+}
+if (var "armorticks" >= 3, var "armorticks" < 6, hasItem "../../Items/wizard_chestplate3" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/wizard_chestplate2" true "Chestplate" true
+}
+if (var "armorticks" >= 3, var "armorticks" < 6, hasItem "../../Items/wizard_leggings3" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/wizard_leggings2" true "Leggings" true
+}
+if (var "armorticks" >= 3, var "armorticks" < 6, hasItem "../../Items/wizard_boots3" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/wizard_boots2" true "Boots" true
+}
+
+function "WizardArmor2" false
+goto function "WizardArmor2"
+
+if (var "armorticks" >= 6, var "armorticks" < 9, hasItem "../../Items/wizard_helmet2" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/wizard_helmet4" true "Helmet" true
+}
+if (var "armorticks" >= 6, var "armorticks" < 9, hasItem "../../Items/wizard_chestplate2" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/wizard_chestplate4" true "Chestplate" true
+}
+if (var "armorticks" >= 6, var "armorticks" < 9, hasItem "../../Items/wizard_leggings2" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/wizard_leggings4" true "Leggings" true
+}
+if (var "armorticks" >= 6, var "armorticks" < 9, hasItem "../../Items/wizard_boots2" "Metadata" "Armor" "Any Amount") {
+    giveItem "../../Items/wizard_boots4" true "Boots" true
+}

@@ -1,3 +1,7 @@
+var "armorticks" inc 1
+if (var "armorticks" >= 20) {
+    var "armorticks" set 1
+}
 if (var "unix" < %date.unix% 0) {
     var "unix" set %date.unix%
     var "seconds" inc 1

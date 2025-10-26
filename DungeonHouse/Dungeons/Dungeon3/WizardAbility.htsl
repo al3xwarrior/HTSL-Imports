@@ -1,0 +1,15 @@
+if (var "wizard_active" == 1) {
+    
+} else {
+    exit
+}
+
+if (inRegion "WizardAttackRegion") {
+    var "health" dec 10
+    sound "Chicken Egg Pop" 0.7 0.5 "invokers_location"
+    title "&0" "&%random.int/1 10%-10❤" 0 1 1
+}
+
+launchTarget "custom_coordinates" "12.5 54.1 100.5" 0.2
+pause 2
+launchTarget "custom_coordinates" "12.5 54.1 100.5" 0.2

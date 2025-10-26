@@ -1,7 +1,7 @@
 sound "Cat Meow" 0.7 2.0 "invokers_location"
 
 if (hasItem "ITEM", metadata "Hand" anyAmount) {
-    var "petEquipped" set 1
+    var "petEquipped" set "&eRat Pet"
     chat "&eYou have equipped the &6Rat Pet&e!"
     exit
 }

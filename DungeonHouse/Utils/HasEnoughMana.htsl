@@ -1,0 +1,10 @@
+// set "needed_mana" to the mana cost required
+
+if (var "needed_mana" <= %var.player/mana%) {
+    var "mana" dec %var.player/needed_mana%
+    var "needed_mana" set 0
+    exit
+}
+
+chat "&cYou do not have enough mana to use this ability! %var.player/mana%/%var.player/needed_mana%"
+sound "Villager No" 0.7 1.2 "invokers_location"
