@@ -1,0 +1,4 @@
+var "GuildNameChars" set 0
+var "GuildNameInput" set ""
+sound "Click" 0.7 0.5 "invokers_location"
+displayMenu "Enter Guild Name"

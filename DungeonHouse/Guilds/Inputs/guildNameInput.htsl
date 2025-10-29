@@ -1,0 +1,13 @@
+if (var "GuildNameChars" >= 3) {
+    chat "&cGuild names must be 3 characters long!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+var "GuildNameChars" inc 1
+
+// CHANGE THE A TO WHATEVER CHARACTER IS BEING INPUTTED
+var "GuildNameInput" set "%var.player/GuildNameInput%A"
+
+sound "Click" 0.7 1 "invokers_location"
+displayMenu "Enter Guild Name"

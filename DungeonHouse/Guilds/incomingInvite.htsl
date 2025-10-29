@@ -1,0 +1,19 @@
+
+if (globalvar "gi/id" == %var.player/playerid%) {
+    
+} else {
+    exit
+}
+
+var "gi/guildname" set %var.global/gi/guildname%
+var "gi/guildowner" set %var.global/gi/owner%
+var "gi/monsterkills" set %var.global/gi/MonsterKills 0%
+var "gi/monsterhits" set %var.global/gi/MonsterHits 0%
+var "gi/dungeonfin" set %var.global/gi/DungeonFin 0%
+
+chat "&f"
+chat "&aYou received a guild invite from &e%var.global/gi/owner%&a to join the guild &e%var.global/gi/guildname%&a!"
+chat "&aTo accept the invite, type &7/acceptguildinvite&a."
+chat "&e"
+
+sound "Orb Pickup" 0.7 1 "invokers_location"

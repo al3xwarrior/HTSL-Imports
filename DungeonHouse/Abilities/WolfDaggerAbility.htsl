@@ -1,0 +1,6 @@
+// Triggered in crouch event
+
+if (isSneaking, hasItem "../Items/wolf_dagger" metadata "Hand" anyAmount) {
+    var "wolfdamage" inc 3
+    sound "Wolf Growl" 0.7 1 "invokers_location"
+}

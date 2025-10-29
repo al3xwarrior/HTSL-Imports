@@ -97,7 +97,7 @@ if (var "dungeon_id" == 2, var "dungeontime" < %var.global/d2_sr_time1%) {
 
     globalvar "sr_bc_place" set "&61st"
     globalvar "sr_bc_name" set %player.name%
-    globalvar "sr_bc_dungeon" set "&ci forgot the name"
+    globalvar "sr_bc_dungeon" set "&cThe Corruption Beneath"
     globalvar "sr_bc_mins" set %var.player/d_minutes%
     globalvar "sr_bc_secs" set %var.player/d_seconds%
     function "SpeedRunningBroadcast" false
@@ -118,7 +118,7 @@ if (var "dungeon_id" == 2, var "dungeontime" < %var.global/d2_sr_time2%) {
 
     globalvar "sr_bc_place" set "&72nd"
     globalvar "sr_bc_name" set %player.name%
-    globalvar "sr_bc_dungeon" set "&ci forgot the name"
+    globalvar "sr_bc_dungeon" set "&cThe Corruption Beneath"
     globalvar "sr_bc_mins" set %var.player/d_minutes%
     globalvar "sr_bc_secs" set %var.player/d_seconds%
     function "SpeedRunningBroadcast" false
@@ -133,7 +133,73 @@ if (var "dungeon_id" == 2, var "dungeontime" < %var.global/d2_sr_time3%) {
     
     globalvar "sr_bc_place" set "&83rd"
     globalvar "sr_bc_name" set %player.name%
-    globalvar "sr_bc_dungeon" set "&ci forgot the name"
+    globalvar "sr_bc_dungeon" set "&cThe Corruption Beneath"
+    globalvar "sr_bc_mins" set %var.player/d_minutes%
+    globalvar "sr_bc_secs" set %var.player/d_seconds%
+    function "SpeedRunningBroadcast" false
+
+    exit
+}
+
+/*
+    * DUNGEON 3
+*/
+if (var "dungeon_id" == 3, var "dungeontime" < %var.global/d3_sr_time1%) {
+    // Move Times Down
+    globalvar "d3_sr_time3" set %var.global/d3_sr_time2%
+    globalvar "d3_sr_name3" set %var.global/d3_sr_name2%
+    globalvar "d3_sr_mins3" set %var.global/d3_sr_mins2%
+    globalvar "d3_sr_secs3" set %var.global/d3_sr_secs2%
+
+    globalvar "d3_sr_time2" set %var.global/d3_sr_time1%
+    globalvar "d3_sr_name2" set %var.global/d3_sr_name1%
+    globalvar "d3_sr_mins2" set %var.global/d3_sr_mins1%
+    globalvar "d3_sr_secs2" set %var.global/d3_sr_secs1%
+
+    globalvar "d3_sr_time1" set %var.player/dungeontime%
+    globalvar "d3_sr_name1" set %player.name%
+    globalvar "d3_sr_mins1" set %var.player/d_minutes%
+    globalvar "d3_sr_secs1" set %var.player/d_seconds%
+
+    globalvar "sr_bc_place" set "&61st"
+    globalvar "sr_bc_name" set %player.name%
+    globalvar "sr_bc_dungeon" set "&dThe Sith Tower"
+    globalvar "sr_bc_mins" set %var.player/d_minutes%
+    globalvar "sr_bc_secs" set %var.player/d_seconds%
+    function "SpeedRunningBroadcast" false
+
+    exit
+}
+if (var "dungeon_id" == 3, var "dungeontime" < %var.global/d3_sr_time2%) {
+    // Move Times Down
+    globalvar "d3_sr_time3" set %var.global/d3_sr_time2%
+    globalvar "d3_sr_name3" set %var.global/d3_sr_name2%
+    globalvar "d3_sr_mins3" set %var.global/d3_sr_mins2%
+    globalvar "d3_sr_secs3" set %var.global/d3_sr_secs2%
+
+    globalvar "d3_sr_time2" set %var.player/dungeontime%
+    globalvar "d3_sr_name2" set %player.name%
+    globalvar "d3_sr_mins2" set %var.player/d_minutes%
+    globalvar "d3_sr_secs2" set %var.player/d_seconds%
+
+    globalvar "sr_bc_place" set "&72nd"
+    globalvar "sr_bc_name" set %player.name%
+    globalvar "sr_bc_dungeon" set "&dThe Sith Tower"
+    globalvar "sr_bc_mins" set %var.player/d_minutes%
+    globalvar "sr_bc_secs" set %var.player/d_seconds%
+    function "SpeedRunningBroadcast" false
+
+    exit
+}
+if (var "dungeon_id" == 3, var "dungeontime" < %var.global/d3_sr_time3%) {
+    globalvar "d3_sr_time3" set %var.player/dungeontime%
+    globalvar "d3_sr_name3" set %player.name%
+    globalvar "d3_sr_mins3" set %var.player/d_minutes%
+    globalvar "d3_sr_secs3" set %var.player/d_seconds%
+    
+    globalvar "sr_bc_place" set "&83rd"
+    globalvar "sr_bc_name" set %player.name%
+    globalvar "sr_bc_dungeon" set "&dThe Sith Tower"
     globalvar "sr_bc_mins" set %var.player/d_minutes%
     globalvar "sr_bc_secs" set %var.player/d_seconds%
     function "SpeedRunningBroadcast" false

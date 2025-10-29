@@ -2,9 +2,12 @@ var "armorticks" inc 1
 if (var "armorticks" >= 20) {
     var "armorticks" set 1
 }
+
 if (var "unix" < %date.unix% 0) {
     var "unix" set %date.unix%
     var "seconds" inc 1
+    var "wolfdamage" set 0
+    var "wizstafftime" dec 1
 }
 if (var "seconds" >= 60) {
     var "seconds" set 0
@@ -19,10 +22,18 @@ if (globalvar "unix" < %date.unix% 0) {
     globalvar "unix" set %date.unix%
     globalvar "seconds" inc 1
     function "PortalEffect" false
+    function "Dungeon2ArrowTraps" false
+    function "WizardTowerMovingPlat" false 
 }
 if (globalvar "seconds" >= 60) {
     globalvar "seconds" set 0
     globalvar "minutes" inc 1
+    
+    globalvar "avgeconomy" set 0
+    globalvar "totaleconomy" set 0
+    function "EconomyTracker" true
+    pause 5
+    globalvar "avgeconomy" div %house.players%
 }
 if (globalvar "minutes" >= 60) {
     globalvar "minutes" set 0

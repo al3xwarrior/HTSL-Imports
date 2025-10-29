@@ -1,0 +1,12 @@
+if (var "petEquipped" == "&fRat") {
+
+} else {
+    exit
+}
+
+if (placeholder %random.whole/1 101% == 67) {
+    var "temp" set "%random.whole/5 21%"
+    var "gold" inc %var.player/temp%
+    sound "Item Pickup" 0.7 1.5 "invokers_location"
+    chat "&eYour &fRat &efound you &6%var.player/temp% &eGold!"
+}

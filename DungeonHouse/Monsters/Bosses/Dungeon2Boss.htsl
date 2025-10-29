@@ -37,7 +37,7 @@ sound "Skeleton Hurt" 0.7 0.6 "invokers_location"
 
 title "&r" {"&c%var.player/monster"+monsterNumber+"hp%❤"} 0 1 1
 
-if (var "bossstage" == 1, var "monster1hp" <= 400) {
+if (var "bossstage" == 1, var "monster1hp" <= 750) {
     var "bossstage" set 2
     sound "Wither Spawn" 0.7 1.0 "invokers_location"
     chat "&c&lGATEKEEPER: &fYou dare push me this far?! Good luck avoiding my &ninvincible&r &fmagma cubes!"

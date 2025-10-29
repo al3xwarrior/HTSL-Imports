@@ -7,6 +7,32 @@ var "manaregen" set 1
 
 function "CalculateItemStats" false
 
+function "CalculateMultipliers" false
+
+if (var "health" <= 0) {
+    tp "house_spawn" "0 0 0" true
+    var "health" set %var.player/maxhealth%
+    var "mana" set %var.player/maxmana%
+
+    title "&cYou Died!" "&7You have been teleported to spawn." 0 2 1
+    sound "Bat Death" 0.7 1.5 "invokers_location"
+    applyPotion "Blindness" 2 1 true false
+}
+
+var "levelpercent" set %var.player/xp 0%D
+var "levelpercent" div %var.player/xpneeded 100%D
+var "levelpercent" mult 100D
+
+if (var "xp" >= %var.player/xpneeded%) {
+    var "xp" dec %var.player/xpneeded%
+    var "level" inc 1
+    var "xpneeded" mult 12
+    var "xpneeded" div 10
+    var "skillpoints" inc 1
+    title "&6&lLevel Up!" "&7You are now level &e%var.player/level%&7!" 1 2 1
+    sound "Level Up" 0.7 1 "invokers_location"
+}
+
 var "regencooldown" dec 1
 if (var "regencooldown" <= 0) {
     var "regencooldown" set 2
@@ -19,6 +45,23 @@ if (var "health" > %var.player/maxhealth%) {
 }
 if (var "mana" > %var.player/maxmana%) {
     var "mana" set %var.player/maxmana%
+}
+
+changeHealth set %var.player/health%
+maxHealth set %var.player/maxhealth%
+
+loop 9 index {
+    if (var "speed" == {index+1}) {
+        applyPotion "Speed" 1 {index+1} true true
+    }
+}
+if (var "speed" >= 10) {
+    applyPotion "Speed" 1 10 true true
+}
+
+if (gamemode "Creative") {
+    actionBar "&fHouse TPS: &a%var.player/tps/tick/avg% &r &r &r &fPlayers: &a%house.players% &r &r &r &fStaff: &a%player.team.players/Staff% &r &r &r &fAverage Economy: &e%var.global/avgeconomy% &r &r &r &fTotal Economy: &e%var.global/totaleconomy%"
+    exit
 }
 
 actionBar "&c%var.player/health%❤ &7/ &c%var.player/maxhealth%❤ &8(&7+%var.player/healthregen%❤/s&8) &r &r &r &r &4%var.player/damage%&l⚔&r &r &r &r &r &b%var.player/mana%✦ &7/ &b%var.player/maxmana%✦ &8(&7+%var.player/manaregen%✦/s&8)"

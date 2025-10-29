@@ -1,0 +1,3 @@
+if (var "wizstafftime" > 0) {
+    var "damage" mult 3
+}

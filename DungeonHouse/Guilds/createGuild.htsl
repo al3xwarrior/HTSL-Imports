@@ -1,0 +1,35 @@
+if (var "GuildName" == "" "") {
+
+} else {
+    chat "&cYou are already in a guild!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+if (var "GuildNameInput" == "" "") {
+    chat "&cYou must enter a guild name!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+if (var "GuildNameChars" < 3) {
+    chat "&cGuild names must be 3 characters long!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+if or (var "GuildNameInput" == "ASS" "", var "GuildNameInput" == "FAG", var "GuildNameInput" == "CUM", var "GuildNameInput" == "GAY", var "GuildNameInput" == "GOD", var "GuildNameInput" == "JEW", var "GuildNameInput" == "TIT", var "GuildNameInput" == "PUS", var "GuildNameInput" == "DIE", var "GuildNameInput" == "DIC", var "GuildNameInput" == "FUK", var "GuildNameInput" == "SHT", var "GuildNameInput" == "COK", var "GuildNameInput" == "SUX", var "GuildNameInput" == "DCK", var "GuildNameInput" == "FAG", var "GuildNameInput" == "COK", var "GuildNameInput" == "KYS", var "GuildNameInput" == "HOE") {
+    chat "&cThat guild name is not allowed!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+if or (var "GuildNameInput" == "SEX" "", var "GuildNameInput" == "KYS", var "GuildNameInput" == "NIG") {
+    chat "&cThat guild name is not allowed!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+var "GuildName" set %var.player/GuildNameInput%
+chat "&aYou have created the guild &e%var.player/GuildName%&a! Access the &2Guild Menu &ato manage your guild. &7(&e//dungeonguild&7)"
+sound "Level Up" 0.7 1 "invokers_location"

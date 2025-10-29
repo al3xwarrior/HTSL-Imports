@@ -1,0 +1,27 @@
+if (hasItem "../Items/100Gold" metadata "Hand" anyAmount) {
+    removeItem "../Items/100Gold"
+    var "gold" inc 100
+    sound "Item Pickup" 0.7 1.5 "invokers_location"
+    exit
+}
+
+if (hasItem "../Items/1000Gold" metadata "Hand" anyAmount) {
+    removeItem "../Items/1000Gold"
+    var "gold" inc 1000
+    sound "Item Pickup" 0.7 1.5 "invokers_location"
+    exit
+}
+
+if (hasItem "../Items/10000Gold" metadata "Hand" anyAmount) {
+    removeItem "../Items/10000Gold"
+    var "gold" inc 10000
+    sound "Item Pickup" 0.7 1.5 "invokers_location"
+    exit
+}
+
+if (hasItem "../Items/100000Gold" metadata "Hand" anyAmount) {
+    removeItem "../Items/100000Gold"
+    var "gold" inc 100000
+    sound "Item Pickup" 0.7 1.5 "invokers_location"
+    exit
+}

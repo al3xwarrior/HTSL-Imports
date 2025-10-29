@@ -1,0 +1,8 @@
+if (globalvar "GA/owner" == %var.player/GuildOwner%) {
+
+} else {
+    exit
+}
+
+chat "&aThe player &e%var.global/GA/name%&a has joined your guild!"
+sound "Orb Pickup" 0.7 1 "invokers_location"

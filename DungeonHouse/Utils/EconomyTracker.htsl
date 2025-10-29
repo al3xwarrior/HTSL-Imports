@@ -1,0 +1,2 @@
+globalvar "avgeconomy" inc %var.player/gold 0%
+globalvar "totaleconomy" inc %var.player/gold 0%

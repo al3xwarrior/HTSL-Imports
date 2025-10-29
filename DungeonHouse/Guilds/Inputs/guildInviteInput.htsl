@@ -1,0 +1,7 @@
+
+var "GuildInvite" mult 10
+// CHANGE THE NUMBER
+var "GuildInvite" inc 1
+
+sound "Click" 0.7 1 "invokers_location"
+displayMenu "Enter Player ID to Invite"

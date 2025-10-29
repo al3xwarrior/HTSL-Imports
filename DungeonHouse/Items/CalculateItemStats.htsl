@@ -313,214 +313,224 @@ if (hasItem "torn_prisoner_cap" metadata "Armor" anyAmount) {
 // }
 
 // --- Weapons ---
-if (hasItem "../wolf_bone" metadata "Hand" anyAmount) {
-    var "damage" inc 75
-}
+// if (hasItem "../wolf_bone" metadata "Hand" anyAmount) {
+//     var "damage" inc 75
+// }
 
-if (hasItem "../wolf_claw" metadata "Hand" anyAmount) {
-    var "damage" inc 85
-}
+// if (hasItem "../wolf_claw" metadata "Hand" anyAmount) {
+//     var "damage" inc 85
+// }
 
-if (hasItem "../wolf_fang" metadata "Hand" anyAmount) {
-    var "damage" inc 90
-    var "healthRegen" inc 5
-}
+// if (hasItem "../wolf_fang" metadata "Hand" anyAmount) {
+//     var "damage" inc 90
+//     var "healthRegen" inc 5
+// }
 
-if (hasItem "../wolf_dagger" metadata "Hand" anyAmount) {
-    var "damage" inc 110
-    var "healthRegen" inc 8
-}
+// if (hasItem "../wolf_dagger" metadata "Hand" anyAmount) {
+//     var "damage" inc 110
+//     var "healthRegen" inc 8
+// }
 
-if (hasItem "../wizard_staff" metadata "Hand" anyAmount) {
-    var "damage" inc 200
-    var "maxmana" inc 10
-    var "manaRegen" inc 5
-}
+// if (hasItem "../wizard_staff" metadata "Hand" anyAmount) {
+//     var "damage" inc 200
+//     var "maxmana" inc 10
+//     var "manaRegen" inc 5
+// }
 
-// --- Armor ---
+// // --- Armor ---
 
-// Hide Armor Set
-if (hasItem "../hide_helmet" metadata "Armor" anyAmount) {
-    var "maxhealth" inc 70
-    var "healthRegen" inc 8
-}
-if (hasItem "../hide_chestplate" metadata "Armor" anyAmount) {
-    var "maxhealth" inc 70
-    var "healthRegen" inc 8
-}
-if (hasItem "../hide_leggings" metadata "Armor" anyAmount) {
-    var "maxhealth" inc 70
-    var "healthRegen" inc 8
-}
-if (hasItem "../hide_boots" metadata "Armor" anyAmount) {
-    var "maxhealth" inc 70
-    var "healthRegen" inc 8
-}
+// // Hide Armor Set
+// if (hasItem "../hide_helmet" metadata "Armor" anyAmount) {
+//     var "maxhealth" inc 70
+//     var "healthRegen" inc 8
+// }
+// if (hasItem "../hide_chestplate" metadata "Armor" anyAmount) {
+//     var "maxhealth" inc 70
+//     var "healthRegen" inc 8
+// }
+// if (hasItem "../hide_leggings" metadata "Armor" anyAmount) {
+//     var "maxhealth" inc 70
+//     var "healthRegen" inc 8
+// }
+// if (hasItem "../hide_boots" metadata "Armor" anyAmount) {
+//     var "maxhealth" inc 70
+//     var "healthRegen" inc 8
+// }
 
-// Alpha Hide Armor Set
-if (hasItem "../alpha_hide_helmet" metadata "Armor" anyAmount) {
-    var "maxhealth" inc 80
-    var "healthRegen" inc 8
-}
-if (hasItem "../alpha_hide_chestplate" metadata "Armor" anyAmount) {
-    var "maxhealth" inc 80
-    var "healthRegen" inc 8
-}
-if (hasItem "../alpha_hide_leggings" metadata "Armor" anyAmount) {
-    var "maxhealth" inc 80
-    var "healthRegen" inc 8
-}
-if (hasItem "../alpha_hide_boots" metadata "Armor" anyAmount) {
-    var "maxhealth" inc 80
-    var "healthRegen" inc 8
-}
+// // Alpha Hide Armor Set
+// if (hasItem "../alpha_hide_helmet" metadata "Armor" anyAmount) {
+//     var "maxhealth" inc 80
+//     var "healthRegen" inc 8
+// }
+// if (hasItem "../alpha_hide_chestplate" metadata "Armor" anyAmount) {
+//     var "maxhealth" inc 80
+//     var "healthRegen" inc 8
+// }
+// if (hasItem "../alpha_hide_leggings" metadata "Armor" anyAmount) {
+//     var "maxhealth" inc 80
+//     var "healthRegen" inc 8
+// }
+// if (hasItem "../alpha_hide_boots" metadata "Armor" anyAmount) {
+//     var "maxhealth" inc 80
+//     var "healthRegen" inc 8
+// }
 
-// Wizard Strength Armor Set
-if (hasItem "../wizard_strength_helmet" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 30
-}
-if (hasItem "../wizard_strength_chestplate" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 30
-}
-if (hasItem "../wizard_strength_leggings" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 30
-}
+// // Wizard Strength Armor Set
+// if (hasItem "../wizard_strength_helmet" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 30
+// }
+// if (hasItem "../wizard_strength_chestplate" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 30
+// }
+// if (hasItem "../wizard_strength_leggings" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 30
+// }
 
-function "CalculateItemStats4" false
-goto function "CalculateItemStats4"
+// function "CalculateItemStats4" false
+// goto function "CalculateItemStats4"
 
-if (hasItem "../wizard_strength_boots" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 30
-}
+// if (hasItem "../wizard_strength_boots" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 30
+// }
 
-// Wizard Mana Armor Set
-if (hasItem "../wizard_mana_helmet" metadata "Armor" anyAmount) {
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-    var "maxhealth" inc 30
-}
-if (hasItem "../wizard_mana_chestplate" metadata "Armor" anyAmount) {
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-    var "maxhealth" inc 30
-}
-if (hasItem "../wizard_mana_leggings" metadata "Armor" anyAmount) {
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-    var "maxhealth" inc 30
-}
-if (hasItem "../wizard_mana_boots" metadata "Armor" anyAmount) {
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-    var "maxhealth" inc 30
-}
+// // Wizard Mana Armor Set
+// if (hasItem "../wizard_mana_helmet" metadata "Armor" anyAmount) {
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+//     var "maxhealth" inc 30
+// }
+// if (hasItem "../wizard_mana_chestplate" metadata "Armor" anyAmount) {
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+//     var "maxhealth" inc 30
+// }
+// if (hasItem "../wizard_mana_leggings" metadata "Armor" anyAmount) {
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+//     var "maxhealth" inc 30
+// }
+// if (hasItem "../wizard_mana_boots" metadata "Armor" anyAmount) {
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+//     var "maxhealth" inc 30
+// }
 
-// --- Wizard Armor Sets ---
+// // --- Wizard Armor Sets ---
 
-// Wizard Set 1
-if (hasItem "../wizard_helmet" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 100
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-}
-if (hasItem "../wizard_chestplate" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 100
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-}
-if (hasItem "../wizard_leggings" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 100
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-}
-if (hasItem "../wizard_boots" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 100
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-}
+// // Wizard Set 1
+// if (hasItem "../wizard_helmet" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 100
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+// }
+// if (hasItem "../wizard_chestplate" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 100
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+// }
+// if (hasItem "../wizard_leggings" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 100
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+// }
+// if (hasItem "../wizard_boots" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 100
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+// }
 
-// Wizard Set 2
-if (hasItem "../wizard_helmet2" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 100
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-}
-if (hasItem "../wizard_chestplate2" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 100
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-}
-if (hasItem "../wizard_leggings2" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 100
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-}
-if (hasItem "../wizard_boots2" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 100
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-}
+// // Wizard Set 2
+// if (hasItem "../wizard_helmet2" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 100
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+// }
+// if (hasItem "../wizard_chestplate2" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 100
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+// }
+// if (hasItem "../wizard_leggings2" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 100
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+// }
+// if (hasItem "../wizard_boots2" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 100
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+// }
 
-// Wizard Set 3
-if (hasItem "../wizard_helmet3" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 100
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-}
-if (hasItem "../wizard_chestplate3" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 100
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-}
-if (hasItem "../wizard_leggings3" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 100
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-}
-if (hasItem "../wizard_boots3" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 100
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-}
+// // Wizard Set 3
+// if (hasItem "../wizard_helmet3" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 100
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+// }
+// if (hasItem "../wizard_chestplate3" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 100
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+// }
+// if (hasItem "../wizard_leggings3" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 100
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+// }
+// if (hasItem "../wizard_boots3" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 100
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+// }
 
-// Wizard Set 4
-if (hasItem "../wizard_helmet4" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 100
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-}
-if (hasItem "../wizard_chestplate4" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 100
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-}
-if (hasItem "../wizard_leggings4" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 100
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-}
-if (hasItem "../wizard_boots4" metadata "Armor" anyAmount) {
-    var "damage" inc 75
-    var "maxhealth" inc 100
-    var "maxmana" inc 20
-    var "manaRegen" inc 5
-}
+// // Wizard Set 4
+// if (hasItem "../wizard_helmet4" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 100
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+// }
+// if (hasItem "../wizard_chestplate4" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 100
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+// }
+// if (hasItem "../wizard_leggings4" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 100
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+// }
+// if (hasItem "../wizard_boots4" metadata "Armor" anyAmount) {
+//     var "damage" inc 75
+//     var "maxhealth" inc 100
+//     var "maxmana" inc 20
+//     var "manaRegen" inc 5
+// }
+
+// if (var "petEquipped" == "&fWolf") {
+//     var "damage" inc 25
+//     var "maxhealth" inc 5
+//     var "maxmana" inc 5
+//     var "manaRegen" inc 2
+//     var "speed" inc 1
+// }
+
+var "damage" inc %var.player/wolfdamage%

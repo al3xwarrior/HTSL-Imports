@@ -1,0 +1,77 @@
+// random roll 1-1000
+var "drop_roll" set %random.whole/1 1000%
+
+// If roll <= 331, player gets nothing (33.1% no drop rate)
+if (var "drop_roll" <= 331) {
+    exit
+}
+
+// NEW ITEMS:
+// - wizard_staff
+// - wizard_strength_helmet
+// - wizard_strength_chestplate
+// - wizard_strength_leggings
+// - wizard_strength_boots
+// - wizard_mana_helmet
+// - wizard_mana_chestplate
+// - wizard_mana_leggings
+// - wizard_mana_boots
+
+// Ranges after 331 (332-1000 = 669 total drop chances)
+// We're replacing Gatekeeper drops with Wizard-themed drops. Split the 669 rolls across 9 items.
+// We'll use three 75-roll ranges (7.5%) and six 74-roll ranges (7.4%) to total 669.
+
+// 332-406 (75/1000 = 7.5%) - Wizard Staff
+if (var "drop_roll" > 331, var "drop_roll" <= 406) {
+    giveItem "../../../Items/wizard_staff" true "First Avaliable Slot" false
+    chat "&a+Wizard Staff"
+    exit
+}
+// 407-481 (75/1000 = 7.5%) - Wizard Strength Helmet
+if (var "drop_roll" > 406, var "drop_roll" <= 481) {
+    giveItem "../../../Items/wizard_strength_helmet" true "First Avaliable Slot" false
+    chat "&a+Wizard Strength Helmet"
+    exit
+}
+// 482-556 (75/1000 = 7.5%) - Wizard Strength Chestplate
+if (var "drop_roll" > 481, var "drop_roll" <= 556) {
+    giveItem "../../../Items/wizard_strength_chestplate" true "First Avaliable Slot" false
+    chat "&a+Wizard Strength Chestplate"
+    exit
+}
+// 557-630 (74/1000 = 7.4%) - Wizard Strength Leggings
+if (var "drop_roll" > 556, var "drop_roll" <= 630) {
+    giveItem "../../../Items/wizard_strength_leggings" true "First Avaliable Slot" false
+    chat "&a+Wizard Strength Leggings"
+    exit
+}
+// 631-704 (74/1000 = 7.4%) - Wizard Strength Boots
+if (var "drop_roll" > 630, var "drop_roll" <= 704) {
+    giveItem "../../../Items/wizard_strength_boots" true "First Avaliable Slot" false
+    chat "&a+Wizard Strength Boots"
+    exit
+}
+// 705-778 (74/1000 = 7.4%) - Wizard Mana Helmet
+if (var "drop_roll" > 704, var "drop_roll" <= 778) {
+    giveItem "../../../Items/wizard_mana_helmet" true "First Avaliable Slot" false
+    chat "&a+Wizard Mana Helmet"
+    exit
+}
+// 779-852 (74/1000 = 7.4%) - Wizard Mana Chestplate
+if (var "drop_roll" > 778, var "drop_roll" <= 852) {
+    giveItem "../../../Items/wizard_mana_chestplate" true "First Avaliable Slot" false
+    chat "&a+Wizard Mana Chestplate"
+    exit
+}
+// 853-926 (74/1000 = 7.4%) - Wizard Mana Leggings
+if (var "drop_roll" > 852, var "drop_roll" <= 926) {
+    giveItem "../../../Items/wizard_mana_leggings" true "First Avaliable Slot" false
+    chat "&a+Wizard Mana Leggings"
+    exit
+}
+// 927-1000 (74/1000 = 7.4%) - Wizard Mana Boots
+if (var "drop_roll" > 926, var "drop_roll" <= 1000) {
+    giveItem "../../../Items/wizard_mana_boots" true "First Avaliable Slot" false
+    chat "&a+Wizard Mana Boots"
+    exit
+}

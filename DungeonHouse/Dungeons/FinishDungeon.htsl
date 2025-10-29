@@ -68,12 +68,11 @@ sound "Explode" 0.7 2.0 "invokers_location"
 dropItem "../Items/GoldReward" "custom_coordinates" "^ ^1.2 ^0.8" false true false false 10 2
 }
 
-var "gold" inc %var.player/goldreward%
 var "goldreward" unset
 var "goldinc" unset
 
 pause 20
 
 applyPotion "Blindness" 1 1 true true
-tp "custom_coordinates" "-67.5 165.0 -60.5" true
+tp "custom_coordinates" "-67.5 165.0 -60.5 0.0 3.2" true
 sound "Enderman Teleport" 0.7 2.0 "invokers_location"

@@ -1,0 +1,49 @@
+// Put in a 5t repeat execution function
+// Give it a little to stabilize, when it starts going up and down and not just up, assume its correct
+
+var tps/tick += 1
+if (!var tps/unix = "%date.unix%") {
+    var tps/tick/avg *= 4.0
+    var tps/tick/avg += "%var.player/tps/tick 0%D"
+    var tps/tick/avg /= 5.0
+    var tps/unix = "%date.unix%"
+    var tps/tick = 0
+}
+pause 1
+var tps/tick += 1
+if (!var tps/unix = "%date.unix%") {
+    var tps/tick/avg *= 4.0
+    var tps/tick/avg += "%var.player/tps/tick 0%D"
+    var tps/tick/avg /= 5.0
+    var tps/unix = "%date.unix%"
+    var tps/tick = 0
+}
+pause 1
+var tps/tick += 1
+if (!var tps/unix = "%date.unix%") {
+    var tps/tick/avg *= 4.0
+    var tps/tick/avg += "%var.player/tps/tick 0%D"
+    var tps/tick/avg /= 5.0
+    var tps/unix = "%date.unix%"
+    var tps/tick = 0
+}
+pause 1
+var tps/tick += 1
+if (!var tps/unix = "%date.unix%") {
+    var tps/tick/avg *= 4.0
+    var tps/tick/avg += "%var.player/tps/tick 0%D"
+    var tps/tick/avg /= 5.0
+    var tps/unix = "%date.unix%"
+    var tps/tick = 0
+}
+pause 1
+var tps/tick += 1
+if (!var tps/unix = "%date.unix%") {
+    var tps/tick/avg *= 4.0
+    var tps/tick/avg += "%var.player/tps/tick 0%D"
+    var tps/tick/avg /= 5.0
+    var tps/unix = "%date.unix%"
+    var tps/tick = 0
+}
+
+// title "&7TPS: &a%var.player/tps/tick/avg%" "&f" 0 2 1

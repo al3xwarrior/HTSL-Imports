@@ -1,3 +1,6 @@
 // triggered when a monster is killed
 
 chat "&aYou got &6%var.player/random_gold%⛃ &afrom that Monster!"
+var "gold" inc %var.player/random_gold 0%
+
+var "xp" inc %random.whole/9 21%

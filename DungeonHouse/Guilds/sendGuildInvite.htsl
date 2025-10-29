@@ -1,0 +1,26 @@
+// GuildInvite
+
+if (var "GuildInviteInput" == %var.player/playerid%) {
+    chat "&cYou cannot invite yourself to your guild silly goose!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+if (var "GuildOwner" == %player.name%) {
+
+} else {
+    chat "&cOnly the guild owner can invite players to the guild!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+globalvar "gi/id" set %var.player/GuildInviteInput%
+globalvar "gi/owner" set %player.name%
+globalvar "gi/guildname" set %var.player/GuildName%
+globalvar "gi/monsterkills" set %var.player/GS/MonsterKills 0%
+globalvar "gi/monsterhits" set %var.player/GS/MonsterHits 0%
+globalvar "gi/dungeonfin" set %var.player/GS/DungeonFin 0%
+
+chat "&aYou have invited the player with &eID %var.player/GuildInviteInput%&a to your guild &e%var.player/GuildName%&a! They can accept the invite with &7/acceptguildinvite&a."
+
+function "incomingInvite" true

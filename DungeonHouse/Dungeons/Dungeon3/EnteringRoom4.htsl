@@ -3,11 +3,11 @@ if or (var "dungeon_stage" > 3, gamemode "Creative") {
 }
 
 if (var "monster1hp" <= 0, var "monster2hp" <= 0) {
-    var "monster1hp" set 200
+    var "monster1hp" set 1300
     var "monster1xpos" set 11.5
     var "monster1ypos" set 35.1
     var "monster1zpos" set 95.5
-    var "monster2hp" set 200
+    var "monster2hp" set 1250
     var "monster2xpos" set 7.5 35.1 104.5
     var "monster2ypos" set 35.1
     var "monster2zpos" set 104.5

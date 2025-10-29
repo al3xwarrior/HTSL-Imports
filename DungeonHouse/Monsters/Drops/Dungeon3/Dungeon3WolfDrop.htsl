@@ -1,0 +1,119 @@
+// random roll 1-1000
+var "drop_roll" set %random.whole/1 1000%
+
+// If roll <= 331, player gets nothing (33.1% no drop rate)
+if (var "drop_roll" <= 331) {
+    exit
+}
+
+// NEW ITEMS:
+// - wolf_bone
+// - wolf_claw
+// - wolf_fang
+// - wolf_dagger
+// - hide_boots
+// - hide_leggings
+// - hide_chestplate
+// - hide_helmet
+// - alpha_hide_helmet
+// - alpha_hide_chestplate
+// - alpha_hide_leggings
+// - alpha_hide_boots
+// - wolf_pet
+// - wolf_spirit
+
+// Ranges after 331 (332-1000 = 669 total drop chances)
+
+// NEW drops mapped to previous ranges
+// 332-386 (55/1000 = 5.5%) - Wolf Bone
+if (var "drop_roll" > 331, var "drop_roll" <= 386) {
+    giveItem "../../../Items/wolf_bone" true "First Avaliable Slot" false
+    chat "&a+Wolf Bone"
+    exit
+}
+// 387-441 (55/1000 = 5.5%) - Wolf Claw
+if (var "drop_roll" > 386, var "drop_roll" <= 441) {
+    giveItem "../../../Items/wolf_claw" true "First Avaliable Slot" false
+    chat "&a+Wolf Claw"
+    exit
+}
+
+// 442-491 (50/1000 = 5.0%) - Wolf Fang
+if (var "drop_roll" > 441, var "drop_roll" <= 491) {
+    giveItem "../../../Items/wolf_fang" true "First Avaliable Slot" false
+    chat "&a+Wolf Fang"
+    exit
+}
+// 492-541 (50/1000 = 5.0%) - Wolf Dagger
+if (var "drop_roll" > 491, var "drop_roll" <= 541) {
+    giveItem "../../../Items/wolf_dagger" true "First Avaliable Slot" false
+    chat "&a+Wolf Dagger"
+    exit
+}
+
+// 542-586 (45/1000 = 4.5%) - Wolf Pet
+if (var "drop_roll" > 541, var "drop_roll" <= 586) {
+    giveItem "../../../Items/wolf_pet" true "First Avaliable Slot" false
+    chat "&a+Wolf Pet"
+    exit
+}
+
+// Hide armor (each 40/1000 = 4.0%)
+// 587-626 (40/1000 = 4.0%) - Hide Boots
+if (var "drop_roll" > 586, var "drop_roll" <= 626) {
+    giveItem "../../../Items/hide_boots" true "First Avaliable Slot" false
+    chat "&a+Hide Boots"
+    exit
+}
+// 627-666 (40/1000 = 4.0%) - Hide Leggings
+if (var "drop_roll" > 626, var "drop_roll" <= 666) {
+    giveItem "../../../Items/hide_leggings" true "First Avaliable Slot" false
+    chat "&a+Hide Leggings"
+    exit
+}
+// 667-706 (40/1000 = 4.0%) - Hide Chestplate
+if (var "drop_roll" > 666, var "drop_roll" <= 706) {
+    giveItem "../../../Items/hide_chestplate" true "First Avaliable Slot" false
+    chat "&a+Hide Chestplate"
+    exit
+}
+// 707-746 (40/1000 = 4.0%) - Hide Helmet
+if (var "drop_roll" > 706, var "drop_roll" <= 746) {
+    giveItem "../../../Items/hide_helmet" true "First Avaliable Slot" false
+    chat "&a+Hide Helmet"
+    exit
+}
+
+// Alpha hide armor (each 35/1000 = 3.5%)
+// 747-781 (35/1000 = 3.5%) - Alpha Hide Boots
+if (var "drop_roll" > 746, var "drop_roll" <= 781) {
+    giveItem "../../../Items/alpha_hide_boots" true "First Avaliable Slot" false
+    chat "&a+Alpha Hide Boots"
+    exit
+}
+// 782-816 (35/1000 = 3.5%) - Alpha Hide Leggings
+if (var "drop_roll" > 781, var "drop_roll" <= 816) {
+    giveItem "../../../Items/alpha_hide_leggings" true "First Avaliable Slot" false
+    chat "&a+Alpha Hide Leggings"
+    exit
+}
+// 817-851 (35/1000 = 3.5%) - Alpha Hide Chestplate
+if (var "drop_roll" > 816, var "drop_roll" <= 851) {
+    giveItem "../../../Items/alpha_hide_chestplate" true "First Avaliable Slot" false
+    chat "&a+Alpha Hide Chestplate"
+    exit
+}
+// 852-886 (35/1000 = 3.5%) - Alpha Hide Helmet
+if (var "drop_roll" > 851, var "drop_roll" <= 886) {
+    giveItem "../../../Items/alpha_hide_helmet" true "First Avaliable Slot" false
+    chat "&a+Alpha Hide Helmet"
+    exit
+}
+
+// Rare (29/1000 = 2.9%) - Wolf Spirit
+// 887-915 (29/1000 = 2.9%) - Wolf Spirit
+if (var "drop_roll" > 886, var "drop_roll" <= 915) {
+    giveItem "../../../Items/wolf_spirit" true "First Avaliable Slot" false
+    chat "&a+Wolf Spirit"
+    exit
+}

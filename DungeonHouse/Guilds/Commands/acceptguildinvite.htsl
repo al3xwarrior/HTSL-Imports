@@ -1,0 +1,27 @@
+// var "gi/guildname" set %var.global/gi/guildname%
+// var "gi/guildowner" set %var.global/gi/owner%
+// var "gi/monsterkills" set %var.player/gi/MonsterKills 0%
+// var "gi/monsterhits" set %var.player/gi/MonsterHits 0%
+// var "gi/dungeonfin" set %var.player/gi/DungeonFin 0%
+
+if (var "GuildName" == "" "") {
+
+} else {
+    chat "&cYou are already in a guild!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+var "GuildName" set %var.player/gi/guildname%
+var "GuildOwner" set %var.player/gi/guildowner%
+var "GS/DungeonFin" set %var.player/gi/dungeonfin%
+var "GS/MonsterHits" set %var.player/gi/monsterhits%
+var "GS/MonsterKills" set %var.player/gi/monsterkills%
+
+chat "&aYou have joined the guild &e%var.player/gi/guildname%&a!"
+sound "Level Up" 0.7 1 "invokers_location"
+
+globalvar "GA/owner" set %var.player/GuildOwner%
+globalvar "GA/name" set %player.name%
+
+function "guildAccepted" true

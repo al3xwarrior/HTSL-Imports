@@ -1,3 +1,16 @@
+if (hasGroup "Helper" true) {
+    setTeam "Staff"
+}
+
+applyPotion "Night Vision" 2000000 1 true true
+
+if (var "xpneeded" < 100 0) {
+    var "xpneeded" set 100
+}
+if (var "level" < 1 0) {
+    var "level" set 1
+}
+
 var "sbline" set "&ewww.hypixel.net"
 pause 30
 var "sbline" set "&e/visit Al3xWarrior"

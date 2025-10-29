@@ -1,0 +1,12 @@
+// ground_slam is the damage amount
+
+var "needed_mana" set 25
+
+function "HasEnoughMana" false
+
+if (var "needed_mana" > 0) {
+    exit
+}
+
+sound "Splash" 0.7 2.0 "invokers_location"
+var "wizstafftime" set 5

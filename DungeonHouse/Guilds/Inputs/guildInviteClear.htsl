@@ -1,0 +1,5 @@
+
+var "GuildInvite" set 0
+
+sound "Click" 0.7 0.5 "invokers_location"
+displayMenu "Enter Player ID to Invite"
