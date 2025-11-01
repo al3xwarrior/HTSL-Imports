@@ -1,0 +1,6 @@
+chat "&8"
+chat "&6&lAUCTION HOUSE STARTED!"
+chat "&aYou would be bidding for &e%var.global/ah/item%&a! &aDo &6/auction &ato join the auction!"
+chat "&9"
+
+sound "Wither Spawn" 0.7 2.0 "invokers_location"

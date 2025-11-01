@@ -1,0 +1,33 @@
+if (inRegion "AuctionHouse") {
+    tp "house_spawn" "0 0 0" true
+}
+
+sound "Wither Death" 0.7 2.0 "invokers_location"
+
+chat "&f"
+chat "&6&lAUCTION ENDED!"
+
+
+if (globalvar "ah/bidder" == "&cN/A") {
+    chat "&cNo one bid on &e%var.global/ah/item%&c. The item has been returned to the auction house inventory."
+    chat "&b"
+    exit
+}
+
+if (!globalvar "ah/bidder" == %player.name%) {
+    chat "&e%var.global/ah/bidder% &ahas won the auction for &e%var.global/ah/item% &afor &6%var.global/ah/currentbid%⛃&a!"
+    chat "&b"
+    exit
+}
+
+if (globalvar "ah/bidder" == %player.name%) {
+    chat "&aYou have won the auction for &e%var.global/ah/item% &afor &6%var.global/ah/currentbid%⛃&a!"
+}
+
+chat "&b"
+
+var "gold" dec %var.global/ah/currentbid%
+
+if (globalvar "ah/item" == "&eRainbow Helmet") {
+    giveItem "../Items/rainbow_helmet" true "First Slot" false
+}

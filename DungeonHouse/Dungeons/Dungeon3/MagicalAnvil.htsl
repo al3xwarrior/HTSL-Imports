@@ -1,0 +1,40 @@
+if (hasItem "../../Items/wizard_strength_helmet" metadata "Anywhere" anyAmount, hasItem "../../Items/wizard_strength_chestplate" metadata "Anywhere" anyAmount, hasItem "../../Items/wizard_strength_leggings" metadata "Anywhere" anyAmount, hasItem "../../Items/wizard_strength_boots" metadata "Anywhere" anyAmount) {
+
+} else {
+    chat "&cYou need to have the full &4Wizard Strength Set &cand &bWizard Mana Set&c."
+    sound "Anvil Break" 0.7 1 "invokers_location"
+    exit
+}
+
+if (hasItem "../../Items/wizard_mana_helmet" metadata "Anywhere" anyAmount, hasItem "../../Items/wizard_mana_chestplate" metadata "Anywhere" anyAmount, hasItem "../../Items/wizard_mana_leggings" metadata "Anywhere" anyAmount, hasItem "../../Items/wizard_mana_boots" metadata "Anywhere" anyAmount) {
+
+} else {
+    chat "&cYou need to have the full &4Wizard Strength Set &cand &bWizard Mana Set&c."
+    sound "Anvil Break" 0.7 1 "invokers_location"
+    exit
+}
+
+removeItem "../../Items/wizard_strength_helmet"
+removeItem "../../Items/wizard_strength_chestplate"
+removeItem "../../Items/wizard_strength_leggings"
+removeItem "../../Items/wizard_strength_boots"
+removeItem "../../Items/wizard_mana_helmet"
+removeItem "../../Items/wizard_mana_chestplate"
+removeItem "../../Items/wizard_mana_leggings"
+removeItem "../../Items/wizard_mana_boots"
+
+applyPotion "Blindness" 5 1 true true
+
+sound "Ambience Thunder" 0.7 1 "invokers_location"
+sound "Anvil Use" 0.7 1 "invokers_location"
+
+pause 45
+
+giveItem "../../Items/wizard_helmet" true "First Slot" false
+giveItem "../../Items/wizard_chestplate" true "First Slot" false
+giveItem "../../Items/wizard_leggings" true "First Slot" false
+giveItem "../../Items/wizard_boots" true "First Slot" false
+
+chat "&aYou have successfully combined the &4Wizard Strength Armor &aand &bWizard Mana Armor &ainto the &d&lWizard Armor&a!"
+
+sound "Enderdragon Growl" 0.7 2.0 "invokers_location"

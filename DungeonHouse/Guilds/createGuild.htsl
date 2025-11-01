@@ -20,12 +20,14 @@ if (var "GuildNameChars" < 3) {
 
 if or (var "GuildNameInput" == "ASS" "", var "GuildNameInput" == "FAG", var "GuildNameInput" == "CUM", var "GuildNameInput" == "GAY", var "GuildNameInput" == "GOD", var "GuildNameInput" == "JEW", var "GuildNameInput" == "TIT", var "GuildNameInput" == "PUS", var "GuildNameInput" == "DIE", var "GuildNameInput" == "DIC", var "GuildNameInput" == "FUK", var "GuildNameInput" == "SHT", var "GuildNameInput" == "COK", var "GuildNameInput" == "SUX", var "GuildNameInput" == "DCK", var "GuildNameInput" == "FAG", var "GuildNameInput" == "COK", var "GuildNameInput" == "KYS", var "GuildNameInput" == "HOE") {
     chat "&cThat guild name is not allowed!"
+    var "GuildNameInput" set ""
     sound "Anvil Land" 0.7 1 "invokers_location"
     exit
 }
 
 if or (var "GuildNameInput" == "SEX" "", var "GuildNameInput" == "KYS", var "GuildNameInput" == "NIG") {
     chat "&cThat guild name is not allowed!"
+    var "GuildNameInput" set ""
     sound "Anvil Land" 0.7 1 "invokers_location"
     exit
 }

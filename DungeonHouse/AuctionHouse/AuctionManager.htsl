@@ -1,0 +1,53 @@
+// Triggered in Playtime function every 1 global second
+
+// GLOBALVAR ah/status
+// - "WAITING"
+// - "RUNNING"
+
+// GLOBALVAR ah/item
+
+// GLOBALVAR ah/currentbid
+// GLOBALVAR ah/nextbid
+// GLOBALVAR ah/bidder
+
+// GLOBALVAR ah/timer
+
+globalvar "ah/timer" dec 1
+
+if (globalvar "ah/timer" < 0, globalvar "ah/status" == "RUNNING") {
+    // Auction ended
+    globalvar "ah/status" set "WAITING"
+    globalvar "ah/timer" set 600
+    
+    function "AuctionEnded" true
+    exit
+}
+
+if (globalvar "ah/timer" < 0 -1, globalvar "ah/status" == "WAITING" "WAITING") {
+    // Start new auction
+    globalvar "ah/status" set "RUNNING"
+    globalvar "ah/timer" set 35
+
+    globalvar "ah/bidder" set "&cN/A"
+    globalvar "ah/currentbid" set 0
+    globalvar "ah/nextbid" set 100
+
+    function "SelectItem" false
+
+    function "StartNewAuctionBc" true
+    exit
+}
+
+// Timer Maker
+globalvar "ah/timermins" set %var.global/ah/timer%
+globalvar "ah/timermins" div 60
+
+globalvar "ah/timersecs" set %var.global/ah/timer%
+globalvar "temp" set %var.global/ah/timermins%
+globalvar "temp" mult 60
+globalvar "ah/timersecs" dec %var.global/temp%
+globalvar "temp" unset
+
+if (globalvar "ah/item" == "&eRainbow Helmet") {
+    dropItem "../Items/rainbow_helmet" "custom_coordinates" "-111.5 72.6 -91.5" false true false false 21 100
+}

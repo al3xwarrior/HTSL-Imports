@@ -1,0 +1,5 @@
+if (globalvar "ah/bid/name" == %player.name%) {
+    exit
+}
+
+chat "&e%var.global/ah/bid/name% &ahas placed a new highest bid of &6%var.global/ah/currentbid%⛃&a on &e%var.global/ah/item%&a!"

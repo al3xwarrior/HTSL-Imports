@@ -1,0 +1,3 @@
+random {
+    globalvar "ah/item" set "&eRainbow Helmet"
+}

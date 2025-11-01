@@ -1,0 +1,38 @@
+sound "Eat" 0.7 2.0 "invokers_location"
+
+if (hasItem "Items/skill_point_box" metadata "Hand" anyAmount) {
+    removeItem "Items/skill_point_box"
+    var "skillpoints" inc 1
+    exit
+}
+
+if (hasItem "Items/25xpbottle" metadata "Hand" anyAmount) {
+    removeItem "Items/25xpbottle"
+    var "xp" inc 25
+    exit
+}
+if (hasItem "Items/50xpbottle" metadata "Hand" anyAmount) {
+    removeItem "Items/50xpbottle"
+    var "xp" inc 50
+    exit
+}
+if (hasItem "Items/100xpbottle" metadata "Hand" anyAmount) {
+    removeItem "Items/100xpbottle"
+    var "xp" inc 100
+    exit
+}
+if (hasItem "Items/250xpbottle" metadata "Hand" anyAmount) {
+    removeItem "Items/250xpbottle"
+    var "xp" inc 250
+    exit
+}
+if (hasItem "Items/500xpbottle" metadata "Hand" anyAmount) {
+    removeItem "Items/500xpbottle"
+    var "xp" inc 500
+    exit
+}
+if (hasItem "Items/1000xpbottle" metadata "Hand" anyAmount) {
+    removeItem "Items/1000xpbottle"
+    var "xp" inc 1000
+    exit
+}

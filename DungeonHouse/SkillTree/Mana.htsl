@@ -1,0 +1,12 @@
+// st/health
+
+if (var "skillpoints" <= 0 0) {
+    chat "&cYou do not have any skill points!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+var "skillpoints" dec 1
+var "st/mana" inc 1
+sound "Level Up" 0.7 1 "invokers_location"
+displayMenu "Skill Tree"

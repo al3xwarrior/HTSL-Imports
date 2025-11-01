@@ -1,0 +1,47 @@
+chat "&1"
+chat "&6&lCOOKIE GOAL REACHED!"
+
+var "cookiegoalrng" set "%random.whole/1 10%"
+if (var "cookiegoalrng" == 1) {
+    giveItem "../Items/25xpbottle" true "First Slot" false
+    chat "&eYou received a &b&l25 XP Bottle&e for reaching the cookie goal!"
+}
+if (var "cookiegoalrng" == 2) {
+    giveItem "../Items/50xpbottle" true "First Slot" false
+    chat "&eYou received a &b&l50 XP Bottle&e for reaching the cookie goal!"
+}
+if (var "cookiegoalrng" == 3) {
+    giveItem "../Items/100xpbottle" true "First Slot" false
+    chat "&eYou received a &b&l100 XP Bottle&e for reaching the cookie goal!"
+}
+
+if (var "cookiegoalrng" == 4) {
+    giveItem "../Items/skill_point_box" true "First Slot" false
+    chat "&eYou received a &2&lSkill Point Box&e for reaching the cookie goal!"
+}
+
+if (var "cookiegoalrng" == 5) {
+    giveItem "../Items/strength_potion_12" true "First Slot" false
+    chat "&eYou received a &c&l1.2x Strength Potion&e for reaching the cookie goal!"
+}
+if (var "cookiegoalrng" == 6) {
+    giveItem "../Items/strength_potion_15" true "First Slot" false
+    chat "&eYou received a &c&l1.5x Strength Potion&e for reaching the cookie goal!"
+}
+if (var "cookiegoalrng" == 7) {
+    giveItem "../Items/strength_potion_20" true "First Slot" false
+    chat "&eYou received a &c&l2.0x Strength Potion&e for reaching the cookie goal!"
+}
+
+if (var "cookiegoalrng" == 8) {
+    var "gold" inc 100
+    chat "&eYou received a &6&l100 Gold&e for reaching the cookie goal!"
+}
+if (var "cookiegoalrng" == 9) {
+    var "gold" inc 250
+    chat "&eYou received a &6&l250 Gold&e for reaching the cookie goal!"
+}
+
+chat "&2"
+
+var "cookiegoalrng" unset

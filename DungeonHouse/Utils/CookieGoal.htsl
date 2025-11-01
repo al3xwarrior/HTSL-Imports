@@ -1,0 +1,11 @@
+if (globalvar "cookies" < %house.cookies%) {
+    globalvar "cookiediff" set %house.cookies%
+    globalvar "cookiediff" dec %var.global/cookies%
+    globalvar "cookies" set %house.cookies%
+    function "SomeoneGaveCookies" true
+}
+
+if (globalvar "cookiegoal" <= %house.cookies%) {
+    globalvar "cookiegoal" inc 30
+    function "CookieGoalReward" true
+}

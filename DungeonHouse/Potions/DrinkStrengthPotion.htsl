@@ -1,0 +1,71 @@
+function "DrinkStrengthEffect" false
+
+if (hasItem "../Items/strength_potion_12" metadata "Hand" anyAmount, var "sp_amt" == 12) {
+    removeItem "../Items/strength_potion_12"
+    var "sp_timer" inc 180
+    chat "&cYour strength effect has been extended! (%var.player/sp_timer% seconds)"
+    exit
+}
+if (hasItem "../Items/strength_potion_12" metadata "Hand" anyAmount) {
+    removeItem "../Items/strength_potion_12"
+    var "sp_timer" set 180
+    var "sp_amt" set 12
+    chat "&aYou feel stronger! (%var.player/sp_timer% seconds)"
+    exit
+}
+
+if (hasItem "../Items/strength_potion_15" metadata "Hand" anyAmount, var "sp_amt" == 15) {
+    removeItem "../Items/strength_potion_15"
+    var "sp_timer" inc 180
+    chat "&cYour strength effect has been extended! (%var.player/sp_timer% seconds)"
+    exit
+}
+if (hasItem "../Items/strength_potion_15" metadata "Hand" anyAmount) {
+    removeItem "../Items/strength_potion_15"
+    var "sp_timer" set 180
+    var "sp_amt" set 15
+    chat "&aYou feel stronger! (%var.player/sp_timer% seconds)"
+    exit
+}
+
+if (hasItem "../Items/strength_potion_20" metadata "Hand" anyAmount, var "sp_amt" == 20) {
+    removeItem "../Items/strength_potion_20"
+    var "sp_timer" inc 180
+    chat "&cYour strength effect has been extended! (%var.player/sp_timer% seconds)"
+    exit
+}
+if (hasItem "../Items/strength_potion_20" metadata "Hand" anyAmount) {
+    removeItem "../Items/strength_potion_20"
+    var "sp_timer" set 180
+    var "sp_amt" set 20
+    chat "&aYou feel stronger! (%var.player/sp_timer% seconds)"
+    exit
+}
+
+if (hasItem "../Items/strength_potion_25" metadata "Hand" anyAmount, var "sp_amt" == 25) {
+    removeItem "../Items/strength_potion_25"
+    var "sp_timer" inc 180
+    chat "&cYour strength effect has been extended! (%var.player/sp_timer% seconds)"
+    exit
+}
+if (hasItem "../Items/strength_potion_25" metadata "Hand" anyAmount) {
+    removeItem "../Items/strength_potion_25"
+    var "sp_timer" set 180
+    var "sp_amt" set 25
+    chat "&aYou feel stronger! (%var.player/sp_timer% seconds)"
+    exit
+}
+
+if (hasItem "../Items/strength_potion_30" metadata "Hand" anyAmount, var "sp_amt" == 30) {
+    removeItem "../Items/strength_potion_30"
+    var "sp_timer" inc 180
+    chat "&cYour strength effect has been extended! (%var.player/sp_timer% seconds)"
+    exit
+}
+if (hasItem "../Items/strength_potion_30" metadata "Hand" anyAmount) {
+    removeItem "../Items/strength_potion_30"
+    var "sp_timer" set 180
+    var "sp_amt" set 30
+    chat "&aYou feel stronger! (%var.player/sp_timer% seconds)"
+    exit
+}

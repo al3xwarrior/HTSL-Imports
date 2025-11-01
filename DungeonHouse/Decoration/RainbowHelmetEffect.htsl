@@ -1,0 +1,40 @@
+
+if (hasItem "../Items/rainbow_helmet1" "Metadata" "Inventory" "Any Amount") {
+    removeItem "../Items/rainbow_helmet1"
+    giveItem "../Items/rainbow_helmet" true "First Slot" false
+}
+if (hasItem "../Items/rainbow_helmet2" "Metadata" "Inventory" "Any Amount") {
+    removeItem "../Items/rainbow_helmet2"
+    giveItem "../Items/rainbow_helmet" true "First Slot" false
+}
+if (hasItem "../Items/rainbow_helmet3" "Metadata" "Inventory" "Any Amount") {
+    removeItem "../Items/rainbow_helmet3"
+    giveItem "../Items/rainbow_helmet" true "First Slot" false
+}
+if (hasItem "../Items/rainbow_helmet4" "Metadata" "Inventory" "Any Amount") {
+    removeItem "../Items/rainbow_helmet4"
+    giveItem "../Items/rainbow_helmet" true "First Slot" false
+}
+if (hasItem "../Items/rainbow_helmet5" "Metadata" "Inventory" "Any Amount") {
+    removeItem "../Items/rainbow_helmet5"
+    giveItem "../Items/rainbow_helmet" true "First Slot" false
+}
+if (hasItem "../Items/rainbow_helmet6" "Metadata" "Inventory" "Any Amount") {
+    removeItem "../Items/rainbow_helmet6"
+    giveItem "../Items/rainbow_helmet" true "First Slot" false
+}
+
+if or (hasItem "../Items/rainbow_helmet" "Metadata" "Armor" "Any Amount", hasItem "../Items/rainbow_helmet1" "Metadata" "Armor" "Any Amount", hasItem "../Items/rainbow_helmet2" "Metadata" "Armor" "Any Amount", hasItem "../Items/rainbow_helmet3" "Metadata" "Armor" "Any Amount", hasItem "../Items/rainbow_helmet4" "Metadata" "Armor" "Any Amount", hasItem "../Items/rainbow_helmet5" "Metadata" "Armor" "Any Amount", hasItem "../Items/rainbow_helmet6" "Metadata" "Armor" "Any Amount") {
+
+} else {
+    exit
+}
+
+random {
+    giveItem "../Items/rainbow_helmet1" true "Helmet" true
+    giveItem "../Items/rainbow_helmet2" true "Helmet" true
+    giveItem "../Items/rainbow_helmet3" true "Helmet" true
+    giveItem "../Items/rainbow_helmet4" true "Helmet" true
+    giveItem "../Items/rainbow_helmet5" true "Helmet" true
+    giveItem "../Items/rainbow_helmet6" true "Helmet" true
+}

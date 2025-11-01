@@ -1,0 +1,30 @@
+if (globalvar "ah/status" == "RUNNING") {
+
+} else {
+    chat "&cThere is no active auction at the moment. Please try again later!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+tp "custom_coordinates" "-111.5 71 -103.5 0.0 0.0" true
+applyPotion "Blindness" 1 1 true true
+
+pause 10
+
+chat "&5&lAUCTION MASTER: &fWelcome &e%player.name%&e!"
+sound "Villager Yes" 0.7 1 "invokers_location"
+
+pause 40
+
+chat "&5&lAUCTION MASTER: &fYou are bidding for &e%var.global/ah/item%&f."
+sound "Villager Yes" 0.7 1 "invokers_location"
+
+pause 60
+
+chat "&5&lAUCTION MASTER: &fUse either of the &l2&r &fmagical floating orbs next to me to place a bid!"
+sound "Villager Yes" 0.7 1 "invokers_location"
+
+pause 60
+
+chat "&5&lAUCTION MASTER: &fIf players are in your way, use &e/visibility 0&f!"
+sound "Villager Yes" 0.7 1 "invokers_location"

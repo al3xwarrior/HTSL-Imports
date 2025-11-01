@@ -1,0 +1,25 @@
+if (var "gold" < 1000) {
+    chat "&cYou need at least 1,000 Gold to reset your skill points!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+var "gold" dec 1000
+
+// st/damage
+// st/health
+// st/healthregen
+// st/mana
+// st/manaregen
+
+var "skillpoints" set %var.player/level%
+var "st/damage" set 0
+var "st/health" set 0
+var "st/healthregen" set 0
+var "st/mana" set 0
+var "st/manaregen" set 0
+
+chat "&aYou have reset your skill points and refunded them based on your level!"
+sound "Item Break" 0.7 2.0 "invokers_location"
+
+displayMenu "Skill Tree"

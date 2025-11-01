@@ -8,6 +8,7 @@ if (var "unix" < %date.unix% 0) {
     var "seconds" inc 1
     var "wolfdamage" set 0
     var "wizstafftime" dec 1
+    var "sp_timer" dec 1
 }
 if (var "seconds" >= 60) {
     var "seconds" set 0
@@ -32,7 +33,7 @@ if (globalvar "seconds" >= 60) {
     globalvar "avgeconomy" set 0
     globalvar "totaleconomy" set 0
     function "EconomyTracker" true
-    pause 5
+    pause 2
     globalvar "avgeconomy" div %house.players%
 }
 if (globalvar "minutes" >= 60) {

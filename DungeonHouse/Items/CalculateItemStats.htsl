@@ -421,32 +421,6 @@ if (hasItem "torn_prisoner_cap" metadata "Armor" anyAmount) {
 
 // // --- Wizard Armor Sets ---
 
-// // Wizard Set 1
-// if (hasItem "../wizard_helmet" metadata "Armor" anyAmount) {
-//     var "damage" inc 75
-//     var "maxhealth" inc 100
-//     var "maxmana" inc 20
-//     var "manaRegen" inc 5
-// }
-// if (hasItem "../wizard_chestplate" metadata "Armor" anyAmount) {
-//     var "damage" inc 75
-//     var "maxhealth" inc 100
-//     var "maxmana" inc 20
-//     var "manaRegen" inc 5
-// }
-// if (hasItem "../wizard_leggings" metadata "Armor" anyAmount) {
-//     var "damage" inc 75
-//     var "maxhealth" inc 100
-//     var "maxmana" inc 20
-//     var "manaRegen" inc 5
-// }
-// if (hasItem "../wizard_boots" metadata "Armor" anyAmount) {
-//     var "damage" inc 75
-//     var "maxhealth" inc 100
-//     var "maxmana" inc 20
-//     var "manaRegen" inc 5
-// }
-
 // // Wizard Set 2
 // if (hasItem "../wizard_helmet2" metadata "Armor" anyAmount) {
 //     var "damage" inc 75
@@ -533,4 +507,41 @@ if (hasItem "torn_prisoner_cap" metadata "Armor" anyAmount) {
 //     var "speed" inc 1
 // }
 
-var "damage" inc %var.player/wolfdamage%
+// var "damage" inc %var.player/wolfdamage%
+
+// var "damage" inc %var.player/st/damage 0%
+// var "maxhealth" inc %var.player/st/health 0%
+// var "healthregen" inc %var.player/st/healthregen 0%
+// var "maxmana" inc %var.player/st/mana 0%
+// var "manaregen" inc %var.player/st/manaregen 0%
+
+// if (hasItem "rainbow_helmet1" metadata "Armor" anyAmount) {
+//     var "speed" inc 5
+//     var "maxhealth" inc 100
+//     var "healthregen" inc 3
+// }
+// if (hasItem "rainbow_helmet2" metadata "Armor" anyAmount) {
+//     var "speed" inc 5
+//     var "maxhealth" inc 100
+//     var "healthregen" inc 3
+// }
+// if (hasItem "rainbow_helmet3" metadata "Armor" anyAmount) {
+//     var "speed" inc 5
+//     var "maxhealth" inc 100
+//     var "healthregen" inc 3
+// }
+// if (hasItem "rainbow_helmet4" metadata "Armor" anyAmount) {
+//     var "speed" inc 5
+//     var "maxhealth" inc 100
+//     var "healthregen" inc 3
+// }
+// if (hasItem "rainbow_helmet5" metadata "Armor" anyAmount) {
+//     var "speed" inc 5
+//     var "maxhealth" inc 100
+//     var "healthregen" inc 3
+// }
+// if (hasItem "rainbow_helmet6" metadata "Armor" anyAmount) {
+//     var "speed" inc 5
+//     var "maxhealth" inc 100
+//     var "healthregen" inc 3
+// }

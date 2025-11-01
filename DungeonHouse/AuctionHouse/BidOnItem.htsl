@@ -1,0 +1,19 @@
+if (var "gold" >= %var.global/ah/nextbid%) {
+
+} else {
+    chat "&cYou do not have enough gold to place that bid!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+globalvar "ah/currentbid" set %var.global/ah/nextbid%
+globalvar "ah/nextbid" inc 100
+globalvar "ah/bidder" set %player.name%
+globalvar "ah/timer" set 10
+
+chat "&aYou have successfully placed a bid of &6%var.global/ah/currentbid%⛃&a on &e%var.global/ah/item%&a!"
+sound "Orb Pickup" 0.7 2.0 "invokers_location"
+
+globalvar "ah/bid/name" set %player.name%
+
+function "BroadcastNewBid" true

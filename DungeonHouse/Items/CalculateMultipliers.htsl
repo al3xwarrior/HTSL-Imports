@@ -1,3 +1,8 @@
-if (var "wizstafftime" > 0) {
-    var "damage" mult 3
+// if (var "wizstafftime" > 0) {
+//     var "damage" mult 3
+// }
+
+if (var "sp_amt" > 0 0, var "sp_timer" > 0 0) {
+    var "damage" mult %var.player/sp_amt%
+    var "damage" div 10
 }
