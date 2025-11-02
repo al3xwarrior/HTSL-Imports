@@ -5,7 +5,8 @@ if (gamemode "Creative") {
 if (hasItem "../Items/wolf_spirit" metadata "Inventory" anyAmount, var "mana" >= 15) {
     var "mana" dec 15
 } else {
-    changeVelocity 0 -2 0
+    changeVelocity 0 -3 0
+    chat "&7You need a specific item to double jump."
     exit
 }
 

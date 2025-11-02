@@ -4,7 +4,9 @@
 // globalvar "sr_bc_mins" set %var.player/d_minutes%
 // globalvar "sr_bc_secs" set %var.player/d_seconds%
 
-chat "&e✪ &6&lNEW SPEEDRUN RECORD! &e✪"
+if (globalvar "sr_bc_place" == "&61st") {
+    chat "&e✪ &6&lNEW SPEEDRUN RECORD! &e✪"
+}
 chat "&a%var.global/sr_bc_name% &ehas achieved &f%var.global/sr_bc_place% &ein &f%var.global/sr_bc_dungeon%&e! &7Time: &a%var.global/sr_bc_mins%&7m &a%var.global/sr_bc_secs%&7s"
 
 if (globalvar "sr_bc_name" == %player.name%) {

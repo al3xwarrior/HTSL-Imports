@@ -1,0 +1,3 @@
+if or (hasItem "../../Items/rat_pet" "Metadata" "Armor" "Any Amount", hasItem "../../Items/warden_eye_pet" "Metadata" "Armor" "Any Amount", hasItem "../../Items/warden_pet" "Metadata" "Armor" "Any Amount") {
+    chat "&cHey! &7Putting pets in your head is not how they work on this house! Right-Click while holding them instead and you will see it appear behind you!"
+}

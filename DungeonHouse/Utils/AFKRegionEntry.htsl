@@ -1,0 +1,16 @@
+var "afk" inc 1
+var "afkregion" inc 1
+
+if (var "afkregion" >= 5) {
+    sound "Click" 0.7 1.2 "invokers_location"
+    var "afkregion" set 0
+    var "afkxp" set "%random.whole/1 5%"
+    var "xp" inc %var.player/afkxp%
+    title "&b+%var.player/afkxp%" "&a5 &7/ &a5" 0 2 1
+    var "afkxp" unset
+} else {
+    sound "Click" 0.7 0.8 "invokers_location"
+    title "&r" "&f%var.player/afkregion% &7/ &a5" 0 2 1
+}
+
+changeVelocity 0 10 0

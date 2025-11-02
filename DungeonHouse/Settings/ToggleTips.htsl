@@ -1,0 +1,9 @@
+
+if (var "set/death" == "&a&lENABLED" "&a&lENABLED") {
+    var "set/death" set "&c&lDISABLED"    
+} else {
+    var "set/death" set "&a&lENABLED"
+}
+
+sound "Orb Pickup" 0.7 1 "invokers_location"
+displayMenu "Settings"

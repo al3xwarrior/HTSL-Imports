@@ -1,0 +1,14 @@
+
+// ls/health
+// ls/damage
+// ls/mana
+
+var "soultemp" set %var.player/lostsouls 0%
+var "soultemp" mult 4
+var "maxhealth" inc %var.player/soultemp%
+
+var "soultemp" set %var.player/lostsouls 0%
+var "soultemp" mult 2
+var "damage" inc %var.player/soultemp%
+
+var "maxmana" inc %var.player/lostsouls 0%

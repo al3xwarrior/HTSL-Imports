@@ -301,14 +301,18 @@
 //     exit
 // }
 
-function "RemoveItemToBeSold4" false
-goto function "RemoveItemToBeSold4"
+// function "RemoveItemToBeSold4" false
+// goto function "RemoveItemToBeSold4"
 
-if (hasItem "../../Items/wolf_dagger" metadata "Hand" anyAmount) {
-    removeItem "../../Items/wolf_dagger"
-    exit
-}
-if (hasItem "../../Items/wolf_fang" metadata "Hand" anyAmount) {
-    removeItem "../../Items/wolf_fang"
+// if (hasItem "../../Items/wolf_dagger" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wolf_dagger"
+//     exit
+// }
+// if (hasItem "../../Items/wolf_fang" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wolf_fang"
+//     exit
+// }
+if (hasItem "../../Items/wardens_fists" metadata "Hand" anyAmount) {
+    removeItem "../../Items/wardens_fists"
     exit
 }

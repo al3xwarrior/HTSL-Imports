@@ -34,7 +34,7 @@ if (var "dungeon_id" == 1, var "dungeontime" < %var.global/d1_sr_time1%) {
     globalvar "sr_bc_dungeon" set "&fThe Broken Prison"
     globalvar "sr_bc_mins" set %var.player/d_minutes%
     globalvar "sr_bc_secs" set %var.player/d_seconds%
-    function "SpeedRunningBroadcast" false
+    function "SpeedRunningBroadcast" true
 
     exit
 }
@@ -55,7 +55,7 @@ if (var "dungeon_id" == 1, var "dungeontime" < %var.global/d1_sr_time2%) {
     globalvar "sr_bc_dungeon" set "&fThe Broken Prison"
     globalvar "sr_bc_mins" set %var.player/d_minutes%
     globalvar "sr_bc_secs" set %var.player/d_seconds%
-    function "SpeedRunningBroadcast" false
+    function "SpeedRunningBroadcast" true
 
     exit
 }
@@ -70,7 +70,7 @@ if (var "dungeon_id" == 1, var "dungeontime" < %var.global/d1_sr_time3%) {
     globalvar "sr_bc_dungeon" set "&fThe Broken Prison"
     globalvar "sr_bc_mins" set %var.player/d_minutes%
     globalvar "sr_bc_secs" set %var.player/d_seconds%
-    function "SpeedRunningBroadcast" false
+    function "SpeedRunningBroadcast" true
 
     exit
 }
@@ -100,7 +100,7 @@ if (var "dungeon_id" == 2, var "dungeontime" < %var.global/d2_sr_time1%) {
     globalvar "sr_bc_dungeon" set "&cThe Corruption Beneath"
     globalvar "sr_bc_mins" set %var.player/d_minutes%
     globalvar "sr_bc_secs" set %var.player/d_seconds%
-    function "SpeedRunningBroadcast" false
+    function "SpeedRunningBroadcast" true
 
     exit
 }
@@ -121,7 +121,7 @@ if (var "dungeon_id" == 2, var "dungeontime" < %var.global/d2_sr_time2%) {
     globalvar "sr_bc_dungeon" set "&cThe Corruption Beneath"
     globalvar "sr_bc_mins" set %var.player/d_minutes%
     globalvar "sr_bc_secs" set %var.player/d_seconds%
-    function "SpeedRunningBroadcast" false
+    function "SpeedRunningBroadcast" true
 
     exit
 }
@@ -136,7 +136,7 @@ if (var "dungeon_id" == 2, var "dungeontime" < %var.global/d2_sr_time3%) {
     globalvar "sr_bc_dungeon" set "&cThe Corruption Beneath"
     globalvar "sr_bc_mins" set %var.player/d_minutes%
     globalvar "sr_bc_secs" set %var.player/d_seconds%
-    function "SpeedRunningBroadcast" false
+    function "SpeedRunningBroadcast" true
 
     exit
 }
@@ -166,7 +166,7 @@ if (var "dungeon_id" == 3, var "dungeontime" < %var.global/d3_sr_time1%) {
     globalvar "sr_bc_dungeon" set "&dThe Sith Tower"
     globalvar "sr_bc_mins" set %var.player/d_minutes%
     globalvar "sr_bc_secs" set %var.player/d_seconds%
-    function "SpeedRunningBroadcast" false
+    function "SpeedRunningBroadcast" true
 
     exit
 }
@@ -187,7 +187,7 @@ if (var "dungeon_id" == 3, var "dungeontime" < %var.global/d3_sr_time2%) {
     globalvar "sr_bc_dungeon" set "&dThe Sith Tower"
     globalvar "sr_bc_mins" set %var.player/d_minutes%
     globalvar "sr_bc_secs" set %var.player/d_seconds%
-    function "SpeedRunningBroadcast" false
+    function "SpeedRunningBroadcast" true
 
     exit
 }
@@ -202,7 +202,7 @@ if (var "dungeon_id" == 3, var "dungeontime" < %var.global/d3_sr_time3%) {
     globalvar "sr_bc_dungeon" set "&dThe Sith Tower"
     globalvar "sr_bc_mins" set %var.player/d_minutes%
     globalvar "sr_bc_secs" set %var.player/d_seconds%
-    function "SpeedRunningBroadcast" false
+    function "SpeedRunningBroadcast" true
 
     exit
 }

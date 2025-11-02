@@ -1,0 +1,42 @@
+if (var "level" >= 2, hasGroup "Level1" false) {
+    changePlayerGroup "Level2" true
+}
+if (var "level" >= 3, hasGroup "Level2" false) {
+    changePlayerGroup "Level3" true
+}
+if (var "level" >= 4, hasGroup "Level3" false) {
+    changePlayerGroup "Level4" true
+}
+if (var "level" >= 5, hasGroup "Level4" false) {
+    changePlayerGroup "Level5" true
+}
+if (var "level" >= 10, hasGroup "Level5" false) {
+    changePlayerGroup "Level10" true
+}
+if (var "level" >= 20, hasGroup "Level10" false) {
+    changePlayerGroup "Level20" true
+}
+if (var "level" >= 30, hasGroup "Level20" false) {
+    changePlayerGroup "Level30" true
+}
+if (var "level" >= 40, hasGroup "Level30" false) {
+    changePlayerGroup "Level40" true
+}
+if (var "level" >= 50, hasGroup "Level40" false) {
+    changePlayerGroup "Level50" true
+}
+if (var "level" >= 60, hasGroup "Level50" false) {
+    changePlayerGroup "Level60" true
+}
+if (var "level" >= 70, hasGroup "Level60" false) {
+    changePlayerGroup "Level70" true
+}
+if (var "level" >= 80, hasGroup "Level70" false) {
+    changePlayerGroup "Level80" true
+}
+if (var "level" >= 90, hasGroup "Level80" false) {
+    changePlayerGroup "Level90" true
+}
+if (var "level" >= 100, hasGroup "Level90" false) {
+    changePlayerGroup "Level100" true
+}

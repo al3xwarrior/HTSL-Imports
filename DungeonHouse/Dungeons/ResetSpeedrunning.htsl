@@ -1,0 +1,43 @@
+globalvar "d1_sr_time1" set 999999
+globalvar "d1_sr_time2" set 999999
+globalvar "d1_sr_time3" set 999999
+globalvar "d2_sr_time1" set 999999
+globalvar "d2_sr_time2" set 999999
+globalvar "d2_sr_time3" set 999999
+globalvar "d3_sr_time1" set 999999
+globalvar "d3_sr_time2" set 999999
+globalvar "d3_sr_time3" set 999999
+
+if () {
+    globalvar "d1_sr_mins1" set 0
+    globalvar "d1_sr_secs1" set 0
+    globalvar "d1_sr_mins2" set 0
+    globalvar "d1_sr_secs2" set 0
+    globalvar "d1_sr_mins3" set 0
+    globalvar "d1_sr_secs3" set 0
+    globalvar "d1_sr_name1" set "N/A"
+    globalvar "d1_sr_name2" set "N/A"
+    globalvar "d1_sr_name3" set "N/A"
+}
+if () {
+    globalvar "d2_sr_mins1" set 0
+    globalvar "d2_sr_secs1" set 0
+    globalvar "d2_sr_mins2" set 0
+    globalvar "d2_sr_secs2" set 0
+    globalvar "d2_sr_mins3" set 0
+    globalvar "d2_sr_secs3" set 0
+    globalvar "d2_sr_name1" set "N/A"
+    globalvar "d2_sr_name2" set "N/A"
+    globalvar "d2_sr_name3" set "N/A"
+}
+if () {
+    globalvar "d3_sr_mins1" set 0
+    globalvar "d3_sr_secs1" set 0
+    globalvar "d3_sr_mins2" set 0
+    globalvar "d3_sr_secs2" set 0
+    globalvar "d3_sr_mins3" set 0
+    globalvar "d3_sr_secs3" set 0
+    globalvar "d3_sr_name1" set "N/A"
+    globalvar "d3_sr_name2" set "N/A"
+    globalvar "d3_sr_name3" set "N/A"
+}

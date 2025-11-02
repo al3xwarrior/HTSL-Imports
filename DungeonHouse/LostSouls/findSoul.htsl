@@ -1,5 +1,5 @@
 
-define soulNumber 10
+define soulNumber 20
 
 if (var {"lostsoul"+soulNumber} == 1 0) {
     chat "&cYou have already found this lost soul."

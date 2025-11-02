@@ -1,0 +1,18 @@
+if (var "set/tips" == "&a&lENABLED" "&a&lENABLED") {
+
+} else {
+    exit
+}
+
+random {
+    chat "&6&lTIP! &7Join the &lBIGGEST &7Housing Discord Server using &b/disc"
+    chat "&6&lTIP! &7You can buy &eConsumables &7from the &aConsumable Shop &7in spawn!"
+    chat "&6&lTIP! &7You can earn &eGold &7by completing &aDungeons&7 and selling unused items!"
+    chat "&6&lTIP! &7You can view &aSpeedrun Records &7for each dungeon in the &fMenu&7!"
+    chat "&6&lTIP! &bHousingHub &7has &cStaff Applications&7! Apply today to become a staff member!"
+    chat "&6&lTIP! &7Use &a/trade &7to trade items with other players!"
+    chat "&6&lTIP! &dLost Souls &7are hidden throughout the world! Find them to earn a stat increase!"
+    chat "&6&lTIP! &7Toggle these messages and other &aQOL &7settings in the &cSettings Menu&7 located in the &aDungeons Menu&7!"
+    chat "&6&lTIP! &7Stat leaderboards can be seen in the upper level of spawn!"
+    chat "&6&lTIP! &7The owner &cAl3xWarrior &7has a &bHousing Focused &cYouTube Channel&7! Check it out for guides and updates!"
+}

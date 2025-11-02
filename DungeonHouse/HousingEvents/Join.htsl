@@ -2,6 +2,11 @@ if (hasGroup "Helper" true) {
     setTeam "Staff"
 }
 
+if (var "gotstartsword" == 0 0) {
+    giveItem "../Items/starter_sword" true "First Slot" false
+    var "gotstartsword" set 1
+}
+
 applyPotion "Night Vision" 2000000 1 true true
 
 if (var "xpneeded" < 100 0) {

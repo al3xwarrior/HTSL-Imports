@@ -1,0 +1,27 @@
+sound "Eat" 0.7 1 "invokers_location"
+
+if (var "health" >= %var.player/maxhealth%) {
+    chat "You are already at full health!"
+    exit
+}
+
+if (hasItem "../../Items/50health" "Metadata" "Hand" "Any Amount") {
+    removeItem "../../Items/50health"
+    var "health" inc 50
+    exit
+}
+if (hasItem "../../Items/100health" "Metadata" "Hand" "Any Amount") {
+    removeItem "../../Items/100health"
+    var "health" inc 100
+    exit
+}
+if (hasItem "../../Items/200health" "Metadata" "Hand" "Any Amount") {
+    removeItem "../../Items/200health"
+    var "health" inc 200
+    exit
+}
+if (hasItem "../../Items/fullhealth" "Metadata" "Hand" "Any Amount") {
+    removeItem "../../Items/fullhealth"
+    var "health" set %var.player/maxhealth%
+    exit
+}

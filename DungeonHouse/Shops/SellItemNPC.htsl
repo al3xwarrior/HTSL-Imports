@@ -1,3 +1,11 @@
+var "lastsolddiff" set %date.unix%
+var "lastsolddiff" dec "%var.player/lastsoldat 0%"
+
+if (var "lastsolddiff" < 1) {
+    chat "&cYou are on cooldown! Please wait a bit before selling another item. &7(This is to prevent exploits)"
+    exit
+}
+
 function "GetItemValue" false
 
 if (var "item_value" == 0) {
@@ -6,6 +14,8 @@ if (var "item_value" == 0) {
 }
 
 function "RemoveItemToBeSold" false
+
+var "lastsoldat" set %date.unix%
 
 var "gold" inc %var.player/item_value%
 chat "&aYou sold your item for &6%var.player/item_value%⛃&a!"

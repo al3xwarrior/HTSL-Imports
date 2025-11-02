@@ -545,3 +545,7 @@ if (hasItem "torn_prisoner_cap" metadata "Armor" anyAmount) {
 //     var "maxhealth" inc 100
 //     var "healthregen" inc 3
 // }
+
+if (hasItem "../starter_sword" "Metadata" "Hand" "Any Amount") {
+    var "damage" inc 1
+}

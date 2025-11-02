@@ -5,11 +5,14 @@ if (var "wizard_active" == 1) {
 }
 
 if (inRegion "WizardAttackRegion") {
-    var "health" dec 10
-    sound "Chicken Egg Pop" 0.7 0.5 "invokers_location"
-    title "&0" "&%random.int/1 10%-10❤" 0 1 1
+    var "wizarddmg" set "%random.whole/10 31%"
+    var "health" dec %var.player/wizarddmg%
+    sound "Hurt Flesh" 0.7 1 "invokers_location"
+    title "&0" "&%random.int/1 10%-%var.player/wizarddmg%❤" 0 1 1
+    applyPotion "Blindness" 1 1 true false
+    var "wizarddmg" unset
 }
 
-launchTarget "custom_coordinates" "12.5 54.1 100.5" 0.2
+launchTarget "custom_coordinates" "12.5 54.1 100.5" 0.1
 pause 2
-launchTarget "custom_coordinates" "12.5 54.1 100.5" 0.2
+launchTarget "custom_coordinates" "12.5 54.1 100.5" 0.1
