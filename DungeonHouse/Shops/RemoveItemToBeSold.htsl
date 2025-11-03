@@ -312,7 +312,31 @@
 //     removeItem "../../Items/wolf_fang"
 //     exit
 // }
-if (hasItem "../../Items/wardens_fists" metadata "Hand" anyAmount) {
-    removeItem "../../Items/wardens_fists"
+// if (hasItem "../../Items/wardens_fists" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wardens_fists"
+//     exit
+// }
+if (hasItem "../../Items/hide_boots" metadata "Hand" anyAmount) {
+    removeItem "../../Items/hide_boots"
+    exit
+}
+if (hasItem "../../Items/hide_chestplate" metadata "Hand" anyAmount) {
+    removeItem "../../Items/hide_chestplate"
+    exit
+}
+if (hasItem "../../Items/hide_helmet" metadata "Hand" anyAmount) {
+    removeItem "../../Items/hide_helmet"
+    exit
+}
+if (hasItem "../../Items/hide_leggings" metadata "Hand" anyAmount) {
+    removeItem "../../Items/hide_leggings"
+    exit
+}
+if (hasItem "../../Items/wolf_spirit" metadata "Hand" anyAmount) {
+    removeItem "../../Items/wolf_spirit"
+    exit
+}
+if (hasItem "../../Items/wolf_pet" metadata "Hand" anyAmount) {
+    removeItem "../../Items/wolf_pet"
     exit
 }

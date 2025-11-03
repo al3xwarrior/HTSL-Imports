@@ -226,91 +226,115 @@
 //     var "item_value" set 90
 // exit
 // }
-if (hasItem "../../Items/alpha_hide_boots" metadata "Hand" anyAmount) {
-    var "item_value" set 200
-    exit
-}
-if (hasItem "../../Items/alpha_hide_chestplate" metadata "Hand" anyAmount) {
-    var "item_value" set 200
-    exit
-}
-if (hasItem "../../Items/alpha_hide_helmet" metadata "Hand" anyAmount) {
-    var "item_value" set 200
-    exit
-}
-if (hasItem "../../Items/alpha_hide_leggings" metadata "Hand" anyAmount) {
-    var "item_value" set 200
-    exit
-}
-if (hasItem "../../Items/wizard_boots" metadata "Hand" anyAmount) {
-    var "item_value" set 500
-    exit
-}
-if (hasItem "../../Items/wizard_chestplate" metadata "Hand" anyAmount) {
-    var "item_value" set 500
-    exit
-}
-if (hasItem "../../Items/wizard_helmet" metadata "Hand" anyAmount) {
-    var "item_value" set 500
-    exit
-}
-if (hasItem "../../Items/wizard_leggings" metadata "Hand" anyAmount) {
-    var "item_value" set 500
-    exit
-}
-if (hasItem "../../Items/wizard_mana_boots" metadata "Hand" anyAmount) {
-    var "item_value" set 150
-    exit
-}
-if (hasItem "../../Items/wizard_mana_chestplate" metadata "Hand" anyAmount) {
-    var "item_value" set 150
-    exit
-}
-if (hasItem "../../Items/wizard_mana_helmet" metadata "Hand" anyAmount) {
-    var "item_value" set 150
-    exit
-}
-if (hasItem "../../Items/wizard_mana_leggings" metadata "Hand" anyAmount) {
-    var "item_value" set 150
-    exit
-}
-if (hasItem "../../Items/wizard_staff" metadata "Hand" anyAmount) {
-    var "item_value" set 300
-    exit
-}
-if (hasItem "../../Items/wizard_strength_boots" metadata "Hand" anyAmount) {
-    var "item_value" set 150
-    exit
-}
-if (hasItem "../../Items/wizard_strength_chestplate" metadata "Hand" anyAmount) {
-    var "item_value" set 150
-    exit
-}
-if (hasItem "../../Items/wizard_strength_helmet" metadata "Hand" anyAmount) {
-    var "item_value" set 150
-    exit
-}
-if (hasItem "../../Items/wizard_strength_leggings" metadata "Hand" anyAmount) {
-    var "item_value" set 150
-    exit
-}
-if (hasItem "../../Items/wolf_bone" metadata "Hand" anyAmount) {
+// if (hasItem "../../Items/alpha_hide_boots" metadata "Hand" anyAmount) {
+//     var "item_value" set 200
+//     exit
+// }
+// if (hasItem "../../Items/alpha_hide_chestplate" metadata "Hand" anyAmount) {
+//     var "item_value" set 200
+//     exit
+// }
+// if (hasItem "../../Items/alpha_hide_helmet" metadata "Hand" anyAmount) {
+//     var "item_value" set 200
+//     exit
+// }
+// if (hasItem "../../Items/alpha_hide_leggings" metadata "Hand" anyAmount) {
+//     var "item_value" set 200
+//     exit
+// }
+// if (hasItem "../../Items/wizard_boots" metadata "Hand" anyAmount) {
+//     var "item_value" set 500
+//     exit
+// }
+// if (hasItem "../../Items/wizard_chestplate" metadata "Hand" anyAmount) {
+//     var "item_value" set 500
+//     exit
+// }
+// if (hasItem "../../Items/wizard_helmet" metadata "Hand" anyAmount) {
+//     var "item_value" set 500
+//     exit
+// }
+// if (hasItem "../../Items/wizard_leggings" metadata "Hand" anyAmount) {
+//     var "item_value" set 500
+//     exit
+// }
+// if (hasItem "../../Items/wizard_mana_boots" metadata "Hand" anyAmount) {
+//     var "item_value" set 150
+//     exit
+// }
+// if (hasItem "../../Items/wizard_mana_chestplate" metadata "Hand" anyAmount) {
+//     var "item_value" set 150
+//     exit
+// }
+// if (hasItem "../../Items/wizard_mana_helmet" metadata "Hand" anyAmount) {
+//     var "item_value" set 150
+//     exit
+// }
+// if (hasItem "../../Items/wizard_mana_leggings" metadata "Hand" anyAmount) {
+//     var "item_value" set 150
+//     exit
+// }
+// if (hasItem "../../Items/wizard_staff" metadata "Hand" anyAmount) {
+//     var "item_value" set 300
+//     exit
+// }
+// if (hasItem "../../Items/wizard_strength_boots" metadata "Hand" anyAmount) {
+//     var "item_value" set 150
+//     exit
+// }
+// if (hasItem "../../Items/wizard_strength_chestplate" metadata "Hand" anyAmount) {
+//     var "item_value" set 150
+//     exit
+// }
+// if (hasItem "../../Items/wizard_strength_helmet" metadata "Hand" anyAmount) {
+//     var "item_value" set 150
+//     exit
+// }
+// if (hasItem "../../Items/wizard_strength_leggings" metadata "Hand" anyAmount) {
+//     var "item_value" set 150
+//     exit
+// }
+// if (hasItem "../../Items/wolf_bone" metadata "Hand" anyAmount) {
+//     var "item_value" set 100
+//     exit
+// }
+// if (hasItem "../../Items/wolf_claw" metadata "Hand" anyAmount) {
+//     var "item_value" set 120
+//     exit
+// }
+// if (hasItem "../../Items/wolf_dagger" metadata "Hand" anyAmount) {
+//     var "item_value" set 130
+//     exit
+// }
+
+// function "GetItemValue4" false
+// goto function "GetItemValue4"
+
+// if (hasItem "../../Items/wolf_fang" metadata "Hand" anyAmount) {
+//     var "item_value" set 130
+//     exit
+// }
+if (hasItem "../../Items/hide_boots" metadata "Hand" anyAmount) {
     var "item_value" set 100
     exit
 }
-if (hasItem "../../Items/wolf_claw" metadata "Hand" anyAmount) {
-    var "item_value" set 120
+if (hasItem "../../Items/hide_chestplate" metadata "Hand" anyAmount) {
+    var "item_value" set 100
     exit
 }
-if (hasItem "../../Items/wolf_dagger" metadata "Hand" anyAmount) {
-    var "item_value" set 130
+if (hasItem "../../Items/hide_helmet" metadata "Hand" anyAmount) {
+    var "item_value" set 100
     exit
 }
-
-function "GetItemValue4" false
-goto function "GetItemValue4"
-
-if (hasItem "../../Items/wolf_fang" metadata "Hand" anyAmount) {
-    var "item_value" set 130
+if (hasItem "../../Items/hide_leggings" metadata "Hand" anyAmount) {
+    var "item_value" set 100
+    exit
+}
+if (hasItem "../../Items/wolf_spirit" metadata "Hand" anyAmount) {
+    var "item_value" set 75
+    exit
+}
+if (hasItem "../../Items/wolf_pet" metadata "Hand" anyAmount) {
+    var "item_value" set 75
     exit
 }
