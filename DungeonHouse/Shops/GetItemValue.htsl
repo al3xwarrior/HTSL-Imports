@@ -314,27 +314,131 @@
 //     var "item_value" set 130
 //     exit
 // }
-if (hasItem "../../Items/hide_boots" metadata "Hand" anyAmount) {
-    var "item_value" set 100
+// if (hasItem "../../Items/hide_boots" metadata "Hand" anyAmount) {
+//     var "item_value" set 100
+//     exit
+// }
+// if (hasItem "../../Items/hide_chestplate" metadata "Hand" anyAmount) {
+//     var "item_value" set 100
+//     exit
+// }
+// if (hasItem "../../Items/hide_helmet" metadata "Hand" anyAmount) {
+//     var "item_value" set 100
+//     exit
+// }
+// if (hasItem "../../Items/hide_leggings" metadata "Hand" anyAmount) {
+//     var "item_value" set 100
+//     exit
+// }
+// if (hasItem "../../Items/wolf_spirit" metadata "Hand" anyAmount) {
+//     var "item_value" set 75
+//     exit
+// }
+// if (hasItem "../../Items/wolf_pet" metadata "Hand" anyAmount) {
+//     var "item_value" set 75
+//     exit
+// }
+if (hasItem "../Items/anchor" metadata "Hand" anyAmount) {
+    var "item_value" set 500
     exit
 }
-if (hasItem "../../Items/hide_chestplate" metadata "Hand" anyAmount) {
-    var "item_value" set 100
+if (hasItem "../Items/barnacle" metadata "Hand" anyAmount) {
+    var "item_value" set 600
     exit
 }
-if (hasItem "../../Items/hide_helmet" metadata "Hand" anyAmount) {
-    var "item_value" set 100
+if (hasItem "../Items/copper_boots" metadata "Hand" anyAmount) {
+    var "item_value" set 750
     exit
 }
-if (hasItem "../../Items/hide_leggings" metadata "Hand" anyAmount) {
-    var "item_value" set 100
+if (hasItem "../Items/copper_chestplate" metadata "Hand" anyAmount) {
+    var "item_value" set 750
     exit
 }
-if (hasItem "../../Items/wolf_spirit" metadata "Hand" anyAmount) {
-    var "item_value" set 75
+if (hasItem "../Items/copper_helmet" metadata "Hand" anyAmount) {
+    var "item_value" set 750
     exit
 }
-if (hasItem "../../Items/wolf_pet" metadata "Hand" anyAmount) {
-    var "item_value" set 75
+if (hasItem "../Items/copper_ingot" metadata "Hand" anyAmount) {
+    var "item_value" set 50
+    exit
+}
+if (hasItem "../Items/copper_leggings" metadata "Hand" anyAmount) {
+    var "item_value" set 750
+    exit
+}
+if (hasItem "../Items/coral" metadata "Hand" anyAmount) {
+    var "item_value" set 450
+    exit
+}
+if (hasItem "../Items/enchanted_copper_boots" metadata "Hand" anyAmount) {
+    var "item_value" set 1000
+    exit
+}
+if (hasItem "../Items/enchanted_copper_chestplate" metadata "Hand" anyAmount) {
+    var "item_value" set 1000
+    exit
+}
+if (hasItem "../Items/enchanted_copper_helmet" metadata "Hand" anyAmount) {
+    var "item_value" set 1000
+    exit
+}
+if (hasItem "../Items/enchanted_copper_leggings" metadata "Hand" anyAmount) {
+    var "item_value" set 750
+    exit
+}
+if (hasItem "../Items/ink_sac" metadata "Hand" anyAmount) {
+    var "item_value" set 400
+    exit
+}
+if (hasItem "../Items/kracken_pet" metadata "Hand" anyAmount) {
+    var "item_value" set 750
+    exit
+}
+if (hasItem "../Items/kraken_tooth" metadata "Hand" anyAmount) {
+    var "item_value" set 750
+    exit
+}
+if (hasItem "../Items/parrot_pet" metadata "Hand" anyAmount) {
+    var "item_value" set 500
+    exit
+}
+if (hasItem "../Items/snorkel_boots" metadata "Hand" anyAmount) {
+    var "item_value" set 500
+    exit
+}
+if (hasItem "../Items/snorkel_chestplate" metadata "Hand" anyAmount) {
+    var "item_value" set 500
+    exit
+}
+
+function "GetItemValue5" false
+goto function "GetItemValue5"
+
+if (hasItem "../Items/snorkel_helmet" metadata "Hand" anyAmount) {
+    var "item_value" set 500
+    exit
+}
+if (hasItem "../Items/snorkel_leggings" metadata "Hand" anyAmount) {
+    var "item_value" set 500
+    exit
+}
+if (hasItem "../Items/squid_boots" metadata "Hand" anyAmount) {
+    var "item_value" set 400
+    exit
+}
+if (hasItem "../Items/squid_chestplate" metadata "Hand" anyAmount) {
+    var "item_value" set 400
+    exit
+}
+if (hasItem "../Items/squid_helmet" metadata "Hand" anyAmount) {
+    var "item_value" set 400
+    exit
+}
+if (hasItem "../Items/squid_leggings" metadata "Hand" anyAmount) {
+    var "item_value" set 400
+    exit
+}
+if (hasItem "../Items/squid_pet" metadata "Hand" anyAmount) {
+    var "item_value" set 500
     exit
 }

@@ -1,0 +1,69 @@
+// random roll 1-1000
+var "drop_roll" set %random.whole/1 1000%
+
+// If roll <= 331, player gets nothing (33.1% no drop rate)
+if (var "drop_roll" <= 331) {
+    exit
+}
+
+// NEW ITEMS:
+// - copper_ingot
+// - copper_helmet
+// - copper_chestplate
+// - copper_leggings
+// - copper_boots
+// - kracken_pet
+// - storage_key
+// - coral
+
+// Ranges after 331 (332-1000 = 669 total drop chances)
+// We'll split 669 across 8 items: five 84-roll ranges (84*5=420) and three 83-roll ranges (83*3=249) => 420+249=669
+
+// 332-415 (84/1000 = 8.4%) - Copper Ingot
+if (var "drop_roll" > 331, var "drop_roll" <= 415) {
+    giveItem "../../../Items/copper_ingot" true "First Avaliable Slot" false
+    chat "&a+Copper Ingot"
+    exit
+}
+// 416-499 (84/1000 = 8.4%) - Copper Helmet
+if (var "drop_roll" > 415, var "drop_roll" <= 499) {
+    giveItem "../../../Items/copper_helmet" true "First Avaliable Slot" false
+    chat "&a+Copper Helmet"
+    exit
+}
+// 500-583 (84/1000 = 8.4%) - Copper Chestplate
+if (var "drop_roll" > 499, var "drop_roll" <= 583) {
+    giveItem "../../../Items/copper_chestplate" true "First Avaliable Slot" false
+    chat "&a+Copper Chestplate"
+    exit
+}
+// 584-667 (84/1000 = 8.4%) - Copper Leggings
+if (var "drop_roll" > 583, var "drop_roll" <= 667) {
+    giveItem "../../../Items/copper_leggings" true "First Avaliable Slot" false
+    chat "&a+Copper Leggings"
+    exit
+}
+// 668-751 (84/1000 = 8.4%) - Copper Boots
+if (var "drop_roll" > 667, var "drop_roll" <= 751) {
+    giveItem "../../../Items/copper_boots" true "First Avaliable Slot" false
+    chat "&a+Copper Boots"
+    exit
+}
+// 752-834 (83/1000 = 8.3%) - Kracken Pet
+if (var "drop_roll" > 751, var "drop_roll" <= 834) {
+    giveItem "../../../Items/kracken_pet" true "First Avaliable Slot" false
+    chat "&a+Kracken Pet"
+    exit
+}
+// 835-917 (83/1000 = 8.3%) - Storage Key
+if (var "drop_roll" > 834, var "drop_roll" <= 917) {
+    giveItem "../../../Items/storage_key" true "First Avaliable Slot" false
+    chat "&a+Storage Key"
+    exit
+}
+// 918-1000 (83/1000 = 8.3%) - Coral
+if (var "drop_roll" > 917, var "drop_roll" <= 1000) {
+    giveItem "../../../Items/coral" true "First Avaliable Slot" false
+    chat "&a+Coral"
+    exit
+}

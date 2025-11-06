@@ -316,27 +316,131 @@
 //     removeItem "../../Items/wardens_fists"
 //     exit
 // }
-if (hasItem "../../Items/hide_boots" metadata "Hand" anyAmount) {
-    removeItem "../../Items/hide_boots"
+// if (hasItem "../../Items/hide_boots" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/hide_boots"
+//     exit
+// }
+// if (hasItem "../../Items/hide_chestplate" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/hide_chestplate"
+//     exit
+// }
+// if (hasItem "../../Items/hide_helmet" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/hide_helmet"
+//     exit
+// }
+// if (hasItem "../../Items/hide_leggings" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/hide_leggings"
+//     exit
+// }
+// if (hasItem "../../Items/wolf_spirit" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wolf_spirit"
+//     exit
+// }
+// if (hasItem "../../Items/wolf_pet" metadata "Hand" anyAmount) {
+//     removeItem "../../Items/wolf_pet"
+//     exit
+// }
+if (hasItem "../Items/anchor" metadata "Hand" anyAmount) {
+    removeItem "../Items/anchor"
     exit
 }
-if (hasItem "../../Items/hide_chestplate" metadata "Hand" anyAmount) {
-    removeItem "../../Items/hide_chestplate"
+if (hasItem "../Items/barnacle" metadata "Hand" anyAmount) {
+    removeItem "../Items/barnacle"
     exit
 }
-if (hasItem "../../Items/hide_helmet" metadata "Hand" anyAmount) {
-    removeItem "../../Items/hide_helmet"
+if (hasItem "../Items/copper_boots" metadata "Hand" anyAmount) {
+    removeItem "../Items/copper_boots"
     exit
 }
-if (hasItem "../../Items/hide_leggings" metadata "Hand" anyAmount) {
-    removeItem "../../Items/hide_leggings"
+if (hasItem "../Items/copper_chestplate" metadata "Hand" anyAmount) {
+    removeItem "../Items/copper_chestplate"
     exit
 }
-if (hasItem "../../Items/wolf_spirit" metadata "Hand" anyAmount) {
-    removeItem "../../Items/wolf_spirit"
+if (hasItem "../Items/copper_helmet" metadata "Hand" anyAmount) {
+    removeItem "../Items/copper_helmet"
     exit
 }
-if (hasItem "../../Items/wolf_pet" metadata "Hand" anyAmount) {
-    removeItem "../../Items/wolf_pet"
+if (hasItem "../Items/copper_ingot" metadata "Hand" anyAmount) {
+    removeItem "../Items/copper_ingot"
+    exit
+}
+if (hasItem "../Items/copper_leggings" metadata "Hand" anyAmount) {
+    removeItem "../Items/copper_leggings"
+    exit
+}
+if (hasItem "../Items/coral" metadata "Hand" anyAmount) {
+    removeItem "../Items/coral"
+    exit
+}
+if (hasItem "../Items/enchanted_copper_boots" metadata "Hand" anyAmount) {
+    removeItem "../Items/enchanted_copper_boots"
+    exit
+}
+if (hasItem "../Items/enchanted_copper_chestplate" metadata "Hand" anyAmount) {
+    removeItem "../Items/enchanted_copper_chestplate"
+    exit
+}
+if (hasItem "../Items/enchanted_copper_helmet" metadata "Hand" anyAmount) {
+    removeItem "../Items/enchanted_copper_helmet"
+    exit
+}
+if (hasItem "../Items/enchanted_copper_leggings" metadata "Hand" anyAmount) {
+    removeItem "../Items/enchanted_copper_leggings"
+    exit
+}
+if (hasItem "../Items/ink_sac" metadata "Hand" anyAmount) {
+    removeItem "../Items/ink_sac"
+    exit
+}
+if (hasItem "../Items/kracken_pet" metadata "Hand" anyAmount) {
+    removeItem "../Items/kracken_pet"
+    exit
+}
+if (hasItem "../Items/kraken_tooth" metadata "Hand" anyAmount) {
+    removeItem "../Items/kraken_tooth"
+    exit
+}
+if (hasItem "../Items/parrot_pet" metadata "Hand" anyAmount) {
+    removeItem "../Items/parrot_pet"
+    exit
+}
+
+function "RemoveItemToBeSold5" false
+goto function "RemoveItemToBeSold5"
+
+if (hasItem "../Items/snorkel_boots" metadata "Hand" anyAmount) {
+    removeItem "../Items/snorkel_boots"
+    exit
+}
+if (hasItem "../Items/snorkel_chestplate" metadata "Hand" anyAmount) {
+    removeItem "../Items/snorkel_chestplate"
+    exit
+}
+if (hasItem "../Items/snorkel_helmet" metadata "Hand" anyAmount) {
+    removeItem "../Items/snorkel_helmet"
+    exit
+}
+if (hasItem "../Items/snorkel_leggings" metadata "Hand" anyAmount) {
+    removeItem "../Items/snorkel_leggings"
+    exit
+}
+if (hasItem "../Items/squid_boots" metadata "Hand" anyAmount) {
+    removeItem "../Items/squid_boots"
+    exit
+}
+if (hasItem "../Items/squid_chestplate" metadata "Hand" anyAmount) {
+    removeItem "../Items/squid_chestplate"
+    exit
+}
+if (hasItem "../Items/squid_helmet" metadata "Hand" anyAmount) {
+    removeItem "../Items/squid_helmet"
+    exit
+}
+if (hasItem "../Items/squid_leggings" metadata "Hand" anyAmount) {
+    removeItem "../Items/squid_leggings"
+    exit
+}
+if (hasItem "../Items/squid_pet" metadata "Hand" anyAmount) {
+    removeItem "../Items/squid_pet"
     exit
 }

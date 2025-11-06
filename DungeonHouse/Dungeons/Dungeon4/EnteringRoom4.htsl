@@ -1,0 +1,24 @@
+if or (var "dungeon_stage" > 3, gamemode "Creative") {
+    exit
+}
+
+if (var "monster1hp" <= 0, var "monster2hp" <= 0, var "monster3hp" <= 0, var "monster4hp" <= 0) {
+    var "monster1hp" set 200000
+    var "monster2hp" set 500
+    var "monster3hp" set 500
+    var "dungeon_stage" set 4
+
+    chat "&b&lKRACKEN: &bYou have proven your strength once again, adventurer. But beware, for the challenges ahead will test you like never before."
+    pause 30
+    chat "&b&lKRACKEN: &bPrepare yourself, for the final battle awaits. May your courage and skill lead you to victory!"
+    pause 20
+    chat "&b&lKRACKEN: &bBut enough talk! Let the final battle begin!"
+    chat "&cDestroy his arms to prevent him from splashing you away!"
+
+    exit
+}
+
+tp "custom_coordinates" "81.5 129.0 -35.0" true
+chat "&cYou must defeat all the monsters before proceeding!"
+sound "Villager No" 0.7 0.5 "invokers_location"
+applyPotion "Blindness" 1 1 true true

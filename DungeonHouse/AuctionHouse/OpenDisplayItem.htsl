@@ -1,0 +1,21 @@
+// globalvar "ah/item" set "&eRainbow Helmet"
+// globalvar "ah/time" set "&b1000 Xp Bottle"
+// globalvar "ah/item" set "&7&lMACE"
+// globalvar "ah/time" set "&3Speedy Sugar"
+
+if (globalvar "ah/item" == "&eRainbow Helmet") {
+    displayMenu "AH Item: Rainbow Helmet"
+    exit
+}
+if (globalvar "ah/item" == "&b1000 Xp Bottle") {
+    displayMenu "AH Item: 1000 Xp Bottle"
+    exit
+}
+if (globalvar "ah/item" == "&7&lMACE") {
+    displayMenu "AH Item: MACE"
+    exit
+}
+if (globalvar "ah/item" == "&3Speedy Sugar") {
+    displayMenu "AH Item: Speedy Sugar"
+    exit
+}

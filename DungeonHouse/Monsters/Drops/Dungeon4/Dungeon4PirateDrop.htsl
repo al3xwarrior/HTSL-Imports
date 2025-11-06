@@ -1,0 +1,111 @@
+// random roll 1-1000
+var "drop_roll" set %random.whole/1 1000%
+
+// If roll <= 350, player gets nothing (35.0% no drop rate)
+if (var "drop_roll" <= 350) {
+    exit
+}
+
+// NEW ITEMS:
+// - snorkel_helmet
+// - snorkel_chestplate
+// - snorkel_leggings
+// - snorkel_boots
+// - squid_helmet
+// - squid_chestplate
+// - squid_leggings
+// - squid_boots
+// - copper_ingot
+// - anchor
+// - ink_sac
+// - barnacle
+// - parrot_pet
+// - squid_pet
+
+// Ranges after 350 (351-1000 = 650 total drop chances)
+// Distribute 650 across 14 items. We'll use six 47-roll ranges (47*6=282) and eight 46-roll ranges (46*8=368) => 282+368=650
+
+// 351-397 (47/1000 = 4.7%) - Snorkel Helmet
+if (var "drop_roll" > 350, var "drop_roll" <= 397) {
+    giveItem "../../../Items/snorkel_helmet" true "First Avaliable Slot" false
+    chat "&a+Snorkel Helmet"
+    exit
+}
+// 398-444 (47/1000 = 4.7%) - Snorkel Chestplate
+if (var "drop_roll" > 397, var "drop_roll" <= 444) {
+    giveItem "../../../Items/snorkel_chestplate" true "First Avaliable Slot" false
+    chat "&a+Snorkel Chestplate"
+    exit
+}
+// 445-491 (47/1000 = 4.7%) - Snorkel Leggings
+if (var "drop_roll" > 444, var "drop_roll" <= 491) {
+    giveItem "../../../Items/snorkel_leggings" true "First Avaliable Slot" false
+    chat "&a+Snorkel Leggings"
+    exit
+}
+// 492-538 (47/1000 = 4.7%) - Snorkel Boots
+if (var "drop_roll" > 491, var "drop_roll" <= 538) {
+    giveItem "../../../Items/snorkel_boots" true "First Avaliable Slot" false
+    chat "&a+Snorkel Boots"
+    exit
+}
+// 539-585 (47/1000 = 4.7%) - Squid Helmet
+if (var "drop_roll" > 538, var "drop_roll" <= 585) {
+    giveItem "../../../Items/squid_helmet" true "First Avaliable Slot" false
+    chat "&a+Squid Helmet"
+    exit
+}
+// 586-632 (47/1000 = 4.7%) - Squid Chestplate
+if (var "drop_roll" > 585, var "drop_roll" <= 632) {
+    giveItem "../../../Items/squid_chestplate" true "First Avaliable Slot" false
+    chat "&a+Squid Chestplate"
+    exit
+}
+// 633-678 (46/1000 = 4.6%) - Squid Leggings
+if (var "drop_roll" > 632, var "drop_roll" <= 678) {
+    giveItem "../../../Items/squid_leggings" true "First Avaliable Slot" false
+    chat "&a+Squid Leggings"
+    exit
+}
+// 679-724 (46/1000 = 4.6%) - Squid Boots
+if (var "drop_roll" > 678, var "drop_roll" <= 724) {
+    giveItem "../../../Items/squid_boots" true "First Avaliable Slot" false
+    chat "&a+Squid Boots"
+    exit
+}
+// 725-770 (46/1000 = 4.6%) - Copper Ingot
+if (var "drop_roll" > 724, var "drop_roll" <= 770) {
+    giveItem "../../../Items/copper_ingot" true "First Avaliable Slot" false
+    chat "&a+Copper Ingot"
+    exit
+}
+// 771-816 (46/1000 = 4.6%) - Anchor
+if (var "drop_roll" > 770, var "drop_roll" <= 816) {
+    giveItem "../../../Items/anchor" true "First Avaliable Slot" false
+    chat "&a+Anchor"
+    exit
+}
+// 817-862 (46/1000 = 4.6%) - Ink Sac
+if (var "drop_roll" > 816, var "drop_roll" <= 862) {
+    giveItem "../../../Items/ink_sac" true "First Avaliable Slot" false
+    chat "&a+Ink Sac"
+    exit
+}
+// 863-908 (46/1000 = 4.6%) - Barnacle
+if (var "drop_roll" > 862, var "drop_roll" <= 908) {
+    giveItem "../../../Items/barnacle" true "First Avaliable Slot" false
+    chat "&a+Barnacle"
+    exit
+}
+// 909-954 (46/1000 = 4.6%) - Parrot Pet
+if (var "drop_roll" > 908, var "drop_roll" <= 954) {
+    giveItem "../../../Items/parrot_pet" true "First Avaliable Slot" false
+    chat "&a+Parrot Pet"
+    exit
+}
+// 955-1000 (46/1000 = 4.6%) - Squid Pet
+if (var "drop_roll" > 954, var "drop_roll" <= 1000) {
+    giveItem "../../../Items/squid_pet" true "First Avaliable Slot" false
+    chat "&a+Squid Pet"
+    exit
+}

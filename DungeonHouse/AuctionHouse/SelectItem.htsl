@@ -1,3 +1,6 @@
 random {
     globalvar "ah/item" set "&eRainbow Helmet"
+    globalvar "ah/item" set "&b1000 Xp Bottle"
+    globalvar "ah/item" set "&7&lMACE"
+    globalvar "ah/item" set "&3Speedy Sugar"
 }

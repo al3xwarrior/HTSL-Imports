@@ -1,0 +1,36 @@
+applyPotion "Blindness" 2 1 true true
+pause 2
+tp "custom_coordinates" "81.5 140 -86.5 -1.3 3.1" false
+sound "Enderman Teleport" 0.7 2.0 "invokers_location"
+
+var "dungeon_stage" set 1
+var "goldtocollect" set 0
+var "dungeon_start" set %date.unix%
+var "dungeon_id" set 4
+
+// Monster Stats
+if () {
+var "monster1hp" set 15000
+var "monster1xpos" set 86.5
+var "monster1ypos" set 141.0
+var "monster1zpos" set -73.5
+var "monster2hp" set 15000
+var "monster2xpos" set 75.5
+var "monster2ypos" set 139.0
+var "monster2zpos" set -63.5
+var "monster3hp" set 17500
+var "monster3xpos" set 82.5
+var "monster3ypos" set 139.0
+var "monster3zpos" set -50.5
+}
+
+title "&eWelcome to" "&b&kThe Stolen Ship!" 1 3 2
+pause 40
+title "&eWelcome to" "&bThe &kStolen Ship!" 0 3 2
+sound "Anvil Use" 0.7 0.6 "invokers_location"
+pause 14
+title "&eWelcome to" "&bThe Stolen &kShip!" 0 3 2
+pause 14
+title "&eWelcome to" "&bThe Stolen Ship!" 0 3 2
+pause 40
+title "&r" "&eDefeat the Pirates!" 0 2 1

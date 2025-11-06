@@ -1,30 +1,42 @@
-if (var "dungselected" == 1 0) {
-    function "StartDungeon1" false
-    exit
-}
-if (var "dungselected" == 2 0, var "gold" < 50) {
-    chat "&f&lDUNGEON MASTER: &fYou need &650 Gold &fto enter!"
+// if (var "dungselected" == 1 0) {
+//     function "StartDungeon1" false
+//     exit
+// }
+// if (var "dungselected" == 2 0, var "gold" < 50) {
+//     chat "&f&lDUNGEON MASTER: &fYou need &650 Gold &fto enter!"
+//     changeVelocity 0 10 -10
+//     sound "Anvil Land" 0.7 0.5 "invokers_location"
+//     exit
+// }
+// if (var "dungselected" == 2 0) {
+//     var "gold" dec 50
+//     function "StartDungeon2" false
+//     exit
+// }
+// if (var "dungselected" == 3 0, var "gold" < 150) {
+//     chat "&f&lDUNGEON MASTER: &fYou need &6150 Gold &fto enter!"
+//     changeVelocity 0 10 -10
+//     sound "Anvil Land" 0.7 0.5 "invokers_location"
+//     exit
+// }
+// if (var "dungselected" == 3 0) {
+//     var "gold" dec 150
+//     function "StartDungeon3" false
+//     exit
+// }
+
+if (var "dungselected" == 4 0, var "gold" < 750) {
+    chat "&f&lDUNGEON MASTER: &fYou need &6750 Gold &fto enter!"
     changeVelocity 0 10 -10
     sound "Anvil Land" 0.7 0.5 "invokers_location"
     exit
 }
-if (var "dungselected" == 2 0) {
-    var "gold" dec 50
-    function "StartDungeon2" false
-    exit
-}
-if (var "dungselected" == 3 0, var "gold" < 150) {
-    chat "&f&lDUNGEON MASTER: &fYou need &6150 Gold &fto enter!"
-    changeVelocity 0 10 -10
-    sound "Anvil Land" 0.7 0.5 "invokers_location"
-    exit
-}
-if (var "dungselected" == 3 0) {
-    var "gold" dec 150
-    function "StartDungeon3" false
+if (var "dungselected" == 4 0) {
+    var "gold" dec 750
+    function "StartDungeon4" false
     exit
 }
 
-changeVelocity 0 10 -10
-sound "Anvil Land" 0.7 0.5 "invokers_location"
-chat "&f&lDUNGEON MASTER: &fTalk to me before entering the &dportal&f!"
+// changeVelocity 0 10 -10
+// sound "Anvil Land" 0.7 0.5 "invokers_location"
+// chat "&f&lDUNGEON MASTER: &fTalk to me before entering the &dportal&f!"

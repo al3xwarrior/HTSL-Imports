@@ -1,10 +1,17 @@
+if (hasGroup "OWNER" true) {
+
+} else {
+    chat "&cNot yet!"
+    exit
+}
+
 // Change this stuff
-if (var "level" < 25) {
-    chat "&f&lDUNGEON MASTER: &fYou must be at least level &a25 &fto enter this dungeon!"
+if (var "level" < 30) {
+    chat "&f&lDUNGEON MASTER: &fYou must be at least level &a30 &fto enter this dungeon!"
     sound "Anvil Land" 0.7 1 "invokers_location"
     exit
 }
-var "dungselected" set 3
+var "dungselected" set 4
 
 closeMenu
 

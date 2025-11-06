@@ -1,0 +1,21 @@
+if (gamemode "Creative") {
+    exit
+}
+
+if (inRegion "KrakenArms") {
+
+} else {
+    exit
+}
+
+if (var "monster3hp" <= 0, var "monster2hp" <= 0) {
+    exit
+}
+
+var "kracken_arms" set %random.whole/1 6%
+if (var "kracken_arms" == 1) {
+    chat "&cThe Kracken's arms splash water at you, pushing you back!"
+    sound "Splash" 0.7 1.0 "invokers_location"
+    var "health" dec 100
+    changeVelocity 0 0 20
+}

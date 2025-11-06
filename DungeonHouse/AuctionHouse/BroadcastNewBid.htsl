@@ -1,3 +1,9 @@
+if (inRegion "AuctionHouse") {
+
+} else {
+    exit
+}
+
 if (globalvar "ah/bid/name" == %player.name%) {
     exit
 }

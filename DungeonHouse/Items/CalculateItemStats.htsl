@@ -546,6 +546,142 @@ if (hasItem "torn_prisoner_cap" metadata "Armor" anyAmount) {
 //     var "healthregen" inc 3
 // }
 
-if (hasItem "../starter_sword" "Metadata" "Hand" "Any Amount") {
-    var "damage" inc 1
+// if (hasItem "../starter_sword" "Metadata" "Hand" "Any Amount") {
+//     var "damage" inc 1
+// }
+
+// function "CalculateItemStats5" false
+// goto function "CalculateItemStats5"
+
+// if (hasItem "mace" "Metadata" "Hand" "Any Amount") {
+//     var "damage" inc 300
+//     var "healthregen" inc 15
+// }
+
+// 🐚 Snorkel Armor
+if (hasItem "snorkel_helmet" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 150
+    var "healthRegen" inc 5
+}
+if (hasItem "snorkel_chestplate" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 150
+    var "healthRegen" inc 5
+}
+if (hasItem "snorkel_leggings" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 150
+    var "healthRegen" inc 5
+}
+if (hasItem "snorkel_boots" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 150
+    var "healthRegen" inc 5
+}
+
+// 🦑 Squid Armor
+if (hasItem "squid_helmet" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 200
+    var "healthRegen" inc 5
+}
+if (hasItem "squid_chestplate" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 200
+    var "healthRegen" inc 5
+}
+if (hasItem "squid_leggings" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 200
+    var "healthRegen" inc 5
+}
+if (hasItem "squid_boots" metadata "Armor" anyAmount) {
+    var "maxhealth" inc 200
+    var "healthRegen" inc 5
+}
+
+// 🟠 Copper Armor
+if (hasItem "copper_helmet" metadata "Armor" anyAmount) {
+    var "damage" inc 60
+    var "maxhealth" inc 500
+    var "healthRegen" inc 10
+    var "maxmana" inc 3
+}
+if (hasItem "copper_chestplate" metadata "Armor" anyAmount) {
+    var "damage" inc 60
+    var "maxhealth" inc 500
+    var "healthRegen" inc 10
+    var "maxmana" inc 3
+}
+if (hasItem "copper_leggings" metadata "Armor" anyAmount) {
+    var "damage" inc 60
+    var "maxhealth" inc 500
+    var "healthRegen" inc 10
+    var "maxmana" inc 3
+}
+if (hasItem "copper_boots" metadata "Armor" anyAmount) {
+    var "damage" inc 60
+    var "maxhealth" inc 500
+    var "healthRegen" inc 10
+    var "maxmana" inc 3
+}
+
+// 💎 Enchanted Copper Armor
+if (hasItem "enchanted_copper_helmet" metadata "Armor" anyAmount) {
+    var "damage" inc 120
+    var "maxhealth" inc 1000
+    var "healthRegen" inc 20
+    var "maxmana" inc 3
+}
+if (hasItem "enchanted_copper_chestplate" metadata "Armor" anyAmount) {
+    var "damage" inc 120
+    var "maxhealth" inc 1000
+    var "healthRegen" inc 20
+    var "maxmana" inc 3
+}
+if (hasItem "enchanted_copper_leggings" metadata "Armor" anyAmount) {
+    var "damage" inc 120
+    var "maxhealth" inc 1000
+    var "healthRegen" inc 20
+    var "maxmana" inc 3
+}
+if (hasItem "enchanted_copper_boots" metadata "Armor" anyAmount) {
+    var "damage" inc 120
+    var "maxhealth" inc 1000
+    var "healthRegen" inc 20
+    var "maxmana" inc 3
+}
+
+// ⚓ Anchor
+if (hasItem "anchor" metadata "Hand" anyAmount) {
+    var "damage" inc 250
+}
+
+// 🦑 Ink Sac
+if (hasItem "ink_sac" metadata "Hand" anyAmount) {
+    var "damage" inc 275
+}
+
+// 🪸 Barnacle
+if (hasItem "barnacle" metadata "Hand" anyAmount) {
+    var "damage" inc 400
+}
+
+// 🌊 Coral
+if (hasItem "coral" metadata "Hand" anyAmount) {
+    var "damage" inc 500
+}
+
+// 🦷 Kraken Tooth
+if (hasItem "kraken_tooth" metadata "Hand" anyAmount) {
+    var "damage" inc 1000
+}
+
+if (var "petEquipped" == "&9Squid") {
+    var "maxmana" inc 50
+    var "manaregen" inc 8
+}
+if (var "petEquipped" == "&aParrot") {
+    var "maxhealth" inc 100
+    var "healthregen" inc 10
+}
+if (var "petEquipped" == "&bKracken") {
+    var "damage" inc 100
+    var "maxmana" inc 40
+    var "manaregen" inc 10
+    var "speed" inc 5
 }

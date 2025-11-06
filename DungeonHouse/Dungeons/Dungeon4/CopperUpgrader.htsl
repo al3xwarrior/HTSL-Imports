@@ -1,0 +1,21 @@
+if (hasItem "../../Items/copper_boots" metadata "Anywhere" anyAmount) {
+
+} else {
+    chat "&cYou need a Copper Boots to upgrade it!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+if (hasItem null metadata "Anywhere" "Greater Than Or Equal") {
+
+} else {
+    chat "&cYou do not have enough &6Copper Ingots&c to upgrade!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+removeItem "../../Items/copper_boots"
+removeItem null
+
+sound "Anvil Use" 0.7 1 "invokers_location"
+giveItem "../../Items/enchanted_copper_boots" true "First Slot" false

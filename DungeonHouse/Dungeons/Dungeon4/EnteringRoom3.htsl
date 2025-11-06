@@ -1,0 +1,29 @@
+if or (var "dungeon_stage" > 2, gamemode "Creative") {
+    exit
+}
+
+if (var "monster1hp" <= 0, var "monster2hp" <= 0) {
+    var "monster1hp" set 22000
+    var "monster1xpos" set 76.5
+    var "monster1ypos" set 129.0
+    var "monster1zpos" set -30.5
+    var "monster2hp" set 22000
+    var "monster2xpos" set 85.5
+    var "monster2ypos" set 129.0
+    var "monster2zpos" set -33.5
+    var "monster3hp" set 22000
+    var "monster3xpos" set 76.5
+    var "monster3ypos" set 129.0
+    var "monster3zpos" set -42.5
+    var "monster4hp" set 22000
+    var "monster4xpos" set 85.5
+    var "monster4ypos" set 129.0
+    var "monster4zpos" set -48.5
+    var "dungeon_stage" set 3
+    exit
+}
+
+tp "custom_coordinates" "81.5 138.0 -5.5" true
+chat "&cYou must defeat all the monsters before proceeding!"
+sound "Villager No" 0.7 0.5 "invokers_location"
+applyPotion "Blindness" 1 1 true true

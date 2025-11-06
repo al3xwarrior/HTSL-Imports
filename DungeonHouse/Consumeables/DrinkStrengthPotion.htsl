@@ -1,5 +1,10 @@
 function "DrinkStrengthEffect" false
 
+if (var "sp_timer" < 0 0) {
+    var "sp_amt" set 0
+    var "sp_timer" set 0
+}
+
 if (hasItem "../Items/strength_potion_12" metadata "Hand" anyAmount, var "sp_amt" == 12) {
     removeItem "../Items/strength_potion_12"
     var "sp_timer" inc 180

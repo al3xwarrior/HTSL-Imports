@@ -30,4 +30,17 @@ var "gold" dec %var.global/ah/currentbid%
 
 if (globalvar "ah/item" == "&eRainbow Helmet") {
     giveItem "../Items/rainbow_helmet" true "First Slot" false
+    exit
+}
+if (globalvar "ah/item" == "&b1000 Xp Bottle") {
+    giveItem "../Items/1000xpbottle" true "First Slot" false
+    exit
+}
+if (globalvar "ah/item" == "&7&lMACE") {
+    giveItem "../Items/mace" true "First Slot" false
+    exit
+}
+if (globalvar "ah/item" == "&3Speedy Sugar") {
+    giveItem "../Items/speedy_sugar" true "First Slot" false
+    exit
 }

@@ -1,5 +1,14 @@
 var "dungeon_stage" set 0
 
+tp "custom_coordinates" "-67.5 165.0 -60.5 0.0 3.2" true
+
+var "dungeontime" set %date.unix%
+var "dungeontime" dec %var.player/dungeon_start%
+chat "&eYou finished the dungeon in &a%var.player/dungeontime%s&e!"
+function "SpeedRunning" false
+
+var "dungeon_id" set 0
+
 pause 30
 
 title "&e✯ &6&lDUNGEON FINISHED &e✯" "&r" 1 3 1
@@ -10,13 +19,6 @@ var "dungeonsfin" inc 1
 var "goldreward" set 0
 var "goldinc" set %var.player/goldtocollect%
 var "goldinc" div 10
-
-var "dungeontime" set %date.unix%
-var "dungeontime" dec %var.player/dungeon_start%
-chat "&eYou finished the dungeon in &a%var.player/dungeontime%s&e!"
-function "SpeedRunning" false
-
-var "dungeon_id" set 0
 
 if () {
 title "&e✯ &6&lDUNGEON FINISHED &e✯" "&7You Earned: &e⛃0" 0 3 1
@@ -78,5 +80,4 @@ var "goldinc" unset
 pause 20
 
 applyPotion "Blindness" 1 1 true true
-tp "custom_coordinates" "-67.5 165.0 -60.5 0.0 3.2" true
 sound "Enderman Teleport" 0.7 2.0 "invokers_location"

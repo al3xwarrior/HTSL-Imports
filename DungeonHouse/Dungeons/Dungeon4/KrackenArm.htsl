@@ -1,0 +1,23 @@
+
+define monsterNumber "3"
+
+if (var {"monster"+monsterNumber+"hp"} <= 0) {
+    sound "Cat Meow" 0.7 0.5 "invokers_location"
+    chat "&bThat arm is already defeated! &4&l☠"
+    exit
+}
+
+var {"monster"+monsterNumber+"hp"} dec %var.player/damage%
+function "HurtMonster" false
+
+if (var {"monster"+monsterNumber+"hp"} <= 0) {
+    // Change Sound
+    sound "Swim" 0.7 2.0 "invokers_location"
+    var {"monster"+monsterNumber+"hp"} set 0
+    title "&r" "&4☠ &bArm Defeated &4☠" 0 2 1
+    exit
+}
+
+// Change Monster Hurt Sound
+sound "Swim" 0.7 0.5 "invokers_location"
+title "&r" {"&c%var.player/monster"+monsterNumber+"hp%❤"} 0 1 1

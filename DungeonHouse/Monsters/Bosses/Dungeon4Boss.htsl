@@ -1,0 +1,41 @@
+define monsterNumber "1"
+
+if (var {"monster"+monsterNumber+"hp"} <= 0) {
+    sound "Cat Meow" 0.7 0.5 "invokers_location"
+    chat "&cThat monster has already been defeated!"
+    exit
+}
+
+var {"monster"+monsterNumber+"hp"} dec %var.player/damage%
+function "HurtMonster" false
+
+if (var {"monster"+monsterNumber+"hp"} <= 0) {
+    // Change Sound + Drop Function
+    function "Dungeon4BossDrop" false
+    sound "Ghast Scream2" 0.7 1 "invokers_location"
+
+    title "&6Boss Defeated" "&40❤" 0 2 1
+
+    function "KillMonster" false
+
+    function "FinishDungeon" false
+
+    chat "&b&lKRACKEN: &bYou have bested me, adventurer. Your strength and courage are truly commendable. May your journey continue to be filled with triumphs and glory!"
+    exit
+}
+
+// Change Monster Hurt Sound
+sound "Ghast Moan" 0.7 2.0 "invokers_location"
+
+title "&r" {"&c%var.player/monster"+monsterNumber+"hp%❤"} 0 1 1
+
+// Change Chance and Damage Values
+var "fightchance" set %random.whole/1 8%
+
+var "monsterdamage" set %random.whole/100 201%
+
+if (var "fightchance" == 1) {
+    sound "Hurt Flesh" 0.7 1 "invokers_location"
+    var "health" dec %var.player/monsterdamage%
+    title "&4-%var.player/monsterdamage%❤" {"&c%var.player/monster"+monsterNumber+"hp%❤"} 0 1 1
+}
