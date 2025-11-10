@@ -1,0 +1,17 @@
+if (hasGroup "MOD" true) {
+
+} else {
+    exit
+}
+
+if (var "invis" == 0 0) {
+    var "invis" set 1
+    applyPotion "Invisibility" 2000000 10 true true
+    displayNametag false
+    chat "&aYou are now invisible."
+} else {
+    var "invis" set 0
+    applyPotion "Invisibility" 1 1 true true
+    displayNametag true
+    chat "&cYou are now visible."
+}

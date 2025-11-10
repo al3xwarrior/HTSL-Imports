@@ -250,7 +250,7 @@ if (var "dungeon_id" == 4, var "dungeontime" < %var.global/d4_sr_time2%) {
 
     globalvar "sr_bc_place" set "&72nd"
     globalvar "sr_bc_name" set %player.name%
-    globalvar "sr_bc_dungeon" set "&dThe Sith Tower"
+    globalvar "sr_bc_dungeon" set "&bThe Stolen Ship"
     globalvar "sr_bc_mins" set %var.player/d_minutes%
     globalvar "sr_bc_secs" set %var.player/d_seconds%
     function "SpeedRunningBroadcast" true
