@@ -19,6 +19,8 @@ if (var xpgain > 0) {
     chat "&3✯ &bYou gained &3%var.player/xpgain% XP&b!"
     sound "Orb Pickup" 0.7 2.0 "invokers_location"
     var xpgain set 0
+} else {
+    exit
 }
 
 if (var xp >= var requiredexp) {
