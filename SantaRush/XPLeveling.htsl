@@ -1,0 +1,75 @@
+// triggered every 5 ticks
+// when xp is to be given, increase stat xpgain as calculations for multipliers happen here
+
+if (var lvl >= 1) {
+
+} else {
+    var lvl set 1
+    var requiredexp set 100
+    var xp set 0
+}
+
+if (var xpgain > 0) {
+    //nbhxpmulti = neighborhood xp multiplier
+    var xpgain *= %var.player/nbhxpmulti 1%
+    var xpgain *= %var.global/eventxpmulti 1%
+    var xpgain *= %var.player/prestigexpmulti 1%
+
+    var xp += var xpgain
+    chat "&3✯ &bYou gained &3%var.player/xpgain% XP&b!"
+    sound "Orb Pickup" 0.7 2.0 "invokers_location"
+    var xpgain set 0
+}
+
+if (var xp >= var requiredexp) {
+    var "prevLevel" set var lvl
+    var xp -= var requiredexp
+    var lvl += 1
+} else {
+    exit
+}
+
+if (var lvl = 2) {
+    var requiredexp set 250
+}
+if (var lvl = 3) {
+    var requiredexp set 500
+}
+if (var lvl >= 4) {
+    var requiredexp += 500
+}
+
+// Level Up messages and sounds
+if () {
+    title "&bL" "&r" 0 5 3
+    sound "Orb Pickup" 0.7 0.5 "invokers_location"
+    pause 4
+    title "&bLE" "&r" 0 5 3
+    sound "Orb Pickup" 0.7 0.6 "invokers_location"
+    pause 4
+    title "&bLEV" "&r" 0 5 3
+    sound "Orb Pickup" 0.7 0.7 "invokers_location"
+    pause 4
+    title "&bLEVE" "&r" 0 5 3
+    sound "Orb Pickup" 0.7 0.8 "invokers_location"
+    pause 4
+}
+if () {
+    title "&bLEVEL" "&r" 0 5 3
+    sound "Orb Pickup" 0.7 0.9 "invokers_location"
+    pause 4
+    title "&bLEVEL &r" "&r" 0 5 3
+    sound "Orb Pickup" 0.7 1.0 "invokers_location"
+    pause 4
+    title "&bLEVEL U" "&r" 0 5 3
+    sound "Orb Pickup" 0.7 1.1 "invokers_location"
+    pause 4
+    title "&bLEVEL UP" "&r" 0 5 3
+    sound "Orb Pickup" 0.7 1.2 "invokers_location"
+    pause 4
+}
+title "&bLEVEL UP!" "&7%var.player/prevLevel% &8➜ &b%var.player/lvl%" 0 5 3
+sound "Orb Pickup" 0.7 1.3 "invokers_location"
+pause 8
+title "&3&lLEVEL UP!" "&7%var.player/prevLevel% &8➜ &b%var.player/lvl%" 0 5 3
+sound "Level Up" 1.0 1.0 "invokers_location"
