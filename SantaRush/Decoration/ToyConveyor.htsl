@@ -1,0 +1,119 @@
+// 1 - 22.7 21.0 14.5
+// 2 - 22.7 21.0 16.5
+
+// Move all conveyor items down the conveyor belt
+if () {
+    globalvar "1itemConv1Pos" dec 0.2
+    globalvar "1itemConv2Pos" dec 0.2
+    globalvar "1itemConv3Pos" dec 0.2
+    globalvar "1itemConv4Pos" dec 0.2
+    globalvar "1itemConv5Pos" dec 0.2
+    globalvar "1itemConv6Pos" dec 0.2
+
+    globalvar "2itemConv1Pos" dec 0.2
+    globalvar "2itemConv2Pos" dec 0.2
+    globalvar "2itemConv3Pos" dec 0.2
+    globalvar "2itemConv4Pos" dec 0.2
+    globalvar "2itemConv5Pos" dec 0.2
+    globalvar "2itemConv6Pos" dec 0.2
+}
+
+if (globalvar "1itemConv1Pos" <= 4.2) {
+    globalvar "1itemConv1Pos" set 22.7
+}
+if (globalvar "1itemConv2Pos" <= 4.2) {
+    globalvar "1itemConv2Pos" set 22.7
+}
+if (globalvar "1itemConv3Pos" <= 4.2) {
+    globalvar "1itemConv3Pos" set 22.7
+}
+if (globalvar "1itemConv4Pos" <= 4.2) {
+    globalvar "1itemConv4Pos" set 22.7
+}
+if (globalvar "1itemConv5Pos" <= 4.2) {
+    globalvar "1itemConv5Pos" set 22.7
+}
+if (globalvar "1itemConv6Pos" <= 4.2) {
+    globalvar "1itemConv6Pos" set 22.7
+}
+
+if (globalvar "2itemConv1Pos" <= 4.2) {
+    globalvar "2itemConv1Pos" set 22.7
+}
+if (globalvar "2itemConv2Pos" <= 4.2) {
+    globalvar "2itemConv2Pos" set 22.7
+}
+if (globalvar "2itemConv3Pos" <= 4.2) {
+    globalvar "2itemConv3Pos" set 22.7
+}
+if (globalvar "2itemConv4Pos" <= 4.2) {
+    globalvar "2itemConv4Pos" set 22.7
+}
+if (globalvar "2itemConv5Pos" <= 4.2) {
+    globalvar "2itemConv5Pos" set 22.7
+}
+if (globalvar "2itemConv6Pos" <= 4.2) {
+    globalvar "2itemConv6Pos" set 22.7
+}
+
+if (var "1itemConv1Pos" >= 18.9) {
+    dropItem "../Items/toy1" "custom_coordinates" "%var.global/1itemConv1Pos% 21 14.5" false true false false 21 100
+} else {
+    dropItem "../Items/toy1" "custom_coordinates" "%var.global/1itemConv1Pos% 20 14.5" false true false false 21 100
+}
+if (var "1itemConv2Pos" >= 18.9) {
+    dropItem "../Items/toy2" "custom_coordinates" "%var.global/1itemConv2Pos% 21 14.5" false true false false 21 100
+} else {
+    dropItem "../Items/toy2" "custom_coordinates" "%var.global/1itemConv2Pos% 20 14.5" false true false false 21 100
+}
+if (var "1itemConv3Pos" >= 18.9) {
+    dropItem "../Items/toy3" "custom_coordinates" "%var.global/1itemConv3Pos% 21 14.5" false true false false 21 100
+} else {
+    dropItem "../Items/toy3" "custom_coordinates" "%var.global/1itemConv3Pos% 20 14.5" false true false false 21 100
+}
+if (var "1itemConv4Pos" >= 18.9) {
+    dropItem "../Items/toy4" "custom_coordinates" "%var.global/1itemConv4Pos% 21 14.5" false true false false 21 100
+} else {
+    dropItem "../Items/toy4" "custom_coordinates" "%var.global/1itemConv4Pos% 20 14.5" false true false false 21 100
+}
+if (var "1itemConv5Pos" >= 18.9) {
+    dropItem "../Items/toy5" "custom_coordinates" "%var.global/1itemConv5Pos% 21 14.5" false true false false 21 100
+} else {
+    dropItem "../Items/toy5" "custom_coordinates" "%var.global/1itemConv5Pos% 20 14.5" false true false false 21 100
+}
+if (var "1itemConv6Pos" >= 18.9) {
+    dropItem "../Items/toy6" "custom_coordinates" "%var.global/1itemConv6Pos% 21 14.5" false true false false 21 100
+} else {
+    dropItem "../Items/toy6" "custom_coordinates" "%var.global/1itemConv6Pos% 20 14.5" false true false false 21 100
+}
+
+if (var "2itemConv1Pos" >= 18.9) {
+    dropItem "../Items/toy1" "custom_coordinates" "%var.global/2itemConv1Pos% 21 16.5" false true false false 21 100
+} else {
+    dropItem "../Items/toy1" "custom_coordinates" "%var.global/2itemConv1Pos% 20 16.5" false true false false 21 100
+}
+if (var "2itemConv2Pos" >= 18.9) {
+    dropItem "../Items/toy2" "custom_coordinates" "%var.global/2itemConv2Pos% 21 16.5" false true false false 21 100
+} else {
+    dropItem "../Items/toy2" "custom_coordinates" "%var.global/2itemConv2Pos% 20 16.5" false true false false 21 100
+}
+if (var "2itemConv3Pos" >= 18.9) {
+    dropItem "../Items/toy3" "custom_coordinates" "%var.global/2itemConv3Pos% 21 16.5" false true false false 21 100
+} else {
+    dropItem "../Items/toy3" "custom_coordinates" "%var.global/2itemConv3Pos% 20 16.5" false true false false 21 100
+}
+if (var "2itemConv4Pos" >= 18.9) {
+    dropItem "../Items/toy4" "custom_coordinates" "%var.global/2itemConv4Pos% 21 16.5" false true false false 21 100
+} else {
+    dropItem "../Items/toy4" "custom_coordinates" "%var.global/2itemConv4Pos% 20 16.5" false true false false 21 100
+}
+if (var "2itemConv5Pos" >= 18.9) {
+    dropItem "../Items/toy5" "custom_coordinates" "%var.global/2itemConv5Pos% 21 16.5" false true false false 21 100
+} else {
+    dropItem "../Items/toy5" "custom_coordinates" "%var.global/2itemConv5Pos% 20 16.5" false true false false 21 100
+}
+if (var "2itemConv6Pos" >= 18.9) {
+    dropItem "../Items/toy6" "custom_coordinates" "%var.global/2itemConv6Pos% 21 16.5" false true false false 21 100
+} else {
+    dropItem "../Items/toy6" "custom_coordinates" "%var.global/2itemConv6Pos% 20 16.5" false true false false 21 100
+}

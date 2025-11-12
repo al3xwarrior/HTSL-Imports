@@ -1,40 +1,11 @@
 sound "Shoot Arrow" 0.7 1.5 "invokers_location"
 
-tp "custom_coordinates" "^0 ^1.5 ^8" false
-var "plr_x" set %player.pos.x%
-var "plr_y" set %player.pos.y%
-var "plr_z" set %player.pos.z%
-tp "custom_coordinates" "^0 ^-1.5 ^-8" true
-
-// Calculate direction vector
-var "snowball_dir_x" set %player.pos.x%
-var "snowball_dir_x" dec %var.player/plr_x%
-var "snowball_dir_y" set %player.pos.y%
-var "snowball_dir_y" dec %var.player/plr_y%
-var "snowball_dir_z" set %player.pos.z%
-var "snowball_dir_z" dec %var.player/plr_z%
-
-// Normalize direction vector
-if () {
-    var "snowball_dir_x" mult 0.15
-    var "snowball_dir_y" mult 0.15
-    var "snowball_dir_z" mult 0.15
-}
-
-sound "Shoot Arrow" 0.7 2.0 "invokers_location"
-
-// Launch snowballs
-loop 6 index {
+loop 7 index {
     if () {
-        var "snowball_x" set %var.player/plr_x%
-        var "snowball_y" set %var.player/plr_y%
-        var "snowball_z" set %var.player/plr_z%
-
-        var "snowball_x" inc %var.player/snowball_dir_x%
-        var "snowball_y" inc %var.player/snowball_dir_y%
-        var "snowball_z" inc %var.player/snowball_dir_z%
-
-        dropItem "snowball" "custom_coordinates" "%var.player/snowball_x% %var.player/snowball_y% %var.player/snowball_z%" false true false false 3 1
-        pause 1
+        dropItem "snowball" "custom_coordinates" {"^0 ^1.5 ^"+(1+index)} false true false false {1+index} 1
     }
 }
+
+pause 1
+
+sound "Shoot Arrow" 0.7 2.0 "invokers_location"
