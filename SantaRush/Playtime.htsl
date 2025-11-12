@@ -15,6 +15,7 @@ if (globalstat "unix" < "%date.unix%") {
     globalstat "unix" set "%date.unix%"
     globalstat "seconds" inc 1
     function "ToyConveyor" false
+    function "NeedCalculator" false
 }
 if (globalstat "seconds" >= 60) {
     globalstat "seconds" set 0

@@ -1,0 +1,44 @@
+
+// Ran once every second in playtime function
+
+// the presents (sspresents = snowy suburbs, fvpresents = frosty village) globalvar is 
+// decreased here to simulate needs is increased when people deliver presents
+
+// multiplier values are also set here based on need levels and are used elsewhere
+// they are not decimals, but whole numbers for easier calculations (*multi then /10)
+
+// Snowy Suburbs Need Calculation
+globalvar "sspresents" dec 1
+if (globalvar "sspresents" < 0) {
+    globalvar "sspresents" set 0
+}
+if (globalvar "sspresents" >= 500) {
+    globalvar "ssneed" set "&2&lHIGH &7(0.5x)"
+    globalvar "ssmulti" set 5
+}
+if (globalvar "sspresents" >= 250 && globalvar "sspresents" < 500) {
+    globalvar "ssneed" set "&e&lMEDIUM &7(1.5x)"
+    globalvar "ssmulti" set 15
+}
+if (globalvar "sspresents" < 250) {
+    globalvar "ssneed" set "&4&lLOW &7(2.0x)"
+    globalvar "ssmulti" set 20
+}
+
+// Frosty Village Need Calculation
+globalvar "fvpresents" dec 1
+if (globalvar "fvpresents" < 0) {
+    globalvar "fvpresents" set 0
+}
+if (globalvar "fvpresents" >= 500) {
+    globalvar "fvneed" set "&2&lHIGH &7(0.5x)"
+    globalvar "fvmulti" set 5
+}
+if (globalvar "fvpresents" >= 250 && globalvar "fvpresents" < 500) {
+    globalvar "fvneed" set "&e&lMEDIUM &7(1.5x)"
+    globalvar "fvmulti" set 15
+}
+if (globalvar "fvpresents" < 250) {
+    globalvar "fvneed" set "&4&lLOW &7(2.0x)"
+    globalvar "fvmulti" set 20
+}
