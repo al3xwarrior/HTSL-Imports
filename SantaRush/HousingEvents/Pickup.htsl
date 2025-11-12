@@ -1,0 +1,4 @@
+pause 1
+if (hasItem "../Items/snowball" "Metadata" "Anywhere" "Any Amount") {
+    removeItem "../Items/snowball"
+}
