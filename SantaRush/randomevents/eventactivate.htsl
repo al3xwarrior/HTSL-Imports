@@ -1,0 +1,48 @@
+//maybe trigger this event every 1-10 sec?
+if and (globalvar eventtimerunix <= unix 0, globalvar eventnumber >= 1) {
+    //eventend
+    globalvar eventcoinmulti set 1
+    globalvar eventxpmulti set 1
+    globalvar eventnumber set 0
+    globalvar nexteventunix set unix
+    globalvar nexteventunix += %random.whole/600 901%
+    clearEffects
+    //clear blindness - maybe apply nightvision after this if the house is on fullbright.
+    //random event 10-15 mins after one event end
+    exit
+}
+if and (globalvar nexteventunix <= unix 0, globalvar eventnumber = 0 0) {
+    globalvar eventnumber set %random.whole/1 5%
+} else {
+    exit
+}
+
+//Blizzard 3 mins - 2x reward
+if (globalvar eventnumber = 1) {
+    //apply effect blindness when enter neighborhood. Dont want ppl at lobby to gain blindness
+    globalvar eventtimerunix set unix
+    globalvar eventtimerunix += 180
+    globalvar eventcoinmulti set 2
+    globalvar eventxpmulti set 2
+}
+
+//Santa's Visit 3 mins
+if (globalvar eventnumber = 2) {
+    globalvar eventtimerunix set unix
+    globalvar eventtimerunix += 180
+    globalvar eventcoinmulti set 1.25
+}
+
+//Elf Strike 2 mins
+if (globalvar eventnumber = 3) {
+    globalvar eventtimerunix set unix
+    globalvar eventtimerunix += 120
+}
+
+//Snowball Fight (suggestion -> 30 secs - 1 min in waiting room and 3 mins event time)
+if (globalvar eventnumber = 4) {
+    //add command to tp to snowball fight event area. only works when eventnumber = 4
+    globalvar eventtimerunix set unix
+    globalvar eventtimerunix += 240
+    // 4 mins (1 waiting + 3 in event)
+}
