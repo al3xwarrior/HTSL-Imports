@@ -1,0 +1,27 @@
+
+if (placeholder %date.unix% > %var.player/unix 0%) {
+    var "unix" set %date.unix%
+    var "seconds" inc 1 true
+}
+if (var "seconds" >= 60) {
+    var "seconds" set 0
+    var "minutes" inc 1 true
+}
+if (var "minutes" >= 60) {
+    var "minutes" set 0
+    var "hours" inc 1 true
+}
+
+if (placeholder %date.unix% > %var.global/unix 0%) {
+    globalvar "unix" set %date.unix%
+    globalvar "seconds" inc 1 true
+    function "GameTimer" false
+}
+if (globalvar "seconds" >= 60) {
+    globalvar "seconds" set 0
+    globalvar "minutes" inc 1 true
+}
+if (globalvar "minutes" >= 60) {
+    globalvar "minutes" set 0
+    globalvar "hours" inc 1 true
+}

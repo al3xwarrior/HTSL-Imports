@@ -1,0 +1,4 @@
+if (globalvar "gracetime" > 0, globalvar "GAMESTATE" == "INGAME", hasTeam "Playing") {
+    displayMenu "Game Options"
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+}

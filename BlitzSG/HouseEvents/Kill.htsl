@@ -1,0 +1,9 @@
+var "roundkills" inc 1
+var "kills" inc 1
+
+pause 1
+
+globalvar "killcolor" set %player.group.color%
+globalvar "killign" set %player.name%
+
+function "KillBroadcast" true

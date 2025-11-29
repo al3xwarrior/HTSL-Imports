@@ -1,0 +1,23 @@
+if (hasTeam "Playing") {
+    
+} else {
+    exit
+}
+
+globalvar "deathcolor" set %player.group.color%
+globalvar "deathign" set %player.name%
+
+if (placeholder %player.team.players/Playing% == 3) {
+    globalvar "3rdPlaceColor" set %player.group.color%
+    globalvar "3rdPlaceName" set %player.name%
+    globalvar "3rdPlaceKills" set %var.player/roundkills 0%
+    globalvar "3rdPlaceKit" set %var.player/kitselected%
+}
+if (placeholder %player.team.players/Playing% == 2) {
+    globalvar "2ndPlaceColor" set %player.group.color%
+    globalvar "2ndPlaceName" set %player.name%
+    globalvar "2ndPlaceKills" set %var.player/roundkills 0%
+    globalvar "2ndPlaceKit" set %var.player/kitselected%
+}
+
+setTeam "Lobby"

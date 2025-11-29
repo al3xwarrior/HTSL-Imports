@@ -1,0 +1,12 @@
+if (hasTeam "Playing") {
+
+} else {
+    exit
+}
+
+chat "&c&lGrace period has ended! &7Fight begins now!"
+sound "Wither Spawn" 0.7 1 "invokers_location"
+
+if (var "kitselected" == "Scout") {
+    applyLayout "Scout"
+}

@@ -1,0 +1,58 @@
+
+// End Game
+if (placeholder %player.team.players/Playing% <= 1, globalvar "GAMESTATE" == "INGAME") {
+    globalvar "GAMESTATE" set "LOBBY"
+    function "EndGame" true
+    exit
+}
+if (globalvar "gametime" <= 0, globalvar "GAMESTATE" == "INGAME") {
+    globalvar "GAMESTATE" set "LOBBY"
+    function "EndGame" true
+    exit
+}
+
+// Lower Grace
+if (placeholder %player.team.players/Playing% > 0, globalvar "GAMESTATE" == "INGAME", globalvar "gracetime" > 0) {
+    globalvar "gracetime" dec 1
+    exit
+}
+
+// End Grace
+if (globalvar "gracetime" == 0, globalvar "GAMESTATE" == "INGAME") {
+    globalvar "gracetime" dec 1
+    function "GracePeriodEnd" true
+}
+
+// Game Timer
+if (globalvar "gametime" > 0, globalvar "GAMESTATE" == "INGAME", globalvar "gracetime" <= 0) {
+    globalvar "gametime" dec 1
+    exit
+}
+
+// Lower Queue Timer
+if (placeholder %player.team.players/Queued% > 0, globalvar "GAMESTATE" == "LOBBY") {
+    globalvar "queuetimer" dec 1
+} else {
+    globalvar "queuetimer" set 10
+}
+
+// Start Game
+if (globalvar "queuetimer" == 0, globalvar "GAMESTATE" == "LOBBY") {
+    globalvar "queuetimer" set 10
+    globalvar "tppos" set 0
+    globalvar "gracetime" set 10
+    globalvar "gametime" set 240
+    globalvar "GAMESTATE" set "INGAME"
+
+    globalvar "1stPlaceName" unset
+    globalvar "1stPlaceKills" unset
+    globalvar "1stPlaceKit" unset
+    globalvar "2ndPlaceName" unset
+    globalvar "2ndPlaceKills" unset
+    globalvar "2ndPlaceKit" unset
+    globalvar "3rdPlaceName" unset
+    globalvar "3rdPlaceKills" unset
+    globalvar "3rdPlaceKit" unset
+
+    function "StartGame" true
+}

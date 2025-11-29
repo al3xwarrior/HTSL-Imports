@@ -1,0 +1,3 @@
+
+chat "%var.global/deathcolor%%var.global/deathign% &ewas killed by %var.global/killcolor%%var.global/killign%&e!"
+chat "&eThere are &c%player.team.players/Playing% &eplayers remaining!"

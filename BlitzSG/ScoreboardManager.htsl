@@ -1,0 +1,14 @@
+
+// Next Event:
+if (globalvar "GAMESTATE" == "LOBBY") {
+    var "sb/event" set "Intermission"
+    var "sb/eventtime" set %var.global/queuetimer%
+}
+if (globalvar "GAMESTATE" == "INGAME", globalvar "gracetime" > 0) {
+    var "sb/event" set "Grace Period"
+    var "sb/eventtime" set %var.global/gracetime%
+}
+if (globalvar "GAMESTATE" == "INGAME", globalvar "gracetime" <= 0) {
+    var "sb/event" set "Game End"
+    var "sb/eventtime" set %var.global/gametime%
+}

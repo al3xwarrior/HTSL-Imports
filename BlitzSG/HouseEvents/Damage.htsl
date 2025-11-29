@@ -1,0 +1,3 @@
+if (globalvar "gracetime" > 0) {
+    cancelEvent
+}

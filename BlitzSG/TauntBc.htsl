@@ -1,0 +1,2 @@
+chat "%var.global/tauntcolor%%var.global/tauntign% &eperformed the &lFirework Explosion Taunt&r&e!"
+sound "Firework Large Blast" 1.5 1 "custom_coordinates" "%var.global/fireworkx% %var.global/fireworky% %var.global/fireworkz%"

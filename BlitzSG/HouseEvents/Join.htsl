@@ -1,0 +1,9 @@
+setTeam "Lobby"
+function "UpdateLobbyLayout" false
+
+if (var "kitselected" == 0 0) {
+    function "ChooseRandomKit" false
+}
+if (var "killeffect" == 0 0) {
+    var "killeffect" set "Regen"
+}

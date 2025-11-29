@@ -1,0 +1,5 @@
+// Scout
+
+var "kitselected" set "Scout"
+chat "&aYou have selected the &e%var.player/kitselected% &akit!"
+sound "Orb Pickup" 0.7 1 "invokers_location"

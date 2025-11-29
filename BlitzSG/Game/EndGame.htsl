@@ -1,0 +1,28 @@
+
+if (hasTeam "Playing") {
+    globalvar "1stPlaceColor" set %player.group.color%
+    globalvar "1stPlaceName" set %player.name%
+    globalvar "1stPlaceKills" set %var.player/roundkills 0%
+    globalvar "1stPlaceKit" set %var.player/kitselected%
+    
+}
+
+pause 1
+
+chat "&a&l========================="
+chat "&r"
+chat "&e&lWinner &7- &6%var.global/1stPlaceColor%%var.global/1stPlaceName None% &7(&a%var.global/1stPlaceKit None%&7) - %var.global/1stPlaceKills 0% Kills"
+chat "&b"
+chat "&e&l1st &7- &6%var.global/1stPlaceColor%%var.global/1stPlaceName None% &7(&a%var.global/1stPlaceKit None%&7) - %var.global/1stPlaceKills 0% Kills"
+chat "&e&l2nd &7- &6%var.global/2ndPlaceColor%%var.global/2ndPlaceName None% &7(&a%var.global/2ndPlaceKit None%&7) - %var.global/2ndPlaceKills 0% Kills"
+chat "&e&l3rd &7- &6%var.global/3rdPlaceColor%%var.global/3rdPlaceName None% &7(&a%var.global/3rdPlaceKit None%&7) - %var.global/3rdPlaceKills 0% Kills"
+chat "&e"
+chat "&a&l=========================&r"
+
+pause 119
+
+if (hasTeam "Playing") {
+    setTeam "Lobby"
+    tp "house_spawn" "0 0 0" true
+    function "UpdateLobbyLayout" false
+}

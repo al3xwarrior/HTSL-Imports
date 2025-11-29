@@ -1,0 +1,132 @@
+// gametime (max: 240s)
+
+if (!hasTeam "Playing") {
+    exit
+}
+
+// Calculate Border Size based on time. Comes out with "bordersize" variable
+if () {
+    // middle: -2.5 113 12.5
+    // arena size: 18
+    // stops at 3 blocks size
+
+    // border size lowers every 5 seconds from 18 to 3 blocks
+    // meaning 240s / 5s = 48 steps
+    // 18 - 3 = 15 blocks
+    // 15 blocks / 48 steps = 0.3125 blocks per step
+
+    var "elapsed" set 240.0
+    var "elapsed" dec %var.global/gametime%D
+    var "bordersize" set 18.0
+    var "shrink_per_sec" set 0.0625
+    var "bordertemp" set %var.player/elapsed%D
+    var "bordertemp" mult %var.player/shrink_per_sec%D
+    var "bordersize" dec %var.player/bordertemp%D
+}
+if (var "bordersize" < 3) {
+    var "bordersize" set 3
+}
+
+// Calculate Distance from Player to Center. We now have "distancex" and "distancez" variables
+if () {
+    var "distancex" set %player.pos.x%
+    var "distancex" dec -2.5
+    var "distancez" set %player.pos.z%
+    var "distancez" dec 12.5
+}
+if (var "distancex" < 0) {
+    var "distancex" mult -1.0
+}
+if (var "distancez" < 0) {
+    var "distancez" mult -1.0
+}
+
+// Calculate Distance from Player to Border Edge. We now have "distborderx" and "distborderz" variables
+if () {
+    var "distborderx" set %var.player/bordersize%D
+    var "distborderx" dec %var.player/distancex%D
+    var "distborderz" set %var.player/bordersize%D
+    var "distborderz" dec %var.player/distancez%D
+}
+if (var "distborderx" < 0) {
+    var "distborderx" mult -1.0
+}
+if (var "distborderz" < 0) {
+    var "distborderz" mult -1.0
+}
+
+// Now we visualize the border by spawning items at the border edges if they are close to it
+var "borderdropy" set %player.pos.y%
+var "borderdropy" inc 1.2
+// if they are closer to the positive side, then use that (and vice versa)
+if (placeholder %player.pos.x% >= -2.5, var "distborderx" < 10) {
+    var "borderx" set -2.5
+    var "borderx" inc %var.player/bordersize%D
+
+    var "borderdropz" set %player.pos.z%
+    var "borderdropz" dec 2.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderx% %var.player/borderdropy% %var.player/borderdropz%" false true false false 5 100
+    var "borderdropz" inc 1.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderx% %var.player/borderdropy% %var.player/borderdropz%" false true false false 5 100
+    var "borderdropz" inc 1.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderx% %var.player/borderdropy% %var.player/borderdropz%" false true false false 5 100
+    var "borderdropz" inc 1.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderx% %var.player/borderdropy% %var.player/borderdropz%" false true false false 5 100
+    var "borderdropz" inc 1.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderx% %var.player/borderdropy% %var.player/borderdropz%" false true false false 5 100
+}
+if (placeholder %player.pos.x% < -2.5, var "distborderx" < 10) {
+    var "borderx" set -2.5
+    var "borderx" dec %var.player/bordersize%D
+
+    var "borderdropz" set %player.pos.z%
+    var "borderdropz" dec 2.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderx% %var.player/borderdropy% %var.player/borderdropz%" false true false false 5 100
+    var "borderdropz" inc 1.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderx% %var.player/borderdropy% %var.player/borderdropz%" false true false false 5 100
+    var "borderdropz" inc 1.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderx% %var.player/borderdropy% %var.player/borderdropz%" false true false false 5 100
+    var "borderdropz" inc 1.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderx% %var.player/borderdropy% %var.player/borderdropz%" false true false false 5 100
+    var "borderdropz" inc 1.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderx% %var.player/borderdropy% %var.player/borderdropz%" false true false false 5 100
+}
+// z
+if (placeholder %player.pos.z% >= 12.5, var "distborderz" < 10) {
+    var "borderz" set 12.5
+    var "borderz" inc %var.player/bordersize%D
+
+    var "borderdropx" set %player.pos.x%
+    var "borderdropx" dec 2.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderdropx% %var.player/borderdropy% %var.player/borderz%" false true false false 5 100
+    var "borderdropx" inc 1.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderdropx% %var.player/borderdropy% %var.player/borderz%" false true false false 5 100
+    var "borderdropx" inc 1.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderdropx% %var.player/borderdropy% %var.player/borderz%" false true false false 5 100
+    var "borderdropx" inc 1.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderdropx% %var.player/borderdropy% %var.player/borderz%" false true false false 5 100
+    var "borderdropx" inc 1.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderdropx% %var.player/borderdropy% %var.player/borderz%" false true false false 5 100
+}
+if (placeholder %player.pos.z% < 12.5, var "distborderz" < 10) {
+    var "borderz" set 12.5
+    var "borderz" dec %var.player/bordersize%D
+
+    var "borderdropx" set %player.pos.x%
+    var "borderdropx" dec 2.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderdropx% %var.player/borderdropy% %var.player/borderz%" false true false false 5 100
+    var "borderdropx" inc 1.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderdropx% %var.player/borderdropy% %var.player/borderz%" false true false false 5 100
+    var "borderdropx" inc 1.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderdropx% %var.player/borderdropy% %var.player/borderz%" false true false false 5 100
+    var "borderdropx" inc 1.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderdropx% %var.player/borderdropy% %var.player/borderz%" false true false false 5 100
+    var "borderdropx" inc 1.0
+    dropItem "../../Items/border" "custom_coordinates" "%var.player/borderdropx% %var.player/borderdropy% %var.player/borderz%" false true false false 5 100
+}
+
+// Is player outside border? If so, apply damage
+if or (var "distancex" >= %var.player/bordersize%D, var "distancez" >= %var.player/bordersize%D) {
+    changeHealth dec 1
+    sound "Hurt Flesh" 0.7 1 "invokers_location"
+}

@@ -1,0 +1,20 @@
+
+if (hasTeam "Queued") {
+    chat "&cYou have left the queue!"
+    sound "Item Break" 0.7 1 "invokers_location"
+    setTeam "Lobby"
+    function "UpdateLobbyLayout" false
+    exit
+}
+
+if (hasTeam "Playing") {
+    chat "&cYou are already in a game!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+setTeam "Queued"
+chat "&aYou have joined the queue! &7(Players in queue: %player.team.players/Queued%)"
+sound "Level Up" 0.7 1 "invokers_location"
+function "UpdateLobbyLayout" false
+displayMenu "Game Options"

@@ -1,0 +1,5 @@
+if (hasTeam "Queued") {
+    applyLayout "LobbyQueued"
+} else {
+    applyLayout "LobbyNoQueue"
+}

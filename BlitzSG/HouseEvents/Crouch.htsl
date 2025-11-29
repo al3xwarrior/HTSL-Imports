@@ -1,0 +1,72 @@
+if (hasItem null null "Hand" "Any Amount", isSneaking, var "taunt" == "&aREADY" "&aREADY") {
+    var "taunt" set "&cUSED"
+} else {
+    exit
+}
+
+var "fireworkx" set %player.pos.x%
+var "fireworky" set %player.pos.y%
+var "fireworky" inc 2.0
+var "fireworkz" set %player.pos.z%
+
+globalvar "fireworkx" set %var.player/fireworkx%
+globalvar "fireworky" set %var.player/fireworky%
+globalvar "fireworkz" set %var.player/fireworkz%
+
+if () {
+    dropItem "../../Items/fireworktrail" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" false true false false 3 100
+    pause 2
+    var "fireworky" inc 0.5
+    dropItem "../../Items/fireworktrail" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" false true false false 3 100
+    pause 2
+    var "fireworky" inc 0.5
+    dropItem "../../Items/fireworktrail" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" false true false false 3 100
+    pause 2
+    var "fireworky" inc 0.5
+    dropItem "../../Items/fireworktrail" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" false true false false 3 100
+    pause 2
+    var "fireworky" inc 0.5
+    dropItem "../../Items/fireworktrail" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" false true false false 3 100
+    pause 2
+    var "fireworky" inc 0.5
+}
+if () {
+    dropItem "../../Items/fireworktrail" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" false true false false 3 100
+    pause 2
+    var "fireworky" inc 0.5
+    dropItem "../../Items/fireworktrail" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" false true false false 3 100
+    pause 2
+    var "fireworky" inc 0.5
+    dropItem "../../Items/fireworktrail" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" false true false false 3 100
+    pause 2
+    var "fireworky" inc 0.5
+    dropItem "../../Items/fireworktrail" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" false true false false 3 100
+}
+
+pause 3
+
+if () {
+    dropItem "../../Items/fireworkred" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" true true false false 90 100
+    dropItem "../../Items/fireworkorange" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" true true false false 90 100
+    dropItem "../../Items/fireworkyellow" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" true true false false 90 100
+}
+if () {
+    dropItem "../../Items/fireworkred" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" true true false false 90 100
+    dropItem "../../Items/fireworkorange" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" true true false false 90 100
+    dropItem "../../Items/fireworkyellow" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" true true false false 90 100
+}
+if () {
+    dropItem "../../Items/fireworkred" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" true true false false 90 100
+    dropItem "../../Items/fireworkorange" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" true true false false 90 100
+    dropItem "../../Items/fireworkyellow" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" true true false false 90 100
+}
+if () {
+    dropItem "../../Items/fireworkred" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" true true false false 90 100
+    dropItem "../../Items/fireworkorange" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" true true false false 90 100
+    dropItem "../../Items/fireworkyellow" "custom_coordinates" "%var.player/fireworkx% %var.player/fireworky% %var.player/fireworkz%" true true false false 90 100
+}
+
+globalvar "tauntcolor" set %player.group.color%
+globalvar "tauntign" set %player.name%
+
+function "TauntBc" true
