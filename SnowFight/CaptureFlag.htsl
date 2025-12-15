@@ -1,0 +1,45 @@
+if (inRegion "Red Flag Capture", hasTeam "green", globalvar "rflagstatus" == "&a&lSAFE" "&a&lSAFE") {
+    globalvar "rflagstatus" set "&4&lTAKEN"
+    giveItem "../Items/redflag" true "Helmet" true
+
+    globalvar "rflagholder" set "%player.name%"
+
+    globalvar "flagbcname" set "%player.name%"
+    globalvar "flagbc" set 1
+    function "CaptureFlagBC" true
+}
+
+if (inRegion "Green Flag Capture", hasTeam "red", globalvar "gflagstatus" == "&a&lSAFE" "&a&lSAFE") {
+    globalvar "gflagstatus" set "&4&lTAKEN"
+    giveItem "../Items/greenflag" true "Helmet" true
+
+    globalvar "gflagholder" set "%player.name%"
+
+    globalvar "flagbcname" set "%player.name%"
+    globalvar "flagbc" set 2
+    function "CaptureFlagBC" true
+}
+
+if (inRegion "Red Flag Capture", hasTeam "red", hasItem "../Items/greenflag" "Metadata" "Armor" "Any Amount", globalvar "rflagstatus" == "&a&lSAFE" "&a&lSAFE") {
+    globalvar "gflagstatus" set "&a&lSAFE"
+    removeItem "../Items/greenflag"
+    giveItem "../Items/redelfhat" true "Helmet" true
+
+    globalvar "gflagholder" unset
+
+    globalvar "flagbcname" set "%player.name%"
+    globalvar "flagbc" set 3
+    function "CaptureFlagBC" true
+}
+
+if (inRegion "Green Flag Capture", hasTeam "green", hasItem "../Items/redflag" "Metadata" "Helmet" "Any Amount", globalvar "gflagstatus" == "&a&lSAFE" "&a&lSAFE") {
+    globalvar "rflagstatus" set "&a&lSAFE"
+    removeItem "../Items/redflag"
+    giveItem "../Items/greenelfhat" true "Helmet" true
+
+    globalvar "rflagholder" unset
+
+    globalvar "flagbcname" set "%player.name%"
+    globalvar "flagbc" set 4
+    function "CaptureFlagBC" true
+}

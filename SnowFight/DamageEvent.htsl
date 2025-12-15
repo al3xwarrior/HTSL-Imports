@@ -1,0 +1,28 @@
+if (damageCause "Entity Attack") {
+    cancelEvent
+    exit
+}
+
+if (!damageCause "Projectile") {
+    exit
+}
+
+if (hasItem "../Items/1hitarmor" "Metadata" "Armor" "Any Amount") {
+    removeItem "../Items/1hitarmor"
+    sound "Anvil Break" 0.7 1 "invokers_location"
+    exit
+}
+
+if (hasItem "../Items/2hitarmor" "Metadata" "Armor" "Any Amount") {
+    giveItem "../Items/2hitarmordamaged" true "Chestplate" true
+    sound "Anvil Break" 0.7 1.5 "invokers_location"
+    exit
+}
+
+if (hasItem "../Items/2hitarmordamaged" "Metadata" "Armor" "Any Amount") {
+    removeItem "../Items/2hitarmordamaged"
+    sound "Anvil Break" 0.7 1 "invokers_location"
+    exit
+}
+
+changeHealth dec 2

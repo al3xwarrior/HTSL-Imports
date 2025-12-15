@@ -1,0 +1,36 @@
+
+// 1 = red flag taken
+// 2 = green flag taken
+// 3 = green flag captured
+// 4 = red flag captured
+// 5 = red flag dropped
+// 6 = green flag dropped
+
+chat "&7&m--------------------------"
+
+if (globalvar "flagbc" == 1) {
+    chat "&cRed Flag &7has been &4TAKEN&r &7by &a%var.global/flagbcname% &7!"
+    sound "Wither Spawn" 0.7 1 "invokers_location"
+}
+if (globalvar "flagbc" == 2) {
+    chat "&aGreen Flag &7has been &4TAKEN&r &7by &c%var.global/flagbcname% &7!"
+    sound "Wither Spawn" 0.7 1 "invokers_location"
+}
+if (globalvar "flagbc" == 3) {
+    chat "&aGreen Flag &7has been &aCAPTURED&r &7by &c%var.global/flagbcname% &7!"
+    sound "Wither Death" 0.7 2.0 "invokers_location"
+}
+if (globalvar "flagbc" == 4) {
+    chat "&cRed Flag &7has been &aCAPTURED&r &7by &a%var.global/flagbcname% &7!"
+    sound "Wither Death" 0.7 2.0 "invokers_location"
+}
+if (globalvar "flagbc" == 5) {
+    chat "&cRed Flag &7has been &eDROPPED&r &7by &a%var.global/flagbcname% &7!"
+    sound "Item Break" 0.7 1 "invokers_location"
+}
+if (globalvar "flagbc" == 6) {
+    chat "&aGreen Flag &7has been &eDROPPED&r &7by &c%var.global/flagbcname% &7!"
+    sound "Item Break" 0.7 1 "invokers_location"
+}
+
+chat "&7&m--------------------------&r"

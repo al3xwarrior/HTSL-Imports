@@ -1,0 +1,34 @@
+// ensure vars are set
+if (var "sackmax" == 0 0) {
+    var "sackmax" set 8
+}
+if (var "sacknext" == 0 0) {
+    var "sacknext" set 12
+}
+if (var "sackupcost" == 0 0) {
+    var "sackupcost" set 40
+}
+
+
+if (var "sackmax" >= 28) {
+    chat "&cYou have reached the maximum sack size!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+if (var "gold" < %var.player/sackupcost%) {
+    chat "&cYou don't have enough gold to upgrade your sack!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+var "gold" dec %var.player/sackupcost%
+var "sackupcost" inc 40
+var "sackmax" inc 4
+var "sacknext" inc 4
+
+chat "&aSack upgraded! You can now hold &f%var.player/sackmax% snowballs&a!"
+
+displayMenu "Shop"
+
+sound "Orb Pickup" 0.7 1 "invokers_location"

@@ -1,0 +1,5 @@
+if (var "gold" >= 320) {
+    var "gold" dec 320
+    giveItem "../Items/gilded_shovel" true "First Slot" false
+    sound "Orb Pickup" 0.7 1 "invokers_location"
+}

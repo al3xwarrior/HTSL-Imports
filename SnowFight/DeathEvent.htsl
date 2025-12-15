@@ -1,0 +1,19 @@
+if (globalvar "rflagholder" == "%player.name%") {
+    globalvar "rflagstatus" set "&a&lSAFE"
+    globalvar "rflagholder" unset
+
+    globalvar "flagbcname" set "%player.name%"
+    globalvar "flagbc" set 5
+    function "CaptureFlagBC" true
+    exit
+}
+
+if (globalvar "gflagholder" == "%player.name%") {
+    globalvar "gflagstatus" set "&a&lSAFE"
+    globalvar "gflagholder" unset
+
+    globalvar "flagbcname" set "%player.name%"
+    globalvar "flagbc" set 6
+    function "CaptureFlagBC" true
+    exit
+}

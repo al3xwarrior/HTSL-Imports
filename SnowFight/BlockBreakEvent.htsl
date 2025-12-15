@@ -1,0 +1,4 @@
+if (blockType null true) {
+    giveItem "../Items/snowball" true "First Slot" false
+    sound "Item Pickup" 0.7 1 "invokers_location"
+}

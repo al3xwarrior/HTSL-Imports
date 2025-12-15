@@ -1,0 +1,11 @@
+if (var "presents" == 0 0) {
+    chat "&cYou have no presents to deliver! Visit the wrapping station to get more."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+applyPotion "Blindness" 2 5 true false
+tp "custom_coordinates" "-63.5 116 -77.5 0 5.0" true
+sound "Enderman Teleport" 0.7 2.0 "invokers_location"
+
+giveItem "../../Items/sleigh" true "First Slot" false
