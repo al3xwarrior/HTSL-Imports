@@ -1,0 +1,27 @@
+goto function "5Tick"
+// Runs looped code based on current activities
+
+// Global Second
+if (!globalvar unix == %date.unix% 0) {
+    globalvar unix = %date.unix%
+    function "Global Second"
+}
+
+/* CurrentGame
+    0 = intermission
+    1 = Red light green light
+    2 = Spinner
+*/
+
+if (globalvar CurrentGame == 1) {
+    function "RLGL Loop" true
+    exit
+}
+if (globalvar CurrentGame == 2) {
+    function "Spinner Loop" true
+    exit
+}
+
+if (globalvar CurrentGame == 0) {
+    actionBar "&7Waiting for the next game..."
+}

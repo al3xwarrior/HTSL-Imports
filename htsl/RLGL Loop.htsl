@@ -1,0 +1,39 @@
+goto function "RLGL Loop"
+
+if (!hasTeam "RLGL") {
+    exit
+}
+
+var dx = %player.pos.x%
+var dy = %player.pos.y%
+var dz = %player.pos.z%
+
+var dx -= %var.player/LastX%
+var dy -= %var.player/LastY%
+var dz -= %var.player/LastZ%
+
+var LastX = %player.pos.x%
+var LastY = %player.pos.y%
+var LastZ = %player.pos.z%
+
+if (globalvar GraceTime > 0 0) {
+    exit
+}
+
+if (globalvar RLGL.Stopped == 1 0) {
+    title "&cSTOP!" "&7Don't move!" 0 1 0
+} else {
+    title "&aGO!" "&7You can move!" 0 1 0
+}
+
+
+if (!globalvar RLGL.ShouldKill == 1 0) {
+    exit
+}
+
+if or (!var dx == 0.0 0.0, !var dy == 0.0 0.0, !var dz == 0.0 0.0) {
+    // SendPacket1 Packet.id="ID FOR ELIMINATE_PLAYER"
+    setTeam "Spectator"
+    chat "&cYou have been eliminated for moving during Red Light!"
+    kill
+}

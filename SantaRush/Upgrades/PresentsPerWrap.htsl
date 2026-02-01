@@ -1,0 +1,20 @@
+if (var "gold" < %var.player/pprcost 20%) {
+    chat "&cYou need at least %var.player/pprcost 20% Gold to upgrade Presents Per Wrap!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+if (var "prespers" == 0 0) {
+    var "prespers" set 1
+    var "pprcost" set 20
+}
+
+var "gold" dec %var.player/pprcost 20%
+var "pprcost" mult 12
+var "pprcost" div 10
+var "prespers" inc 1
+
+chat "&aYou have upgraded Presents Per Wrap to %var.player/prespers%!"
+sound "Level Up" 0.7 1 "invokers_location"
+
+displayMenu "Upgrades"

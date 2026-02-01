@@ -1,0 +1,20 @@
+goto function "Begin Spectating"
+
+setTeam "Spectator"
+clearEffects
+
+// give them item
+/*{
+    tp "house_spawn"
+    clearEffects
+}*/
+
+
+// Going to Game DO NOT FORGET FALLBACKS
+// TODO: Fall backs arenet working
+// TODO: use lowercase vars for tp and maybe for everywhere
+if (globalvar CurrentGame == 1) {
+    tp "custom_coordinates" "%var.player/lastx% 117 %var.player/lastz%"
+    // invisible them
+    applyPotion "Invisibility" 2592000 1 true true
+}

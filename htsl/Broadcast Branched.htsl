@@ -1,0 +1,8 @@
+goto function "Broadcast Branched"
+if (globalvar Broadcast.branch == 1) {
+    title "%var.global/Broadcast.arg1%" 0 1 1
+    sound "Note Pling" 0.7 1 "invokers_location"
+} else {
+    exit
+}
+

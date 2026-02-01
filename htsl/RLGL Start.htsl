@@ -1,0 +1,38 @@
+goto function "RLGL Start"
+
+// TODO Switch to Game.state ENUM
+// globalvar GameState
+
+// Game Setup
+globalvar CurrentGame = 1
+globalvar GraceTime = 10
+globalvar Survivors = 0
+var HasWonGame = 0
+
+// RLGL Setup
+globalvar RLGL.Stopped = 0
+globalvar RLGL.ShouldKill = 0
+
+setTeam "RLGL"
+
+tp "custom_coordinates" "-8.5 104 -21.5"
+applyPotion "Blindness" 3 1 true true
+
+fullHeal
+var LastX = %player.pos.x%
+var LastY = %player.pos.y%
+var LastZ = %player.pos.z%
+
+// Explanation
+sound "Note Pling" 0.7 1 "invokers_location"
+chat "This is Red Light Green Light!"
+pause 40
+
+sound "Note Pling" 0.7 1 "invokers_location"
+chat "You must stop when the light is red!"
+pause 40
+
+sound "Note Pling" 0.7 1 "invokers_location"
+chat "If you move on a red light, you will be eliminated!"
+pause 40
+

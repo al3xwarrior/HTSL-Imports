@@ -1,0 +1,84 @@
+goto function "Global Second"
+
+// NO EARLY EXITS or TOP LEVEL PAUSES ALLOWED!
+// NO EARLY EXITS or TOP LEVEL PAUSES ALLOWED!
+// NO EARLY EXITS or TOP LEVEL PAUSES ALLOWED!
+
+if (globalvar IntermissionTime > 0 0, globalvar CurrentGame == 0 0) {
+    globalvar IntermissionTime -= 1
+}
+
+if (globalvar IntermissionTime <= 0 0, globalvar CurrentGame == 0 0) {
+    function "Choose Game"
+}
+
+if or (globalvar IntermissionTime == 10 0, globalvar IntermissionTime == 5 0, globalvar IntermissionTime == 4 0, globalvar IntermissionTime == 3 0, globalvar IntermissionTime == 2 0, globalvar IntermissionTime == 1 0) {
+    globalvar Broadcast.branch = 1
+    globalvar Broadcast.arg1 = "&e%var.global/IntermissionTime%"
+    function "Broadcast Branched" true
+}
+
+if (globalvar GraceTime > 0, !globalvar CurrentGame == 0 0) {
+    globalvar GraceTime -= 1
+}
+
+
+// TODO: seperate to Game Setup (with GraceTime) and then Game Start (without GraceTime)
+
+// RLGL Global Second Logic
+if (globalvar RLGL.TillSwitchS > 0, globalvar CurrentGame == 1 0) {
+    globalvar RLGL.TillSwitchS -= 1
+}
+
+if (globalvar GraceTime == 1, globalvar CurrentGame == 1 0) {
+    globalvar RLGL.TillSwitchS = %random.int/2 6%
+}
+
+if (globalvar RLGL.TillSwitchS <= 0, globalvar CurrentGame == 1 0) {
+    globalvar RLGL.TillSwitchS = %random.int/2 6%
+
+    // togggle RLGL.Stopped
+    // globalvar RLGL.Stopped = (globalvar RLGL.Stopped + 1) % 2
+    globalvar RLGL.Stopped += 1
+    var temp = %var.global/RLGL.Stopped%
+    var temp /= 2
+    var temp *= 2
+    globalvar RLGL.Stopped -= %var.player/temp%
+    var temp unset
+
+    // enable / disable freeze
+    globalvar RLGL.ShouldKill = 0
+
+    pause 20
+
+    globalvar RLGL.ShouldKill = %var.global/RLGL.Stopped%
+}
+if (placeholder %player.team.players/RLGL% == 0, globalvar CurrentGame == 1 0) {
+    function "RLGL End" true
+    globalvar RLGL.Stopped = 0
+    globalvar RLGL.ShouldKill = 0
+    globalvar CurrentGame = 0
+    globalvar IntermissionTime = 30
+}
+
+// SPINNER Global Second Logic
+// Spinner Renderer
+if (globalvar "spinnercd" >= %var.global/SPIN.Ticks%, globalvar CurrentGame == 2 0) {
+    function "Spinner Renderer" false
+    globalvar "spinnercd" set 0
+} else {
+    globalvar "spinnercd" += 5
+}
+
+if (globalvar "SPIN.Ticks" > 0, globalvar CurrentGame == 2 0) {
+    globalvar "SPIN.Ticks" dec 1
+}
+
+if (placeholder %player.team.players/SPIN% == 0, globalvar CurrentGame == 2 0) {
+    function "Spinner End" true
+    globalvar CurrentGame = 0
+    globalvar IntermissionTime = 30
+}
+
+// function "Global Second 2"
+// goto function "Global Second 2"

@@ -1,0 +1,22 @@
+
+goto function "Choose Game"
+
+// function "RLGL Start" true
+
+// I cahnged it to spinner for testing - alex
+function "Spinner Start" true
+
+// if (placeholder %house.players% == 1) {
+//     random {
+//         function "RLGL Start" true
+
+//     }
+//     exit
+// }
+
+// if (placeholder %house.players% >= 2) {
+//     random {
+//         function "RLGL Start" true
+//     }
+//     exit
+// }

@@ -1,0 +1,16 @@
+var LastX unset
+var LastY unset
+var LastZ unset
+
+if (placeholder %house.players% == 1) {
+    // No one was on so let's start up the next game
+    globalvar IntermissionTime = 10
+    globalvar CurrentGame = 0
+}
+
+if (!globalvar CurrentGame == 0 0) {
+    // A game is running so make them a spectator
+    setTeam "Spectator"
+    clearEffects
+    tp "house_spawn"
+}

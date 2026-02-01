@@ -1,0 +1,20 @@
+if (var "gold" < %var.player/ppdcost 20% 20) {
+    chat "&cYou need at least %var.player/ppdcost 20% Gold to upgrade Presents Deposited Per Second!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+if (var "presperdep" == 0 0) {
+    var "presperdep" set 1
+    var "ppdcost" set 20
+}
+
+var "gold" dec %var.player/ppdcost 20%
+var "ppdcost" mult 12
+var "ppdcost" div 10
+var "presperdep" inc 1
+
+chat "&aYou have upgraded Presents Deposited Per Second to %var.player/presperdep%!"
+sound "Level Up" 0.7 1 "invokers_location"
+
+displayMenu "Upgrades"

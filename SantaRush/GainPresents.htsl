@@ -1,0 +1,14 @@
+if (inRegion "PresentRegion") {
+
+} else {
+    exit
+}
+
+var "presents" inc %var.player/prespers 1%
+title "&r" "&a+%var.player/prespers 1% Present! &7(Total: %var.player/presents 0%)" 0 1 1
+
+sound "Item Pickup" 0.7 1 "invokers_location"
+pause 4
+sound "Item Pickup" 0.7 1.5 "invokers_location"
+pause 3
+sound "Item Pickup" 0.7 2.0 "invokers_location"

@@ -1,0 +1,26 @@
+goto function "Spinner End"
+
+chat "Spinner Ended!"
+
+if (inRegion "Spawn") {
+    exit
+}
+
+sound "Level Up" 2.0 1.2 "invokers_location"
+
+title "&6GAME OVER!" null 0 80 20
+
+chat "▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂"
+chat "&r &r &r &r &r &r &r &lGame Summary"
+chat "&r"
+chat "&r &r &r &r &r &e&6%player.team.players/SPIN% Survivors"
+chat "&r &r &r &r &r &e%var.player/CoinsEarned% &6Coins Earned"
+chat "&r &r"
+chat "▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂&r"
+
+pause 100
+
+tp "house_spawn"
+setTeam "None"
+clearEffects
+

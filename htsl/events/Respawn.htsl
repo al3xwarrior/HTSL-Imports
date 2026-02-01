@@ -1,0 +1,4 @@
+goto event "Player Respawn"
+if (hasTeam "Spectator") {
+    function "Begin Spectating"
+}

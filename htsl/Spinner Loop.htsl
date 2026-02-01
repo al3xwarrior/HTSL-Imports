@@ -1,0 +1,6 @@
+goto function "Spinner Loop"
+
+var "spinnerpickup" dec 1
+if (var "spinnerpickup" < 0) {
+    var "spinnerpickup" set 0
+}

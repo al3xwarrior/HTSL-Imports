@@ -1,0 +1,17 @@
+goto region "RLGL Finish" "Entry Actions"
+
+if (!hasTeam "RLGL") {
+    exit
+}
+
+function "Begin Spectating"
+
+globalvar Survivors += 1
+
+
+var HasWonGame = 1
+
+// CoinsEarned as a function of TimeElapsed?
+var CoinsEarned = 50;
+
+sound "Level Up" 0.7 1 "invokers_location"

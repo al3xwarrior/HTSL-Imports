@@ -21,4 +21,4 @@ if (inRegion "snowysuburbs", placeholder %player.location.y% >= 130) {
     changeVelocity 0 -3 0
 }
 
-launchTarget "custom_coordinates" "^0 ^0 ^3" 1
+launchTarget "custom_coordinates" "^0 ^0 ^1" 0.5

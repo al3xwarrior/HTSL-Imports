@@ -1,0 +1,620 @@
+goto function "Spinner Renderer"
+
+// 0
+if () {
+pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-79.5 109 66.5" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-78.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-77.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-76.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-75.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-74.5 109 66.5" false true false false 8 0
+}
+
+// 10
+if () {
+pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.5 109 66.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.5 109 66.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.5 109 67.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-79.5 109 67.3" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-78.5 109 67.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-77.5 109 67.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-76.5 109 67.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-75.5 109 68.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-74.5 109 68.3" false true false false 8 0
+}
+
+// 20
+if () {
+pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.6 109 66.8" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.7 109 67.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.8 109 67.4" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-79.9 109 67.7" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-79.0 109 68.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-78.1 109 68.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-77.2 109 68.6" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-76.3 109 68.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-75.4 109 69.2" false true false false 8 0
+}
+
+// 30
+if () {
+pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.6 109 67.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.8 109 67.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.9 109 68.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.1 109 68.5" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-79.2 109 69.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-78.4 109 69.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-77.5 109 70.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-76.7 109 70.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-75.8 109 71.0" false true false false 8 0
+}
+
+// 40
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.7 109 67.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.9 109 67.8" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.1 109 68.4" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.3 109 69.1" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-79.5 109 69.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-78.7 109 70.4" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-77.9 109 71.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-77.1 109 71.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-76.3 109 72.3" false true false false 8 0
+}
+
+// 50
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.9 109 67.2" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.1 109 67.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.3 109 68.6" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.5 109 69.3" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-79.7 109 70.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-78.9 109 70.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-78.1 109 71.4" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-77.3 109 72.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-76.5 109 72.8" false true false false 8 0
+}
+
+// 60
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.0 109 67.4" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.5 109 68.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.0 109 69.2" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.5 109 70.1" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-81.0 109 71.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.5 109 71.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.0 109 72.8" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-79.5 109 73.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-79.0 109 74.6" false true false false 8 0
+}
+
+//70
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.2 109 67.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.9 109 68.4" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.6 109 69.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.3 109 70.2" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-82.0 109 71.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.7 109 72.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.4 109 72.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.1 109 73.8" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.8 109 74.7" false true false false 8 0
+}
+
+//80
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.3 109 67.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.1 109 68.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.9 109 69.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.7 109 70.5" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-82.5 109 71.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.3 109 72.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.1 109 73.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.9 109 74.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.7 109 75.5" false true false false 8 0
+}
+
+//90
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 67.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 68.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 69.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 70.5" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 71.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 72.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 73.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 74.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 75.5" false true false false 8 0
+}
+
+//100
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.7 109 67.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.9 109 68.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.1 109 69.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.3 109 70.5" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-84.5 109 71.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.7 109 72.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.9 109 73.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.1 109 74.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.3 109 75.5" false true false false 8 0
+}
+
+//110
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.8 109 67.4" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.1 109 68.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.4 109 69.2" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.7 109 70.1" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-85.0 109 71.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.3 109 71.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.6 109 72.8" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.9 109 73.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-86.2 109 74.6" false true false false 8 0
+}
+
+function "Spinner Renderer2" false
+goto function "Spinner Renderer2"
+
+//120
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.0 109 67.4" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.5 109 68.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.0 109 69.2" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.5 109 70.1" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-86.0 109 71.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-86.5 109 71.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-87.0 109 72.8" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-87.5 109 73.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-88.0 109 74.6" false true false false 8 0
+}
+
+//130
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.3 109 67.2" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.1 109 67.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.9 109 68.6" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-86.7 109 69.3" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-87.5 109 70.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-88.3 109 70.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-89.1 109 71.4" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-89.9 109 72.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-90.7 109 72.8" false true false false 8 0
+}
+
+//140
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.7 109 67.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.9 109 67.8" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-87.1 109 68.4" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-88.3 109 69.1" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-89.5 109 69.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-90.7 109 70.4" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-91.9 109 71.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-93.1 109 71.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-94.3 109 72.3" false true false false 8 0
+}
+
+//150
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.1 109 67.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-86.8 109 67.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-88.4 109 68.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-90.1 109 68.5" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-91.7 109 69.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-93.4 109 69.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-95.0 109 70.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-96.7 109 70.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-98.3 109 71.0" false true false false 8 0
+}
+
+//160
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.3 109 66.8" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-87.1 109 67.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-88.9 109 67.4" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-90.7 109 67.7" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-92.5 109 68.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-94.3 109 68.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-96.1 109 68.6" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-97.9 109 68.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-99.7 109 69.2" false true false false 8 0
+}
+
+//170
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.4 109 66.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-87.3 109 66.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-89.2 109 67.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-91.1 109 67.3" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-93.0 109 67.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-94.9 109 67.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-96.8 109 67.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-98.7 109 68.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-100.6 109 68.3" false true false false 8 0
+}
+
+//180
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-86.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-87.5 109 66.5" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-88.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-89.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-90.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-91.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-92.5 109 66.5" false true false false 8 0
+}
+
+//190
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.5 109 66.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.5 109 66.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-86.5 109 65.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-87.5 109 65.7" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-88.5 109 65.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-89.5 109 65.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-90.5 109 65.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-91.5 109 64.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-92.5 109 64.7" false true false false 8 0
+}
+
+//200
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.4 109 66.2" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.3 109 65.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-86.2 109 65.6" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-87.1 109 65.3" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-88.0 109 65.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-88.9 109 64.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-89.8 109 64.4" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-90.7 109 64.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-91.6 109 63.8" false true false false 8 0
+}
+
+//210
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.4 109 66.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.2 109 65.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-86.1 109 65.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-86.9 109 64.5" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-87.8 109 64.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-88.6 109 63.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-89.5 109 63.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-90.3 109 62.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-91.2 109 62.0" false true false false 8 0
+}
+
+//220
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.3 109 65.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.1 109 65.2" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.9 109 64.6" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-86.7 109 63.9" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-87.5 109 63.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-88.3 109 62.6" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-89.1 109 62.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-89.9 109 61.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-90.7 109 60.7" false true false false 8 0
+}
+
+//230
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.2 109 65.8" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.9 109 65.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.6 109 64.4" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-86.3 109 63.7" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-87.0 109 63.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-87.7 109 62.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-88.4 109 61.6" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-89.1 109 60.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-89.8 109 60.2" false true false false 8 0
+}
+
+function "Spinner Renderer3" false
+goto function "Spinner Renderer3"
+
+//240
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.0 109 65.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.5 109 64.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.0 109 64.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.5 109 63.3" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-86.0 109 62.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-86.5 109 61.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-87.0 109 60.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-87.5 109 60.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-88.0 109 59.3" false true false false 8 0
+}
+
+//250
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.8 109 65.6" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.1 109 64.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.4 109 63.8" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.7 109 62.9" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-85.0 109 62.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.3 109 61.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.6 109 60.2" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.9 109 59.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-86.2 109 58.4" false true false false 8 0
+}
+
+//260
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.7 109 65.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.9 109 64.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.1 109 63.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.3 109 62.5" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-84.5 109 61.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.7 109 60.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-84.9 109 59.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.1 109 58.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-85.3 109 57.5" false true false false 8 0
+}
+
+//270
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 65.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 64.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 63.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 62.5" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 61.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 60.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 59.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 58.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 57.5" false true false false 8 0
+}
+
+//280
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.3 109 65.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.1 109 64.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.9 109 63.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.7 109 62.5" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-82.5 109 61.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.3 109 60.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.1 109 59.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.9 109 58.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.7 109 57.5" false true false false 8 0
+}
+
+//290
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.2 109 65.6" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.9 109 64.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.6 109 63.8" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.3 109 62.9" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-82.0 109 62.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.7 109 61.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.4 109 60.2" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.1 109 59.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.8 109 58.4" false true false false 8 0
+}
+
+//300
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-83.0 109 65.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.5 109 64.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.0 109 64.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.5 109 63.3" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-81.0 109 62.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.5 109 61.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.0 109 60.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-79.5 109 60.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-79.0 109 59.3" false true false false 8 0
+}
+
+//310
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.8 109 65.8" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.1 109 65.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.4 109 64.4" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.7 109 63.7" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-80.0 109 63.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-79.3 109 62.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-78.6 109 61.6" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-77.9 109 60.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-77.2 109 60.2" false true false false 8 0
+}
+
+//320
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.7 109 65.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.9 109 65.2" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.1 109 64.6" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.3 109 63.9" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-79.5 109 63.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-78.7 109 62.6" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-77.9 109 62.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-77.1 109 61.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-76.3 109 60.7" false true false false 8 0
+}
+
+//330
+if () {
+
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.9 109 66.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.1 109 65.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.3 109 65.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.5 109 64.5" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-79.7 109 64.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-78.9 109 63.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-78.1 109 63.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-77.3 109 62.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-76.5 109 62.0" false true false false 8 0
+}
+
+//340
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.7 109 66.2" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.9 109 65.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.1 109 65.6" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.3 109 65.3" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-79.5 109 65.0" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-78.7 109 64.7" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-77.9 109 64.4" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-77.1 109 64.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-76.3 109 63.8" false true false false 8 0
+}
+
+//350
+if () {
+    pause 8
+dropItem "../spinneritem" "custom_coordinates" "-83.5 109 66.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-82.6 109 66.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-81.7 109 66.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-80.8 109 65.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-79.9 109 65.7" false true false false 8 0
+}
+if () {
+dropItem "../spinneritem" "custom_coordinates" "-79.0 109 65.5" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-78.1 109 65.3" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-77.2 109 65.1" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-76.3 109 64.9" false true false false 8 0
+dropItem "../spinneritem" "custom_coordinates" "-75.4 109 64.7" false true false false 8 0
+}

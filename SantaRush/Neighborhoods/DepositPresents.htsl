@@ -1,0 +1,40 @@
+var "maxhousepres" set %var.player/lvl 1%
+var "maxhousepres" inc 4
+var "maxhousepres" mult 2
+
+if (gamemode "Creative") {
+    exit
+}
+
+if (var "presents" <= 0, !inRegion "workshop") {
+    title "&r" "&7You have no presents!" 0 2 1
+    exit
+}
+
+loop 8 index {
+    if (inRegion {"House"+(index+1)+"Tree"}, var "maxhousepres" > {"%var.player/house"+(index+1)+"pres 0%"} 0) {
+        var {"house"+(index+1)+"pres"} inc %var.player/presperdep 1%
+        var "presents" dec %var.player/presperdep 1%
+        globalvar "totalpres" inc %var.player/presperdep 1%
+        var "goldtogive" set %var.player/goldperpres 1%
+        var "goldtogive" mult %var.player/presperdep 1%
+        var "gold" inc %var.player/goldtogive 1%
+        title "&r" "&%random.whole/1 10%Delivered %var.player/presperdep 1% Present! &7(&6+%var.player/goldperpres 1% Gold&7)" 0 2 1
+        sound "Item Break" 0.7 2.0 "invokers_location"
+        exit
+    }
+    if (inRegion {"House"+(index+1)+"Tree"}) {
+        title "&c&lMAX PRESENTS!" "&7Try again later!" 0 2 1
+        sound "Orb Pickup" 0.7 0.5 "invokers_location"
+        exit
+    }
+}
+
+if () {
+    var "decreaseamt" set %var.player/maxhousepres%
+    var "decreaseamt" div 10
+
+    loop 8 index {
+        var {"house"+(index+1)+"pres"} dec %var.player/decreaseamt 1%
+    }
+}
