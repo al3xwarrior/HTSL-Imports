@@ -1,0 +1,153 @@
+
+// goto function "RenderSlot1"
+// if (var "rollingSlot1" == "COAL" "") {
+//     giveItem "{count:1,id:\"minecraft:coal\"}" true "Inventory Slot 10" true
+// }
+// if (var "rollingSlot1" == "IRON" "") {
+//     giveItem "{count:1,id:\"minecraft:iron_ingot\"}" true "Inventory Slot 10" true
+// }
+// if (var "rollingSlot1" == "GOLD" "") {
+//     giveItem "{count:1,id:\"minecraft:gold_ingot\"}" true "Inventory Slot 10" true
+// }
+// if (var "rollingSlot1" == "DIAMOND" "") {
+//     giveItem "{count:1,id:\"minecraft:diamond\"}" true "Inventory Slot 10" true
+// }
+// if (var "rollingSlot1" == "EMERALD" "") {
+//     giveItem "{count:1,id:\"minecraft:emerald\"}" true "Inventory Slot 10" true
+// }
+
+// goto function "RenderSlot2"
+// if (var "rollingSlot2" == "COAL" "") {
+//     giveItem "{count:1,id:\"minecraft:coal\"}" true "Inventory Slot 11" true
+// }
+// if (var "rollingSlot2" == "IRON" "") {
+//     giveItem "{count:1,id:\"minecraft:iron_ingot\"}" true "Inventory Slot 11" true
+// }
+// if (var "rollingSlot2" == "GOLD" "") {
+//     giveItem "{count:1,id:\"minecraft:gold_ingot\"}" true "Inventory Slot 11" true
+// }
+// if (var "rollingSlot2" == "DIAMOND" "") {
+//     giveItem "{count:1,id:\"minecraft:diamond\"}" true "Inventory Slot 11" true
+// }
+// if (var "rollingSlot2" == "EMERALD" "") {
+//     giveItem "{count:1,id:\"minecraft:emerald\"}" true "Inventory Slot 11" true
+// }
+
+// goto function "RenderSlot3"
+// if (var "rollingSlot3" == "COAL" "") {
+//     giveItem "{count:1,id:\"minecraft:coal\"}" true "Inventory Slot 12" true
+// }
+// if (var "rollingSlot3" == "IRON" "") {
+//     giveItem "{count:1,id:\"minecraft:iron_ingot\"}" true "Inventory Slot 12" true
+// }
+// if (var "rollingSlot3" == "GOLD" "") {
+//     giveItem "{count:1,id:\"minecraft:gold_ingot\"}" true "Inventory Slot 12" true
+// }
+// if (var "rollingSlot3" == "DIAMOND" "") {
+//     giveItem "{count:1,id:\"minecraft:diamond\"}" true "Inventory Slot 12" true
+// }
+// if (var "rollingSlot3" == "EMERALD" "") {
+//     giveItem "{count:1,id:\"minecraft:emerald\"}" true "Inventory Slot 12" true
+// }
+
+// goto function "RenderSlot4"
+// if (var "rollingSlot4" == "COAL" "") {
+//     giveItem "{count:1,id:\"minecraft:coal\"}" true "Inventory Slot 13" true
+// }
+// if (var "rollingSlot4" == "IRON" "") {
+//     giveItem "{count:1,id:\"minecraft:iron_ingot\"}" true "Inventory Slot 13" true
+// }
+// if (var "rollingSlot4" == "GOLD" "") {
+//     giveItem "{count:1,id:\"minecraft:gold_ingot\"}" true "Inventory Slot 13" true
+// }
+// if (var "rollingSlot4" == "DIAMOND" "") {
+//     giveItem "{count:1,id:\"minecraft:diamond\"}" true "Inventory Slot 13" true
+// }
+// if (var "rollingSlot4" == "EMERALD" "") {
+//     giveItem "{count:1,id:\"minecraft:emerald\"}" true "Inventory Slot 13" true
+// }
+
+// goto function "RenderSlot5"
+// if (var "rollingSlot5" == "COAL" "") {
+//     giveItem "{count:1,id:\"minecraft:coal\"}" true "Inventory Slot 14" true
+// }
+// if (var "rollingSlot5" == "IRON" "") {
+//     giveItem "{count:1,id:\"minecraft:iron_ingot\"}" true "Inventory Slot 14" true
+// }
+// if (var "rollingSlot5" == "GOLD" "") {
+//     giveItem "{count:1,id:\"minecraft:gold_ingot\"}" true "Inventory Slot 14" true
+// }
+// if (var "rollingSlot5" == "DIAMOND" "") {
+//     giveItem "{count:1,id:\"minecraft:diamond\"}" true "Inventory Slot 14" true
+// }
+// if (var "rollingSlot5" == "EMERALD" "") {
+//     giveItem "{count:1,id:\"minecraft:emerald\"}" true "Inventory Slot 14" true
+// }
+
+// goto function "RenderSlot6"
+// if (var "rollingSlot6" == "COAL" "") {
+//     giveItem "{count:1,id:\"minecraft:coal\"}" true "Inventory Slot 15" true
+// }
+// if (var "rollingSlot6" == "IRON" "") {
+//     giveItem "{count:1,id:\"minecraft:iron_ingot\"}" true "Inventory Slot 15" true
+// }
+// if (var "rollingSlot6" == "GOLD" "") {
+//     giveItem "{count:1,id:\"minecraft:gold_ingot\"}" true "Inventory Slot 15" true
+// }
+// if (var "rollingSlot6" == "DIAMOND" "") {
+//     giveItem "{count:1,id:\"minecraft:diamond\"}" true "Inventory Slot 15" true
+// }
+// if (var "rollingSlot6" == "EMERALD" "") {
+//     giveItem "{count:1,id:\"minecraft:emerald\"}" true "Inventory Slot 15" true
+// }
+
+// goto function "RenderSlot7"
+// if (var "rollingSlot7" == "COAL" "") {
+//     giveItem "{count:1,id:\"minecraft:coal\"}" true "Inventory Slot 16" true
+// }
+// if (var "rollingSlot7" == "IRON" "") {
+//     giveItem "{count:1,id:\"minecraft:iron_ingot\"}" true "Inventory Slot 16" true
+// }
+// if (var "rollingSlot7" == "GOLD" "") {
+//     giveItem "{count:1,id:\"minecraft:gold_ingot\"}" true "Inventory Slot 16" true
+// }
+// if (var "rollingSlot7" == "DIAMOND" "") {
+//     giveItem "{count:1,id:\"minecraft:diamond\"}" true "Inventory Slot 16" true
+// }
+// if (var "rollingSlot7" == "EMERALD" "") {
+//     giveItem "{count:1,id:\"minecraft:emerald\"}" true "Inventory Slot 16" true
+// }
+
+// goto function "RenderSlot8"
+// if (var "rollingSlot8" == "COAL" "") {
+//     giveItem "{count:1,id:\"minecraft:coal\"}" true "Inventory Slot 17" true
+// }
+// if (var "rollingSlot8" == "IRON" "") {
+//     giveItem "{count:1,id:\"minecraft:iron_ingot\"}" true "Inventory Slot 17" true
+// }
+// if (var "rollingSlot8" == "GOLD" "") {
+//     giveItem "{count:1,id:\"minecraft:gold_ingot\"}" true "Inventory Slot 17" true
+// }
+// if (var "rollingSlot8" == "DIAMOND" "") {
+//     giveItem "{count:1,id:\"minecraft:diamond\"}" true "Inventory Slot 17" true
+// }
+// if (var "rollingSlot8" == "EMERALD" "") {
+//     giveItem "{count:1,id:\"minecraft:emerald\"}" true "Inventory Slot 17" true
+// }
+
+goto function "RenderSlot9"
+if (var "rollingSlot9" == "COAL" "") {
+    giveItem "{count:1,id:\"minecraft:coal\"}" true "Inventory Slot 18" true
+}
+if (var "rollingSlot9" == "IRON" "") {
+    giveItem "{count:1,id:\"minecraft:iron_ingot\"}" true "Inventory Slot 18" true
+}
+if (var "rollingSlot9" == "GOLD" "") {
+    giveItem "{count:1,id:\"minecraft:gold_ingot\"}" true "Inventory Slot 18" true
+}
+if (var "rollingSlot9" == "DIAMOND" "") {
+    giveItem "{count:1,id:\"minecraft:diamond\"}" true "Inventory Slot 18" true
+}
+if (var "rollingSlot9" == "EMERALD" "") {
+    giveItem "{count:1,id:\"minecraft:emerald\"}" true "Inventory Slot 18" true
+}

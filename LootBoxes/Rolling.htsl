@@ -1,0 +1,55 @@
+
+if (var "rolling" > 0 0) {
+    var "rolling" dec 1 false
+} else {
+    exit
+}
+
+if (var "rolling" == 0 -1) {
+    sound "Level Up" 0.7 1 "invokers_location"
+    exit
+}
+
+sound "Orb Pickup" 0.7 1 "invokers_location"
+
+giveItem "{count:1,id:\"minecraft:arrow\"}" false "Inventory Slot 5" false
+giveItem "{count:1,id:\"minecraft:arrow\"}" false "Inventory Slot 23" false
+
+if () {
+    var "rollingSlot1" set %var.player/rollingSlot2%
+    var "rollingSlot2" set %var.player/rollingSlot3%
+    var "rollingSlot3" set %var.player/rollingSlot4%
+    var "rollingSlot4" set %var.player/rollingSlot5%
+    var "rollingSlot5" set %var.player/rollingSlot6%
+    var "rollingSlot6" set %var.player/rollingSlot7%
+    var "rollingSlot7" set %var.player/rollingSlot8%
+    var "rollingSlot8" set %var.player/rollingSlot9%
+}
+
+random {
+    var "rollingSlot9" set "COAL"
+    var "rollingSlot9" set "COAL"
+    var "rollingSlot9" set "COAL"
+    var "rollingSlot9" set "COAL"
+    var "rollingSlot9" set "COAL"
+    var "rollingSlot9" set "IRON"
+    var "rollingSlot9" set "IRON"
+    var "rollingSlot9" set "IRON"
+    var "rollingSlot9" set "IRON"
+    var "rollingSlot9" set "GOLD"
+    var "rollingSlot9" set "GOLD"
+    var "rollingSlot9" set "GOLD"
+    var "rollingSlot9" set "DIAMOND"
+    var "rollingSlot9" set "DIAMOND"
+    var "rollingSlot9" set "EMERALD"
+}
+
+function "RenderSlot1" false
+function "RenderSlot2" false
+function "RenderSlot3" false
+function "RenderSlot4" false
+function "RenderSlot5" false
+function "RenderSlot6" false
+function "RenderSlot7" false
+function "RenderSlot8" false
+function "RenderSlot9" false

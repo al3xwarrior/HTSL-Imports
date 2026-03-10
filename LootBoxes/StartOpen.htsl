@@ -1,0 +1,11 @@
+var "rolling" set 100 false
+
+var "rollingSlot1" set "" true
+var "rollingSlot2" set "" true
+var "rollingSlot3" set "" true
+var "rollingSlot4" set "" true
+var "rollingSlot5" set "" true
+var "rollingSlot6" set "" true
+var "rollingSlot7" set "" true
+var "rollingSlot8" set "" true
+var "rollingSlot9" set "" true
