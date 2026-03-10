@@ -1,8 +1,23 @@
 
+if (var "rolling" > 0 0, var "rollingcd" > 0 0) {
+    var "rollingcd" dec 1 false
+    exit
+}
+
 if (var "rolling" > 0 0) {
     var "rolling" dec 1 false
 } else {
     exit
+}
+
+if (var "rolling" >= 8 0) {
+    var "rollingcd" set 0 false
+}
+if (var "rolling" < 8 0, var "rolling" >= 4 0) {
+    var "rollingcd" set 1 false
+}
+if (var "rolling" > 0 0, var "rolling" < 4 0) {
+    var "rollingcd" set 2 false
 }
 
 if (var "rolling" == 0 -1) {

@@ -1,4 +1,6 @@
-var "rolling" set 100 false
+
+resetInventory
+var "rolling" set 30 false
 
 var "rollingSlot1" set "" true
 var "rollingSlot2" set "" true
