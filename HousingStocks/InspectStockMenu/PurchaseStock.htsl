@@ -1,0 +1,132 @@
+
+if (var money >= %var.player/stock_pur_price%) {
+    closeMenu
+    sound "Level Up" 0.7 2.0 "invokers_location"
+} else {
+    chat "&cYou don't have enough money to purchase this stock!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+if (var stockcopies <= 0) {
+    chat "&cYou must purchase at least 1 copy of this stock!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+var money dec %var.player/stock_pur_price%
+
+// Find a Open Portfolio Slot
+if (var stock_uuid_1 == "" "") {
+    var stock_uuid_1 set %var.player/i_stock_uuid%
+    var stock_owner_1 set %var.player/i_stock_owner%
+    var stock_name_1 set %var.player/i_stock_name%
+    var stock_copies_1 set %var.player/stockcopies%
+    var stock_price_1 set %var.player/stock_pur_price%
+    var stock_buyp_1 set %var.player/stock_pur_price%
+    var stock_buyp_1 div %var.player/stockcopies%
+
+    globalvar "buybc_plr" set %player.name%
+    globalvar "buybc_stock" set %var.player/stock_name_1%
+    globalvar "buybc_copies" set %var.player/stock_copies_1%
+    globalvar "buybc_price" set %var.player/stock_price_1%
+    function "BuyStockBC" true
+    exit
+}
+if (var stock_uuid_2 == "" "") {
+    var stock_uuid_2 set %var.player/i_stock_uuid%
+    var stock_owner_2 set %var.player/i_stock_owner%
+    var stock_name_2 set %var.player/i_stock_name%
+    var stock_copies_2 set %var.player/stockcopies%
+    var stock_price_2 set %var.player/stock_pur_price%
+    var stock_buyp_2 set %var.player/stock_pur_price%
+    var stock_buyp_2 div %var.player/stockcopies%
+
+    globalvar "buybc_plr" set %player.name%
+    globalvar "buybc_stock" set %var.player/stock_name_2%
+    globalvar "buybc_copies" set %var.player/stock_copies_2%
+    globalvar "buybc_price" set %var.player/stock_price_2%
+    function "BuyStockBC" true
+    exit
+}
+if (var stock_uuid_3 == "" "") {
+    var stock_uuid_3 set %var.player/i_stock_uuid%
+    var stock_owner_3 set %var.player/i_stock_owner%
+    var stock_name_3 set %var.player/i_stock_name%
+    var stock_copies_3 set %var.player/stockcopies%
+    var stock_price_3 set %var.player/stock_pur_price%
+    var stock_buyp_3 set %var.player/stock_pur_price%
+    var stock_buyp_3 div %var.player/stockcopies%
+
+    globalvar "buybc_plr" set %player.name%
+    globalvar "buybc_stock" set %var.player/stock_name_3%
+    globalvar "buybc_copies" set %var.player/stock_copies_3%
+    globalvar "buybc_price" set %var.player/stock_price_3%
+    function "BuyStockBC" true
+    exit
+}
+if (var stock_uuid_4 == "" "") {
+    var stock_uuid_4 set %var.player/i_stock_uuid%
+    var stock_owner_4 set %var.player/i_stock_owner%
+    var stock_name_4 set %var.player/i_stock_name%
+    var stock_copies_4 set %var.player/stockcopies%
+    var stock_price_4 set %var.player/stock_pur_price%
+    var stock_buyp_4 set %var.player/stock_pur_price%
+    var stock_buyp_4 div %var.player/stockcopies%
+
+    globalvar "buybc_plr" set %player.name%
+    globalvar "buybc_stock" set %var.player/stock_name_4%
+    globalvar "buybc_copies" set %var.player/stock_copies_4%
+    globalvar "buybc_price" set %var.player/stock_price_4%
+    function "BuyStockBC" true
+    exit
+}
+if (var stock_uuid_5 == "" "") {
+    var stock_uuid_5 set %var.player/i_stock_uuid%
+    var stock_owner_5 set %var.player/i_stock_owner%
+    var stock_name_5 set %var.player/i_stock_name%
+    var stock_copies_5 set %var.player/stockcopies%
+    var stock_price_5 set %var.player/stock_pur_price%
+    var stock_buyp_5 set %var.player/stock_pur_price%
+    var stock_buyp_5 div %var.player/stockcopies%
+
+    globalvar "buybc_plr" set %player.name%
+    globalvar "buybc_stock" set %var.player/stock_name_5%
+    globalvar "buybc_copies" set %var.player/stock_copies_5%
+    globalvar "buybc_price" set %var.player/stock_price_5%
+    function "BuyStockBC" true
+    exit
+}
+if (var stock_uuid_6 == "" "") {
+    var stock_uuid_6 set %var.player/i_stock_uuid%
+    var stock_owner_6 set %var.player/i_stock_owner%
+    var stock_name_6 set %var.player/i_stock_name%
+    var stock_copies_6 set %var.player/stockcopies%
+    var stock_price_6 set %var.player/stock_pur_price%
+    var stock_buyp_6 set %var.player/stock_pur_price%
+    var stock_buyp_6 div %var.player/stockcopies%
+
+    globalvar "buybc_plr" set %player.name%
+    globalvar "buybc_stock" set %var.player/stock_name_6%
+    globalvar "buybc_copies" set %var.player/stock_copies_6%
+    globalvar "buybc_price" set %var.player/stock_price_6%
+    function "BuyStockBC" true
+    exit
+}
+if (var stock_uuid_7 == "" "") {
+    var stock_uuid_7 set %var.player/i_stock_uuid%
+    var stock_owner_7 set %var.player/i_stock_owner%
+    var stock_name_7 set %var.player/i_stock_name%
+    var stock_copies_7 set %var.player/stockcopies%
+    var stock_price_7 set %var.player/stock_pur_price%
+    var stock_buyp_7 set %var.player/stock_pur_price%
+    var stock_buyp_7 div %var.player/stockcopies%
+
+    globalvar "buybc_plr" set %player.name%
+    globalvar "buybc_stock" set %var.player/stock_name_7%
+    globalvar "buybc_copies" set %var.player/stock_copies_7%
+    globalvar "buybc_price" set %var.player/stock_price_7%
+    function "BuyStockBC" true
+} else {
+    chat "&cYou don't have any open portfolio slots!"
+}

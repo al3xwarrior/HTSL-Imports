@@ -1,0 +1,22 @@
+if (var joined == 0 0) {
+    var joined set 1
+    title "&e&lWECOME" "&7To %house.name%&7! &8(Read Chat!)" 1 3 1
+    var money inc 500
+
+    chat "&e&lWELCOME! &7This House uses the &freal Housing API &7to grab the"
+    chat "&7current &bPlayer Count&7, which is used to determine the &bStock Prices&7!"
+    chat "&r"
+    chat "&7I've given you &a$500 &7to get started with! Use the &fitems &7in your hotbar"
+    chat "&7to &apurchase stocks&7, &acheck stock prices&7, and more!"
+} else {
+    title "&e&lWELCOME BACK" "&7To %house.name%&7!" 1 3 1
+
+    chat "&e&lWELCOME BACK! &7Glad to see you again! Use the &fitems &7in your hotbar"
+    chat "&7to &acheck stock prices&7, &asell stocks&7, and more!"
+}
+
+sound "Level Up" 0.7 1 "invokers_location"
+applyPotion "Night Vision" 2000000 1 true false
+
+globalvar "join_name" set %player.name%
+function "JoinBC" true

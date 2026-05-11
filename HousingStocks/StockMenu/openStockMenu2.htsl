@@ -1,0 +1,299 @@
+// gui_hname_X
+// gui_huuid_X
+// gui_howner_X
+
+// gui_hplrs_X
+
+// gui_stock_X
+// gui_stock_X_3M - gui_stock_X_6M - gui_stock_X_9M - gui_stock_X_12M - gui_stock_X_15M - gui_stock_X_18M - gui_stock_X_21M
+
+var "stock_page" set 2
+
+if () {
+var "gui_hname_1" set %var.global/house_name_10%
+var "gui_huuid_1" set %var.global/house_uuid_10%
+var "gui_howner_1" set %var.global/house_owner_10%
+var "gui_hplrs_1" set %var.global/house_plrs_10%
+}
+if or (globalvar house_plrs_10 > 0, globalvar house_plrs_10 < 0) {
+var gui_stock_1 set %var.global/house_plrs_10%
+var gui_stock_1 &= 255
+var gui_stock_1_3M set %var.global/house_plrs_10%
+var gui_stock_1_3M >>= 8
+var gui_stock_1_3M &= 255
+var gui_stock_1_6M set %var.global/house_plrs_10%
+var gui_stock_1_6M >>= 16
+var gui_stock_1_6M &= 255
+var gui_stock_1_9M set %var.global/house_plrs_10%
+var gui_stock_1_9M >>= 24
+var gui_stock_1_9M &= 255
+var gui_stock_1_12M set %var.global/house_plrs_10%
+var gui_stock_1_12M >>= 32
+var gui_stock_1_12M &= 255
+var gui_stock_1_15M set %var.global/house_plrs_10%
+var gui_stock_1_15M >>= 40
+var gui_stock_1_15M &= 255
+var gui_stock_1_18M set %var.global/house_plrs_10%
+var gui_stock_1_18M >>= 48
+var gui_stock_1_18M &= 255
+var gui_stock_1_21M set %var.global/house_plrs_10%
+var gui_stock_1_21M >>= 56
+var gui_stock_1_21M &= 255
+}
+if () {
+var "gui_hname_2" set %var.global/house_name_11%
+var "gui_huuid_2" set %var.global/house_uuid_11%
+var "gui_howner_2" set %var.global/house_owner_11%
+var "gui_hplrs_2" set %var.global/house_plrs_11%
+}
+if or (globalvar house_plrs_11 > 0, globalvar house_plrs_11 < 0) {
+var gui_stock_2 set %var.global/house_plrs_11%
+var gui_stock_2 &= 255
+var gui_stock_2_3M set %var.global/house_plrs_11%
+var gui_stock_2_3M >>= 8
+var gui_stock_2_3M &= 255
+var gui_stock_2_6M set %var.global/house_plrs_11%
+var gui_stock_2_6M >>= 16
+var gui_stock_2_6M &= 255
+var gui_stock_2_9M set %var.global/house_plrs_11%
+var gui_stock_2_9M >>= 24
+var gui_stock_2_9M &= 255
+var gui_stock_2_12M set %var.global/house_plrs_11%
+var gui_stock_2_12M >>= 32
+var gui_stock_2_12M &= 255
+var gui_stock_2_15M set %var.global/house_plrs_11%
+var gui_stock_2_15M >>= 40
+var gui_stock_2_15M &= 255
+var gui_stock_2_18M set %var.global/house_plrs_11%
+var gui_stock_2_18M >>= 48
+var gui_stock_2_18M &= 255
+var gui_stock_2_21M set %var.global/house_plrs_11%
+var gui_stock_2_21M >>= 56
+var gui_stock_2_21M &= 255
+}
+
+if () {
+var "gui_hname_3" set %var.global/house_name_12%
+var "gui_huuid_3" set %var.global/house_uuid_12%
+var "gui_howner_3" set %var.global/house_owner_12%
+var "gui_hplrs_3" set %var.global/house_plrs_12%
+}
+if or (globalvar house_plrs_12 > 0, globalvar house_plrs_12 < 0) {
+var gui_stock_3 set %var.global/house_plrs_12%
+var gui_stock_3 &= 255
+var gui_stock_3_3M set %var.global/house_plrs_12%
+var gui_stock_3_3M >>= 8
+var gui_stock_3_3M &= 255
+var gui_stock_3_6M set %var.global/house_plrs_12%
+var gui_stock_3_6M >>= 16
+var gui_stock_3_6M &= 255
+var gui_stock_3_9M set %var.global/house_plrs_12%
+var gui_stock_3_9M >>= 24
+var gui_stock_3_9M &= 255
+var gui_stock_3_12M set %var.global/house_plrs_12%
+var gui_stock_3_12M >>= 32
+var gui_stock_3_12M &= 255
+var gui_stock_3_15M set %var.global/house_plrs_12%
+var gui_stock_3_15M >>= 40
+var gui_stock_3_15M &= 255
+var gui_stock_3_18M set %var.global/house_plrs_12%
+var gui_stock_3_18M >>= 48
+var gui_stock_3_18M &= 255
+var gui_stock_3_21M set %var.global/house_plrs_12%
+var gui_stock_3_21M >>= 56
+var gui_stock_3_21M &= 255
+}
+
+if () {
+var "gui_hname_4" set %var.global/house_name_13%
+var "gui_huuid_4" set %var.global/house_uuid_13%
+var "gui_howner_4" set %var.global/house_owner_13%
+var "gui_hplrs_4" set %var.global/house_plrs_13%
+}
+if or (globalvar house_plrs_13 > 0, globalvar house_plrs_13 < 0) {
+var gui_stock_4 set %var.global/house_plrs_13%
+var gui_stock_4 &= 255
+var gui_stock_4_3M set %var.global/house_plrs_13%
+var gui_stock_4_3M >>= 8
+var gui_stock_4_3M &= 255
+var gui_stock_4_6M set %var.global/house_plrs_13%
+var gui_stock_4_6M >>= 16
+var gui_stock_4_6M &= 255
+var gui_stock_4_9M set %var.global/house_plrs_13%
+var gui_stock_4_9M >>= 24
+var gui_stock_4_9M &= 255
+var gui_stock_4_12M set %var.global/house_plrs_13%
+var gui_stock_4_12M >>= 32
+var gui_stock_4_12M &= 255
+var gui_stock_4_15M set %var.global/house_plrs_13%
+var gui_stock_4_15M >>= 40
+var gui_stock_4_15M &= 255
+var gui_stock_4_18M set %var.global/house_plrs_13%
+var gui_stock_4_18M >>= 48
+var gui_stock_4_18M &= 255
+var gui_stock_4_21M set %var.global/house_plrs_13%
+var gui_stock_4_21M >>= 56
+var gui_stock_4_21M &= 255
+}
+
+if () {
+var "gui_hname_5" set %var.global/house_name_14%
+var "gui_huuid_5" set %var.global/house_uuid_14%
+var "gui_howner_5" set %var.global/house_owner_14%
+var "gui_hplrs_5" set %var.global/house_plrs_14%
+}
+if or (globalvar house_plrs_14 > 0, globalvar house_plrs_14 < 0) {
+var gui_stock_5 set %var.global/house_plrs_14%
+var gui_stock_5 &= 255
+var gui_stock_5_3M set %var.global/house_plrs_14%
+var gui_stock_5_3M >>= 8
+var gui_stock_5_3M &= 255
+var gui_stock_5_6M set %var.global/house_plrs_14%
+var gui_stock_5_6M >>= 16
+var gui_stock_5_6M &= 255
+var gui_stock_5_9M set %var.global/house_plrs_14%
+var gui_stock_5_9M >>= 24
+var gui_stock_5_9M &= 255
+var gui_stock_5_12M set %var.global/house_plrs_14%
+var gui_stock_5_12M >>= 32
+var gui_stock_5_12M &= 255
+var gui_stock_5_15M set %var.global/house_plrs_14%
+var gui_stock_5_15M >>= 40
+var gui_stock_5_15M &= 255
+var gui_stock_5_18M set %var.global/house_plrs_14%
+var gui_stock_5_18M >>= 48
+var gui_stock_5_18M &= 255
+var gui_stock_5_21M set %var.global/house_plrs_14%
+var gui_stock_5_21M >>= 56
+var gui_stock_5_21M &= 255
+}
+
+if () {
+var "gui_hname_6" set %var.global/house_name_15%
+var "gui_huuid_6" set %var.global/house_uuid_15%
+var "gui_howner_6" set %var.global/house_owner_15%
+var "gui_hplrs_6" set %var.global/house_plrs_15%
+}
+if or (globalvar house_plrs_15 > 0, globalvar house_plrs_15 < 0) {
+var gui_stock_6 set %var.global/house_plrs_15%
+var gui_stock_6 &= 255
+var gui_stock_6_3M set %var.global/house_plrs_15%
+var gui_stock_6_3M >>= 8
+var gui_stock_6_3M &= 255
+var gui_stock_6_6M set %var.global/house_plrs_15%
+var gui_stock_6_6M >>= 16
+var gui_stock_6_6M &= 255
+var gui_stock_6_9M set %var.global/house_plrs_15%
+var gui_stock_6_9M >>= 24
+var gui_stock_6_9M &= 255
+var gui_stock_6_12M set %var.global/house_plrs_15%
+var gui_stock_6_12M >>= 32
+var gui_stock_6_12M &= 255
+var gui_stock_6_15M set %var.global/house_plrs_15%
+var gui_stock_6_15M >>= 40
+var gui_stock_6_15M &= 255
+var gui_stock_6_18M set %var.global/house_plrs_15%
+var gui_stock_6_18M >>= 48
+var gui_stock_6_18M &= 255
+var gui_stock_6_21M set %var.global/house_plrs_15%
+var gui_stock_6_21M >>= 56
+var gui_stock_6_21M &= 255
+}
+
+if () {
+var "gui_hname_7" set %var.global/house_name_16%
+var "gui_huuid_7" set %var.global/house_uuid_16%
+var "gui_howner_7" set %var.global/house_owner_16%
+var "gui_hplrs_7" set %var.global/house_plrs_16%
+}
+if or (globalvar house_plrs_16 > 0, globalvar house_plrs_16 < 0) {
+var gui_stock_7 set %var.global/house_plrs_16%
+var gui_stock_7 &= 255
+var gui_stock_7_3M set %var.global/house_plrs_16%
+var gui_stock_7_3M >>= 8
+var gui_stock_7_3M &= 255
+var gui_stock_7_6M set %var.global/house_plrs_16%
+var gui_stock_7_6M >>= 16
+var gui_stock_7_6M &= 255
+var gui_stock_7_9M set %var.global/house_plrs_16%
+var gui_stock_7_9M >>= 24
+var gui_stock_7_9M &= 255
+var gui_stock_7_12M set %var.global/house_plrs_16%
+var gui_stock_7_12M >>= 32
+var gui_stock_7_12M &= 255
+var gui_stock_7_15M set %var.global/house_plrs_16%
+var gui_stock_7_15M >>= 40
+var gui_stock_7_15M &= 255
+var gui_stock_7_18M set %var.global/house_plrs_16%
+var gui_stock_7_18M >>= 48
+var gui_stock_7_18M &= 255
+var gui_stock_7_21M set %var.global/house_plrs_16%
+var gui_stock_7_21M >>= 56
+var gui_stock_7_21M &= 255
+}
+
+if () {
+var "gui_hname_8" set %var.global/house_name_17%
+var "gui_huuid_8" set %var.global/house_uuid_17%
+var "gui_howner_8" set %var.global/house_owner_17%
+var "gui_hplrs_8" set %var.global/house_plrs_17%
+}
+if or (globalvar house_plrs_17 > 0, globalvar house_plrs_17 < 0) {
+var gui_stock_8 set %var.global/house_plrs_17%
+var gui_stock_8 &= 255
+var gui_stock_8_3M set %var.global/house_plrs_17%
+var gui_stock_8_3M >>= 8
+var gui_stock_8_3M &= 255
+var gui_stock_8_6M set %var.global/house_plrs_17%
+var gui_stock_8_6M >>= 16
+var gui_stock_8_6M &= 255
+var gui_stock_8_9M set %var.global/house_plrs_17%
+var gui_stock_8_9M >>= 24
+var gui_stock_8_9M &= 255
+var gui_stock_8_12M set %var.global/house_plrs_17%
+var gui_stock_8_12M >>= 32
+var gui_stock_8_12M &= 255
+var gui_stock_8_15M set %var.global/house_plrs_17%
+var gui_stock_8_15M >>= 40
+var gui_stock_8_15M &= 255
+var gui_stock_8_18M set %var.global/house_plrs_17%
+var gui_stock_8_18M >>= 48
+var gui_stock_8_18M &= 255
+var gui_stock_8_21M set %var.global/house_plrs_17%
+var gui_stock_8_21M >>= 56
+var gui_stock_8_21M &= 255
+}
+
+if () {
+var "gui_hname_9" set %var.global/house_name_18%
+var "gui_huuid_9" set %var.global/house_uuid_18%
+var "gui_howner_9" set %var.global/house_owner_18%
+var "gui_hplrs_9" set %var.global/house_plrs_18%
+}
+if or (globalvar house_plrs_18 > 0, globalvar house_plrs_18 < 0) {
+var gui_stock_9 set %var.global/house_plrs_18%
+var gui_stock_9 &= 255
+var gui_stock_9_3M set %var.global/house_plrs_18%
+var gui_stock_9_3M >>= 8
+var gui_stock_9_3M &= 255
+var gui_stock_9_6M set %var.global/house_plrs_18%
+var gui_stock_9_6M >>= 16
+var gui_stock_9_6M &= 255
+var gui_stock_9_9M set %var.global/house_plrs_18%
+var gui_stock_9_9M >>= 24
+var gui_stock_9_9M &= 255
+var gui_stock_9_12M set %var.global/house_plrs_18%
+var gui_stock_9_12M >>= 32
+var gui_stock_9_12M &= 255
+var gui_stock_9_15M set %var.global/house_plrs_18%
+var gui_stock_9_15M >>= 40
+var gui_stock_9_15M &= 255
+var gui_stock_9_18M set %var.global/house_plrs_18%
+var gui_stock_9_18M >>= 48
+var gui_stock_9_18M &= 255
+var gui_stock_9_21M set %var.global/house_plrs_18%
+var gui_stock_9_21M >>= 56
+var gui_stock_9_21M &= 255
+}
+
+displayMenu "Stocks"

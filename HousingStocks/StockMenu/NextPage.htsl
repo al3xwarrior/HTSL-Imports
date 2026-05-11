@@ -1,0 +1,21 @@
+
+closeMenu
+
+pause 1
+
+if (var stock_page == 1) {
+    sound "Click" 0.7 1 "invokers_location"
+    function "OpenStockMenu2" false
+    exit
+}
+if (var stock_page == 2) {
+    sound "Click" 0.7 1 "invokers_location"
+    function "OpenStockMenu3" false
+    exit
+}
+if (var stock_page == 3) {
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    chat "&cYou are already on the last page of the stock menu!"
+    function "OpenStockMenu3" false
+    exit
+}

@@ -1,0 +1,30 @@
+
+if (var stock_uuid_1 == "" "") {
+    chat "&cYou don't have any stocks to sell in this slot!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+closeMenu
+
+sound "Level Up" 0.7 2.0 "invokers_location"
+
+var money inc %var.player/stock_sprice_1%
+
+if () {
+    globalvar "sellbc_plr" set %player.name%
+    globalvar "sellbc_stock" set %var.player/stock_name_1%
+    globalvar "sellbc_copies" set %var.player/stock_copies_1%
+    globalvar "sellbc_price" set %var.player/stock_sprice_1%
+    globalvar "sellbc_profit" set %var.player/stock_profit_1%
+    function "SellStockBC" true
+}
+
+var stock_uuid_1 unset
+var stock_owner_1 unset
+var stock_name_1 unset
+var stock_copies_1 unset
+var stock_price_1 unset
+var stock_cprice_1 unset
+var stock_sprice_1 unset
+var stock_perc_1 unset

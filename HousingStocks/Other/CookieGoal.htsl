@@ -1,0 +1,4 @@
+if (placeholder %house.cookies% >= %var.global/cookiegoal 0%) {
+    globalvar cookiegoal inc 30
+    function "CookieGoalBC" true
+}

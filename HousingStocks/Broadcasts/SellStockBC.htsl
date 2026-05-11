@@ -1,0 +1,7 @@
+// globalvar "sellbc_plr" set %player.name%
+// globalvar "sellbc_stock" set %var.player/stock_name_1%
+// globalvar "sellbc_copies" set %var.player/stock_copies_1%
+// globalvar "sellbc_price" set %var.player/stock_sprice_1%
+// globalvar "sellbc_profit" set %var.player/stock_profit_1%
+
+chat "&7[&4&lSELL&7] &6%var.global/sellbc_plr% &csold &6%var.global/sellbc_copies% &cof &6%var.global/sellbc_stock% &cfor &2$%var.global/sellbc_price%&c! &7($%var.global/sellbc_profit% made)"

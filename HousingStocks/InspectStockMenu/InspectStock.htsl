@@ -1,0 +1,28 @@
+
+// Triggered when clicking on a stock icon in the stock menu
+
+if (var gui_huuid_1 == "" "") {
+    chat "&cError: No stock found in this slot!"
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+var stockcopies set 0
+var stock_pur_price set 0
+
+if () {
+var "i_stock_name" set %var.player/gui_hname_1%
+var "i_stock_uuid" set %var.player/gui_huuid_1%
+var "i_stock_owner" set %var.player/gui_howner_1%
+var "i_stock_plrs" set %var.player/gui_hplrs_1%
+var "i_stock_price" set %var.player/gui_stock_1%
+var "i_stock_3M" set %var.player/gui_stock_1_3M%
+var "i_stock_6M" set %var.player/gui_stock_1_6M%
+var "i_stock_9M" set %var.player/gui_stock_1_9M%
+var "i_stock_12M" set %var.player/gui_stock_1_12M%
+var "i_stock_15M" set %var.player/gui_stock_1_15M%
+var "i_stock_18M" set %var.player/gui_stock_1_18M%
+var "i_stock_21M" set %var.player/gui_stock_1_21M%
+}
+
+displayMenu "Inspect Stock"

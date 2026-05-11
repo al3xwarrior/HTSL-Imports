@@ -1,0 +1,3 @@
+// Networth
+var networth set %var.player/money 0%
+var networth inc %var.player/portfolio_value 0%

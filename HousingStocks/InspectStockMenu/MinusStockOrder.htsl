@@ -1,0 +1,11 @@
+
+var stockcopies dec 1
+if (var stockcopies < 0) {
+    var stockcopies set 0
+}
+var stock_pur_price set %var.player/i_stock_price%
+var stock_pur_price mult %var.player/stockcopies%
+
+sound "Click" 0.7 0.5 "invokers_location"
+
+displayMenu "Inspect Stock"

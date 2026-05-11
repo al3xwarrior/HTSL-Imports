@@ -1,0 +1,169 @@
+if (var stock_uuid_1 == "" "") {
+    var stock_sprice_1 unset
+    var stock_perc_1 unset
+    var stock_profit_1 unset
+} else {
+    function "GetStockSlot1Price" false
+    var stock_cprice_1 &= 255
+    var stock_sprice_1 set %var.player/stock_cprice_1%
+    var stock_sprice_1 mult %var.player/stock_copies_1%
+    var stock_perc_1 set "%var.player/stock_cprice_1%D"
+    var stock_perc_1 mult "%var.player/stock_copies_1%D"
+    var stock_perc_1 dec "%var.player/stock_price_1%D"
+    var stock_perc_1 div "%var.player/stock_price_1%D"
+    var stock_perc_1 mult 100D
+    var stock_profit_1 set %var.player/stock_sprice_1 0%
+    var stock_profit_1 dec %var.player/stock_price_1 0%
+}
+// Colors and profit calc
+if (var stock_sprice_1 < %var.player/stock_price_1%) {
+    var stock_color_1 set "&4"
+} else {
+    var stock_color_1 set "&2"
+}
+
+if (var stock_uuid_2 == "" "") {
+    var stock_sprice_2 unset
+    var stock_perc_2 unset
+    var stock_profit_2 unset
+} else {
+    function "GetStockSlot2Price" false
+    var stock_cprice_2 &= 255
+    var stock_sprice_2 set %var.player/stock_cprice_2%
+    var stock_sprice_2 mult %var.player/stock_copies_2%
+    var stock_perc_2 set "%var.player/stock_cprice_2%D"
+    var stock_perc_2 mult "%var.player/stock_copies_2%D"
+    var stock_perc_2 dec "%var.player/stock_price_2%D"
+    var stock_perc_2 div "%var.player/stock_price_2%D"
+    var stock_perc_2 mult 100D
+    var stock_profit_2 set %var.player/stock_sprice_2 0%
+    var stock_profit_2 dec %var.player/stock_price_2 0%
+}
+if (var stock_sprice_2 < %var.player/stock_price_2%) {
+    var stock_color_2 set "&4"
+} else {
+    var stock_color_2 set "&2"
+}
+
+if (var stock_uuid_3 == "" "") {
+    var stock_sprice_3 unset
+    var stock_perc_3 unset
+    var stock_profit_3 unset
+} else {
+    function "GetStockSlot3Price" false
+    var stock_cprice_3 &= 255
+    var stock_sprice_3 set %var.player/stock_cprice_3%
+    var stock_sprice_3 mult %var.player/stock_copies_3%
+    var stock_perc_3 set "%var.player/stock_cprice_3%D"
+    var stock_perc_3 mult "%var.player/stock_copies_3%D"
+    var stock_perc_3 dec "%var.player/stock_price_3%D"
+    var stock_perc_3 div "%var.player/stock_price_3%D"
+    var stock_perc_3 mult 100D
+    var stock_profit_3 set %var.player/stock_sprice_3 0%
+    var stock_profit_3 dec %var.player/stock_price_3 0%
+}
+if (var stock_sprice_3 < %var.player/stock_price_3%) {
+    var stock_color_3 set "&4"
+} else {
+    var stock_color_3 set "&2"
+}
+
+if (var stock_uuid_4 == "" "") {
+    var stock_sprice_4 unset
+    var stock_perc_4 unset
+    var stock_profit_4 unset
+} else {
+    function "GetStockSlot4Price" false
+    var stock_cprice_4 &= 255
+    var stock_sprice_4 set %var.player/stock_cprice_4%
+    var stock_sprice_4 mult %var.player/stock_copies_4%
+    var stock_perc_4 set "%var.player/stock_cprice_4%D"
+    var stock_perc_4 mult "%var.player/stock_copies_4%D"
+    var stock_perc_4 dec "%var.player/stock_price_4%D"
+    var stock_perc_4 div "%var.player/stock_price_4%D"
+    var stock_perc_4 mult 100D
+    var stock_profit_4 set %var.player/stock_sprice_4 0%
+    var stock_profit_4 dec %var.player/stock_price_4 0%
+}
+if (var stock_sprice_4 < %var.player/stock_price_4%) {
+    var stock_color_4 set "&4"
+} else {
+    var stock_color_4 set "&2"
+}
+
+if (var stock_uuid_5 == "" "") {
+    var stock_sprice_5 unset
+    var stock_perc_5 unset
+    var stock_profit_5 unset
+} else {
+    function "GetStockSlot5Price" false
+    var stock_cprice_5 &= 255
+    var stock_sprice_5 set %var.player/stock_cprice_5%
+    var stock_sprice_5 mult %var.player/stock_copies_5%
+    var stock_perc_5 set "%var.player/stock_cprice_5%D"
+    var stock_perc_5 mult "%var.player/stock_copies_5%D"
+    var stock_perc_5 dec "%var.player/stock_price_5%D"
+    var stock_perc_5 div "%var.player/stock_price_5%D"
+    var stock_perc_5 mult 100D
+    var stock_profit_5 set %var.player/stock_sprice_5 0%
+    var stock_profit_5 dec %var.player/stock_price_5 0%
+}
+if (var stock_sprice_5 < %var.player/stock_price_5%) {
+    var stock_color_5 set "&4"
+} else {
+    var stock_color_5 set "&2"
+}
+
+if (var stock_uuid_6 == "" "") {
+    var stock_sprice_6 unset
+    var stock_perc_6 unset
+    var stock_profit_6 unset
+} else {
+    function "GetStockSlot6Price" false
+    var stock_cprice_6 &= 255
+    var stock_sprice_6 set %var.player/stock_cprice_6%
+    var stock_sprice_6 mult %var.player/stock_copies_6%
+    var stock_perc_6 set "%var.player/stock_cprice_6%D"
+    var stock_perc_6 mult "%var.player/stock_copies_6%D"
+    var stock_perc_6 dec "%var.player/stock_price_6%D"
+    var stock_perc_6 div "%var.player/stock_price_6%D"
+    var stock_perc_6 mult 100D
+    var stock_profit_6 set %var.player/stock_sprice_6 0%
+    var stock_profit_6 dec %var.player/stock_price_6 0%
+}
+if (var stock_sprice_6 < %var.player/stock_price_6%) {
+    var stock_color_6 set "&4"
+} else {
+    var stock_color_6 set "&2"
+}
+
+if (var stock_uuid_7 == "" "") {
+    var stock_sprice_7 unset
+    var stock_perc_7 unset
+    var stock_profit_7 unset
+} else {
+    function "GetStockSlot7Price" false
+    var stock_cprice_7 &= 255
+    var stock_sprice_7 set %var.player/stock_cprice_7%
+    var stock_sprice_7 mult %var.player/stock_copies_7%
+    var stock_perc_7 set "%var.player/stock_cprice_7%D"
+    var stock_perc_7 mult "%var.player/stock_copies_7%D"
+    var stock_perc_7 dec "%var.player/stock_price_7%D"
+    var stock_perc_7 div "%var.player/stock_price_7%D"
+    var stock_perc_7 mult 100D
+    var stock_profit_7 set %var.player/stock_sprice_7 0%
+    var stock_profit_7 dec %var.player/stock_price_7 0%
+}
+if (var stock_sprice_7 < %var.player/stock_price_7%) {
+    var stock_color_7 set "&4"
+} else {
+    var stock_color_7 set "&2"
+}
+
+var portfolio_value set %var.player/stock_sprice_1 0%
+var portfolio_value inc %var.player/stock_sprice_2 0%
+var portfolio_value inc %var.player/stock_sprice_3 0%
+var portfolio_value inc %var.player/stock_sprice_4 0%
+var portfolio_value inc %var.player/stock_sprice_5 0%
+var portfolio_value inc %var.player/stock_sprice_6 0%
+var portfolio_value inc %var.player/stock_sprice_7 0%

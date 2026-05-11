@@ -1,0 +1,101 @@
+if (var stock_uuid_6 == %var.global/house_uuid_1%) {
+    var stock_cprice_6 set %var.global/house_plrs_1%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_2%) {
+    var stock_cprice_6 set %var.global/house_plrs_2%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_3%) {
+    var stock_cprice_6 set %var.global/house_plrs_3%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_4%) {
+    var stock_cprice_6 set %var.global/house_plrs_4%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_5%) {
+    var stock_cprice_6 set %var.global/house_plrs_5%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_6%) {
+    var stock_cprice_6 set %var.global/house_plrs_6%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_7%) {
+    var stock_cprice_6 set %var.global/house_plrs_7%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_8%) {
+    var stock_cprice_6 set %var.global/house_plrs_8%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_9%) {
+    var stock_cprice_6 set %var.global/house_plrs_9%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_10%) {
+    var stock_cprice_6 set %var.global/house_plrs_10%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_11%) {
+    var stock_cprice_6 set %var.global/house_plrs_11%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_12%) {
+    var stock_cprice_6 set %var.global/house_plrs_12%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_13%) {
+    var stock_cprice_6 set %var.global/house_plrs_13%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_14%) {
+    var stock_cprice_6 set %var.global/house_plrs_14%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_15%) {
+    var stock_cprice_6 set %var.global/house_plrs_15%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_16%) {
+    var stock_cprice_6 set %var.global/house_plrs_16%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_17%) {
+    var stock_cprice_6 set %var.global/house_plrs_17%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_18%) {
+    var stock_cprice_6 set %var.global/house_plrs_18%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_19%) {
+    var stock_cprice_6 set %var.global/house_plrs_19%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_20%) {
+    var stock_cprice_6 set %var.global/house_plrs_20%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_21%) {
+    var stock_cprice_6 set %var.global/house_plrs_21%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_22%) {
+    var stock_cprice_6 set %var.global/house_plrs_22%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_23%) {
+    var stock_cprice_6 set %var.global/house_plrs_23%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_24%) {
+    var stock_cprice_6 set %var.global/house_plrs_24%
+    exit
+}
+if (var stock_uuid_6 == %var.global/house_uuid_25%) {
+    var stock_cprice_6 set %var.global/house_plrs_25%
+    exit
+}
+var stock_cprice_6 unset

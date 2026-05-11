@@ -1,0 +1,41 @@
+// house_plrs_X
+
+// take variable and unpack it from 64 bits to 8 8-bit values
+
+// input: house_plrs_1 = variable to unpack
+// output: house_plrs_1_1 to house_plrs_1_8 = unpacked values
+
+// unpack house_plrs_1 into 8 8-bit values
+
+if () {
+var byte0 set %var.global/house_plrs_1%
+var byte0 &= 255
+
+var byte1 set %var.global/house_plrs_1%
+var byte1 >>= 8
+var byte1 &= 255
+
+var byte2 set %var.global/house_plrs_1%
+var byte2 >>= 16
+var byte2 &= 255
+
+var byte3 set %var.global/house_plrs_1%
+var byte3 >>= 24
+var byte3 &= 255
+
+var byte4 set %var.global/house_plrs_1%
+var byte4 >>= 32
+var byte4 &= 255
+
+var byte5 set %var.global/house_plrs_1%
+var byte5 >>= 40
+var byte5 &= 255
+
+var byte6 set %var.global/house_plrs_1%
+var byte6 >>= 48
+var byte6 &= 255
+
+var byte7 set %var.global/house_plrs_1%
+var byte7 >>= 56
+var byte7 &= 255
+}

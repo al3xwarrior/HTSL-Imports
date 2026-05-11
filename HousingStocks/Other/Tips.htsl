@@ -1,0 +1,12 @@
+random {
+    chat "&7[&3&lTIP&7] &7House stock prices are based on &bPlayer Counts&7."
+    chat "&7[&3&lTIP&7] &7psst... at night, the stock prices are usually lower..."
+    chat "&7[&3&lTIP&7] &7Keep an eye on the &bcookie goal&7! It gives everyone a cash boost when reached!"
+    chat "&7[&3&lTIP&7] &7This house uses the &freal Housing API&7, so stock prices are based on the actual player count in the house!"
+    chat "&7[&3&lTIP&7] &7Use the &fitems in your hotbar&7 to interact with the stock market and more!"
+    chat "&7[&3&lTIP&7] &7Stock prices update every &b~3 minutes&7, so check back often!"
+    chat "&7[&3&lTIP&7] &7See an upcoming house? &eInvest&7!"
+    chat "&7[&3&lTIP&7] &7The more stocks you own, the more your portfolio is worth!"
+    chat "&7[&3&lTIP&7] &7Sell your stocks when the price is high to make a profit!"
+    chat "&7[&3&lTIP&7] &7Your &enetworth&7 is the total value of your money and portfolio combined!"
+}

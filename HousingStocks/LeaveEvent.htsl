@@ -1,0 +1,2 @@
+globalvar "leave_name" set %player.name%
+function "LeaveBC" true

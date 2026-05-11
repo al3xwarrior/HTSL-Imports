@@ -1,0 +1,3 @@
+chat "&7[&6&lCOOKIE GOAL&7] &aThe cookie goal has been reached! Everyone gets &2$50&a!"
+sound "Burp" 0.7 1.5 "invokers_location"
+var money inc 50

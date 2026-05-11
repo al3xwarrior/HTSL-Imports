@@ -1,0 +1,8 @@
+
+var stockcopies inc 10
+var stock_pur_price set %var.player/i_stock_price%
+var stock_pur_price mult %var.player/stockcopies%
+
+sound "Click" 0.7 2.0 "invokers_location"
+
+displayMenu "Inspect Stock"

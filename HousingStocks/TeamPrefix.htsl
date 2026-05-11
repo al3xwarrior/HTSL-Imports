@@ -1,0 +1,56 @@
+if (var networth >= 5000) {
+    setTeam "N-5000"
+    exit
+}
+if (var networth >= 3000) {
+    setTeam "N-3000"
+    exit
+}
+if (var networth >= 2750) {
+    setTeam "N-2750"
+    exit
+}
+if (var networth >= 2500) {
+    setTeam "N-2500"
+    exit
+}
+if (var networth >= 2250) {
+    setTeam "N-2250"
+    exit
+}
+if (var networth >= 2000) {
+    setTeam "N-2000"
+    exit
+}
+if (var networth >= 1750) {
+    setTeam "N-1750"
+    exit
+}
+if (var networth >= 1500) {
+    setTeam "N-1500"
+    exit
+}
+if (var networth >= 1250) {
+    setTeam "N-1250"
+    exit
+}
+if (var networth >= 1000) {
+    setTeam "N-1000"
+    exit
+}
+if (var networth >= 750) {
+    setTeam "N-750"
+    exit
+}
+if (var networth >= 500) {
+    setTeam "N-500"
+    exit
+}   
+if (var networth >= 250) {
+    setTeam "N-250"
+    exit
+}
+if (var networth >= 100) {
+    setTeam "N-100"
+    exit
+}
