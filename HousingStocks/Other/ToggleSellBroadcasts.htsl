@@ -1,0 +1,8 @@
+if (var sellbcs = 1 1) {
+    var sellbcs = 0
+    chat "&aSell Broadcasts have been &4disabled&c!"
+} else {
+    var sellbcs = 1
+    chat "&aSell Broadcasts have been &2enabled&a!"
+}
+sound "Orb Pickup" 0.7 1 "invokers_location"

@@ -1,5 +1,5 @@
 
-var stockcopies dec 1
+var stockcopies dec 64
 if (var stockcopies < 0) {
     var stockcopies set 0
 }

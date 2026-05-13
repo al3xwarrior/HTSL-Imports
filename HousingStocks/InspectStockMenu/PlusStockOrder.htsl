@@ -1,5 +1,5 @@
 
-var stockcopies inc 10
+var stockcopies inc 64
 var stock_pur_price set %var.player/i_stock_price%
 var stock_pur_price mult %var.player/stockcopies%
 

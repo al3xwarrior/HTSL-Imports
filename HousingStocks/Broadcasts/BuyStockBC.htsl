@@ -3,4 +3,6 @@
 // globalvar "buybc_copies" set %var.player/stock_copies_1%
 // globalvar "buybc_price" set %var.player/stock_price_1%
 
-chat "&7[&2&lBUY&7] &6%var.global/buybc_plr% &apurchased &6%var.global/buybc_copies% &aof &6%var.global/buybc_stock% &afor &2$%var.global/buybc_price%&a!"
+if (var buybcs = 1 1) {
+    chat "&7[&2&lBUY&7] &6%var.global/buybc_plr% &apurchased &6%var.global/buybc_copies% &aof &6%var.global/buybc_stock% &afor &2$%var.global/buybc_price%&a!"
+}

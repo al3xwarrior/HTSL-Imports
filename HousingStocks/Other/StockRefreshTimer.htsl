@@ -1,0 +1,9 @@
+
+if (globalvar stockrefresh == "&eUpdating..." "&eUpdating...") {
+    exit
+}
+
+globalvar stockrefresh dec 1
+if (globalvar stockrefresh <= 0) {
+    globalvar stockrefresh set "&eUpdating..."
+}
