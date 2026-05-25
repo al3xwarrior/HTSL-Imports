@@ -1,0 +1,62 @@
+if (var money < %var.player/newfruitcost 5%) {
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    chat "&cYou do not have enough money to purchase this!"
+    exit
+}
+
+// Check if full (TODO: update to support more slots)
+if (!var slot7 == 0 0) {
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    chat "&cAll fruit slots are occupied! Pssst, &6merge &cyour fruits to free up some space!"
+    exit
+}
+
+var money dec %var.player/newfruitcost 5%
+
+var newfruitcost mult 120
+var newfruitcost div 100
+
+sound "Level Up" 0.7 1.0 "invokers_location"
+
+if (var slot1 == 0 0) {
+    var slot1 set "&c&lAPPLE"
+    var slot1tier set "&7&oTier 1"
+    chat "&aYou have purchased a new fruit for slot 1!"
+    exit
+}
+if (var slot2 == 0 0) {
+    var slot2 set "&c&lAPPLE"
+    var slot2tier set "&7&oTier 1"
+    chat "&aYou have purchased a new fruit for slot 2!"
+    exit
+}
+if (var slot3 == 0 0) {
+    var slot3 set "&c&lAPPLE"
+    var slot3tier set "&7&oTier 1"
+    chat "&aYou have purchased a new fruit for slot 3!"
+    exit
+}
+if (var slot4 == 0 0) {
+    var slot4 set "&c&lAPPLE"
+    var slot4tier set "&7&oTier 1"
+    chat "&aYou have purchased a new fruit for slot 4!"
+    exit
+}
+if (var slot5 == 0 0) {
+    var slot5 set "&c&lAPPLE"
+    var slot5tier set "&7&oTier 1"
+    chat "&aYou have purchased a new fruit for slot 5!"
+    exit
+}
+if (var slot6 == 0 0) {
+    var slot6 set "&c&lAPPLE"
+    var slot6tier set "&7&oTier 1"
+    chat "&aYou have purchased a new fruit for slot 6!"
+    exit
+}
+if (var slot7 == 0 0) {
+    var slot7 set "&c&lAPPLE"
+    var slot7tier set "&7&oTier 1"
+    chat "&aYou have purchased a new fruit for slot 7!"
+    exit
+}

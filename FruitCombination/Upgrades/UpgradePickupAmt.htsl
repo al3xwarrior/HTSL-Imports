@@ -1,0 +1,14 @@
+
+if (var money < %var.player/pickupamtcost 15%) {
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    chat "&cYou do not have enough money to purchase this!"
+    exit
+}
+
+var money dec %var.player/pickupamtcost 0%
+var pickupamt inc 1
+var pickupamtcost mult 16
+var pickupamtcost div 10
+
+sound "Level Up" 0.7 1.0 "invokers_location"
+title "&a&oUpgrade Purchased!" "&7Your pickup amount is now &a%var.player/pickupamt 0%&7!" 0 1 1

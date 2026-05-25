@@ -1,0 +1,19 @@
+if (var playerjoined == 0 0) {
+    var playerjoined set 1
+    var money set 0
+    var fruit set 0
+    var fruitstopickup set 0
+    var fruitformoney set 0
+    var moneytocollect set 0
+
+    var pickupamt set 1
+    var conversionamt set 1
+    var conversioncd set 0
+    var conversioncdmax set 5
+
+    // Upgrade Costs
+    var newfruitcost set 5
+    var pickupamtcost set 15
+    var conversioncost set 100
+    var conversionamtcost set 100
+}

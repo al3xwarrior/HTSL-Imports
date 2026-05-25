@@ -1,0 +1,19 @@
+// fruitformoney
+
+if (inRegion "FruitDeposit") {
+
+} else {
+    exit
+}
+
+// If none to deposit
+if (var fruit <= 0 0) {
+    title "&c&oNo Fruit to Deposit!" "&7Go collect some fruit first!" 0 1 1
+    exit
+}
+
+var fruitformoney inc %var.player/fruit 0%
+sound "Item Break" 0.7 1.8 "invokers_location"
+title "&a&oFruit Deposited!" "&7You have &a%var.player/fruitformoney 0% fruit &7in the machine! &7&o(+%var.player/fruit 0%)" 0 1 1
+
+var fruit set 0

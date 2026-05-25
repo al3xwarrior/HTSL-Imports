@@ -1,0 +1,25 @@
+// triggered automatically
+
+// cooldown
+if (var conversioncd <= 0) {
+    
+} else {
+    var conversioncd dec 1
+    exit
+}
+
+if (var fruitformoney <= 0) {
+    exit
+}
+
+var conversioncd set %var.player/conversioncdmax 0%
+
+if (var conversionamt > %var.player/fruitformoney 0%) {
+    var moneytocollect inc %var.player/fruitformoney 1%
+    var fruitformoney set 0
+} else {
+    var moneytocollect inc %var.player/conversionamt 1%
+    var fruitformoney dec %var.player/conversionamt 1%
+}
+
+// TODO: play sound at hardcoded location

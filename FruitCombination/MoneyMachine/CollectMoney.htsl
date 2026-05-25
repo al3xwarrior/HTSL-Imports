@@ -1,0 +1,20 @@
+// moneytocollect
+
+if (inRegion "MoneyCollect") {
+
+} else {
+    exit
+}
+
+// If none to collect
+if (var moneytocollect <= 0 0) {
+    title "&c&oNo Money to Collect!" "&7Go deposit some fruit first!" 0 1 1
+    exit
+}
+
+var money inc %var.player/moneytocollect 0%
+
+sound "Item Pickup" 0.7 1.5 "invokers_location"
+title "&a&oMoney Collected!" "&7You have &a%var.player/money 0% money&7! &7&o(+%var.player/moneytocollect 0%)" 0 1 1
+
+var moneytocollect set 0

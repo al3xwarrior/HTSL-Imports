@@ -1,4 +1,4 @@
-var newfruitcost set 0
+var newfruitcost set 5
 var money set 1000
 
 if () {
