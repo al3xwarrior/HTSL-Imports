@@ -1,0 +1,16 @@
+if (var money <= %var.player/newfruitcost 0%) {
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    chat "&cYou do not have enough money to purchase this!"
+}
+
+var money dec %var.player/newfruitcost 0%
+
+var newfruitcost mult 125
+var newfruitcost div 100
+
+if (var slot1 == 0 0) {
+    var slot1 set "&c&lAPPLE"
+    var slot1tier set "&7Tier 1"
+    sound "Level Up" 0.7 1.0 "invokers_location"
+    chat "&aYou have purchased a new fruit for slot 1!"
+}

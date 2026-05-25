@@ -1,0 +1,6 @@
+globalvar killerName set %player.name%
+globalvar killEffect set %var.player/killEffect None%
+
+if (globalvar killEffect == "Lightning") {
+    function "KillEffectLightningSound" false
+}

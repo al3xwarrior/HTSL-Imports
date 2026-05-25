@@ -1,0 +1,14 @@
+globalvar victimName set %player.name%
+globalvar victimX set %player.pos.x%
+globalvar victimY set %player.pos.y%
+globalvar victimY inc 1.0
+globalvar victimZ set %player.pos.z%
+pause 1
+
+if (globalvar killEffect == "None") {
+    exit
+}
+
+if (globalvar killEffect == "Lightning") {
+    function "KillEffectLightning"
+}

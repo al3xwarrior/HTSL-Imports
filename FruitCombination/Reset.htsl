@@ -1,0 +1,20 @@
+var newfruitcost set 0
+var money set 1000
+
+if () {
+    var slot1 unset
+    var slot1tier unset
+    var slot2 unset
+    var slot2tier unset
+    var slot3 unset
+    var slot3tier unset
+    var slot4 unset
+    var slot4tier unset
+    var slot5 unset
+    var slot5tier unset
+    var slot6 unset
+    var slot6tier unset
+    var slot7 unset
+    var slot7tier unset
+    // TODO: add more slots
+}

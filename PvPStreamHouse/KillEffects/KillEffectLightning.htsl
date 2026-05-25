@@ -1,0 +1,69 @@
+var victimX set %var.global/victimX%
+var victimY set %var.global/victimY%
+var victimY inc 4.0
+var victimZ set %var.global/victimZ%
+
+if () {
+    dropItem "{count:1,id:\"minecraft:ice\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 5 100 false false
+    pause 1
+    var victimY inc -0.4
+    dropItem "{count:1,id:\"minecraft:light_blue_stained_glass_pane\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 5 100 false false
+    pause 1
+    var victimY inc -0.4
+    dropItem "{count:1,id:\"minecraft:ice\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 5 100 false false
+    pause 1
+    var victimY inc -0.4
+    dropItem "{count:1,id:\"minecraft:light_blue_stained_glass_pane\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 5 100 false false
+    pause 1
+    var victimY inc -0.4
+    dropItem "{count:1,id:\"minecraft:ice\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 5 100 false false
+}
+if () {
+    pause 1
+    var victimY inc -0.4
+    dropItem "{count:1,id:\"minecraft:light_blue_stained_glass_pane\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 5 100 false false
+    pause 1
+    var victimY inc -0.4
+    dropItem "{count:1,id:\"minecraft:ice\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 5 100 false false
+    pause 1
+    var victimY inc -0.4
+    dropItem "{count:1,id:\"minecraft:light_blue_stained_glass_pane\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 5 100 false false
+    pause 1
+    var victimY inc -0.4
+    dropItem "{count:1,id:\"minecraft:ice\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 5 100 false false
+    pause 1
+    var victimY inc -0.4
+    dropItem "{count:1,id:\"minecraft:light_blue_stained_glass_pane\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 5 100 false false
+}
+if () {
+    pause 1
+    var victimY inc -0.4
+    dropItem "{count:1,id:\"minecraft:light_blue_stained_glass_pane\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 5 100 false false
+    pause 1
+    var victimY inc -0.4
+    dropItem "{count:1,id:\"minecraft:ice\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 5 100 false false
+    pause 1
+    var victimY inc -0.4
+    dropItem "{count:1,id:\"minecraft:light_blue_stained_glass_pane\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 5 100 false false
+    pause 1
+    var victimY inc -0.4
+    dropItem "{count:1,id:\"minecraft:ice\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 5 100 false false
+    pause 1
+    var victimY inc -0.4
+    dropItem "{count:1,id:\"minecraft:light_blue_stained_glass_pane\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 5 100 false false
+}
+pause 3
+if () {
+    dropItem "{count:1,id:\"minecraft:ice\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 15 100 false false
+    dropItem "{count:1,id:\"minecraft:light_blue_stained_glass_pane\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 15 100 false false
+    dropItem "{count:1,id:\"minecraft:ice\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 15 100 false false
+    dropItem "{count:1,id:\"minecraft:light_blue_stained_glass_pane\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 15 100 false false
+    dropItem "{count:1,id:\"minecraft:ice\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 15 100 false false
+}
+if () {
+    dropItem "{count:1,id:\"minecraft:light_blue_stained_glass_pane\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 15 100 false false
+    dropItem "{count:1,id:\"minecraft:ice\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 15 100 false false
+    dropItem "{count:1,id:\"minecraft:light_blue_stained_glass_pane\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 15 100 false false
+    dropItem "{count:1,id:\"minecraft:ice\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 15 100 false false
+    dropItem "{count:1,id:\"minecraft:light_blue_stained_glass_pane\"}" "custom_coordinates" "%var.player/victimX% %var.player/victimY% %var.player/victimZ%" true true 15 100 false false
+}
