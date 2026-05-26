@@ -6,8 +6,8 @@ if (var playerjoined == 0 0) {
     var fruitformoney set 0
     var moneytocollect set 0
 
-    var pickupamt set 1
-    var conversionamt set 1
+    var pickupamt set 4
+    var conversionamt set 2
     var conversioncd set 0
     var conversioncdmax set 5
 
@@ -15,7 +15,7 @@ if (var playerjoined == 0 0) {
     var newfruitcost set 5
     var pickupamtcost set 15
     var conversioncost set 100
-    var conversionamtc set 100
+    var conversionamtc set 75
 
     // Starter Fruit
     var slot1 set "&c&lAPPLE"
