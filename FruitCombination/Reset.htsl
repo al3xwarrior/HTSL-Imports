@@ -1,5 +1,8 @@
 var newfruitcost set 5
 var money set 1000
+var rebirths set 0
+var moneymult set 1
+var rebirthcost set 100000
 
 if () {
     var slot1 unset

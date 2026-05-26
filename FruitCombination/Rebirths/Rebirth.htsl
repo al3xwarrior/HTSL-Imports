@@ -1,0 +1,55 @@
+if (var money < %var.player/rebirthcost 10000%) {
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    chat "&cYou need &6%var.player/rebirthcost 10000% money &cto rebirth!"
+    exit
+}
+
+var rebirths inc 1
+var moneymult set %var.player/rebirths 1%
+var moneymult mult 2
+
+globalvar lastrebirther set %player.name%
+globalvar lastrebirth set %var.player/rebirths 1%
+
+if () {
+var money set 0
+var fruit set 0
+var fruitstopickup set 0
+var fruitformoney set 0
+var moneytocollect set 0
+var moneycollectactual unset
+
+var pickupamt set 4
+var conversionamt set 2
+var conversioncd set 0
+var conversioncdmax set 5
+
+var newfruitcost set 5
+var pickupamtcost set 15
+var conversioncost set 100
+var conversionamtc set 30
+var rebirthcost set 10000
+var rebirthcost mult %var.player/moneymult%
+}
+
+if () {
+var slot1 set "&c&lAPPLE"
+var slot1tier set "&7&oTier 1"
+var slot2 unset
+var slot2tier unset
+var slot3 unset
+var slot3tier unset
+var slot4 unset
+var slot4tier unset
+var slot5 unset
+var slot5tier unset
+var slot6 unset
+var slot6tier unset
+var slot7 unset
+var slot7tier unset
+}
+
+sound "Level Up" 1.0 1.0 "invokers_location"
+title "&d&oRebirthed!" "&7Money multiplier: &a%var.player/moneymult 2%x" 0 2 1
+
+function "RebirthBroadcast" true

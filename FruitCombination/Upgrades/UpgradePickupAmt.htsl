@@ -6,7 +6,8 @@ if (var money < %var.player/pickupamtcost 15%) {
 }
 
 var money dec %var.player/pickupamtcost 0%
-var pickupamt inc 1
+var pickupamt mult 15
+var pickupamt div 10
 var pickupamtcost mult 16
 var pickupamtcost div 10
 

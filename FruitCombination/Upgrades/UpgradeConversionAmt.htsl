@@ -6,7 +6,8 @@ if (var money < %var.player/conversionamtc 100%) {
 }
 
 var money dec %var.player/conversionamtc 0%
-var conversionamt inc 1
+var conversionamt mult 15
+var conversionamt div 10
 var conversionamtc mult 2
 
 sound "Level Up" 0.7 1.0 "invokers_location"

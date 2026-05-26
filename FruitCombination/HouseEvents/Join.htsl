@@ -5,6 +5,8 @@ if (var playerjoined == 0 0) {
     var fruitstopickup set 0
     var fruitformoney set 0
     var moneytocollect set 0
+    var rebirths set 0
+    var moneymult set 1
 
     var pickupamt set 4
     var conversionamt set 2
@@ -15,7 +17,8 @@ if (var playerjoined == 0 0) {
     var newfruitcost set 5
     var pickupamtcost set 15
     var conversioncost set 100
-    var conversionamtc set 75
+    var conversionamtc set 30
+    var rebirthcost set 10000
 
     // Starter Fruit
     var slot1 set "&c&lAPPLE"

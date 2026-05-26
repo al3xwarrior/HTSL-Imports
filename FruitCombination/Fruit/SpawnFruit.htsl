@@ -5,84 +5,111 @@ var "strawberryamt" set 8
 var "pineappleamt" set 16
 var "watermelonamt" set 32
 
+var "fruitpersec" set 0
+
 if (var slot1 == "&c&lAPPLE") {
     var "fruitstopickup" inc %var.player/appleamt%
+    var "fruitpersec" inc %var.player/appleamt%
 }
 if (var slot1 == "&e&lBANANA") {
     var "fruitstopickup" inc %var.player/bananaamt%
+    var "fruitpersec" inc %var.player/bananaamt%
 }
 if (var slot1 == "&6&lORANGE") {
     var "fruitstopickup" inc %var.player/orangecamt%
+    var "fruitpersec" inc %var.player/orangecamt%
 }
 if (var slot1 == "&4&lSTRAWBERRY") {
     var "fruitstopickup" inc %var.player/strawberryamt%
+    var "fruitpersec" inc %var.player/strawberryamt%
 }
 if (var slot1 == "&6&lPINEAPPLE") {
     var "fruitstopickup" inc %var.player/pineappleamt%
+    var "fruitpersec" inc %var.player/pineappleamt%
 }
 if (var slot1 == "&2&lWATERMELON") {
     var "fruitstopickup" inc %var.player/watermelonamt%
+    var "fruitpersec" inc %var.player/watermelonamt%
 }
 
 if (var slot2 == "&c&lAPPLE") {
-    var "fruitstopickup" inc 1
+    var "fruitstopickup" inc %var.player/appleamt%
+    var "fruitpersec" inc %var.player/appleamt%
 }
 if (var slot2 == "&e&lBANANA") {
     var "fruitstopickup" inc %var.player/bananaamt%
+    var "fruitpersec" inc %var.player/bananaamt%
 }
 if (var slot2 == "&6&lORANGE") {
     var "fruitstopickup" inc %var.player/orangecamt%
+    var "fruitpersec" inc %var.player/orangecamt%
 }
 if (var slot2 == "&4&lSTRAWBERRY") {
     var "fruitstopickup" inc %var.player/strawberryamt%
+    var "fruitpersec" inc %var.player/strawberryamt%
 }
 if (var slot2 == "&6&lPINEAPPLE") {
     var "fruitstopickup" inc %var.player/pineappleamt%
+    var "fruitpersec" inc %var.player/pineappleamt%
 }
 if (var slot2 == "&2&lWATERMELON") {
     var "fruitstopickup" inc %var.player/watermelonamt%
+    var "fruitpersec" inc %var.player/watermelonamt%
 }
 
 if (var slot3 == "&c&lAPPLE") {
-    var "fruitstopickup" inc 1
+    var "fruitstopickup" inc %var.player/appleamt%
+    var "fruitpersec" inc %var.player/appleamt%
 }
 if (var slot3 == "&e&lBANANA") {
     var "fruitstopickup" inc %var.player/bananaamt%
+    var "fruitpersec" inc %var.player/bananaamt%
 }
 if (var slot3 == "&6&lORANGE") {
     var "fruitstopickup" inc %var.player/orangecamt%
+    var "fruitpersec" inc %var.player/orangecamt%
 }
 if (var slot3 == "&4&lSTRAWBERRY") {
     var "fruitstopickup" inc %var.player/strawberryamt%
+    var "fruitpersec" inc %var.player/strawberryamt%
 }
 if (var slot3 == "&6&lPINEAPPLE") {
     var "fruitstopickup" inc %var.player/pineappleamt%
+    var "fruitpersec" inc %var.player/pineappleamt%
 }
 if (var slot3 == "&2&lWATERMELON") {
     var "fruitstopickup" inc %var.player/watermelonamt%
+    var "fruitpersec" inc %var.player/watermelonamt%
 }
 
 if (var slot4 == "&c&lAPPLE") {
-    var "fruitstopickup" inc 1
+    var "fruitstopickup" inc %var.player/appleamt%
+    var "fruitpersec" inc %var.player/appleamt%
 }
 if (var slot4 == "&e&lBANANA") {
     var "fruitstopickup" inc %var.player/bananaamt%
+    var "fruitpersec" inc %var.player/bananaamt%
 }
 if (var slot4 == "&6&lORANGE") {
     var "fruitstopickup" inc %var.player/orangecamt%
+    var "fruitpersec" inc %var.player/orangecamt%
 }
 if (var slot4 == "&4&lSTRAWBERRY") {
     var "fruitstopickup" inc %var.player/strawberryamt%
+    var "fruitpersec" inc %var.player/strawberryamt%
 }
 if (var slot4 == "&6&lPINEAPPLE") {
     var "fruitstopickup" inc %var.player/pineappleamt%
+    var "fruitpersec" inc %var.player/pineappleamt%
 }
 if (var slot4 == "&2&lWATERMELON") {
     var "fruitstopickup" inc %var.player/watermelonamt%
+    var "fruitpersec" inc %var.player/watermelonamt%
 }
 
 if (var slot5 == "&c&lAPPLE") {
-    var "fruitstopickup" inc 1
+    var "fruitstopickup" inc %var.player/appleamt%
+    var "fruitpersec" inc %var.player/appleamt%
 }
 
 function "SpawnFruit2" false
@@ -90,54 +117,71 @@ goto function "SpawnFruit2"
 
 if (var slot5 == "&e&lBANANA") {
     var "fruitstopickup" inc %var.player/bananaamt%
+    var "fruitpersec" inc %var.player/bananaamt%
 }
 if (var slot5 == "&6&lORANGE") {
     var "fruitstopickup" inc %var.player/orangecamt%
+    var "fruitpersec" inc %var.player/orangecamt%
 }
 if (var slot5 == "&4&lSTRAWBERRY") {
     var "fruitstopickup" inc %var.player/strawberryamt%
+    var "fruitpersec" inc %var.player/strawberryamt%
 }
 if (var slot5 == "&6&lPINEAPPLE") {
     var "fruitstopickup" inc %var.player/pineappleamt%
+    var "fruitpersec" inc %var.player/pineappleamt%
 }
 if (var slot5 == "&2&lWATERMELON") {
     var "fruitstopickup" inc %var.player/watermelonamt%
+    var "fruitpersec" inc %var.player/watermelonamt%
 }
 
 if (var slot6 == "&c&lAPPLE") {
-    var "fruitstopickup" inc 1
+    var "fruitstopickup" inc %var.player/appleamt%
+    var "fruitpersec" inc %var.player/appleamt%
 }
 if (var slot6 == "&e&lBANANA") {
     var "fruitstopickup" inc %var.player/bananaamt%
+    var "fruitpersec" inc %var.player/bananaamt%
 }
 if (var slot6 == "&6&lORANGE") {
     var "fruitstopickup" inc %var.player/orangecamt%
+    var "fruitpersec" inc %var.player/orangecamt%
 }
 if (var slot6 == "&4&lSTRAWBERRY") {
     var "fruitstopickup" inc %var.player/strawberryamt%
+    var "fruitpersec" inc %var.player/strawberryamt%
 }
 if (var slot6 == "&6&lPINEAPPLE") {
     var "fruitstopickup" inc %var.player/pineappleamt%
+    var "fruitpersec" inc %var.player/pineappleamt%
 }
 if (var slot6 == "&2&lWATERMELON") {
     var "fruitstopickup" inc %var.player/watermelonamt%
+    var "fruitpersec" inc %var.player/watermelonamt%
 }
 
 if (var slot7 == "&c&lAPPLE") {
-    var "fruitstopickup" inc 1
+    var "fruitstopickup" inc %var.player/appleamt%
+    var "fruitpersec" inc %var.player/appleamt%
 }
 if (var slot7 == "&e&lBANANA") {
     var "fruitstopickup" inc %var.player/bananaamt%
+    var "fruitpersec" inc %var.player/bananaamt%
 }
 if (var slot7 == "&6&lORANGE") {
     var "fruitstopickup" inc %var.player/orangecamt%
+    var "fruitpersec" inc %var.player/orangecamt%
 }
 if (var slot7 == "&4&lSTRAWBERRY") {
     var "fruitstopickup" inc %var.player/strawberryamt%
+    var "fruitpersec" inc %var.player/strawberryamt%
 }
 if (var slot7 == "&6&lPINEAPPLE") {
     var "fruitstopickup" inc %var.player/pineappleamt%
+    var "fruitpersec" inc %var.player/pineappleamt%
 }
 if (var slot7 == "&2&lWATERMELON") {
     var "fruitstopickup" inc %var.player/watermelonamt%
+    var "fruitpersec" inc %var.player/watermelonamt%
 }
