@@ -15,5 +15,9 @@ if (var playerjoined == 0 0) {
     var newfruitcost set 5
     var pickupamtcost set 15
     var conversioncost set 100
-    var conversionamtcost set 100
+    var conversionamtc set 100
+
+    // Starter Fruit
+    var slot1 set "&c&lAPPLE"
+    var slot1tier set "&7&oTier 1"
 }

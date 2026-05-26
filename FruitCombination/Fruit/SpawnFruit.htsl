@@ -77,6 +77,10 @@ if (var slot4 == "&2&lWATERMELON") {
 if (var slot5 == "&c&lAPPLE") {
     var "fruitstopickup" inc 1
 }
+
+function "SpawnFruit2" false
+goto function "SpawnFruit2"
+
 if (var slot5 == "&e&lBANANA") {
     var "fruitstopickup" inc 5
 }

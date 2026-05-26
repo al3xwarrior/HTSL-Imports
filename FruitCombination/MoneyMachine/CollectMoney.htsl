@@ -1,6 +1,6 @@
 // moneytocollect
 
-if (inRegion "MoneyCollect") {
+if (inRegion "CollectMoney") {
 
 } else {
     exit

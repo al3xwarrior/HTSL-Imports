@@ -185,6 +185,9 @@ if (var slot5 == "&6&lPINEAPPLE", var slot6 == "&6&lPINEAPPLE") {
     var "anymerges" set 1
 }
 
+function "Merge2" false
+goto function "Merge2"
+
 // Slot 6
 if (var slot6 == "&c&lAPPLE", var slot7 == "&c&lAPPLE") {
     var slot6 set "&e&lBANANA"

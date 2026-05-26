@@ -22,4 +22,4 @@ if (var conversionamt > %var.player/fruitformoney 0%) {
     var fruitformoney dec %var.player/conversionamt 1%
 }
 
-// TODO: play sound at hardcoded location
+sound "Anvil Use" 1.0 1.0 "custom_location" "-14.5 104.5 -22.5"
