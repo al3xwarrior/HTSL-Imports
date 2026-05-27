@@ -12,16 +12,16 @@ if (var moneytocollect <= 0 0) {
     exit
 }
 
-var moneycollectactual set %var.player/moneytocollect 0%
-var moneycollectactual mult %var.player/moneymult 1%
-var money inc %var.player/moneycollectactual 0%
+var moneycollect set %var.player/moneytocollect 0%
+var moneycollect mult %var.player/moneymult 1%
+var money inc %var.player/moneycollect 0%
 
 sound "Item Pickup" 0.7 1.5 "invokers_location"
 if (var rebirths > 0) {
-    title "&a&oMoney Collected!" "&7You have &a%var.player/money 0% money&7! &7&o(+%var.player/moneycollectactual 0%) &7&o(x%var.player/moneymult 1%)" 0 1 1
+    title "&a&oMoney Collected!" "&7You have &a%var.player/money 0% money&7! &7&o(+%var.player/moneycollect 0%) &7&o(x%var.player/moneymult 1%)" 0 1 1
 } else {
-    title "&a&oMoney Collected!" "&7You have &a%var.player/money 0% money&7! &7&o(+%var.player/moneycollectactual 0%)" 0 1 1
+    title "&a&oMoney Collected!" "&7You have &a%var.player/money 0% money&7! &7&o(+%var.player/moneycollect 0%)" 0 1 1
 }
 
 var moneytocollect set 0
-var moneycollectactual unset
+var moneycollect unset

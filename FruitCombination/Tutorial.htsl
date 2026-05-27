@@ -1,0 +1,32 @@
+applyPotion "Invisibility" 10 1 true
+tp "custom_coordinates" "2.5 107 -15.5 34.5 29.2"
+sound "Enderman Teleport" 0.7 1.0 "invokers_location"
+chat "&r"
+chat "&b&lTutorial"
+chat "&7Stand here to collect &afruit&7!"
+chat "&b"
+pause 66
+
+tp "custom_coordinates" "-7.5 107 -16.5 121.2 26.0"
+sound "Enderman Teleport" 0.7 1.0 "invokers_location"
+chat "&r"
+chat "&b&lTutorial"
+chat "&7Convert collected &afruit &7into &amoney&7!"
+chat "&b"
+pause 66
+
+tp "custom_coordinates" "3.5 107 -22.5 -89.8 29.3"
+sound "Enderman Teleport" 0.7 1.0 "invokers_location"
+chat "&r"
+chat "&b&lTutorial"
+chat "&dRebirth &7for multipliers!"
+chat "&b"
+pause 66
+
+tp "house_spawn"
+
+if (var tutorial == 0 0) {
+    var tutorial set 1
+    var money inc 50
+    chat "&a+$50 for completing the tutorial!"
+}

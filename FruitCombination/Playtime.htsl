@@ -9,6 +9,7 @@ if (var minutes >= 60) {
 }
 
 if (globalvar unix < %date.unix%) {
+    globalvar unix set %date.unix%
     globalvar seconds inc 1
     function "ConversionMachineAnimation" false
 }

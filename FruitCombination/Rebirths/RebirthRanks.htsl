@@ -1,0 +1,40 @@
+if (var rebirths >= 100) {
+    changePlayerGroup "R100" true
+    exit
+}
+if (var rebirths >= 50) {
+    changePlayerGroup "R50" true
+    exit
+}
+if (var rebirths >= 40) {
+    changePlayerGroup "R40" true
+    exit
+}
+if (var rebirths >= 30) {
+    changePlayerGroup "R30" true
+    exit
+}
+if (var rebirths >= 20) {
+    changePlayerGroup "R20" true
+    exit
+}
+if (var rebirths >= 10) {
+    changePlayerGroup "R10" true
+    exit
+}
+if (var rebirths >= 5) {
+    changePlayerGroup "R5" true
+    exit
+}
+if (var rebirths >= 3) {
+    changePlayerGroup "R3" true
+    exit
+}
+if (var rebirths >= 2) {
+    changePlayerGroup "R2" true
+    exit
+}
+if (var rebirths >= 1) {
+    changePlayerGroup "R1" true
+    exit
+}
