@@ -1,0 +1,32 @@
+// rare crate reward table
+
+var cratereward set %random.int/1 5%
+sound "Click" 0.8 1.5 "invokers_location"
+
+if (var cratereward == 1 0) {
+    var crategain set %random.int/750 2501%
+    var money inc %var.player/crategain 750%
+    title "&9&lRARE CRATE" "&6+$%var.player/crategain 750%" 0 2 1
+    exit
+}
+if (var cratereward == 2 0) {
+    var crategain set %random.int/100 251%
+    var tokens inc %var.player/crategain 100%
+    title "&9&lRARE CRATE" "&e+%var.player/crategain 100% tokens" 0 2 1
+    exit
+}
+if (var cratereward == 3 0) {
+    var xpgain set %random.int/400 901%
+    function "AddXP" false
+    title "&9&lRARE CRATE" "&aXP gained" 0 2 1
+    exit
+}
+if (var cratereward == 4 0) {
+    var tokenboosttime inc 300
+    title "&9&lRARE CRATE" "&e+5m Token Booster" 0 2 1
+    exit
+}
+
+var moneyboosttime inc 300
+title "&9&lRARE CRATE" "&6+5m Money Booster" 0 2 1
+

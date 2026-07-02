@@ -1,0 +1,18 @@
+// upgrades fishing Lure; increases fish quantity
+
+if (var rodlure >= 25 0) {
+    chat "&cLure is maxed."
+    exit
+}
+if (var tokens < %var.player/rodlurecost 15%) {
+    chat "&cNot enough tokens."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+var tokens dec %var.player/rodlurecost 15%
+var rodlure inc 1
+var rodlurecost mult 128
+var rodlurecost div 100
+sound "Level Up" 0.7 1.2 "invokers_location"
+function "OpenFishingEnchants" false
+

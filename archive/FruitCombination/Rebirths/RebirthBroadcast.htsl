@@ -1,0 +1,4 @@
+// a simple function that is triggered by the rebirth function for all players
+// which broadcasts a message to the server about the rebirth, and who rebirthed, and what rebirth they are on
+
+chat "&d&lREBIRTH! &b%var.global/lastrebirther Someone% &7has rebirthed to &dRebirth #%var.global/lastrebirth%&7!"

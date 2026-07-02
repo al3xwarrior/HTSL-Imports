@@ -1,0 +1,9 @@
+// opens the fishing tool enchant menu; menu buttons should call the four FishingEnchant functions
+
+chat "&bFishing Enchants: Lure, Luck, Double Hook, Treasure."
+chat "&7Lure: %var.player/rodlure 0%/25 Cost %var.player/rodlurecost 15% tokens."
+chat "&7Luck: %var.player/rodluck 0%/25 Cost %var.player/rodluckcost 60% tokens. Unlocks level 7."
+chat "&7Double Hook: %var.player/roddouble 0%/20 Cost %var.player/roddoublecost 225% tokens. Unlocks level 15."
+chat "&7Treasure: %var.player/rodtreasure 0%/15 Cost %var.player/rodtreasurecost 800% tokens. Unlocks level 30."
+displayMenu "Fishing Enchants"
+

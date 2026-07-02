@@ -1,0 +1,20 @@
+if (var "hoelvlcurrent" == "&8Wooden" "&8Wooden") {
+    giveItem "Items/wooden_hoe.nbt" false "First Avaliable Slot" false
+    exit
+}
+if (var "hoelvlcurrent" == "&7Stone" "&7Stone") {
+    giveItem "Items/stone_hoe.nbt" false "First Avaliable Slot" false
+    exit
+}
+if (var "hoelvlcurrent" == "&fIron" "&fIron") {
+    giveItem "Items/iron_hoe.nbt" false "First Avaliable Slot" false
+    exit
+}
+if (var "hoelvlcurrent" == "&6Gold" "&6Gold") {
+    giveItem "Items/golden_hoe.nbt" false "First Avaliable Slot" false
+    exit
+}
+if (var "hoelvlcurrent" == "&bDiamond" "&bDiamond") {
+    giveItem "Items/diamond_hoe.nbt" false "First Avaliable Slot" false
+    exit
+}

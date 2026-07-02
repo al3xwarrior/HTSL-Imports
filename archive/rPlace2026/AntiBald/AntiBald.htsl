@@ -1,0 +1,38 @@
+globalvar antibald inc 1
+if (globalvar antibald > 10) {
+    globalvar antibald set 1
+}
+
+globalvar ab_name set %player.name%
+globalvar ab_tag set %player.group.tag%
+
+if (globalvar antibald == 1) {
+    function "AntiBaldBC1" true
+}
+if (globalvar antibald == 2) {
+    function "AntiBaldBC2" true
+}
+if (globalvar antibald == 3) {
+    function "AntiBaldBC3" true
+}
+if (globalvar antibald == 4) {
+    function "AntiBaldBC4" true
+}
+if (globalvar antibald == 5) {
+    function "AntiBaldBC5" true
+}
+if (globalvar antibald == 6) {
+    function "AntiBaldBC6" true
+}
+if (globalvar antibald == 7) {
+    function "AntiBaldBC7" true
+}
+if (globalvar antibald == 8) {
+    function "AntiBaldBC8" true
+}
+if (globalvar antibald == 9) {
+    function "AntiBaldBC9" true
+}
+if (globalvar antibald == 10) {
+    function "AntiBaldBC10" true
+}

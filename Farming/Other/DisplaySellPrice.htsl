@@ -1,0 +1,16 @@
+var "displaySell" set 0
+
+if (hasItem "Items/Wheat_1.nbt" metadata Hand anyAmount) {
+    var "displaySell" set 1
+}
+
+if (var "displaySell" == 0 0) {
+    chat "&cYou are not holding a sellable item!"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    var "displaySell" unset
+    exit
+}
+
+sound "Orb Pickup" 0.7 1.0 "invokers_location"
+chat "&2&l(!) &aThis item would sell for $%var.player/displaySell 0%!"
+var "displaySell" unset

@@ -1,0 +1,16 @@
+// Farm2 carrot reward; unlocks at shared level 10
+
+var farmamount set 1
+var xpgain set 24
+var tokengain set 2
+function "FarmBase" false
+
+loop 32 index {
+    if (var farmamount > {index}) {
+        giveItem "../Items/carrot" true "First Slot" false
+    }
+}
+
+sound "Item Pickup" 0.7 1.25 "invokers_location"
+title "&a&lFARM" "&7+%var.player/farmamount 1% Carrot" 0 1 1
+

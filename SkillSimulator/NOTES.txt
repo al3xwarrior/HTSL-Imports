@@ -1,0 +1,33 @@
+SkillSimulator placeholder house.
+
+Wire these functions to Housing:
+- Join event: HouseEvents/Join
+- Drop event: HouseEvents/Drop
+- Block break event: HouseEvents/BlockBreak
+- Fish caught event: HouseEvents/FishCaught
+- Every 20 ticks: Core/Tick
+
+Main player-facing NPC/functions:
+- Tutorial
+- Tools/ClaimTools
+- Tools/UpgradeHoe
+- Tools/UpgradeRod
+- Tools/UpgradePickaxe
+- Shop/UpgradeArmor
+- Condenser/Condense
+- Shop/SellAll
+- Enchants/OpenFarmEnchants, OpenFishingEnchants, OpenMiningEnchants
+- Passives/OpenPassives and Passives/ClaimWorkers
+- Crates/OpenCrate
+- Prestige/Prestige
+
+Regions:
+- Farm1, Farm2, Farm3, Farm4, Farm5
+- Fish1, Fish2, Fish3, Fish4, Fish5
+- Mine1, Mine2, Mine3, Mine4, Mine5
+- AFK
+
+Unlocks:
+- Farming: 1, 10, 22, 38, 60
+- Fishing: 1, 7, 18, 34, 55
+- Mining: 1, 5, 12, 24, 40

@@ -1,0 +1,68 @@
+var total set %var.player/blockplaces%
+var total inc %var.player/blockbreaks%
+
+// 25, 50, 100, 250, 500, 1000, 2500, 5000, 10000
+
+if (var total >= 25, hasGroup "0") {
+    changePlayerGroup "25" true
+    globalvar ms_name set %player.name%
+    globalvar ms_amt set %var.player/total%
+    globalvar ms_color set %player.group.color%
+    function "MilestoneBC" true
+}
+if (var total >= 50, hasGroup "25") {
+    changePlayerGroup "50" true
+    globalvar ms_name set %player.name%
+    globalvar ms_amt set %var.player/total%
+    globalvar ms_color set %player.group.color%
+    function "MilestoneBC" true
+}
+if (var total >= 100, hasGroup "50") {
+    changePlayerGroup "100" true
+    globalvar ms_name set %player.name%
+    globalvar ms_amt set %var.player/total%
+    globalvar ms_color set %player.group.color%
+    function "MilestoneBC" true
+}
+if (var total >= 250, hasGroup "100") {
+    changePlayerGroup "250" true
+    globalvar ms_name set %player.name%
+    globalvar ms_amt set %var.player/total%
+    globalvar ms_color set %player.group.color%
+    function "MilestoneBC" true
+}
+if (var total >= 500, hasGroup "250") {
+    changePlayerGroup "500" true
+    globalvar ms_name set %player.name%
+    globalvar ms_amt set %var.player/total%
+    globalvar ms_color set %player.group.color%
+    function "MilestoneBC" true
+}
+if (var total >= 1000, hasGroup "500") {
+    changePlayerGroup "1000" true
+    globalvar ms_name set %player.name%
+    globalvar ms_amt set %var.player/total%
+    globalvar ms_color set %player.group.color%
+    function "MilestoneBC" true
+}
+if (var total >= 2500, hasGroup "1000") {
+    changePlayerGroup "2500" true
+    globalvar ms_name set %player.name%
+    globalvar ms_amt set %var.player/total%
+    globalvar ms_color set %player.group.color%
+    function "MilestoneBC" true
+}
+if (var total >= 5000, hasGroup "2500") {
+    changePlayerGroup "5000" true
+    globalvar ms_name set %player.name%
+    globalvar ms_amt set %var.player/total%
+    globalvar ms_color set %player.group.color%
+    function "MilestoneBC" true
+}
+if (var total >= 10000, hasGroup "5000") {
+    changePlayerGroup "10000" true
+    globalvar ms_name set %player.name%
+    globalvar ms_amt set %var.player/total%
+    globalvar ms_color set %player.group.color%
+    function "MilestoneBC" true
+}

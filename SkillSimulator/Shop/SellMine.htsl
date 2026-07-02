@@ -1,0 +1,157 @@
+// mining sell table; mining leans token-forward but ores still sell well
+
+loop 256 index {
+    if (hasItem "../Items/cobblestone64" metadata Anywhere anyAmount) {
+        removeItem "../Items/cobblestone64"
+        var selltotal inc 128
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_cobblestone64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_cobblestone64"
+        var selltotal inc 8192
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/coal64" metadata Anywhere anyAmount) {
+        removeItem "../Items/coal64"
+        var selltotal inc 448
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_coal64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_coal64"
+        var selltotal inc 28672
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/iron64" metadata Anywhere anyAmount) {
+        removeItem "../Items/iron64"
+        var selltotal inc 1408
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_iron64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_iron64"
+        var selltotal inc 90112
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/gold64" metadata Anywhere anyAmount) {
+        removeItem "../Items/gold64"
+        var selltotal inc 3840
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_gold64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_gold64"
+        var selltotal inc 245760
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/diamond64" metadata Anywhere anyAmount) {
+        removeItem "../Items/diamond64"
+        var selltotal inc 9600
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_diamond64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_diamond64"
+        var selltotal inc 614400
+    }
+}
+
+loop 512 index {
+    if (hasItem "../Items/cobblestone" metadata Anywhere anyAmount) {
+        removeItem "../Items/cobblestone"
+        var selltotal inc 2
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/enchanted_cobblestone" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_cobblestone"
+        var selltotal inc 128
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/cobblestone_block" metadata Anywhere anyAmount) {
+        removeItem "../Items/cobblestone_block"
+        var selltotal inc 8192
+    }
+}
+
+loop 512 index {
+    if (hasItem "../Items/coal" metadata Anywhere anyAmount) {
+        removeItem "../Items/coal"
+        var selltotal inc 7
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/enchanted_coal" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_coal"
+        var selltotal inc 448
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/coal_block" metadata Anywhere anyAmount) {
+        removeItem "../Items/coal_block"
+        var selltotal inc 28672
+    }
+}
+
+loop 512 index {
+    if (hasItem "../Items/iron" metadata Anywhere anyAmount) {
+        removeItem "../Items/iron"
+        var selltotal inc 22
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/enchanted_iron" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_iron"
+        var selltotal inc 1408
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/iron_block" metadata Anywhere anyAmount) {
+        removeItem "../Items/iron_block"
+        var selltotal inc 90112
+    }
+}
+
+loop 512 index {
+    if (hasItem "../Items/gold" metadata Anywhere anyAmount) {
+        removeItem "../Items/gold"
+        var selltotal inc 60
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/enchanted_gold" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_gold"
+        var selltotal inc 3840
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/gold_block" metadata Anywhere anyAmount) {
+        removeItem "../Items/gold_block"
+        var selltotal inc 245760
+    }
+}
+
+loop 512 index {
+    if (hasItem "../Items/diamond" metadata Anywhere anyAmount) {
+        removeItem "../Items/diamond"
+        var selltotal inc 150
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/enchanted_diamond" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_diamond"
+        var selltotal inc 9600
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/diamond_block" metadata Anywhere anyAmount) {
+        removeItem "../Items/diamond_block"
+        var selltotal inc 614400
+    }
+}

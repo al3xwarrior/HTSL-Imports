@@ -1,0 +1,32 @@
+// rolls physical crate drops after active skill actions; fishing treasure and mining surge improve odds
+
+var cratechance set 8
+
+if (var actiontype == 2 0) {
+    var cratechance inc %var.player/rodtreasure 0%
+    var cratechance inc %var.player/rodtreasure 0%
+}
+if (var actiontype == 3 0) {
+    var cratechance inc %var.player/minedrillsurge 0%
+}
+
+var crateroll set %random.int/1 1000%
+
+if (var crateroll == 1 0, var level >= 40 1) {
+    giveItem "../Items/mastery_skill_crate" true "First Slot" false
+    chat "&d&lCRATE &7You found a &dMastery Skill Crate&7!"
+    sound "Level Up" 0.8 1.8 "invokers_location"
+    exit
+}
+if (var crateroll <= 3 0, var level >= 15 1) {
+    giveItem "../Items/rare_skill_crate" true "First Slot" false
+    chat "&9&lCRATE &7You found a &9Rare Skill Crate&7!"
+    sound "Level Up" 0.8 1.4 "invokers_location"
+    exit
+}
+if (var crateroll <= %var.player/cratechance 8%) {
+    giveItem "../Items/common_skill_crate" true "First Slot" false
+    chat "&a&lCRATE &7You found a &aCommon Skill Crate&7!"
+    sound "Orb Pickup" 0.8 1.2 "invokers_location"
+}
+

@@ -1,0 +1,74 @@
+// mining item condense rules; 64 raw -> enchanted, 64 enchanted -> block
+
+loop 128 index {
+    if (hasItem "../Items/cobblestone64" metadata Anywhere anyAmount) {
+        removeItem "../Items/cobblestone64"
+        giveItem "../Items/enchanted_cobblestone" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/coal64" metadata Anywhere anyAmount) {
+        removeItem "../Items/coal64"
+        giveItem "../Items/enchanted_coal" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/iron64" metadata Anywhere anyAmount) {
+        removeItem "../Items/iron64"
+        giveItem "../Items/enchanted_iron" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/gold64" metadata Anywhere anyAmount) {
+        removeItem "../Items/gold64"
+        giveItem "../Items/enchanted_gold" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/diamond64" metadata Anywhere anyAmount) {
+        removeItem "../Items/diamond64"
+        giveItem "../Items/enchanted_diamond" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+
+loop 128 index {
+    if (hasItem "../Items/enchanted_cobblestone64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_cobblestone64"
+        giveItem "../Items/cobblestone_block" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_coal64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_coal64"
+        giveItem "../Items/coal_block" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_iron64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_iron64"
+        giveItem "../Items/iron_block" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_gold64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_gold64"
+        giveItem "../Items/gold_block" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_diamond64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_diamond64"
+        giveItem "../Items/diamond_block" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+

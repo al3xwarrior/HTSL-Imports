@@ -1,0 +1,21 @@
+if (var e_friend_lvl >= 100 0) {
+    chat "&cYour Friendly enchantment is already maxed!"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    displayMenu "Hoe Enchants"
+    exit
+}
+
+if (var tokens < %var.player/e_friend_price 0%) {
+    chat "&cYou don't have enough tokens to upgrade this enchantment!"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+var tokens dec %var.player/e_friend_price 0%
+var e_friend_lvl inc 1
+var e_friend_price inc 2500
+
+chat "&aYou have successfully upgraded your Friendly enchantment to level %var.player/e_friend_lvl 0%!"
+sound "Level Up" 0.7 1.0 "invokers_location"
+
+displayMenu "Hoe Enchants"

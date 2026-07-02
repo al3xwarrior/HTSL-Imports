@@ -1,9 +1,0 @@
-function "Merge" false
-
-if (var anymerges == 1) {
-    chat "&a&lMerged! &7You have merged some fruit together!"
-    sound "Anvil Use" 1.0 2.0 "invokers_location"
-} else {
-    chat "&c&lNo Merges! &7You do not have any merges available!"
-    sound "Anvil Land" 0.7 1.0 "invokers_location"
-}

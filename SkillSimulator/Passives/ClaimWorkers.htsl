@@ -1,0 +1,20 @@
+// worker claim npc; collects online-only worker banked money, tokens, and xp
+
+if (var bankmoney <= 0 0, var banktokens <= 0 0, var bankxp <= 0 0) {
+    chat "&cYour workers have nothing to claim."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+var money inc %var.player/bankmoney 0%
+var tokens inc %var.player/banktokens 0%
+var xpgain set %var.player/bankxp 0%
+function "AddXP" false
+
+title "&a&lWORKERS" "&6$%var.player/bankmoney 0% &7| &e%var.player/banktokens 0% tokens &7| &a%var.player/bankxp 0% xp" 0 2 1
+sound "Orb Pickup" 0.8 1.3 "invokers_location"
+
+var bankmoney set 0
+var banktokens set 0
+var bankxp set 0
+

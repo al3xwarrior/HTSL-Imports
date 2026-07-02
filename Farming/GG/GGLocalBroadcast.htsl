@@ -1,0 +1,20 @@
+globalvar ggfunction inc 1
+if (globalvar "ggfunction" > 5) {
+    globalvar "ggfunction" set 1
+}
+
+if (globalvar "ggfunction" == 1) {
+    function "GGBC1" true
+}
+if (globalvar "ggfunction" == 2) {
+    function "GGBC2" true
+}
+if (globalvar "ggfunction" == 3) {
+    function "GGBC3" true
+}
+if (globalvar "ggfunction" == 4) {
+    function "GGBC4" true
+}
+if (globalvar "ggfunction" == 5) {
+    function "GGBC5" true
+}

@@ -1,0 +1,16 @@
+// Mine4 gold reward; unlocks at shared level 24
+
+var mineamount set 1
+var xpgain set 105
+var tokengain set 20
+function "MineBase" false
+
+loop 32 index {
+    if (var mineamount > {index}) {
+        giveItem "../Items/gold" true "First Slot" false
+    }
+}
+
+sound "Item Pickup" 0.7 1.2 "invokers_location"
+title "&3&lMINE" "&7+%var.player/mineamount 1% Gold" 0 1 1
+

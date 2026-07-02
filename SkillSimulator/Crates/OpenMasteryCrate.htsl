@@ -1,0 +1,33 @@
+// mastery crate reward table
+
+var cratereward set %random.int/1 5%
+sound "Level Up" 0.9 1.8 "invokers_location"
+
+if (var cratereward == 1 0) {
+    var crategain set %random.int/5000 15001%
+    var money inc %var.player/crategain 5000%
+    title "&d&lMASTERY CRATE" "&6+$%var.player/crategain 5000%" 0 2 1
+    exit
+}
+if (var cratereward == 2 0) {
+    var crategain set %random.int/500 1201%
+    var tokens inc %var.player/crategain 500%
+    title "&d&lMASTERY CRATE" "&e+%var.player/crategain 500% tokens" 0 2 1
+    exit
+}
+if (var cratereward == 3 0) {
+    var xpgain set %random.int/2500 6001%
+    function "AddXP" false
+    title "&d&lMASTERY CRATE" "&aHuge XP gained" 0 2 1
+    exit
+}
+if (var cratereward == 4 0) {
+    var xpboosttime inc 600
+    var tokenboosttime inc 600
+    title "&d&lMASTERY CRATE" "&b+10m XP/Token Boosters" 0 2 1
+    exit
+}
+
+var moneyboosttime inc 600
+title "&d&lMASTERY CRATE" "&6+10m Money Booster" 0 2 1
+

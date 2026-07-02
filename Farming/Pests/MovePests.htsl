@@ -1,0 +1,99 @@
+if (globalvar "pest1hp" > 0 0) {
+    globalvar "pest1x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest1z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest2hp" > 0 0) {
+    globalvar "pest2x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest2z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest3hp" > 0 0) {
+    globalvar "pest3x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest3z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest4hp" > 0 0) {
+    globalvar "pest4x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest4z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest5hp" > 0 0) {
+    globalvar "pest5x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest5z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest6hp" > 0 0) {
+    globalvar "pest6x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest6z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest7hp" > 0 0) {
+    globalvar "pest7x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest7z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest8hp" > 0 0) {
+    globalvar "pest8x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest8z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest9hp" > 0 0) {
+    globalvar "pest9x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest9z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest10hp" > 0 0) {
+    globalvar "pest10x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest10z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest11hp" > 0 0) {
+    globalvar "pest11x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest11z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest12hp" > 0 0) {
+    globalvar "pest12x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest12z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest13hp" > 0 0) {
+    globalvar "pest13x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest13z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest14hp" > 0 0) {
+    globalvar "pest14x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest14z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest15hp" > 0 0) {
+    globalvar "pest15x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest15z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest16hp" > 0 0) {
+    globalvar "pest16x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest16z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest17hp" > 0 0) {
+    globalvar "pest17x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest17z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest18hp" > 0 0) {
+    globalvar "pest18x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest18z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest19hp" > 0 0) {
+    globalvar "pest19x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest19z" inc "%random.decimal/-1.1 1.1%D"
+}
+
+if (globalvar "pest20hp" > 0 0) {
+    globalvar "pest20x" inc "%random.decimal/-1.1 1.1%D"
+    globalvar "pest20z" inc "%random.decimal/-1.1 1.1%D"
+}

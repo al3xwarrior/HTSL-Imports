@@ -1,0 +1,22 @@
+// upgrades farming Golden Crop; rare money and token bursts
+
+if (var level < 8 1) {
+    chat "&cGolden Crop unlocks at level 8."
+    exit
+}
+if (var farmgolden >= 25 0) {
+    chat "&cGolden Crop is maxed."
+    exit
+}
+if (var tokens < %var.player/farmgoldencost 75%) {
+    chat "&cNot enough tokens."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+var tokens dec %var.player/farmgoldencost 75%
+var farmgolden inc 1
+var farmgoldencost mult 135
+var farmgoldencost div 100
+sound "Level Up" 0.7 1.2 "invokers_location"
+function "OpenFarmEnchants" false
+

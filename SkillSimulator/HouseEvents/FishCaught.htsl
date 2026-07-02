@@ -1,0 +1,45 @@
+// fish caught event; routes water catches by fishing region and shared level unlocks
+
+if (fishingEnv "Water") {
+
+} else {
+    exit
+}
+
+if (inRegion "Fish1") {
+    function "FishReward1" false
+    exit
+}
+if (inRegion "Fish2") {
+    if (var level < 7 1) {
+        chat "&cFish2 unlocks at level 7."
+        exit
+    }
+    function "FishReward2" false
+    exit
+}
+if (inRegion "Fish3") {
+    if (var level < 18 1) {
+        chat "&cFish3 unlocks at level 18."
+        exit
+    }
+    function "FishReward3" false
+    exit
+}
+if (inRegion "Fish4") {
+    if (var level < 34 1) {
+        chat "&cFish4 unlocks at level 34."
+        exit
+    }
+    function "FishReward4" false
+    exit
+}
+if (inRegion "Fish5") {
+    if (var level < 55 1) {
+        chat "&cFish5 unlocks at level 55."
+        exit
+    }
+    function "FishReward5" false
+    exit
+}
+

@@ -1,0 +1,9 @@
+// opens the mining tool enchant menu; menu buttons should call the four MiningEnchant functions
+
+chat "&3Mining Enchants: Power, Token Vein, Vein Miner, Drill Surge."
+chat "&7Power: %var.player/minepower 0%/50 Cost %var.player/minepowercost 12% tokens."
+chat "&7Token Vein: %var.player/minetokenvein 0%/30 Cost %var.player/minetokenveincost 50% tokens. Unlocks level 5."
+chat "&7Vein Miner: %var.player/mineveinminer 0%/20 Cost %var.player/mineveinminercost 200% tokens. Unlocks level 12."
+chat "&7Drill Surge: %var.player/minedrillsurge 0%/15 Cost %var.player/minedrillsurgecost 900% tokens. Unlocks level 24."
+displayMenu "Mining Enchants"
+

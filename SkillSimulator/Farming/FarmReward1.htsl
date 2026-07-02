@@ -1,0 +1,16 @@
+// Farm1 wheat reward; unlocked by default
+
+var farmamount set 1
+var xpgain set 12
+var tokengain set 1
+function "FarmBase" false
+
+loop 32 index {
+    if (var farmamount > {index}) {
+        giveItem "../Items/wheat" true "First Slot" false
+    }
+}
+
+sound "Item Pickup" 0.7 1.2 "invokers_location"
+title "&a&lFARM" "&7+%var.player/farmamount 1% Wheat" 0 1 1
+

@@ -1,0 +1,16 @@
+// condenser npc; bulk-condenses every recognized full stack in inventory from raw to enchanted and enchanted to block
+
+var condensecount set 0
+function "CondenseFarm" false
+function "CondenseFish" false
+function "CondenseMine" false
+
+if (var condensecount <= 0 0) {
+    chat "&cNo full stacks found. You need 64 raw items or 64 enchanted items."
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+sound "Anvil Use" 0.8 1.2 "invokers_location"
+title "&a&lCONDENSED" "&7Conversions completed: &a%var.player/condensecount 0%" 0 2 1
+

@@ -1,0 +1,104 @@
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    giveItem "../Items/Wheat_2.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    giveItem "../Items/Wheat_2.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    giveItem "../Items/Wheat_2.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    giveItem "../Items/Wheat_2.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    giveItem "../Items/Wheat_2.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    giveItem "../Items/Wheat_2.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    giveItem "../Items/Wheat_2.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    giveItem "../Items/Wheat_2.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    giveItem "../Items/Wheat_2.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    giveItem "../Items/Wheat_2.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    giveItem "../Items/Wheat_2.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    giveItem "../Items/Wheat_2.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    giveItem "../Items/Wheat_2.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    giveItem "../Items/Wheat_2.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    giveItem "../Items/Wheat_2.nbt" true "First Avaliable Slot" false
+}
+
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    giveItem "../Items/Wheat_3.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    giveItem "../Items/Wheat_3.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    giveItem "../Items/Wheat_3.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    giveItem "../Items/Wheat_3.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    giveItem "../Items/Wheat_3.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    giveItem "../Items/Wheat_3.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    giveItem "../Items/Wheat_3.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    giveItem "../Items/Wheat_3.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    giveItem "../Items/Wheat_3.nbt" true "First Avaliable Slot" false
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    giveItem "../Items/Wheat_3.nbt" true "First Avaliable Slot" false
+}
+
+sound "Orb Pickup" 0.7 1.0 "invokers_location"
+chat "&2&l(!) &aYour items have been condensed!"

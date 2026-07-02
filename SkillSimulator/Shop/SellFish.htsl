@@ -1,0 +1,157 @@
+// fishing sell table; slower fishing items have higher base money values
+
+loop 256 index {
+    if (hasItem "../Items/cod64" metadata Anywhere anyAmount) {
+        removeItem "../Items/cod64"
+        var selltotal inc 384
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_cod64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_cod64"
+        var selltotal inc 24576
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/salmon64" metadata Anywhere anyAmount) {
+        removeItem "../Items/salmon64"
+        var selltotal inc 1152
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_salmon64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_salmon64"
+        var selltotal inc 73728
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/pufferfish64" metadata Anywhere anyAmount) {
+        removeItem "../Items/pufferfish64"
+        var selltotal inc 2880
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_pufferfish64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_pufferfish64"
+        var selltotal inc 184320
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/pearl64" metadata Anywhere anyAmount) {
+        removeItem "../Items/pearl64"
+        var selltotal inc 6400
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_pearl64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_pearl64"
+        var selltotal inc 409600
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/scale64" metadata Anywhere anyAmount) {
+        removeItem "../Items/scale64"
+        var selltotal inc 15360
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_scale64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_scale64"
+        var selltotal inc 983040
+    }
+}
+
+loop 512 index {
+    if (hasItem "../Items/cod" metadata Anywhere anyAmount) {
+        removeItem "../Items/cod"
+        var selltotal inc 6
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/enchanted_cod" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_cod"
+        var selltotal inc 384
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/cod_block" metadata Anywhere anyAmount) {
+        removeItem "../Items/cod_block"
+        var selltotal inc 24576
+    }
+}
+
+loop 512 index {
+    if (hasItem "../Items/salmon" metadata Anywhere anyAmount) {
+        removeItem "../Items/salmon"
+        var selltotal inc 18
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/enchanted_salmon" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_salmon"
+        var selltotal inc 1152
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/salmon_block" metadata Anywhere anyAmount) {
+        removeItem "../Items/salmon_block"
+        var selltotal inc 73728
+    }
+}
+
+loop 512 index {
+    if (hasItem "../Items/pufferfish" metadata Anywhere anyAmount) {
+        removeItem "../Items/pufferfish"
+        var selltotal inc 45
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/enchanted_pufferfish" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_pufferfish"
+        var selltotal inc 2880
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/pufferfish_block" metadata Anywhere anyAmount) {
+        removeItem "../Items/pufferfish_block"
+        var selltotal inc 184320
+    }
+}
+
+loop 512 index {
+    if (hasItem "../Items/pearl" metadata Anywhere anyAmount) {
+        removeItem "../Items/pearl"
+        var selltotal inc 100
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/enchanted_pearl" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_pearl"
+        var selltotal inc 6400
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/pearl_block" metadata Anywhere anyAmount) {
+        removeItem "../Items/pearl_block"
+        var selltotal inc 409600
+    }
+}
+
+loop 512 index {
+    if (hasItem "../Items/scale" metadata Anywhere anyAmount) {
+        removeItem "../Items/scale"
+        var selltotal inc 240
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/enchanted_scale" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_scale"
+        var selltotal inc 15360
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/scale_block" metadata Anywhere anyAmount) {
+        removeItem "../Items/scale_block"
+        var selltotal inc 983040
+    }
+}

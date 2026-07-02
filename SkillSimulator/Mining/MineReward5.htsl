@@ -1,0 +1,16 @@
+// Mine5 diamond reward; unlocks at shared level 40
+
+var mineamount set 1
+var xpgain set 190
+var tokengain set 38
+function "MineBase" false
+
+loop 32 index {
+    if (var mineamount > {index}) {
+        giveItem "../Items/diamond" true "First Slot" false
+    }
+}
+
+sound "Item Pickup" 0.7 1.3 "invokers_location"
+title "&3&lMINE" "&7+%var.player/mineamount 1% Diamond" 0 1 1
+

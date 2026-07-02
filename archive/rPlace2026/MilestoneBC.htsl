@@ -1,0 +1,13 @@
+chat "&r"
+chat "%var.global/ms_color%%var.global/ms_name% &7has reached block &6Milestone %var.global/ms_color%[%var.global/ms_amt%]"
+if (globalvar ms_amt > 248) {
+    chat "&d&lGG &7(Do /goodgame) to celebrate!"
+}
+chat "&f"
+
+if (globalvar ms_amt > 248) {
+    globalvar ggevent set 1
+    globalvar hasSaidGG set 0
+    pause 120
+    globalvar ggevent set 0
+}

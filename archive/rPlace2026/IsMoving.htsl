@@ -1,0 +1,8 @@
+if (var lastX == %player.pos.x%, var lastY == %player.pos.y%, var lastZ == %player.pos.z%) {
+    var isMoving set "FALSE"
+} else {
+    var isMoving set "TRUE"
+    var lastX set "%player.pos.x%D"
+    var lastY set "%player.pos.y%D"
+    var lastZ set "%player.pos.z%D"
+}

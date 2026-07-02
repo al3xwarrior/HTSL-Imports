@@ -1,0 +1,74 @@
+// farming item condense rules; 64 raw -> enchanted, 64 enchanted -> block
+
+loop 128 index {
+    if (hasItem "../Items/wheat64" metadata Anywhere anyAmount) {
+        removeItem "../Items/wheat64"
+        giveItem "../Items/enchanted_wheat" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/carrot64" metadata Anywhere anyAmount) {
+        removeItem "../Items/carrot64"
+        giveItem "../Items/enchanted_carrot" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/potato64" metadata Anywhere anyAmount) {
+        removeItem "../Items/potato64"
+        giveItem "../Items/enchanted_potato" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/sugar_cane64" metadata Anywhere anyAmount) {
+        removeItem "../Items/sugar_cane64"
+        giveItem "../Items/enchanted_sugar_cane" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/pumpkin64" metadata Anywhere anyAmount) {
+        removeItem "../Items/pumpkin64"
+        giveItem "../Items/enchanted_pumpkin" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+
+loop 128 index {
+    if (hasItem "../Items/enchanted_wheat64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_wheat64"
+        giveItem "../Items/wheat_block" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_carrot64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_carrot64"
+        giveItem "../Items/carrot_block" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_potato64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_potato64"
+        giveItem "../Items/potato_block" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_sugar_cane64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_sugar_cane64"
+        giveItem "../Items/sugar_cane_block" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_pumpkin64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_pumpkin64"
+        giveItem "../Items/pumpkin_block" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+

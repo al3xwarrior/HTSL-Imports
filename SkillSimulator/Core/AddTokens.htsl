@@ -1,0 +1,19 @@
+// adds tokengain to shared tokens, applying passive, prestige, and online booster multipliers
+
+var tokengain mult %var.player/tokenmult 10%
+var tokengain div 10
+var tokengain mult %var.player/armormult 10%
+var tokengain div 10
+
+if (var tokenboosttime > 0 0) {
+    var tokengain mult 2
+}
+
+var tokengain mult %var.player/prestigemult 10%
+var tokengain div 10
+
+if (var tokengain < 1 1) {
+    var tokengain set 1
+}
+
+var tokens inc %var.player/tokengain 1%

@@ -1,0 +1,3 @@
+if (hasGroup "BOT") {
+    chat "skin_needed %var.global/levelupname%"
+}

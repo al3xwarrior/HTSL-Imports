@@ -1,0 +1,153 @@
+// dropItem "{count:1,id:\"minecraft:blaze_powder\"}" "custom_coordinates" "1 1 1" false true 20 100 false false
+
+if or (var "isMoving" == "FALSE", !var particles == "NYAN_CAT") {
+    exit
+}
+
+if () {
+    var "nc/frame8/x" set %var.player/nc/frame7/x% true
+    var "nc/frame8/y" set %var.player/nc/frame7/y% true
+    var "nc/frame8/z" set %var.player/nc/frame7/z% true
+
+    var "nc/frame7/x" set %var.player/nc/frame6/x% true
+    var "nc/frame7/y" set %var.player/nc/frame6/y% true
+    var "nc/frame7/z" set %var.player/nc/frame6/z% true
+
+    var "nc/frame6/x" set %var.player/nc/frame5/x% true
+    var "nc/frame6/y" set %var.player/nc/frame5/y% true
+    var "nc/frame6/z" set %var.player/nc/frame5/z% true
+}
+if () {
+    var "nc/frame5/x" set %var.player/nc/frame4/x% true
+    var "nc/frame5/y" set %var.player/nc/frame4/y% true
+    var "nc/frame5/z" set %var.player/nc/frame4/z% true
+
+    var "nc/frame4/x" set %var.player/nc/frame3/x% true
+    var "nc/frame4/y" set %var.player/nc/frame3/y% true
+    var "nc/frame4/z" set %var.player/nc/frame3/z% true
+
+    var "nc/frame3/x" set %var.player/nc/frame2/x% true
+    var "nc/frame3/y" set %var.player/nc/frame2/y% true
+    var "nc/frame3/z" set %var.player/nc/frame2/z% true
+
+    var "nc/frame2/x" set %var.player/nc/frame1/x% true
+    var "nc/frame2/y" set %var.player/nc/frame1/y% true
+    var "nc/frame2/z" set %var.player/nc/frame1/z% true
+
+    var "nc/frame1/x" set "%player.pos.x%D"
+    var "nc/frame1/y" set "%player.pos.y%D"
+    var "nc/frame1/z" set "%player.pos.z%D"
+}
+
+// Frame 1
+if (!var "nc/frame1/y" == -1 -1) {
+    var particleY set "%var.player/nc/frame1/y%D"
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:magenta_wool\"}" "custom_coordinates" "%var.player/nc/frame1/x% %var.player/particleY% %var.player/nc/frame1/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:light_blue_wool\"}" "custom_coordinates" "%var.player/nc/frame1/x% %var.player/particleY% %var.player/nc/frame1/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:lime_wool\"}" "custom_coordinates" "%var.player/nc/frame1/x% %var.player/particleY% %var.player/nc/frame1/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:orange_wool\"}" "custom_coordinates" "%var.player/nc/frame1/x% %var.player/particleY% %var.player/nc/frame1/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:red_wool\"}" "custom_coordinates" "%var.player/nc/frame1/x% %var.player/particleY% %var.player/nc/frame1/z%" false true 3 100 false false
+}
+// Frame 2
+if (!var "nc/frame2/y" == -1 -1) {
+    var particleY set "%var.player/nc/frame2/y%D"
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:magenta_wool\"}" "custom_coordinates" "%var.player/nc/frame2/x% %var.player/particleY% %var.player/nc/frame2/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:light_blue_wool\"}" "custom_coordinates" "%var.player/nc/frame2/x% %var.player/particleY% %var.player/nc/frame2/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:lime_wool\"}" "custom_coordinates" "%var.player/nc/frame2/x% %var.player/particleY% %var.player/nc/frame2/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:orange_wool\"}" "custom_coordinates" "%var.player/nc/frame2/x% %var.player/particleY% %var.player/nc/frame2/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:red_wool\"}" "custom_coordinates" "%var.player/nc/frame2/x% %var.player/particleY% %var.player/nc/frame2/z%" false true 3 100 false false
+}
+// Frame 3
+if (!var "nc/frame3/y" == -1 -1) {
+    var particleY set "%var.player/nc/frame3/y%D"
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:magenta_wool\"}" "custom_coordinates" "%var.player/nc/frame3/x% %var.player/particleY% %var.player/nc/frame3/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:light_blue_wool\"}" "custom_coordinates" "%var.player/nc/frame3/x% %var.player/particleY% %var.player/nc/frame3/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:lime_wool\"}" "custom_coordinates" "%var.player/nc/frame3/x% %var.player/particleY% %var.player/nc/frame3/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:orange_wool\"}" "custom_coordinates" "%var.player/nc/frame3/x% %var.player/particleY% %var.player/nc/frame3/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:red_wool\"}" "custom_coordinates" "%var.player/nc/frame3/x% %var.player/particleY% %var.player/nc/frame3/z%" false true 3 100 false false
+}
+// Frame 4
+if (!var "nc/frame4/y" == -1 -1) {
+    var particleY set "%var.player/nc/frame4/y%D"
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:magenta_wool\"}" "custom_coordinates" "%var.player/nc/frame4/x% %var.player/particleY% %var.player/nc/frame4/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:light_blue_wool\"}" "custom_coordinates" "%var.player/nc/frame4/x% %var.player/particleY% %var.player/nc/frame4/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:lime_wool\"}" "custom_coordinates" "%var.player/nc/frame4/x% %var.player/particleY% %var.player/nc/frame4/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:orange_wool\"}" "custom_coordinates" "%var.player/nc/frame4/x% %var.player/particleY% %var.player/nc/frame4/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:red_wool\"}" "custom_coordinates" "%var.player/nc/frame4/x% %var.player/particleY% %var.player/nc/frame4/z%" false true 3 100 false false
+}
+// Frame 5
+if (!var "nc/frame5/y" == -1 -1) {
+    var particleY set "%var.player/nc/frame5/y%D"
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:magenta_wool\"}" "custom_coordinates" "%var.player/nc/frame5/x% %var.player/particleY% %var.player/nc/frame5/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:light_blue_wool\"}" "custom_coordinates" "%var.player/nc/frame5/x% %var.player/particleY% %var.player/nc/frame5/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:lime_wool\"}" "custom_coordinates" "%var.player/nc/frame5/x% %var.player/particleY% %var.player/nc/frame5/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:orange_wool\"}" "custom_coordinates" "%var.player/nc/frame5/x% %var.player/particleY% %var.player/nc/frame5/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:red_wool\"}" "custom_coordinates" "%var.player/nc/frame5/x% %var.player/particleY% %var.player/nc/frame5/z%" false true 3 100 false false
+}
+// Frame 6
+if (!var "nc/frame6/y" == -1 -1) {
+    var particleY set "%var.player/nc/frame6/y%D"
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:magenta_wool\"}" "custom_coordinates" "%var.player/nc/frame6/x% %var.player/particleY% %var.player/nc/frame6/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:light_blue_wool\"}" "custom_coordinates" "%var.player/nc/frame6/x% %var.player/particleY% %var.player/nc/frame6/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:lime_wool\"}" "custom_coordinates" "%var.player/nc/frame6/x% %var.player/particleY% %var.player/nc/frame6/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:orange_wool\"}" "custom_coordinates" "%var.player/nc/frame6/x% %var.player/particleY% %var.player/nc/frame6/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:red_wool\"}" "custom_coordinates" "%var.player/nc/frame6/x% %var.player/particleY% %var.player/nc/frame6/z%" false true 3 100 false false
+}
+// Frame 7
+if (!var "nc/frame7/y" == -1 -1) {
+    var particleY set "%var.player/nc/frame7/y%D"
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:magenta_wool\"}" "custom_coordinates" "%var.player/nc/frame7/x% %var.player/particleY% %var.player/nc/frame7/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:light_blue_wool\"}" "custom_coordinates" "%var.player/nc/frame7/x% %var.player/particleY% %var.player/nc/frame7/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:lime_wool\"}" "custom_coordinates" "%var.player/nc/frame7/x% %var.player/particleY% %var.player/nc/frame7/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:orange_wool\"}" "custom_coordinates" "%var.player/nc/frame7/x% %var.player/particleY% %var.player/nc/frame7/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:red_wool\"}" "custom_coordinates" "%var.player/nc/frame7/x% %var.player/particleY% %var.player/nc/frame7/z%" false true 3 100 false false
+}
+// Frame 8
+if (!var "nc/frame8/y" == -1 -1) {
+    var particleY set "%var.player/nc/frame8/y%D"
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:magenta_wool\"}" "custom_coordinates" "%var.player/nc/frame8/x% %var.player/particleY% %var.player/nc/frame8/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:light_blue_wool\"}" "custom_coordinates" "%var.player/nc/frame8/x% %var.player/particleY% %var.player/nc/frame8/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:lime_wool\"}" "custom_coordinates" "%var.player/nc/frame8/x% %var.player/particleY% %var.player/nc/frame8/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:orange_wool\"}" "custom_coordinates" "%var.player/nc/frame8/x% %var.player/particleY% %var.player/nc/frame8/z%" false true 3 100 false false
+    var particleY inc 0.3
+    dropItem "{count:1,id:\"minecraft:red_wool\"}" "custom_coordinates" "%var.player/nc/frame8/x% %var.player/particleY% %var.player/nc/frame8/z%" false true 3 100 false false
+}

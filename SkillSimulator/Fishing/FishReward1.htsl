@@ -1,0 +1,16 @@
+// Fish1 cod reward; unlocked by default
+
+var fishamount set 1
+var xpgain set 22
+var tokengain set 1
+function "FishBase" false
+
+loop 32 index {
+    if (var fishamount > {index}) {
+        giveItem "../Items/cod" true "First Slot" false
+    }
+}
+
+sound "Swim" 0.7 1.0 "invokers_location"
+title "&b&lFISH" "&7+%var.player/fishamount 1% Cod" 0 1 1
+

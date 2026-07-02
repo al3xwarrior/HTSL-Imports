@@ -1,0 +1,22 @@
+// recursive shared level-up calculator; level is uncapped and xp required scales quadratically
+
+if (var xp < %var.player/xpreq 100%) {
+    exit
+}
+
+var xp dec %var.player/xpreq 100%
+var level inc 1
+
+var levelpart set %var.player/level 1%
+var levelpart mult %var.player/level 1%
+var levelpart mult 25
+var xpreq set %var.player/levelpart 25%
+var levelpart set %var.player/level 1%
+var levelpart mult 75
+var xpreq inc %var.player/levelpart 75%
+
+sound "Level Up" 0.8 1.4 "invokers_location"
+title "&a&lLEVEL UP!" "&7You reached level &a%var.player/level 1%&7." 0 2 1
+function "UnlockMessage" false
+function "CheckLevelUp" false
+

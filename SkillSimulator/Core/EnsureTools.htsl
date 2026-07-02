@@ -1,0 +1,20 @@
+// restores saved cosmetic tools if a player somehow loses every copy of one
+
+if (hasItem "../Items/farm_hoe" metadata Anywhere anyAmount) {
+
+} else {
+    giveItem "../Items/farm_hoe" true "First Slot" false
+}
+
+if (hasItem "../Items/fishing_rod" metadata Anywhere anyAmount) {
+
+} else {
+    giveItem "../Items/fishing_rod" true "First Slot" false
+}
+
+if (hasItem "../Items/mining_pickaxe" metadata Anywhere anyAmount) {
+
+} else {
+    giveItem "../Items/mining_pickaxe" true "First Slot" false
+}
+

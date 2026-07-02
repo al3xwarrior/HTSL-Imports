@@ -1,0 +1,22 @@
+// upgrades farming Sprinkler; adds farming XP per action
+
+if (var level < 28 1) {
+    chat "&cSprinkler unlocks at level 28."
+    exit
+}
+if (var farmsprinkler >= 15 0) {
+    chat "&cSprinkler is maxed."
+    exit
+}
+if (var tokens < %var.player/farmsprinklercost 700%) {
+    chat "&cNot enough tokens."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+var tokens dec %var.player/farmsprinklercost 700%
+var farmsprinkler inc 1
+var farmsprinklercost mult 145
+var farmsprinklercost div 100
+sound "Level Up" 0.7 1.2 "invokers_location"
+function "OpenFarmEnchants" false
+

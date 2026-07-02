@@ -1,0 +1,36 @@
+// Due to the annoying issue with function cooldowns, we can rotate what functions we use
+
+if or (inRegion "Wheat") {
+    
+} else {
+    exit
+}
+
+var "blockbreak" inc 1
+if (var blockbreak > 4 0) {
+    var blockbreak set 1
+}
+
+// Give Items
+if (inRegion "Wheat") {
+    var "amtToGet" set 1
+    var "amtToGet" inc %var.player/e_f_lvl 0%
+    var "bp_wheat" inc %var.player/amtToGet 0%
+}
+
+if (var blockbreak == 1) {
+    function "FarmBase1" false
+    exit
+}
+if (var blockbreak == 2) {
+    function "FarmBase2" false
+    exit
+}
+if (var blockbreak == 3) {
+    function "FarmBase3" false
+    exit
+}
+if (var blockbreak == 4) {
+    function "FarmBase4" false
+    exit
+}

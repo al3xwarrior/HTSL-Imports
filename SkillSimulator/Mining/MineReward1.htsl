@@ -1,0 +1,16 @@
+// Mine1 cobblestone reward; unlocked by default
+
+var mineamount set 1
+var xpgain set 10
+var tokengain set 2
+function "MineBase" false
+
+loop 32 index {
+    if (var mineamount > {index}) {
+        giveItem "../Items/cobblestone" true "First Slot" false
+    }
+}
+
+sound "Item Pickup" 0.7 0.9 "invokers_location"
+title "&3&lMINE" "&7+%var.player/mineamount 1% Cobblestone" 0 1 1
+

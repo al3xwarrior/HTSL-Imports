@@ -1,0 +1,70 @@
+//sb_tokens
+//sb_xp
+//sb_xpneeded
+//sb_money
+
+if (var tokens < 1000) {
+    var sb_tokens set %var.player/tokens%
+}
+if (var tokens > 1000) {
+    var sb_tokens set %var.player/tokens%
+    var sb_tokens div 1000
+    var sb_tokens set "%var.player/sb_tokens%K"
+}
+if (var tokens > 1000000) {
+    var sb_tokens set %var.player/tokens%
+    var sb_tokens div 1000000
+    var sb_tokens set "%var.player/sb_tokens%M"
+}
+if (var tokens > 1000000000) {
+    var sb_tokens set %var.player/tokens%
+    var sb_tokens div 1000000000
+    var sb_tokens set "%var.player/sb_tokens%B"
+}
+
+if (var money < 1000) {
+    var sb_money set %var.player/money%
+}
+if (var money > 1000) {
+    var sb_money set %var.player/money%
+    var sb_money div 1000
+    var sb_money set "%var.player/sb_money%K"
+}
+if (var money > 1000000) {
+    var sb_money set %var.player/money%
+    var sb_money div 1000000
+    var sb_money set "%var.player/sb_money%M"
+}
+if (var money > 1000000000) {
+    var sb_money set %var.player/money%
+    var sb_money div 1000000000
+    var sb_money set "%var.player/sb_money%B"
+}
+
+if (var xp < 1000) {
+    var sb_xp set %var.player/xp%
+}
+if (var xp > 1000) {
+    var sb_xp set %var.player/xp%
+    var sb_xp div 1000
+    var sb_xp set "%var.player/sb_xp%K"
+}
+if (var xp > 1000000) {
+    var sb_xp set %var.player/xp%
+    var sb_xp div 1000000
+    var sb_xp set "%var.player/sb_xp%M"
+}
+
+if (var xpneeded < 1000) {
+    var sb_xpneeded set %var.player/xpneeded%
+}
+if (var xpneeded > 1000) {
+    var sb_xpneeded set %var.player/xpneeded%
+    var sb_xpneeded div 1000
+    var sb_xpneeded set "%var.player/sb_xpneeded%K"
+}
+if (var xpneeded > 1000000) {
+    var sb_xpneeded set %var.player/xpneeded%
+    var sb_xpneeded div 1000000
+    var sb_xpneeded set "%var.player/sb_xpneeded%M"
+}

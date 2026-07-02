@@ -1,0 +1,34 @@
+// initializes stats
+
+if (var level == 0 0) {
+    var level set 1
+    var xpneeded set 100
+}
+
+if (var e_f_price == 0 0) {
+    var e_f_price set 50
+}
+if (var e_tf_price == 0 0) {
+    var e_tf_price set 25
+}
+if (var e_xp_price == 0 0) {
+    var e_xp_price set 75
+}
+if (var e_s_price == 0 0) {
+    var e_s_price set 100
+}
+if (var e_xpf_price == 0 0) {
+    var e_xpf_price set 500
+}
+if (var e_tnt_price == 0 0) {
+    var e_tnt_price set 1000
+}
+if (var e_fw_price == 0 0) {
+    var e_fw_price set 1500
+}
+if (var e_friend_price == 0 0) {
+    var e_friend_price set 1250
+}
+if (var e_ts_price == 0 0) {
+    var e_ts_price set 2000
+}

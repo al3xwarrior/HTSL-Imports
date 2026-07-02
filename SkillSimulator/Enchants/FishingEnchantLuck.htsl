@@ -1,0 +1,22 @@
+// upgrades fishing Luck; adds bonus catches and XP
+
+if (var level < 7 1) {
+    chat "&cLuck unlocks at level 7."
+    exit
+}
+if (var rodluck >= 25 0) {
+    chat "&cLuck is maxed."
+    exit
+}
+if (var tokens < %var.player/rodluckcost 60%) {
+    chat "&cNot enough tokens."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+var tokens dec %var.player/rodluckcost 60%
+var rodluck inc 1
+var rodluckcost mult 135
+var rodluckcost div 100
+sound "Level Up" 0.7 1.2 "invokers_location"
+function "OpenFishingEnchants" false
+

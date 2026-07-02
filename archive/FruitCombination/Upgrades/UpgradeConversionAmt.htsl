@@ -1,0 +1,16 @@
+// players can click an npc to upgrade their conversion amount, it checks if they have enough money,
+// and if they do, it upgrades their conversion amount and increases the cost for the next upgrade
+
+if (var money < %var.player/conversionamtc 100%) {
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    chat "&cYou do not have enough money to purchase this!"
+    exit
+}
+
+var money dec %var.player/conversionamtc 0%
+var conversionamt mult 15
+var conversionamt div 10
+var conversionamtc mult 2
+
+sound "Level Up" 0.7 1.0 "invokers_location"
+title "&a&oUpgrade Purchased!" "&7Your conversion amount is now &a%var.player/conversionamt 0%&7!" 0 1 1

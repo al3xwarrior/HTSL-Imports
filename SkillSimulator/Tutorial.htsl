@@ -1,0 +1,18 @@
+// tutorial npc; gives a one-time starter bonus and explains the core loop in chat
+
+chat "&a&lSKILLS &7Break blocks in Farm and Mine regions. Fish in Fish regions."
+chat "&a&lITEMS &7Drops are real inventory items. Use the Condenser to turn 64 raw into 1 enchanted, then 64 enchanted into 1 block."
+chat "&a&lSELL &7The universal seller sells raw, enchanted, and block forms for equal total value."
+chat "&a&lUPGRADE &7Money buys tool tiers and passives. Tokens buy tool enchants."
+chat "&a&lLEVEL &7All skills feed one shared level. Higher levels automatically unlock new skill regions."
+
+if (var tutorialdone == 0 0) {
+    var tutorialdone set 1
+    var money inc 150
+    var tokens inc 40
+    var xpgain set 75
+    function "AddXP" false
+    sound "Level Up" 0.8 1.2 "invokers_location"
+    title "&a&lTutorial Complete" "&7Starter bonus claimed." 0 2 1
+}
+

@@ -1,0 +1,48 @@
+// announces major skill area and enchant unlocks at exact shared levels
+
+if (var level == 5 0) {
+    chat "&b&lUNLOCK &7Mine2 and the Token Vein pickaxe enchant are now available."
+}
+if (var level == 7 0) {
+    chat "&b&lUNLOCK &7Fish2 and the Luck rod enchant are now available."
+}
+if (var level == 10 0) {
+    chat "&b&lUNLOCK &7Farm2 is now available."
+}
+if (var level == 12 0) {
+    chat "&b&lUNLOCK &7Mine3 and the Vein Miner pickaxe enchant are now available."
+}
+if (var level == 16 0) {
+    chat "&b&lUNLOCK &7The Crop Storm hoe enchant is now available."
+}
+if (var level == 18 0) {
+    chat "&b&lUNLOCK &7Fish3 is now available."
+}
+if (var level == 22 0) {
+    chat "&b&lUNLOCK &7Farm3 is now available."
+}
+if (var level == 24 0) {
+    chat "&b&lUNLOCK &7Mine4 and the Drill Surge pickaxe enchant are now available."
+}
+if (var level == 28 0) {
+    chat "&b&lUNLOCK &7The Sprinkler hoe enchant is now available."
+}
+if (var level == 30 0) {
+    chat "&b&lUNLOCK &7The Treasure rod enchant is now available."
+}
+if (var level == 34 0) {
+    chat "&b&lUNLOCK &7Fish4 is now available."
+}
+if (var level == 38 0) {
+    chat "&b&lUNLOCK &7Farm4 is now available."
+}
+if (var level == 40 0) {
+    chat "&b&lUNLOCK &7Mine5 is now available."
+}
+if (var level == 55 0) {
+    chat "&b&lUNLOCK &7Fish5 is now available."
+}
+if (var level == 60 0) {
+    chat "&b&lUNLOCK &7Farm5 is now available."
+}
+

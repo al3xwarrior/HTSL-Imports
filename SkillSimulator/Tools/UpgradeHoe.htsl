@@ -1,0 +1,20 @@
+// money upgrade for the farming hoe tier; tier increases farming drop amount but tool item remains cosmetic
+
+if (var hoetier >= 5 1) {
+    chat "&cYour farming hoe is already tier 5."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+if (var money < %var.player/hoecost 250%) {
+    chat "&cYou need &6$%var.player/hoecost 250% &cto upgrade your farming hoe."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+var money dec %var.player/hoecost 250%
+var hoetier inc 1
+var hoecost mult 3
+sound "Level Up" 0.8 1.2 "invokers_location"
+title "&a&lHoe Upgraded" "&7Farming hoe tier: &a%var.player/hoetier 1%" 0 2 1
+function "ClaimTools" false
+

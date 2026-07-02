@@ -1,0 +1,16 @@
+// Fish3 pufferfish reward; unlocks at shared level 18
+
+var fishamount set 1
+var xpgain set 78
+var tokengain set 6
+function "FishBase" false
+
+loop 32 index {
+    if (var fishamount > {index}) {
+        giveItem "../Items/pufferfish" true "First Slot" false
+    }
+}
+
+sound "Swim" 0.7 1.3 "invokers_location"
+title "&b&lFISH" "&7+%var.player/fishamount 1% Pufferfish" 0 1 1
+

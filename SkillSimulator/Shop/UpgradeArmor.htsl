@@ -1,0 +1,26 @@
+// money shop upgrade; Skill Armor gives a small all-around xp, token, and sell multiplier
+
+if (var armorlevel >= 10 0) {
+    chat "&cSkill Armor is maxed."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+if (var money < %var.player/armorcost 2000%) {
+    chat "&cYou need &6$%var.player/armorcost 2000% &cto upgrade Skill Armor."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+var money dec %var.player/armorcost 2000%
+var armorlevel inc 1
+var armormult inc 1
+var armorcost mult 170
+var armorcost div 100
+
+giveItem "../Items/skill_helmet" true "Helmet" true
+giveItem "../Items/skill_chestplate" true "Chestplate" true
+giveItem "../Items/skill_leggings" true "Leggings" true
+giveItem "../Items/skill_boots" true "Boots" true
+
+sound "Level Up" 0.8 1.3 "invokers_location"
+title "&6&lARMOR UPGRADED" "&7Skill Armor level: &6%var.player/armorlevel 1%" 0 2 1

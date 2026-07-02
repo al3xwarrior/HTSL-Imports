@@ -1,0 +1,16 @@
+// Mine2 coal reward; unlocks at shared level 5
+
+var mineamount set 1
+var xpgain set 24
+var tokengain set 5
+function "MineBase" false
+
+loop 32 index {
+    if (var mineamount > {index}) {
+        giveItem "../Items/coal" true "First Slot" false
+    }
+}
+
+sound "Item Pickup" 0.7 1.0 "invokers_location"
+title "&3&lMINE" "&7+%var.player/mineamount 1% Coal" 0 1 1
+

@@ -1,0 +1,78 @@
+
+var rand set %random.whole/1 26%
+if (var rand == 1) {
+    pause 2
+}
+if (var rand == 2) {
+    pause 4
+}
+if (var rand == 3) {
+    pause 6
+}
+if (var rand == 4) {
+    pause 8
+}
+if (var rand == 5) {
+    pause 10
+}
+if (var rand == 6) {
+    pause 12
+}
+if (var rand == 7) {
+    pause 14
+}
+if (var rand == 8) {
+    pause 16
+}
+if (var rand == 9) {
+    pause 18
+}
+if (var rand == 10) {
+    pause 20
+}
+if (var rand == 11) {
+    pause 22
+}
+if (var rand == 12) {
+    pause 24
+}
+if (var rand == 13) {
+    pause 26
+}
+if (var rand == 14) {
+    pause 28
+}
+if (var rand == 15) {
+    pause 30
+}
+if (var rand == 16) {
+    pause 32
+}
+if (var rand == 17) {
+    pause 34
+}
+if (var rand == 18) {
+    pause 36
+}
+if (var rand == 19) {
+    pause 38
+}
+if (var rand == 20) {
+    pause 40
+}
+if (var rand == 21) {
+    pause 42
+}
+if (var rand == 22) {
+    pause 44
+}
+if (var rand == 23) {
+    pause 46
+}
+if (var rand == 24) {
+    pause 48
+}
+if (var rand == 25) {
+    pause 50
+}
+function "AntiBald" false

@@ -1,0 +1,14 @@
+// run every 20 ticks; decrements online-only boosters, fills worker banks, checks tools, and displays actionbar state
+
+if (var xpboosttime > 0 0) {
+    var xpboosttime dec 1
+}
+if (var tokenboosttime > 0 0) {
+    var tokenboosttime dec 1
+}
+if (var moneyboosttime > 0 0) {
+    var moneyboosttime dec 1
+}
+
+function "WorkerTick" false
+function "EnsureTools" false

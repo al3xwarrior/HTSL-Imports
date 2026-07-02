@@ -1,0 +1,16 @@
+// Farm4 sugar cane reward; unlocks at shared level 38
+
+var farmamount set 1
+var xpgain set 82
+var tokengain set 7
+function "FarmBase" false
+
+loop 32 index {
+    if (var farmamount > {index}) {
+        giveItem "../Items/sugar_cane" true "First Slot" false
+    }
+}
+
+sound "Item Pickup" 0.7 1.35 "invokers_location"
+title "&a&lFARM" "&7+%var.player/farmamount 1% Sugar Cane" 0 1 1
+

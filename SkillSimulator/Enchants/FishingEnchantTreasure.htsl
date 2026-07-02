@@ -1,0 +1,22 @@
+// upgrades fishing Treasure; improves crate drop odds
+
+if (var level < 30 1) {
+    chat "&cTreasure unlocks at level 30."
+    exit
+}
+if (var rodtreasure >= 15 0) {
+    chat "&cTreasure is maxed."
+    exit
+}
+if (var tokens < %var.player/rodtreasurecost 800%) {
+    chat "&cNot enough tokens."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+var tokens dec %var.player/rodtreasurecost 800%
+var rodtreasure inc 1
+var rodtreasurecost mult 145
+var rodtreasurecost div 100
+sound "Level Up" 0.7 1.2 "invokers_location"
+function "OpenFishingEnchants" false
+

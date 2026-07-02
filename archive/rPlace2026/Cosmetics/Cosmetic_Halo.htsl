@@ -1,0 +1,101 @@
+// dropItem "{count:1,id:\"minecraft:blaze_powder\"}" "custom_coordinates" "1 1 1" false true 20 100 false false
+
+if () {
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 2.3
+    var particleZ set "%player.pos.z%D"
+    var particleX inc -1.0
+    dropItem "{count:1,id:\"minecraft:yellow_wool\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 4 100 false false
+
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 2.3
+    var particleZ set "%player.pos.z%D"
+    var particleX inc -0.86
+    var particleZ inc -0.5
+    dropItem "{count:1,id:\"minecraft:yellow_wool\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 4 100 false false
+
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 2.3
+    var particleZ set "%player.pos.z%D"
+    var particleX inc -0.5
+    var particleZ inc -0.86
+    dropItem "{count:1,id:\"minecraft:yellow_wool\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 4 100 false false
+}
+
+if () {
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 2.3
+    var particleZ set "%player.pos.z%D"
+    var particleZ inc -1.0
+    dropItem "{count:1,id:\"minecraft:yellow_wool\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 4 100 false false
+
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 2.3
+    var particleZ set "%player.pos.z%D"
+    var particleX inc 0.5
+    var particleZ inc -0.86
+    dropItem "{count:1,id:\"minecraft:yellow_wool\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 4 100 false false
+
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 2.3
+    var particleZ set "%player.pos.z%D"
+    var particleX inc 0.86
+    var particleZ inc -0.5
+    dropItem "{count:1,id:\"minecraft:yellow_wool\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 4 100 false false
+}
+
+if () {
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 2.3
+    var particleZ set "%player.pos.z%D"
+    var particleX inc 1.0
+    dropItem "{count:1,id:\"minecraft:yellow_wool\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 4 100 false false
+
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 2.3
+    var particleZ set "%player.pos.z%D"
+    var particleX inc 0.86
+    var particleZ inc 0.5
+    dropItem "{count:1,id:\"minecraft:yellow_wool\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 4 100 false false
+
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 2.3
+    var particleZ set "%player.pos.z%D"
+    var particleX inc 0.5
+    var particleZ inc 0.86
+    dropItem "{count:1,id:\"minecraft:yellow_wool\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 4 100 false false
+}
+
+if () {
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 2.3
+    var particleZ set "%player.pos.z%D"
+    var particleZ inc 1.0
+    dropItem "{count:1,id:\"minecraft:yellow_wool\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 4 100 false false
+    
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 2.3
+    var particleZ set "%player.pos.z%D"
+    var particleX inc -0.5
+    var particleZ inc 0.86
+    dropItem "{count:1,id:\"minecraft:yellow_wool\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 4 100 false false
+
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 2.3
+    var particleZ set "%player.pos.z%D"
+    var particleX inc -0.86
+    var particleZ inc 0.5
+    dropItem "{count:1,id:\"minecraft:yellow_wool\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 4 100 false false
+}

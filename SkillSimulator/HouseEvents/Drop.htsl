@@ -1,0 +1,6 @@
+// drop event; prevents cosmetic tools from being lost and recliams the current saved tools
+
+cancelEvent
+function "ClaimTools" false
+chat "&cTools cannot be dropped. Your saved tools were restored."
+

@@ -1,0 +1,86 @@
+// block break event; routes farming and mining regions into simulator reward handlers while preserving the build
+
+if (inRegion "Farm1") {
+    cancelEvent
+    function "FarmReward1" false
+    exit
+}
+if (inRegion "Farm2") {
+    cancelEvent
+    if (var level < 10 1) {
+        chat "&cFarm2 unlocks at level 10."
+        exit
+    }
+    function "FarmReward2" false
+    exit
+}
+if (inRegion "Farm3") {
+    cancelEvent
+    if (var level < 22 1) {
+        chat "&cFarm3 unlocks at level 22."
+        exit
+    }
+    function "FarmReward3" false
+    exit
+}
+if (inRegion "Farm4") {
+    cancelEvent
+    if (var level < 38 1) {
+        chat "&cFarm4 unlocks at level 38."
+        exit
+    }
+    function "FarmReward4" false
+    exit
+}
+if (inRegion "Farm5") {
+    cancelEvent
+    if (var level < 60 1) {
+        chat "&cFarm5 unlocks at level 60."
+        exit
+    }
+    function "FarmReward5" false
+    exit
+}
+
+if (inRegion "Mine1") {
+    cancelEvent
+    function "MineReward1" false
+    exit
+}
+if (inRegion "Mine2") {
+    cancelEvent
+    if (var level < 5 1) {
+        chat "&cMine2 unlocks at level 5."
+        exit
+    }
+    function "MineReward2" false
+    exit
+}
+if (inRegion "Mine3") {
+    cancelEvent
+    if (var level < 12 1) {
+        chat "&cMine3 unlocks at level 12."
+        exit
+    }
+    function "MineReward3" false
+    exit
+}
+if (inRegion "Mine4") {
+    cancelEvent
+    if (var level < 24 1) {
+        chat "&cMine4 unlocks at level 24."
+        exit
+    }
+    function "MineReward4" false
+    exit
+}
+if (inRegion "Mine5") {
+    cancelEvent
+    if (var level < 40 1) {
+        chat "&cMine5 unlocks at level 40."
+        exit
+    }
+    function "MineReward5" false
+    exit
+}
+

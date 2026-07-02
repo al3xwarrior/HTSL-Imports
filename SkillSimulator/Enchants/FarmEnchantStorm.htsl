@@ -1,0 +1,22 @@
+// upgrades farming Crop Storm; chance to triple crop amount
+
+if (var level < 16 1) {
+    chat "&cCrop Storm unlocks at level 16."
+    exit
+}
+if (var farmstorm >= 20 0) {
+    chat "&cCrop Storm is maxed."
+    exit
+}
+if (var tokens < %var.player/farmstormcost 250%) {
+    chat "&cNot enough tokens."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+var tokens dec %var.player/farmstormcost 250%
+var farmstorm inc 1
+var farmstormcost mult 140
+var farmstormcost div 100
+sound "Level Up" 0.7 1.2 "invokers_location"
+function "OpenFarmEnchants" false
+

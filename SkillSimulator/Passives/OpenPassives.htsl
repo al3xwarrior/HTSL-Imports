@@ -1,0 +1,10 @@
+// opens passive upgrade menu; menu buttons should call the five UpgradePassive functions
+
+chat "&6Passives: Sell Bonus, XP Bonus, Token Bonus, Offline Worker, AFK Worker."
+chat "&7Sell Bonus: %var.player/sellbonus 0% Cost $%var.player/sellbonuscost 500%."
+chat "&7XP Bonus: %var.player/xpbonus 0% Cost $%var.player/xpbonuscost 500%."
+chat "&7Token Bonus: %var.player/tokenbonus 0% Cost $%var.player/tokenbonuscost 600%."
+chat "&7Offline Worker: %var.player/offlineworker 0% Cost $%var.player/offlineworkercost 1000%."
+chat "&7AFK Worker: %var.player/afkworker 0% Cost $%var.player/afkworkercost 1500%."
+displayMenu "Passive Upgrades"
+

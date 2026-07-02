@@ -1,0 +1,4 @@
+// globalvar ab_name set %player.name%
+// globalvar ab_tag set %player.group.tag%
+
+chat "%var.global/ab_tag% %var.global/ab_name%&f: Yeah Al3x is NOT bald!"

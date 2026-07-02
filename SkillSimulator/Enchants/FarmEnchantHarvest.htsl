@@ -1,0 +1,18 @@
+// upgrades farming Harvest; increases crop quantity
+
+if (var farmharvest >= 50 0) {
+    chat "&cHarvest is maxed."
+    exit
+}
+if (var tokens < %var.player/farmharvestcost 10%) {
+    chat "&cNot enough tokens."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+var tokens dec %var.player/farmharvestcost 10%
+var farmharvest inc 1
+var farmharvestcost mult 125
+var farmharvestcost div 100
+sound "Level Up" 0.7 1.2 "invokers_location"
+function "OpenFarmEnchants" false
+

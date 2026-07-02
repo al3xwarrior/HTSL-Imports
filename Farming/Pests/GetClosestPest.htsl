@@ -1,0 +1,575 @@
+// Pest 1
+if () {
+    var "pestDistX" set "%var.global/pest1x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest1z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 1
+    exit
+}
+
+// Pest 2
+if () {
+    var "pestDistX" set "%var.global/pest2x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest2z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 2
+    exit
+}
+
+// Pest 3
+if () {
+    var "pestDistX" set "%var.global/pest3x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest3z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 3
+    exit
+}
+
+// Pest 4
+if () {
+    var "pestDistX" set "%var.global/pest4x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest4z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 4
+    exit
+}
+
+// Pest 5
+if () {
+    var "pestDistX" set "%var.global/pest5x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest5z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+
+function "GetClosestPest2" false
+goto function "GetClosestPest2"
+
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 5
+    exit
+}
+
+// Pest 6
+if () {
+    var "pestDistX" set "%var.global/pest6x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest6z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 6
+    exit
+}
+
+// Pest 7
+if () {
+    var "pestDistX" set "%var.global/pest7x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest7z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 7
+    exit
+}
+
+// Pest 8
+if () {
+    var "pestDistX" set "%var.global/pest8x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest8z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 8
+    exit
+}
+
+// Pest 9
+if () {
+    var "pestDistX" set "%var.global/pest9x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest9z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+
+function "GetClosestPest3" false
+goto function "GetClosestPest3"
+
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 9
+    exit
+}
+
+// Pest 10
+if () {
+    var "pestDistX" set "%var.global/pest10x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest10z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 10
+    exit
+}
+
+// Pest 11
+if () {
+    var "pestDistX" set "%var.global/pest11x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest11z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 11
+    exit
+}
+
+// Pest 12
+if () {
+    var "pestDistX" set "%var.global/pest12x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest12z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 12
+    exit
+}
+
+// Pest 13
+if () {
+    var "pestDistX" set "%var.global/pest13x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest13z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+
+function "GetClosestPest4" false
+goto function "GetClosestPest4"
+
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 13
+    exit
+}
+
+// Pest 14
+if () {
+    var "pestDistX" set "%var.global/pest14x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest14z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 14
+    exit
+}
+
+// Pest 15
+if () {
+    var "pestDistX" set "%var.global/pest15x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest15z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 15
+    exit
+}
+
+// Pest 16
+if () {
+    var "pestDistX" set "%var.global/pest16x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest16z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 16
+    exit
+}
+
+// Pest 17
+if () {
+    var "pestDistX" set "%var.global/pest17x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest17z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+
+function "GetClosestPest5" false
+goto function "GetClosestPest5"
+
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 17
+    exit
+}
+
+// Pest 18
+if () {
+    var "pestDistX" set "%var.global/pest18x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest18z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 18
+    exit
+}
+
+// Pest 19
+if () {
+    var "pestDistX" set "%var.global/pest19x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest19z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 19
+    exit
+}
+
+// Pest 20
+if () {
+    var "pestDistX" set "%var.global/pest20x%D"
+    var "pestDistY" set "136.1D"
+    var "pestDistZ" set "%var.global/pest20z%D"
+    var "pestDistX" dec "%player.pos.x%D"
+    var "pestDistY" dec "%player.pos.y%D"
+    var "pestDistZ" dec "%player.pos.z%D"
+}
+if (var "pestDistX" < 0 0) {
+    var "pestDistX" mult -1
+}
+if (var "pestDistY" < 0 0) {
+    var "pestDistY" mult -1
+}
+if (var "pestDistZ" < 0 0) {
+    var "pestDistZ" mult -1
+}
+if () {
+    var "pestDist" set "%var/pestDistX%D"
+    var "pestDist" inc "%var/pestDistY%D"
+    var "pestDist" inc "%var/pestDistZ%D"
+}
+if (var "pestDist" < "%var.player/pestReach%D" 99.0) {
+    var "closestPest" set 20
+    exit
+}

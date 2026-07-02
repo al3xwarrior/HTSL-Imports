@@ -1,0 +1,79 @@
+// join event; initializes shared progression, currencies, tools, enchants, passives, boosters, and starter tool items
+
+if (var joined == 0 0) {
+    var joined set 1
+
+    var level set 1
+    var xp set 0
+    var xpreq set 100
+    var money set 0
+    var tokens set 0
+    var prestige set 0
+    var prestigemult set 10
+
+    var hoetier set 1
+    var rodtier set 1
+    var picktier set 1
+    var hoecost set 250
+    var rodcost set 400
+    var pickcost set 300
+    var armorlevel set 0
+    var armorcost set 2000
+    var armormult set 10
+
+    var farmharvest set 0
+    var farmharvestcost set 10
+    var farmgolden set 0
+    var farmgoldencost set 75
+    var farmstorm set 0
+    var farmstormcost set 250
+    var farmsprinkler set 0
+    var farmsprinklercost set 700
+
+    var rodlure set 0
+    var rodlurecost set 15
+    var rodluck set 0
+    var rodluckcost set 60
+    var roddouble set 0
+    var roddoublecost set 225
+    var rodtreasure set 0
+    var rodtreasurecost set 800
+
+    var minepower set 0
+    var minepowercost set 12
+    var minetokenvein set 0
+    var minetokenveincost set 50
+    var mineveinminer set 0
+    var mineveinminercost set 200
+    var minedrillsurge set 0
+    var minedrillsurgecost set 900
+
+    var sellbonus set 0
+    var sellbonuscost set 500
+    var sellmult set 10
+    var xpbonus set 0
+    var xpbonuscost set 500
+    var xpmult set 10
+    var tokenbonus set 0
+    var tokenbonuscost set 600
+    var tokenmult set 10
+    var offlineworker set 0
+    var offlineworkercost set 1000
+    var afkworker set 0
+    var afkworkercost set 1500
+
+    var workersec set 0
+    var afksec set 0
+    var bankmoney set 0
+    var banktokens set 0
+    var bankxp set 0
+
+    var xpboosttime set 0
+    var tokenboosttime set 0
+    var moneyboosttime set 0
+
+    var tutorialdone set 0
+}
+
+function "ClaimTools" false
+chat "&aWelcome to SkillSimulator. Gather items, condense stacks, sell loot, buy enchants, and level up new areas."

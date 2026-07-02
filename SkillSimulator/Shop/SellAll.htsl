@@ -1,0 +1,28 @@
+// universal seller npc; sells every recognized raw, enchanted, and block item with no condensed premium
+
+var selltotal set 0
+function "SellFarm" false
+function "SellFish" false
+function "SellMine" false
+
+if (var selltotal <= 0 0) {
+    chat "&cYou do not have any sellable skill items."
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+var sellgive set %var.player/selltotal 0%
+var sellgive mult %var.player/sellmult 10%
+var sellgive div 10
+var sellgive mult %var.player/armormult 10%
+var sellgive div 10
+var sellgive mult %var.player/prestigemult 10%
+var sellgive div 10
+
+if (var moneyboosttime > 0 0) {
+    var sellgive mult 2
+}
+
+var money inc %var.player/sellgive 0%
+sound "Orb Pickup" 0.8 1.2 "invokers_location"
+title "&6&lSOLD" "&7Items value: &6$%var.player/sellgive 0%" 0 2 1

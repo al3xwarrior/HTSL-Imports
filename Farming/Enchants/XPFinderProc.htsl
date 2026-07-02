@@ -1,0 +1,6 @@
+if (var xpfindersound == "a" "a") {
+    sound "Block Anvil Break" 0.6 2.0 "invokers_location"
+}
+if (var xpfindermsg == "a" "a") {
+    chat "&5&l(!) &dYour &bXP Finder &denchant has activated, rewarding &b%var.player/xpFinderAmt% XP&d!"
+}

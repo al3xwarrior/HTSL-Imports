@@ -1,0 +1,42 @@
+// shared mining reward math; token-forward loop with vein and surge proc enchants
+
+var actiontype set 3
+var minebonus set %var.player/minepower 0%
+var minebonus div 2
+var mineamount inc %var.player/minebonus 0%
+var mineamount inc %var.player/picktier 1%
+
+var tokenrng set %random.int/1 100%
+var tokenchance set %var.player/minetokenvein 0%
+var tokenchance mult 2
+if (var tokenrng <= %var.player/tokenchance 0%, var minetokenvein > 0 0) {
+    var tokenburst set %var.player/minetokenvein 1%
+    var tokenburst mult 3
+    var tokens inc %var.player/tokenburst 3%
+    chat "&e&lTOKEN VEIN &7You found &e%var.player/tokenburst 3% bonus tokens&7."
+}
+
+var veinrng set %random.int/1 100%
+var veinchance set %var.player/mineveinminer 0%
+var veinchance mult 2
+if (var veinrng <= %var.player/veinchance 0%, var mineveinminer > 0 0) {
+    var mineamount mult 2
+    chat "&3&lVEIN MINER &7Your ore drop doubled."
+}
+
+var surgerng set %random.int/1 150%
+var surgechance set %var.player/minedrillsurge 0%
+if (var surgerng <= %var.player/surgechance 0%, var minedrillsurge > 0 0) {
+    var mineamount mult 4
+    var tokengain mult 3
+    chat "&d&lDRILL SURGE &7Massive mining burst!"
+}
+
+if (var mineamount > 32 0) {
+    var mineamount set 32
+}
+
+function "AddXP" false
+function "AddTokens" false
+function "RollCrates" false
+

@@ -1,0 +1,3 @@
+if (var "pestSpawnBC" == "a" "a") {
+    chat "&2(!) A &e%var.global/pestSpawnBC% pest &2has spawned with &c%var.global/pestHPBc% HP&2 at coordinates (%var.global/pestXBc%, %var.global/pestZBc%)!"
+}

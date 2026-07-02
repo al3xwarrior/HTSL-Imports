@@ -1,0 +1,6 @@
+if (var tssound == "a" "a") {
+    sound "Splash" 0.9 2.0 "invokers_location"
+}
+if (var tsmsg == "a" "a") {
+    chat "&5&l(!) &dYour &1Thunder Storm &denchant has activated which gives you &6%var.player/tsTokens% tokens&d and &b%var.player/tsXp% XP&d!"
+}

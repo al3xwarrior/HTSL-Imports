@@ -1,0 +1,22 @@
+// upgrades mining Token Vein; chance to find bonus tokens
+
+if (var level < 5 1) {
+    chat "&cToken Vein unlocks at level 5."
+    exit
+}
+if (var minetokenvein >= 30 0) {
+    chat "&cToken Vein is maxed."
+    exit
+}
+if (var tokens < %var.player/minetokenveincost 50%) {
+    chat "&cNot enough tokens."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+var tokens dec %var.player/minetokenveincost 50%
+var minetokenvein inc 1
+var minetokenveincost mult 132
+var minetokenveincost div 100
+sound "Level Up" 0.7 1.2 "invokers_location"
+function "OpenMiningEnchants" false
+

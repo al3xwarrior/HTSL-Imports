@@ -1,0 +1,20 @@
+// money upgrade for the mining pickaxe tier; tier increases mining rewards but tool item remains cosmetic
+
+if (var picktier >= 5 1) {
+    chat "&cYour mining pickaxe is already tier 5."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+if (var money < %var.player/pickcost 300%) {
+    chat "&cYou need &6$%var.player/pickcost 300% &cto upgrade your mining pickaxe."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+var money dec %var.player/pickcost 300%
+var picktier inc 1
+var pickcost mult 3
+sound "Level Up" 0.8 1.2 "invokers_location"
+title "&3&lPickaxe Upgraded" "&7Mining pickaxe tier: &3%var.player/picktier 1%" 0 2 1
+function "ClaimTools" false
+

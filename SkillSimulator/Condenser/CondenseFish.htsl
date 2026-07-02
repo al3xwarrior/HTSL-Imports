@@ -1,0 +1,74 @@
+// fishing item condense rules; 64 raw -> enchanted, 64 enchanted -> block
+
+loop 128 index {
+    if (hasItem "../Items/cod64" metadata Anywhere anyAmount) {
+        removeItem "../Items/cod64"
+        giveItem "../Items/enchanted_cod" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/salmon64" metadata Anywhere anyAmount) {
+        removeItem "../Items/salmon64"
+        giveItem "../Items/enchanted_salmon" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/pufferfish64" metadata Anywhere anyAmount) {
+        removeItem "../Items/pufferfish64"
+        giveItem "../Items/enchanted_pufferfish" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/pearl64" metadata Anywhere anyAmount) {
+        removeItem "../Items/pearl64"
+        giveItem "../Items/enchanted_pearl" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/scale64" metadata Anywhere anyAmount) {
+        removeItem "../Items/scale64"
+        giveItem "../Items/enchanted_scale" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+
+loop 128 index {
+    if (hasItem "../Items/enchanted_cod64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_cod64"
+        giveItem "../Items/cod_block" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_salmon64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_salmon64"
+        giveItem "../Items/salmon_block" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_pufferfish64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_pufferfish64"
+        giveItem "../Items/pufferfish_block" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_pearl64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_pearl64"
+        giveItem "../Items/pearl_block" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_scale64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_scale64"
+        giveItem "../Items/scale_block" true "First Slot" false
+        var condensecount inc 1
+    }
+}
+

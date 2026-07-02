@@ -1,0 +1,651 @@
+var "toSell" set 0
+
+// Wheat Tier 1 - 1x
+
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+if (hasItem "../Items/Wheat_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_1.nbt"
+    var "toSell" inc 1
+}
+
+function "Sell2" false
+goto function "Sell2"
+
+// Wheat Tier 1 - 64x
+
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat64_1.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_1.nbt"
+    var "toSell" inc 64
+}
+
+function "Sell3" false
+goto function "Sell3"
+
+// Wheat Tier 2 - 1x
+
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+if (hasItem "../Items/Wheat_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_2.nbt"
+    var "toSell" inc 64
+}
+
+function "Sell4" false
+goto function "Sell4"
+
+// Wheat Tier 2 - 64x
+
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat64_2.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_2.nbt"
+    var "toSell" inc 4096
+}
+
+function "Sell5" false
+goto function "Sell5"
+
+// Wheat Tier 3 - 1x
+
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+if (hasItem "../Items/Wheat_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat_3.nbt"
+    var "toSell" inc 4096
+}
+
+function "Sell6" false
+goto function "Sell6"
+
+// Wheat Tier 3 - 64x
+
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+if (hasItem "../Items/Wheat64_3.nbt" metadata Anywhere "Equal or Greater Amount") {
+    removeItem "../Items/Wheat64_3.nbt"
+    var "toSell" inc 262144
+}
+
+function "Sell7" false
+goto function "Sell7"
+
+// END
+
+if (var "toSell" == 0 0) {
+    chat "&cYou have no items to sell!"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    var "toSell" unset
+    exit
+}
+
+var "money" inc %var.player/toSell 0%
+sound "Orb Pickup" 0.7 1.0 "invokers_location"
+chat "&2&l(!) &aYou sold your inventory for $%var.player/toSell 0%!"
+var "toSell" unset

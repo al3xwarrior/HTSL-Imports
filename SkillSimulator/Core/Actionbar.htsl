@@ -1,0 +1,19 @@
+// ran every 4 ticks
+
+// periodic actionbar with shared level, xp, currencies, and online booster timers
+
+if (var xpboosttime > 0 0) {
+    actionBar "&aLv %var.player/level 1% &7XP &f%var.player/xp 0%&7/&f%var.player/xpreq 100% &8| &6$%var.player/money 0% &8| &e%var.player/tokens 0% Tokens &8| &bXPx2 %var.player/xpboosttime 0%s"
+    exit
+}
+if (var tokenboosttime > 0 0) {
+    actionBar "&aLv %var.player/level 1% &7XP &f%var.player/xp 0%&7/&f%var.player/xpreq 100% &8| &6$%var.player/money 0% &8| &e%var.player/tokens 0% Tokens &8| &eTokenx2 %var.player/tokenboosttime 0%s"
+    exit
+}
+if (var moneyboosttime > 0 0) {
+    actionBar "&aLv %var.player/level 1% &7XP &f%var.player/xp 0%&7/&f%var.player/xpreq 100% &8| &6$%var.player/money 0% &8| &e%var.player/tokens 0% Tokens &8| &6Moneyx2 %var.player/moneyboosttime 0%s"
+    exit
+}
+
+actionBar "&aLv %var.player/level 1% &7XP &f%var.player/xp 0%&7/&f%var.player/xpreq 100% &8| &6$%var.player/money 0% &8| &e%var.player/tokens 0% Tokens &8| &dP%var.player/prestige 0%"
+

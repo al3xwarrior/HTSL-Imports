@@ -1,0 +1,43 @@
+if 
+
+giveItem "{count:1,id:\\"minecraft:red_wool\\"}" true "Hotbar Slot 5" false
+giveItem "{count:1,id:\\"minecraft:barrier\\"}" true "Hotbar Slot 4" false
+
+
+// Fill Hotbar except one with unstackable swords then give egg in First Available Slot
+// If egg is found in hotbar that means they placed their Selected Block
+giveItem "{count:1,id:\\"minecraft:diamond_sword\\"}" true "First Available Slot" false
+giveItem "{count:1,id:\\"minecraft:diamond_sword\\"}" true "First Available Slot" false
+giveItem "{count:1,id:\\"minecraft:diamond_sword\\"}" true "First Available Slot" false
+giveItem "{count:1,id:\\"minecraft:diamond_sword\\"}" true "First Available Slot" false
+giveItem "{count:1,id:\\"minecraft:diamond_sword\\"}" true "First Available Slot" false
+giveItem "{count:1,id:\\"minecraft:diamond_sword\\"}" true "First Available Slot" false
+giveItem "{count:1,id:\\"minecraft:diamond_sword\\"}" true "First Available Slot" false
+
+giveItem "{count:1,id:\\"minecraft:egg\\"}" true "First Available Slot" false
+
+removeItem "{count:7,id:\\"minecraft:diamond_sword\\"}"
+
+if (hasItem "minecraft:egg" "Item Type" "Hotbar" "Any Amount") {
+    chat "Has placed red wool"
+}
+
+
+goto event "Player Change Held Item"
+
+if (var isbreaking == 1 0, !hasItem "minecraft:wooden_pickaxe" "Item Type" "Hand" "Any Amount") {
+    removeItem "minecraft:wooden_pickaxe"
+    giveItem "minecraft:wooden_pickaxe" true "Hand" true
+}
+
+goto event "Player Toggle Sneak"
+
+if (var isbreaking == 1 0) {
+    var isbreaking set 0 false
+    function Adventure false
+    applyLayout "Main Menu"
+}
+
+
+
+// goto function "4 Tick"

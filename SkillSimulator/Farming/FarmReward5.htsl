@@ -1,0 +1,16 @@
+// Farm5 pumpkin reward; unlocks at shared level 60
+
+var farmamount set 1
+var xpgain set 145
+var tokengain set 12
+function "FarmBase" false
+
+loop 32 index {
+    if (var farmamount > {index}) {
+        giveItem "../Items/pumpkin" true "First Slot" false
+    }
+}
+
+sound "Item Pickup" 0.7 1.4 "invokers_location"
+title "&a&lFARM" "&7+%var.player/farmamount 1% Pumpkin" 0 1 1
+

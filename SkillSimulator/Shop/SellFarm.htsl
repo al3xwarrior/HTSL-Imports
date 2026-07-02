@@ -1,0 +1,157 @@
+// farming sell table; raw item values are preserved across condensed forms
+
+loop 256 index {
+    if (hasItem "../Items/wheat64" metadata Anywhere anyAmount) {
+        removeItem "../Items/wheat64"
+        var selltotal inc 64
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_wheat64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_wheat64"
+        var selltotal inc 4096
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/carrot64" metadata Anywhere anyAmount) {
+        removeItem "../Items/carrot64"
+        var selltotal inc 192
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_carrot64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_carrot64"
+        var selltotal inc 12288
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/potato64" metadata Anywhere anyAmount) {
+        removeItem "../Items/potato64"
+        var selltotal inc 512
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_potato64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_potato64"
+        var selltotal inc 32768
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/sugar_cane64" metadata Anywhere anyAmount) {
+        removeItem "../Items/sugar_cane64"
+        var selltotal inc 1280
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_sugar_cane64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_sugar_cane64"
+        var selltotal inc 81920
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/pumpkin64" metadata Anywhere anyAmount) {
+        removeItem "../Items/pumpkin64"
+        var selltotal inc 3200
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/enchanted_pumpkin64" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_pumpkin64"
+        var selltotal inc 204800
+    }
+}
+
+loop 512 index {
+    if (hasItem "../Items/wheat" metadata Anywhere anyAmount) {
+        removeItem "../Items/wheat"
+        var selltotal inc 1
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/enchanted_wheat" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_wheat"
+        var selltotal inc 64
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/wheat_block" metadata Anywhere anyAmount) {
+        removeItem "../Items/wheat_block"
+        var selltotal inc 4096
+    }
+}
+
+loop 512 index {
+    if (hasItem "../Items/carrot" metadata Anywhere anyAmount) {
+        removeItem "../Items/carrot"
+        var selltotal inc 3
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/enchanted_carrot" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_carrot"
+        var selltotal inc 192
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/carrot_block" metadata Anywhere anyAmount) {
+        removeItem "../Items/carrot_block"
+        var selltotal inc 12288
+    }
+}
+
+loop 512 index {
+    if (hasItem "../Items/potato" metadata Anywhere anyAmount) {
+        removeItem "../Items/potato"
+        var selltotal inc 8
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/enchanted_potato" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_potato"
+        var selltotal inc 512
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/potato_block" metadata Anywhere anyAmount) {
+        removeItem "../Items/potato_block"
+        var selltotal inc 32768
+    }
+}
+
+loop 512 index {
+    if (hasItem "../Items/sugar_cane" metadata Anywhere anyAmount) {
+        removeItem "../Items/sugar_cane"
+        var selltotal inc 20
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/enchanted_sugar_cane" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_sugar_cane"
+        var selltotal inc 1280
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/sugar_cane_block" metadata Anywhere anyAmount) {
+        removeItem "../Items/sugar_cane_block"
+        var selltotal inc 81920
+    }
+}
+
+loop 512 index {
+    if (hasItem "../Items/pumpkin" metadata Anywhere anyAmount) {
+        removeItem "../Items/pumpkin"
+        var selltotal inc 50
+    }
+}
+loop 256 index {
+    if (hasItem "../Items/enchanted_pumpkin" metadata Anywhere anyAmount) {
+        removeItem "../Items/enchanted_pumpkin"
+        var selltotal inc 3200
+    }
+}
+loop 128 index {
+    if (hasItem "../Items/pumpkin_block" metadata Anywhere anyAmount) {
+        removeItem "../Items/pumpkin_block"
+        var selltotal inc 204800
+    }
+}

@@ -1,0 +1,21 @@
+if (var e_fw_lvl >= 100 0) {
+    chat "&cYour Frost Walker enchantment is already maxed!"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    displayMenu "Hoe Enchants"
+    exit
+}
+
+if (var tokens < %var.player/e_fw_price 0%) {
+    chat "&cYou don't have enough tokens to upgrade this enchantment!"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+var tokens dec %var.player/e_fw_price 0%
+var e_fw_lvl inc 1
+var e_fw_price inc 3000
+
+chat "&aYou have successfully upgraded your Frost Walker enchantment to level %var.player/e_fw_lvl 0%!"
+sound "Level Up" 0.7 1.0 "invokers_location"
+
+displayMenu "Hoe Enchants"

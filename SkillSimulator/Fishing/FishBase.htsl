@@ -1,0 +1,33 @@
+// shared fishing reward math; slower action loop with higher variance and treasure-oriented enchants
+
+var actiontype set 2
+var fishbonus set %var.player/rodlure 0%
+var fishbonus div 3
+var fishamount inc %var.player/fishbonus 0%
+var fishamount inc %var.player/rodtier 1%
+
+var luckrng set %random.int/1 100%
+var luckchance set %var.player/rodluck 0%
+var luckchance mult 2
+if (var luckrng <= %var.player/luckchance 0%, var rodluck > 0 0) {
+    var fishamount inc 3
+    var xpgain inc 25
+    chat "&b&lLUCK &7A better school of fish bit your hook."
+}
+
+var doublerng set %random.int/1 100%
+var doublechance set %var.player/roddouble 0%
+var doublechance mult 2
+if (var doublerng <= %var.player/doublechance 0%, var roddouble > 0 0) {
+    var fishamount mult 2
+    chat "&3&lDOUBLE HOOK &7Your catch doubled."
+}
+
+if (var fishamount > 32 0) {
+    var fishamount set 32
+}
+
+function "AddXP" false
+function "AddTokens" false
+function "RollCrates" false
+

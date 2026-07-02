@@ -1,0 +1,16 @@
+// adds xpgain to the shared uncapped level system, applying passive, prestige, and online booster multipliers
+
+var xpgain mult %var.player/xpmult 10%
+var xpgain div 10
+var xpgain mult %var.player/armormult 10%
+var xpgain div 10
+
+if (var xpboosttime > 0 0) {
+    var xpgain mult 2
+}
+
+var xpgain mult %var.player/prestigemult 10%
+var xpgain div 10
+
+var xp inc %var.player/xpgain 0%
+function "CheckLevelUp" false

@@ -1,0 +1,16 @@
+// Fish2 salmon reward; unlocks at shared level 7
+
+var fishamount set 1
+var xpgain set 42
+var tokengain set 3
+function "FishBase" false
+
+loop 32 index {
+    if (var fishamount > {index}) {
+        giveItem "../Items/salmon" true "First Slot" false
+    }
+}
+
+sound "Swim" 0.7 1.15 "invokers_location"
+title "&b&lFISH" "&7+%var.player/fishamount 1% Salmon" 0 1 1
+

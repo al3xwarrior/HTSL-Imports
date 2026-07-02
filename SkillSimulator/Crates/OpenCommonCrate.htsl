@@ -1,0 +1,27 @@
+// common crate reward table
+
+var cratereward set %random.int/1 4%
+sound "Click" 0.8 1.2 "invokers_location"
+
+if (var cratereward == 1 0) {
+    var crategain set %random.int/100 501%
+    var money inc %var.player/crategain 100%
+    title "&a&lCOMMON CRATE" "&6+$%var.player/crategain 100%" 0 2 1
+    exit
+}
+if (var cratereward == 2 0) {
+    var crategain set %random.int/15 51%
+    var tokens inc %var.player/crategain 15%
+    title "&a&lCOMMON CRATE" "&e+%var.player/crategain 15% tokens" 0 2 1
+    exit
+}
+if (var cratereward == 3 0) {
+    var xpgain set %random.int/75 201%
+    function "AddXP" false
+    title "&a&lCOMMON CRATE" "&aXP gained" 0 2 1
+    exit
+}
+
+var xpboosttime inc 180
+title "&a&lCOMMON CRATE" "&b+3m XP Booster" 0 2 1
+

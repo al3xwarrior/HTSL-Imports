@@ -1,0 +1,15 @@
+// money passive; increases money earned from universal selling by 10 percent per level
+
+if (var money < %var.player/sellbonuscost 500%) {
+    chat "&cNot enough money."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+var money dec %var.player/sellbonuscost 500%
+var sellbonus inc 1
+var sellmult inc 1
+var sellbonuscost mult 150
+var sellbonuscost div 100
+sound "Level Up" 0.7 1.2 "invokers_location"
+function "OpenPassives" false
+

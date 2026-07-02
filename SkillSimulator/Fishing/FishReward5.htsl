@@ -1,0 +1,16 @@
+// Fish5 ancient scale reward; unlocks at shared level 55
+
+var fishamount set 1
+var xpgain set 230
+var tokengain set 18
+function "FishBase" false
+
+loop 32 index {
+    if (var fishamount > {index}) {
+        giveItem "../Items/scale" true "First Slot" false
+    }
+}
+
+sound "Swim" 0.7 1.6 "invokers_location"
+title "&b&lFISH" "&7+%var.player/fishamount 1% Ancient Scale" 0 1 1
+

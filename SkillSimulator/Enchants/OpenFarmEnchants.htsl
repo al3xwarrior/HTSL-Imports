@@ -1,0 +1,9 @@
+// opens the farming tool enchant menu; menu buttons should call the four FarmEnchant functions
+
+chat "&aFarming Enchants: Harvest, Golden Crop, Crop Storm, Sprinkler."
+chat "&7Harvest: %var.player/farmharvest 0%/50 Cost %var.player/farmharvestcost 10% tokens."
+chat "&7Golden Crop: %var.player/farmgolden 0%/25 Cost %var.player/farmgoldencost 75% tokens. Unlocks level 8."
+chat "&7Crop Storm: %var.player/farmstorm 0%/20 Cost %var.player/farmstormcost 250% tokens. Unlocks level 16."
+chat "&7Sprinkler: %var.player/farmsprinkler 0%/15 Cost %var.player/farmsprinklercost 700% tokens. Unlocks level 28."
+displayMenu "Farming Enchants"
+

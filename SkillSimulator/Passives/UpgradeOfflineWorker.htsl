@@ -1,0 +1,14 @@
+// money passive; adds online-only claimable money and token drip every minute
+
+if (var money < %var.player/offlineworkercost 1000%) {
+    chat "&cNot enough money."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+var money dec %var.player/offlineworkercost 1000%
+var offlineworker inc 1
+var offlineworkercost mult 175
+var offlineworkercost div 100
+sound "Level Up" 0.7 1.2 "invokers_location"
+function "OpenPassives" false
+

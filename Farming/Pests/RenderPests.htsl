@@ -1,0 +1,86 @@
+// pest1hp
+// pest1x
+// pest1z
+
+// Pest List:
+// 1 - ant
+// 2 - chicken
+// 3 - cool_rock
+// 4 - fly
+// 5 - frog
+// 6 - jerry
+// 7 - ladybug
+// 8 - piranha
+// 9 - raccoon
+// 10 - rat
+// 11 - sheep
+// 12 - snail
+// 13 - snowman
+// 14 - zombie_horse
+// 15 - magma_monster
+// 16 - al3xwarrior
+// 17 - ender_dragon
+// 18 - guardian
+// 19 - cat
+// 20 - enderman
+
+if (globalvar "pest1hp" > 0 0) {
+    dropItem "../Items/Pests/pest_ant" "custom_coordinates" "%var.global/pest1x% 136.1 %var.global/pest1z%" false true 5 100
+}
+if (globalvar "pest2hp" > 0 0) {
+    dropItem "../Items/Pests/pest_chicken" "custom_coordinates" "%var.global/pest2x% 136.1 %var.global/pest2z%" false true 5 100
+}
+if (globalvar "pest3hp" > 0 0) {
+    dropItem "../Items/Pests/pest_cool_rock" "custom_coordinates" "%var.global/pest3x% 136.1 %var.global/pest3z%" false true 5 100
+}
+if (globalvar "pest4hp" > 0 0) {
+    dropItem "../Items/Pests/pest_fly" "custom_coordinates" "%var.global/pest4x% 136.1 %var.global/pest4z%" false true 5 100
+}
+if (globalvar "pest5hp" > 0 0) {
+    dropItem "../Items/Pests/pest_frog" "custom_coordinates" "%var.global/pest5x% 136.1 %var.global/pest5z%" false true 5 100
+}
+if (globalvar "pest6hp" > 0 0) {
+    dropItem "../Items/Pests/pest_jerry" "custom_coordinates" "%var.global/pest6x% 136.1 %var.global/pest6z%" false true 5 100
+}
+if (globalvar "pest7hp" > 0 0) {
+    dropItem "../Items/Pests/pest_ladybug" "custom_coordinates" "%var.global/pest7x% 136.1 %var.global/pest7z%" false true 5 100
+}
+if (globalvar "pest8hp" > 0 0) {
+    dropItem "../Items/Pests/pest_piranha" "custom_coordinates" "%var.global/pest8x% 136.1 %var.global/pest8z%" false true 5 100
+}
+if (globalvar "pest9hp" > 0 0) {
+    dropItem "../Items/Pests/pest_raccoon" "custom_coordinates" "%var.global/pest9x% 136.1 %var.global/pest9z%" false true 5 100
+}
+if (globalvar "pest10hp" > 0 0) {
+    dropItem "../Items/Pests/pest_rat" "custom_coordinates" "%var.global/pest10x% 136.1 %var.global/pest10z%" false true 5 100
+}
+if (globalvar "pest11hp" > 0 0) {
+    dropItem "../Items/Pests/pest_sheep" "custom_coordinates" "%var.global/pest11x% 136.1 %var.global/pest11z%" false true 5 100
+}
+if (globalvar "pest12hp" > 0 0) {
+    dropItem "../Items/Pests/pest_snail" "custom_coordinates" "%var.global/pest12x% 136.1 %var.global/pest12z%" false true 5 100
+}
+if (globalvar "pest13hp" > 0 0) {
+    dropItem "../Items/Pests/pest_snowman" "custom_coordinates" "%var.global/pest13x% 136.1 %var.global/pest13z%" false true 5 100
+}
+if (globalvar "pest14hp" > 0 0) {
+    dropItem "../Items/Pests/pest_zombie_horse" "custom_coordinates" "%var.global/pest14x% 136.1 %var.global/pest14z%" false true 5 100
+}
+if (globalvar "pest15hp" > 0 0) {
+    dropItem "../Items/Pests/pest_magma_monster" "custom_coordinates" "%var.global/pest15x% 136.1 %var.global/pest15z%" false true 5 100
+}
+if (globalvar "pest16hp" > 0 0) {
+    dropItem "../Items/Pests/pest_al3xwarrior" "custom_coordinates" "%var.global/pest16x% 136.1 %var.global/pest16z%" false true 5 100
+}
+if (globalvar "pest17hp" > 0 0) {
+    dropItem "../Items/Pests/pest_ender_dragon" "custom_coordinates" "%var.global/pest17x% 136.1 %var.global/pest17z%" false true 5 100
+}
+if (globalvar "pest18hp" > 0 0) {
+    dropItem "../Items/Pests/pest_guardian" "custom_coordinates" "%var.global/pest18x% 136.1 %var.global/pest18z%" false true 5 100
+}
+if (globalvar "pest19hp" > 0 0) {
+    dropItem "../Items/Pests/pest_cat" "custom_coordinates" "%var.global/pest19x% 136.1 %var.global/pest19z%" false true 5 100
+}
+if (globalvar "pest20hp" > 0 0) {
+    dropItem "../Items/Pests/pest_enderman" "custom_coordinates" "%var.global/pest20x% 136.1 %var.global/pest20z%" false true 5 100
+}

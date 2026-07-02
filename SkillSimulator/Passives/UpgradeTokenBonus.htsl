@@ -1,0 +1,15 @@
+// money passive; increases tokens earned from active skills by 10 percent per level
+
+if (var money < %var.player/tokenbonuscost 600%) {
+    chat "&cNot enough money."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+var money dec %var.player/tokenbonuscost 600%
+var tokenbonus inc 1
+var tokenmult inc 1
+var tokenbonuscost mult 155
+var tokenbonuscost div 100
+sound "Level Up" 0.7 1.2 "invokers_location"
+function "OpenPassives" false
+

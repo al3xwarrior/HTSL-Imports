@@ -1,0 +1,21 @@
+if (var e_xp_lvl >= 20 0) {
+    chat "&cYour XP Fortune enchantment is already maxed!"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    displayMenu "Hoe Enchants"
+    exit
+}
+
+if (var tokens < %var.player/e_xp_price 0%) {
+    chat "&cYou don't have enough tokens to upgrade this enchantment!"
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    exit
+}
+
+var tokens dec %var.player/e_xp_price 0%
+var e_xp_lvl inc 1
+var e_xp_price inc 400
+
+chat "&aYou have successfully upgraded your XP Fortune enchantment to level %var.player/e_xp_lvl 0%!"
+sound "Level Up" 0.7 1.0 "invokers_location"
+
+displayMenu "Hoe Enchants"

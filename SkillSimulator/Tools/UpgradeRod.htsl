@@ -1,0 +1,20 @@
+// money upgrade for the fishing rod tier; tier increases fishing rewards but tool item remains cosmetic
+
+if (var rodtier >= 5 1) {
+    chat "&cYour fishing rod is already tier 5."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+if (var money < %var.player/rodcost 400%) {
+    chat "&cYou need &6$%var.player/rodcost 400% &cto upgrade your fishing rod."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+var money dec %var.player/rodcost 400%
+var rodtier inc 1
+var rodcost mult 3
+sound "Level Up" 0.8 1.2 "invokers_location"
+title "&b&lRod Upgraded" "&7Fishing rod tier: &b%var.player/rodtier 1%" 0 2 1
+function "ClaimTools" false
+

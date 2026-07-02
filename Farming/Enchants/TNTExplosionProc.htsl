@@ -1,0 +1,6 @@
+if (var tntsound == "a" "a") {
+    sound "Explode" 0.9 1.0 "invokers_location"
+}
+if (var tntmsg == "a" "a") {
+    chat "&5&l(!) &dYour &cTNT Explosion &denchant has activated, rewarding &6%var.player/tntTokens% tokens &dand &b%var.player/tntXp% XP&d!"
+}

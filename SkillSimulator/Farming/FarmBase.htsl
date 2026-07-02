@@ -1,0 +1,38 @@
+// shared farming reward math; farmamount, xpgain, and tokengain should already be seeded by the tier handler
+
+var actiontype set 1
+var farmbonus set %var.player/farmharvest 0%
+var farmbonus div 2
+var farmamount inc %var.player/farmbonus 0%
+var farmamount inc %var.player/hoetier 1%
+
+var stormrng set %random.int/1 100%
+var stormchance set %var.player/farmstorm 0%
+var stormchance mult 2
+if (var stormrng <= %var.player/stormchance 0%, var farmstorm > 0 0) {
+    var farmamount mult 3
+    chat "&a&lCROP STORM &7Triple crop burst!"
+}
+
+var goldenrng set %random.int/1 120%
+var goldenchance set %var.player/farmgolden 0%
+if (var goldenrng <= %var.player/goldenchance 0%, var farmgolden > 0 0) {
+    var goldenpay set %var.player/level 1%
+    var goldenpay mult 20
+    var money inc %var.player/goldenpay 20%
+    var tokens inc %var.player/farmgolden 1%
+    chat "&6&lGOLDEN CROP &7Bonus &6$%var.player/goldenpay 20% &7and &e%var.player/farmgolden 1% tokens&7."
+}
+
+var sprinklerxp set %var.player/farmsprinkler 0%
+var sprinklerxp mult 3
+var xpgain inc %var.player/sprinklerxp 0%
+
+if (var farmamount > 32 0) {
+    var farmamount set 32
+}
+
+function "AddXP" false
+function "AddTokens" false
+function "RollCrates" false
+

@@ -1,0 +1,21 @@
+// crate opener npc; opens one physical crate held in hand and rolls money, tokens, xp, or online-only boosters
+
+if (hasItem "../Items/common_skill_crate" metadata Hand anyAmount) {
+    removeItem "../Items/common_skill_crate"
+    function "OpenCommonCrate" false
+    exit
+}
+if (hasItem "../Items/rare_skill_crate" metadata Hand anyAmount) {
+    removeItem "../Items/rare_skill_crate"
+    function "OpenRareCrate" false
+    exit
+}
+if (hasItem "../Items/mastery_skill_crate" metadata Hand anyAmount) {
+    removeItem "../Items/mastery_skill_crate"
+    function "OpenMasteryCrate" false
+    exit
+}
+
+chat "&cHold a Skill Crate to open it."
+sound "Anvil Land" 0.7 1 "invokers_location"
+

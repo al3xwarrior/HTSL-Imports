@@ -1,0 +1,22 @@
+// upgrades mining Drill Surge; rare large ore and token burst, plus better crate odds
+
+if (var level < 24 1) {
+    chat "&cDrill Surge unlocks at level 24."
+    exit
+}
+if (var minedrillsurge >= 15 0) {
+    chat "&cDrill Surge is maxed."
+    exit
+}
+if (var tokens < %var.player/minedrillsurgecost 900%) {
+    chat "&cNot enough tokens."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+var tokens dec %var.player/minedrillsurgecost 900%
+var minedrillsurge inc 1
+var minedrillsurgecost mult 145
+var minedrillsurgecost div 100
+sound "Level Up" 0.7 1.2 "invokers_location"
+function "OpenMiningEnchants" false
+

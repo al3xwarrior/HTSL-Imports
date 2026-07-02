@@ -1,0 +1,22 @@
+// tool npc; gives the saved cosmetic tools while progression remains stored in variables
+
+loop 9 index {
+    if (hasItem "../Items/farm_hoe" metadata Anywhere anyAmount) {
+        removeItem "../Items/farm_hoe"
+    }
+}
+loop 9 index {
+    if (hasItem "../Items/fishing_rod" metadata Anywhere anyAmount) {
+        removeItem "../Items/fishing_rod"
+    }
+}
+loop 9 index {
+    if (hasItem "../Items/mining_pickaxe" metadata Anywhere anyAmount) {
+        removeItem "../Items/mining_pickaxe"
+    }
+}
+
+giveItem "../Items/farm_hoe" true "First Slot" false
+giveItem "../Items/fishing_rod" true "First Slot" false
+giveItem "../Items/mining_pickaxe" true "First Slot" false
+sound "Item Pickup" 0.7 1.2 "invokers_location"

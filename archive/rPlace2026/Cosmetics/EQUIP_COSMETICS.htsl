@@ -1,0 +1,15 @@
+// changed and triggered in the cosmetics gui
+
+if (hasGroup "2500" true) {
+
+} else {
+    sound "Anvil Land" 0.7 1.0 "invokers_location"
+    chat "&cYou do not have the required milestone to equip this cosmetic!"
+    exit
+}
+
+chat "&aEquipped!"
+
+var particles set "NYAN_CAT" false
+// var armor set "BLACK" false
+// var hat set "HAT" false

@@ -1,0 +1,88 @@
+// optional late-game prestige; resets variables/progression only, leaves inventory skill items untouched
+
+var prestigecost set %var.player/prestige 0%
+var prestigecost inc 1
+var prestigecost mult 1000000
+
+if (var level < 75 1) {
+    chat "&cPrestige requires level 75."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+if (var money < %var.player/prestigecost 1000000%) {
+    chat "&cPrestige costs &6$%var.player/prestigecost 1000000%&c."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+
+var prestige inc 1
+var prestigemult set %var.player/prestige 1%
+var prestigemult inc 10
+
+var level set 1
+var xp set 0
+var xpreq set 100
+var money set 0
+var tokens set 0
+
+var hoetier set 1
+var rodtier set 1
+var picktier set 1
+var hoecost set 250
+var rodcost set 400
+var pickcost set 300
+var armorlevel set 0
+var armorcost set 2000
+var armormult set 10
+
+var farmharvest set 0
+var farmharvestcost set 10
+var farmgolden set 0
+var farmgoldencost set 75
+var farmstorm set 0
+var farmstormcost set 250
+var farmsprinkler set 0
+var farmsprinklercost set 700
+
+var rodlure set 0
+var rodlurecost set 15
+var rodluck set 0
+var rodluckcost set 60
+var roddouble set 0
+var roddoublecost set 225
+var rodtreasure set 0
+var rodtreasurecost set 800
+
+var minepower set 0
+var minepowercost set 12
+var minetokenvein set 0
+var minetokenveincost set 50
+var mineveinminer set 0
+var mineveinminercost set 200
+var minedrillsurge set 0
+var minedrillsurgecost set 900
+
+var sellbonus set 0
+var sellbonuscost set 500
+var sellmult set 10
+var xpbonus set 0
+var xpbonuscost set 500
+var xpmult set 10
+var tokenbonus set 0
+var tokenbonuscost set 600
+var tokenmult set 10
+var offlineworker set 0
+var offlineworkercost set 1000
+var afkworker set 0
+var afkworkercost set 1500
+
+var bankmoney set 0
+var banktokens set 0
+var bankxp set 0
+var xpboosttime set 0
+var tokenboosttime set 0
+var moneyboosttime set 0
+
+function "ClaimTools" false
+sound "Level Up" 1.0 1.8 "invokers_location"
+title "&d&lPRESTIGE" "&7Prestige &d%var.player/prestige 1% &7- multiplier &d%var.player/prestigemult 11%/10x" 0 3 1

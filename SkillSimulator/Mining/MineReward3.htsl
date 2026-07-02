@@ -1,0 +1,16 @@
+// Mine3 iron reward; unlocks at shared level 12
+
+var mineamount set 1
+var xpgain set 52
+var tokengain set 10
+function "MineBase" false
+
+loop 32 index {
+    if (var mineamount > {index}) {
+        giveItem "../Items/iron" true "First Slot" false
+    }
+}
+
+sound "Item Pickup" 0.7 1.1 "invokers_location"
+title "&3&lMINE" "&7+%var.player/mineamount 1% Iron" 0 1 1
+

@@ -1,0 +1,17 @@
+var "hasSaidGG" set 1
+globalvar "ggevent" set 1
+globalvar "ggpitch" set 0.5
+
+chat "%var.global/faceline1%"
+chat "%var.global/faceline2%"
+chat "%var.global/faceline3% &a&lGG &7to &6&l%var.global/levelupname%"
+chat "%var.global/faceline4% &6&lLevel %var.global/leveluplvl%&7!"
+chat "%var.global/faceline5%"
+chat "%var.global/faceline6% &f&oSay &c&o/goodjob&f&o!"
+chat "%var.global/faceline7%"
+chat "%var.global/faceline8%"
+
+pause 160
+
+globalvar "ggevent" set 0
+var "hasSaidGG" unset

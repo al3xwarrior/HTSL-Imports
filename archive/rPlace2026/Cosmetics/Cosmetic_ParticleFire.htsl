@@ -1,0 +1,119 @@
+// dropItem "{count:1,id:\"minecraft:blaze_powder\"}" "custom_coordinates" "1 1 1" false true 20 100 false false
+
+if (var "isMoving" == "TRUE") {
+    var particletick set 0
+    dropItem "{count:1,id:\"minecraft:blaze_powder\"}" "custom_coordinates" "~0 ~0 ~0" false true 20 100 false false
+    exit
+}
+
+if (var particletick == 1) {
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 1.6
+    var particleZ set "%player.pos.z%D"
+    var particleX inc -1.5
+    dropItem "{count:1,id:\"minecraft:blaze_powder\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 20 100 false false
+}
+if (var particletick == 2) {
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 1.55
+    var particleZ set "%player.pos.z%D"
+    var particleX inc -1.29
+    var particleZ inc -0.75
+    dropItem "{count:1,id:\"minecraft:blaze_powder\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 20 100 false false
+}
+if (var particletick == 3) {
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 1.47
+    var particleZ set "%player.pos.z%D"
+    var particleX inc -0.75
+    var particleZ inc -1.29
+    dropItem "{count:1,id:\"minecraft:blaze_powder\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 20 100 false false
+}
+if (var particletick == 4) {
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 1.4
+    var particleZ set "%player.pos.z%D"
+    var particleZ inc -1.5
+    dropItem "{count:1,id:\"minecraft:blaze_powder\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 20 100 false false
+}
+if (var particletick == 5) {
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 1.35
+    var particleZ set "%player.pos.z%D"
+    var particleX inc 0.75
+    var particleZ inc -1.29
+    dropItem "{count:1,id:\"minecraft:blaze_powder\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 20 100 false false
+}
+if (var particletick == 6) {
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 1.3
+    var particleZ set "%player.pos.z%D"
+    var particleX inc 1.29
+    var particleZ inc -0.75
+    dropItem "{count:1,id:\"minecraft:blaze_powder\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 20 100 false false
+}
+if (var particletick == 7) {
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleZ set "%player.pos.z%D"
+    var particleX inc 1.35
+    dropItem "{count:1,id:\"minecraft:blaze_powder\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 20 100 false false
+}
+if (var particletick == 8) {
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 1.4
+    var particleZ set "%player.pos.z%D"
+    var particleX inc 1.29
+    var particleZ inc 0.75
+    dropItem "{count:1,id:\"minecraft:blaze_powder\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 20 100 false false
+}
+if (var particletick == 9) {
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 1.47
+    var particleZ set "%player.pos.z%D"
+    var particleX inc 0.75
+    var particleZ inc 1.29
+    dropItem "{count:1,id:\"minecraft:blaze_powder\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 20 100 false false
+}
+if (var particletick == 10) {
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 1.55
+    var particleZ set "%player.pos.z%D"
+    var particleZ inc 1.5
+    dropItem "{count:1,id:\"minecraft:blaze_powder\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 20 100 false false
+}
+if (var particletick == 11) {
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 1.6
+    var particleZ set "%player.pos.z%D"
+    var particleX inc -0.75
+    var particleZ inc 1.29
+    dropItem "{count:1,id:\"minecraft:blaze_powder\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 20 100 false false
+}
+if (var particletick == 12) {
+    var particleX set "%player.pos.x%D"
+    var particleY set "%player.pos.y%D"
+    var particleY inc 1.6
+    var particleZ set "%player.pos.z%D"
+    var particleX inc -1.29
+    var particleZ inc 0.75
+    dropItem "{count:1,id:\"minecraft:blaze_powder\"}" "custom_coordinates" "%var.player/particleX% %var.player/particleY% %var.player/particleZ%" false true 20 100 false false
+}
+
+if (var particletick >= 12) {
+    var particletick set 0
+}
+
+var particleX unset
+var particleY unset
+var particleZ unset

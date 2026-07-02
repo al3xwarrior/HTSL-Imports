@@ -1,0 +1,6 @@
+// triggered once every 20 ticks to decrease the timers of
+// any enchants that use timers by 1
+
+if (var "frostWalker" > 0 -1) {
+    var "frostWalker" dec 1
+}

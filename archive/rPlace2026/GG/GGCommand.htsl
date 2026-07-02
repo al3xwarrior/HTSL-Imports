@@ -1,0 +1,69 @@
+if (globalvar "ggevent" == 0 0) {
+    chat "&cYou can't say GG right now!"
+    exit
+}
+if (var "hasSaidGG" == 1 0) {
+    chat "&cYou have already said GG for this event!"
+    exit
+}
+
+globalvar "hasSaidGG" set 1
+
+globalvar "ggname" set %player.name%
+
+// Color cycle for the level up message
+if (globalvar "ggcolor" == "4" "4") {
+    globalvar "ggcolor" set "c"
+    function "GGLocalBroadcast" false
+    exit
+}
+if (globalvar "ggcolor" == "c" "c") {
+    globalvar "ggcolor" set "6"
+    function "GGLocalBroadcast" false
+    exit
+}
+if (globalvar "ggcolor" == "6" "6") {
+    globalvar "ggcolor" set "e"
+    function "GGLocalBroadcast" false
+    exit
+}
+if (globalvar "ggcolor" == "e" "e") {
+    globalvar "ggcolor" set "2"
+    function "GGLocalBroadcast" false
+    exit
+}
+if (globalvar "ggcolor" == "2" "2") {
+    globalvar "ggcolor" set "a"
+    function "GGLocalBroadcast" false
+    exit
+}
+if (globalvar "ggcolor" == "a" "a") {
+    globalvar "ggcolor" set "b"
+    function "GGLocalBroadcast" false
+    exit
+}
+if (globalvar "ggcolor" == "b" "b") {
+    globalvar "ggcolor" set "3"
+    function "GGLocalBroadcast" false
+    exit
+}
+if (globalvar "ggcolor" == "3" "3") {
+    globalvar "ggcolor" set "9"
+    function "GGLocalBroadcast" false
+    exit
+}
+if (globalvar "ggcolor" == "9" "9") {
+    globalvar "ggcolor" set "5"
+    function "GGLocalBroadcast" false
+    exit
+}
+if (globalvar "ggcolor" == "5" "5") {
+    globalvar "ggcolor" set "d"
+    function "GGLocalBroadcast" false
+    exit
+}
+if (globalvar "ggcolor" == "d" "d") {
+    globalvar "ggcolor" set "4"
+    function "GGLocalBroadcast" false
+    exit
+}

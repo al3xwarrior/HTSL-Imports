@@ -1,0 +1,106 @@
+
+
+// enchant stats are abriviated as follows:
+// e _ name shortened _ type
+// e.g. e_f_lvl or e_f_price
+
+// enchants: (name) - (desciption) - (abbreviation for variables) - (max level)
+// fortune - increase drop amount of items (f) (5)
+// token fortune - increase token amount per harvest (tf) (20)
+// xp fortune - increase xp amount per harvest (xp) (20)
+// speed - increase base speed while harvesting (s) (10)
+// xp finder - chance to randomly find large amounts of xp (xpf) (50)
+// tnt explosion - cause a tnt explosion giving crops, tokens and xp (tnt) (100)
+// frost walker - go super fast and multiply rewards by 4x for 4 seconds (fw) (100)
+// friendly - small chance to reward all players in the area (friend) (100)
+// thunder storm - small chance to strike lightning, giving tokens and xp (ts) (100)
+
+// token
+var "tokensToGet" set 1
+// xp
+var "xpToGet" set 1
+
+// Sound
+if (var blockbreaksound == "a" "a") {
+    sound "Block Anvil Break" 0.6 2.0 "invokers_location"
+}
+
+// Token Fortune
+// multiplies the base token amount (1) by their level * 3
+var "enchTemp" set %var.player/e_tf_lvl 0%
+var "enchTemp" mult 3
+var "tokensToGet" inc %var.player/enchTemp 0%
+
+// XP Fortune
+// multiplies the base xp (1) by their level * 2
+var "enchTemp" set %var.player/e_xp_lvl 0%
+var "enchTemp" mult 2
+var "xpToGet" inc %var.player/enchTemp 0%
+
+// XP Finder
+var "rand" set %random.int/1 501%
+if (var "rand" <= %var.player/e_xpf_lvl 0%) {
+    var "xpFinderAmt" set %random.int/100 251%
+    var "xp" inc %var.player/xpFinderAmt 0%
+
+    function "XPFinderProc" false
+    var "xpFinderAmt" unset
+}
+
+// TnT Explosion
+var "rand" set %random.int/1 6001%
+if (var "rand" <= %var.player/e_tnt_lvl 0%) {
+    var "tntTokens" set %random.int/700 1001%
+    var "tntXp" set %random.int/1000 2501%
+
+    var "tokens" inc %var.player/tntTokens 0%
+    var "xp" inc %var.player/tntXp 0%
+
+    function "TNTExplosionProc" false
+    var "tntTokens" unset
+    var "tntXp" unset
+}
+
+// Frost Walker Proc
+var "rand" set %random.int/1 7001%
+if (var "rand" <= %var.player/e_fw_lvl 0%) {
+    var "frostWalker" set 4
+    function "FrostWalkerProc" false
+}
+// Frost Walker
+if (var frostWalker > 0 -1) {
+    var "xpToGet" mult 4
+    var "tokensToGet" mult 4
+}
+
+// Friendly
+var "rand" set %random.int/1 7001%
+if (var "rand" <= %var.player/e_friend_lvl 0%) {
+    globalvar "friendlyName" set %player.name%
+    function "FriendlyProc" false
+    function "FriendlyBc" true
+}
+2
+// Thunder Storm
+var "rand" set %random.int/1 7501%
+if (var "rand" <= %var.player/e_ts_lvl 0%) {
+    var "tsTokens" set %random.int/5000 25001%
+    var "tsXp" set %random.int/5000 25001%
+
+    var "tokens" inc %var.player/tsTokens 0%
+    var "xp" inc %var.player/tsXp 0%
+
+    function "ThunderStormProc" false
+    var "tsTokens" unset
+    var "tsXp" unset
+}
+
+var "tokens" inc %var.player/tokensToGet 0%
+var "xp" inc %var.player/xpToGet 0%
+
+// Action Bar
+if (var "frostWalker" > 0 -1) {
+    actionBar "&b+%var.player/tokensToGet% Tokens &8| &b+%var.player/xpToGet% XP &7(&bFrost Walker x4&7)"
+    exit
+}
+actionBar "&e+%var.player/tokensToGet% &6Tokens &7| &b+%var.player/xpToGet% &9XP"

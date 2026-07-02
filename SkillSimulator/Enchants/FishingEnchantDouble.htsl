@@ -1,0 +1,22 @@
+// upgrades fishing Double Hook; chance to double fish amount
+
+if (var level < 15 1) {
+    chat "&cDouble Hook unlocks at level 15."
+    exit
+}
+if (var roddouble >= 20 0) {
+    chat "&cDouble Hook is maxed."
+    exit
+}
+if (var tokens < %var.player/roddoublecost 225%) {
+    chat "&cNot enough tokens."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+var tokens dec %var.player/roddoublecost 225%
+var roddouble inc 1
+var roddoublecost mult 140
+var roddoublecost div 100
+sound "Level Up" 0.7 1.2 "invokers_location"
+function "OpenFishingEnchants" false
+

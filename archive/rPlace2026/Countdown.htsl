@@ -1,0 +1,24 @@
+// current time = %date.unix%
+// target time = globalvar targettime
+
+// no modulus in housing :(
+
+globalvar countdown set %var.global/targettime%
+globalvar countdown dec %date.unix%
+
+globalvar hoursleft set %var.global/countdown%
+globalvar hoursleft div 3600
+
+globalvar hourschunk set %var.global/hoursleft%
+globalvar hourschunk mult 3600
+
+globalvar minutesleft set %var.global/countdown%
+globalvar minutesleft dec %var.global/hourschunk%
+globalvar minutesleft div 60
+
+globalvar minuteschunk set %var.global/minutesleft%
+globalvar minuteschunk mult 60
+
+globalvar secondsleft set %var.global/countdown%
+globalvar secondsleft dec %var.global/hourschunk%
+globalvar secondsleft dec %var.global/minuteschunk%

@@ -1,0 +1,22 @@
+// upgrades mining Vein Miner; chance to double ore amount
+
+if (var level < 12 1) {
+    chat "&cVein Miner unlocks at level 12."
+    exit
+}
+if (var mineveinminer >= 20 0) {
+    chat "&cVein Miner is maxed."
+    exit
+}
+if (var tokens < %var.player/mineveinminercost 200%) {
+    chat "&cNot enough tokens."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+var tokens dec %var.player/mineveinminercost 200%
+var mineveinminer inc 1
+var mineveinminercost mult 140
+var mineveinminercost div 100
+sound "Level Up" 0.7 1.2 "invokers_location"
+function "OpenMiningEnchants" false
+

@@ -1,0 +1,238 @@
+if (globalvar "pest1hp" <= 0 0, placeholder %random.int/1 101% == 1) {
+    globalvar "pest1hp" set %random.int/10 31%
+    globalvar "pest1x" set %random.decimal/2.0 124.0%
+    globalvar "pest1z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Ant"
+    globalvar "pestHPBc" set %var.global/pest1hp%
+    globalvar "pestXBc" set %var.global/pest1x%
+    globalvar "pestZBc" set %var.global/pest1z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest2hp" <= 0 0, placeholder %random.int/1 101% == 2) {
+    globalvar "pest2hp" set %random.int/20 51%
+    globalvar "pest2x" set %random.decimal/2.0 124.0%
+    globalvar "pest2z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Chicken"
+    globalvar "pestHPBc" set %var.global/pest2hp%
+    globalvar "pestXBc" set %var.global/pest2x%
+    globalvar "pestZBc" set %var.global/pest2z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest3hp" <= 0 0, placeholder %random.int/1 101% == 3) {
+    globalvar "pest3hp" set %random.int/35 81%
+    globalvar "pest3x" set %random.decimal/2.0 124.0%
+    globalvar "pest3z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Cool Rock"
+    globalvar "pestHPBc" set %var.global/pest3hp%
+    globalvar "pestXBc" set %var.global/pest3x%
+    globalvar "pestZBc" set %var.global/pest3z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest4hp" <= 0 0, placeholder %random.int/1 101% == 4) {
+    globalvar "pest4hp" set %random.int/50 121%
+    globalvar "pest4x" set %random.decimal/2.0 124.0%
+    globalvar "pest4z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Fly"
+    globalvar "pestHPBc" set %var.global/pest4hp%
+    globalvar "pestXBc" set %var.global/pest4x%
+    globalvar "pestZBc" set %var.global/pest4z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest5hp" <= 0 0, placeholder %random.int/1 101% == 5) {
+    globalvar "pest5hp" set %random.int/75 151%
+    globalvar "pest5x" set %random.decimal/2.0 124.0%
+    globalvar "pest5z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Frog"
+    globalvar "pestHPBc" set %var.global/pest5hp%
+    globalvar "pestXBc" set %var.global/pest5x%
+    globalvar "pestZBc" set %var.global/pest5z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest6hp" <= 0 0, placeholder %random.int/1 101% == 6) {
+    globalvar "pest6hp" set %random.int/100 201%
+    globalvar "pest6x" set %random.decimal/2.0 124.0%
+    globalvar "pest6z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Jerry"
+    globalvar "pestHPBc" set %var.global/pest6hp%
+    globalvar "pestXBc" set %var.global/pest6x%
+    globalvar "pestZBc" set %var.global/pest6z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest7hp" <= 0 0, placeholder %random.int/1 101% == 7) {
+    globalvar "pest7hp" set %random.int/150 251%
+    globalvar "pest7x" set %random.decimal/2.0 124.0%
+    globalvar "pest7z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Ladybug"
+    globalvar "pestHPBc" set %var.global/pest7hp%
+    globalvar "pestXBc" set %var.global/pest7x%
+    globalvar "pestZBc" set %var.global/pest7z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest8hp" <= 0 0, placeholder %random.int/1 101% == 8) {
+    globalvar "pest8hp" set %random.int/200 301%
+    globalvar "pest8x" set %random.decimal/2.0 124.0%
+    globalvar "pest8z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Piranha"
+    globalvar "pestHPBc" set %var.global/pest8hp%
+    globalvar "pestXBc" set %var.global/pest8x%
+    globalvar "pestZBc" set %var.global/pest8z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest9hp" <= 0 0, placeholder %random.int/1 101% == 9) {
+    globalvar "pest9hp" set %random.int/350 601%
+    globalvar "pest9x" set %random.decimal/2.0 124.0%
+    globalvar "pest9z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Raccoon"
+    globalvar "pestHPBc" set %var.global/pest9hp%
+    globalvar "pestXBc" set %var.global/pest9x%
+    globalvar "pestZBc" set %var.global/pest9z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest10hp" <= 0 0, placeholder %random.int/1 101% == 10) {
+    globalvar "pest10hp" set %random.int/500 801%
+    globalvar "pest10x" set %random.decimal/2.0 124.0%
+    globalvar "pest10z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Rat"
+    globalvar "pestHPBc" set %var.global/pest10hp%
+    globalvar "pestXBc" set %var.global/pest10x%
+    globalvar "pestZBc" set %var.global/pest10z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest11hp" <= 0 0, placeholder %random.int/1 101% == 11) {
+    globalvar "pest11hp" set %random.int/700 1101%
+    globalvar "pest11x" set %random.decimal/2.0 124.0%
+    globalvar "pest11z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Sheep"
+    globalvar "pestHPBc" set %var.global/pest11hp%
+    globalvar "pestXBc" set %var.global/pest11x%
+    globalvar "pestZBc" set %var.global/pest11z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest12hp" <= 0 0, placeholder %random.int/1 101% == 12) {
+    globalvar "pest12hp" set %random.int/900 1401%
+    globalvar "pest12x" set %random.decimal/2.0 124.0%
+    globalvar "pest12z" set %random.decimal/18.0 139.0%
+    globalvar "pestSpawnBC" set "Snail"
+    globalvar "pestHPBc" set %var.global/pest12hp%
+    globalvar "pestXBc" set %var.global/pest12x%
+    globalvar "pestZBc" set %var.global/pest12z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest13hp" <= 0 0, placeholder %random.int/1 101% == 13) {
+    globalvar "pest13hp" set %random.int/1200 1801%
+    globalvar "pest13x" set %random.decimal/2.0 124.0%
+    globalvar "pest13z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Snowman"
+    globalvar "pestHPBc" set %var.global/pest13hp%
+    globalvar "pestXBc" set %var.global/pest13x%
+    globalvar "pestZBc" set %var.global/pest13z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest14hp" <= 0 0, placeholder %random.int/1 101% == 14) {
+    globalvar "pest14hp" set %random.int/1600 2401%
+    globalvar "pest14x" set %random.decimal/2.0 124.0%
+    globalvar "pest14z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Zombie Horse"
+    globalvar "pestHPBc" set %var.global/pest14hp%
+    globalvar "pestXBc" set %var.global/pest14x%
+    globalvar "pestZBc" set %var.global/pest14z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest15hp" <= 0 0, placeholder %random.int/1 101% == 15) {
+    globalvar "pest15hp" set %random.int/2200 3201%
+    globalvar "pest15x" set %random.decimal/2.0 124.0%
+    globalvar "pest15z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Magma Monster"
+    globalvar "pestHPBc" set %var.global/pest15hp%
+    globalvar "pestXBc" set %var.global/pest15x%
+    globalvar "pestZBc" set %var.global/pest15z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest16hp" <= 0 0, placeholder %random.int/1 101% == 16) {
+    globalvar "pest16hp" set %random.int/3000 4501%
+    globalvar "pest16x" set %random.decimal/2.0 124.0%
+    globalvar "pest16z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Al3xWarrior"
+    globalvar "pestHPBc" set %var.global/pest16hp%
+    globalvar "pestXBc" set %var.global/pest16x%
+    globalvar "pestZBc" set %var.global/pest16z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest17hp" <= 0 0, placeholder %random.int/1 101% == 17) {
+    globalvar "pest17hp" set %random.int/4000 6001%
+    globalvar "pest17x" set %random.decimal/2.0 124.0%
+    globalvar "pest17z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Ender Dragon"
+    globalvar "pestHPBc" set %var.global/pest17hp%
+    globalvar "pestXBc" set %var.global/pest17x%
+    globalvar "pestZBc" set %var.global/pest17z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest18hp" <= 0 0, placeholder %random.int/1 101% == 18) {
+    globalvar "pest18hp" set %random.int/5000 7501%
+    globalvar "pest18x" set %random.decimal/2.0 124.0%
+    globalvar "pest18z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Guardian"
+    globalvar "pestHPBc" set %var.global/pest18hp%
+    globalvar "pestXBc" set %var.global/pest18x%
+    globalvar "pestZBc" set %var.global/pest18z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest19hp" <= 0 0, placeholder %random.int/1 101% == 19) {
+    globalvar "pest19hp" set %random.int/6500 9001%
+    globalvar "pest19x" set %random.decimal/2.0 124.0%
+    globalvar "pest19z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Cat"
+    globalvar "pestHPBc" set %var.global/pest19hp%
+    globalvar "pestXBc" set %var.global/pest19x%
+    globalvar "pestZBc" set %var.global/pest19z%
+    function "SpawnPestBC" true
+}
+
+if (globalvar "pest20hp" <= 0 0, placeholder %random.int/1 101% == 20) {
+    globalvar "pest20hp" set %random.int/8000 10001%
+    globalvar "pest20x" set %random.decimal/2.0 124.0%
+    globalvar "pest20z" set %random.decimal/18.0 139.0%
+
+    globalvar "pestSpawnBC" set "Enderman"
+    globalvar "pestHPBc" set %var.global/pest20hp%
+    globalvar "pestXBc" set %var.global/pest20x%
+    globalvar "pestZBc" set %var.global/pest20z%
+    function "SpawnPestBC" true
+}

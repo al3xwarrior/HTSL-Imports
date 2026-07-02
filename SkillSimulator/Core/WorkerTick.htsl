@@ -1,0 +1,44 @@
+// online-only worker tick; fills claimable worker banks once per minute and rewards AFK region activity
+
+var workersec inc 1
+var afksec inc 1
+
+if (var workersec >= 60 0) {
+    var workersec set 0
+    if (var offlineworker > 0 0) {
+        var workergain set %var.player/offlineworker 0%
+        var workergain mult %var.player/level 1%
+        var workergain mult 6
+        var bankmoney inc %var.player/workergain 0%
+        var workertokens set %var.player/offlineworker 0%
+        var workertokens mult 2
+        var banktokens inc %var.player/workertokens 0%
+    }
+}
+
+if (inRegion "AFK") {
+
+} else {
+    var afksec set 0
+    exit
+}
+
+if (var afkworker <= 0 0) {
+    exit
+}
+if (var afksec < 60 0) {
+    exit
+}
+
+var afksec set 0
+var afkgain set %var.player/afkworker 0%
+var afkgain mult 5
+var banktokens inc %var.player/afkgain 0%
+var bankxp inc %var.player/afkgain 0%
+
+var afkcrate set %random.int/1 100%
+if (var afkcrate <= %var.player/afkworker 0%) {
+    giveItem "../Items/common_skill_crate" true "First Slot" false
+    chat "&a&lAFK WORKER &7Found a Common Skill Crate."
+}
+

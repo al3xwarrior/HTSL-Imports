@@ -1,0 +1,15 @@
+// money passive; increases xp earned from active skills by 10 percent per level
+
+if (var money < %var.player/xpbonuscost 500%) {
+    chat "&cNot enough money."
+    sound "Anvil Land" 0.7 1 "invokers_location"
+    exit
+}
+var money dec %var.player/xpbonuscost 500%
+var xpbonus inc 1
+var xpmult inc 1
+var xpbonuscost mult 155
+var xpbonuscost div 100
+sound "Level Up" 0.7 1.2 "invokers_location"
+function "OpenPassives" false
+

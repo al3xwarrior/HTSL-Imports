@@ -1,0 +1,16 @@
+// Fish4 pearl reward; unlocks at shared level 34
+
+var fishamount set 1
+var xpgain set 135
+var tokengain set 10
+function "FishBase" false
+
+loop 32 index {
+    if (var fishamount > {index}) {
+        giveItem "../Items/pearl" true "First Slot" false
+    }
+}
+
+sound "Swim" 0.7 1.45 "invokers_location"
+title "&b&lFISH" "&7+%var.player/fishamount 1% Pearl" 0 1 1
+
