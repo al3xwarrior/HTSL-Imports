@@ -1,0 +1,6 @@
+if (var gcsound == "a" "a") {
+    sound "Splash" 0.9 2.0 "invokers_location"
+}
+if (var gcmsg == "a" "a") {
+    chat "&5&l(!) &dYour &6Golden Crops &denchant has activated! Crops around &6X: %var.player/gcX% Z: %var.player/gcZ% &dhave turned into gold for a few seconds!"
+}

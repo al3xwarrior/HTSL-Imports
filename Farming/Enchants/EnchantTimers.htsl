@@ -4,3 +4,6 @@
 if (var "frostWalker" > 0 -1) {
     var "frostWalker" dec 1
 }
+if (var "goldenCrops" > 0 -1) {
+    var "goldenCrops" dec 1
+}

@@ -1,0 +1,15 @@
+// var gcX
+// var gcZ
+
+if (var goldenCrops > 0 -1) {
+
+} else {
+    exit
+}
+
+var gcXTemp set %var.player/gcX%
+var gcZTemp set %var.player/gcZ%
+var gcXTemp dec 1
+var gcZTemp dec 1
+
+dropItem 

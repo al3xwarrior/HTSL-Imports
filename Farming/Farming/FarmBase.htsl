@@ -14,6 +14,7 @@
 // frost walker - go super fast and multiply rewards by 4x for 4 seconds (fw) (100)
 // friendly - small chance to reward all players in the area (friend) (100)
 // thunder storm - small chance to strike lightning, giving tokens and xp (ts) (100)
+// golden crops - small chance for crops around you to turn into gold, giving tokens and xp (gc) (100)
 
 // token
 var "tokensToGet" set 1
@@ -65,6 +66,7 @@ if (var "rand" <= %var.player/e_tnt_lvl 0%) {
 var "rand" set %random.int/1 7001%
 if (var "rand" <= %var.player/e_fw_lvl 0%) {
     var "frostWalker" set 4
+    applyPotion "Speed" 6 4
     function "FrostWalkerProc" false
 }
 // Frost Walker
@@ -93,6 +95,15 @@ if (var "rand" <= %var.player/e_ts_lvl 0%) {
     function "ThunderStormProc" false
     var "tsTokens" unset
     var "tsXp" unset
+}
+
+var "rand" set %random.int/1 6001%
+if (var "rand" <= %var.player/e_gc_lvl 0%) {
+    var "gcX" set %player.block.x%
+    var "gcZ" set %player.block.z%
+    var "goldenCrops" set 6
+
+    function "GoldenCropsProc" false
 }
 
 var "tokens" inc %var.player/tokensToGet 0%
